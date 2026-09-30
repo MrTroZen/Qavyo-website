@@ -28,11 +28,19 @@ Default links retain browser-understandable semantics. `.text-link` provides a p
 
 ## Header and navigation
 
-The current header only identifies the foundation preview. Public navigation is not implemented or approved. When introduced, it must support keyboard navigation, clear current states, mobile interaction, and future product families.
+The global header is a compact sticky white surface with a fine lower border. It contains the replaceable text wordmark, primary navigation, account/sales utilities, and one primary conversion action.
+
+Desktop navigation uses explicit buttons for dropdowns rather than hover-only interaction. Only one dropdown may be open at once. Products uses the larger two-part menu: the active Qavyo Restaurant family and capability groups occupy the main area; a quiet secondary area communicates that Retail and Marketing are future categories without presenting them as available products. Solutions, Resources, and Company use restrained single-column menus.
+
+At widths up to `60rem`, desktop navigation is replaced by a dedicated full-height mobile menu. Products, Solutions, Resources, and Company use expandable panels; the desktop mega-menu is never squeezed into the mobile viewport. Opening the mobile menu locks background scrolling. Touch targets are at least approximately 44px.
+
+Required behaviour lives in `js/main.js`: click and keyboard activation, `ArrowDown` entry into desktop menus, one-open-menu enforcement, outside-click dismissal, Escape dismissal with focus restoration, mobile accordion state, and viewport-change cleanup. Triggers must retain accurate `aria-expanded` and `aria-controls` relationships.
+
+Unavailable routes use `data-prototype-link` and are prevented from navigating until real destinations exist. Replace these placeholders with real URLs as pages are approved; do not create fake pages solely for navigation.
 
 ## Footer
 
-The current footer is intentionally minimal and internal. A public footer architecture will be created alongside approved navigation and pages.
+The current footer is intentionally minimal and internal. A public footer architecture will be created separately when approved.
 
 ## Cards
 

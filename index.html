@@ -18,10 +18,159 @@
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
 
-    <header class="site-header">
+    <header class="site-header" id="prototype-navigation" data-site-header>
       <div class="container site-header__inner">
         <a class="wordmark" href="index.html" aria-label="Qavyo home">qavyo<span aria-hidden="true">.</span></a>
-        <p class="site-header__label">Foundation preview</p>
+
+        <div class="desktop-navigation">
+          <nav class="primary-navigation" aria-label="Primary navigation">
+            <div class="nav-item nav-item--products">
+              <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="products-menu" data-dropdown-trigger>
+                Products <span class="nav-chevron" aria-hidden="true"></span>
+              </button>
+              <div class="nav-menu nav-menu--products" id="products-menu" data-dropdown-menu hidden>
+                <div class="products-menu__main">
+                  <p class="nav-menu__label">Products</p>
+                  <div class="product-family">
+                    <div class="product-family__intro">
+                      <p class="product-family__name">Qavyo Restaurant</p>
+                      <p>Connected technology for running a restaurant.</p>
+                      <a class="nav-menu__featured-link" href="#prototype-navigation" data-prototype-link>Restaurant Platform <span aria-hidden="true">→</span></a>
+                    </div>
+                    <div class="product-family__links" aria-label="Qavyo Restaurant areas">
+                      <a href="#prototype-navigation" data-prototype-link>POS &amp; Ordering</a>
+                      <a href="#prototype-navigation" data-prototype-link>Kitchen</a>
+                      <a href="#prototype-navigation" data-prototype-link>Inventory &amp; Operations</a>
+                      <a href="#prototype-navigation" data-prototype-link>Customers &amp; Growth</a>
+                      <a href="#prototype-navigation" data-prototype-link>Team &amp; Workforce</a>
+                      <a href="#prototype-navigation" data-prototype-link>Multi-location</a>
+                      <a href="#prototype-navigation" data-prototype-link>Qavyo Intelligence</a>
+                    </div>
+                  </div>
+                </div>
+                <aside class="products-menu__future" aria-label="Future Qavyo product categories">
+                  <p class="nav-menu__label">Built to grow</p>
+                  <p class="products-menu__future-title">One Qavyo. More ways to operate.</p>
+                  <p>Retail and Marketing are future product categories within the wider Qavyo platform.</p>
+                  <span>Future categories</span>
+                </aside>
+              </div>
+            </div>
+
+            <div class="nav-item">
+              <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="solutions-menu" data-dropdown-trigger>
+                Solutions <span class="nav-chevron" aria-hidden="true"></span>
+              </button>
+              <div class="nav-menu nav-menu--simple" id="solutions-menu" data-dropdown-menu hidden>
+                <p class="nav-menu__label">Solutions</p>
+                <a href="#prototype-navigation" data-prototype-link>Independent Restaurants</a>
+                <a href="#prototype-navigation" data-prototype-link>Restaurant Groups</a>
+                <a href="#prototype-navigation" data-prototype-link>Quick Service</a>
+                <a href="#prototype-navigation" data-prototype-link>Full Service</a>
+                <a href="#prototype-navigation" data-prototype-link>Multi-location</a>
+              </div>
+            </div>
+
+            <a class="nav-link" href="#prototype-navigation" data-prototype-link>Pricing</a>
+
+            <div class="nav-item">
+              <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="resources-menu" data-dropdown-trigger>
+                Resources <span class="nav-chevron" aria-hidden="true"></span>
+              </button>
+              <div class="nav-menu nav-menu--simple" id="resources-menu" data-dropdown-menu hidden>
+                <p class="nav-menu__label">Resources</p>
+                <a href="#prototype-navigation" data-prototype-link>Support</a>
+                <a href="#prototype-navigation" data-prototype-link>Contact</a>
+              </div>
+            </div>
+
+            <div class="nav-item">
+              <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="company-menu" data-dropdown-trigger>
+                Company <span class="nav-chevron" aria-hidden="true"></span>
+              </button>
+              <div class="nav-menu nav-menu--simple nav-menu--align-right" id="company-menu" data-dropdown-menu hidden>
+                <p class="nav-menu__label">Company</p>
+                <a href="#prototype-navigation" data-prototype-link>About Qavyo</a>
+                <a href="#prototype-navigation" data-prototype-link>Contact</a>
+              </div>
+            </div>
+          </nav>
+
+          <nav class="utility-navigation" aria-label="Account and sales navigation">
+            <a class="utility-link" href="#prototype-navigation" data-prototype-link>Sign In</a>
+            <a class="utility-link utility-link--sales" href="#prototype-navigation" data-prototype-link>Talk to Sales</a>
+            <a class="button button--primary button--header" href="#prototype-navigation" data-prototype-link>Start Free</a>
+          </nav>
+        </div>
+
+        <button class="mobile-menu-trigger" type="button" aria-expanded="false" aria-controls="mobile-navigation" data-mobile-menu-trigger>
+          <span>Menu</span>
+          <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
+        </button>
+      </div>
+
+      <div class="mobile-navigation" id="mobile-navigation" data-mobile-menu hidden>
+        <nav class="mobile-navigation__inner" aria-label="Mobile navigation">
+          <div class="mobile-nav-group">
+            <button class="mobile-nav-trigger" type="button" aria-expanded="false" aria-controls="mobile-products" data-mobile-accordion-trigger>
+              Products <span aria-hidden="true">+</span>
+            </button>
+            <div class="mobile-nav-panel" id="mobile-products" data-mobile-accordion-panel hidden>
+              <p class="mobile-product-name">Qavyo Restaurant</p>
+              <p class="mobile-product-description">Connected technology for running a restaurant.</p>
+              <a href="#prototype-navigation" data-prototype-link>Restaurant Platform</a>
+              <a href="#prototype-navigation" data-prototype-link>POS &amp; Ordering</a>
+              <a href="#prototype-navigation" data-prototype-link>Kitchen</a>
+              <a href="#prototype-navigation" data-prototype-link>Inventory &amp; Operations</a>
+              <a href="#prototype-navigation" data-prototype-link>Customers &amp; Growth</a>
+              <a href="#prototype-navigation" data-prototype-link>Team &amp; Workforce</a>
+              <a href="#prototype-navigation" data-prototype-link>Multi-location</a>
+              <a href="#prototype-navigation" data-prototype-link>Qavyo Intelligence</a>
+              <p class="mobile-future-note">Retail and Marketing are future Qavyo product categories.</p>
+            </div>
+          </div>
+
+          <div class="mobile-nav-group">
+            <button class="mobile-nav-trigger" type="button" aria-expanded="false" aria-controls="mobile-solutions" data-mobile-accordion-trigger>
+              Solutions <span aria-hidden="true">+</span>
+            </button>
+            <div class="mobile-nav-panel" id="mobile-solutions" data-mobile-accordion-panel hidden>
+              <a href="#prototype-navigation" data-prototype-link>Independent Restaurants</a>
+              <a href="#prototype-navigation" data-prototype-link>Restaurant Groups</a>
+              <a href="#prototype-navigation" data-prototype-link>Quick Service</a>
+              <a href="#prototype-navigation" data-prototype-link>Full Service</a>
+              <a href="#prototype-navigation" data-prototype-link>Multi-location</a>
+            </div>
+          </div>
+
+          <a class="mobile-nav-link" href="#prototype-navigation" data-prototype-link>Pricing</a>
+
+          <div class="mobile-nav-group">
+            <button class="mobile-nav-trigger" type="button" aria-expanded="false" aria-controls="mobile-resources" data-mobile-accordion-trigger>
+              Resources <span aria-hidden="true">+</span>
+            </button>
+            <div class="mobile-nav-panel" id="mobile-resources" data-mobile-accordion-panel hidden>
+              <a href="#prototype-navigation" data-prototype-link>Support</a>
+              <a href="#prototype-navigation" data-prototype-link>Contact</a>
+            </div>
+          </div>
+
+          <div class="mobile-nav-group">
+            <button class="mobile-nav-trigger" type="button" aria-expanded="false" aria-controls="mobile-company" data-mobile-accordion-trigger>
+              Company <span aria-hidden="true">+</span>
+            </button>
+            <div class="mobile-nav-panel" id="mobile-company" data-mobile-accordion-panel hidden>
+              <a href="#prototype-navigation" data-prototype-link>About Qavyo</a>
+              <a href="#prototype-navigation" data-prototype-link>Contact</a>
+            </div>
+          </div>
+
+          <div class="mobile-navigation__actions">
+            <a href="#prototype-navigation" data-prototype-link>Sign In</a>
+            <a href="#prototype-navigation" data-prototype-link>Talk to Sales</a>
+            <a class="button button--primary" href="#prototype-navigation" data-prototype-link>Start Free</a>
+          </div>
+        </nav>
       </div>
     </header>
 

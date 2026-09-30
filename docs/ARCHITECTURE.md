@@ -20,7 +20,9 @@ Do not create one page per capability. Group capabilities into understandable pr
 
 ## Corporate navigation direction
 
-The public navigation may eventually include Products, Solutions, Pricing, Resources, Company, Sign In, and conversion actions. It must be able to expose multiple Qavyo product families while making the current Restaurant offer easy to understand. Navigation and mega-menu structure are not yet approved.
+The initial global navigation structure is Products, Solutions, Pricing, Resources, and Company, followed by Sign In, Talk to Sales, and the primary Start Free action. Products is the principal menu and is structured to support multiple Qavyo product families while currently presenting only Qavyo Restaurant as active. Retail and Marketing may appear only as clearly labelled future categories.
+
+This establishes the navigation hierarchy and reusable interaction pattern, not a finalized sitemap. Most destinations remain safe prototype links until their pages and routes are approved.
 
 ## Page development principles
 
