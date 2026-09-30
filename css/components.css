@@ -159,6 +159,7 @@
 }
 
 .nav-menu--products,
+.nav-menu--restaurants,
 .nav-menu--solutions {
   position: fixed;
   top: 4.75rem;
@@ -167,6 +168,11 @@
 }
 
 .nav-menu--products {
+  left: max(var(--gutter), calc((100vw - var(--container)) / 2));
+  width: min(58rem, calc(100vw - (2 * var(--gutter))));
+}
+
+.nav-menu--restaurants {
   left: max(var(--gutter), calc((100vw - var(--container)) / 2));
   width: min(60rem, calc(100vw - (2 * var(--gutter))));
 }
@@ -181,6 +187,7 @@
 }
 
 .products-menu__grid,
+.restaurants-menu__grid,
 .solutions-menu__grid {
   display: grid;
 }
@@ -193,23 +200,31 @@
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.restaurants-menu__grid {
+  grid-template-columns: 1.1fr 1fr 0.95fr 1.15fr;
+}
+
 .menu-family,
+.restaurant-group,
 .solution-group {
   min-width: 0;
   padding-inline: var(--space-5);
 }
 
 .menu-family:first-child,
+.restaurant-group:first-child,
 .solution-group:first-child {
   padding-left: 0;
 }
 
 .menu-family:last-child,
+.restaurant-group:last-child,
 .solution-group:last-child {
   padding-right: 0;
 }
 
 .menu-family + .menu-family,
+.restaurant-group + .restaurant-group,
 .solution-group + .solution-group {
   border-left: 1px solid var(--color-border);
 }
@@ -225,6 +240,7 @@
 }
 
 .menu-family__title,
+.restaurant-group__title,
 .solution-group__title {
   max-width: none;
   color: var(--color-ink);
@@ -272,12 +288,12 @@
   margin-block-start: var(--space-4);
 }
 
-.menu-link-grid--restaurant,
 .menu-link-grid--retail {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .menu-link-grid a,
+.restaurant-group a,
 .solution-group a,
 .nav-menu--simple a {
   border-radius: var(--radius-sm);
@@ -289,12 +305,15 @@
 }
 
 .menu-link-grid a,
+.restaurant-group a,
 .solution-group a {
   padding: 0.45rem var(--space-2);
 }
 
 .menu-link-grid a:hover,
 .menu-link-grid a:focus-visible,
+.restaurant-group a:hover,
+.restaurant-group a:focus-visible,
 .solution-group a:hover,
 .solution-group a:focus-visible,
 .nav-menu--simple a:hover,
@@ -303,18 +322,57 @@
   color: var(--color-brand-hover);
 }
 
+.restaurant-group,
 .solution-group {
   display: flex;
   flex-direction: column;
   gap: var(--space-1);
 }
 
+.restaurant-group__title,
 .solution-group__title {
   min-height: 2.5rem;
   margin-block-end: var(--space-3);
   font-size: var(--text-sm);
   font-weight: 700;
   line-height: 1.45;
+}
+
+.restaurant-group a {
+  padding: 0.42rem var(--space-2);
+}
+
+.restaurant-group--intelligence {
+  padding: var(--space-4) var(--space-5);
+  border-left: 1px solid var(--color-border);
+  background: var(--color-surface-muted);
+}
+
+.restaurant-group--intelligence p:not(.restaurant-group__title),
+.solution-group__description {
+  margin-block-end: var(--space-3);
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+  line-height: 1.55;
+}
+
+.restaurant-group .nav-menu__featured-link,
+.solution-group .nav-menu__featured-link {
+  margin-block-start: 0;
+  padding: 0;
+  background: transparent;
+  color: var(--color-brand-hover);
+}
+
+.restaurants-menu__actions {
+  display: flex;
+  margin-block-start: var(--space-5);
+  padding-block-start: var(--space-4);
+  border-top: 1px solid var(--color-border);
+}
+
+.restaurants-menu__actions .nav-menu__featured-link {
+  margin-block-start: 0;
 }
 
 .nav-menu--simple {

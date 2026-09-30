@@ -29,21 +29,17 @@
                 Products <span class="nav-chevron" aria-hidden="true"></span>
               </button>
               <div class="nav-menu nav-menu--products" id="products-menu" data-dropdown-menu hidden>
-                <p class="nav-menu__label mega-menu__heading">Qavyo products</p>
+                <p class="nav-menu__label mega-menu__heading">Products</p>
                 <div class="products-menu__grid">
                   <section class="menu-family menu-family--featured" aria-labelledby="restaurant-software-title">
                     <p class="menu-family__category">Restaurant software</p>
                     <p class="menu-family__title" id="restaurant-software-title">Qavyo Restaurant Software</p>
-                    <p class="menu-family__description">Connected software for running your restaurant.</p>
+                    <p class="menu-family__description">One connected platform for running restaurant operations.</p>
                     <a class="nav-menu__featured-link" href="#prototype-navigation" data-prototype-link>Explore Restaurant Software <span aria-hidden="true">→</span></a>
-                    <div class="menu-link-grid menu-link-grid--restaurant" aria-label="Restaurant Software capabilities">
-                      <a href="#prototype-navigation" data-prototype-link>POS &amp; Ordering</a>
-                      <a href="#prototype-navigation" data-prototype-link>Kitchen</a>
-                      <a href="#prototype-navigation" data-prototype-link>Inventory &amp; Purchasing</a>
-                      <a href="#prototype-navigation" data-prototype-link>Customers &amp; Loyalty</a>
-                      <a href="#prototype-navigation" data-prototype-link>Team &amp; Workforce</a>
-                      <a href="#prototype-navigation" data-prototype-link>Multi-location</a>
+                    <div class="menu-link-grid" aria-label="Restaurant Software supporting links">
                       <a href="#prototype-navigation" data-prototype-link>Qavyo Intelligence</a>
+                      <a href="#prototype-navigation" data-prototype-link>Hardware</a>
+                      <a href="#prototype-navigation" data-prototype-link>Payments</a>
                     </div>
                   </section>
 
@@ -51,6 +47,7 @@
                     <p class="menu-family__category">Retail software</p>
                     <p class="menu-family__title" id="retail-software-title">Qavyo Retail Software</p>
                     <p class="menu-family__description">Software shaped around different types of retail business.</p>
+                    <a class="nav-menu__featured-link" href="#prototype-navigation" data-prototype-link>Explore Retail Software <span aria-hidden="true">→</span></a>
                     <div class="menu-link-grid menu-link-grid--retail" aria-label="Retail business types">
                       <a href="#prototype-navigation" data-prototype-link>Clothing &amp; Fashion</a>
                       <a href="#prototype-navigation" data-prototype-link>Electronics</a>
@@ -58,8 +55,7 @@
                       <a href="#prototype-navigation" data-prototype-link>Grocery &amp; Convenience</a>
                       <a href="#prototype-navigation" data-prototype-link>Salon &amp; Spa</a>
                       <a href="#prototype-navigation" data-prototype-link>Hardware &amp; Sanitary</a>
-                      <a href="#prototype-navigation" data-prototype-link>Paint</a>
-                      <a href="#prototype-navigation" data-prototype-link>Tiles</a>
+                      <a href="#prototype-navigation" data-prototype-link>Paint &amp; Tiles</a>
                     </div>
                   </section>
 
@@ -76,6 +72,49 @@
             </div>
 
             <div class="nav-item">
+              <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="restaurants-menu" data-dropdown-trigger>
+                Restaurants <span class="nav-chevron" aria-hidden="true"></span>
+              </button>
+              <div class="nav-menu nav-menu--restaurants" id="restaurants-menu" data-dropdown-menu hidden>
+                <p class="nav-menu__label mega-menu__heading">Restaurant software</p>
+                <div class="restaurants-menu__grid">
+                  <section class="restaurant-group" aria-labelledby="run-restaurant-title">
+                    <p class="restaurant-group__title" id="run-restaurant-title">Run your restaurant</p>
+                    <a href="#prototype-navigation" data-prototype-link>POS &amp; Ordering</a>
+                    <a href="#prototype-navigation" data-prototype-link>Kitchen &amp; Service</a>
+                    <a href="#prototype-navigation" data-prototype-link>Tables &amp; Floor</a>
+                    <a href="#prototype-navigation" data-prototype-link>Inventory &amp; Stock</a>
+                    <a href="#prototype-navigation" data-prototype-link>Recipes &amp; Costing</a>
+                    <a href="#prototype-navigation" data-prototype-link>Purchasing &amp; Suppliers</a>
+                  </section>
+                  <section class="restaurant-group" aria-labelledby="grow-restaurant-title">
+                    <p class="restaurant-group__title" id="grow-restaurant-title">Grow your restaurant</p>
+                    <a href="#prototype-navigation" data-prototype-link>Online Ordering</a>
+                    <a href="#prototype-navigation" data-prototype-link>Restaurant Website</a>
+                    <a href="#prototype-navigation" data-prototype-link>Reservations</a>
+                    <a href="#prototype-navigation" data-prototype-link>Customers &amp; CRM</a>
+                    <a href="#prototype-navigation" data-prototype-link>Loyalty</a>
+                  </section>
+                  <section class="restaurant-group" aria-labelledby="manage-restaurant-title">
+                    <p class="restaurant-group__title" id="manage-restaurant-title">Manage your business</p>
+                    <a href="#prototype-navigation" data-prototype-link>Staff &amp; Scheduling</a>
+                    <a href="#prototype-navigation" data-prototype-link>Attendance &amp; Payroll</a>
+                    <a href="#prototype-navigation" data-prototype-link>Reporting</a>
+                    <a href="#prototype-navigation" data-prototype-link>Multi-location</a>
+                  </section>
+                  <section class="restaurant-group restaurant-group--intelligence" aria-labelledby="restaurant-intelligence-title">
+                    <p class="restaurant-group__title" id="restaurant-intelligence-title">Qavyo Intelligence</p>
+                    <p>Understand what is happening, what needs attention and what to do next.</p>
+                    <a class="nav-menu__featured-link" href="#prototype-navigation" data-prototype-link>Explore Qavyo Intelligence <span aria-hidden="true">→</span></a>
+                  </section>
+                </div>
+                <div class="restaurants-menu__actions">
+                  <a class="nav-menu__featured-link" href="#prototype-navigation" data-prototype-link>Explore Restaurant Software <span aria-hidden="true">→</span></a>
+                </div>
+              </div>
+            </div>
+
+            <div class="nav-item">
               <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="solutions-menu" data-dropdown-trigger>
                 Solutions <span class="nav-chevron" aria-hidden="true"></span>
               </button>
@@ -84,9 +123,9 @@
                 <div class="solutions-menu__grid">
                   <section class="solution-group" aria-labelledby="marketing-solutions-title">
                     <p class="solution-group__title" id="marketing-solutions-title">Marketing &amp; Communication</p>
+                    <a href="#prototype-navigation" data-prototype-link>Social Media Marketing</a>
                     <a href="#prototype-navigation" data-prototype-link>SMS Marketing</a>
                     <a href="#prototype-navigation" data-prototype-link>Email Marketing</a>
-                    <a href="#prototype-navigation" data-prototype-link>Marketing Automation</a>
                   </section>
                   <section class="solution-group" aria-labelledby="growth-solutions-title">
                     <p class="solution-group__title" id="growth-solutions-title">Web &amp; Growth</p>
@@ -95,7 +134,8 @@
                   </section>
                   <section class="solution-group" aria-labelledby="intelligence-solutions-title">
                     <p class="solution-group__title" id="intelligence-solutions-title">Intelligence</p>
-                    <a href="#prototype-navigation" data-prototype-link>Qavyo Intelligence</a>
+                    <p class="solution-group__description">Operational intelligence that helps businesses understand what deserves attention.</p>
+                    <a class="nav-menu__featured-link" href="#prototype-navigation" data-prototype-link>Explore Qavyo Intelligence <span aria-hidden="true">→</span></a>
                   </section>
                 </div>
               </div>
@@ -110,16 +150,6 @@
               <div class="nav-menu nav-menu--simple" id="resources-menu" data-dropdown-menu hidden>
                 <p class="nav-menu__label">Resources</p>
                 <a href="#prototype-navigation" data-prototype-link>Support</a>
-                <a href="#prototype-navigation" data-prototype-link>Contact</a>
-              </div>
-            </div>
-
-            <div class="nav-item">
-              <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="company-menu" data-dropdown-trigger>
-                Company <span class="nav-chevron" aria-hidden="true"></span>
-              </button>
-              <div class="nav-menu nav-menu--simple nav-menu--align-right" id="company-menu" data-dropdown-menu hidden>
-                <p class="nav-menu__label">Company</p>
                 <a href="#prototype-navigation" data-prototype-link>About Qavyo</a>
                 <a href="#prototype-navigation" data-prototype-link>Contact</a>
               </div>
@@ -149,28 +179,24 @@
               <section class="mobile-menu-section" aria-labelledby="mobile-restaurant-title">
                 <p class="mobile-menu-section__category">Restaurant software</p>
                 <p class="mobile-menu-section__title" id="mobile-restaurant-title">Qavyo Restaurant Software</p>
-                <p class="mobile-menu-section__description">Connected software for running your restaurant.</p>
+                <p class="mobile-menu-section__description">One connected platform for running restaurant operations.</p>
                 <a class="mobile-menu-section__featured-link" href="#prototype-navigation" data-prototype-link>Explore Restaurant Software</a>
-                <a href="#prototype-navigation" data-prototype-link>POS &amp; Ordering</a>
-                <a href="#prototype-navigation" data-prototype-link>Kitchen</a>
-                <a href="#prototype-navigation" data-prototype-link>Inventory &amp; Purchasing</a>
-                <a href="#prototype-navigation" data-prototype-link>Customers &amp; Loyalty</a>
-                <a href="#prototype-navigation" data-prototype-link>Team &amp; Workforce</a>
-                <a href="#prototype-navigation" data-prototype-link>Multi-location</a>
                 <a href="#prototype-navigation" data-prototype-link>Qavyo Intelligence</a>
+                <a href="#prototype-navigation" data-prototype-link>Hardware</a>
+                <a href="#prototype-navigation" data-prototype-link>Payments</a>
               </section>
 
               <section class="mobile-menu-section" aria-labelledby="mobile-retail-title">
                 <p class="mobile-menu-section__category">Retail software</p>
                 <p class="mobile-menu-section__title" id="mobile-retail-title">Qavyo Retail Software</p>
+                <a class="mobile-menu-section__featured-link" href="#prototype-navigation" data-prototype-link>Explore Retail Software</a>
                 <a href="#prototype-navigation" data-prototype-link>Clothing &amp; Fashion</a>
                 <a href="#prototype-navigation" data-prototype-link>Electronics</a>
                 <a href="#prototype-navigation" data-prototype-link>Repair Shops</a>
                 <a href="#prototype-navigation" data-prototype-link>Grocery &amp; Convenience</a>
                 <a href="#prototype-navigation" data-prototype-link>Salon &amp; Spa</a>
                 <a href="#prototype-navigation" data-prototype-link>Hardware &amp; Sanitary</a>
-                <a href="#prototype-navigation" data-prototype-link>Paint</a>
-                <a href="#prototype-navigation" data-prototype-link>Tiles</a>
+                <a href="#prototype-navigation" data-prototype-link>Paint &amp; Tiles</a>
               </section>
 
               <section class="mobile-menu-section" aria-labelledby="mobile-farm-title">
@@ -182,15 +208,53 @@
           </div>
 
           <div class="mobile-nav-group">
+            <button class="mobile-nav-trigger" type="button" aria-expanded="false" aria-controls="mobile-restaurants" data-mobile-accordion-trigger>
+              Restaurants <span aria-hidden="true">+</span>
+            </button>
+            <div class="mobile-nav-panel" id="mobile-restaurants" data-mobile-accordion-panel hidden>
+              <section class="mobile-menu-section" aria-labelledby="mobile-run-restaurant-title">
+                <p class="mobile-menu-section__title" id="mobile-run-restaurant-title">Run Your Restaurant</p>
+                <a href="#prototype-navigation" data-prototype-link>POS &amp; Ordering</a>
+                <a href="#prototype-navigation" data-prototype-link>Kitchen &amp; Service</a>
+                <a href="#prototype-navigation" data-prototype-link>Tables &amp; Floor</a>
+                <a href="#prototype-navigation" data-prototype-link>Inventory &amp; Stock</a>
+                <a href="#prototype-navigation" data-prototype-link>Recipes &amp; Costing</a>
+                <a href="#prototype-navigation" data-prototype-link>Purchasing &amp; Suppliers</a>
+              </section>
+              <section class="mobile-menu-section" aria-labelledby="mobile-grow-restaurant-title">
+                <p class="mobile-menu-section__title" id="mobile-grow-restaurant-title">Grow Your Restaurant</p>
+                <a href="#prototype-navigation" data-prototype-link>Online Ordering</a>
+                <a href="#prototype-navigation" data-prototype-link>Restaurant Website</a>
+                <a href="#prototype-navigation" data-prototype-link>Reservations</a>
+                <a href="#prototype-navigation" data-prototype-link>Customers &amp; CRM</a>
+                <a href="#prototype-navigation" data-prototype-link>Loyalty</a>
+              </section>
+              <section class="mobile-menu-section" aria-labelledby="mobile-manage-restaurant-title">
+                <p class="mobile-menu-section__title" id="mobile-manage-restaurant-title">Manage Your Business</p>
+                <a href="#prototype-navigation" data-prototype-link>Staff &amp; Scheduling</a>
+                <a href="#prototype-navigation" data-prototype-link>Attendance &amp; Payroll</a>
+                <a href="#prototype-navigation" data-prototype-link>Reporting</a>
+                <a href="#prototype-navigation" data-prototype-link>Multi-location</a>
+              </section>
+              <section class="mobile-menu-section" aria-labelledby="mobile-restaurant-intelligence-title">
+                <p class="mobile-menu-section__title" id="mobile-restaurant-intelligence-title">Qavyo Intelligence</p>
+                <p class="mobile-menu-section__description">Understand what is happening, what needs attention and what to do next.</p>
+                <a class="mobile-menu-section__featured-link" href="#prototype-navigation" data-prototype-link>Explore Qavyo Intelligence</a>
+              </section>
+              <a class="mobile-menu-section__featured-link" href="#prototype-navigation" data-prototype-link>Explore Restaurant Software</a>
+            </div>
+          </div>
+
+          <div class="mobile-nav-group">
             <button class="mobile-nav-trigger" type="button" aria-expanded="false" aria-controls="mobile-solutions" data-mobile-accordion-trigger>
               Solutions <span aria-hidden="true">+</span>
             </button>
             <div class="mobile-nav-panel" id="mobile-solutions" data-mobile-accordion-panel hidden>
               <section class="mobile-menu-section" aria-labelledby="mobile-marketing-title">
                 <p class="mobile-menu-section__title" id="mobile-marketing-title">Marketing &amp; Communication</p>
+                <a href="#prototype-navigation" data-prototype-link>Social Media Marketing</a>
                 <a href="#prototype-navigation" data-prototype-link>SMS Marketing</a>
                 <a href="#prototype-navigation" data-prototype-link>Email Marketing</a>
-                <a href="#prototype-navigation" data-prototype-link>Marketing Automation</a>
               </section>
               <section class="mobile-menu-section" aria-labelledby="mobile-growth-title">
                 <p class="mobile-menu-section__title" id="mobile-growth-title">Web &amp; Growth</p>
@@ -198,8 +262,9 @@
                 <a href="#prototype-navigation" data-prototype-link>Website SEO</a>
               </section>
               <section class="mobile-menu-section" aria-labelledby="mobile-intelligence-title">
-                <p class="mobile-menu-section__title" id="mobile-intelligence-title">Intelligence</p>
-                <a href="#prototype-navigation" data-prototype-link>Qavyo Intelligence</a>
+                <p class="mobile-menu-section__title" id="mobile-intelligence-title">Qavyo Intelligence</p>
+                <p class="mobile-menu-section__description">Operational intelligence that helps businesses understand what deserves attention.</p>
+                <a class="mobile-menu-section__featured-link" href="#prototype-navigation" data-prototype-link>Explore Qavyo Intelligence</a>
               </section>
             </div>
           </div>
@@ -212,15 +277,6 @@
             </button>
             <div class="mobile-nav-panel" id="mobile-resources" data-mobile-accordion-panel hidden>
               <a href="#prototype-navigation" data-prototype-link>Support</a>
-              <a href="#prototype-navigation" data-prototype-link>Contact</a>
-            </div>
-          </div>
-
-          <div class="mobile-nav-group">
-            <button class="mobile-nav-trigger" type="button" aria-expanded="false" aria-controls="mobile-company" data-mobile-accordion-trigger>
-              Company <span aria-hidden="true">+</span>
-            </button>
-            <div class="mobile-nav-panel" id="mobile-company" data-mobile-accordion-panel hidden>
               <a href="#prototype-navigation" data-prototype-link>About Qavyo</a>
               <a href="#prototype-navigation" data-prototype-link>Contact</a>
             </div>

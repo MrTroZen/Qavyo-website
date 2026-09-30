@@ -81,6 +81,19 @@
     trigger.addEventListener("click", () => {
       const panel = document.getElementById(trigger.getAttribute("aria-controls"));
       const shouldOpen = trigger.getAttribute("aria-expanded") !== "true";
+
+      if (shouldOpen) {
+        mobileAccordionTriggers.forEach((otherTrigger) => {
+          if (otherTrigger === trigger) {
+            return;
+          }
+
+          const otherPanel = document.getElementById(otherTrigger.getAttribute("aria-controls"));
+          otherTrigger.setAttribute("aria-expanded", "false");
+          otherPanel.hidden = true;
+        });
+      }
+
       trigger.setAttribute("aria-expanded", String(shouldOpen));
       panel.hidden = !shouldOpen;
     });

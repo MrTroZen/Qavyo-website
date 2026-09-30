@@ -2,52 +2,91 @@
 
 This document records the current information-architecture direction. It is intentionally not a finalized sitemap.
 
-## Brand hierarchy
+## Global navigation
 
 ```text
-Qavyo (parent technology company)
-├── Restaurant Software
-│   ├── POS & Ordering
-│   ├── Kitchen
-│   ├── Inventory & Purchasing
-│   ├── Customers & Loyalty
-│   ├── Team & Workforce
-│   ├── Multi-location
+Qavyo
+├── Products
+│   ├── Restaurant Software
+│   │   ├── Qavyo Intelligence
+│   │   ├── Hardware
+│   │   └── Payments
+│   ├── Retail Software
+│   │   ├── Clothing & Fashion
+│   │   ├── Electronics
+│   │   ├── Repair Shops
+│   │   ├── Grocery & Convenience
+│   │   ├── Salon & Spa
+│   │   ├── Hardware & Sanitary
+│   │   └── Paint & Tiles
+│   └── Farm Software
+│       └── Broiler Farming
+├── Restaurants
+│   ├── Run Your Restaurant
+│   │   ├── POS & Ordering
+│   │   ├── Kitchen & Service
+│   │   ├── Tables & Floor
+│   │   ├── Inventory & Stock
+│   │   ├── Recipes & Costing
+│   │   └── Purchasing & Suppliers
+│   ├── Grow Your Restaurant
+│   │   ├── Online Ordering
+│   │   ├── Restaurant Website
+│   │   ├── Reservations
+│   │   ├── Customers & CRM
+│   │   └── Loyalty
+│   ├── Manage Your Business
+│   │   ├── Staff & Scheduling
+│   │   ├── Attendance & Payroll
+│   │   ├── Reporting
+│   │   └── Multi-location
 │   └── Qavyo Intelligence
-├── Retail Software (Qavyo Retail Software)
-│   ├── Clothing & Fashion
-│   ├── Electronics
-│   ├── Repair Shops
-│   ├── Grocery & Convenience
-│   ├── Salon & Spa
-│   ├── Hardware & Sanitary
-│   ├── Paint
-│   └── Tiles
-├── Farm Software (Qavyo Farm Software)
-│   └── Broiler Farming
 └── Solutions
     ├── Marketing & Communication
+    │   ├── Social Media Marketing
     │   ├── SMS Marketing
-    │   ├── Email Marketing
-    │   └── Marketing Automation
+    │   └── Email Marketing
     ├── Web & Growth
     │   ├── Website Building
     │   └── Website SEO
-    └── Intelligence
-        └── Qavyo Intelligence
+    └── Qavyo Intelligence
 ```
 
-Qavyo Restaurant Software is Qavyo's connected restaurant operating platform, not merely a POS. Its named navigation capabilities belong to the Restaurant Software category and must not be presented as unrelated products or as a separate sub-brand.
+The primary header order is Products, Restaurants, Solutions, Pricing, and Resources, followed by Sign In, Talk to Sales, and Start Free. Company information belongs within Resources and the future public footer rather than as another top-level item.
 
-Qavyo Retail Software is one software family organized by retail business type. Qavyo Farm Software is a separate family and currently includes only Broiler Farming. Do not invent additional verticals. Products are software customers use to operate; Solutions are additional capabilities and services that help businesses market, communicate, grow, or understand operations.
+The three primary dropdowns answer different questions:
 
-Qavyo Intelligence appears in both architectures for different reasons: as an important Restaurant Software capability under Products and as an operational intelligence outcome under Solutions. Its name belongs to the Qavyo brand. These links may lead to the same future destination and must not imply duplicate products or pages.
+- Products identifies the software family or business category relevant to a visitor.
+- Restaurants explains what Qavyo Restaurant Software can help a restaurant operator do.
+- Solutions presents additional marketing, communication, web, growth, and intelligence capabilities.
 
-## Corporate navigation direction
+Qavyo Intelligence may appear in Products, Restaurants, and Solutions because each entry reflects a different visitor context. Every occurrence will lead to the same future Intelligence destination.
 
-The global navigation structure is Products, Solutions, Pricing, Resources, and Company, followed by Sign In, Talk to Sales, and the primary Start Free action. Products organizes Qavyo Restaurant Software, Qavyo Retail Software, and Farm Software. Solutions separately organizes Marketing & Communication, Web & Growth, and Intelligence. Do not introduce separate sub-brands unless explicitly approved.
+## Page strategy
 
-This establishes the navigation hierarchy and reusable interaction pattern, not a finalized sitemap. Most destinations remain safe prototype links until their pages and routes are approved.
+### Restaurant Software
+
+Use one substantial Restaurant Software page initially. Restaurant capability links should deep-link to approved sections on that page rather than generating a separate page for every feature. Planned stories include POS & Ordering, Kitchen & Service, Inventory & Cost, Customers & Growth, Team & Operations, Multi-location, and an introduction to Qavyo Intelligence. Conceptual routes such as `/restaurant/#pos-ordering` are directional only; no routes are implemented yet.
+
+### Retail Software
+
+Retail business types will eventually receive individual landing pages because their workflows and messaging differ. Planned destinations are Clothing & Fashion, Electronics, Repair Shops, Grocery & Convenience, Salon & Spa, Hardware & Sanitary, and Paint & Tiles. These pages are not part of the current task.
+
+### Farm Software
+
+Broiler Farming will eventually receive its own landing page. Farm Software must remain expandable, but no additional farming verticals are approved.
+
+### Qavyo Intelligence
+
+Qavyo Intelligence will initially have one comprehensive page, not a collection of small AI feature pages. That page may tell stories about protecting margins, inventory, waste, sales, revenue, customer behaviour, purchasing, supplier changes, forecasting, anomalies, management time, multi-location visibility, recommendations, expected impact, and actions. These are page sections and stories, not separate destinations.
+
+The Intelligence page should communicate the operating loop:
+
+`WATCH → DETECT → EXPLAIN → RECOMMEND → ACT → MEASURE → LEARN`
+
+## Navigation implementation
+
+Unavailable destinations use the existing safe prototype-link behavior. Do not create empty pages or fake production routes to satisfy navigation links. As pages and sections are approved, replace prototype links with their real destinations.
 
 ## Page development principles
 
@@ -60,4 +99,4 @@ This establishes the navigation hierarchy and reusable interaction pattern, not 
 
 ## Current repository state
 
-The project is a static prototype using semantic HTML, CSS, and small amounts of vanilla JavaScript. `index.html` is currently a foundation verification page, not a homepage. No public sitemap or page routes are approved yet.
+The project is a static prototype using semantic HTML, CSS, and small amounts of vanilla JavaScript. `index.html` is currently a foundation verification page, not a homepage. No public page routes are implemented yet.
