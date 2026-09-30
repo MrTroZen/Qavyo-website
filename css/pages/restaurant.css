@@ -3447,4 +3447,712 @@
   }
 }
 
+/* --------------------------------------------------------------------------
+   Section 8: Customers, CRM & Loyalty (#customers, #loyalty)
+   -------------------------------------------------------------------------- */
+.rst-customers-section {
+  padding-block: var(--section-space);
+  background: var(--color-canvas);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.rst-customers-header {
+  max-width: 44rem;
+  margin-block-end: var(--space-6);
+}
+
+.rst-customers-header h2 {
+  font-size: clamp(2.2rem, 3.4vw, 3.75rem);
+  line-height: var(--leading-tight);
+  margin-block-end: var(--space-4);
+}
+
+/* Customer Journey Pipeline */
+.rst-customer-pipeline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin-block-end: var(--space-6);
+  font-size: var(--text-xs);
+  color: var(--color-text);
+  overflow-x: auto;
+}
+
+.rst-pipeline-step {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  white-space: nowrap;
+}
+
+.rst-pipeline-step strong {
+  color: var(--color-ink);
+  font-weight: 700;
+}
+
+.rst-pipeline-arrow {
+  color: var(--color-brand);
+  font-weight: 700;
+}
+
+/* Main Visual: Customer Profile & Loyalty Card Grid */
+.rst-customer-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: var(--space-6);
+  align-items: start;
+  margin-block-end: var(--space-7);
+}
+
+/* Customer Profile Card */
+.rst-cust-profile-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.rst-cust-profile-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-dark);
+  color: #c7d3dc;
+  border-bottom: 1px solid var(--color-dark-raised);
+  gap: var(--space-3);
+}
+
+.rst-cust-avatar-row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.rst-cust-avatar {
+  width: 2.75rem;
+  height: 2.75rem;
+  border-radius: 50%;
+  background: var(--color-brand);
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 800;
+  font-size: var(--text-sm);
+  box-shadow: 0 0 0 2px rgb(255 255 255 / 0.2);
+}
+
+.rst-cust-name-col {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.rst-cust-name {
+  color: #ffffff;
+  font-size: var(--text-base);
+  font-weight: 700;
+}
+
+.rst-cust-meta {
+  font-size: 0.6875rem;
+  color: #92a6b5;
+  font-family: var(--font-mono);
+}
+
+.rst-cust-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  background: rgb(46 125 91 / 0.15);
+  border: 1px solid rgb(46 125 91 / 0.35);
+  color: #38a169;
+}
+
+.rst-cust-body {
+  padding: var(--space-4) var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.rst-cust-section-title {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-weight: 800;
+  color: var(--color-muted);
+  margin-block-end: var(--space-2);
+}
+
+.rst-cust-activity-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.rst-cust-activity-box {
+  padding: var(--space-3);
+  background: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+}
+
+.rst-cust-activity-box strong {
+  display: block;
+  color: var(--color-ink);
+  margin-block-end: 2px;
+}
+
+.rst-cust-activity-box span {
+  color: var(--color-muted);
+  font-size: 0.6875rem;
+}
+
+.rst-cust-favs {
+  padding: var(--space-3);
+  background: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+}
+
+.rst-cust-fav-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-block-start: var(--space-2);
+}
+
+.rst-cust-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 0.15rem 0.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.6875rem;
+  color: var(--color-text);
+  font-weight: 600;
+}
+
+.rst-cust-tag--pref {
+  background: var(--color-brand-soft);
+  border-color: rgb(47 107 219 / 0.25);
+  color: var(--color-brand);
+}
+
+/* Order History List */
+.rst-cust-orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.rst-cust-order-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+}
+
+.rst-cust-order-row strong {
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+}
+
+.rst-cust-order-row span {
+  color: var(--color-muted);
+}
+
+.rst-cust-order-row .rst-cust-amount {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+/* Loyalty & Intelligence Card */
+.rst-loyalty-board {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.rst-loyalty-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.rst-loyalty-head {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface-muted);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.rst-loyalty-body {
+  padding: var(--space-4);
+  font-size: var(--text-xs);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.rst-loyalty-stat-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block-end: var(--space-2);
+  border-bottom: 1px solid var(--color-surface-muted);
+}
+
+.rst-loyalty-stat-val {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.rst-loyalty-reward-box {
+  padding: var(--space-3);
+  background: rgb(47 107 219 / 0.06);
+  border: 1px solid rgb(47 107 219 / 0.2);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+}
+
+.rst-loyalty-reward-box strong {
+  display: block;
+  color: var(--color-brand);
+  margin-block-end: 2px;
+}
+
+/* Subtle Customer Intelligence Signal */
+.rst-cust-intel-signal {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-dark);
+  color: var(--color-surface);
+  border: 1px solid var(--color-dark-raised);
+  border-radius: var(--radius-md);
+  font-size: var(--text-xs);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.rst-cust-intel-signal__label {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.6875rem;
+  color: #76a7ff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.rst-cust-intel-signal p {
+  color: #c4d4e0;
+  margin: 0;
+  line-height: 1.45;
+}
+
+/* Customers Feature Highlights Grid */
+.rst-customer-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+  margin-block-end: var(--space-6);
+}
+
+/* --------------------------------------------------------------------------
+   Inter-Section Connector: Customers -> Direct Digital Experience
+   -------------------------------------------------------------------------- */
+.rst-digital-bridge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-dark);
+  color: var(--color-surface);
+  border: 1px solid var(--color-dark-raised);
+  border-radius: var(--radius-md);
+  margin-block-end: var(--space-8);
+  box-shadow: var(--shadow-sm);
+}
+
+.rst-digital-bridge__title {
+  font-weight: 700;
+  font-size: var(--text-sm);
+  color: var(--color-surface);
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.rst-digital-bridge__flow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  color: #92a6b5;
+}
+
+/* --------------------------------------------------------------------------
+   Section 9: Direct Digital Experience (Online Ordering, Reservations & Website)
+   (#online-ordering, #reservations, #website)
+   -------------------------------------------------------------------------- */
+.rst-digital-section {
+  padding-block: var(--section-space);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.rst-digital-header {
+  max-width: 44rem;
+  margin-block-end: var(--space-6);
+}
+
+.rst-digital-header h2 {
+  font-size: clamp(2.2rem, 3.4vw, 3.75rem);
+  line-height: var(--leading-tight);
+  margin-block-end: var(--space-4);
+}
+
+/* Main Visual: 3-Part Digital to Operational Showcase */
+.rst-digital-showcase {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: var(--space-4);
+  align-items: stretch;
+  margin-block-end: var(--space-7);
+}
+
+/* Part 1: Direct Restaurant Website Preview (#website) */
+.rst-web-preview-board {
+  background: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.rst-web-preview-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface-muted);
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--text-xs);
+}
+
+.rst-web-url-bar {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.15rem 0.5rem;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.6875rem;
+  font-family: var(--font-mono);
+  color: var(--color-muted);
+  flex-grow: 1;
+  max-width: 14rem;
+}
+
+.rst-web-body {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  flex-grow: 1;
+}
+
+.rst-web-brand {
+  font-weight: 800;
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+  letter-spacing: -0.02em;
+}
+
+.rst-web-nav-links {
+  display: flex;
+  gap: var(--space-3);
+  font-size: 0.6875rem;
+  color: var(--color-muted);
+  border-bottom: 1px solid var(--color-border);
+  padding-block-end: var(--space-2);
+}
+
+.rst-web-hero-box {
+  padding: var(--space-3);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+}
+
+.rst-web-hero-box h4 {
+  font-size: var(--text-xs);
+  color: var(--color-ink);
+  margin-block-end: 2px;
+}
+
+.rst-web-hero-box p {
+  font-size: 0.6875rem;
+  color: var(--color-muted);
+  margin: 0;
+}
+
+.rst-web-actions {
+  display: flex;
+  gap: var(--space-2);
+  margin-block-start: auto;
+}
+
+.rst-web-btn {
+  flex: 1;
+  padding: 0.35rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-align: center;
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-ink);
+}
+
+.rst-web-btn--primary {
+  background: var(--color-brand);
+  border-color: var(--color-brand);
+  color: #ffffff;
+}
+
+/* Part 2: Customer Action Bridge (Order / Reserve) */
+.rst-action-preview-board {
+  background: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.rst-action-preview-head {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-dark);
+  color: #c7d3dc;
+  font-size: var(--text-xs);
+  border-bottom: 1px solid var(--color-dark-raised);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rst-action-body {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  flex-grow: 1;
+}
+
+/* Online Order Sample */
+.rst-order-sample {
+  padding: var(--space-3);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+}
+
+.rst-order-sample__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: var(--space-2);
+}
+
+.rst-order-item-line {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.6875rem;
+  color: var(--color-text);
+  padding-block: 2px;
+}
+
+.rst-order-total-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-start: var(--space-2);
+  padding-block-start: var(--space-2);
+  border-top: 1px solid var(--color-surface-muted);
+  font-weight: 700;
+  color: var(--color-ink);
+  font-size: var(--text-xs);
+}
+
+/* Reservation Sample (#reservations) */
+.rst-res-sample {
+  padding: var(--space-3);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+}
+
+.rst-res-sample__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: var(--space-2);
+}
+
+.rst-res-details {
+  font-size: 0.6875rem;
+  color: var(--color-muted);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+/* Part 3: Qavyo Operational Ingestion */
+.rst-qavyo-ingest-board {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.rst-qavyo-ingest-head {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-dark);
+  color: var(--color-surface);
+  font-size: var(--text-xs);
+  border-bottom: 1px solid var(--color-dark-raised);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+}
+
+.rst-qavyo-ingest-body {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  flex-grow: 1;
+  font-size: var(--text-xs);
+}
+
+.rst-ingest-node {
+  padding: var(--space-3);
+  background: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.rst-ingest-node__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.rst-ingest-node p {
+  margin: 0;
+  font-size: 0.6875rem;
+  color: var(--color-muted);
+}
+
+/* Digital Experience Feature Highlights (4 items) */
+.rst-digital-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+  margin-block-end: var(--space-6);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Adaptations for Sections 8 & 9
+   -------------------------------------------------------------------------- */
+@media (max-width: 68rem) {
+  .rst-customer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rst-customer-features,
+  .rst-digital-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rst-digital-showcase {
+    grid-template-columns: 1fr;
+  }
+
+  .rst-digital-bridge {
+    flex-wrap: wrap;
+    gap: var(--space-3);
+  }
+}
+
+@media (max-width: 44rem) {
+  .rst-cust-activity-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rst-customer-features,
+  .rst-digital-features {
+    grid-template-columns: 1fr;
+  }
+
+  .rst-customer-pipeline,
+  .rst-digital-bridge {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+}
+
+
 

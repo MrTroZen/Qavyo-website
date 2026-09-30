@@ -94,11 +94,11 @@
                   </section>
                   <section class="restaurant-group" aria-labelledby="grow-restaurant-title">
                     <p class="restaurant-group__title" id="grow-restaurant-title">Grow Your Restaurant</p>
-                    <a href="#prototype-navigation" data-prototype-link>Online Ordering</a>
-                    <a href="#prototype-navigation" data-prototype-link>Restaurant Website</a>
-                    <a href="#prototype-navigation" data-prototype-link>Reservations</a>
-                    <a href="#prototype-navigation" data-prototype-link>Customers &amp; CRM</a>
-                    <a href="#prototype-navigation" data-prototype-link>Loyalty</a>
+                    <a href="#online-ordering">Online Ordering</a>
+                    <a href="#website">Restaurant Website</a>
+                    <a href="#reservations">Reservations</a>
+                    <a href="#customers">Customers &amp; CRM</a>
+                    <a href="#loyalty">Loyalty</a>
                   </section>
                   <section class="restaurant-group" aria-labelledby="manage-restaurant-title">
                     <p class="restaurant-group__title" id="manage-restaurant-title">Manage Your Business</p>
@@ -230,11 +230,11 @@
               </section>
               <section class="mobile-menu-section" aria-labelledby="mobile-grow-restaurant-title">
                 <p class="mobile-menu-section__title" id="mobile-grow-restaurant-title">Grow Your Restaurant</p>
-                <a href="#prototype-navigation" data-prototype-link>Online Ordering</a>
-                <a href="#prototype-navigation" data-prototype-link>Restaurant Website</a>
-                <a href="#prototype-navigation" data-prototype-link>Reservations</a>
-                <a href="#prototype-navigation" data-prototype-link>Customers &amp; CRM</a>
-                <a href="#prototype-navigation" data-prototype-link>Loyalty</a>
+                <a href="#online-ordering">Online Ordering</a>
+                <a href="#website">Restaurant Website</a>
+                <a href="#reservations">Reservations</a>
+                <a href="#customers">Customers &amp; CRM</a>
+                <a href="#loyalty">Loyalty</a>
               </section>
               <section class="mobile-menu-section" aria-labelledby="mobile-manage-restaurant-title">
                 <p class="mobile-menu-section__title" id="mobile-manage-restaurant-title">Manage Your Business</p>
@@ -2254,6 +2254,356 @@
         </div>
       </section>
 
+      <!-- ═══════════════════════════════════════════════════════════════
+           Section 8: Customers, CRM & Loyalty (#customers, #loyalty)
+           ═══════════════════════════════════════════════════════════════ -->
+      <section class="section rst-customers-section" id="customers" aria-labelledby="rst-customers-heading">
+        <div class="container">
+
+          <header class="rst-customers-header">
+            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Customers &amp; Loyalty</p>
+            <h2 id="rst-customers-heading">Turn every visit into a better customer relationship.</h2>
+            <p class="lede">Most restaurant systems treat customers as anonymous receipts. Qavyo connects table bookings, POS orders, online deliveries, and dietary preferences into unified customer profiles — turning isolated visits into genuine loyalty.</p>
+          </header>
+
+          <!-- Customer Journey Pipeline Strip -->
+          <div class="rst-customer-pipeline" role="region" aria-label="Customer Relationship Journey">
+            <div class="rst-pipeline-step">
+              <strong>First Order</strong>
+              <span>(In-Store or Online)</span>
+            </div>
+            <span class="rst-pipeline-arrow" aria-hidden="true">→</span>
+            <div class="rst-pipeline-step">
+              <strong>Customer Record</strong>
+              <span>(Auto-Created Profile)</span>
+            </div>
+            <span class="rst-pipeline-arrow" aria-hidden="true">→</span>
+            <div class="rst-pipeline-step">
+              <strong>Return Visit</strong>
+              <span>(Preferences Recognized)</span>
+            </div>
+            <span class="rst-pipeline-arrow" aria-hidden="true">→</span>
+            <div class="rst-pipeline-step">
+              <strong>Order History</strong>
+              <span>(Item Frequency Tracked)</span>
+            </div>
+            <span class="rst-pipeline-arrow" aria-hidden="true">→</span>
+            <div class="rst-pipeline-step">
+              <strong>Loyalty Earned</strong>
+              <span>(Automatic Recognition)</span>
+            </div>
+            <span class="rst-pipeline-arrow" aria-hidden="true">→</span>
+            <div class="rst-pipeline-step">
+              <strong>Ongoing Relationship</strong>
+              <span>(Predictable Return Visits)</span>
+            </div>
+          </div>
+
+          <!-- Main Visual: Customer Profile & Loyalty Card Grid -->
+          <div class="rst-customer-grid" role="region" aria-label="Customer Profile and Loyalty System Interface">
+
+            <!-- Customer Profile Card -->
+            <div class="rst-cust-profile-card" role="img" aria-label="Illustrative guest profile for Sarah Mitchell showing visit activity, preferences, order history, and loyalty status.">
+              <div class="rst-cust-profile-head" aria-hidden="true">
+                <div class="rst-cust-avatar-row">
+                  <div class="rst-cust-avatar">SM</div>
+                  <div class="rst-cust-name-col">
+                    <span class="rst-cust-name">Sarah Mitchell</span>
+                    <span class="rst-cust-meta">#CUST-3829 · Member since Apr 2024</span>
+                  </div>
+                </div>
+                <span class="rst-cust-badge">
+                  <span class="signal-dot signal-dot--live"></span>Active Regular
+                </span>
+              </div>
+
+              <div class="rst-cust-body" aria-hidden="true">
+                <!-- Recent Activity Grid -->
+                <div>
+                  <div class="rst-cust-section-title">Recent Dining Activity</div>
+                  <div class="rst-cust-activity-grid">
+                    <div class="rst-cust-activity-box">
+                      <strong>Dine-In Dinner</strong>
+                      <span>Friday evening · Table 04 (Window Booth)</span>
+                      <div style="font-size: 0.6875rem; color: var(--color-ink); font-weight: 700; margin-top: 2px;">£68.50 · Server: Liam P.</div>
+                    </div>
+                    <div class="rst-cust-activity-box">
+                      <strong>Takeaway Delivery</strong>
+                      <span>Tuesday evening · Online Order #1284</span>
+                      <div style="font-size: 0.6875rem; color: var(--color-ink); font-weight: 700; margin-top: 2px;">£28.00 · Dispatched 18:45</div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Favorite Items & Guest Notes -->
+                <div class="rst-cust-favs">
+                  <div class="rst-cust-section-title">Favorite Items &amp; Service Notes</div>
+                  <div class="rst-cust-fav-tags">
+                    <span class="rst-cust-tag">Chicken Burger (Ordered 11×)</span>
+                    <span class="rst-cust-tag">Caesar Salad (Ordered 8×)</span>
+                    <span class="rst-cust-tag rst-cust-tag--pref">Prefers High Window Booth</span>
+                    <span class="rst-cust-tag rst-cust-tag--pref" style="background: rgb(178 59 66 / 0.08); color: var(--color-danger); border-color: rgb(178 59 66 / 0.25);">Allergy: Tree Nuts</span>
+                  </div>
+                </div>
+
+                <!-- Order History -->
+                <div>
+                  <div class="rst-cust-section-title">Recent Orders &amp; Receipts</div>
+                  <div class="rst-cust-orders-list">
+                    <div class="rst-cust-order-row">
+                      <strong>Order #1284</strong>
+                      <span>2× Chicken Burger, 1× Truffle Fries</span>
+                      <span class="rst-cust-amount">£28.00</span>
+                    </div>
+                    <div class="rst-cust-order-row">
+                      <strong>Order #1197</strong>
+                      <span>1× Pasta, 1× Caesar Salad, 2× Wine</span>
+                      <span class="rst-cust-amount">£68.50</span>
+                    </div>
+                    <div class="rst-cust-order-row">
+                      <strong>Order #1132</strong>
+                      <span>1× Chicken Caesar Wrap, 1× Cold Brew</span>
+                      <span class="rst-cust-amount">£24.00</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Loyalty Board (#loyalty anchor) & Subtle Intelligence Signal -->
+            <div class="rst-loyalty-board" id="loyalty">
+              <!-- Loyalty Card -->
+              <div class="rst-loyalty-card" role="img" aria-label="Illustrative loyalty status card showing visit frequency and earned benefits.">
+                <div class="rst-loyalty-head" aria-hidden="true">
+                  <span>Connected Loyalty Status</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--color-brand); font-weight: 700;">Active Recognition</span>
+                </div>
+                <div class="rst-loyalty-body" aria-hidden="true">
+                  <div class="rst-loyalty-stat-row">
+                    <span>Lifetime Visits</span>
+                    <span class="rst-loyalty-stat-val">18 Visits</span>
+                  </div>
+                  <div class="rst-loyalty-stat-row">
+                    <span>Visits This Month</span>
+                    <span class="rst-loyalty-stat-val">4 Visits (Accelerating)</span>
+                  </div>
+                  <div class="rst-loyalty-stat-row">
+                    <span>Average Spend</span>
+                    <span class="rst-loyalty-stat-val">£40.16 / visit</span>
+                  </div>
+
+                  <div class="rst-loyalty-reward-box">
+                    <strong>Earned Loyalty Reward Available</strong>
+                    <p style="margin: 0; font-size: 0.6875rem; color: var(--color-text);">Complimentary artisanal dessert on next dine-in visit. Applies automatically at checkout.</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Subtle Intelligence Customer Signal Connection -->
+              <div class="rst-cust-intel-signal" role="region" aria-label="Customer Intelligence Connection">
+                <div class="rst-cust-intel-signal__label">
+                  <span class="signal-dot signal-dot--live" aria-hidden="true"></span>
+                  <span>Customer Intelligence Signal</span>
+                </div>
+                <p>Repeat visit frequency has accelerated from bi-weekly to weekly. Server Liam P. notified of preferred window table seating upon floor arrival.</p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Customer Features Grid (4 items) -->
+          <div class="rst-customer-features">
+            <div class="rst-feature-item">
+              <h3>Unified guest profiles</h3>
+              <p>Connect in-restaurant dining, phone orders, and web ordering into unified customer histories without duplicate records or lost notes.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Preferences &amp; dietary alerts</h3>
+              <p>Keep allergies, seating preferences, and special occasion notes visible to front-of-house staff directly on the table ordering interface.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Automated visit tracking</h3>
+              <p>Every order completed at the POS or placed through digital channels automatically enriches guest order frequency and lifetime value.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Integrated loyalty rewards</h3>
+              <p>Recognize repeat guests automatically at checkout without awkward separate barcode apps, paper stamp cards, or manual lookups.</p>
+            </div>
+          </div>
+
+          <!-- Inter-Section Connector Bridge: Customers -> Direct Digital Experience -->
+          <div class="rst-digital-bridge" role="region" aria-label="Customers to Direct Digital Experience Bridge">
+            <div class="rst-digital-bridge__title">
+              <span class="signal-dot signal-dot--live" aria-hidden="true"></span>
+              <span>The Complete Relationship Loop</span>
+            </div>
+            <div class="rst-digital-bridge__flow" aria-hidden="true">
+              <span>Discover</span>
+              <span>→</span>
+              <span>Order / Reserve</span>
+              <span>→</span>
+              <span>Visit</span>
+              <span>→</span>
+              <span>Customer Record</span>
+              <span>→</span>
+              <span>Return</span>
+              <span>→</span>
+              <span>Loyalty</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════════════════════════
+           Section 9: Direct Digital Experience (Online Ordering, Reservations & Website)
+           (#online-ordering, #reservations, #website)
+           ═══════════════════════════════════════════════════════════════ -->
+      <section class="section rst-digital-section" id="online-ordering" aria-labelledby="rst-digital-heading">
+        <div class="container">
+
+          <header class="rst-digital-header">
+            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Online Ordering &amp; Reservations</p>
+            <h2 id="rst-digital-heading">Bring more of the customer journey into Qavyo.</h2>
+            <p class="lede">Your digital storefront shouldn't run on an isolated system. Qavyo powers direct online ordering, table reservations, and your restaurant website — feeding digital guest activity straight into your kitchen, floor, and customer records.</p>
+          </header>
+
+          <!-- Main Visual: 3-Part Digital to Operational Showcase -->
+          <div class="rst-digital-showcase" role="region" aria-label="Direct Digital Experience alongside Operational Result">
+
+            <!-- Part 1: Direct Restaurant Website Preview (#website) -->
+            <div class="rst-web-preview-board" id="website" role="img" aria-label="Illustrative direct restaurant website showing brand header, menu preview, and direct ordering links.">
+              <div class="rst-web-preview-header" aria-hidden="true">
+                <span class="signal-dot signal-dot--live"></span>
+                <div class="rst-web-url-bar">
+                  <span>https://theluminarykitchen.com</span>
+                </div>
+                <span style="font-size: 0.625rem; color: var(--color-muted);">Direct Channel</span>
+              </div>
+
+              <div class="rst-web-body" aria-hidden="true">
+                <div class="rst-web-brand">The Luminary Kitchen</div>
+                <div class="rst-web-nav-links">
+                  <span>Home</span>
+                  <span>Menu</span>
+                  <span style="color: var(--color-brand); font-weight: 700;">Order Online</span>
+                  <span style="color: var(--color-brand); font-weight: 700;">Book a Table</span>
+                </div>
+
+                <div class="rst-web-hero-box">
+                  <h4>Seasonal Dining &amp; Artisan Grill</h4>
+                  <p>Open Tuesday – Sunday for lunch, dinner &amp; direct takeaway.</p>
+                </div>
+
+                <div class="rst-web-actions">
+                  <div class="rst-web-btn rst-web-btn--primary">Order Online</div>
+                  <div class="rst-web-btn">Book a Table</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Part 2: Customer Action Flow (Online Order & Reservations) (#reservations) -->
+            <div class="rst-action-preview-board" id="reservations" role="img" aria-label="Illustrative customer ordering and reservation actions placed directly through the restaurant website.">
+              <div class="rst-action-preview-head" aria-hidden="true">
+                <span>Guest Actions</span>
+                <span style="font-family: var(--font-mono); font-size: 0.6875rem; color: #76a7ff;">Direct Web Experience</span>
+              </div>
+
+              <div class="rst-action-body" aria-hidden="true">
+                <!-- Action 1: Online Order Placed -->
+                <div class="rst-order-sample">
+                  <div class="rst-order-sample__head">
+                    <strong style="color: var(--color-ink);">Online Order #1284</strong>
+                    <span class="rst-stock-badge rst-stock-badge--normal">Order Placed</span>
+                  </div>
+                  <div class="rst-order-item-line">
+                    <span>1× Chicken Burger</span>
+                    <span style="font-family: var(--font-mono);">£12.50</span>
+                  </div>
+                  <div class="rst-order-item-line">
+                    <span>1× Truffle Fries</span>
+                    <span style="font-family: var(--font-mono);">£4.00</span>
+                  </div>
+                  <div class="rst-order-total-row">
+                    <span>Direct Web Order</span>
+                    <span>£16.50</span>
+                  </div>
+                </div>
+
+                <!-- Action 2: Table Reservation Confirmed -->
+                <div class="rst-res-sample">
+                  <div class="rst-res-sample__head">
+                    <strong style="color: var(--color-ink);">Table Reservation</strong>
+                    <span class="rst-stock-badge rst-stock-badge--normal">Confirmed</span>
+                  </div>
+                  <div class="rst-res-details">
+                    <span>Guest: Sarah Mitchell</span>
+                    <span>Date: Friday · 7:30 PM (Dinner Service)</span>
+                    <span>Party: 4 Guests · High Window Requested</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Part 3: Qavyo Operational Ingestion -->
+            <div class="rst-qavyo-ingest-board" role="img" aria-label="Illustrative Qavyo operational backend syncing digital orders and reservations into kitchen, floor, and CRM.">
+              <div class="rst-qavyo-ingest-head" aria-hidden="true">
+                <span>Qavyo Operational Ingestion</span>
+                <span class="signal-dot signal-dot--live"></span>
+              </div>
+
+              <div class="rst-qavyo-ingest-body" aria-hidden="true">
+                <div class="rst-ingest-node">
+                  <div class="rst-ingest-node__head">
+                    <span>Kitchen &amp; KDS</span>
+                    <span style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--color-brand);">Ticket Fired</span>
+                  </div>
+                  <p>Order #1284 sent straight to Line 01 grill display with pickup time 19:15.</p>
+                </div>
+
+                <div class="rst-ingest-node">
+                  <div class="rst-ingest-node__head">
+                    <span>Tables &amp; Floor</span>
+                    <span style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--color-brand);">Table 05 Reserved</span>
+                  </div>
+                  <p>Party of 4 placed on center floor map for 19:30 seating.</p>
+                </div>
+
+                <div class="rst-ingest-node">
+                  <div class="rst-ingest-node__head">
+                    <span>Guest CRM &amp; Loyalty</span>
+                    <span style="font-family: var(--font-mono); font-size: 0.6875rem; color: #2e7d5b;">Record Updated</span>
+                  </div>
+                  <p>Sarah Mitchell's profile matched via mobile number; loyalty visit logged.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Digital Experience Features Highlights (4 items) -->
+          <div class="rst-digital-features">
+            <div class="rst-feature-item">
+              <h3>Commission-free direct ordering</h3>
+              <p>Keep guest relationships and profit margins by accepting online pickup and delivery orders directly from your own website.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Real-time table reservations</h3>
+              <p>Let guests reserve tables online with direct floor plan syncing, automated SMS confirmations, and deposit management.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Live menu &amp; 86'd dish synchronization</h3>
+              <p>When an item runs out on the POS, your online ordering menu reflects the change immediately — preventing unfulfillable orders.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Direct digital brand presence</h3>
+              <p>Showcase your menu, operating hours, photography, and booking links on a fast, mobile-friendly restaurant website powered by Qavyo.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
     </main>
 
     <!-- ═══════════════════════════════════════════════════════════════
@@ -2297,7 +2647,7 @@
               <li><a href="#pos-ordering">POS &amp; Ordering</a></li>
               <li><a href="#kitchen">Kitchen &amp; Service</a></li>
               <li><a href="#inventory">Inventory &amp; Cost</a></li>
-              <li><a href="#prototype-navigation" data-prototype-link>Customers &amp; Loyalty</a></li>
+              <li><a href="#customers">Customers &amp; Loyalty</a></li>
               <li><a href="#prototype-navigation" data-prototype-link>Team &amp; Operations</a></li>
               <li><a href="#prototype-navigation" data-prototype-link>Multi-location</a></li>
             </ul>
