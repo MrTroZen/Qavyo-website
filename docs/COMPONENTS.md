@@ -62,6 +62,10 @@ Unavailable routes use `data-prototype-link` and are prevented from navigating u
 
 `.rst-intelligence-loop` and `.rst-insight` present the continuous operational loop (Watch → Detect → Explain → Recommend → Act → Measure → Learn) and one qualitative diagnostic case (Observation → Reason → Prediction → Recommendation → Expected Impact → Action). The pattern must state that an authorised operator controls any resulting change.
 
+## Intelligence Page Product Interfaces
+
+The dedicated Intelligence page uses `.qi-today` for a small proactive attention feed, `.qi-loop` and `.qi-case` for the operating loop and one diagnostic path, and `.qi-briefing-ui` for the Daily / Weekly / Monthly briefing view. Briefing tabs follow the ARIA tabs pattern and support click, Left/Right arrow, Home, and End keys through `js/pages/intelligence.js`. `.qi-connected-map` shows approved Qavyo operational sources flowing into signals, briefings, explanations, and recommendations; `.qi-control-note` must remain alongside it to state that the operator controls any change.
+
 ## Transparent Pricing & Access Flow
 
 `.rst-pricing-grid` and `.rst-plan` form the approved full comparison: Starter (£29/month) contains the core restaurant-operation list, Growth (£79/month) is the highlighted "Most Popular" plan with management capabilities, and Business (£149/month) adds centralised multi-location capabilities. `.rst-pricing-access` closes the comparison with the approved 30-day Full Qavyo message. `.rst-trial` then explains the trial journey (Start → Full Qavyo → 30 Days → Choose). Hardware and payment processing remain separate.

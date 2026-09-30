@@ -78,7 +78,7 @@ Broiler Farming will eventually receive its own landing page. Farm Software must
 
 ### Qavyo Intelligence
 
-Qavyo Intelligence will initially have one comprehensive page, not a collection of small AI feature pages. That page may tell stories about protecting margins, inventory, waste, sales, revenue, customer behaviour, purchasing, supplier changes, forecasting, anomalies, management time, multi-location visibility, recommendations, expected impact, and actions. These are page sections and stories, not separate destinations.
+`intelligence.html` is the canonical Qavyo Intelligence page. It is a concise, visual product narrative rather than a collection of small AI feature pages. Existing Intelligence links across Products, Restaurants, Solutions, the homepage, Restaurant Software, mobile navigation, and the footer point to this page.
 
 The Intelligence page should communicate the operating loop:
 
@@ -109,6 +109,14 @@ The project is a static prototype using semantic HTML, CSS, and small amounts of
 - Section 7: 24/7 Support & Getting Started (`#support`, `#getting-started`) — A concise statement of confirmed round-the-clock support
 - Section 8: Final CTA (`#get-started`) — High-conversion closure with primary/secondary actions
 - Global public footer integration
+
+`intelligence.html` contains the approved six-section Qavyo Intelligence narrative:
+- Hero with the illustrative "Qavyo Intelligence · Today" interface
+- From Signal to Decision (`#how-it-works`) with the complete operating loop and one qualitative restaurant example
+- Daily, weekly, and monthly Intelligence briefings (`#briefings`) with compact operational-area coverage
+- An unquantified time-saving comparison focused on reducing manual report searching
+- Connected operational data and human control (`#connected-control`)
+- Final 30-day Full Qavyo CTA (`#get-started`)
 
 ### Confirmed Architectural &amp; Product Facts
 - **One Connected Platform:** Qavyo Restaurant Software is one connected platform spanning front and back of house.

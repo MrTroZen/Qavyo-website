@@ -2,7 +2,7 @@
 
 The permanent source repository for Qavyo's public website. Qavyo is a parent technology company spanning Restaurant Software, Retail Software, Farm Software, Qavyo Intelligence, and business solutions.
 
-The project is being built incrementally from its design-system foundation. The root `index.html` currently contains the approved global navigation, homepage hero, and Product Families section.
+The project is being built incrementally from its design-system foundation. The root `index.html` contains the approved Qavyo homepage, with dedicated pages for Restaurant Software and Qavyo Intelligence.
 
 ## Technology
 
@@ -17,7 +17,9 @@ There is no framework, package manager, bundler, or build step.
 
 ```text
 .
-├── index.html              # Foundation verification page
+├── index.html              # Qavyo homepage
+├── restaurant.html         # Qavyo Restaurant Software page
+├── intelligence.html       # Canonical Qavyo Intelligence page
 ├── assets/
 │   ├── icons/              # Approved icon assets
 │   ├── images/             # Approved photography and imagery
