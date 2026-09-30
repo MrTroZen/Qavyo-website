@@ -2042,7 +2042,672 @@
 }
 
 /* --------------------------------------------------------------------------
-   Responsive Adaptations for Sections 3 & 4
+   Section 5: Inventory, Recipes & Costing (#inventory, #recipes)
+   -------------------------------------------------------------------------- */
+.rst-inventory-section {
+  padding-block: var(--section-space);
+  background: var(--color-canvas);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.rst-inventory-section__header {
+  max-width: 44rem;
+  margin-block-end: var(--space-6);
+}
+
+.rst-inventory-section__header h2 {
+  font-size: clamp(2.2rem, 3.4vw, 3.75rem);
+  line-height: var(--leading-tight);
+  margin-block-end: var(--space-4);
+}
+
+/* Core Story Sequence: MENU ITEM SOLD -> RECIPE -> INGREDIENTS -> INVENTORY -> COST */
+.rst-inv-story-pipeline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin-block-end: var(--space-6);
+  font-size: var(--text-xs);
+  color: var(--color-text);
+  overflow-x: auto;
+}
+
+.rst-inv-story-step {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  white-space: nowrap;
+}
+
+.rst-inv-story-step strong {
+  color: var(--color-ink);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+}
+
+.rst-inv-story-arrow {
+  color: var(--color-brand);
+  font-weight: 700;
+}
+
+/* Main Visual: Split Grid (Recipe Costing vs Live Stock Counts) */
+.rst-inv-showcase-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: var(--space-6);
+  align-items: start;
+  margin-block-end: var(--space-7);
+}
+
+/* Left: Recipe Costing Card */
+.rst-recipe-board {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.rst-recipe-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-dark);
+  color: #c7d3dc;
+  font-size: var(--text-xs);
+  border-bottom: 1px solid var(--color-dark-raised);
+}
+
+.rst-recipe-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-surface);
+  font-weight: 700;
+  font-size: var(--text-sm);
+}
+
+.rst-recipe-meta {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: #92a6b5;
+}
+
+.rst-recipe-table-wrap {
+  padding: var(--space-4) var(--space-5);
+}
+
+.rst-recipe-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-xs);
+}
+
+.rst-recipe-table th {
+  text-align: left;
+  padding-block-end: var(--space-2);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-muted);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.rst-recipe-table th:last-child {
+  text-align: right;
+}
+
+.rst-recipe-table td {
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-surface-muted);
+  color: var(--color-text);
+}
+
+.rst-recipe-table td:last-child {
+  text-align: right;
+  font-family: var(--font-mono);
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+.rst-recipe-ingredient {
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.rst-recipe-portion {
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  margin-inline-start: var(--space-2);
+}
+
+/* Recipe Summary / Margin Calculation Bar */
+.rst-recipe-summary-bar {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-canvas);
+  border-top: 1px solid var(--color-border);
+}
+
+.rst-recipe-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.rst-recipe-stat__label {
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+}
+
+.rst-recipe-stat__value {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+}
+
+.rst-recipe-stat__value--highlight {
+  color: var(--color-success);
+}
+
+/* Right: Live Stock Tracker Board */
+.rst-stock-board {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.rst-stock-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface-muted);
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.rst-stock-list {
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.rst-stock-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+}
+
+.rst-stock-item--alert {
+  background: rgb(178 59 66 / 0.05);
+  border-color: rgb(178 59 66 / 0.35);
+}
+
+.rst-stock-item__info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.rst-stock-item__name {
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.rst-stock-item__par {
+  font-size: 0.6875rem;
+  color: var(--color-muted);
+}
+
+.rst-stock-item__status {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.rst-stock-item__qty {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+}
+
+.rst-stock-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.125rem 0.375rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.625rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.rst-stock-badge--normal {
+  background: rgb(46 125 91 / 0.1);
+  color: var(--color-success);
+}
+
+.rst-stock-badge--warning {
+  background: rgb(178 59 66 / 0.12);
+  color: var(--color-danger);
+}
+
+/* Integrated Waste & Movement Signal Strip */
+.rst-waste-strip {
+  margin-top: auto;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-canvas);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--text-xs);
+  color: var(--color-text);
+}
+
+.rst-waste-strip__title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 700;
+  color: var(--color-ink);
+  margin-block-end: var(--space-1);
+}
+
+.rst-waste-strip__flow {
+  font-size: 0.6875rem;
+  color: var(--color-muted);
+  margin-block-end: var(--space-2);
+}
+
+.rst-waste-strip__log {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-1) var(--space-2);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.6875rem;
+  font-family: var(--font-mono);
+  color: var(--color-text);
+}
+
+/* Inventory Features Grid (4 items) */
+.rst-inv-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+  margin-block-end: var(--space-6);
+}
+
+/* --------------------------------------------------------------------------
+   Operational Signal Bridge: Inventory -> Purchasing Connection
+   -------------------------------------------------------------------------- */
+.rst-stock-po-bridge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-dark);
+  color: var(--color-surface);
+  border: 1px solid var(--color-dark-raised);
+  border-radius: var(--radius-md);
+  margin-block-end: var(--space-8);
+  box-shadow: var(--shadow-sm);
+}
+
+.rst-stock-po-bridge__signal {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+}
+
+.rst-stock-po-bridge__badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.5rem;
+  background: rgb(178 59 66 / 0.25);
+  border: 1px solid rgb(178 59 66 / 0.5);
+  color: #ff8e95;
+  font-weight: 700;
+  font-size: var(--text-xs);
+  border-radius: var(--radius-sm);
+}
+
+.rst-stock-po-bridge__flow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+  color: #92a6b5;
+}
+
+.rst-stock-po-bridge__action {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  color: #76a7ff;
+  font-weight: 600;
+  font-size: var(--text-xs);
+}
+
+/* --------------------------------------------------------------------------
+   Section 6: Purchasing & Suppliers (#purchasing)
+   -------------------------------------------------------------------------- */
+.rst-purchasing-section {
+  padding-block: var(--section-space);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.rst-purchasing-section__header {
+  max-width: 44rem;
+  margin-block-end: var(--space-6);
+}
+
+.rst-purchasing-section__header h2 {
+  font-size: clamp(2.2rem, 3.4vw, 3.75rem);
+  line-height: var(--leading-tight);
+  margin-block-end: var(--space-4);
+}
+
+/* Main Visual: Purchasing Showcase Grid (Purchase Order + Supplier Context) */
+.rst-po-showcase-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 0.75fr);
+  gap: var(--space-6);
+  align-items: start;
+  margin-block-end: var(--space-7);
+}
+
+/* Purchase Order Board */
+.rst-po-board {
+  background: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.rst-po-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-dark);
+  color: #c7d3dc;
+  font-size: var(--text-xs);
+  border-bottom: 1px solid var(--color-dark-raised);
+}
+
+.rst-po-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-surface);
+  font-weight: 700;
+  font-size: var(--text-sm);
+}
+
+.rst-po-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  background: rgb(154 100 20 / 0.15);
+  border: 1px solid rgb(154 100 20 / 0.35);
+  color: #e5a43b;
+}
+
+.rst-po-body {
+  padding: var(--space-4) var(--space-5);
+}
+
+.rst-po-vendor-strip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block-end: var(--space-3);
+  margin-block-end: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--text-xs);
+}
+
+.rst-po-vendor-name {
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.rst-po-terms {
+  color: var(--color-muted);
+}
+
+.rst-po-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-xs);
+}
+
+.rst-po-table th {
+  text-align: left;
+  padding-block-end: var(--space-2);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-muted);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.rst-po-table th:last-child {
+  text-align: right;
+}
+
+.rst-po-table td {
+  padding: var(--space-3) 0;
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-text);
+}
+
+.rst-po-table td:last-child {
+  text-align: right;
+  font-family: var(--font-mono);
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.rst-po-item-tag {
+  display: inline-block;
+  font-size: 0.625rem;
+  font-weight: 600;
+  color: var(--color-brand);
+  background: var(--color-brand-soft);
+  padding: 0.1rem 0.35rem;
+  border-radius: var(--radius-sm);
+  margin-inline-start: var(--space-2);
+}
+
+.rst-po-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-5);
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--text-xs);
+}
+
+.rst-po-total {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+}
+
+/* Supplier Directory Card */
+.rst-supplier-board {
+  background: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.rst-supplier-header {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface-muted);
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.rst-supplier-list {
+  padding: var(--space-3) var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.rst-supplier-item {
+  padding: var(--space-3);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+}
+
+.rst-supplier-item--active {
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 1px var(--color-brand);
+}
+
+.rst-supplier-item__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-block-end: var(--space-1);
+}
+
+.rst-supplier-item__title {
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.rst-supplier-item__meta {
+  font-size: 0.6875rem;
+  color: var(--color-muted);
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Purchasing Operational Highlights (4 items) */
+.rst-purchasing-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+  margin-block-end: var(--space-7);
+}
+
+/* --------------------------------------------------------------------------
+   Preparation for Qavyo Intelligence (Subtle Operational Transition)
+   -------------------------------------------------------------------------- */
+.rst-intelligence-preview-block {
+  padding: clamp(var(--space-5), 4vw, var(--space-6));
+  background: linear-gradient(135deg, var(--color-dark) 0%, #153247 100%);
+  border: 1px solid var(--color-dark-raised);
+  border-radius: var(--radius-lg);
+  color: var(--color-surface);
+}
+
+.rst-intel-preview-header {
+  max-width: 44rem;
+  margin-block-end: var(--space-4);
+}
+
+.rst-intel-preview-header .eyebrow {
+  color: #76a7ff;
+  margin-block-end: var(--space-2);
+}
+
+.rst-intel-preview-header h3 {
+  color: var(--color-surface);
+  font-size: clamp(1.4rem, 2.2vw, 1.875rem);
+  line-height: var(--leading-heading);
+  margin-block-end: var(--space-2);
+}
+
+.rst-intel-preview-header p {
+  color: #a4b8c6;
+  font-size: var(--text-sm);
+  line-height: 1.6;
+}
+
+.rst-intel-stream-flow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-2);
+  padding-block-start: var(--space-3);
+  border-top: 1px solid rgb(255 255 255 / 0.12);
+  font-size: var(--text-xs);
+}
+
+.rst-intel-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 0.25rem 0.625rem;
+  background: rgb(255 255 255 / 0.08);
+  border: 1px solid rgb(255 255 255 / 0.15);
+  border-radius: var(--radius-sm);
+  color: #d1dde6;
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+}
+
+.rst-intel-flow-arrow {
+  color: #76a7ff;
+  font-weight: 700;
+}
+
+.rst-intel-pill--destination {
+  background: rgb(47 107 219 / 0.35);
+  border-color: #76a7ff;
+  color: var(--color-surface);
+  font-weight: 700;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Adaptations for Sections 3, 4, 5 & 6
    -------------------------------------------------------------------------- */
 @media (max-width: 68rem) {
   .rst-kds-grid {
@@ -2064,6 +2729,21 @@
   .rst-journey-steps {
     grid-template-columns: repeat(4, 1fr);
     gap: var(--space-2);
+  }
+
+  .rst-inv-showcase-grid,
+  .rst-po-showcase-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rst-inv-features,
+  .rst-purchasing-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rst-stock-po-bridge {
+    flex-wrap: wrap;
+    gap: var(--space-3);
   }
 }
 
@@ -2089,4 +2769,30 @@
     align-items: flex-start;
     gap: var(--space-2);
   }
+
+  .rst-recipe-summary-bar {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+
+  .rst-inv-features,
+  .rst-purchasing-features {
+    grid-template-columns: 1fr;
+  }
+
+  .rst-stock-po-bridge {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  .rst-intel-stream-flow {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .rst-intel-flow-arrow {
+    display: none;
+  }
 }
+

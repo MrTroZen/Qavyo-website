@@ -87,9 +87,9 @@
                     <a href="#pos-ordering">POS &amp; Ordering</a>
                     <a href="#kitchen">Kitchen &amp; Service</a>
                     <a href="#tables">Tables &amp; Floor</a>
-                    <a href="#prototype-navigation" data-prototype-link>Inventory &amp; Stock</a>
-                    <a href="#prototype-navigation" data-prototype-link>Recipes &amp; Costing</a>
-                    <a href="#prototype-navigation" data-prototype-link>Purchasing &amp; Suppliers</a>
+                    <a href="#inventory">Inventory &amp; Stock</a>
+                    <a href="#recipes">Recipes &amp; Costing</a>
+                    <a href="#purchasing">Purchasing &amp; Suppliers</a>
                   </section>
                   <section class="restaurant-group" aria-labelledby="grow-restaurant-title">
                     <p class="restaurant-group__title" id="grow-restaurant-title">Grow Your Restaurant</p>
@@ -223,9 +223,9 @@
                 <a href="#pos-ordering">POS &amp; Ordering</a>
                 <a href="#kitchen">Kitchen &amp; Service</a>
                 <a href="#tables">Tables &amp; Floor</a>
-                <a href="#prototype-navigation" data-prototype-link>Inventory &amp; Stock</a>
-                <a href="#prototype-navigation" data-prototype-link>Recipes &amp; Costing</a>
-                <a href="#prototype-navigation" data-prototype-link>Purchasing &amp; Suppliers</a>
+                <a href="#inventory">Inventory &amp; Stock</a>
+                <a href="#recipes">Recipes &amp; Costing</a>
+                <a href="#purchasing">Purchasing &amp; Suppliers</a>
               </section>
               <section class="mobile-menu-section" aria-labelledby="mobile-grow-restaurant-title">
                 <p class="mobile-menu-section__title" id="mobile-grow-restaurant-title">Grow Your Restaurant</p>
@@ -1338,6 +1338,446 @@
         </div>
       </section>
 
+      <!-- ═══════════════════════════════════════════════════════════════
+           Section 5: Inventory, Recipes & Costing (#inventory, #recipes)
+           ═══════════════════════════════════════════════════════════════ -->
+      <section class="section rst-inventory-section" id="inventory" aria-labelledby="inventory-cost-title">
+        <div class="container">
+
+          <header class="rst-inventory-section__header">
+            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Inventory &amp; Cost</p>
+            <h2 id="inventory-cost-title">Know what you have — and what it's costing you.</h2>
+            <p class="lede">When a dish is ordered, Qavyo tracks ingredient consumption instantly. By linking recipes directly to live stock counts, portions, and supplier costs, operators maintain true margin visibility without manual end-of-week spreadsheet reconciliation.</p>
+          </header>
+
+          <!-- Core Story Sequence Pipeline Strip -->
+          <div class="rst-inv-story-pipeline" role="region" aria-label="Inventory and Cost Operational Journey">
+            <div class="rst-inv-story-step">
+              <strong>Menu Item Sold</strong>
+              <span>(Front of House)</span>
+            </div>
+            <span class="rst-inv-story-arrow" aria-hidden="true">→</span>
+            <div class="rst-inv-story-step">
+              <strong>Recipe Formulation</strong>
+              <span>(Bill of Materials)</span>
+            </div>
+            <span class="rst-inv-story-arrow" aria-hidden="true">→</span>
+            <div class="rst-inv-story-step">
+              <strong>Portion Deducted</strong>
+              <span>(Precise Weights)</span>
+            </div>
+            <span class="rst-inv-story-arrow" aria-hidden="true">→</span>
+            <div class="rst-inv-story-step">
+              <strong>Live Inventory</strong>
+              <span>(Real-Time Counts)</span>
+            </div>
+            <span class="rst-inv-story-arrow" aria-hidden="true">→</span>
+            <div class="rst-inv-story-step">
+              <strong>Food Cost Margin</strong>
+              <span>(Current Profitability)</span>
+            </div>
+          </div>
+
+          <!-- Main Visual: Split Grid (Recipe Costing vs Live Stock Counts) -->
+          <div class="rst-inv-showcase-grid" role="region" aria-label="Illustrative Recipe Costing and Stock Tracking Interface">
+
+            <!-- Left: Recipe Costing Card (#recipes anchor target) -->
+            <div class="rst-recipe-board" id="recipes" role="img" aria-label="Illustrative recipe costing for Chicken Burger detailing ingredients, portions, unit costs, and gross margin.">
+              <div class="rst-recipe-header" aria-hidden="true">
+                <div class="rst-recipe-title">
+                  <span class="signal-dot signal-dot--live"></span>
+                  <span>Recipe Specification · Chicken Burger</span>
+                </div>
+                <div class="rst-recipe-meta">
+                  <span>SKU: #BUR-012</span>
+                  <span>·</span>
+                  <span>Category: Mains</span>
+                </div>
+              </div>
+
+              <div class="rst-recipe-table-wrap">
+                <table class="rst-recipe-table">
+                  <caption class="sr-only">Recipe ingredients and portion costs for Chicken Burger</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Ingredient</th>
+                      <th scope="col">Portion / Weight</th>
+                      <th scope="col">Stock Level</th>
+                      <th scope="col">Portion Cost</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td class="rst-recipe-ingredient">Chicken Breast</td>
+                      <td>180g</td>
+                      <td><span class="rst-stock-badge rst-stock-badge--normal">12.4 kg</span></td>
+                      <td>£1.42</td>
+                    </tr>
+                    <tr>
+                      <td class="rst-recipe-ingredient">Brioche Bun</td>
+                      <td>1 pc</td>
+                      <td><span class="rst-stock-badge rst-stock-badge--normal">42 units</span></td>
+                      <td>£0.38</td>
+                    </tr>
+                    <tr>
+                      <td class="rst-recipe-ingredient">Aged Cheddar</td>
+                      <td>1 slice</td>
+                      <td><span class="rst-stock-badge rst-stock-badge--normal">31 slices</span></td>
+                      <td>£0.24</td>
+                    </tr>
+                    <tr>
+                      <td class="rst-recipe-ingredient">Crisp Lettuce</td>
+                      <td>30g</td>
+                      <td><span class="rst-stock-badge rst-stock-badge--normal">4.5 kg</span></td>
+                      <td>£0.12</td>
+                    </tr>
+                    <tr>
+                      <td class="rst-recipe-ingredient">Signature Sauce</td>
+                      <td>25ml</td>
+                      <td><span class="rst-stock-badge rst-stock-badge--normal">3.2 L</span></td>
+                      <td>£0.18</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <!-- Recipe Summary Bar -->
+              <div class="rst-recipe-summary-bar" aria-hidden="true">
+                <div class="rst-recipe-stat">
+                  <span class="rst-recipe-stat__label">Selling Price</span>
+                  <span class="rst-recipe-stat__value">£12.50</span>
+                </div>
+                <div class="rst-recipe-stat">
+                  <span class="rst-recipe-stat__label">Total Plate Cost</span>
+                  <span class="rst-recipe-stat__value">£2.34</span>
+                </div>
+                <div class="rst-recipe-stat">
+                  <span class="rst-recipe-stat__label">Gross Margin</span>
+                  <span class="rst-recipe-stat__value rst-recipe-stat__value--highlight">£10.16 (81.3%)</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Live Stock Tracker Board -->
+            <div class="rst-stock-board" role="img" aria-label="Illustrative live inventory counts showing stock levels for Chicken Breast, Burger Buns, Cheese, Tomatoes, and Cooking Oil.">
+              <div class="rst-stock-header" aria-hidden="true">
+                <span>Live Inventory Depot</span>
+                <span style="font-family: var(--font-mono); font-size: 0.6875rem; color: var(--color-muted);">Main Walk-In &amp; Dry Storage</span>
+              </div>
+
+              <div class="rst-stock-list" aria-hidden="true">
+                <!-- Item 1: Chicken Breast -->
+                <div class="rst-stock-item">
+                  <div class="rst-stock-item__info">
+                    <span class="rst-stock-item__name">Chicken Breast</span>
+                    <span class="rst-stock-item__par">Par: 10.0 kg · Supplier: Fresh Foods Ltd</span>
+                  </div>
+                  <div class="rst-stock-item__status">
+                    <span class="rst-stock-item__qty">12.4 kg</span>
+                    <span class="rst-stock-badge rst-stock-badge--normal">Normal</span>
+                  </div>
+                </div>
+
+                <!-- Item 2: Burger Buns -->
+                <div class="rst-stock-item">
+                  <div class="rst-stock-item__info">
+                    <span class="rst-stock-item__name">Burger Buns</span>
+                    <span class="rst-stock-item__par">Par: 36 units · Supplier: Artisan Bakery</span>
+                  </div>
+                  <div class="rst-stock-item__status">
+                    <span class="rst-stock-item__qty">42</span>
+                    <span class="rst-stock-badge rst-stock-badge--normal">Normal</span>
+                  </div>
+                </div>
+
+                <!-- Item 3: Cheese Slices -->
+                <div class="rst-stock-item">
+                  <div class="rst-stock-item__info">
+                    <span class="rst-stock-item__name">Cheese Slices</span>
+                    <span class="rst-stock-item__par">Par: 30 slices · Supplier: Dairy Direct</span>
+                  </div>
+                  <div class="rst-stock-item__status">
+                    <span class="rst-stock-item__qty">31 slices</span>
+                    <span class="rst-stock-badge rst-stock-badge--normal">Normal</span>
+                  </div>
+                </div>
+
+                <!-- Item 4: Tomatoes (Low Stock Alert) -->
+                <div class="rst-stock-item rst-stock-item--alert">
+                  <div class="rst-stock-item__info">
+                    <span class="rst-stock-item__name">Tomatoes</span>
+                    <span class="rst-stock-item__par">Par: 6.0 kg · Supplier: Fresh Foods Ltd</span>
+                  </div>
+                  <div class="rst-stock-item__status">
+                    <span class="rst-stock-item__qty">1.8 kg</span>
+                    <span class="rst-stock-badge rst-stock-badge--warning">Low stock</span>
+                  </div>
+                </div>
+
+                <!-- Item 5: Cooking Oil -->
+                <div class="rst-stock-item">
+                  <div class="rst-stock-item__info">
+                    <span class="rst-stock-item__name">Cooking Oil</span>
+                    <span class="rst-stock-item__par">Par: 8.0 L · Supplier: Metro Wholesale</span>
+                  </div>
+                  <div class="rst-stock-item__status">
+                    <span class="rst-stock-item__qty">8.2 L</span>
+                    <span class="rst-stock-badge rst-stock-badge--normal">Normal</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Integrated Waste & Variance Strip -->
+              <div class="rst-waste-strip" aria-hidden="true">
+                <div class="rst-waste-strip__title">
+                  <span class="signal-dot signal-dot--warning"></span>
+                  <span>Integrated Waste &amp; Movement Log</span>
+                </div>
+                <p class="rst-waste-strip__flow">Stock Received → Prep &amp; Yield → Menu Sales → Recorded Waste → True Remaining</p>
+                <div class="rst-waste-strip__log">
+                  <span>Prep Trim: 0.4 kg Chicken Breast</span>
+                  <span style="color: var(--color-muted);">Logged 11:20 AM</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Inventory Capabilities Highlights Grid -->
+          <div class="rst-inv-features">
+            <div class="rst-feature-item">
+              <h3>Dynamic recipe costing</h3>
+              <p>Recipe margins recalculate immediately when invoice prices change, giving you current dish profitability without manual formulas.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Automated depletion</h3>
+              <p>Every item rung up at the register or table automatically deducts associated raw ingredients from storage down to the gram.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Waste &amp; prep variances</h3>
+              <p>Log prep yields, spoilage, and kitchen mistakes directly at stations to distinguish unavoidable prep loss from inventory shrinkage.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Theoretical vs actual stock</h3>
+              <p>Compare what should be on hand based on sales against physical counts to pinpoint over-portioning and cost leakage early.</p>
+            </div>
+          </div>
+
+          <!-- Operational Connection Bridge: Inventory -> Purchasing -->
+          <div class="rst-stock-po-bridge" role="region" aria-label="Inventory to Purchasing Signal Flow">
+            <div class="rst-stock-po-bridge__signal">
+              <span class="rst-stock-po-bridge__badge">Signal Trigger</span>
+              <span><strong>Tomatoes: 1.8 kg</strong> · Dropped below minimum par (6.0 kg)</span>
+            </div>
+            <div class="rst-stock-po-bridge__flow" aria-hidden="true">
+              <span>What do I have?</span>
+              <span>→</span>
+              <span>What is running low?</span>
+              <span>→</span>
+              <span>What do I need to buy?</span>
+            </div>
+            <div class="rst-stock-po-bridge__action">
+              <span>Added 10 kg to Draft PO #PO-2048</span>
+              <span aria-hidden="true">↓</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════════════════════════
+           Section 6: Purchasing & Suppliers (#purchasing)
+           ═══════════════════════════════════════════════════════════════ -->
+      <section class="section rst-purchasing-section" id="purchasing" aria-labelledby="purchasing-suppliers-title">
+        <div class="container">
+
+          <header class="rst-purchasing-section__header">
+            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Purchasing &amp; Suppliers</p>
+            <h2 id="purchasing-suppliers-title">From stock levels to the next order.</h2>
+            <p class="lede">Stop piecing together orders from scraps of paper and chaotic text messages. Qavyo pulls low-stock signals straight from inventory into structured purchase orders, sending clear specifications to trusted suppliers in seconds.</p>
+          </header>
+
+          <!-- Main Visual: Purchasing Showcase Grid (Purchase Order + Supplier Context) -->
+          <div class="rst-po-showcase-grid" role="region" aria-label="Illustrative Purchase Order and Supplier Management Interface">
+
+            <!-- Purchase Order Board -->
+            <div class="rst-po-board" role="img" aria-label="Illustrative purchase order draft for Fresh Foods Ltd listing Chicken Breast, Tomatoes, Lettuce, and Cooking Oil.">
+              <div class="rst-po-header" aria-hidden="true">
+                <div class="rst-po-title">
+                  <span class="signal-dot signal-dot--live"></span>
+                  <span>Purchase Order · #PO-2048</span>
+                </div>
+                <span class="rst-po-status-badge">
+                  <span>●</span>Draft (Pending Review)
+                </span>
+              </div>
+
+              <div class="rst-po-body">
+                <div class="rst-po-vendor-strip" aria-hidden="true">
+                  <div>
+                    <span class="rst-po-vendor-name">Supplier: Fresh Foods Ltd</span>
+                    <span style="color: var(--color-muted); margin-inline-start: var(--space-2);">Acct: #FF-9021</span>
+                  </div>
+                  <span class="rst-po-terms">Terms: Net 14 · Next Day 08:30 AM Delivery</span>
+                </div>
+
+                <table class="rst-po-table">
+                  <caption class="sr-only">Line items in Purchase Order PO-2048</caption>
+                  <thead>
+                    <tr>
+                      <th scope="col">Item Description</th>
+                      <th scope="col">Quantity</th>
+                      <th scope="col">Unit Price</th>
+                      <th scope="col">Subtotal</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Chicken Breast <span class="rst-po-item-tag">Scheduled Restock</span></td>
+                      <td>20 kg</td>
+                      <td>£7.90 / kg</td>
+                      <td>£158.00</td>
+                    </tr>
+                    <tr>
+                      <td>Tomatoes <span class="rst-po-item-tag" style="background: rgb(178 59 66 / 0.1); color: var(--color-danger);">Par Low Trigger</span></td>
+                      <td>10 kg</td>
+                      <td>£2.45 / kg</td>
+                      <td>£24.50</td>
+                    </tr>
+                    <tr>
+                      <td>Crisp Lettuce</td>
+                      <td>8 kg</td>
+                      <td>£2.40 / kg</td>
+                      <td>£19.20</td>
+                    </tr>
+                    <tr>
+                      <td>Cooking Oil</td>
+                      <td>12 L</td>
+                      <td>£2.60 / L</td>
+                      <td>£31.20</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div class="rst-po-footer" aria-hidden="true">
+                <div style="color: var(--color-muted);">
+                  <span>Estimated 4 items · Deliver to Kitchen Loading Bay</span>
+                </div>
+                <div>
+                  <span style="color: var(--color-muted); margin-inline-end: var(--space-3);">Order Total:</span>
+                  <span class="rst-po-total">£232.90</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Supplier Directory Board -->
+            <div class="rst-supplier-board" role="img" aria-label="Illustrative supplier directory showing vendor profiles, categories, and delivery terms.">
+              <div class="rst-supplier-header" aria-hidden="true">
+                <span>Approved Supplier Directory</span>
+              </div>
+
+              <div class="rst-supplier-list" aria-hidden="true">
+                <!-- Supplier 1: Active Fresh Foods -->
+                <div class="rst-supplier-item rst-supplier-item--active">
+                  <div class="rst-supplier-item__head">
+                    <span class="rst-supplier-item__title">Fresh Foods Ltd</span>
+                    <span class="rst-stock-badge rst-stock-badge--normal">Primary Vendor</span>
+                  </div>
+                  <div class="rst-supplier-item__meta">
+                    <span>Poultry &amp; Fresh Produce</span>
+                    <span>Lead time: 24h</span>
+                  </div>
+                </div>
+
+                <!-- Supplier 2: Artisan Bakery -->
+                <div class="rst-supplier-item">
+                  <div class="rst-supplier-item__head">
+                    <span class="rst-supplier-item__title">Artisan Bakery Co.</span>
+                    <span class="rst-stock-badge" style="background: var(--color-surface-muted); color: var(--color-muted);">Active</span>
+                  </div>
+                  <div class="rst-supplier-item__meta">
+                    <span>Buns, Brioche &amp; Sourdough</span>
+                    <span>Lead time: 48h</span>
+                  </div>
+                </div>
+
+                <!-- Supplier 3: Metro Wholesale -->
+                <div class="rst-supplier-item">
+                  <div class="rst-supplier-item__head">
+                    <span class="rst-supplier-item__title">Metro Wholesale Depot</span>
+                    <span class="rst-stock-badge" style="background: var(--color-surface-muted); color: var(--color-muted);">Active</span>
+                  </div>
+                  <div class="rst-supplier-item__meta">
+                    <span>Oils, Dry Goods &amp; Disposables</span>
+                    <span>Lead time: Same day</span>
+                  </div>
+                </div>
+
+                <!-- Supplier 4: Ocean Catch -->
+                <div class="rst-supplier-item">
+                  <div class="rst-supplier-item__head">
+                    <span class="rst-supplier-item__title">Ocean Catch Wholesalers</span>
+                    <span class="rst-stock-badge" style="background: var(--color-surface-muted); color: var(--color-muted);">Active</span>
+                  </div>
+                  <div class="rst-supplier-item__meta">
+                    <span>Fresh &amp; Smoked Seafood</span>
+                    <span>Lead time: 24h</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Purchasing Operational Features Grid -->
+          <div class="rst-purchasing-features">
+            <div class="rst-feature-item">
+              <h3>Par-level draft creation</h3>
+              <p>Items falling below minimum stock thresholds automatically populate into draft purchase orders ready for chef or manager approval.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Vendor price agreements</h3>
+              <p>Store contracted pack sizes, catalogue numbers, and tiered pricing per supplier to ensure you are never overbilled on deliveries.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Goods receipt validation</h3>
+              <p>Check off incoming deliveries against purchase orders at the receiving door, recording damaged goods and credit requests instantly.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Supplier cost history</h3>
+              <p>Maintain complete records of historical ingredient prices and supplier fulfillment times to negotiate better purchasing agreements.</p>
+            </div>
+          </div>
+
+          <!-- Transition Setup for Upcoming Qavyo Intelligence Section -->
+          <div class="rst-intelligence-preview-block" role="region" aria-label="Connected Operations to Intelligence Preview">
+            <div class="rst-intel-preview-header">
+              <p class="eyebrow"><span class="signal-dot signal-dot--live" aria-hidden="true"></span>Foundation for Intelligence</p>
+              <h3>Connected operations create better signals.</h3>
+              <p>When POS orders, kitchen prep, recipe portions, live inventory, waste logs, and supplier invoices all flow through one shared platform, patterns become visible. Not disconnected spreadsheets, but proactive operational signals that protect margins.</p>
+            </div>
+
+            <div class="rst-intel-stream-flow" aria-hidden="true">
+              <span class="rst-intel-pill">POS Sales</span>
+              <span class="rst-intel-flow-arrow">+</span>
+              <span class="rst-intel-pill">Kitchen Prep</span>
+              <span class="rst-intel-flow-arrow">+</span>
+              <span class="rst-intel-pill">Recipe Portions</span>
+              <span class="rst-intel-flow-arrow">+</span>
+              <span class="rst-intel-pill">Stock Depletion</span>
+              <span class="rst-intel-flow-arrow">+</span>
+              <span class="rst-intel-pill">Waste Logs</span>
+              <span class="rst-intel-flow-arrow">+</span>
+              <span class="rst-intel-pill">Supplier POs</span>
+              <span class="rst-intel-flow-arrow">→</span>
+              <span class="rst-intel-pill rst-intel-pill--destination">Qavyo Intelligence Signals</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
     </main>
 
     <!-- ═══════════════════════════════════════════════════════════════
@@ -1380,7 +1820,7 @@
             <ul class="site-footer__links">
               <li><a href="#pos-ordering">POS &amp; Ordering</a></li>
               <li><a href="#kitchen">Kitchen &amp; Service</a></li>
-              <li><a href="#prototype-navigation" data-prototype-link>Inventory &amp; Cost</a></li>
+              <li><a href="#inventory">Inventory &amp; Cost</a></li>
               <li><a href="#prototype-navigation" data-prototype-link>Customers &amp; Loyalty</a></li>
               <li><a href="#prototype-navigation" data-prototype-link>Team &amp; Operations</a></li>
               <li><a href="#prototype-navigation" data-prototype-link>Multi-location</a></li>
