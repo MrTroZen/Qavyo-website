@@ -92,6 +92,8 @@ The solutions discovery section uses `.marketing-solution-grid` to present the f
 
 The value section (`.marketing-manage`) uses `.manage-flow` to show channel convergence (Social, SMS, Email, Website, SEO) through a single partner (Qavyo) to support "Your Business", visually reinforcing operational simplicity without claiming technical automation or backend synchronization.
 
+The final conversion section (`.marketing-final`) provides authoritative closure on a full-width dark surface (`section--dark`) with a focused headline, concise invitation, and a single high-contrast primary CTA to talk to sales.
+
 ## Responsive and accessibility requirements
 
 Every component must keep a logical reading and tab order, visible keyboard focus, sufficient colour contrast, meaningful semantics, and reasonable touch targets. Responsive behaviour must be designed, not assumed. Motion must respect reduced-motion preferences.
