@@ -785,13 +785,83 @@
   color: #8da2b3;
 }
 
-.rst-intel-footer-note {
+/* Intelligence Signals Grid */
+.rst-intel-signals {
+  margin-block-end: var(--space-6);
+}
+
+.rst-intel-signals__heading {
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: #ffffff;
+  margin-block-end: var(--space-4);
   text-align: center;
-  max-width: 44rem;
+}
+
+.rst-intel-signals__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.rst-intel-signal-card {
+  padding: var(--space-4);
+  background: var(--color-dark-raised);
+  border: 1px solid rgb(255 255 255 / 0.1);
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+}
+
+.rst-intel-signal-card__theme {
+  font-size: 0.6875rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  color: var(--color-focus);
+  margin-block-end: var(--space-2);
+}
+
+.rst-intel-signal-card__title {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.45;
+  margin-block-end: var(--space-2);
+}
+
+.rst-intel-signal-card__desc {
+  font-size: 0.75rem;
+  line-height: 1.5;
+  color: #8da2b3;
+  margin: 0;
+}
+
+/* Intelligence Trust Principle */
+.rst-intel-trust {
+  text-align: center;
+  max-width: 48rem;
   margin-inline: auto;
+  padding: var(--space-5);
+  background: rgb(0 0 0 / 0.2);
+  border: 1px solid rgb(255 255 255 / 0.1);
+  border-radius: var(--radius-md);
+}
+
+.rst-intel-trust__title {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: #ffffff;
+  margin-block-end: var(--space-2);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.rst-intel-trust__text {
   font-size: var(--text-xs);
   line-height: 1.6;
-  color: #8da2b3;
+  color: #a4b3bf;
+  margin: 0;
 }
 
 /* --------------------------------------------------------------------------
@@ -967,6 +1037,10 @@
   color: var(--color-ink);
 }
 
+.rst-pricing-clarification__action {
+  margin-block-start: var(--space-3);
+}
+
 /* --------------------------------------------------------------------------
    Section 5: 30 Days. Full Qavyo.
    -------------------------------------------------------------------------- */
@@ -1136,29 +1210,26 @@
 }
 
 /* --------------------------------------------------------------------------
-   Section 7: 24/7 Support & Getting Started
+   Section 7: 24/7 Support / Getting Started
    -------------------------------------------------------------------------- */
 .rst-support {
   background: var(--color-canvas);
   border-bottom: 1px solid var(--color-border);
 }
 
-.rst-support-grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: var(--space-6);
-}
-
-.rst-support-pillar {
+.rst-support-callout {
+  max-width: 48rem;
+  margin-inline: auto;
+  margin-block-end: var(--space-7);
   padding: var(--space-6);
   border: 1px solid var(--color-border);
-  border-radius: var(--radius-md);
+  border-radius: var(--radius-lg);
   background: var(--color-surface);
-  display: flex;
-  flex-direction: column;
+  text-align: center;
+  box-shadow: var(--shadow-sm);
 }
 
-.rst-support-pillar__badge {
+.rst-support-callout__badge {
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
@@ -1167,19 +1238,74 @@
   color: var(--color-brand);
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-block-end: var(--space-3);
+  margin-block-end: var(--space-2);
 }
 
-.rst-support-pillar__title {
-  font-size: 1.25rem;
-  font-weight: 700;
+.rst-support-callout__title {
+  font-size: clamp(1.5rem, 2.5vw, 2.25rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
   color: var(--color-ink);
   margin-block-end: var(--space-3);
 }
 
-.rst-support-pillar__desc {
-  font-size: var(--text-sm);
+.rst-support-callout__text {
+  font-size: var(--text-base);
   line-height: 1.6;
+  color: var(--color-text);
+  max-width: 38rem;
+  margin-inline: auto;
+  margin: 0;
+}
+
+.rst-getting-started {
+  margin-block-start: var(--space-6);
+}
+
+.rst-getting-started__heading {
+  font-size: var(--text-base);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--color-ink);
+  text-align: center;
+  margin-block-end: var(--space-5);
+}
+
+.rst-getting-started__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.rst-journey-step {
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+}
+
+.rst-journey-step__num {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--color-brand);
+  margin-block-end: var(--space-1);
+}
+
+.rst-journey-step__title {
+  font-size: var(--text-xs);
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: var(--color-ink);
+  margin-block-end: var(--space-2);
+}
+
+.rst-journey-step__desc {
+  font-size: 0.75rem;
+  line-height: 1.5;
   color: var(--color-muted);
   margin: 0;
 }
@@ -1209,6 +1335,12 @@
   font-size: var(--text-lg);
   line-height: 1.6;
   color: #a4b3bf;
+  margin-block-end: var(--space-4);
+}
+
+.rst-final-cta__suboffer {
+  font-size: var(--text-lg);
+  color: #ffffff;
   margin-block-end: var(--space-6);
 }
 
@@ -1285,6 +1417,14 @@
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: var(--space-3);
   }
+
+  .rst-intel-signals__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .rst-getting-started__grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
 }
 
 /* Tablet & Mobile (< 48rem / 768px) */
@@ -1314,6 +1454,10 @@
     grid-template-columns: 1fr;
   }
 
+  .rst-intel-signals__grid {
+    grid-template-columns: 1fr;
+  }
+
   .rst-intel-row {
     grid-template-columns: 1fr;
     gap: var(--space-1);
@@ -1334,7 +1478,7 @@
     grid-template-columns: 1fr;
   }
 
-  .rst-support-grid {
+  .rst-getting-started__grid {
     grid-template-columns: 1fr;
   }
 
