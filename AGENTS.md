@@ -13,7 +13,7 @@ These instructions apply to the entire repository.
 9. Work page-by-page and section-by-section. Run and inspect changes at desktop, laptop, tablet, and mobile widths before presenting them for approval.
 10. Update the relevant documentation when a reusable design pattern, component, architectural decision, or brand rule is approved.
 11. Qavyo is the parent technology brand. Its software categories are Restaurant Software, Retail Software, and Farm Software; Qavyo Intelligence is a Qavyo capability. Do not introduce separate sub-brands without explicit approval, and keep Products conceptually distinct from business Solutions.
-12. Do not build the full homepage or additional pages unless explicitly requested. The current `index.html` is a foundation verification page.
+12. Build the homepage incrementally and do not add unrequested sections or pages. The current `index.html` contains the approved global navigation and homepage hero only.
 13. Keep commits logically separable. Do not commit caches, generated screenshots, editor state, credentials, or secrets.
 
 ## Mandatory Git and GitHub workflow

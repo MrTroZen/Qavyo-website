@@ -136,7 +136,7 @@
     }
   });
 
-  header.querySelectorAll("[data-prototype-link]").forEach((link) => {
+  document.querySelectorAll("[data-prototype-link]").forEach((link) => {
     link.addEventListener("click", (event) => {
       event.preventDefault();
     });
