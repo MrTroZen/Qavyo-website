@@ -99,4 +99,4 @@ Unavailable destinations use the existing safe prototype-link behavior. Do not c
 
 ## Current repository state
 
-The project is a static prototype using semantic HTML, CSS, and small amounts of vanilla JavaScript. `index.html` currently contains the approved global navigation, homepage hero, Product Families section, Connected Restaurant Platform section, Qavyo Intelligence section, Solutions & Growth section, and 30 Days Full Qavyo conversion section. No public page routes are implemented yet.
+The project is a static prototype using semantic HTML, CSS, and small amounts of vanilla JavaScript. `index.html` currently contains the approved global navigation, homepage hero, Product Families section, Connected Restaurant Platform section, Qavyo Intelligence section, Solutions & Growth section, 30 Days Full Qavyo conversion section, and Pricing Overview section. No public page routes are implemented yet.
