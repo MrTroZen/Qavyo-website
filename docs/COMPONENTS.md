@@ -86,7 +86,7 @@ The canonical Pricing page uses `.pricing-plan-grid` for aligned plan summaries 
 
 ## Marketing Customer Journey
 
-The Marketing Solutions overview uses `.hero-journey` to present a unified customer journey around "Your Business" across Discover (Search, Website, Social), Connect (Website, Social), and Stay in Touch & Return (SMS, Email, customer relationship). This pattern uses communication-oriented illustrative UI without claiming automation, performance results, or unconfirmed service scope.
+The Marketing Solutions overview uses `.hero-journey` for the hero composition around "Your Business", and `.journey-track` (`.journey-flow`) for the horizontal continuous customer journey on desktop that transforms into a vertical progression on mobile. The stages map `01 Get found` (Website SEO), `02 Attract` (Social Media), `03 Connect` (Website), `04 Reach` (SMS + Email), and `05 Return` (Ongoing communication & Returning Customer endpoint). These patterns use communication-oriented illustrative UI without claiming automation, performance results, or unconfirmed service scope.
 
 ## Responsive and accessibility requirements
 
