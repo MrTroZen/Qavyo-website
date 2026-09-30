@@ -56,23 +56,23 @@ Unavailable routes use `data-prototype-link` and are prevented from navigating u
 
 ## Capability Overview Grid
 
-`.rst-capabilities-grid` organizes operational capabilities into 4 concise pillars (SERVE, CONTROL, GROW, MANAGE) and preserves all deep-link targets (`#pos-ordering`, `#kitchen`, `#tables`, `#inventory`, `#recipes`, `#purchasing`, `#customers`, `#loyalty`, `#online-ordering`, `#reservations`, `#website`, `#staff`, `#team`, `#payroll`, `#reporting`, `#multi-location`) with subtle active target highlighting.
+`.rst-capabilities` organizes operational capabilities into four concise groups (Serve, Control, Grow, Manage) and preserves all restaurant navigation deep links, including both the current and legacy aliases for POS and restaurant website destinations. The groups use typography and rules rather than a field of feature cards.
 
 ## Proactive Intelligence Showcase
 
-`.rst-intel-loop` and `.rst-intel-card` present the continuous operational loop (Watch → Detect → Explain → Recommend → Act → Measure) and an illustrative diagnostic case study (Observation → Reason → Prediction → Recommendation → Expected Impact → Operator Action), emphasizing human operator control.
+`.rst-intelligence-loop` and `.rst-insight` present the continuous operational loop (Watch → Detect → Explain → Recommend → Act → Measure → Learn) and one qualitative diagnostic case (Observation → Reason → Prediction → Recommendation → Expected Impact → Action). The pattern must state that an authorised operator controls any resulting change.
 
 ## Transparent Pricing & Access Flow
 
-`.rst-pricing-grid` and `.rst-plan-card` display the three confirmed software tiers (Starter £29/mo, Growth £79/mo, Business £149/mo) with separate hardware/payment notices. `.rst-access-box` details the unrestricted 30 Days Full Qavyo journey (Start → Full Qavyo → 30 Days → Choose).
+`.rst-pricing-grid` and `.rst-plan` display only the confirmed plan names and monthly prices (Starter £29, Growth £79, Business £149) unless plan inclusions are separately approved. `.rst-trial` details the 30 Days Full Qavyo journey (Start → Full Qavyo → 30 Days → Choose). Both patterns keep hardware and payment processing separate.
 
 ## Device Progression Grid
 
-`.rst-device-grid` and `.rst-device-card` illustrate device flexibility across 4 operational form factors: supported phones, supported tablets, compatible peripherals, and dedicated commercial hardware.
+`.rst-device-panel` explains the qualified hardware path: use supported phones, tablets, or compatible equipment; add dedicated restaurant hardware where needed; and confirm compatibility with Qavyo. It must not imply universal device support.
 
 ## Operational Support Showcase
 
-`.rst-support-pillar` gives prominent weight to continuous 24/7 operational support, guided onboarding setup, and rapid staff adoption.
+`.rst-support` gives clear weight to the confirmed 24/7 support offer without inventing channels, service levels, onboarding promises, or response times.
 
 ## Closing Conversion Section
 

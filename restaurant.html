@@ -163,21 +163,21 @@
             </div>
           </nav>
 
-          <div class="utility-actions" aria-label="Account and contact actions">
+          <nav class="utility-navigation" aria-label="Account and sales navigation">
             <a class="utility-link" href="#prototype-navigation" data-prototype-link>Sign In</a>
             <a class="utility-link utility-link--sales" href="#prototype-navigation" data-prototype-link>Talk to Sales</a>
             <a class="button button--primary button--header" href="#prototype-navigation" data-prototype-link>Start Free</a>
-          </div>
+          </nav>
         </div>
 
-        <button class="mobile-menu-button" type="button" aria-expanded="false" aria-controls="mobile-navigation" data-mobile-menu-trigger>
-          <span class="mobile-menu-icon" aria-hidden="true"></span>
-          <span class="sr-only">Toggle navigation</span>
+        <button class="mobile-menu-trigger" type="button" aria-expanded="false" aria-controls="mobile-navigation" data-mobile-menu-trigger>
+          <span>Menu</span>
+          <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
         </button>
       </div>
 
       <div class="mobile-navigation" id="mobile-navigation" data-mobile-menu hidden>
-        <div class="mobile-navigation__inner">
+        <nav class="mobile-navigation__inner" aria-label="Mobile navigation">
           <div class="mobile-nav-group">
             <button class="mobile-nav-trigger" type="button" aria-expanded="false" aria-controls="mobile-products" data-mobile-accordion-trigger>
               Products <span aria-hidden="true">+</span>
@@ -293,134 +293,65 @@
             </div>
           </div>
 
-          <div class="mobile-actions">
-            <a class="utility-link" href="#prototype-navigation" data-prototype-link>Sign In</a>
-            <a class="utility-link utility-link--sales" href="#prototype-navigation" data-prototype-link>Talk to Sales</a>
-            <a class="button button--primary button--full" href="#prototype-navigation" data-prototype-link>Start Free</a>
+          <div class="mobile-navigation__actions">
+            <a href="#prototype-navigation" data-prototype-link>Sign In</a>
+            <a href="#prototype-navigation" data-prototype-link>Talk to Sales</a>
+            <a class="button button--primary" href="#prototype-navigation" data-prototype-link>Start Free</a>
           </div>
-        </div>
+        </nav>
       </div>
     </header>
 
-    <main id="main-content">
-
-      <!-- ═══════════════════════════════════════════════════════════════
-           SECTION 1: HERO
-           ═══════════════════════════════════════════════════════════════ -->
+    <main id="main-content" class="restaurant-page">
       <section class="rst-hero" aria-labelledby="restaurant-hero-heading">
         <div class="container rst-hero__grid">
           <div class="rst-hero__content">
             <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Restaurant Software</p>
             <h1 id="restaurant-hero-heading">Run your whole restaurant with Qavyo.</h1>
-            <p class="rst-hero__lede">Orders, kitchen, tables, inventory, customers, staff, reporting, and Intelligence live in one connected operating system — helping operators understand what deserves attention across live service.</p>
-            
-            <div class="rst-hero__actions">
-              <a class="button button--primary button--large" href="#prototype-navigation" data-prototype-link>
-                Start 30 Days Free <span aria-hidden="true">→</span>
-              </a>
-              <a class="button button--secondary button--large" href="#pricing">
-                See Pricing
-              </a>
+            <p class="rst-hero__lede">Connect orders, kitchen service, inventory, customers, teams, reporting, and Intelligence in one operating system built around the way your restaurant works.</p>
+            <div class="rst-actions">
+              <a class="button button--primary button--large" href="#get-started">Start 30 Days Free <span aria-hidden="true">&rarr;</span></a>
+              <a class="button button--secondary button--large" href="#pricing">See Pricing</a>
             </div>
-
-            <div class="rst-hero__reassurance" aria-label="Commercial overview">
-              <span class="rst-hero__pill">From £29/month</span>
-              <span class="rst-hero__sep" aria-hidden="true">·</span>
-              <span>Full Qavyo for the first 30 days</span>
-              <span class="rst-hero__sep" aria-hidden="true">·</span>
-              <span class="rst-hero__support-badge"><span class="signal-dot" aria-hidden="true"></span>24/7 Support</span>
-            </div>
+            <ul class="rst-proof" aria-label="Commercial overview">
+              <li>From &pound;29/month</li>
+              <li>Full Qavyo for 30 days</li>
+              <li>24/7 support</li>
+            </ul>
           </div>
 
-          <!-- Hero Product UI Stage -->
-          <div class="rst-hero__stage-wrapper">
-            <div class="rst-stage" aria-label="Restaurant software interface preview">
-              <div class="rst-stage__header">
-                <span class="rst-stage__location"><span class="signal-dot" aria-hidden="true"></span>The Quarter Kitchen &amp; Bar · London</span>
-                <span class="rst-stage__tag">Illustrative product interface</span>
+          <div class="rst-console" aria-label="Illustrative Qavyo restaurant operations interface">
+            <div class="rst-console__bar">
+              <span><span class="signal-dot" aria-hidden="true"></span>Restaurant overview</span>
+              <span>Illustrative interface</span>
+            </div>
+            <div class="rst-console__body">
+              <div class="rst-console__rail" aria-hidden="true">
+                <span class="is-active">Service</span>
+                <span>Kitchen</span>
+                <span>Stock</span>
+                <span>Customers</span>
               </div>
-
-              <div class="rst-stage__canvas">
-                <!-- Top Status Bar -->
-                <div class="rst-stage__topbar">
-                  <div class="rst-stage__topbar-left">
-                    <span class="rst-stage__service-status"><span class="status-indicator status-indicator--live" aria-hidden="true"></span>Dinner Service Active</span>
-                    <span class="rst-stage__meta-item">18 Active Tables</span>
-                    <span class="rst-stage__meta-item">4 KDS Stations Synced</span>
-                  </div>
-                  <div class="rst-stage__topbar-right">
-                    <span class="rst-stage__clock">19:42:15</span>
-                  </div>
+              <div class="rst-console__workspace">
+                <div class="rst-console__status">
+                  <span>Live operation</span>
+                  <strong>Connected</strong>
                 </div>
-
-                <!-- Product Dashboard Workspace Preview -->
-                <div class="rst-stage__layout">
-                  <!-- Sidebar glimpse -->
-                  <div class="rst-stage__sidebar" aria-hidden="true">
-                    <div class="rst-stage__nav-item rst-stage__nav-item--active">Overview</div>
-                    <div class="rst-stage__nav-item">Orders &amp; POS</div>
-                    <div class="rst-stage__nav-item">Kitchen Display</div>
-                    <div class="rst-stage__nav-item">Floor &amp; Tables</div>
-                    <div class="rst-stage__nav-item">Inventory &amp; Cost</div>
-                    <div class="rst-stage__nav-item">Team &amp; Shifts</div>
-                    <div class="rst-stage__nav-item rst-stage__nav-item--intel">Intelligence <span class="badge-mini">2</span></div>
-                  </div>
-
-                  <!-- Central Dashboard Panel -->
-                  <div class="rst-stage__main">
-                    <!-- Prominent Intelligence Alert in Dashboard -->
-                    <div class="rst-stage__alert-card">
-                      <div class="rst-stage__alert-head">
-                        <span class="rst-stage__alert-tag"><span class="signal-dot" aria-hidden="true"></span>Qavyo Intelligence Brief</span>
-                        <span class="rst-stage__alert-time">Updated 3m ago</span>
-                      </div>
-                      <p class="rst-stage__alert-title">Ingredient cost shift on Prime Ribeye (+18.4%) detected from today's supplier invoice.</p>
-                      <p class="rst-stage__alert-desc">Dinner volume remains high (42 portions sold). Current margin projected to compress from 68% to 59% over 14 days without adjustment.</p>
-                      <div class="rst-stage__alert-action-row">
-                        <span class="rst-stage__recommendation-label">Recommended action: Review batch portioning or adjust plate price (+£1.50).</span>
-                        <span class="rst-stage__operator-flag">Operator approval required</span>
-                      </div>
-                    </div>
-
-                    <!-- Live Operational Streams Grid -->
-                    <div class="rst-stage__cards-grid">
-                      <!-- Active Order Card -->
-                      <div class="rst-stage__subcard">
-                        <div class="rst-stage__subcard-head">
-                          <span class="rst-stage__subcard-title">Live Orders</span>
-                          <span class="rst-stage__counter">12 Pending</span>
-                        </div>
-                        <div class="rst-stage__subcard-row">
-                          <span class="rst-stage__table-tag">Table 06</span>
-                          <span class="rst-stage__items-summary">2x Ribeye, 1x Sea Bass</span>
-                          <span class="rst-stage__status-tag rst-stage__status-tag--cooking">Kitchen (8m)</span>
-                        </div>
-                        <div class="rst-stage__subcard-row">
-                          <span class="rst-stage__table-tag">Table 12</span>
-                          <span class="rst-stage__items-summary">3x Truffle Pasta, Wine</span>
-                          <span class="rst-stage__status-tag rst-stage__status-tag--ready">Ready to Serve</span>
-                        </div>
-                      </div>
-
-                      <!-- Station & Stock Status -->
-                      <div class="rst-stage__subcard">
-                        <div class="rst-stage__subcard-head">
-                          <span class="rst-stage__subcard-title">Inventory &amp; Kitchen Pace</span>
-                          <span class="rst-stage__counter">Pacing Normal</span>
-                        </div>
-                        <div class="rst-stage__subcard-row">
-                          <span class="rst-stage__item-name">Grill Station</span>
-                          <span class="rst-stage__items-summary">Avg ticket time: 11m 40s</span>
-                          <span class="rst-stage__status-tag rst-stage__status-tag--good">Optimal</span>
-                        </div>
-                        <div class="rst-stage__subcard-row">
-                          <span class="rst-stage__item-name">Truffle Oil Batch</span>
-                          <span class="rst-stage__items-summary">Stock buffer: 3 shifts left</span>
-                          <span class="rst-stage__status-tag rst-stage__status-tag--warn">Reorder soon</span>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="rst-console__order">
+                  <span class="rst-ui-label">Order in progress</span>
+                  <strong>Table service</strong>
+                  <div class="rst-progress" aria-hidden="true"><span></span></div>
+                  <small>Order &rarr; kitchen &rarr; inventory</small>
+                </div>
+                <div class="rst-console__signals">
+                  <div><span>Kitchen</span><strong>In service</strong></div>
+                  <div><span>Inventory</span><strong>Synced</strong></div>
+                </div>
+                <div class="rst-console__insight">
+                  <span class="rst-ui-label">Qavyo Intelligence</span>
+                  <strong>Food cost is rising faster than sales.</strong>
+                  <p>Review the ingredients and menu items contributing to the change.</p>
+                  <span class="rst-review">Review recommended action</span>
                 </div>
               </div>
             </div>
@@ -428,679 +359,176 @@
         </div>
       </section>
 
-
-      <!-- ═══════════════════════════════════════════════════════════════
-           SECTION 2: ONE RESTAURANT. ONE CONNECTED SYSTEM.
-           ═══════════════════════════════════════════════════════════════ -->
       <section class="section rst-connected" id="platform-overview" aria-labelledby="connected-system-heading">
         <div class="container">
           <div class="section-intro section-intro--center">
-            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Connected Architecture</p>
+            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Connected Restaurant Operations</p>
             <h2 id="connected-system-heading">One restaurant. One connected system.</h2>
-            <p class="lede">Traditional restaurant operations are fragmented across disconnected apps for POS, kitchen, inventory, staff, and customer bookings. Qavyo connects every part of your restaurant into one live data stream.</p>
+            <p class="lede">Qavyo keeps each part of the operation connected, so information can move from the first order to the decisions that follow.</p>
           </div>
 
-          <!-- Operational Flow Diagram -->
-          <div class="rst-flow" aria-label="Operational flow connecting order to intelligence">
-            <p class="sr-only">Operational flow: Order flows to Kitchen, updates Inventory in real time, logs to Customer profile, informs Financial Reporting, and feeds Qavyo Intelligence.</p>
-            <div class="rst-flow__track">
-              <div class="rst-flow__node">
-                <span class="rst-flow__step">01</span>
-                <span class="rst-flow__title">ORDER</span>
-                <span class="rst-flow__desc">POS, QR, Online &amp; Tables</span>
-              </div>
-              <div class="rst-flow__arrow" aria-hidden="true">→</div>
+          <ol class="rst-flow" aria-label="Connected restaurant operating flow">
+            <li><span>01</span><strong>Order</strong><small>Capture demand</small></li>
+            <li><span>02</span><strong>Kitchen</strong><small>Coordinate service</small></li>
+            <li><span>03</span><strong>Inventory</strong><small>Track usage</small></li>
+            <li><span>04</span><strong>Customer</strong><small>Understand visits</small></li>
+            <li><span>05</span><strong>Reporting</strong><small>See performance</small></li>
+            <li class="rst-flow__intelligence"><span>06</span><strong>Intelligence</strong><small>Find what matters</small></li>
+          </ol>
 
-              <div class="rst-flow__node">
-                <span class="rst-flow__step">02</span>
-                <span class="rst-flow__title">KITCHEN</span>
-                <span class="rst-flow__desc">KDS pacing &amp; station routing</span>
-              </div>
-              <div class="rst-flow__arrow" aria-hidden="true">→</div>
-
-              <div class="rst-flow__node">
-                <span class="rst-flow__step">03</span>
-                <span class="rst-flow__title">INVENTORY</span>
-                <span class="rst-flow__desc">Real-time recipe depletion</span>
-              </div>
-              <div class="rst-flow__arrow" aria-hidden="true">→</div>
-
-              <div class="rst-flow__node">
-                <span class="rst-flow__step">04</span>
-                <span class="rst-flow__title">CUSTOMER</span>
-                <span class="rst-flow__desc">CRM history &amp; loyalty accrual</span>
-              </div>
-              <div class="rst-flow__arrow" aria-hidden="true">→</div>
-
-              <div class="rst-flow__node">
-                <span class="rst-flow__step">05</span>
-                <span class="rst-flow__title">REPORTING</span>
-                <span class="rst-flow__desc">Consolidated sales &amp; margin metrics</span>
-              </div>
-              <div class="rst-flow__arrow" aria-hidden="true">→</div>
-
-              <div class="rst-flow__node rst-flow__node--intel">
-                <span class="rst-flow__step">06</span>
-                <span class="rst-flow__title">INTELLIGENCE</span>
-                <span class="rst-flow__desc">Pattern detection &amp; proactive guidance</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- Compact 4-Pillar Capability Overview Grid (Preserving All Deep-Link Anchors) -->
-          <div class="rst-capabilities-grid">
-            
-            <!-- Pillar 1: SERVE -->
-            <div class="rst-capability-card">
-              <div class="rst-capability-card__header">
-                <span class="rst-capability-card__tag">SERVE</span>
-                <h3 class="rst-capability-card__title">Front of House &amp; Kitchen</h3>
-              </div>
-              <ul class="rst-capability-list">
-                <li id="pos-ordering">
-                  <strong>POS &amp; Ordering</strong>
-                  <span>Rapid order taking, split bills, modifiers, table ordering, and fast checkout.</span>
-                </li>
-                <li id="kitchen">
-                  <strong>Kitchen &amp; Service (KDS)</strong>
-                  <span>Digital station displays, order pacing, prep times, and ticket routing.</span>
-                </li>
-                <li id="tables">
-                  <strong>Tables &amp; Floor</strong>
-                  <span>Interactive floor maps, live table statuses, guest counts, and section management.</span>
-                </li>
+          <div class="rst-capabilities">
+            <article>
+              <p class="rst-kicker">Serve</p>
+              <h3>Keep service moving.</h3>
+              <ul>
+                <li id="pos"><span id="pos-ordering"></span>POS &amp; Ordering</li>
+                <li id="kitchen">Kitchen &amp; Service</li>
+                <li id="tables">Tables &amp; Floor</li>
+                <li id="online-ordering">Online Ordering</li>
+                <li id="reservations">Reservations</li>
               </ul>
-            </div>
-
-            <!-- Pillar 2: CONTROL -->
-            <div class="rst-capability-card">
-              <div class="rst-capability-card__header">
-                <span class="rst-capability-card__tag">CONTROL</span>
-                <h3 class="rst-capability-card__title">Stock, Cost &amp; Supply</h3>
-              </div>
-              <ul class="rst-capability-list">
-                <li id="inventory">
-                  <strong>Inventory &amp; Stock</strong>
-                  <span>Live ingredient tracking, low-stock warnings, unit conversions, and wastage logs.</span>
-                </li>
-                <li id="recipes">
-                  <strong>Recipes &amp; Costing</strong>
-                  <span>Sub-recipes, theoretical vs. actual cost calculations, and plate profit margins.</span>
-                </li>
-                <li id="purchasing">
-                  <strong>Purchasing &amp; Suppliers</strong>
-                  <span>Purchase orders, invoice reconciliation, price variance tracking, and expense logging.</span>
-                </li>
+            </article>
+            <article>
+              <p class="rst-kicker">Control</p>
+              <h3>Connect cost to activity.</h3>
+              <ul>
+                <li id="inventory">Inventory &amp; Stock</li>
+                <li id="recipes">Recipes &amp; Costing</li>
+                <li id="purchasing">Purchasing &amp; Suppliers</li>
+                <li id="reporting">Reporting</li>
               </ul>
-            </div>
-
-            <!-- Pillar 3: GROW -->
-            <div class="rst-capability-card">
-              <div class="rst-capability-card__header">
-                <span class="rst-capability-card__tag">GROW</span>
-                <h3 class="rst-capability-card__title">Customers &amp; Digital Revenue</h3>
-              </div>
-              <ul class="rst-capability-list">
-                <li id="customers">
-                  <strong>Customers &amp; CRM</strong>
-                  <span>Guest order histories, dietary notes, spend profiles, and visit frequency.</span>
-                </li>
-                <li id="loyalty">
-                  <strong>Loyalty &amp; Retention</strong>
-                  <span>Automated reward tiers, visit milestones, and personalized guest incentives.</span>
-                </li>
-                <li id="online-ordering">
-                  <strong>Online &amp; QR Ordering</strong>
-                  <span>Commission-free online takeout menus and contactless QR table ordering.</span>
-                </li>
-                <li id="reservations">
-                  <strong>Reservations</strong>
-                  <span>Direct table bookings, guest confirmations, and turn-time optimization.</span>
-                </li>
-                <li id="website">
-                  <strong>Restaurant Website</strong>
-                  <span>Integrated branded website synced directly to live menus and operating hours.</span>
-                </li>
+            </article>
+            <article>
+              <p class="rst-kicker">Grow</p>
+              <h3>Build stronger relationships.</h3>
+              <ul>
+                <li id="customers">Customers &amp; CRM</li>
+                <li id="loyalty">Loyalty</li>
+                <li id="restaurant-website"><span id="website"></span>Restaurant Website</li>
               </ul>
-            </div>
-
-            <!-- Pillar 4: MANAGE -->
-            <div class="rst-capability-card">
-              <div class="rst-capability-card__header">
-                <span class="rst-capability-card__tag">MANAGE</span>
-                <h3 class="rst-capability-card__title">Team, Payroll &amp; Multi-site</h3>
-              </div>
-              <ul class="rst-capability-list">
-                <li id="staff">
-                  <span id="team" class="sr-only">Team &amp; Operations anchor</span>
-                  <strong>Staff &amp; Scheduling</strong>
-                  <span>Shift rostering, role assignments, wage forecasts, and shift swaps.</span>
-                </li>
-                <li id="payroll">
-                  <strong>Attendance &amp; Payroll</strong>
-                  <span>PIN-based digital clock-in, overtime tracking, breaks, and automated payslips.</span>
-                </li>
-                <li id="reporting">
-                  <strong>Reporting &amp; Analytics</strong>
-                  <span>Sales by category, hourly velocity, food cost % trends, and staff labor metrics.</span>
-                </li>
-                <li id="multi-location">
-                  <strong>Multi-location Management</strong>
-                  <span>Central menu publishing, inventory balancing between sites, and consolidated multi-venue reporting.</span>
-                </li>
+            </article>
+            <article id="team">
+              <p class="rst-kicker">Manage</p>
+              <h3>See the wider operation.</h3>
+              <ul>
+                <li id="staff">Staff &amp; Scheduling</li>
+                <li id="payroll">Attendance &amp; Payroll</li>
+                <li id="multi-location">Multi-location</li>
               </ul>
-            </div>
-
+            </article>
           </div>
         </div>
       </section>
 
-
-      <!-- ═══════════════════════════════════════════════════════════════
-           SECTION 3: QAVYO INTELLIGENCE
-           ═══════════════════════════════════════════════════════════════ -->
       <section class="section section--dark rst-intelligence" id="intelligence" aria-labelledby="intelligence-heading">
         <div class="container">
-          <div class="section-intro section-intro--center">
-            <p class="eyebrow eyebrow--on-dark"><span class="signal-dot signal-dot--light" aria-hidden="true"></span>Qavyo Intelligence</p>
-            <h2 id="intelligence-heading" class="text-white">Know what needs your attention.</h2>
-            <p class="lede text-muted-on-dark">Traditional systems mainly record what happened. Qavyo Intelligence pays attention to connected operational information across orders, kitchen pacing, stock, and purchasing — helping operators understand what deserves attention and what they may want to do next.</p>
+          <div class="rst-intelligence__intro">
+            <div>
+              <p class="eyebrow"><span class="signal-dot signal-dot--light" aria-hidden="true"></span>Qavyo Intelligence</p>
+              <h2 id="intelligence-heading">Know what needs your attention.</h2>
+            </div>
+            <p>Qavyo Intelligence connects restaurant signals, explains why they matter, and recommends a next step. You decide whether anything changes.</p>
           </div>
 
-          <!-- The Operational Loop -->
-          <div class="rst-intel-loop" aria-label="The Qavyo Intelligence continuous loop">
-            <div class="rst-intel-loop__step">
-              <span class="rst-intel-loop__num">01</span>
-              <span class="rst-intel-loop__name">WATCH</span>
-              <span class="rst-intel-loop__detail">Continuous data ingestion from POS, kitchen, stock, and supplier invoices.</span>
-            </div>
-            <div class="rst-intel-loop__connector" aria-hidden="true">→</div>
+          <ol class="rst-intelligence-loop" aria-label="Qavyo Intelligence process">
+            <li>Watch</li><li>Detect</li><li>Explain</li><li>Recommend</li><li>Act</li><li>Measure</li><li>Learn</li>
+          </ol>
 
-            <div class="rst-intel-loop__step">
-              <span class="rst-intel-loop__num">02</span>
-              <span class="rst-intel-loop__name">DETECT</span>
-              <span class="rst-intel-loop__detail">Identifies abnormal variances in margins, pacing, wastage, or recipe costs.</span>
+          <div class="rst-insight">
+            <div class="rst-insight__headline">
+              <span class="rst-ui-label">Observation</span>
+              <h3>Food cost is rising faster than sales.</h3>
+              <p>A connected view brings the relevant sales, recipe, stock, and purchasing signals together for review.</p>
             </div>
-            <div class="rst-intel-loop__connector" aria-hidden="true">→</div>
-
-            <div class="rst-intel-loop__step">
-              <span class="rst-intel-loop__num">03</span>
-              <span class="rst-intel-loop__name">EXPLAIN</span>
-              <span class="rst-intel-loop__detail">Calculates the exact root cause behind the variance in plain, clear language.</span>
-            </div>
-            <div class="rst-intel-loop__connector" aria-hidden="true">→</div>
-
-            <div class="rst-intel-loop__step">
-              <span class="rst-intel-loop__num">04</span>
-              <span class="rst-intel-loop__name">RECOMMEND</span>
-              <span class="rst-intel-loop__detail">Formulates practical, human-actionable steps to protect margins or speed service.</span>
-            </div>
-            <div class="rst-intel-loop__connector" aria-hidden="true">→</div>
-
-            <div class="rst-intel-loop__step">
-              <span class="rst-intel-loop__num">05</span>
-              <span class="rst-intel-loop__name">ACT</span>
-              <span class="rst-intel-loop__detail">Manager approves the recommendation with a single tap. Human operator stays in full control.</span>
-            </div>
-            <div class="rst-intel-loop__connector" aria-hidden="true">→</div>
-
-            <div class="rst-intel-loop__step">
-              <span class="rst-intel-loop__num">06</span>
-              <span class="rst-intel-loop__name">MEASURE</span>
-              <span class="rst-intel-loop__detail">Tracks the verified financial or time savings impact following the change.</span>
-            </div>
+            <ol class="rst-insight__steps">
+              <li><span>Reason</span><p>Recent purchasing and ingredient usage show where the change is coming from.</p></li>
+              <li><span>Prediction</span><p>If the pattern continues, pressure on margin is likely to increase.</p></li>
+              <li><span>Recommendation</span><p>Review affected ingredients, portions, suppliers, and menu pricing.</p></li>
+              <li><span>Expected impact</span><p>Compare the available response before approving a change.</p></li>
+              <li><span>Action</span><p>An authorised operator chooses what to apply.</p></li>
+            </ol>
+            <p class="rst-human-control"><strong>Human control:</strong> Qavyo Intelligence does not change prices, orders, recipes, stock, schedules, or payroll without operator approval.</p>
           </div>
-
-          <!-- Primary Intelligence Example -->
-          <div class="rst-intel-showcase">
-            <div class="rst-intel-card">
-              <div class="rst-intel-card__top">
-                <div class="rst-intel-card__badge-row">
-                  <span class="rst-intel-badge"><span class="signal-dot" aria-hidden="true"></span>Needs Attention</span>
-                  <span class="rst-intel-category">Cost Variance &amp; Margin Protection</span>
-                </div>
-                <span class="rst-intel-verified">Operational Data Verified</span>
-              </div>
-
-              <!-- Operational Diagnostic Progression Grid -->
-              <div class="rst-intel-breakdown">
-                
-                <div class="rst-intel-row">
-                  <div class="rst-intel-row__label">
-                    <span class="rst-intel-icon" aria-hidden="true">●</span>
-                    <span>Observation</span>
-                  </div>
-                  <div class="rst-intel-row__content">
-                    <p class="rst-intel-lead-text">Food cost is rising faster than sales across dinner service for the past 5 days.</p>
-                  </div>
-                </div>
-
-                <div class="rst-intel-row">
-                  <div class="rst-intel-row__label">
-                    <span class="rst-intel-icon" aria-hidden="true">↳</span>
-                    <span>Reason</span>
-                  </div>
-                  <div class="rst-intel-row__content">
-                    <p>Recent supplier invoice recorded a +18.4% cost increase on beef tenderloin cuts. No corresponding menu price update was applied, and dinner volume remained at 48 covers/day.</p>
-                  </div>
-                </div>
-
-                <div class="rst-intel-row">
-                  <div class="rst-intel-row__label">
-                    <span class="rst-intel-icon" aria-hidden="true">↳</span>
-                    <span>Prediction</span>
-                  </div>
-                  <div class="rst-intel-row__content">
-                    <p>Overall kitchen gross profit margin will compress by 3.2% (approx. £1,420 monthly variance) over the next 14 days if portioning and menu pricing remain unchanged.</p>
-                  </div>
-                </div>
-
-                <div class="rst-intel-row">
-                  <div class="rst-intel-row__label">
-                    <span class="rst-intel-icon" aria-hidden="true">↳</span>
-                    <span>Recommendation</span>
-                  </div>
-                  <div class="rst-intel-row__content">
-                    <p><strong>Option A:</strong> Update tenderloin main course price from £28.50 to £30.00 (+£1.50).<br>
-                    <strong>Option B:</strong> Review standard recipe batch portioning from 240g to 225g and request secondary quote from backup approved butcher supplier.</p>
-                  </div>
-                </div>
-
-                <div class="rst-intel-row">
-                  <div class="rst-intel-row__label">
-                    <span class="rst-intel-icon" aria-hidden="true">↳</span>
-                    <span>Expected Impact</span>
-                  </div>
-                  <div class="rst-intel-row__content">
-                    <p class="rst-intel-highlight">Restores dish gross margin to target 68.5% and preserves £1,420 in expected monthly gross profit without diminishing guest volume.</p>
-                  </div>
-                </div>
-
-                <div class="rst-intel-row rst-intel-row--action">
-                  <div class="rst-intel-row__label">
-                    <span class="rst-intel-icon" aria-hidden="true">✓</span>
-                    <span>Operator Action</span>
-                  </div>
-                  <div class="rst-intel-row__content">
-                    <p class="rst-intel-control-note">Operator approves Option A. Updated menu pricing syncs immediately to all POS terminals and online menus. <em>Recommendations support restaurant operators. Qavyo Intelligence never modifies pricing, recipes, stock orders, staff shifts, or payroll autonomously without explicit human approval.</em></p>
-                  </div>
-                </div>
-
-              </div>
-            </div>
-          </div>
-
-          <!-- Secondary Intelligence Signals Grid -->
-          <div class="rst-intel-signals">
-            <h3 class="rst-intel-signals__heading">Operational Signals Across Live Service</h3>
-            <div class="rst-intel-signals__grid">
-              
-              <div class="rst-intel-signal-card">
-                <span class="rst-intel-signal-card__theme">INVENTORY</span>
-                <p class="rst-intel-signal-card__title">Stock movement is outside its recent pattern.</p>
-                <p class="rst-intel-signal-card__desc">Tracks abnormal kitchen ingredient depletion against live order volume to flag unticketed prep or recipe over-portioning early.</p>
-              </div>
-
-              <div class="rst-intel-signal-card">
-                <span class="rst-intel-signal-card__theme">PURCHASING</span>
-                <p class="rst-intel-signal-card__title">Ingredient cost movement deserves attention.</p>
-                <p class="rst-intel-signal-card__desc">Compares new supplier invoice lines against previous purchase orders to highlight cost variances before they erode dish margins.</p>
-              </div>
-
-              <div class="rst-intel-signal-card">
-                <span class="rst-intel-signal-card__theme">SALES</span>
-                <p class="rst-intel-signal-card__title">Lunch sales are running below their recent pattern.</p>
-                <p class="rst-intel-signal-card__desc">Identifies shifts in midday cover volume and takeout velocity, allowing managers to adjust staffing or promote targeted lunch offerings.</p>
-              </div>
-
-              <div class="rst-intel-signal-card">
-                <span class="rst-intel-signal-card__theme">MULTI-LOCATION</span>
-                <p class="rst-intel-signal-card__title">One location deserves review.</p>
-                <p class="rst-intel-signal-card__desc">Highlights unit-level variances in food cost % or ticket turn times across venues so operators can share best practices across sites.</p>
-              </div>
-
-            </div>
-          </div>
-
-          <!-- Intelligence Trust & Human Control Principle -->
-          <div class="rst-intel-trust">
-            <div class="rst-intel-trust__inner">
-              <h3 class="rst-intel-trust__title"><span class="signal-dot signal-dot--light" aria-hidden="true"></span>Built on your operational data</h3>
-              <p class="rst-intel-trust__text">Qavyo Intelligence surfaces and explains signals from connected restaurant information. All numbers derive directly from your actual sales, recipes, clock-ins, and supplier invoices — never fabricated numbers or generative conversational gimmicks. Human operators remain in complete control of every operational decision.</p>
-            </div>
-          </div>
-
         </div>
       </section>
 
-
-      <!-- ═══════════════════════════════════════════════════════════════
-           SECTION 4: CLEAR PRICING
-           ═══════════════════════════════════════════════════════════════ -->
       <section class="section rst-pricing" id="pricing" aria-labelledby="pricing-heading">
         <div class="container">
-          <span id="plans" class="sr-only">Software plans anchor</span>
+          <span id="plans" class="rst-anchor" aria-hidden="true"></span>
           <div class="section-intro section-intro--center">
-            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Transparent Software Pricing</p>
-            <h2 id="pricing-heading">Restaurant software with pricing you can understand.</h2>
-            <p class="lede">Straightforward monthly software tiers with no hidden software surprises. Hardware and payment processing are separate, so you only pay for what your venue actually needs.</p>
+            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Software Pricing</p>
+            <h2 id="pricing-heading">Choose the plan that fits your operation.</h2>
+            <p class="lede">Three monthly software plans, with hardware and payment processing priced separately.</p>
           </div>
-
-          <!-- 3-Tier Pricing Grid -->
           <div class="rst-pricing-grid">
-            
-            <!-- Plan 1: Starter (£29/month) -->
-            <div class="rst-plan-card">
-              <div class="rst-plan-card__header">
-                <span class="rst-plan-card__tier-tag">RUN</span>
-                <h3 class="rst-plan-card__name">Starter</h3>
-                <p class="rst-plan-card__desc">Core front-of-house, kitchen, and inventory software for single independent venues.</p>
-                <div class="rst-plan-card__price">
-                  <span class="rst-plan-card__currency">£</span>
-                  <span class="rst-plan-card__amount">29</span>
-                  <span class="rst-plan-card__interval">/ month</span>
-                </div>
-              </div>
-
-              <div class="rst-plan-card__body">
-                <p class="rst-plan-card__list-title">What is included:</p>
-                <ul class="rst-plan-features">
-                  <li><span class="check" aria-hidden="true">✓</span> POS &amp; Table Ordering</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Kitchen Display System (KDS)</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Restaurant Website &amp; Online Ordering</li>
-                  <li><span class="check" aria-hidden="true">✓</span> QR Table Ordering &amp; Digital Menus</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Table Reservations Management</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Customer Profiles &amp; CRM</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Live Inventory &amp; Recipe Costing</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Purchasing &amp; Supplier Orders</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Discount Codes &amp; Coupons</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Qavyo Intelligence (Essential Signals)</li>
-                  <li><span class="check" aria-hidden="true">✓</span> 24/7 Operations Support</li>
-                </ul>
-              </div>
-
-              <div class="rst-plan-card__footer">
-                <a class="button button--secondary button--full" href="#prototype-navigation" data-prototype-link>Start 30 Days Free</a>
-              </div>
-            </div>
-
-            <!-- Plan 2: Growth (£79/month) -->
-            <div class="rst-plan-card rst-plan-card--featured">
-              <div class="rst-plan-card__badge">Expanded Operations</div>
-              <div class="rst-plan-card__header">
-                <span class="rst-plan-card__tier-tag">GROW</span>
-                <h3 class="rst-plan-card__name">Growth</h3>
-                <p class="rst-plan-card__desc">Complete operations, staff scheduling, payroll, customer loyalty, and full intelligence.</p>
-                <div class="rst-plan-card__price">
-                  <span class="rst-plan-card__currency">£</span>
-                  <span class="rst-plan-card__amount">79</span>
-                  <span class="rst-plan-card__interval">/ month</span>
-                </div>
-              </div>
-
-              <div class="rst-plan-card__body">
-                <p class="rst-plan-card__list-title">Everything in Starter, plus:</p>
-                <ul class="rst-plan-features">
-                  <li><span class="check" aria-hidden="true">✓</span> Customer Loyalty &amp; Reward Programs</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Staff Management &amp; Shift Scheduling</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Time &amp; Attendance Clock-in</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Automated Payroll &amp; Digital Payslips</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Multi-station Stock Transfers</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Central Menu &amp; Modifier Management</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Deeper Financial &amp; Operational Reports</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Qavyo Intelligence (Full Operational Suite)</li>
-                  <li><span class="check" aria-hidden="true">✓</span> 24/7 Priority Operations Support</li>
-                </ul>
-              </div>
-
-              <div class="rst-plan-card__footer">
-                <a class="button button--primary button--full" href="#prototype-navigation" data-prototype-link>Start 30 Days Free</a>
-              </div>
-            </div>
-
-            <!-- Plan 3: Business (£149/month) -->
-            <div class="rst-plan-card">
-              <div class="rst-plan-card__header">
-                <span class="rst-plan-card__tier-tag">SCALE</span>
-                <h3 class="rst-plan-card__name">Business</h3>
-                <p class="rst-plan-card__desc">Multi-location restaurant groups requiring consolidated control, permissions, and API integrations.</p>
-                <div class="rst-plan-card__price">
-                  <span class="rst-plan-card__currency">£</span>
-                  <span class="rst-plan-card__amount">149</span>
-                  <span class="rst-plan-card__interval">/ month</span>
-                </div>
-              </div>
-
-              <div class="rst-plan-card__body">
-                <p class="rst-plan-card__list-title">Everything in Growth, plus:</p>
-                <ul class="rst-plan-features">
-                  <li><span class="check" aria-hidden="true">✓</span> Centralised Multi-location Operations</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Consolidated Reporting Across All Venues</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Granular Location Roles &amp; Staff Permissions</li>
-                  <li><span class="check" aria-hidden="true">✓</span> External API &amp; Custom Accounting Integrations</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Cross-location Stock Balancing &amp; Transfers</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Multi-location Qavyo Intelligence</li>
-                  <li><span class="check" aria-hidden="true">✓</span> Dedicated Onboarding &amp; 24/7 Operations Support</li>
-                </ul>
-              </div>
-
-              <div class="rst-plan-card__footer">
-                <a class="button button--secondary button--full" href="#prototype-navigation" data-prototype-link>Start 30 Days Free</a>
-              </div>
-            </div>
-
+            <article class="rst-plan"><p class="rst-kicker">Starter</p><p class="rst-price"><span>&pound;</span>29<small>/month</small></p><p>A starting point for restaurant operations.</p><a class="button button--secondary button--full" href="#get-started">Start 30 Days Free</a></article>
+            <article class="rst-plan"><p class="rst-kicker">Growth</p><p class="rst-price"><span>&pound;</span>79<small>/month</small></p><p>For restaurants with broader operational needs.</p><a class="button button--primary button--full" href="#get-started">Start 30 Days Free</a></article>
+            <article class="rst-plan"><p class="rst-kicker">Business</p><p class="rst-price"><span>&pound;</span>149<small>/month</small></p><p>For more complex and multi-location operations.</p><a class="button button--secondary button--full" href="#get-started">Start 30 Days Free</a></article>
           </div>
-
-          <!-- Pricing Clarification Note & Comparison Link -->
-          <div class="rst-pricing-clarification">
-            <p><strong>Note on hardware and payments:</strong> Software subscriptions cover all platform updates, cloud sync, and 24/7 support. Dedicated restaurant hardware terminals, printers, and merchant payment processing are separate, allowing you to use existing compatible equipment or add hardware as you grow.</p>
-            <div class="rst-pricing-clarification__action">
-              <a class="text-link" href="#prototype-navigation" data-prototype-link>Compare all plans &amp; detailed features <span aria-hidden="true">→</span></a>
-            </div>
-          </div>
+          <p class="rst-pricing-note"><strong>Software subscription only.</strong> Compatible hardware, dedicated restaurant devices, and payment processing are separate. Talk to Qavyo to confirm the right setup for your restaurant.</p>
         </div>
       </section>
 
-
-      <!-- ═══════════════════════════════════════════════════════════════
-           SECTION 5: 30 DAYS. FULL QAVYO.
-           ═══════════════════════════════════════════════════════════════ -->
-      <section class="section section--compact rst-full-access" id="full-access" aria-labelledby="full-access-heading">
-        <div class="container container--narrow">
-          <div class="rst-access-box">
-            <div class="rst-access-box__header">
-              <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Unrestricted Experience</p>
-              <h2 id="full-access-heading">30 Days. Full Qavyo.</h2>
-              <p class="lede">We do not offer a deliberately restricted or crippled starter trial. When you begin with Qavyo, your restaurant receives the full eligible software platform — including Full Qavyo Intelligence — for 30 days before choosing a permanent plan.</p>
-            </div>
-
-            <!-- 4-Stage Experience Flow -->
-            <div class="rst-access-flow">
-              <div class="rst-access-step">
-                <span class="rst-access-step__number">01</span>
-                <span class="rst-access-step__title">START</span>
-                <p class="rst-access-step__text">Activate your account and configure menus, tables, and staff profiles in minutes.</p>
-              </div>
-
-              <div class="rst-access-step__connector" aria-hidden="true">→</div>
-
-              <div class="rst-access-step">
-                <span class="rst-access-step__number">02</span>
-                <span class="rst-access-step__title">FULL QAVYO</span>
-                <p class="rst-access-step__text">Run live service with all capabilities enabled: KDS, recipes, loyalty, shifts, and Intelligence.</p>
-              </div>
-
-              <div class="rst-access-step__connector" aria-hidden="true">→</div>
-
-              <div class="rst-access-step">
-                <span class="rst-access-step__number">03</span>
-                <span class="rst-access-step__title">30 DAYS</span>
-                <p class="rst-access-step__text">Test real operational momentum across full dinner and weekend shifts with 24/7 support.</p>
-              </div>
-
-              <div class="rst-access-step__connector" aria-hidden="true">→</div>
-
-              <div class="rst-access-step">
-                <span class="rst-access-step__number">04</span>
-                <span class="rst-access-step__title">CHOOSE</span>
-                <p class="rst-access-step__text">Select the plan that matches your needs: Starter (£29), Growth (£79), or Business (£149).</p>
-              </div>
-            </div>
-
-            <div class="rst-access-box__cta">
-              <a class="button button--primary" href="#prototype-navigation" data-prototype-link>
-                Start Your 30 Days of Full Qavyo <span aria-hidden="true">→</span>
-              </a>
-            </div>
+      <section class="section section--compact rst-trial" id="full-access" aria-labelledby="full-access-heading">
+        <div class="container">
+          <div class="rst-trial__intro">
+            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Full Access Trial</p>
+            <h2 id="full-access-heading">30 Days. Full Qavyo.</h2>
+            <p>Start with the full eligible restaurant platform, including Full Qavyo Intelligence. After 30 days, choose the plan that fits your operation.</p>
           </div>
+          <ol class="rst-trial__steps">
+            <li><span>01</span><strong>Start</strong><small>Set up your restaurant</small></li>
+            <li><span>02</span><strong>Full Qavyo</strong><small>Use the eligible platform</small></li>
+            <li><span>03</span><strong>30 Days</strong><small>Run it in your operation</small></li>
+            <li><span>04</span><strong>Choose</strong><small>&pound;29, &pound;79, or &pound;149</small></li>
+          </ol>
+          <a class="button button--primary" href="#get-started">Start 30 Days Free <span aria-hidden="true">&rarr;</span></a>
         </div>
       </section>
 
-
-      <!-- ═══════════════════════════════════════════════════════════════
-           SECTION 6: WORK WHERE YOUR RESTAURANT WORKS
-           ═══════════════════════════════════════════════════════════════ -->
       <section class="section rst-hardware" id="hardware" aria-labelledby="hardware-heading">
-        <div class="container">
-          <span id="devices" class="sr-only">Hardware and devices anchor</span>
-          <div class="section-intro section-intro--center">
-            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Hardware &amp; Device Flexibility</p>
-            <h2 id="hardware-heading">Start with the devices that make sense for you.</h2>
-            <p class="lede">Software first. Hardware when you need it. You do not need to purchase expensive proprietary terminals to begin running Qavyo. Use supported phones, tablets, or existing equipment, and add dedicated restaurant hardware as your operations expand.</p>
+        <div class="container rst-split">
+          <div>
+            <span id="devices" class="rst-anchor" aria-hidden="true"></span>
+            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Hardware Flexibility</p>
+            <h2 id="hardware-heading">Work with the devices your restaurant needs.</h2>
+            <p class="lede">Run supported Qavyo experiences on compatible phones, tablets, and devices. Add dedicated restaurant hardware where the operation requires it.</p>
+            <p class="rst-qualification">Device compatibility depends on the intended use and setup. Hardware and payment services are priced separately.</p>
           </div>
-
-          <!-- 4-Device Ecosystem Grid -->
-          <div class="rst-device-grid">
-            
-            <div class="rst-device-card">
-              <div class="rst-device-card__icon" aria-hidden="true">📱</div>
-              <span class="rst-device-card__step">01 · FLEXIBLE MOBILITY</span>
-              <h3 class="rst-device-card__title">Supported Phones</h3>
-              <p class="rst-device-card__desc">Take orders directly tableside, manage guest waitlists, check live shift attendance, or monitor restaurant sales while moving across the dining room.</p>
-              <div class="rst-device-card__tag">Handheld Ordering &amp; Management</div>
-            </div>
-
-            <div class="rst-device-card">
-              <div class="rst-device-card__icon" aria-hidden="true">💻</div>
-              <span class="rst-device-card__step">02 · COUNTERTOP READY</span>
-              <h3 class="rst-device-card__title">Supported Tablets</h3>
-              <p class="rst-device-card__desc">Ideal for bar stations, host stands, table floor management, and kitchen prep stations without demanding custom installations.</p>
-              <div class="rst-device-card__tag">POS, Floor Maps &amp; KDS</div>
-            </div>
-
-            <div class="rst-device-card">
-              <div class="rst-device-card__icon" aria-hidden="true">🖨️</div>
-              <span class="rst-device-card__step">03 · EXISTING HARDWARE</span>
-              <h3 class="rst-device-card__title">Compatible Peripherals</h3>
-              <p class="rst-device-card__desc">Connect standard thermal receipt printers, network kitchen ticket printers, cash drawers, and barcode scanners using standard local networking.</p>
-              <div class="rst-device-card__tag">Standard Network Equipment</div>
-            </div>
-
-            <div class="rst-device-card">
-              <div class="rst-device-card__icon" aria-hidden="true">🖥️</div>
-              <span class="rst-device-card__step">04 · PURPOSE-BUILT</span>
-              <h3 class="rst-device-card__title">Dedicated Hardware</h3>
-              <p class="rst-device-card__desc">When service demands heavy-duty durability, deploy commercial splash-proof touchscreen terminals, customer displays, and high-temp kitchen displays.</p>
-              <div class="rst-device-card__tag">Commercial Terminals &amp; Displays</div>
-            </div>
-
-          </div>
-
-          <div class="rst-hardware-note">
-            <p>Hardware is sold separately. Software functionality does not require purchasing proprietary terminals from Qavyo.</p>
+          <div class="rst-device-panel" aria-label="Supported device approach">
+            <div><span>01</span><strong>Use supported devices</strong><small>Phones, tablets, and compatible equipment</small></div>
+            <div><span>02</span><strong>Add dedicated hardware</strong><small>Where service and kitchen workflows need it</small></div>
+            <div><span>03</span><strong>Confirm your setup</strong><small>Review compatibility with Qavyo</small></div>
           </div>
         </div>
       </section>
 
-
-      <!-- ═══════════════════════════════════════════════════════════════
-           SECTION 7: 24/7 SUPPORT / GETTING STARTED
-           ═══════════════════════════════════════════════════════════════ -->
       <section class="section section--bordered rst-support" id="support" aria-labelledby="support-heading">
-        <div class="container">
-          <span id="switching" class="sr-only">Switching and support anchor</span>
-          <div class="section-intro section-intro--center">
-            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Always Operational</p>
-            <h2 id="support-heading">You're not left figuring it out alone.</h2>
-            <p class="lede">Restaurants operate outside normal office hours — late evenings, busy weekends, and holidays. That is why Qavyo support is available around the clock whenever your doors are open.</p>
+        <div class="container rst-split">
+          <div>
+            <span id="getting-started" class="rst-anchor" aria-hidden="true"></span>
+            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Getting Started</p>
+            <h2 id="support-heading">You are not left figuring it out alone.</h2>
           </div>
-
-          <!-- Prominent 24/7 Support Callout -->
-          <div class="rst-support-callout">
-            <div class="rst-support-callout__inner">
-              <span class="rst-support-callout__badge"><span class="signal-dot" aria-hidden="true"></span>Around the Clock</span>
-              <h3 class="rst-support-callout__title">24/7 Qavyo Support</h3>
-              <p class="rst-support-callout__text">Whether you need help routing an order during a packed Friday dinner rush or reconciling end-of-day register totals, our support team is available 24 hours a day, 7 days a week.</p>
-            </div>
-          </div>
-
-          <!-- 4-Step Getting Started Progression -->
-          <div class="rst-getting-started">
-            <h3 class="rst-getting-started__heading">Getting Started with Qavyo</h3>
-            <div class="rst-getting-started__grid">
-              
-              <div class="rst-journey-step">
-                <span class="rst-journey-step__num">01</span>
-                <h4 class="rst-journey-step__title">UNDERSTAND YOUR SETUP</h4>
-                <p class="rst-journey-step__desc">Review your current floor layout, menu categories, kitchen prep stations, and inventory workflows.</p>
-              </div>
-
-              <div class="rst-journey-step">
-                <span class="rst-journey-step__num">02</span>
-                <h4 class="rst-journey-step__title">GET QAVYO READY</h4>
-                <p class="rst-journey-step__desc">Configure your digital menus, modifiers, table floor plans, and KDS ticket routing rules.</p>
-              </div>
-
-              <div class="rst-journey-step">
-                <span class="rst-journey-step__num">03</span>
-                <h4 class="rst-journey-step__title">GET YOUR TEAM READY</h4>
-                <p class="rst-journey-step__desc">Staff learn high-contrast order entry, tableside ordering, and kitchen display controls in minutes.</p>
-              </div>
-
-              <div class="rst-journey-step">
-                <span class="rst-journey-step__num">04</span>
-                <h4 class="rst-journey-step__title">KEEP SUPPORT CLOSE</h4>
-                <p class="rst-journey-step__desc">Run service with confidence knowing 24/7 assistance is always available if questions arise.</p>
-              </div>
-
-            </div>
+          <div class="rst-support__copy">
+            <p class="lede">Qavyo provides 24/7 support as you set up and run your restaurant software.</p>
+            <a class="text-link" href="#get-started">Talk to Qavyo <span aria-hidden="true">&rarr;</span></a>
           </div>
         </div>
       </section>
 
-
-      <!-- ═══════════════════════════════════════════════════════════════
-           SECTION 8: FINAL CTA
-           ═══════════════════════════════════════════════════════════════ -->
       <section class="section section--dark rst-final-cta" id="get-started" aria-labelledby="final-cta-heading">
-        <div class="container container--narrow">
-          <div class="rst-final-cta__inner">
-            <p class="eyebrow eyebrow--on-dark"><span class="signal-dot signal-dot--light" aria-hidden="true"></span>Get Started</p>
-            <h2 id="final-cta-heading" class="rst-final-cta__headline">Run your restaurant with Qavyo.</h2>
-            <p class="rst-final-cta__lead">Connected restaurant software. Qavyo Intelligence. Simple pricing. Flexible setup. 24/7 support.</p>
-            
-            <p class="rst-final-cta__suboffer"><strong>30 Days. Full Qavyo.</strong></p>
-
-            <div class="rst-final-cta__actions">
-              <a class="button button--primary button--large" href="#prototype-navigation" data-prototype-link>
-                Start 30 Days Free <span aria-hidden="true">→</span>
-              </a>
-              <a class="button button--secondary-dark button--large" href="#prototype-navigation" data-prototype-link>
-                Talk to Sales
-              </a>
-            </div>
-
-            <div class="rst-final-cta__meta">
-              <a class="text-link text-link--on-dark" href="#pricing">View software pricing <span aria-hidden="true">→</span></a>
-              <span class="rst-final-cta__sep" aria-hidden="true">·</span>
-              <span>Full Qavyo access for 30 days</span>
-              <span class="rst-final-cta__sep" aria-hidden="true">·</span>
-              <span>24/7 operations support</span>
-            </div>
+        <div class="container rst-final-cta__inner">
+          <p class="eyebrow"><span class="signal-dot signal-dot--light" aria-hidden="true"></span>Qavyo Restaurant Software</p>
+          <h2 id="final-cta-heading">Bring your restaurant operation together.</h2>
+          <p>Start with Full Qavyo for 30 days, or talk with the team about software, devices, and the right setup.</p>
+          <div class="rst-actions rst-actions--center">
+            <a class="button button--primary button--large" href="#prototype-navigation" data-prototype-link>Start 30 Days Free</a>
+            <a class="button button--secondary button--large" href="#prototype-navigation" data-prototype-link>Talk to Sales</a>
           </div>
+          <a class="text-link text-link--on-dark" href="#pricing">View software pricing <span aria-hidden="true">&rarr;</span></a>
         </div>
       </section>
-
     </main>
 
     <!-- ═══════════════════════════════════════════════════════════════

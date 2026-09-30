@@ -1,9 +1,6 @@
 (() => {
   "use strict";
 
-  // --------------------------------------------------------------------------
-  // Anchor Target Highlighting for Restaurant Capabilities
-  // --------------------------------------------------------------------------
   const highlightTarget = () => {
     const hash = window.location.hash;
     if (!hash) {
@@ -12,10 +9,11 @@
 
     try {
       const target = document.querySelector(hash);
-      if (target && target.tagName === "LI") {
-        target.classList.add("rst-capability-highlight");
+      const capability = target?.closest("li[id], article[id]");
+      if (capability) {
+        capability.classList.add("rst-capability-highlight");
         setTimeout(() => {
-          target.classList.remove("rst-capability-highlight");
+          capability.classList.remove("rst-capability-highlight");
         }, 2400);
       }
     } catch {
