@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/pages/restaurant.css">
     <script src="js/main.js" defer></script>
+    <script src="js/pages/restaurant.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -1772,6 +1773,481 @@
               <span class="rst-intel-pill">Supplier POs</span>
               <span class="rst-intel-flow-arrow">→</span>
               <span class="rst-intel-pill rst-intel-pill--destination">Qavyo Intelligence Signals</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════════════════════════
+           Section 7: Qavyo Intelligence (#intelligence)
+           ═══════════════════════════════════════════════════════════════ -->
+      <section class="section rst-intel-section" id="intelligence" aria-labelledby="rst-intel-heading">
+        <div class="container rst-intel-inner">
+
+          <!-- Section Header with Operational Bridge -->
+          <header class="rst-intel-header">
+            <div class="rst-intel-bridge-tag">
+              <span class="signal-dot signal-dot--live" aria-hidden="true"></span>
+              <span>Connected operations create better signals</span>
+            </div>
+            <p class="eyebrow"><span class="signal-dot signal-dot--live" aria-hidden="true"></span>Qavyo Intelligence</p>
+            <h2 id="rst-intel-heading">Know what needs your attention.</h2>
+            <p class="lede">Most restaurant software records what happened. Qavyo Intelligence is designed to pay attention to what is happening across the operation, help explain why it matters, and surface what may deserve action.</p>
+          </header>
+
+          <!-- -----------------------------------------------------------------
+               Core Operational Intelligence Loop
+               WATCH -> DETECT -> EXPLAIN -> RECOMMEND -> ACT -> MEASURE -> LEARN
+               ----------------------------------------------------------------- -->
+          <div class="rst-intel-loop-wrap" role="region" aria-label="Core Intelligence Loop">
+            <div class="rst-intel-loop-heading">
+              <span class="signal-dot signal-dot--live" aria-hidden="true"></span>
+              <span>Core Intelligence Loop · From Live Signals to Better Context</span>
+            </div>
+
+            <div class="rst-intel-loop-grid">
+              <div class="rst-intel-loop-step">
+                <span class="rst-intel-loop-step__num">01 · Watch</span>
+                <strong class="rst-intel-loop-step__title">Ingest Signals</strong>
+                <p class="rst-intel-loop-step__desc">Orders, kitchen prep times, inventory levels, waste logs, and supplier invoices.</p>
+              </div>
+
+              <div class="rst-intel-loop-step">
+                <span class="rst-intel-loop-step__num">02 · Detect</span>
+                <strong class="rst-intel-loop-step__title">Flag Variances</strong>
+                <p class="rst-intel-loop-step__desc">Anomalies, rising ingredient costs, low-par thresholds, and margin shifts.</p>
+              </div>
+
+              <div class="rst-intel-loop-step">
+                <span class="rst-intel-loop-step__num">03 · Explain</span>
+                <strong class="rst-intel-loop-step__title">Surface Context</strong>
+                <p class="rst-intel-loop-step__desc">Correlates why it is happening — supplier rate shifts, sales mix, or prep trim.</p>
+              </div>
+
+              <div class="rst-intel-loop-step">
+                <span class="rst-intel-loop-step__num">04 · Recommend</span>
+                <strong class="rst-intel-loop-step__title">Provide Options</strong>
+                <p class="rst-intel-loop-step__desc">Grounded next steps for the operator to evaluate without guesswork.</p>
+              </div>
+
+              <div class="rst-intel-loop-step">
+                <span class="rst-intel-loop-step__num">05 · Act</span>
+                <strong class="rst-intel-loop-step__title">Human Decides</strong>
+                <p class="rst-intel-loop-step__desc">Manager approves recipe review, vendor inquiry, or station adjustments.</p>
+              </div>
+
+              <div class="rst-intel-loop-step">
+                <span class="rst-intel-loop-step__num">06 · Measure</span>
+                <strong class="rst-intel-loop-step__title">Track Outcomes</strong>
+                <p class="rst-intel-loop-step__desc">Monitors margin recovery, portion consistency, and invoice compliance.</p>
+              </div>
+
+              <div class="rst-intel-loop-step">
+                <span class="rst-intel-loop-step__num">07 · Learn</span>
+                <strong class="rst-intel-loop-step__title">Refine Models</strong>
+                <p class="rst-intel-loop-step__desc">Builds sharper operational baselines for subsequent shifts and seasons.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- -----------------------------------------------------------------
+               Primary Intelligence Experience: "Needs Attention" Operational UI
+               ----------------------------------------------------------------- -->
+          <div class="rst-intel-showcase" role="img" aria-label="Illustrative Qavyo Intelligence interface showing a proactive operational signal: Food cost is rising faster than sales.">
+            <!-- Showcase Header Bar -->
+            <div class="rst-intel-showcase__head" aria-hidden="true">
+              <div class="rst-intel-signal-id">
+                <span class="rst-intel-badge--attention">
+                  <span class="signal-dot signal-dot--warning"></span>Needs Attention
+                </span>
+                <span style="font-family: var(--font-mono); color: #c4d4e0;">Signal #SIG-8492</span>
+              </div>
+              <div class="rst-intel-showcase__meta">
+                <span>Domain: Dinner Margins</span>
+                <span>·</span>
+                <span>Priority: Elevated</span>
+                <span>·</span>
+                <span>Detected: Today, 11:45 AM</span>
+              </div>
+            </div>
+
+            <!-- Signal Headline & Context -->
+            <h3 class="rst-intel-showcase__headline">Food cost is rising faster than sales across central dinner service.</h3>
+            <p class="rst-intel-showcase__subhead" aria-hidden="true">Proactive signal detected from correlated POS item sales and recent supplier invoice reconciliation.</p>
+
+            <!-- Structured Intelligence Anatomy Grid -->
+            <div class="rst-intel-anatomy-grid" aria-hidden="true">
+              <!-- Observation -->
+              <div class="rst-intel-anatomy-card">
+                <span class="rst-intel-anatomy-label">01 · Observation</span>
+                <p>Over the past 14 days, total food cost has trended upward relative to net food revenue, specifically during weekday evening dinner covers.</p>
+              </div>
+
+              <!-- Possible Reason -->
+              <div class="rst-intel-anatomy-card">
+                <span class="rst-intel-anatomy-label">02 · Possible Reason</span>
+                <p>Several high-volume ingredients have increased in unit purchase cost across recent deliveries (principally Chicken Breast +£0.40/kg and Pure Cooking Oil +£0.30/L).</p>
+              </div>
+
+              <!-- Prediction -->
+              <div class="rst-intel-anatomy-card">
+                <span class="rst-intel-anatomy-label">03 · Prediction</span>
+                <p>If current purchasing prices continue without recipe adjustment or vendor review, dinner plate margins will face ongoing compression.</p>
+              </div>
+
+              <!-- Recommendation -->
+              <div class="rst-intel-anatomy-card">
+                <span class="rst-intel-anatomy-label">04 · Recommendation</span>
+                <p>Review affected recipes (Chicken Burger, Chicken Wrap) and verify recent supplier invoices against agreed contract pricing.</p>
+              </div>
+
+              <!-- Expected Impact -->
+              <div class="rst-intel-anatomy-card">
+                <span class="rst-intel-anatomy-label">05 · Expected Impact</span>
+                <p>Immediate visibility into which menu items contribute most to margin variance, providing clear grounds for supplier price inquiries.</p>
+              </div>
+
+              <!-- Operator Action -->
+              <div class="rst-intel-anatomy-card rst-intel-anatomy-card--action">
+                <span class="rst-intel-anatomy-label" style="color: #76a7ff;">06 · Suggested Action</span>
+                <p style="color: #ffffff; font-weight: 600;">Open dish costing breakdown for 3 affected recipes and cross-check supplier delivery invoice #FF-9021.</p>
+              </div>
+            </div>
+
+            <!-- Showcase Action Footer -->
+            <div class="rst-intel-showcase__footer">
+              <div class="rst-intel-showcase__actions">
+                <button type="button" class="button button--primary" style="font-size: var(--text-xs); padding: 0.5rem 1.25rem;">
+                  Review Affected Recipes (3 Items)
+                </button>
+                <a href="#prototype-navigation" class="nav-menu__featured-link" style="color: #76a7ff; font-size: var(--text-xs);" data-prototype-link>
+                  Inspect Supplier Deliveries <span aria-hidden="true">→</span>
+                </a>
+              </div>
+              <div class="rst-intel-showcase__disclaimer">
+                <span class="signal-dot signal-dot--light" aria-hidden="true"></span>
+                <span>Action requires manager confirmation. Qavyo never modifies pricing or recipes autonomously.</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- -----------------------------------------------------------------
+               Operational Signal Themes Showcase (Interactive Tabbed Explorer)
+               ----------------------------------------------------------------- -->
+          <div class="rst-intel-themes" role="region" aria-label="Operational Signal Themes">
+            <div class="rst-intel-themes__head">
+              <div>
+                <p class="eyebrow" style="color: #76a7ff; margin-block-end: var(--space-1);"><span class="signal-dot signal-dot--live" aria-hidden="true"></span>Operational Themes</p>
+                <h3>Signals that protect your daily operation.</h3>
+              </div>
+              <p style="color: #9cb1c2; font-size: var(--text-xs); max-width: 26rem; margin: 0;">
+                Qavyo Intelligence continuously monitors distinct operational areas without requiring complex dashboard queries.
+              </p>
+            </div>
+
+            <!-- Tab Navigation Bar -->
+            <div class="rst-intel-tabs" role="tablist" aria-label="Intelligence Operational Themes" data-intel-tablist>
+              <button type="button" class="rst-intel-tab-btn" role="tab" aria-selected="true" aria-controls="panel-margins" id="tab-margins">
+                Margins &amp; Cost
+              </button>
+              <button type="button" class="rst-intel-tab-btn" role="tab" aria-selected="false" aria-controls="panel-inventory" id="tab-inventory" tabindex="-1">
+                Inventory &amp; Waste
+              </button>
+              <button type="button" class="rst-intel-tab-btn" role="tab" aria-selected="false" aria-controls="panel-purchasing" id="tab-purchasing" tabindex="-1">
+                Purchasing &amp; Suppliers
+              </button>
+              <button type="button" class="rst-intel-tab-btn" role="tab" aria-selected="false" aria-controls="panel-sales" id="tab-sales" tabindex="-1">
+                Sales &amp; Demand
+              </button>
+              <button type="button" class="rst-intel-tab-btn" role="tab" aria-selected="false" aria-controls="panel-forecasting" id="tab-forecasting" tabindex="-1">
+                Forecasting Context
+              </button>
+            </div>
+
+            <!-- Tab Panel 1: Margins & Cost -->
+            <div class="rst-intel-tab-panel" id="panel-margins" role="tabpanel" aria-labelledby="tab-margins" data-intel-panel>
+              <div class="rst-intel-panel-grid">
+                <div class="rst-intel-panel-content">
+                  <h4>Ingredient price increases directly linked to affected menu dishes</h4>
+                  <p>When supplier delivery invoices record a price increase, Qavyo immediately maps the change across every recipe that utilizes the ingredient, highlighting where margin pressure will occur.</p>
+                  <div class="rst-intel-panel-signals">
+                    <div class="rst-intel-signal-card">
+                      <div>
+                        <strong>Chicken Breast Invoiced at £7.90/kg</strong>
+                        <div style="font-size: 0.6875rem; color: #9cb1c2;">Contract par: £7.50/kg · Fresh Foods Ltd Delivery #4829</div>
+                      </div>
+                      <span class="rst-stock-badge rst-stock-badge--warning">Variance Alert</span>
+                    </div>
+                    <div class="rst-intel-signal-card">
+                      <div>
+                        <strong>3 Affected Menu Items Identified</strong>
+                        <div style="font-size: 0.6875rem; color: #9cb1c2;">Chicken Burger, Chicken Caesar Wrap, Grilled Lemon Chicken</div>
+                      </div>
+                      <span style="font-family: var(--font-mono); color: #76a7ff; font-weight: 700;">Action Ready</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rst-intel-anatomy-card" style="margin: 0; background: rgba(0, 0, 0, 0.25);">
+                  <span class="rst-intel-anatomy-label">Contextual Recommendation</span>
+                  <p>Review Chicken Burger portioning (180g) or request supplier credit for the £0.40/kg divergence from agreed catalogue pricing.</p>
+                  <div style="margin-top: var(--space-3); padding-top: var(--space-2); border-top: 1px solid rgba(255, 255, 255, 0.08); font-size: 0.6875rem; color: #76a7ff;">
+                    Grounding: 42 Chicken Burgers sold in last 48 hours.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab Panel 2: Inventory & Waste -->
+            <div class="rst-intel-tab-panel" id="panel-inventory" role="tabpanel" aria-labelledby="tab-inventory" data-intel-panel hidden>
+              <div class="rst-intel-panel-grid">
+                <div class="rst-intel-panel-content">
+                  <h4>Unusual depletion rates and kitchen prep variances</h4>
+                  <p>By comparing POS sales against expected ingredient yields and station waste logs, Qavyo surfaces when an item is depleting faster than historical sales justify.</p>
+                  <div class="rst-intel-panel-signals">
+                    <div class="rst-intel-signal-card">
+                      <div>
+                        <strong>Fresh Tomatoes Depleting Faster Than Typical Pace</strong>
+                        <div style="font-size: 0.6875rem; color: #9cb1c2;">Stock at 1.8 kg · Expected: 3.4 kg based on rung sales</div>
+                      </div>
+                      <span class="rst-stock-badge rst-stock-badge--warning">Par Warning</span>
+                    </div>
+                    <div class="rst-intel-signal-card">
+                      <div>
+                        <strong>Correlated Prep Station Log</strong>
+                        <div style="font-size: 0.6875rem; color: #9cb1c2;">0.8 kg prep trim recorded by prep cook at cold larder</div>
+                      </div>
+                      <span style="font-family: var(--font-mono); color: #c4d4e0;">Trim Variance</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rst-intel-anatomy-card" style="margin: 0; background: rgba(0, 0, 0, 0.25);">
+                  <span class="rst-intel-anatomy-label">Contextual Recommendation</span>
+                  <p>Possible reason: Prep trim loss or portioning variance at cold station. Worth reviewing prep technique before afternoon service.</p>
+                  <div style="margin-top: var(--space-3); padding-top: var(--space-2); border-top: 1px solid rgba(255, 255, 255, 0.08); font-size: 0.6875rem; color: #76a7ff;">
+                    Grounding: Yield efficiency dropped 11% below standard recipe bill.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab Panel 3: Purchasing & Suppliers -->
+            <div class="rst-intel-tab-panel" id="panel-purchasing" role="tabpanel" aria-labelledby="tab-purchasing" data-intel-panel hidden>
+              <div class="rst-intel-panel-grid">
+                <div class="rst-intel-panel-content">
+                  <h4>Invoice discrepancies and supplier fulfillment reliability</h4>
+                  <p>Qavyo checks goods receipts and invoice line items against contracted rates and par replenishment rules, ensuring vendor price crept is flagged automatically.</p>
+                  <div class="rst-intel-panel-signals">
+                    <div class="rst-intel-signal-card">
+                      <div>
+                        <strong>3 Key Ingredients Show Invoiced Price Shifts</strong>
+                        <div style="font-size: 0.6875rem; color: #9cb1c2;">Cooking Oil (+£0.30/L), Cheddar (+£0.04/slice), Lettuce (+£0.15/kg)</div>
+                      </div>
+                      <span class="rst-stock-badge rst-stock-badge--warning">Price Shift</span>
+                    </div>
+                    <div class="rst-intel-signal-card">
+                      <div>
+                        <strong>Draft Purchase Order Auto-Populated</strong>
+                        <div style="font-size: 0.6875rem; color: #9cb1c2;">Draft PO #PO-2048 prepared with supplier Fresh Foods Ltd</div>
+                      </div>
+                      <span style="font-family: var(--font-mono); color: #76a7ff; font-weight: 700;">Draft Ready</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rst-intel-anatomy-card" style="margin: 0; background: rgba(0, 0, 0, 0.25);">
+                  <span class="rst-intel-anatomy-label">Contextual Recommendation</span>
+                  <p>Generate supplier price inquiry for invoice divergences prior to approving electronic payment batch.</p>
+                  <div style="margin-top: var(--space-3); padding-top: var(--space-2); border-top: 1px solid rgba(255, 255, 255, 0.08); font-size: 0.6875rem; color: #76a7ff;">
+                    Grounding: Net variance of £18.40 across weekly delivery.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab Panel 4: Sales & Demand -->
+            <div class="rst-intel-tab-panel" id="panel-sales" role="tabpanel" aria-labelledby="tab-sales" data-intel-panel hidden>
+              <div class="rst-intel-panel-grid">
+                <div class="rst-intel-panel-content">
+                  <h4>Meal-period pacing and menu category shifts</h4>
+                  <p>Rather than drowning in static daily totals, Qavyo compares current cover velocity and sales mix against historical service patterns to identify real-time demand variances.</p>
+                  <div class="rst-intel-panel-signals">
+                    <div class="rst-intel-signal-card">
+                      <div>
+                        <strong>Lunch Covers Running Below Recent Tuesday Pattern</strong>
+                        <div style="font-size: 0.6875rem; color: #9cb1c2;">Dine-in floor seated at 62% of standard Tuesday lunchtime</div>
+                      </div>
+                      <span class="rst-stock-badge" style="background: rgba(255, 255, 255, 0.1); color: #c4d4e0;">Pacing Shift</span>
+                    </div>
+                    <div class="rst-intel-signal-card">
+                      <div>
+                        <strong>Counter Takeaway Volume Unchanged</strong>
+                        <div style="font-size: 0.6875rem; color: #9cb1c2;">Express sandwich and coffee velocity performing at normal par</div>
+                      </div>
+                      <span style="font-family: var(--font-mono); color: #2e7d5b; font-weight: 700;">Stable</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rst-intel-anatomy-card" style="margin: 0; background: rgba(0, 0, 0, 0.25);">
+                  <span class="rst-intel-anatomy-label">Contextual Recommendation</span>
+                  <p>Consider reallocating one floor runner to afternoon event prep to optimize front-of-house labor efficiency.</p>
+                  <div style="margin-top: var(--space-3); padding-top: var(--space-2); border-top: 1px solid rgba(255, 255, 255, 0.08); font-size: 0.6875rem; color: #76a7ff;">
+                    Grounding: Based on live table occupancy recorded on floor view.
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Tab Panel 5: Forecasting Context -->
+            <div class="rst-intel-tab-panel" id="panel-forecasting" role="tabpanel" aria-labelledby="tab-forecasting" data-intel-panel hidden>
+              <div class="rst-intel-panel-grid">
+                <div class="rst-intel-panel-content">
+                  <h4>Forward-looking operational context for upcoming shifts</h4>
+                  <p>Forecasting in Qavyo is operational: connecting upcoming reservation covers, historical day-of-week trends, and current inventory to help prep teams anticipate volume without over-prepping.</p>
+                  <div class="rst-intel-panel-signals">
+                    <div class="rst-intel-signal-card">
+                      <div>
+                        <strong>Tomorrow Evening May Require Higher Prep Levels</strong>
+                        <div style="font-size: 0.6875rem; color: #9cb1c2;">48 advance covers booked vs typical 32 for Wednesday dinner</div>
+                      </div>
+                      <span style="font-family: var(--font-mono); color: #76a7ff; font-weight: 700;">Prep Alert</span>
+                    </div>
+                    <div class="rst-intel-signal-card">
+                      <div>
+                        <strong>Dry Storage &amp; Poultry Pars Checked</strong>
+                        <div style="font-size: 0.6875rem; color: #9cb1c2;">Sufficient poultry in walk-in; bun delivery scheduled 08:30 AM</div>
+                      </div>
+                      <span style="font-family: var(--font-mono); color: #2e7d5b; font-weight: 700;">Covered</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="rst-intel-anatomy-card" style="margin: 0; background: rgba(0, 0, 0, 0.25);">
+                  <span class="rst-intel-anatomy-label">Contextual Recommendation</span>
+                  <p>Increase morning prep sheet for sauce and portioned chicken breasts by 20% to avoid mid-service ticket hold-ups.</p>
+                  <div style="margin-top: var(--space-3); padding-top: var(--space-2); border-top: 1px solid rgba(255, 255, 255, 0.08); font-size: 0.6875rem; color: #76a7ff;">
+                    Grounding: Advance bookings + historical Wednesday walk-in ratio.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- -----------------------------------------------------------------
+               Multi-Location Intelligence Spotlight
+               ----------------------------------------------------------------- -->
+          <div class="rst-intel-multiloc" role="region" aria-label="Multi-Location Intelligence">
+            <div class="rst-intel-multiloc-grid">
+              <div class="rst-intel-multiloc-content">
+                <p class="eyebrow" style="color: #76a7ff; margin-block-end: var(--space-1);"><span class="signal-dot signal-dot--live" aria-hidden="true"></span>Multi-Location Operation</p>
+                <h3>Focus attention where it counts.</h3>
+                <p>When operating multiple restaurants, managers cannot spend hours opening 10 separate dashboard tabs and hunting for discrepancies. Qavyo Intelligence monitors operational signals across all stores simultaneously, pointing management straight to the location that requires review.</p>
+                <div style="font-size: 0.6875rem; color: #8fa5b5; font-family: var(--font-mono);">
+                  Illustrative Multi-Unit Overview · Synchronized Live
+                </div>
+              </div>
+
+              <div class="rst-intel-multiloc-list" aria-hidden="true">
+                <!-- Location 1: Soho (Normal) -->
+                <div class="rst-intel-loc-card">
+                  <div>
+                    <span class="rst-intel-loc-card__name">
+                      <span class="signal-dot signal-dot--live"></span>Soho Location
+                    </span>
+                    <span class="rst-intel-loc-card__note">Prep pace 11m · Food cost aligned with par</span>
+                  </div>
+                  <span class="rst-stock-badge rst-stock-badge--normal">Normal</span>
+                </div>
+
+                <!-- Location 2: Camden (Needs Attention) -->
+                <div class="rst-intel-loc-card rst-intel-loc-card--attention">
+                  <div>
+                    <span class="rst-intel-loc-card__name" style="color: #e5a43b;">
+                      <span class="signal-dot signal-dot--warning"></span>Camden Location
+                    </span>
+                    <span class="rst-intel-loc-card__note">Food cost rising faster than sales · Chicken &amp; Oil variance</span>
+                  </div>
+                  <span class="rst-stock-badge rst-stock-badge--warning">Needs Attention</span>
+                </div>
+
+                <!-- Location 3: Shoreditch (Normal) -->
+                <div class="rst-intel-loc-card">
+                  <div>
+                    <span class="rst-intel-loc-card__name">
+                      <span class="signal-dot signal-dot--live"></span>Shoreditch Location
+                    </span>
+                    <span class="rst-intel-loc-card__note">Prep pace 12m · Inventory counts verified</span>
+                  </div>
+                  <span class="rst-stock-badge rst-stock-badge--normal">Normal</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- -----------------------------------------------------------------
+               Operational Paradigm Shift: From Dashboard to Attention
+               ----------------------------------------------------------------- -->
+          <div class="rst-intel-paradigm" role="region" aria-label="From Dashboards to Attention Comparison">
+            <div class="rst-intel-paradigm-grid">
+              <!-- Traditional Way -->
+              <div class="rst-intel-paradigm-card rst-intel-paradigm-card--old">
+                <h4>Traditional Reporting Workflow</h4>
+                <div class="rst-intel-workflow-steps">
+                  <div class="rst-intel-workflow-step"><span>01</span> Open disconnected reporting dashboard</div>
+                  <div class="rst-intel-workflow-step"><span>02</span> Filter date ranges and export CSV spreadsheets</div>
+                  <div class="rst-intel-workflow-step"><span>03</span> Spend hours hunting for line-item variances</div>
+                  <div class="rst-intel-workflow-step"><span>04</span> Stumble upon margin loss days after it occurred</div>
+                  <div class="rst-intel-workflow-step"><span>05</span> Guess at the root operational cause</div>
+                </div>
+              </div>
+
+              <!-- Qavyo Intelligence Way -->
+              <div class="rst-intel-paradigm-card rst-intel-paradigm-card--new">
+                <h4>Qavyo Intelligence Workflow</h4>
+                <div class="rst-intel-workflow-steps">
+                  <div class="rst-intel-workflow-step" style="background: rgb(47 107 219 / 0.25); color: #ffffff;"><span>01</span> Watches connected operational signals live</div>
+                  <div class="rst-intel-workflow-step" style="background: rgb(47 107 219 / 0.25); color: #ffffff;"><span>02</span> Surfaces what deserves review proactively</div>
+                  <div class="rst-intel-workflow-step" style="background: rgb(47 107 219 / 0.25); color: #ffffff;"><span>03</span> Explains the operational drivers behind the shift</div>
+                  <div class="rst-intel-workflow-step" style="background: rgb(47 107 219 / 0.25); color: #ffffff;"><span>04</span> Recommends clear, grounded next steps</div>
+                  <div class="rst-intel-workflow-step" style="background: rgb(47 107 219 / 0.25); color: #ffffff;"><span>05</span> You evaluate and take action with confidence</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- -----------------------------------------------------------------
+               Trust & Human Control Pillars
+               ----------------------------------------------------------------- -->
+          <div class="rst-intel-trust-grid" role="region" aria-label="Trust and Human Control">
+            <div class="rst-intel-trust-card">
+              <h4>
+                <span class="signal-dot signal-dot--live" aria-hidden="true"></span>
+                Built on your operational data.
+              </h4>
+              <p>The numbers come directly from your restaurant's operational reality — orders rung in, kitchen pass bump times, recipe specs, physical stock counts, and supplier invoices. Qavyo Intelligence helps explain the numbers; it never invents them.</p>
+            </div>
+
+            <div class="rst-intel-trust-card">
+              <h4>
+                <span class="signal-dot signal-dot--live" aria-hidden="true"></span>
+                You stay in control.
+              </h4>
+              <p>Observation → explanation → recommendation → operator action. Qavyo Intelligence supports human decisions. It will never autonomously change menu prices, fire orders, alter recipes, or execute financial transactions without explicit approval.</p>
+            </div>
+          </div>
+
+          <!-- -----------------------------------------------------------------
+               Section Closing & CTA
+               ----------------------------------------------------------------- -->
+          <div class="rst-intel-cta-block">
+            <h3>Experience Qavyo Intelligence in your restaurant.</h3>
+            <p>Explore proactive operational intelligence during your 30-day Qavyo experience and see what connected signals reveal about your kitchen, floor, and margins.</p>
+            <div class="rst-intel-cta-actions">
+              <a href="#prototype-navigation" class="button button--primary" data-prototype-link>Start 30 Days Free</a>
+              <a href="#prototype-navigation" class="button button--secondary" style="border-color: rgba(255, 255, 255, 0.2); color: #ffffff;" data-prototype-link>
+                Explore Qavyo Intelligence <span aria-hidden="true">→</span>
+              </a>
+            </div>
+            <div style="font-size: 0.6875rem; color: #8fa5b5;">
+              No credit card required to explore · Full software access during 30 days
             </div>
           </div>
 
