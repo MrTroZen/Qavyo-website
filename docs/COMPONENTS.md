@@ -102,6 +102,8 @@ The "What Qavyo Helps With" section (`.social-helps`) pairs a four-principle str
 
 The "How It Works" section (`.social-process`) maps the continuous social media cycle through `.social-flow` (`01 Understand → 02 Plan → 03 Create → 04 Publish → 05 Improve`), reinforced by a visual return loop track that connects Step 05 back into the start of the next cycle. Underneath, a compact five-part worked example (`.social-example`) demonstrates how a single neutral business moment (such as a new studio collection) moves into customer communication and feedback without implying fixed turnaround promises or automated publishing.
 
+The "A Consistent Presence" section (`.social-showcase`) serves as the editorial visual payoff of the page. It features `.social-mosaic`, an asymmetric presence wall presenting five distinct customer-facing moments for one fictional business (`Rowan & Co. Studio`): a dominant collection launch card, a business update (open workshop hours), a product feature (tableware spotlight), behind-the-scenes craft notes (kiln opening), and a weekend reminder. It demonstrates that consistency is about continuous varied touchpoints rather than repetitive advertising, without introducing platform logos, fake engagement numbers, or fabricated customer comments.
+
 ## Responsive and accessibility requirements
 
 Every component must keep a logical reading and tab order, visible keyboard focus, sufficient colour contrast, meaningful semantics, and reasonable touch targets. Responsive behaviour must be designed, not assumed. Motion must respect reduced-motion preferences.

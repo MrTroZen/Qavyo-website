@@ -1083,6 +1083,246 @@
 }
 
 /* --------------------------------------------------------------------------
+   Section 4: A Consistent Presence (.social-showcase)
+   -------------------------------------------------------------------------- */
+
+.social-showcase {
+  background: var(--color-canvas);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.social-showcase__header {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: end;
+  margin-bottom: var(--space-7);
+}
+
+.social-showcase h2 {
+  font-size: clamp(2.3rem, 4.2vw, 3.65rem);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.045em;
+  color: var(--color-ink);
+  margin: var(--space-4) 0 0;
+}
+
+.social-showcase__lede {
+  color: var(--color-text);
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+  margin-bottom: var(--space-2);
+}
+
+.social-showcase__note {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-brand);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Social Content Mosaic (.social-mosaic)
+   Editorial presence wall for Rowan & Co. Studio
+   -------------------------------------------------------------------------- */
+
+.social-mosaic {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: start;
+}
+
+/* Common Mosaic Card Styles */
+.mosaic-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  box-shadow: 0 4px 16px -4px rgb(16 38 56 / 0.05);
+  display: flex;
+  flex-direction: column;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.mosaic-card:hover {
+  border-color: var(--color-border-strong);
+  transform: translateY(-2px);
+}
+
+/* Card Header */
+.mosaic-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.mosaic-card__author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.mosaic-card__avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.65rem;
+  height: 1.65rem;
+  border-radius: 50%;
+  background: var(--color-dark);
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 800;
+}
+
+.mosaic-card__author-meta strong {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: var(--color-ink);
+  line-height: 1.2;
+}
+
+.mosaic-card__author-meta small {
+  display: block;
+  font-size: 0.65rem;
+  color: var(--color-muted);
+}
+
+.mosaic-card__category {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--color-brand);
+  background: var(--color-brand-soft);
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+}
+
+/* Card Body & Media */
+.mosaic-card__body {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.mosaic-card__caption {
+  font-size: var(--text-xs);
+  color: var(--color-text);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.mosaic-card__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  font-size: 0.7rem;
+  color: var(--color-brand);
+  font-weight: 600;
+  margin-top: 0.2rem;
+}
+
+/* Card Footer */
+.mosaic-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-canvas);
+  border-top: 1px solid var(--color-border);
+  font-size: 0.7rem;
+  color: var(--color-muted);
+}
+
+.mosaic-card__footer span {
+  font-weight: 600;
+}
+
+/* 1. Dominant Piece: New Arrival / Launch */
+.mosaic-card--dominant {
+  grid-row: span 2;
+}
+
+.mosaic-card__hero-media {
+  background: linear-gradient(140deg, #183348 0%, #29506e 55%, #3e6d92 100%);
+  padding: clamp(2rem, 3.5vw, 3rem) var(--space-5);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 12rem;
+}
+
+.mosaic-card__hero-tag {
+  align-self: flex-start;
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+  background: rgb(255 255 255 / 0.18);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.mosaic-card__hero-title {
+  font-size: clamp(1.2rem, 2vw, 1.5rem);
+  font-weight: 800;
+  line-height: 1.25;
+  margin: var(--space-3) 0 var(--space-1);
+}
+
+.mosaic-card__hero-sub {
+  font-size: var(--text-xs);
+  color: rgb(255 255 255 / 0.85);
+}
+
+/* 2. Column Stacks */
+.mosaic-col {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+/* Mini visual bars for supporting cards */
+.mosaic-card__mini-media {
+  height: 5.5rem;
+  border-radius: var(--radius-sm);
+  padding: var(--space-2) var(--space-3);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: #fff;
+}
+
+.mosaic-card__mini-media--slate {
+  background: linear-gradient(135deg, #2b455b 0%, #44647e 100%);
+}
+
+.mosaic-card__mini-media--earth {
+  background: linear-gradient(135deg, #424740 0%, #687165 100%);
+}
+
+.mosaic-card__mini-media strong {
+  font-size: 0.8rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.mosaic-card__mini-media small {
+  font-size: 0.65rem;
+  color: rgb(255 255 255 / 0.85);
+}
+
+/* --------------------------------------------------------------------------
    Responsive Behavior
    -------------------------------------------------------------------------- */
 
@@ -1108,6 +1348,22 @@
 
   .social-example__grid {
     gap: var(--space-2);
+  }
+
+  .social-showcase__header {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .social-mosaic {
+    grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  }
+
+  .mosaic-col:last-child {
+    grid-column: span 2;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-4);
   }
 }
 
@@ -1181,6 +1437,21 @@
     grid-template-columns: 1fr;
     gap: var(--space-2);
   }
+
+  /* Section 4 mobile stack */
+  .social-mosaic {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .mosaic-card--dominant {
+    grid-row: span 1;
+  }
+
+  .mosaic-col:last-child {
+    grid-column: span 1;
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 32rem) {
@@ -1205,7 +1476,8 @@
   }
 
   .social-helps h2,
-  .social-process h2 {
+  .social-process h2,
+  .social-showcase h2 {
     font-size: clamp(2rem, 9vw, 2.75rem);
   }
 
