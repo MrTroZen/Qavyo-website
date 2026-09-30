@@ -1,0 +1,61 @@
+:root {
+  color-scheme: light;
+
+  --color-brand: #2f6bdb;
+  --color-brand-hover: #2459bd;
+  --color-brand-soft: #eaf1ff;
+  --color-ink: #102638;
+  --color-text: #334957;
+  --color-muted: #657580;
+  --color-canvas: #f6f8fa;
+  --color-surface: #ffffff;
+  --color-surface-muted: #eef2f5;
+  --color-dark: #10283a;
+  --color-dark-raised: #173449;
+  --color-border: #d9e0e5;
+  --color-border-strong: #bfcbd3;
+  --color-success: #2e7d5b;
+  --color-warning: #9a6414;
+  --color-danger: #b23b42;
+  --color-focus: #76a7ff;
+
+  --font-primary: "Manrope", "Segoe UI", sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.875rem;
+  --text-base: 1rem;
+  --text-lg: clamp(1.125rem, 1rem + 0.35vw, 1.375rem);
+  --text-xl: clamp(1.75rem, 1.35rem + 1.5vw, 2.75rem);
+  --text-2xl: clamp(2.5rem, 1.7rem + 3.2vw, 5.25rem);
+
+  --leading-tight: 1.05;
+  --leading-heading: 1.15;
+  --leading-body: 1.7;
+
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 4rem;
+  --space-9: 6rem;
+  --space-10: 8rem;
+
+  --container: 76rem;
+  --container-narrow: 58rem;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --section-space: clamp(4.5rem, 10vw, 8rem);
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 1rem;
+
+  --shadow-sm: 0 1px 2px rgb(16 38 56 / 0.06);
+  --shadow-md: 0 1rem 3rem rgb(16 38 56 / 0.1);
+
+  --transition-fast: 160ms ease;
+  --transition-base: 240ms ease;
+}
