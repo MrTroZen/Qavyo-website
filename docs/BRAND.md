@@ -6,7 +6,7 @@ This document is the visual source of truth for the Qavyo public website. Read i
 
 Qavyo is a parent technology brand for software and technology products that help serious businesses operate. It should feel premium, modern, calm, credible, intelligent, operational, precise, product-led, and easy to understand.
 
-Qavyo is not defined by restaurant POS. Qavyo Restaurant is the current lead product family; POS is one capability within that connected operating platform.
+Qavyo is not defined by restaurant POS. Cafeo is Qavyo's restaurant operating software; POS is one capability within Cafeo. Qavyo also includes Retail Software and Farm Software families, while marketing, web, growth, and intelligence services are organized separately as business solutions.
 
 ## Visual principles
 
@@ -50,9 +50,9 @@ Use selective real restaurant or business imagery when it adds human or operatio
 
 Qavyo's visual signature can use thin lines, small nodes, restrained signal marks, and operational flows to connect systems such as orders, kitchen, stock, customers, and staff. The goal is to clarify connection, signals, operations, and intelligence. Do not turn every section into a network diagram.
 
-## Qavyo Intelligence
+## Cafeo Intelligence
 
-Intelligence is proactive and operational, not chatbot-first. Visual stories should reflect the loop:
+Cafeo Intelligence is proactive and operational, not chatbot-first. Visual stories should reflect the loop:
 
 `WATCH → DETECT → EXPLAIN → RECOMMEND → ACT → MEASURE → LEARN`
 

@@ -6,21 +6,48 @@ This document records the current information-architecture direction. It is inte
 
 ```text
 Qavyo (parent technology company)
-└── Products
-    ├── Qavyo Restaurant (current lead product family)
-    │   └── Grouped restaurant capability stories
-    ├── Qavyo Retail (future)
-    ├── Qavyo Marketing (future)
-    └── Future products and services
+├── Products (software customers use to operate)
+│   ├── Restaurant Software
+│   │   └── Cafeo
+│   │       ├── POS & Ordering
+│   │       ├── Kitchen
+│   │       ├── Inventory & Purchasing
+│   │       ├── Customers & Loyalty
+│   │       ├── Team & Workforce
+│   │       ├── Multi-location
+│   │       └── Cafeo Intelligence
+│   ├── Qavyo Retail Software
+│   │   ├── Clothing & Fashion
+│   │   ├── Electronics
+│   │   ├── Repair Shops
+│   │   ├── Grocery & Convenience
+│   │   ├── Salon & Spa
+│   │   ├── Hardware & Sanitary
+│   │   ├── Paint
+│   │   └── Tiles
+│   └── Qavyo Farm Software
+│       └── Broiler Farming
+└── Solutions (additional capabilities and services)
+    ├── Marketing & Communication
+    │   ├── SMS Marketing
+    │   ├── Email Marketing
+    │   └── Marketing Automation
+    ├── Web & Growth
+    │   ├── Website Building
+    │   └── Website SEO
+    └── Intelligence
+        └── Cafeo Intelligence
 ```
 
-Qavyo Restaurant is a connected restaurant operating platform, not merely a POS. Its broad capability set includes ordering, kitchen operations, online channels, customers, inventory, purchasing, workforce, reporting, multi-location operations, payments and hardware connections, and Qavyo Intelligence.
+Cafeo is Qavyo's connected restaurant operating software, not merely a POS. Its named navigation capabilities belong to Cafeo and must not be presented as unrelated Qavyo products.
 
-Do not create one page per capability. Group capabilities into understandable product stories, likely along themes such as service and ordering, inventory and operations, customers and growth, team and workforce, multi-location control, intelligence, hardware, payments, and pricing. These groups are directional and require approval before they become final navigation.
+Qavyo Retail Software is one software family organized by retail business type. Qavyo Farm Software is a separate family and currently includes only Broiler Farming. Do not invent additional verticals. Products are software customers use to operate; Solutions are additional capabilities and services that help businesses market, communicate, grow, or understand operations.
+
+Cafeo Intelligence appears in both architectures for different reasons: as a Cafeo capability under Products and as an operational intelligence outcome under Solutions. These links may lead to the same future destination and must not imply duplicate products or pages.
 
 ## Corporate navigation direction
 
-The initial global navigation structure is Products, Solutions, Pricing, Resources, and Company, followed by Sign In, Talk to Sales, and the primary Start Free action. Products is the principal menu and is structured to support multiple Qavyo product families while currently presenting only Qavyo Restaurant as active. Retail and Marketing may appear only as clearly labelled future categories.
+The global navigation structure is Products, Solutions, Pricing, Resources, and Company, followed by Sign In, Talk to Sales, and the primary Start Free action. Products organizes Restaurant Software/Cafeo, Qavyo Retail Software, and Qavyo Farm Software. Solutions separately organizes Marketing & Communication, Web & Growth, and Intelligence.
 
 This establishes the navigation hierarchy and reusable interaction pattern, not a finalized sitemap. Most destinations remain safe prototype links until their pages and routes are approved.
 

@@ -1,6 +1,6 @@
 # Qavyo public website
 
-The permanent source repository for Qavyo's public website. Qavyo is a parent technology company; Qavyo Restaurant is the first product family being developed here.
+The permanent source repository for Qavyo's public website. Qavyo is a parent technology company spanning software families and business solutions; Cafeo is its restaurant operating software.
 
 The project is currently in its design-system foundation phase. The root `index.html` is an internal verification page, not the public homepage.
 
