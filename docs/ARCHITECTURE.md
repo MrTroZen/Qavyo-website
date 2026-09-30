@@ -60,7 +60,7 @@ The three primary dropdowns answer different questions:
 - Restaurants explains what Qavyo Restaurant Software can help a restaurant operator do.
 - Solutions presents additional marketing, communication, web, growth, and intelligence capabilities.
 
-Qavyo Intelligence may appear in Products, Restaurants, and Solutions because each entry reflects a different visitor context. Every occurrence will lead to the same future Intelligence destination.
+Qavyo Intelligence may appear in Products, Restaurants, and Solutions because each entry reflects a different visitor context. Every navigational occurrence leads to the canonical `intelligence.html` page.
 
 ## Page strategy
 
