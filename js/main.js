@@ -141,4 +141,14 @@
       event.preventDefault();
     });
   });
+
+  header.querySelectorAll("a").forEach((link) => {
+    link.addEventListener("click", () => {
+      if (link.hasAttribute("data-prototype-link")) {
+        return;
+      }
+      closeDesktopMenus();
+      closeMobileMenu();
+    });
+  });
 })();

@@ -99,5 +99,30 @@ Unavailable destinations use the existing safe prototype-link behavior. Do not c
 
 ## Current repository state
 
-The project is a static prototype using semantic HTML, CSS, and small amounts of vanilla JavaScript. `index.html` contains the complete approved homepage with global navigation and public footer. `restaurant.html` contains the dedicated Qavyo Restaurant Software page with its hero, the Connected Restaurant Platform overview section, POS &amp; Ordering (`#pos-ordering`), Kitchen &amp; Service (`#kitchen`), Tables &amp; Floor (`#tables`), Inventory, Recipes &amp; Costing (`#inventory`, `#recipes`), Purchasing &amp; Suppliers (`#purchasing`), the flagship Qavyo Intelligence experience (`#intelligence`), Customers, CRM &amp; Loyalty (`#customers`, `#loyalty`), Direct Digital Experience (`#online-ordering`, `#reservations`, `#website`), Team &amp; Operations (`#team`, `#staff`, `#payroll`), Multi-location Management (`#multi-location`), and Restaurant Pricing (`#pricing`) with the 30-Day Full Qavyo conversion experience. Page-specific styling is maintained in `css/pages/restaurant.css`, with accessible client interactions in `js/pages/restaurant.js`. Canonical navigation links and capability anchors connect seamlessly across the site.
+The project is a static prototype using semantic HTML, CSS, and small amounts of vanilla JavaScript. `index.html` contains the complete approved homepage with global navigation and public footer. `restaurant.html` contains the complete approved Qavyo Restaurant Software v1 page with:
+- Connected Hero (`#restaurant-flow`)
+- Connected Restaurant Platform overview (`#platform-overview`)
+- POS &amp; Ordering (`#pos-ordering`)
+- Kitchen &amp; Service (`#kitchen`)
+- Tables &amp; Floor (`#tables`)
+- Inventory, Recipes &amp; Costing (`#inventory`, `#recipes`)
+- Purchasing &amp; Suppliers (`#purchasing`)
+- Proactive Qavyo Intelligence experience (`#intelligence`)
+- Customers, CRM &amp; Loyalty (`#customers`, `#loyalty`)
+- Direct Digital Experience (`#online-ordering`, `#reservations`, `#website`)
+- Team &amp; Operations (`#team`, `#staff`, `#payroll`)
+- Multi-location Management &amp; Reporting (`#multi-location`, `#reporting`)
+- Restaurant Pricing (`#pricing`) with the 30-Day Full Qavyo conversion experience
+- Hardware &amp; Device Flexibility (`#hardware`)
+- Switching &amp; 24/7 Support (`#switching`, `#support`)
+- Final Restaurant CTA closing section
+- Global public footer integration
+
+### Confirmed Architectural &amp; Product Facts
+- **One Connected Platform:** Qavyo Restaurant Software is one connected platform spanning front and back of house.
+- **Qavyo Intelligence:** A core operational intelligence capability that tracks live operational signals, not a generic chatbot.
+- **Device Flexibility:** Qavyo runs on supported phones and tablets where appropriate; dedicated hardware is not required to begin.
+- **Hardware Separation:** Dedicated commercial hardware is optional and sold separately from software plans.
+- **Payment Processing:** Payment processing is separate from software pricing.
+- **24/7 Support:** Continuous round-the-clock operational support is confirmed and provided for restaurant operations.
 

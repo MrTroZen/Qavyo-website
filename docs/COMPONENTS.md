@@ -50,6 +50,22 @@ Unavailable routes use `data-prototype-link` and are prevented from navigating u
 
 `.product-frame` demonstrates the initial framing language for illustrative operational UI. Frames need a clear explanatory purpose, legible content, and an illustrative label when not showing the real product. Avoid fake metrics and decorative dashboard clutter.
 
+## Device Ecosystem Grid
+
+`.rst-ecosystem` presents a clean architectural diagram illustrating device flexibility without looking like a consumer electronics catalog. It anchors on a central operational engine (`.rst-ecosystem__core`) connected via subtle operational signals to 4 device roles: supported phones, supported tablets, dedicated POS terminals, and kitchen display systems. Responsive rules collapse from 4 columns to 2 columns on tablet and 1 column on mobile.
+
+## Connected Progression Journey
+
+`.rst-switch-journey` visualises a multi-phase transition journey using numbered steps (`.rst-journey-step`) connected by horizontal rule lines (`.rst-journey-step__connector`). It clarifies process stages (Understand → Prepare → Get Ready → Ongoing Support) without relying on heavy isolated cards. Connectors hide automatically on tablet and mobile viewports.
+
+## Operational Support Showcase
+
+`.rst-support-showcase` gives prominent, high-contrast visual weight to confirmed business commitments (such as 24/7 continuous support) without creating disconnected alert boxes. It pairs a primary narrative block with structured operational pillars (`.rst-support-pillar`) using semantic checkmarks.
+
+## Closing Conversion Section
+
+`.rst-final-cta` is a focused full-width dark surface (`section--dark`) providing authoritative closure to major product pages. It features a high-contrast headline, concise value proposition, primary and secondary CTA buttons, and tertiary metadata/pricing links.
+
 ## Responsive and accessibility requirements
 
 Every component must keep a logical reading and tab order, visible keyboard focus, sufficient colour contrast, meaningful semantics, and reasonable touch targets. Responsive behaviour must be designed, not assumed. Motion must respect reduced-motion preferences.
