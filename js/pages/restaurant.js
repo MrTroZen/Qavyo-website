@@ -2,53 +2,31 @@
   "use strict";
 
   // --------------------------------------------------------------------------
-  // Qavyo Intelligence Signal Themes Tab Switching
+  // Anchor Target Highlighting for Restaurant Capabilities
   // --------------------------------------------------------------------------
-  const tabList = document.querySelector("[data-intel-tablist]");
-  if (!tabList) {
-    return;
-  }
+  const highlightTarget = () => {
+    const hash = window.location.hash;
+    if (!hash) {
+      return;
+    }
 
-  const tabs = [...tabList.querySelectorAll("[role='tab']")];
-  const panels = [...document.querySelectorAll("[data-intel-panel]")];
-
-  const switchTab = (selectedTab) => {
-    const targetId = selectedTab.getAttribute("aria-controls");
-
-    tabs.forEach((tab) => {
-      const isSelected = tab === selectedTab;
-      tab.setAttribute("aria-selected", String(isSelected));
-      tab.tabIndex = isSelected ? 0 : -1;
-    });
-
-    panels.forEach((panel) => {
-      panel.hidden = panel.id !== targetId;
-    });
+    try {
+      const target = document.querySelector(hash);
+      if (target && target.tagName === "LI") {
+        target.classList.add("rst-capability-highlight");
+        setTimeout(() => {
+          target.classList.remove("rst-capability-highlight");
+        }, 2400);
+      }
+    } catch {
+      // Ignore invalid selectors
+    }
   };
 
-  tabs.forEach((tab, index) => {
-    tab.addEventListener("click", () => {
-      switchTab(tab);
-    });
-
-    tab.addEventListener("keydown", (event) => {
-      let targetIndex = null;
-
-      if (event.key === "ArrowRight") {
-        targetIndex = (index + 1) % tabs.length;
-      } else if (event.key === "ArrowLeft") {
-        targetIndex = (index - 1 + tabs.length) % tabs.length;
-      } else if (event.key === "Home") {
-        targetIndex = 0;
-      } else if (event.key === "End") {
-        targetIndex = tabs.length - 1;
-      }
-
-      if (targetIndex !== null) {
-        event.preventDefault();
-        tabs[targetIndex].focus();
-        switchTab(tabs[targetIndex]);
-      }
-    });
-  });
+  window.addEventListener("hashchange", highlightTarget);
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", highlightTarget);
+  } else {
+    highlightTarget();
+  }
 })();

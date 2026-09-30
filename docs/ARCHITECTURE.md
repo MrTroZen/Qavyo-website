@@ -99,23 +99,15 @@ Unavailable destinations use the existing safe prototype-link behavior. Do not c
 
 ## Current repository state
 
-The project is a static prototype using semantic HTML, CSS, and small amounts of vanilla JavaScript. `index.html` contains the complete approved homepage with global navigation and public footer. `restaurant.html` contains the complete approved Qavyo Restaurant Software v1 page with:
-- Connected Hero (`#restaurant-flow`)
-- Connected Restaurant Platform overview (`#platform-overview`)
-- POS &amp; Ordering (`#pos-ordering`)
-- Kitchen &amp; Service (`#kitchen`)
-- Tables &amp; Floor (`#tables`)
-- Inventory, Recipes &amp; Costing (`#inventory`, `#recipes`)
-- Purchasing &amp; Suppliers (`#purchasing`)
-- Proactive Qavyo Intelligence experience (`#intelligence`)
-- Customers, CRM &amp; Loyalty (`#customers`, `#loyalty`)
-- Direct Digital Experience (`#online-ordering`, `#reservations`, `#website`)
-- Team &amp; Operations (`#team`, `#staff`, `#payroll`)
-- Multi-location Management &amp; Reporting (`#multi-location`, `#reporting`)
-- Restaurant Pricing (`#pricing`) with the 30-Day Full Qavyo conversion experience
-- Hardware &amp; Device Flexibility (`#hardware`)
-- Switching &amp; 24/7 Support (`#switching`, `#support`)
-- Final Restaurant CTA closing section
+The project is a static prototype using semantic HTML, CSS, and small amounts of vanilla JavaScript. `index.html` contains the complete approved homepage with global navigation and public footer. `restaurant.html` contains the reframed Qavyo Restaurant Software page organized into a concise, conversion-focused 8-section narrative:
+- Section 1: Hero (`.rst-hero`) — Operational restaurant software preview, commercial reassurance (£29/mo, 30 days full Qavyo, 24/7 support)
+- Section 2: One Connected System (`#platform-overview`) — Operational connection flow (Order → Kitchen → Inventory → Customer → Reporting → Intelligence) and 4-pillar capability grid preserving all deep-link anchors (`#pos-ordering`, `#kitchen`, `#tables`, `#inventory`, `#recipes`, `#purchasing`, `#customers`, `#loyalty`, `#online-ordering`, `#reservations`, `#website`, `#staff`, `#team`, `#payroll`, `#reporting`, `#multi-location`)
+- Section 3: Qavyo Intelligence (`#intelligence`) — Proactive operational loop (Watch → Detect → Explain → Recommend → Act → Measure) with concrete illustrative diagnostic case study; human operator in control
+- Section 4: Clear Pricing (`#pricing`, `#plans`) — Three transparent software tiers: Starter (£29/mo), Growth (£79/mo), Business (£149/mo); hardware and payment processing separate
+- Section 5: 30 Days. Full Qavyo. (`#full-access`) — Unrestricted full-platform experience before choosing a plan
+- Section 6: Work Where Your Restaurant Works (`#hardware`, `#devices`) — Software first, hardware when needed (supported phones, tablets, compatible equipment, dedicated hardware)
+- Section 7: 24/7 Support & Getting Started (`#support`, `#switching`) — Continuous round-the-clock operational support and smooth onboarding
+- Section 8: Final CTA (`#get-started`) — High-conversion closure with primary/secondary actions
 - Global public footer integration
 
 ### Confirmed Architectural &amp; Product Facts

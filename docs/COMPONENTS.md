@@ -50,17 +50,29 @@ Unavailable routes use `data-prototype-link` and are prevented from navigating u
 
 `.product-frame` demonstrates the initial framing language for illustrative operational UI. Frames need a clear explanatory purpose, legible content, and an illustrative label when not showing the real product. Avoid fake metrics and decorative dashboard clutter.
 
-## Device Ecosystem Grid
+## Operational Flow Diagram
 
-`.rst-ecosystem` presents a clean architectural diagram illustrating device flexibility without looking like a consumer electronics catalog. It anchors on a central operational engine (`.rst-ecosystem__core`) connected via subtle operational signals to 4 device roles: supported phones, supported tablets, dedicated POS terminals, and kitchen display systems. Responsive rules collapse from 4 columns to 2 columns on tablet and 1 column on mobile.
+`.rst-flow` visually connects core restaurant workflows (`ORDER → KITCHEN → INVENTORY → CUSTOMER → REPORTING → INTELLIGENCE`) horizontally on desktop and seamlessly reflows on tablet and mobile without horizontal overflow.
 
-## Connected Progression Journey
+## Capability Overview Grid
 
-`.rst-switch-journey` visualises a multi-phase transition journey using numbered steps (`.rst-journey-step`) connected by horizontal rule lines (`.rst-journey-step__connector`). It clarifies process stages (Understand → Prepare → Get Ready → Ongoing Support) without relying on heavy isolated cards. Connectors hide automatically on tablet and mobile viewports.
+`.rst-capabilities-grid` organizes operational capabilities into 4 concise pillars (SERVE, CONTROL, GROW, MANAGE) and preserves all deep-link targets (`#pos-ordering`, `#kitchen`, `#tables`, `#inventory`, `#recipes`, `#purchasing`, `#customers`, `#loyalty`, `#online-ordering`, `#reservations`, `#website`, `#staff`, `#team`, `#payroll`, `#reporting`, `#multi-location`) with subtle active target highlighting.
+
+## Proactive Intelligence Showcase
+
+`.rst-intel-loop` and `.rst-intel-card` present the continuous operational loop (Watch → Detect → Explain → Recommend → Act → Measure) and an illustrative diagnostic case study (Observation → Reason → Prediction → Recommendation → Expected Impact → Operator Action), emphasizing human operator control.
+
+## Transparent Pricing & Access Flow
+
+`.rst-pricing-grid` and `.rst-plan-card` display the three confirmed software tiers (Starter £29/mo, Growth £79/mo, Business £149/mo) with separate hardware/payment notices. `.rst-access-box` details the unrestricted 30 Days Full Qavyo journey (Start → Full Qavyo → 30 Days → Choose).
+
+## Device Progression Grid
+
+`.rst-device-grid` and `.rst-device-card` illustrate device flexibility across 4 operational form factors: supported phones, supported tablets, compatible peripherals, and dedicated commercial hardware.
 
 ## Operational Support Showcase
 
-`.rst-support-showcase` gives prominent, high-contrast visual weight to confirmed business commitments (such as 24/7 continuous support) without creating disconnected alert boxes. It pairs a primary narrative block with structured operational pillars (`.rst-support-pillar`) using semantic checkmarks.
+`.rst-support-pillar` gives prominent weight to continuous 24/7 operational support, guided onboarding setup, and rapid staff adoption.
 
 ## Closing Conversion Section
 
