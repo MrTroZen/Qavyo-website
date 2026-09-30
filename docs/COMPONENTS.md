@@ -98,6 +98,8 @@ The final conversion section (`.marketing-final`) provides authoritative closure
 
 The Social Media Marketing page hero uses `.social-presence` to depict an authentic content ecosystem around a local business (`Rowan & Co. Studio`). It illustrates the connection between upstream planning (`.social-plan-card`: Content Plan & ready status), an active social post composition (`.social-post-card`: business identity, editorial visual area, handcrafted caption, and restrained actions), and a downstream customer touchpoint (`.social-touchpoint-card`: customer discovery resulting in a studio visit). It purposefully omits fabricated engagement metrics, like counters, or follower statistics to maintain calm commercial credibility.
 
+The "What Qavyo Helps With" section (`.social-helps`) pairs a four-principle strategic narrative (`01 Plan`, `02 Create`, `03 Stay Consistent`, `04 Connect`) with `.social-workspace`, an illustrative content-planning workspace. It represents a weekly rhythm (Mon, Wed, Fri), an active content blueprint, and a four-stage progression sequence (`Business moment → Content idea → Social content → Customer connection`) without claiming automated posting, artificial engagement guarantees, or unconfirmed service packages.
+
 ## Responsive and accessibility requirements
 
 Every component must keep a logical reading and tab order, visible keyboard focus, sufficient colour contrast, meaningful semantics, and reasonable touch targets. Responsive behaviour must be designed, not assumed. Motion must respect reduced-motion preferences.
