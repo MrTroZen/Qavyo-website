@@ -64,7 +64,7 @@ Unavailable routes use `data-prototype-link` and are prevented from navigating u
 
 ## Transparent Pricing & Access Flow
 
-`.rst-pricing-grid` and `.rst-plan` display only the confirmed plan names and monthly prices (Starter £29, Growth £79, Business £149) unless plan inclusions are separately approved. `.rst-trial` details the 30 Days Full Qavyo journey (Start → Full Qavyo → 30 Days → Choose). Both patterns keep hardware and payment processing separate.
+`.rst-pricing-grid` and `.rst-plan` form the approved full comparison: Starter (£29/month) contains the core restaurant-operation list, Growth (£79/month) is the highlighted "Most Popular" plan with management capabilities, and Business (£149/month) adds centralised multi-location capabilities. `.rst-pricing-access` closes the comparison with the approved 30-day Full Qavyo message. `.rst-trial` then explains the trial journey (Start → Full Qavyo → 30 Days → Choose). Hardware and payment processing remain separate.
 
 ## Device Progression Grid
 
