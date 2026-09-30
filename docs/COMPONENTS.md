@@ -84,6 +84,10 @@ The canonical Pricing page uses `.pricing-plan-grid` for aligned plan summaries 
 
 `.rst-final-cta` is a focused full-width dark surface (`section--dark`) providing authoritative closure to major product pages. It features a high-contrast headline, concise value proposition, primary and secondary CTA buttons, and tertiary metadata/pricing links.
 
+## Marketing Customer Journey
+
+The Marketing Solutions overview uses `.customer-path` for the hero journey, `.journey-rail` for the desktop-to-mobile discovery progression, and `.marketing-solution-grid` for five distinct service previews. These patterns use communication-oriented illustrative UI without claiming automation, performance results, or unconfirmed service scope.
+
 ## Responsive and accessibility requirements
 
 Every component must keep a logical reading and tab order, visible keyboard focus, sufficient colour contrast, meaningful semantics, and reasonable touch targets. Responsive behaviour must be designed, not assumed. Motion must respect reduced-motion preferences.

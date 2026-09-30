@@ -88,6 +88,10 @@ The Intelligence page should communicate the operating loop:
 
 `pricing.html` is the canonical pricing page for Qavyo Restaurant Software. It presents the confirmed Starter (£29/month), Growth (£79/month), and Business (£149/month) plans; the 30-day Full Qavyo experience; detailed plan comparison; Intelligence levels; and the separation of software, hardware, and payment-processing costs. Global Pricing links lead to this page, while the Restaurant Software page retains its concise contextual pricing overview.
 
+### Marketing Solutions
+
+`solutions.html` is the canonical Marketing Solutions overview. It introduces Social Media Marketing, SMS Marketing, Email Marketing, Website Building, and Website SEO through a customer-journey story. Individual service destinations remain prototype links until their pages are built. Qavyo Intelligence remains a separate canonical page at `intelligence.html`.
+
 ## Navigation implementation
 
 Unavailable destinations use the existing safe prototype-link behavior. Do not create empty pages or fake production routes to satisfy navigation links. As pages and sections are approved, replace prototype links with their real destinations.
