@@ -2417,3 +2417,313 @@
     justify-content: center;
   }
 }
+
+/* ═══════════════════════════════════════════════════════════════════
+   30 Days. Full Qavyo. (Conversion section)
+   ═══════════════════════════════════════════════════════════════════ */
+
+.experience-section {
+  padding-block: var(--section-space);
+  background: var(--color-dark);
+  color: #c7d3dc;
+  border-top: 1px solid var(--color-dark-raised);
+}
+
+.experience-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(22rem, 0.88fr);
+  gap: clamp(var(--space-7), 6vw, var(--space-9));
+  align-items: center;
+}
+
+.experience-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.eyebrow--on-dark {
+  color: var(--color-focus);
+}
+
+.signal-dot--light {
+  background: var(--color-focus);
+  box-shadow: 0 0 0 3px rgb(118 167 255 / 0.2);
+}
+
+.experience-title {
+  color: var(--color-surface);
+  font-size: clamp(2.25rem, 1.8rem + 2vw, 3.75rem);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.02em;
+  margin-block-end: var(--space-5);
+}
+
+.experience-lead {
+  color: #c7d3dc;
+  font-size: var(--text-lg);
+  line-height: 1.6;
+  max-width: 44ch;
+  margin-block-end: var(--space-6);
+}
+
+.experience-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+  margin-block-end: var(--space-7);
+}
+
+.button--secondary-dark {
+  border: 1px solid rgb(255 255 255 / 0.28);
+  background: transparent;
+  color: var(--color-surface);
+}
+
+.button--secondary-dark:hover {
+  border-color: var(--color-surface);
+  background: rgb(255 255 255 / 0.08);
+}
+
+/* ── Connected Timeline ───────────────────────────────────────────── */
+
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  position: relative;
+  max-width: 42ch;
+}
+
+.experience-timeline__step {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-4);
+  position: relative;
+}
+
+.experience-timeline__indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.experience-timeline__num {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-dark-raised);
+  border: 1px solid rgb(255 255 255 / 0.16);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-focus);
+  flex-shrink: 0;
+}
+
+.experience-timeline__line {
+  width: 1px;
+  flex: 1;
+  min-height: 1.75rem;
+  background: rgb(255 255 255 / 0.14);
+  margin-block-start: var(--space-1);
+}
+
+.experience-timeline__details {
+  padding-block-start: 0.15rem;
+}
+
+.experience-timeline__heading {
+  display: block;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-surface);
+  margin-block-end: 0.2rem;
+}
+
+.experience-timeline__text {
+  font-size: var(--text-sm);
+  color: #a4b7c4;
+  line-height: 1.5;
+  margin-block-end: 0;
+}
+
+/* ── Full Qavyo Manifest Card ─────────────────────────────────────── */
+
+.manifest-card {
+  border: 1px solid rgb(255 255 255 / 0.14);
+  border-radius: var(--radius-lg);
+  background: var(--color-dark-raised);
+  padding: clamp(var(--space-5), 4vw, var(--space-6));
+  box-shadow: 0 1rem 3rem rgb(0 0 0 / 0.25);
+  position: relative;
+  overflow: hidden;
+}
+
+.manifest-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, var(--color-brand), var(--color-focus));
+}
+
+.manifest-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-2);
+  margin-block-end: var(--space-5);
+}
+
+.manifest-card__badge {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  background: rgb(118 167 255 / 0.15);
+  color: var(--color-focus);
+  border: 1px solid rgb(118 167 255 / 0.3);
+}
+
+.manifest-card__scope {
+  font-size: var(--text-xs);
+  color: #8ca2b0;
+}
+
+.manifest-card__period {
+  margin-block-end: var(--space-5);
+  padding-block-end: var(--space-4);
+  border-bottom: 1px solid rgb(255 255 255 / 0.1);
+}
+
+.manifest-card__days {
+  display: block;
+  font-family: var(--font-primary);
+  font-size: clamp(2rem, 3.5vw, 2.75rem);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: var(--color-surface);
+  margin-block-end: var(--space-1);
+}
+
+.manifest-card__tagline {
+  font-size: var(--text-sm);
+  color: #a4b7c4;
+  margin-block-end: 0;
+}
+
+.manifest-card__stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  margin-block-end: var(--space-5);
+}
+
+.manifest-card__layer {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: var(--space-3);
+  align-items: start;
+  padding: var(--space-3);
+  background: rgb(16 40 58 / 0.5);
+  border: 1px solid rgb(255 255 255 / 0.08);
+  border-radius: var(--radius-md);
+}
+
+.manifest-card__layer-icon {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--color-focus);
+  background: rgb(118 167 255 / 0.12);
+  padding: 0.2rem 0.4rem;
+  border-radius: var(--radius-sm);
+  line-height: 1;
+  margin-block-start: 0.1rem;
+}
+
+.manifest-card__layer-info strong {
+  display: block;
+  font-size: 0.9375rem;
+  color: var(--color-surface);
+  margin-block-end: 0.15rem;
+}
+
+.manifest-card__layer-info span {
+  display: block;
+  font-size: var(--text-xs);
+  color: #9ab0be;
+  line-height: 1.45;
+}
+
+.manifest-card__operator {
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-focus);
+  line-height: 1;
+  opacity: 0.8;
+}
+
+.manifest-card__footer {
+  padding-block-start: var(--space-4);
+  border-top: 1px solid rgb(255 255 255 / 0.1);
+}
+
+.manifest-card__resolution {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-surface);
+  margin-block-end: var(--space-2);
+}
+
+.manifest-card__arrow {
+  color: var(--color-focus);
+  font-size: 1.1rem;
+}
+
+.manifest-card__clarification {
+  font-size: 0.6875rem;
+  color: #8ca2b0;
+  line-height: 1.45;
+  margin-block-end: 0;
+}
+
+/* ── Responsive adjustments ──────────────────────────────────────── */
+
+@media (max-width: 62rem) {
+  .experience-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-7);
+  }
+
+  .experience-timeline {
+    max-width: none;
+  }
+}
+
+@media (max-width: 36rem) {
+  .experience-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .experience-actions .button {
+    width: 100%;
+    justify-content: center;
+  }
+}
