@@ -40,7 +40,7 @@ Unavailable routes use `data-prototype-link` and are prevented from navigating u
 
 ## Footer
 
-The current footer is intentionally minimal and internal. A public footer architecture will be created separately when approved.
+`.site-footer` is the global public footer component using the deep navy background (`#0d2130`). It features a top brand/status block, a 4-column structured link grid (Products, Restaurants, Solutions, Resources) aligned with approved navigation destinations, and a bottom bar with dynamic current-year copyright and prototype legal links. Subordinate elements utilize `.wordmark--on-dark` and high-contrast links with visible focus outlines. Layout adapts responsively from a 4-column desktop grid to a 2-column tablet layout and stacked mobile sections.
 
 ## Cards
 
