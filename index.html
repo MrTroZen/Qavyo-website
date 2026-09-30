@@ -456,6 +456,140 @@
           </div>
         </div>
       </section>
+
+      <section class="rst-platform" aria-labelledby="rst-platform-title">
+        <div class="container rst-platform__grid">
+
+          <div class="rst-platform__copy">
+            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Qavyo Restaurant Software</p>
+            <h2 id="rst-platform-title">One operation. Connected front to back.</h2>
+            <p class="lede">An order placed at the POS ripples through the kitchen, stock, customer record and team reporting. Qavyo connects every part of the operation so they work from one shared picture.</p>
+            <a class="button button--secondary" href="#prototype-navigation" data-prototype-link>Explore Restaurant Software <span aria-hidden="true">→</span></a>
+          </div>
+
+          <div class="rst-platform__diagram" role="img" aria-label="Illustrative diagram showing how a restaurant order connects POS and Ordering to Kitchen and Service, then to Inventory and Cost, with Customers and Loyalty, Team and Operations, Reporting, and Multi-location connected as satellite areas. A Qavyo Intelligence observation is shown at the bottom.">
+
+            <div class="rst-diagram" aria-hidden="true">
+
+              <!-- Primary spine: the causal order flow -->
+              <div class="rst-spine">
+
+                <div class="rst-spine__node rst-spine__node--pos">
+                  <div class="rst-node-header">
+                    <span class="rst-node-index">01</span>
+                    <span class="rst-node-label">POS &amp; Ordering</span>
+                    <span class="rst-node-state rst-node-state--live">Live</span>
+                  </div>
+                  <div class="rst-node-body">
+                    <div class="rst-order-row">
+                      <span class="rst-order-id">#4821</span>
+                      <span class="rst-order-item">Chicken Burger × 2</span>
+                      <span class="rst-order-status rst-order-status--sent">Sent</span>
+                    </div>
+                    <div class="rst-order-row">
+                      <span class="rst-order-id">#4822</span>
+                      <span class="rst-order-item">Lamb Kebab × 1</span>
+                      <span class="rst-order-status rst-order-status--preparing">Prep</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rst-spine__connector">
+                  <i class="rst-connector-line"></i>
+                  <span class="rst-connector-label">order received</span>
+                </div>
+
+                <div class="rst-spine__node rst-spine__node--kitchen">
+                  <div class="rst-node-header">
+                    <span class="rst-node-index">02</span>
+                    <span class="rst-node-label">Kitchen &amp; Service</span>
+                    <span class="rst-node-state rst-node-state--active">Active</span>
+                  </div>
+                  <div class="rst-node-body">
+                    <div class="rst-kitchen-row">
+                      <span class="rst-kitchen-ticket">#4821</span>
+                      <div class="rst-kitchen-items">
+                        <span>Chicken Burger</span>
+                        <span>Chicken Burger</span>
+                      </div>
+                      <span class="rst-kitchen-timer">04:12</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rst-spine__connector">
+                  <i class="rst-connector-line"></i>
+                  <span class="rst-connector-label">ingredients used</span>
+                </div>
+
+                <div class="rst-spine__node rst-spine__node--inventory">
+                  <div class="rst-node-header">
+                    <span class="rst-node-index">03</span>
+                    <span class="rst-node-label">Inventory &amp; Cost</span>
+                    <span class="rst-node-state rst-node-state--updated">Updated</span>
+                  </div>
+                  <div class="rst-node-body">
+                    <div class="rst-stock-row">
+                      <span class="rst-stock-name">Chicken breast</span>
+                      <div class="rst-stock-bar" data-level="low"><i style="width:38%"></i></div>
+                      <span class="rst-stock-qty">3.8 kg</span>
+                    </div>
+                    <div class="rst-stock-row">
+                      <span class="rst-stock-name">Burger buns</span>
+                      <div class="rst-stock-bar"><i style="width:61%"></i></div>
+                      <span class="rst-stock-qty">22 pcs</span>
+                    </div>
+                  </div>
+                </div>
+
+              </div><!-- /rst-spine -->
+
+              <!-- Satellite areas branching off the spine -->
+              <div class="rst-satellites">
+                <div class="rst-satellite">
+                  <i class="rst-satellite-line" aria-hidden="true"></i>
+                  <div class="rst-satellite-tile">
+                    <span class="rst-satellite-label">Customers &amp; Loyalty</span>
+                    <span class="rst-satellite-note">Order history updated</span>
+                  </div>
+                </div>
+                <div class="rst-satellite">
+                  <i class="rst-satellite-line" aria-hidden="true"></i>
+                  <div class="rst-satellite-tile">
+                    <span class="rst-satellite-label">Team &amp; Operations</span>
+                    <span class="rst-satellite-note">Session recorded</span>
+                  </div>
+                </div>
+                <div class="rst-satellite">
+                  <i class="rst-satellite-line" aria-hidden="true"></i>
+                  <div class="rst-satellite-tile">
+                    <span class="rst-satellite-label">Reporting</span>
+                    <span class="rst-satellite-note">Transaction logged</span>
+                  </div>
+                </div>
+                <div class="rst-satellite">
+                  <i class="rst-satellite-line" aria-hidden="true"></i>
+                  <div class="rst-satellite-tile">
+                    <span class="rst-satellite-label">Multi-location</span>
+                    <span class="rst-satellite-note">Shared view</span>
+                  </div>
+                </div>
+              </div><!-- /rst-satellites -->
+
+              <!-- Intelligence: subtle observational layer -->
+              <div class="rst-intelligence-signal">
+                <span class="rst-intelligence-label">Qavyo Intelligence</span>
+                <p class="rst-intelligence-observation">Chicken stock is running lower than expected for current order pace.</p>
+                <span class="rst-intelligence-badge">Illustrative observation</span>
+              </div>
+
+            </div><!-- /rst-diagram -->
+
+          </div><!-- /rst-platform__diagram -->
+
+        </div>
+      </section>
+
     </main>
 
     <footer class="site-footer">
