@@ -102,10 +102,10 @@
                   </section>
                   <section class="restaurant-group" aria-labelledby="manage-restaurant-title">
                     <p class="restaurant-group__title" id="manage-restaurant-title">Manage Your Business</p>
-                    <a href="#prototype-navigation" data-prototype-link>Staff &amp; Scheduling</a>
-                    <a href="#prototype-navigation" data-prototype-link>Attendance &amp; Payroll</a>
+                    <a href="#staff">Staff &amp; Scheduling</a>
+                    <a href="#payroll">Attendance &amp; Payroll</a>
                     <a href="#prototype-navigation" data-prototype-link>Reporting</a>
-                    <a href="#prototype-navigation" data-prototype-link>Multi-location</a>
+                    <a href="#multi-location">Multi-location</a>
                   </section>
                   <section class="restaurant-group restaurant-group--intelligence" aria-labelledby="restaurant-intelligence-title">
                     <p class="restaurant-group__title" id="restaurant-intelligence-title">Qavyo Intelligence</p>
@@ -147,7 +147,7 @@
             </div>
 
             <div class="nav-item">
-              <a class="nav-link" href="#prototype-navigation" data-prototype-link>Pricing</a>
+              <a class="nav-link" href="#pricing">Pricing</a>
             </div>
 
             <div class="nav-item nav-item--resources">
@@ -238,10 +238,10 @@
               </section>
               <section class="mobile-menu-section" aria-labelledby="mobile-manage-restaurant-title">
                 <p class="mobile-menu-section__title" id="mobile-manage-restaurant-title">Manage Your Business</p>
-                <a href="#prototype-navigation" data-prototype-link>Staff &amp; Scheduling</a>
-                <a href="#prototype-navigation" data-prototype-link>Attendance &amp; Payroll</a>
+                <a href="#staff">Staff &amp; Scheduling</a>
+                <a href="#payroll">Attendance &amp; Payroll</a>
                 <a href="#prototype-navigation" data-prototype-link>Reporting</a>
-                <a href="#prototype-navigation" data-prototype-link>Multi-location</a>
+                <a href="#multi-location">Multi-location</a>
               </section>
               <section class="mobile-menu-section" aria-labelledby="mobile-restaurant-intelligence-title">
                 <p class="mobile-menu-section__title" id="mobile-restaurant-intelligence-title">Qavyo Intelligence</p>
@@ -2604,6 +2604,706 @@
         </div>
       </section>
 
+      <!-- ═══════════════════════════════════════════════════════════════
+           Section 10: Team, Staff, Scheduling, Attendance & Payroll (#team, #staff, #payroll)
+           ═══════════════════════════════════════════════════════════════ -->
+      <section class="section rst-team-section" id="team" aria-labelledby="team-workforce-title">
+        <div class="container">
+
+          <header class="rst-team-section__header">
+            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Team &amp; Operations</p>
+            <h2 id="team-workforce-title">Keep your team connected to the operation.</h2>
+            <p class="lede">When scheduling, live attendance, and verified hours link directly into daily service and sales volume, workforce management stops being an isolated back-office task. Qavyo connects your roster with real-time restaurant performance.</p>
+          </header>
+
+          <!-- Core Story Sequence Pipeline Strip -->
+          <div class="rst-workforce-pipeline" role="region" aria-label="Workforce Operational Journey">
+            <div class="rst-workforce-step">
+              <strong>Team Roster</strong>
+              <span>(Roles &amp; Availability)</span>
+            </div>
+            <span class="rst-workforce-arrow" aria-hidden="true">→</span>
+            <div class="rst-workforce-step">
+              <strong>Shift Schedule</strong>
+              <span>(Weekly Coverage)</span>
+            </div>
+            <span class="rst-workforce-arrow" aria-hidden="true">→</span>
+            <div class="rst-workforce-step">
+              <strong>Live Attendance</strong>
+              <span>(POS Clock-In)</span>
+            </div>
+            <span class="rst-workforce-arrow" aria-hidden="true">→</span>
+            <div class="rst-workforce-step">
+              <strong>Hours Worked</strong>
+              <span>(Break Reconciliation)</span>
+            </div>
+            <span class="rst-workforce-arrow" aria-hidden="true">→</span>
+            <div class="rst-workforce-step">
+              <strong>Payroll Readiness</strong>
+              <span>(Export Ready)</span>
+            </div>
+            <span class="rst-workforce-arrow" aria-hidden="true">→</span>
+            <div class="rst-workforce-step">
+              <strong>Connected Operations</strong>
+              <span>(Labor Visibility)</span>
+            </div>
+          </div>
+
+          <!-- Main Workforce Visual: Schedule vs Attendance & Payroll -->
+          <div class="rst-workforce-grid" role="region" aria-label="Illustrative Team Scheduling and Attendance Interface">
+
+            <!-- Left: Weekly Schedule Board (#staff, #scheduling) -->
+            <div class="rst-schedule-board" id="staff" role="img" aria-label="Illustrative weekly shift schedule showing team shifts across Monday, Tuesday, and Wednesday for floor and kitchen staff.">
+              <span id="scheduling" class="sr-only">Scheduling Anchor</span>
+              <div class="rst-schedule-header" aria-hidden="true">
+                <div class="rst-schedule-title">
+                  <span class="signal-dot signal-dot--live"></span>
+                  <span>Shift Roster · Week 41 (Floor &amp; Kitchen)</span>
+                </div>
+                <div class="rst-schedule-meta">
+                  <span>38 Shifts Scheduled</span>
+                  <span>·</span>
+                  <span>304.0 Planned Hours</span>
+                </div>
+              </div>
+
+              <div class="rst-schedule-body" aria-hidden="true">
+                <!-- Monday -->
+                <div class="rst-schedule-day">
+                  <div class="rst-schedule-day__head">
+                    <span>Monday</span>
+                    <span style="font-family: var(--font-mono); color: var(--color-muted);">3 Shifts · 23.5 hrs</span>
+                  </div>
+                  <div class="rst-schedule-day__shifts">
+                    <div class="rst-shift-row">
+                      <div class="rst-shift-person">
+                        <span class="rst-shift-badge rst-shift-badge--floor">Floor Lead</span>
+                        <strong>Sarah Mitchell</strong>
+                      </div>
+                      <span class="rst-shift-time">10:00 – 18:00 (8.0h)</span>
+                    </div>
+                    <div class="rst-shift-row">
+                      <div class="rst-shift-person">
+                        <span class="rst-shift-badge rst-shift-badge--floor">Server</span>
+                        <strong>James Wilson</strong>
+                      </div>
+                      <span class="rst-shift-time">12:00 – 20:00 (8.0h)</span>
+                    </div>
+                    <div class="rst-shift-row">
+                      <div class="rst-shift-person">
+                        <span class="rst-shift-badge rst-shift-badge--kitchen">Line Cook</span>
+                        <strong>Amir Khan</strong>
+                      </div>
+                      <span class="rst-shift-time">16:00 – Close (7.5h)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Tuesday -->
+                <div class="rst-schedule-day">
+                  <div class="rst-schedule-day__head">
+                    <span>Tuesday</span>
+                    <span style="font-family: var(--font-mono); color: var(--color-muted);">3 Shifts · 22.5 hrs</span>
+                  </div>
+                  <div class="rst-schedule-day__shifts">
+                    <div class="rst-shift-row">
+                      <div class="rst-shift-person">
+                        <span class="rst-shift-badge rst-shift-badge--floor">Floor Lead</span>
+                        <strong>Sarah Mitchell</strong>
+                      </div>
+                      <span class="rst-shift-time">10:00 – 18:00 (8.0h)</span>
+                    </div>
+                    <div class="rst-shift-row">
+                      <div class="rst-shift-person">
+                        <span class="rst-shift-badge rst-shift-badge--floor">Server</span>
+                        <strong>James Wilson</strong>
+                      </div>
+                      <span class="rst-shift-time">12:00 – 20:00 (8.0h)</span>
+                    </div>
+                    <div class="rst-shift-row">
+                      <div class="rst-shift-person">
+                        <span class="rst-shift-badge rst-shift-badge--floor">Barista</span>
+                        <strong>Elena Rostova</strong>
+                      </div>
+                      <span class="rst-shift-time">17:00 – Close (6.5h)</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Wednesday -->
+                <div class="rst-schedule-day">
+                  <div class="rst-schedule-day__head">
+                    <span>Wednesday</span>
+                    <span style="font-family: var(--font-mono); color: var(--color-muted);">3 Shifts · 22.0 hrs</span>
+                  </div>
+                  <div class="rst-schedule-day__shifts">
+                    <div class="rst-shift-row">
+                      <div class="rst-shift-person">
+                        <span class="rst-shift-badge rst-shift-badge--kitchen">Head Chef</span>
+                        <strong>Marcus Vance</strong>
+                      </div>
+                      <span class="rst-shift-time">09:30 – 17:30 (8.0h)</span>
+                    </div>
+                    <div class="rst-shift-row">
+                      <div class="rst-shift-person">
+                        <span class="rst-shift-badge rst-shift-badge--kitchen">Line Cook</span>
+                        <strong>Amir Khan</strong>
+                      </div>
+                      <span class="rst-shift-time">15:30 – Close (8.0h)</span>
+                    </div>
+                    <div class="rst-shift-row">
+                      <div class="rst-shift-person">
+                        <span class="rst-shift-badge rst-shift-badge--floor">Server</span>
+                        <strong>Liam Patel</strong>
+                      </div>
+                      <span class="rst-shift-time">16:30 – 22:30 (6.0h)</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Attendance & Payroll Cards -->
+            <div class="rst-workforce-side">
+
+              <!-- Live Attendance Card (#attendance) -->
+              <div class="rst-attendance-card" id="attendance" role="img" aria-label="Illustrative live shift attendance card showing clocked-in team members and station assignments.">
+                <div class="rst-attendance-header" aria-hidden="true">
+                  <span>Live Shift Attendance</span>
+                  <span class="signal-dot signal-dot--live"></span>
+                </div>
+                <div class="rst-attendance-list" aria-hidden="true">
+                  <div class="rst-attend-item">
+                    <div class="rst-attend-item__info">
+                      <strong>Sarah Mitchell</strong>
+                      <span>Clocked in 10:02 · POS Terminal 01</span>
+                    </div>
+                    <span class="rst-stock-badge rst-stock-badge--normal">On Shift</span>
+                  </div>
+
+                  <div class="rst-attend-item">
+                    <div class="rst-attend-item__info">
+                      <strong>James Wilson</strong>
+                      <span>On shift 12:01 · Floor Section B</span>
+                    </div>
+                    <span class="rst-stock-badge rst-stock-badge--normal">On Shift</span>
+                  </div>
+
+                  <div class="rst-attend-item">
+                    <div class="rst-attend-item__info">
+                      <strong>Amir Khan</strong>
+                      <span>Starts at 16:00 · Kitchen Line 01</span>
+                    </div>
+                    <span class="rst-stock-badge rst-stock-badge--warning">Scheduled</span>
+                  </div>
+
+                  <div class="rst-attend-item">
+                    <div class="rst-attend-item__info">
+                      <strong>Elena Rostova</strong>
+                      <span>Off shift · Scheduled tomorrow 17:00</span>
+                    </div>
+                    <span class="rst-stock-badge" style="background: #edf1f4; color: var(--color-muted);">Off</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Hours & Payroll Readiness Card (#payroll) -->
+              <div class="rst-payroll-card" id="payroll" role="img" aria-label="Illustrative payroll readiness card showing scheduled hours versus actual clocked hours for pay cycle.">
+                <div class="rst-payroll-header" aria-hidden="true">
+                  <span>Hours Worked &amp; Payroll Readiness</span>
+                  <span style="font-family: var(--font-mono); font-size: 0.6875rem; color: #92a6b5;">Cycle: 01–14 Oct</span>
+                </div>
+                <div class="rst-payroll-body" aria-hidden="true">
+                  <div class="rst-payroll-metrics">
+                    <div class="rst-payroll-metric">
+                      <span>Scheduled Hours</span>
+                      <strong>342.0 hrs</strong>
+                    </div>
+                    <div class="rst-payroll-metric">
+                      <span>Clocked Actual</span>
+                      <strong>340.5 hrs</strong>
+                    </div>
+                    <div class="rst-payroll-metric">
+                      <span>Variance / Break</span>
+                      <strong>-1.5 hrs (0.4%)</strong>
+                    </div>
+                    <div class="rst-payroll-metric">
+                      <span>Status</span>
+                      <strong style="color: #2e7d5b; font-size: var(--text-xs);">Export Ready</strong>
+                    </div>
+                  </div>
+                  <p style="margin: 0; font-size: 0.6875rem; color: var(--color-muted); line-height: 1.5;">
+                    Scheduled shifts reconcile against verified terminal clock-ins to ensure hours worked are ready for your payroll process without manual timesheet data entry.
+                  </p>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+
+          <!-- Connection to Restaurant Operations Context Banner -->
+          <div class="rst-service-sync-banner" role="region" aria-label="Service Period Operational Context">
+            <span class="signal-dot signal-dot--live" aria-hidden="true"></span>
+            <span><strong>Operational service correlation:</strong> Friday dinner service (18:30 – 21:30) is projected at 94% cover capacity. 8 team members scheduled across floor and kitchen to match anticipated ticket volume.</span>
+          </div>
+
+          <!-- Team & Workforce Feature Highlights (4 items) -->
+          <div class="rst-team-features">
+            <div class="rst-feature-item">
+              <h3>Shift scheduling &amp; roster builder</h3>
+              <p>Plan weekly rosters across floor, bar, and kitchen departments with clear visibility of shift hours and planned wage commitments.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Real-time attendance &amp; PIN clock-in</h3>
+              <p>Staff clock in and out on POS terminals or supported handheld devices with verified timestamps and break logging.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Hours-to-payroll readiness</h3>
+              <p>Automatically match scheduled shifts against verified clocked attendance, eliminating manual paper timesheet reconciliation.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Role permissions &amp; manager overrides</h3>
+              <p>Control access levels for discounts, voids, menu alterations, and cash drawer actions securely across front and back of house.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════════════════════════
+           Section 11: Multi-Location Management (#multi-location)
+           ═══════════════════════════════════════════════════════════════ -->
+      <section class="section rst-multiloc-section" id="multi-location" aria-labelledby="multi-location-title">
+        <div class="container">
+
+          <header class="rst-multiloc-section__header">
+            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Multi-Location</p>
+            <h2 id="multi-location-title">One restaurant or many. Keep the operation connected.</h2>
+            <p class="lede">Manage menus, view live operational status, transfer inventory, and compare performance across every restaurant branch without treating each location as a disconnected island.</p>
+          </header>
+
+          <!-- Main Multi-Location Grid -->
+          <div class="rst-multiloc-grid" role="region" aria-label="Illustrative Multi-Location Operational Dashboard">
+
+            <!-- Left: Locations Status List -->
+            <div class="rst-locations-list" role="list" aria-label="Connected Restaurant Locations">
+              <!-- Location 1: Soho -->
+              <div class="rst-location-item" role="listitem">
+                <div class="rst-loc-head">
+                  <span class="rst-loc-name">Soho Flagship</span>
+                  <span class="rst-stock-badge rst-stock-badge--normal">Open · Operations normal</span>
+                </div>
+                <div class="rst-loc-metrics">
+                  <span>142 covers today</span>
+                  <span>·</span>
+                  <span>6 staff on duty</span>
+                  <span>·</span>
+                  <span>Service flow: Optimal</span>
+                </div>
+              </div>
+
+              <!-- Location 2: Camden (Selected & Needs Attention) -->
+              <div class="rst-location-item rst-location-item--selected rst-location-item--alert" role="listitem">
+                <div class="rst-loc-head">
+                  <span class="rst-loc-name">Camden Lock</span>
+                  <span class="rst-stock-badge rst-stock-badge--warning">Open · Needs attention</span>
+                </div>
+                <div class="rst-loc-metrics">
+                  <span>98 covers today</span>
+                  <span>·</span>
+                  <span>5 staff on duty</span>
+                  <span>·</span>
+                  <span style="color: #9a6414; font-weight: 700;">Stock variance detected</span>
+                </div>
+              </div>
+
+              <!-- Location 3: Shoreditch -->
+              <div class="rst-location-item" role="listitem">
+                <div class="rst-loc-head">
+                  <span class="rst-loc-name">Shoreditch High St</span>
+                  <span class="rst-stock-badge rst-stock-badge--normal">Open · Operations normal</span>
+                </div>
+                <div class="rst-loc-metrics">
+                  <span>116 covers today</span>
+                  <span>·</span>
+                  <span>7 staff on duty</span>
+                  <span>·</span>
+                  <span>Service flow: Optimal</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Right: Location Detail & Qavyo Intelligence Callback -->
+            <div class="rst-loc-detail-board" role="img" aria-label="Illustrative Camden Branch detail panel showing connected operational areas and a Qavyo Intelligence alert callback.">
+              <div class="rst-loc-detail-header" aria-hidden="true">
+                <span>Camden Branch · Operational Detail</span>
+                <span class="rst-stock-badge rst-stock-badge--warning">Selected Site</span>
+              </div>
+
+              <!-- Operational Tabs -->
+              <div class="rst-loc-tabs" aria-hidden="true">
+                <span class="rst-loc-tab">Orders</span>
+                <span class="rst-loc-tab">Inventory</span>
+                <span class="rst-loc-tab">Team</span>
+                <span class="rst-loc-tab">Customers</span>
+                <span class="rst-loc-tab">Reporting</span>
+                <span class="rst-loc-tab rst-loc-tab--active">Intelligence (1)</span>
+              </div>
+
+              <div class="rst-loc-detail-body" aria-hidden="true">
+                <div class="rst-loc-snapshot">
+                  <div class="rst-loc-snapshot-item">
+                    <span>Active Menu</span>
+                    <strong>Autumn Dinner v2.1</strong>
+                  </div>
+                  <div class="rst-loc-snapshot-item">
+                    <span>Staff on Duty</span>
+                    <strong>5 Clocked In (2 Floor, 2 Kitchen, 1 Mgr)</strong>
+                  </div>
+                  <div class="rst-loc-snapshot-item">
+                    <span>Dining Room Status</span>
+                    <strong>18 Tables Active (72% Occupancy)</strong>
+                  </div>
+                  <div class="rst-loc-snapshot-item">
+                    <span>Stock Transfers</span>
+                    <strong>1 Received from Soho (Brioche Buns 20 pk)</strong>
+                  </div>
+                </div>
+
+                <!-- Qavyo Intelligence Callback Box -->
+                <div class="rst-loc-intel-callout">
+                  <strong>
+                    <span class="signal-dot signal-dot--warning"></span>
+                    Qavyo Intelligence Callback · Camden
+                  </strong>
+                  <p>Food cost movement deserves review. Brioche Bun consumption in Camden exceeded recipe projections by 14% over the last 3 dinner shifts.</p>
+                  <div>
+                    <a href="#intelligence" class="rst-intel-link">Review with Qavyo Intelligence <span aria-hidden="true">→</span></a>
+                  </div>
+                </div>
+
+                <p style="margin: 0; font-size: 0.6875rem; color: var(--color-muted); line-height: 1.5;">
+                  Instead of manually auditing every location equally, Qavyo Intelligence surfaces specific operational variance across branches so you can act where attention is needed most.
+                </p>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Multi-Location Feature Highlights (4 items) -->
+          <div class="rst-multiloc-features">
+            <div class="rst-feature-item">
+              <h3>Centralized menu &amp; pricing control</h3>
+              <p>Update recipes, prices, and dish availability centrally across all branches, or adjust offerings selectively for local markets.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Inter-branch inventory transfers</h3>
+              <p>Move stock between locations with tracked dispatch and receipt documentation, ensuring inventory counts stay accurate everywhere.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Consolidated multi-unit reporting</h3>
+              <p>Compare sales, guest covers, labour hours, and product margins across all locations side-by-side in one consolidated view.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Location-level roles &amp; permissions</h3>
+              <p>Grant site managers full autonomy over daily rosters and ordering while keeping financial controls and group configuration unified.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════════════════════════
+           Narrative Transition Bridge: From Operations to Conversion
+           ═══════════════════════════════════════════════════════════════ -->
+      <section class="rst-pricing-bridge" aria-labelledby="bridge-title">
+        <div class="container">
+          <div class="rst-pricing-bridge__inner">
+            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>The Complete Restaurant Platform</p>
+            <h2 id="bridge-title">From individual orders to group-wide operations. Connected at every step.</h2>
+            <p>You have seen how Qavyo connects your front of house, kitchen displays, table management, inventory, recipes, customer loyalty, direct online ordering, staff scheduling, attendance, and multi-location oversight. Now explore the simple software plans designed to get you started.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════════════════════════
+           Section 12: Restaurant Pricing (#pricing) & 30-Day Experience
+           ═══════════════════════════════════════════════════════════════ -->
+      <section class="section rst-pricing-section" id="pricing" aria-labelledby="restaurant-pricing-title">
+        <div class="container">
+
+          <!-- Section Intro -->
+          <div class="rst-pricing-header">
+            <div class="rst-pricing-header__lead">
+              <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Simple Software Pricing</p>
+              <h2 id="restaurant-pricing-title">Choose the Qavyo plan that fits your restaurant.</h2>
+            </div>
+            <div class="rst-pricing-header__aside">
+              <p>Straightforward software plans with no hidden tiers. Start with the full 30-day Qavyo experience with all capabilities unlocked, then choose the plan that best fits your business.</p>
+              <a class="text-link" href="index.html#pricing-overview">
+                Compare all plans in detail <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Pricing Cards Grid -->
+          <div class="rst-pricing-cards" role="list" aria-label="Qavyo Restaurant Software plans">
+
+            <!-- Starter Plan -->
+            <article class="rst-pricing-card" role="listitem" aria-labelledby="plan-starter-title">
+              <div class="rst-pricing-card__intro">
+                <div class="rst-pricing-card__eyebrow">
+                  <span class="rst-pricing-card__stage">Stage · Run</span>
+                </div>
+                <h3 class="rst-pricing-card__name" id="plan-starter-title">Starter</h3>
+                <p class="rst-pricing-card__desc">Everything you need to run your restaurant.</p>
+                <div class="rst-pricing-card__rate">
+                  <span class="rst-pricing-card__amount">£29</span>
+                  <span class="rst-pricing-card__cycle">/ month</span>
+                </div>
+                <a class="button button--secondary rst-pricing-card__cta" href="#prototype-navigation" data-prototype-link>
+                  Start 30 Days Free <span aria-hidden="true">→</span>
+                </a>
+              </div>
+              <div class="rst-pricing-card__features">
+                <p class="rst-pricing-card__summary">Core operational software:</p>
+                <ul class="rst-pricing-card__list">
+                  <li><span class="pricing-check" aria-hidden="true">✓</span><span>POS &amp; ordering flows</span></li>
+                  <li><span class="pricing-check" aria-hidden="true">✓</span><span>Kitchen display system</span></li>
+                  <li><span class="pricing-check" aria-hidden="true">✓</span><span>Website &amp; online ordering</span></li>
+                  <li><span class="pricing-check" aria-hidden="true">✓</span><span>Inventory, recipes &amp; stock</span></li>
+                  <li class="pricing-card__intelligence"><span class="pricing-check pricing-check--intel" aria-hidden="true">★</span><span>Qavyo Intelligence Essential</span></li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Growth Plan (Subtle Visual Emphasis) -->
+            <article class="rst-pricing-card rst-pricing-card--featured" role="listitem" aria-labelledby="plan-growth-title">
+              <div class="rst-pricing-card__intro">
+                <div class="rst-pricing-card__eyebrow">
+                  <span class="rst-pricing-card__stage rst-pricing-card__stage--featured">Stage · Grow</span>
+                </div>
+                <h3 class="rst-pricing-card__name" id="plan-growth-title">Growth</h3>
+                <p class="rst-pricing-card__desc">Run the restaurant. Manage the business.</p>
+                <div class="rst-pricing-card__rate">
+                  <span class="rst-pricing-card__amount">£79</span>
+                  <span class="rst-pricing-card__cycle">/ month</span>
+                </div>
+                <a class="button button--primary rst-pricing-card__cta" href="#prototype-navigation" data-prototype-link>
+                  Start 30 Days Free <span aria-hidden="true">→</span>
+                </a>
+              </div>
+              <div class="rst-pricing-card__features">
+                <p class="rst-pricing-card__summary">Everything in Starter, plus:</p>
+                <ul class="rst-pricing-card__list">
+                  <li><span class="pricing-check" aria-hidden="true">✓</span><span>Staff scheduling &amp; attendance</span></li>
+                  <li><span class="pricing-check" aria-hidden="true">✓</span><span>Loyalty &amp; customer CRM</span></li>
+                  <li><span class="pricing-check" aria-hidden="true">✓</span><span>Central menu &amp; stock transfers</span></li>
+                  <li><span class="pricing-check" aria-hidden="true">✓</span><span>Multi-location management</span></li>
+                  <li class="pricing-card__intelligence"><span class="pricing-check pricing-check--intel" aria-hidden="true">★</span><span>Qavyo Intelligence Full</span></li>
+                </ul>
+              </div>
+            </article>
+
+            <!-- Business Plan -->
+            <article class="rst-pricing-card" role="listitem" aria-labelledby="plan-business-title">
+              <div class="rst-pricing-card__intro">
+                <div class="rst-pricing-card__eyebrow">
+                  <span class="rst-pricing-card__stage">Stage · Scale</span>
+                </div>
+                <h3 class="rst-pricing-card__name" id="plan-business-title">Business</h3>
+                <p class="rst-pricing-card__desc">Central control for restaurant groups.</p>
+                <div class="rst-pricing-card__rate">
+                  <span class="rst-pricing-card__amount">£149</span>
+                  <span class="rst-pricing-card__cycle">/ month</span>
+                </div>
+                <a class="button button--secondary rst-pricing-card__cta" href="#prototype-navigation" data-prototype-link>
+                  Start 30 Days Free <span aria-hidden="true">→</span>
+                </a>
+              </div>
+              <div class="rst-pricing-card__features">
+                <p class="rst-pricing-card__summary">Everything in Growth, plus:</p>
+                <ul class="rst-pricing-card__list">
+                  <li><span class="pricing-check" aria-hidden="true">✓</span><span>Centralised multi-location control</span></li>
+                  <li><span class="pricing-check" aria-hidden="true">✓</span><span>Consolidated reporting across locations</span></li>
+                  <li><span class="pricing-check" aria-hidden="true">✓</span><span>Location-level roles &amp; permissions</span></li>
+                  <li><span class="pricing-check" aria-hidden="true">✓</span><span>API &amp; custom integrations</span></li>
+                  <li class="pricing-card__intelligence"><span class="pricing-check pricing-check--intel" aria-hidden="true">★</span><span>Multi-location Qavyo Intelligence</span></li>
+                </ul>
+              </div>
+            </article>
+
+          </div><!-- /rst-pricing-cards -->
+
+          <!-- Footnote & Important Clarification -->
+          <div class="rst-pricing-clarification-bar">
+            <p>
+              <strong>Software pricing shown.</strong> Hardware is sold separately from software plans. Payment processing is separate from software pricing.
+            </p>
+            <div>
+              <a class="text-link" href="index.html#pricing-overview">
+                Compare all plans in detail <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 30 Days. Full Qavyo. (Conversion Showcase Block) -->
+          <div class="rst-exp-block" role="region" aria-labelledby="rst-exp-title">
+            <div class="rst-exp-grid">
+
+              <!-- Left: Proposition & Timeline -->
+              <div class="rst-exp-content">
+                <p class="eyebrow eyebrow--on-dark"><span class="signal-dot signal-dot--light" aria-hidden="true"></span>Start with Qavyo</p>
+                <h3 id="rst-exp-title">30 Days. Full Qavyo.</h3>
+                <p class="rst-exp-lead">Experience Qavyo properly for 30 days. Explore the full software platform and Full Qavyo Intelligence in your live operation, see how it connects your workflows, then choose the plan that fits your restaurant.</p>
+
+                <div class="rst-exp-actions">
+                  <a class="button button--primary" href="#prototype-navigation" data-prototype-link>
+                    Start 30 Days Free <span aria-hidden="true">→</span>
+                  </a>
+                  <a class="button button--secondary-dark" href="#prototype-navigation" data-prototype-link>
+                    Talk to Sales
+                  </a>
+                </div>
+
+                <!-- Timeline Journey -->
+                <div class="rst-exp-timeline" role="list" aria-label="30-day experience steps">
+                  <div class="rst-exp-step" role="listitem">
+                    <div class="rst-exp-step__indicator" aria-hidden="true">
+                      <span class="rst-exp-step__num">01</span>
+                      <span class="rst-exp-step__line"></span>
+                    </div>
+                    <div class="rst-exp-step__body">
+                      <strong>Day 1 · Start with Qavyo</strong>
+                      <p>Get set up with the complete Qavyo platform.</p>
+                    </div>
+                  </div>
+
+                  <div class="rst-exp-step" role="listitem">
+                    <div class="rst-exp-step__indicator" aria-hidden="true">
+                      <span class="rst-exp-step__num">02</span>
+                      <span class="rst-exp-step__line"></span>
+                    </div>
+                    <div class="rst-exp-step__body">
+                      <strong>Full Experience · Unrestricted Software</strong>
+                      <p>Restaurant Software plus Full Qavyo Intelligence unlocked.</p>
+                    </div>
+                  </div>
+
+                  <div class="rst-exp-step" role="listitem">
+                    <div class="rst-exp-step__indicator" aria-hidden="true">
+                      <span class="rst-exp-step__num">03</span>
+                      <span class="rst-exp-step__line"></span>
+                    </div>
+                    <div class="rst-exp-step__body">
+                      <strong>30 Days · In Your Operation</strong>
+                      <p>Experience connected workflows live on the floor and in the kitchen.</p>
+                    </div>
+                  </div>
+
+                  <div class="rst-exp-step" role="listitem">
+                    <div class="rst-exp-step__indicator" aria-hidden="true">
+                      <span class="rst-exp-step__num">04</span>
+                    </div>
+                    <div class="rst-exp-step__body">
+                      <strong>Then · Choose What Fits</strong>
+                      <p>After 30 days, continue on Starter (£29), Growth (£79), or Business (£149).</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Right: Manifest Card -->
+              <aside class="rst-manifest-card" aria-label="Full Qavyo 30-day capability scope">
+                <div class="rst-manifest-card__header">
+                  <span class="rst-manifest-card__badge">Full software experience</span>
+                  <span class="rst-manifest-card__scope">Unrestricted capability</span>
+                </div>
+
+                <span class="rst-manifest-card__days">30 DAYS</span>
+                <p class="rst-manifest-card__tagline">The connected operational platform in your hands.</p>
+
+                <div class="rst-manifest-card__stack" role="list" aria-label="Included software layers">
+                  <div class="rst-manifest-layer" role="listitem">
+                    <span class="rst-manifest-layer__icon" aria-hidden="true">01</span>
+                    <div class="rst-manifest-layer__info">
+                      <strong>Restaurant Software</strong>
+                      <span>POS, ordering flows, kitchen display, table management, inventory, recipes, team &amp; attendance</span>
+                    </div>
+                  </div>
+
+                  <div class="rst-manifest-operator" aria-hidden="true">+</div>
+
+                  <div class="rst-manifest-layer" role="listitem">
+                    <span class="rst-manifest-layer__icon" aria-hidden="true">02</span>
+                    <div class="rst-manifest-layer__info">
+                      <strong>Full Qavyo Intelligence</strong>
+                      <span>Operational signal tracking, margin protection, waste detection, and recommendations</span>
+                    </div>
+                  </div>
+
+                  <div class="rst-manifest-operator" aria-hidden="true">+</div>
+
+                  <div class="rst-manifest-layer" role="listitem">
+                    <span class="rst-manifest-layer__icon" aria-hidden="true">03</span>
+                    <div class="rst-manifest-layer__info">
+                      <strong>Connected Operations</strong>
+                      <span>Unified operational visibility across service, scheduling, and multi-unit reporting</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="rst-manifest-card__footer">
+                  <div class="rst-manifest-resolution">
+                    <span aria-hidden="true">→</span>
+                    <span>Choose the plan that fits your restaurant</span>
+                  </div>
+                  <p class="rst-manifest-clarification">Focuses on core software capabilities. Hardware is sold separately from software plans. Payment processing is separate from software pricing.</p>
+                </div>
+              </aside>
+
+            </div>
+          </div><!-- /rst-exp-block -->
+
+          <!-- Device Flexibility & Hardware Clarification Panel -->
+          <div class="rst-device-flex-panel" role="region" aria-labelledby="rst-flex-title">
+            <header class="rst-device-flex-panel__header">
+              <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Device Flexibility</p>
+              <h3 id="rst-flex-title">Software first. Hardware when you need it.</h3>
+              <p class="lede" style="font-size: var(--text-sm); max-width: 48rem;">You do not necessarily need to buy dedicated hardware to start using Qavyo. Run Qavyo on supported phones and tablets already in your restaurant, or add dedicated restaurant hardware when your operation needs it.</p>
+            </header>
+
+            <div class="rst-flex-grid">
+              <div class="rst-flex-card">
+                <strong>Your Existing Supported Devices</strong>
+                <p>Run tableside ordering, live kitchen pass views, stock counts, manager reporting, and staff attendance clock-ins on supported iOS and Android phones and tablets using modern web browsers.</p>
+              </div>
+
+              <div class="rst-flex-card">
+                <strong>Dedicated Restaurant Hardware</strong>
+                <p>Add commercial countertop touch POS terminals, kitchen display monitors, receipt printers, and cash drawers whenever your front-of-house or pass stations require dedicated hardware setups.</p>
+              </div>
+            </div>
+
+            <div class="rst-flex-footer">
+              <span>Both device approaches connect seamlessly to the same real-time Qavyo operational system.</span>
+              <span><strong>Clarification:</strong> Hardware is sold separately from software plans. Payment processing is separate from software pricing.</span>
+            </div>
+          </div>
+
+          <!-- 24/7 Support Banner -->
+          <div class="rst-support-banner" role="region" aria-label="Support Commitment">
+            <span class="signal-dot signal-dot--live" aria-hidden="true" style="font-size: 1.25rem;"></span>
+            <div>
+              <strong>24/7 Qavyo Support</strong>
+              <p>Qavyo support remains available around the clock when customers need help. Because restaurants operate during late nights, weekends, and holidays, our support team stays close to your operation whenever you need assistance.</p>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
     </main>
 
     <!-- ═══════════════════════════════════════════════════════════════
@@ -2648,8 +3348,8 @@
               <li><a href="#kitchen">Kitchen &amp; Service</a></li>
               <li><a href="#inventory">Inventory &amp; Cost</a></li>
               <li><a href="#customers">Customers &amp; Loyalty</a></li>
-              <li><a href="#prototype-navigation" data-prototype-link>Team &amp; Operations</a></li>
-              <li><a href="#prototype-navigation" data-prototype-link>Multi-location</a></li>
+              <li><a href="#team">Team &amp; Operations</a></li>
+              <li><a href="#multi-location">Multi-location</a></li>
             </ul>
           </div>
 
@@ -2669,7 +3369,7 @@
           <div class="site-footer__col">
             <p class="site-footer__col-title">Resources</p>
             <ul class="site-footer__links">
-              <li><a href="#prototype-navigation" data-prototype-link>Pricing</a></li>
+              <li><a href="#pricing">Pricing</a></li>
               <li><a href="#prototype-navigation" data-prototype-link>Resources</a></li>
               <li><a href="#prototype-navigation" data-prototype-link>Talk to Sales</a></li>
             </ul>

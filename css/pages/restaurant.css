@@ -4114,45 +4114,1119 @@
 }
 
 /* --------------------------------------------------------------------------
-   Responsive Adaptations for Sections 8 & 9
+   Section 10: Team, Staff, Scheduling, Attendance & Payroll (#team, #staff, #payroll)
+   -------------------------------------------------------------------------- */
+.rst-team-section {
+  padding-block: var(--section-space);
+  background: var(--color-surface);
+}
+
+.rst-team-section__header {
+  max-width: var(--container-narrow);
+  margin-block-end: var(--space-6);
+}
+
+.rst-workforce-pipeline {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-5);
+  background: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  margin-block-end: var(--space-6);
+  font-size: var(--text-xs);
+  overflow-x: auto;
+}
+
+.rst-workforce-step {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  white-space: nowrap;
+}
+
+.rst-workforce-step strong {
+  color: var(--color-ink);
+  font-weight: 700;
+}
+
+.rst-workforce-step span {
+  color: var(--color-muted);
+}
+
+.rst-workforce-arrow {
+  color: var(--color-brand);
+  font-weight: 700;
+}
+
+/* Workforce Visual Grid: Schedule vs Live Attendance & Payroll */
+.rst-workforce-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.82fr);
+  gap: var(--space-6);
+  align-items: start;
+  margin-block-end: var(--space-6);
+}
+
+/* Left: Weekly Schedule Board */
+.rst-schedule-board {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.rst-schedule-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-dark);
+  color: #c7d3dc;
+  font-size: var(--text-xs);
+  border-bottom: 1px solid var(--color-dark-raised);
+}
+
+.rst-schedule-title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-surface);
+  font-weight: 700;
+}
+
+.rst-schedule-meta {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: #92a6b5;
+}
+
+.rst-schedule-body {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.rst-schedule-day {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.rst-schedule-day__head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-canvas);
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.rst-schedule-day__shifts {
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.rst-shift-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--text-xs);
+  gap: var(--space-2);
+  padding: 0.25rem 0.35rem;
+  border-radius: var(--radius-sm);
+  background: #fafbfc;
+  border: 1px solid #edf1f4;
+}
+
+.rst-shift-person {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.rst-shift-person strong {
+  color: var(--color-ink);
+}
+
+.rst-shift-badge {
+  display: inline-flex;
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-sm);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.rst-shift-badge--floor {
+  background: #eef4ff;
+  color: var(--color-brand);
+  border: 1px solid #d0e0fc;
+}
+
+.rst-shift-badge--kitchen {
+  background: #fdf3e7;
+  color: #9a6414;
+  border: 1px solid #f8e1c4;
+}
+
+.rst-shift-time {
+  font-family: var(--font-mono);
+  color: var(--color-muted);
+  font-size: 0.6875rem;
+  white-space: nowrap;
+}
+
+/* Right: Attendance and Hours/Payroll Cards */
+.rst-attendance-card,
+.rst-payroll-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.rst-attendance-card {
+  margin-block-end: var(--space-4);
+}
+
+.rst-attendance-header,
+.rst-payroll-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-dark);
+  color: var(--color-surface);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  border-bottom: 1px solid var(--color-dark-raised);
+}
+
+.rst-attendance-list {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.rst-attend-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  gap: var(--space-2);
+}
+
+.rst-attend-item__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.rst-attend-item__info strong {
+  color: var(--color-ink);
+}
+
+.rst-attend-item__info span {
+  font-size: 0.6875rem;
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+}
+
+.rst-payroll-body {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  font-size: var(--text-xs);
+}
+
+.rst-payroll-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+}
+
+.rst-payroll-metric {
+  padding: var(--space-3);
+  background: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.rst-payroll-metric span {
+  font-size: 0.6875rem;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  display: block;
+  margin-block-end: 2px;
+}
+
+.rst-payroll-metric strong {
+  font-size: 1.125rem;
+  font-weight: 800;
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+}
+
+.rst-service-sync-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: #eef6ff;
+  border: 1px solid #c7defc;
+  border-radius: var(--radius-md);
+  color: #173e7a;
+  font-size: var(--text-xs);
+  margin-block-end: var(--space-6);
+}
+
+.rst-team-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+  margin-block-end: var(--space-6);
+}
+
+/* --------------------------------------------------------------------------
+   Section 11: Multi-Location Management (#multi-location)
+   -------------------------------------------------------------------------- */
+.rst-multiloc-section {
+  padding-block: var(--section-space);
+  background: var(--color-canvas);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.rst-multiloc-section__header {
+  max-width: var(--container-narrow);
+  margin-block-end: var(--space-6);
+}
+
+.rst-multiloc-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
+  gap: var(--space-6);
+  align-items: start;
+  margin-block-end: var(--space-6);
+}
+
+/* Left: Locations Status List */
+.rst-locations-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.rst-location-item {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  transition: border-color var(--transition-fast);
+}
+
+.rst-location-item--selected {
+  border-color: var(--color-brand);
+  box-shadow: 0 4px 14px rgb(47 107 219 / 0.1);
+}
+
+.rst-location-item--alert {
+  border-left: 4px solid #d97706;
+}
+
+.rst-loc-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rst-loc-name {
+  font-size: var(--text-base);
+  font-weight: 750;
+  color: var(--color-ink);
+  letter-spacing: -0.01em;
+}
+
+.rst-loc-metrics {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+/* Right: Location Detail & Qavyo Intelligence Callback */
+.rst-loc-detail-board {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.rst-loc-detail-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-dark);
+  color: var(--color-surface);
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+.rst-loc-tabs {
+  display: flex;
+  background: var(--color-dark-raised);
+  border-bottom: 1px solid var(--color-border);
+  overflow-x: auto;
+}
+
+.rst-loc-tab {
+  padding: var(--space-2) var(--space-3);
+  color: #92a6b5;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.rst-loc-tab--active {
+  color: #fff;
+  background: var(--color-dark);
+  border-bottom: 2px solid var(--color-focus);
+}
+
+.rst-loc-detail-body {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.rst-loc-snapshot {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+  font-size: var(--text-xs);
+}
+
+.rst-loc-snapshot-item {
+  padding: var(--space-3);
+  background: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+}
+
+.rst-loc-snapshot-item strong {
+  display: block;
+  color: var(--color-ink);
+  margin-block-end: 2px;
+}
+
+.rst-loc-snapshot-item span {
+  color: var(--color-muted);
+}
+
+.rst-loc-intel-callout {
+  padding: var(--space-4);
+  background: #fffbf0;
+  border: 1px solid #f4d38c;
+  border-radius: var(--radius-md);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+}
+
+.rst-loc-intel-callout strong {
+  color: #78350f;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+}
+
+.rst-loc-intel-callout p {
+  margin: 0;
+  color: #92400e;
+  line-height: 1.5;
+}
+
+.rst-intel-link {
+  color: var(--color-brand);
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.rst-intel-link:hover {
+  color: var(--color-brand-hover);
+  text-decoration: underline;
+}
+
+.rst-multiloc-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+  margin-block-end: var(--space-6);
+}
+
+/* --------------------------------------------------------------------------
+   Narrative Transition Bridge: From Operations to Conversion
+   -------------------------------------------------------------------------- */
+.rst-pricing-bridge {
+  padding: var(--space-7) var(--space-6);
+  background: linear-gradient(180deg, var(--color-canvas) 0%, var(--color-surface) 100%);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  text-align: center;
+  margin-block-end: var(--space-7);
+}
+
+.rst-pricing-bridge__inner {
+  max-width: 48rem;
+  margin-inline: auto;
+}
+
+.rst-pricing-bridge .eyebrow {
+  justify-content: center;
+}
+
+.rst-pricing-bridge h2 {
+  font-size: clamp(1.75rem, 2.5vw, 2.25rem);
+  letter-spacing: -0.03em;
+  color: var(--color-ink);
+  margin-block: var(--space-2) var(--space-3);
+}
+
+.rst-pricing-bridge p {
+  color: var(--color-text);
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+  margin-block-end: 0;
+}
+
+/* --------------------------------------------------------------------------
+   Section 12: Restaurant Pricing (#pricing) & 30-Day Experience
+   -------------------------------------------------------------------------- */
+.rst-pricing-section {
+  padding-block: var(--section-space);
+  background: var(--color-surface);
+}
+
+.rst-pricing-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+  gap: var(--space-6);
+  align-items: end;
+  margin-block-end: var(--space-7);
+}
+
+.rst-pricing-header__aside p {
+  color: var(--color-text);
+  margin-block-end: var(--space-2);
+  line-height: var(--leading-body);
+  font-size: var(--text-sm);
+}
+
+.rst-pricing-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-5);
+  margin-block-end: var(--space-6);
+}
+
+.rst-pricing-card {
+  min-width: 0;
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.rst-pricing-card:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: 0 4px 18px rgb(16 38 56 / 0.08);
+}
+
+.rst-pricing-card--featured {
+  border-color: #adbfdf;
+  background: #f7f9fe;
+  box-shadow: 0 8px 24px rgb(47 107 219 / 0.08);
+}
+
+.rst-pricing-card__intro {
+  display: flex;
+  flex-direction: column;
+}
+
+.rst-pricing-card__eyebrow {
+  min-height: 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-2);
+  margin-block-end: var(--space-2);
+}
+
+.rst-pricing-card__stage {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--color-muted);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.rst-pricing-card__stage::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+  border: 1.5px solid currentColor;
+  border-radius: 2px;
+}
+
+.rst-pricing-card__stage--featured {
+  color: var(--color-brand);
+}
+
+.rst-pricing-card__stage--featured::before {
+  background: currentColor;
+}
+
+.rst-pricing-card__name {
+  font-size: 1.5rem;
+  font-weight: 750;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+  color: var(--color-ink);
+  margin-block: var(--space-1) var(--space-2);
+}
+
+.rst-pricing-card__desc {
+  color: var(--color-text);
+  font-size: var(--text-sm);
+  line-height: 1.55;
+  min-height: 2.85rem;
+  margin-block-end: var(--space-4);
+}
+
+.rst-pricing-card__rate {
+  display: flex;
+  align-items: baseline;
+  gap: 0.4rem;
+  margin-block-end: var(--space-4);
+}
+
+.rst-pricing-card__amount {
+  font-size: clamp(2.5rem, 3.2vw, 3rem);
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-weight: 750;
+  color: var(--color-ink);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.rst-pricing-card__cycle {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+.rst-pricing-card__cta {
+  width: 100%;
+  justify-content: center;
+  min-height: 2.75rem;
+  font-size: var(--text-sm);
+}
+
+.rst-pricing-card__features {
+  border-top: 1px solid var(--color-border);
+  margin-block-start: var(--space-5);
+  padding-block-start: var(--space-4);
+  flex: 1;
+}
+
+.rst-pricing-card__summary {
+  font-size: 0.75rem;
+  font-weight: 750;
+  color: var(--color-ink);
+  margin-block-end: var(--space-3);
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.rst-pricing-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.rst-pricing-card__list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.55rem;
+  color: var(--color-text);
+  font-size: var(--text-sm);
+  line-height: 1.45;
+}
+
+.pricing-check {
+  color: var(--color-brand);
+  font-weight: 700;
+  font-size: 0.8125rem;
+  flex-shrink: 0;
+  line-height: 1.35;
+}
+
+.pricing-card__intelligence {
+  color: var(--color-ink);
+  font-weight: 650;
+}
+
+.pricing-check--intel {
+  color: var(--color-brand);
+  font-size: 0.75rem;
+}
+
+.rst-pricing-clarification-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-5);
+  background: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  margin-block-end: var(--space-7);
+}
+
+.rst-pricing-clarification-bar p {
+  margin: 0;
+}
+
+.rst-pricing-clarification-bar strong {
+  color: var(--color-ink);
+}
+
+/* 30 Days. Full Qavyo. (Conversion Showcase Block) */
+.rst-exp-block {
+  background: var(--color-dark);
+  color: var(--color-surface);
+  border-radius: var(--radius-lg);
+  padding: var(--space-7) var(--space-6);
+  margin-block: var(--space-8);
+  box-shadow: var(--shadow-md);
+}
+
+.rst-exp-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.rst-exp-content h3 {
+  font-size: clamp(2rem, 3vw, 2.75rem);
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.03em;
+  margin-block: var(--space-2) var(--space-4);
+}
+
+.rst-exp-lead {
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+  color: #b5c7d5;
+  margin-block-end: var(--space-6);
+}
+
+.rst-exp-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-block-end: var(--space-7);
+}
+
+.button--secondary-dark {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgb(255 255 255 / 0.25);
+}
+
+.button--secondary-dark:hover {
+  background: rgb(255 255 255 / 0.08);
+  border-color: rgb(255 255 255 / 0.5);
+}
+
+.rst-exp-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.rst-exp-step {
+  display: flex;
+  gap: var(--space-4);
+}
+
+.rst-exp-step__indicator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.rst-exp-step__num {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--color-dark-raised);
+  border: 1px solid #2f5270;
+  color: var(--color-focus);
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-family: var(--font-mono);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rst-exp-step__line {
+  width: 1px;
+  flex: 1;
+  background: #24425b;
+  margin-block: var(--space-1);
+  min-height: 1.5rem;
+}
+
+.rst-exp-step__body strong {
+  display: block;
+  color: #fff;
+  font-size: var(--text-sm);
+  margin-block-end: 2px;
+}
+
+.rst-exp-step__body p {
+  margin: 0;
+  color: #92a6b5;
+  font-size: var(--text-xs);
+  line-height: 1.5;
+}
+
+/* Manifest Card */
+.rst-manifest-card {
+  background: var(--color-dark-raised);
+  border: 1px solid #22425b;
+  border-radius: var(--radius-lg);
+  padding: var(--space-5);
+  box-shadow: 0 10px 30px rgb(0 0 0 / 0.25);
+}
+
+.rst-manifest-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #22425b;
+  padding-block-end: var(--space-3);
+  margin-block-end: var(--space-4);
+}
+
+.rst-manifest-card__badge {
+  background: var(--color-brand);
+  color: #fff;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.rst-manifest-card__scope {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: #76a7ff;
+}
+
+.rst-manifest-card__days {
+  font-size: 2.25rem;
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  color: #fff;
+  line-height: 1;
+  display: block;
+  margin-block-end: var(--space-2);
+}
+
+.rst-manifest-card__tagline {
+  color: #b5c7d5;
+  font-size: var(--text-xs);
+  margin-block-end: var(--space-5);
+}
+
+.rst-manifest-card__stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-block-end: var(--space-5);
+}
+
+.rst-manifest-layer {
+  padding: var(--space-3);
+  background: #0d2232;
+  border: 1px solid #1c364c;
+  border-radius: var(--radius-md);
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+}
+
+.rst-manifest-layer__icon {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: var(--color-focus);
+  font-weight: 700;
+  padding: 0.15rem 0.4rem;
+  background: #173449;
+  border-radius: var(--radius-sm);
+  flex-shrink: 0;
+}
+
+.rst-manifest-layer__info strong {
+  display: block;
+  color: #fff;
+  font-size: var(--text-xs);
+  margin-block-end: 2px;
+}
+
+.rst-manifest-layer__info span {
+  color: #8fa5b5;
+  font-size: 0.6875rem;
+  line-height: 1.4;
+  display: block;
+}
+
+.rst-manifest-operator {
+  text-align: center;
+  color: #5d7e99;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.rst-manifest-card__footer {
+  border-top: 1px solid #22425b;
+  padding-block-start: var(--space-4);
+}
+
+.rst-manifest-resolution {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: #fff;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  margin-block-end: var(--space-2);
+}
+
+.rst-manifest-clarification {
+  font-size: 0.6875rem;
+  color: #8fa5b5;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Device Flexibility & Hardware Clarification */
+.rst-device-flex-panel {
+  background: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  margin-block-end: var(--space-6);
+}
+
+.rst-device-flex-panel__header {
+  max-width: var(--container-narrow);
+  margin-block-end: var(--space-5);
+}
+
+.rst-flex-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-5);
+  margin-block-end: var(--space-5);
+}
+
+.rst-flex-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.rst-flex-card strong {
+  color: var(--color-ink);
+  font-size: var(--text-base);
+  display: block;
+}
+
+.rst-flex-card p {
+  color: var(--color-text);
+  font-size: var(--text-xs);
+  line-height: 1.6;
+  margin: 0;
+}
+
+.rst-flex-footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-2);
+  padding-block-start: var(--space-4);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+.rst-flex-footer strong {
+  color: var(--color-ink);
+}
+
+/* 24/7 Support Banner */
+.rst-support-banner {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  margin-block-end: var(--space-7);
+}
+
+.rst-support-banner strong {
+  color: var(--color-ink);
+  font-size: var(--text-base);
+  display: block;
+  margin-block-end: 2px;
+}
+
+.rst-support-banner p {
+  margin: 0;
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  line-height: 1.5;
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Adaptations for Sections 8, 9, 10, 11 & 12
    -------------------------------------------------------------------------- */
 @media (max-width: 68rem) {
-  .rst-customer-grid {
-    grid-template-columns: 1fr;
-  }
-
-  .rst-customer-features,
-  .rst-digital-features {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
+  .rst-customer-grid,
+  .rst-workforce-grid,
+  .rst-multiloc-grid,
+  .rst-exp-grid,
+  .rst-flex-grid,
   .rst-digital-showcase {
     grid-template-columns: 1fr;
   }
 
-  .rst-digital-bridge {
+  .rst-customer-features,
+  .rst-digital-features,
+  .rst-team-features,
+  .rst-multiloc-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rst-pricing-header {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .rst-pricing-cards {
+    grid-template-columns: 1fr;
+    gap: var(--space-4);
+  }
+
+  .rst-digital-bridge,
+  .rst-pricing-clarification-bar {
     flex-wrap: wrap;
     gap: var(--space-3);
   }
 }
 
 @media (max-width: 44rem) {
-  .rst-cust-activity-grid {
+  .rst-cust-activity-grid,
+  .rst-payroll-metrics,
+  .rst-loc-snapshot {
     grid-template-columns: 1fr;
   }
 
   .rst-customer-features,
-  .rst-digital-features {
+  .rst-digital-features,
+  .rst-team-features,
+  .rst-multiloc-features {
     grid-template-columns: 1fr;
   }
 
   .rst-customer-pipeline,
-  .rst-digital-bridge {
+  .rst-digital-bridge,
+  .rst-workforce-pipeline {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  .rst-support-banner {
     flex-direction: column;
     align-items: flex-start;
     gap: var(--space-2);
   }
 }
+
 
 
 
