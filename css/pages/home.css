@@ -468,3 +468,556 @@
     animation: none;
   }
 }
+
+/* ─── Product families ──────────────────────────────────────────── */
+
+.product-families {
+  position: relative;
+  overflow: hidden;
+  padding-block: var(--section-space);
+  background: var(--color-surface);
+}
+
+/* subtle centre hairline that echoes the hero connection language */
+.product-families::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 1px;
+  background: var(--color-surface-muted);
+  content: "";
+  pointer-events: none;
+}
+
+.product-families > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Section intro ─────────────────────────────────────────────────── */
+
+.product-families__intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(20rem, 0.9fr);
+  gap: var(--space-8);
+  align-items: end;
+  margin-block-end: var(--space-8);
+}
+
+.product-families__intro .eyebrow {
+  margin-block-end: var(--space-5);
+}
+
+.product-families__intro h2 {
+  max-width: 15ch;
+  margin-block-end: 0;
+}
+
+.product-families__intro > p {
+  max-width: 34rem;
+  margin: 0 0 var(--space-2);
+  color: var(--color-muted);
+  font-size: var(--text-lg);
+  line-height: 1.65;
+}
+
+/* Layout grid ───────────────────────────────────────────────────── */
+
+.product-families__layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(20rem, 0.72fr);
+  gap: var(--space-5);
+  align-items: start;
+}
+
+.product-families__secondary {
+  display: grid;
+  grid-template-rows: auto auto;
+  gap: var(--space-5);
+  align-content: start;
+}
+
+/* Shared card base ──────────────────────────────────────────────── */
+
+.product-family {
+  min-width: 0;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-canvas);
+}
+
+.product-family__index {
+  margin-block-end: var(--space-3);
+  color: var(--color-brand-hover);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.product-family h3 {
+  max-width: 18ch;
+  font-size: clamp(1.5rem, 1.2rem + 0.8vw, 2rem);
+  line-height: 1.2;
+}
+
+.product-family p:not(.product-family__index):not(.product-family__desc) {
+  color: var(--color-muted);
+}
+
+.product-family .text-link {
+  display: inline-flex;
+  margin-block-start: var(--space-3);
+  font-size: var(--text-sm);
+}
+
+/* ─── Restaurant card ────────────────────────────────────────────── */
+
+.product-family--restaurant {
+  display: grid;
+  grid-template-rows: auto auto;
+  align-content: start;
+  padding: clamp(var(--space-5), 3vw, var(--space-7));
+  background: var(--color-dark);
+  color: var(--color-surface);
+  /* top accent: bridges from the dark hero-transition rail above */
+  border-top: 2px solid var(--color-brand);
+}
+
+/* Two-column copy: left column has index + heading + CTA;
+   right column has the description paragraph */
+.product-family--restaurant .product-family__copy {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(14rem, 0.85fr);
+  column-gap: var(--space-7);
+  align-items: start;
+}
+
+.product-family__copy-left {
+  display: grid;
+  align-content: start;
+}
+
+.product-family__desc {
+  align-self: center;
+  margin-block-end: 0;
+  color: var(--color-border-strong);
+  line-height: 1.65;
+}
+
+.product-family--restaurant .product-family__index,
+.product-family--restaurant h3,
+.product-family--restaurant .text-link {
+  color: var(--color-surface);
+}
+
+.product-family--restaurant h3 {
+  max-width: 16ch;
+  margin-block-end: var(--space-4);
+  font-size: clamp(1.85rem, 1.5rem + 1vw, 2.75rem);
+}
+
+.product-family--restaurant .text-link {
+  color: var(--color-border-strong);
+  margin-block-start: var(--space-4);
+  transition: color var(--transition-fast);
+}
+
+.product-family--restaurant .text-link:hover {
+  color: var(--color-surface);
+}
+
+/* ─── Restaurant operation UI ────────────────────────────────────── */
+
+.restaurant-operation {
+  overflow: hidden;
+  margin-block-start: var(--space-7);
+  border: 1px solid var(--color-dark-raised);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  color: var(--color-ink);
+}
+
+.restaurant-operation__bar {
+  display: flex;
+  min-height: 3rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.restaurant-operation__bar span:last-child {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.restaurant-operation__bar i {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--color-success);
+}
+
+.restaurant-operation__body {
+  position: relative;
+  display: grid;
+  min-height: 23rem;
+  grid-template-rows: auto 1fr;
+  gap: var(--space-5);
+  padding: var(--space-5);
+  background:
+    linear-gradient(var(--color-border) 1px, transparent 1px),
+    linear-gradient(90deg, var(--color-border) 1px, transparent 1px),
+    var(--color-surface);
+  background-size: 3rem 3rem;
+}
+
+/* Primary flow row: POS → Kitchen → Inventory */
+.restaurant-operation__flow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 1.5rem minmax(0, 1fr) 1.5rem minmax(0, 1fr);
+  align-items: center;
+}
+
+.restaurant-operation__flow span {
+  display: grid;
+  min-height: 5.25rem;
+  align-content: center;
+  gap: var(--space-1);
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.restaurant-operation__flow small {
+  color: var(--color-brand-hover);
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+}
+
+.restaurant-operation__flow > i {
+  height: 1px;
+  background: var(--color-brand);
+}
+
+/* Connected signals row */
+.restaurant-operation__signals {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+  align-self: end;
+  /* reserves space for the intelligence panel (positioned absolute, right side) */
+  padding-right: 12.5rem;
+}
+
+.restaurant-operation__signals div {
+  display: grid;
+  min-height: 4.75rem;
+  align-content: center;
+  gap: var(--space-1);
+  padding: var(--space-3);
+  border-left: 2px solid var(--color-brand);
+  background: var(--color-surface-muted);
+}
+
+.restaurant-operation__signals span {
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.restaurant-operation__signals small {
+  color: var(--color-muted);
+  font-size: 0.625rem;
+}
+
+/* Intelligence panel */
+.restaurant-operation__intelligence {
+  position: absolute;
+  right: var(--space-5);
+  bottom: var(--space-5);
+  width: 11.5rem;
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-dark);
+  color: var(--color-surface);
+  box-shadow: var(--shadow-md);
+}
+
+.restaurant-operation__intelligence > span {
+  display: block;
+  color: var(--color-focus);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.restaurant-operation__intelligence strong {
+  display: block;
+  margin-block-start: var(--space-2);
+  font-size: var(--text-sm);
+  line-height: 1.4;
+}
+
+/* spark-bar chart decoration */
+.restaurant-operation__intelligence div {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-1);
+  margin-block-start: var(--space-4);
+}
+
+.restaurant-operation__intelligence i {
+  height: 0.2rem;
+  background: var(--color-brand);
+}
+
+/* ─── Retail card ────────────────────────────────────────────────── */
+
+.product-family--retail,
+.product-family--farm {
+  padding: clamp(var(--space-5), 2.5vw, var(--space-6));
+}
+
+.product-family--retail h3,
+.product-family--farm h3 {
+  margin-block-end: var(--space-3);
+}
+
+.retail-types {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  margin-block: var(--space-5) var(--space-4);
+  border-top: 1px solid var(--color-border);
+  border-left: 1px solid var(--color-border);
+}
+
+.retail-types span {
+  min-width: 0;
+  padding: 0.7rem var(--space-3);
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-size: 0.6875rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+
+/* ─── Farm card ──────────────────────────────────────────────────── */
+
+.product-family--farm {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 8.5rem;
+  gap: var(--space-5);
+  align-items: center;
+}
+
+.product-family--farm h3 {
+  font-size: clamp(1.35rem, 1.1rem + 0.55vw, 1.75rem);
+}
+
+.farm-focus {
+  position: relative;
+  display: grid;
+  min-height: 10rem;
+  align-content: center;
+  gap: var(--space-1);
+  padding: var(--space-4);
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+}
+
+.farm-focus__mark {
+  color: var(--color-brand-hover);
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+}
+
+.farm-focus > span:not(.farm-focus__mark) {
+  color: var(--color-muted);
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.farm-focus strong {
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+  line-height: 1.35;
+}
+
+/* decorative ring */
+.farm-focus i {
+  position: absolute;
+  right: -1.25rem;
+  bottom: -1.25rem;
+  width: 5rem;
+  height: 5rem;
+  border: 1px dashed var(--color-brand);
+  border-radius: 50%;
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────── */
+
+@media (max-width: 68rem) {
+  .product-families__layout {
+    grid-template-columns: minmax(0, 1.3fr) minmax(18rem, 0.7fr);
+  }
+
+  /* Collapse restaurant copy to single column at tablet */
+  .product-family--restaurant .product-family__copy {
+    grid-template-columns: 1fr;
+  }
+
+  .product-family__desc {
+    margin-block-start: var(--space-4);
+  }
+
+  /* Signals: go single-column but keep padding for intelligence panel */
+  .restaurant-operation__signals {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+    padding-right: 12rem;
+  }
+
+  .restaurant-operation__signals div {
+    min-height: auto;
+  }
+
+  .product-family--farm {
+    grid-template-columns: 1fr;
+  }
+
+  .farm-focus {
+    min-height: 7rem;
+  }
+}
+
+@media (max-width: 60rem) {
+  .product-families__intro {
+    grid-template-columns: 1fr;
+    gap: var(--space-5);
+  }
+
+  .product-families__intro > p {
+    max-width: 44rem;
+  }
+
+  /* Stack layout to single column; secondary cards go side-by-side */
+  .product-families__layout {
+    grid-template-columns: 1fr;
+  }
+
+  .product-families__secondary {
+    grid-template-columns: 1.1fr 0.9fr;
+    grid-template-rows: auto;
+  }
+}
+
+@media (max-width: 42rem) {
+  .product-families::before {
+    display: none;
+  }
+
+  .product-families__intro {
+    margin-block-end: var(--space-7);
+  }
+
+  /* Secondary cards stack vertically */
+  .product-families__secondary {
+    grid-template-columns: 1fr;
+  }
+
+  .product-family--restaurant {
+    padding: var(--space-5);
+  }
+
+  /* Remove min-height; let content drive height at small sizes */
+  .restaurant-operation__body {
+    min-height: auto;
+    gap: var(--space-4);
+    padding: var(--space-4);
+    background-size: 2.5rem 2.5rem;
+  }
+
+  /* Flow goes vertical on small screens */
+  .restaurant-operation__flow {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+
+  .restaurant-operation__flow span {
+    min-height: auto;
+    padding: var(--space-3);
+  }
+
+  /* Connector becomes a vertical line segment */
+  .restaurant-operation__flow > i {
+    width: 1px;
+    height: var(--space-3);
+    margin-left: var(--space-5);
+  }
+
+  /* Signals: 3-column horizontal at small screen, no padding for panel */
+  .restaurant-operation__signals {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: var(--space-2);
+    align-self: auto;
+    padding-right: 0;
+  }
+
+  .restaurant-operation__signals div {
+    min-height: 4.5rem;
+    padding: var(--space-2);
+  }
+
+  .restaurant-operation__signals span {
+    font-size: 0.625rem;
+  }
+
+  .restaurant-operation__signals small {
+    display: none;
+  }
+
+  /* Intelligence panel: pull out of absolute, sit in flow */
+  .restaurant-operation__intelligence {
+    position: static;
+    width: auto;
+  }
+
+  /* Farm: 2-col at this size */
+  .product-family--farm {
+    grid-template-columns: minmax(0, 1fr) 7.5rem;
+  }
+}
+
+@media (max-width: 30rem) {
+  .product-families__intro > p {
+    font-size: 1.0625rem;
+  }
+
+  /* Farm stacks at smallest screens */
+  .product-family--farm {
+    grid-template-columns: 1fr;
+  }
+}
+

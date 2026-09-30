@@ -99,4 +99,4 @@ Unavailable destinations use the existing safe prototype-link behavior. Do not c
 
 ## Current repository state
 
-The project is a static prototype using semantic HTML, CSS, and small amounts of vanilla JavaScript. `index.html` is currently a foundation verification page, not a homepage. No public page routes are implemented yet.
+The project is a static prototype using semantic HTML, CSS, and small amounts of vanilla JavaScript. `index.html` currently contains the approved global navigation, homepage hero, and Product Families section. No public page routes are implemented yet.
