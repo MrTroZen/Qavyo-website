@@ -86,7 +86,7 @@ The canonical Pricing page uses `.pricing-plan-grid` for aligned plan summaries 
 
 ## Marketing Customer Journey
 
-The Marketing Solutions overview uses `.customer-path` for the hero journey, `.journey-rail` for the desktop-to-mobile discovery progression, and `.marketing-solution-grid` for five distinct service previews. These patterns use communication-oriented illustrative UI without claiming automation, performance results, or unconfirmed service scope.
+The Marketing Solutions overview uses `.hero-journey` to present a unified customer journey around "Your Business" across Discover (Search, Website, Social), Connect (Website, Social), and Stay in Touch & Return (SMS, Email, customer relationship). This pattern uses communication-oriented illustrative UI without claiming automation, performance results, or unconfirmed service scope.
 
 ## Responsive and accessibility requirements
 
