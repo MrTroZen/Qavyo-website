@@ -99,4 +99,4 @@ Unavailable destinations use the existing safe prototype-link behavior. Do not c
 
 ## Current repository state
 
-The project is a static prototype using semantic HTML, CSS, and small amounts of vanilla JavaScript. `index.html` currently contains the approved global navigation, homepage hero, Product Families section, Connected Restaurant Platform section, Qavyo Intelligence section, Solutions & Growth section, 30 Days Full Qavyo conversion section, Pricing Overview section, Switching to Qavyo section, Final homepage CTA, and Global public footer. No public page routes are implemented yet.
+The project is a static prototype using semantic HTML, CSS, and small amounts of vanilla JavaScript. `index.html` contains the complete approved homepage with global navigation and public footer. `restaurant.html` introduces the dedicated Qavyo Restaurant Software page with its foundation and operational hero section. Page-specific styling for the restaurant section is maintained in `css/pages/restaurant.css`. Navigation links to Restaurant Software connect seamlessly between both pages.
