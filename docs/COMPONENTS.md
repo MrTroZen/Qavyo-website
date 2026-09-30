@@ -100,6 +100,8 @@ The Social Media Marketing page hero uses `.social-presence` to depict an authen
 
 The "What Qavyo Helps With" section (`.social-helps`) pairs a four-principle strategic narrative (`01 Plan`, `02 Create`, `03 Stay Consistent`, `04 Connect`) with `.social-workspace`, an illustrative content-planning workspace. It represents a weekly rhythm (Mon, Wed, Fri), an active content blueprint, and a four-stage progression sequence (`Business moment → Content idea → Social content → Customer connection`) without claiming automated posting, artificial engagement guarantees, or unconfirmed service packages.
 
+The "How It Works" section (`.social-process`) maps the continuous social media cycle through `.social-flow` (`01 Understand → 02 Plan → 03 Create → 04 Publish → 05 Improve`), reinforced by a visual return loop track that connects Step 05 back into the start of the next cycle. Underneath, a compact five-part worked example (`.social-example`) demonstrates how a single neutral business moment (such as a new studio collection) moves into customer communication and feedback without implying fixed turnaround promises or automated publishing.
+
 ## Responsive and accessibility requirements
 
 Every component must keep a logical reading and tab order, visible keyboard focus, sufficient colour contrast, meaningful semantics, and reasonable touch targets. Responsive behaviour must be designed, not assumed. Motion must respect reduced-motion preferences.

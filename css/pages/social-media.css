@@ -778,6 +778,311 @@
 }
 
 /* --------------------------------------------------------------------------
+   Section 3: How It Works (.social-process)
+   -------------------------------------------------------------------------- */
+
+.social-process {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.social-process__header {
+  max-width: 44rem;
+  margin-inline: auto;
+  text-align: center;
+  margin-bottom: var(--space-7);
+}
+
+.social-process__header .eyebrow {
+  justify-content: center;
+}
+
+.social-process h2 {
+  font-size: clamp(2.3rem, 4.2vw, 3.65rem);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.045em;
+  color: var(--color-ink);
+  margin: var(--space-4) auto var(--space-4);
+}
+
+.social-process__lede {
+  color: var(--color-text);
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+}
+
+/* 5-Step Continuous Flow */
+.social-flow-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.social-flow {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-3);
+  position: relative;
+}
+
+.social-flow__step {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-canvas);
+  position: relative;
+  transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.social-flow__step:hover {
+  border-color: var(--color-brand);
+  background: #ffffff;
+  transform: translateY(-2px);
+}
+
+.social-flow__step-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-3);
+}
+
+.social-flow__number {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 800;
+  color: var(--color-brand);
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-brand-soft);
+}
+
+.social-flow__connector-arrow {
+  font-size: 0.8rem;
+  color: var(--color-muted);
+}
+
+.social-flow__step-title {
+  font-size: 1.05rem;
+  font-weight: 800;
+  color: var(--color-ink);
+  margin-bottom: var(--space-2);
+}
+
+.social-flow__step-desc {
+  font-size: var(--text-xs);
+  color: var(--color-text);
+  line-height: 1.5;
+  margin-bottom: var(--space-4);
+  flex-grow: 1;
+}
+
+/* Mini visual cues per step */
+.social-cue {
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  font-size: var(--text-xs);
+}
+
+.social-cue__tag {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.35rem;
+}
+
+/* Step 1: Understand cue */
+.social-cue__items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.social-cue__items span {
+  padding: 0.1rem 0.4rem;
+  border-radius: 2px;
+  background: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: var(--color-ink);
+}
+
+/* Step 2: Plan cue */
+.social-cue__slots {
+  display: flex;
+  gap: 0.25rem;
+}
+
+.social-cue__slots span {
+  padding: 0.15rem 0.35rem;
+  border-radius: 2px;
+  font-size: 0.65rem;
+  font-family: var(--font-mono);
+  background: var(--color-canvas);
+  color: var(--color-muted);
+}
+
+.social-cue__slots .social-cue__active {
+  background: var(--color-brand-soft);
+  color: var(--color-brand);
+  font-weight: 700;
+}
+
+/* Step 3: Create cue */
+.social-cue__card {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 700;
+  color: var(--color-ink);
+  font-size: 0.7rem;
+}
+
+.social-cue__thumb {
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 2px;
+  background: var(--color-brand);
+  display: inline-block;
+}
+
+/* Step 4: Publish cue */
+.social-cue__broadcast {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 700;
+  color: var(--color-success);
+  font-size: 0.7rem;
+}
+
+/* Step 5: Improve cue */
+.social-cue__feedback {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: 600;
+  color: var(--color-brand);
+  font-size: 0.7rem;
+}
+
+.social-cue__loop-icon {
+  font-size: 0.95rem;
+  line-height: 1;
+}
+
+/* Continuous Loop Track */
+.social-flow__loop-track {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding-top: var(--space-4);
+}
+
+.social-flow__loop-line {
+  position: absolute;
+  top: 60%;
+  left: 5%;
+  right: 5%;
+  height: 1px;
+  border-top: 1px dashed var(--color-border-strong);
+  z-index: 0;
+}
+
+.social-flow__loop-badge {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-strong);
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  box-shadow: var(--shadow-sm);
+}
+
+.social-flow__loop-icon {
+  color: var(--color-brand);
+  font-weight: 800;
+}
+
+/* --------------------------------------------------------------------------
+   Worked Example (.social-example)
+   -------------------------------------------------------------------------- */
+
+.social-example {
+  margin-top: var(--space-8);
+  padding: clamp(1.4rem, 2.5vw, 2.25rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-canvas);
+}
+
+.social-example__header {
+  margin-bottom: var(--space-5);
+}
+
+.social-example__header h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--color-ink);
+  margin: var(--space-2) 0 0;
+}
+
+.social-example__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-3);
+  position: relative;
+}
+
+.social-example__item {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  gap: 0.2rem;
+}
+
+.social-example__stage-tag {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--color-brand);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.social-example__item strong {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-ink);
+  line-height: 1.35;
+}
+
+.social-example__item small {
+  font-size: 0.7rem;
+  color: var(--color-muted);
+  line-height: 1.3;
+}
+
+/* --------------------------------------------------------------------------
    Responsive Behavior
    -------------------------------------------------------------------------- */
 
@@ -795,6 +1100,14 @@
   .social-helps__grid {
     grid-template-columns: 1fr;
     gap: var(--space-7);
+  }
+
+  .social-flow {
+    gap: var(--space-2);
+  }
+
+  .social-example__grid {
+    gap: var(--space-2);
   }
 }
 
@@ -849,6 +1162,25 @@
   .social-workspace__mini-visual {
     height: 5.5rem;
   }
+
+  /* Section 3 vertical process transformation */
+  .social-flow {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .social-flow__connector-arrow {
+    transform: rotate(90deg);
+  }
+
+  .social-flow__loop-line {
+    display: none;
+  }
+
+  .social-example__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
 }
 
 @media (max-width: 32rem) {
@@ -872,7 +1204,8 @@
     gap: var(--space-2);
   }
 
-  .social-helps h2 {
+  .social-helps h2,
+  .social-process h2 {
     font-size: clamp(2rem, 9vw, 2.75rem);
   }
 
