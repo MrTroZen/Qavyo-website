@@ -6,28 +6,26 @@ This document records the current information-architecture direction. It is inte
 
 ```text
 Qavyo (parent technology company)
-├── Products (software customers use to operate)
-│   ├── Restaurant Software
-│   │   └── Cafeo
-│   │       ├── POS & Ordering
-│   │       ├── Kitchen
-│   │       ├── Inventory & Purchasing
-│   │       ├── Customers & Loyalty
-│   │       ├── Team & Workforce
-│   │       ├── Multi-location
-│   │       └── Cafeo Intelligence
-│   ├── Qavyo Retail Software
-│   │   ├── Clothing & Fashion
-│   │   ├── Electronics
-│   │   ├── Repair Shops
-│   │   ├── Grocery & Convenience
-│   │   ├── Salon & Spa
-│   │   ├── Hardware & Sanitary
-│   │   ├── Paint
-│   │   └── Tiles
-│   └── Qavyo Farm Software
-│       └── Broiler Farming
-└── Solutions (additional capabilities and services)
+├── Restaurant Software
+│   ├── POS & Ordering
+│   ├── Kitchen
+│   ├── Inventory & Purchasing
+│   ├── Customers & Loyalty
+│   ├── Team & Workforce
+│   ├── Multi-location
+│   └── Qavyo Intelligence
+├── Retail Software (Qavyo Retail Software)
+│   ├── Clothing & Fashion
+│   ├── Electronics
+│   ├── Repair Shops
+│   ├── Grocery & Convenience
+│   ├── Salon & Spa
+│   ├── Hardware & Sanitary
+│   ├── Paint
+│   └── Tiles
+├── Farm Software (Qavyo Farm Software)
+│   └── Broiler Farming
+└── Solutions
     ├── Marketing & Communication
     │   ├── SMS Marketing
     │   ├── Email Marketing
@@ -36,18 +34,18 @@ Qavyo (parent technology company)
     │   ├── Website Building
     │   └── Website SEO
     └── Intelligence
-        └── Cafeo Intelligence
+        └── Qavyo Intelligence
 ```
 
-Cafeo is Qavyo's connected restaurant operating software, not merely a POS. Its named navigation capabilities belong to Cafeo and must not be presented as unrelated Qavyo products.
+Qavyo Restaurant Software is Qavyo's connected restaurant operating platform, not merely a POS. Its named navigation capabilities belong to the Restaurant Software category and must not be presented as unrelated products or as a separate sub-brand.
 
 Qavyo Retail Software is one software family organized by retail business type. Qavyo Farm Software is a separate family and currently includes only Broiler Farming. Do not invent additional verticals. Products are software customers use to operate; Solutions are additional capabilities and services that help businesses market, communicate, grow, or understand operations.
 
-Cafeo Intelligence appears in both architectures for different reasons: as a Cafeo capability under Products and as an operational intelligence outcome under Solutions. These links may lead to the same future destination and must not imply duplicate products or pages.
+Qavyo Intelligence appears in both architectures for different reasons: as an important Restaurant Software capability under Products and as an operational intelligence outcome under Solutions. Its name belongs to the Qavyo brand. These links may lead to the same future destination and must not imply duplicate products or pages.
 
 ## Corporate navigation direction
 
-The global navigation structure is Products, Solutions, Pricing, Resources, and Company, followed by Sign In, Talk to Sales, and the primary Start Free action. Products organizes Restaurant Software/Cafeo, Qavyo Retail Software, and Qavyo Farm Software. Solutions separately organizes Marketing & Communication, Web & Growth, and Intelligence.
+The global navigation structure is Products, Solutions, Pricing, Resources, and Company, followed by Sign In, Talk to Sales, and the primary Start Free action. Products organizes Qavyo Restaurant Software, Qavyo Retail Software, and Farm Software. Solutions separately organizes Marketing & Communication, Web & Growth, and Intelligence. Do not introduce separate sub-brands unless explicitly approved.
 
 This establishes the navigation hierarchy and reusable interaction pattern, not a finalized sitemap. Most destinations remain safe prototype links until their pages and routes are approved.
 

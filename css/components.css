@@ -272,7 +272,7 @@
   margin-block-start: var(--space-4);
 }
 
-.menu-link-grid--cafeo,
+.menu-link-grid--restaurant,
 .menu-link-grid--retail {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
