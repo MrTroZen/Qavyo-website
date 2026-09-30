@@ -85,8 +85,8 @@
                   <section class="restaurant-group" aria-labelledby="run-restaurant-title">
                     <p class="restaurant-group__title" id="run-restaurant-title">Run Your Restaurant</p>
                     <a href="#pos-ordering">POS &amp; Ordering</a>
-                    <a href="#prototype-navigation" data-prototype-link>Kitchen &amp; Service</a>
-                    <a href="#prototype-navigation" data-prototype-link>Tables &amp; Floor</a>
+                    <a href="#kitchen">Kitchen &amp; Service</a>
+                    <a href="#tables">Tables &amp; Floor</a>
                     <a href="#prototype-navigation" data-prototype-link>Inventory &amp; Stock</a>
                     <a href="#prototype-navigation" data-prototype-link>Recipes &amp; Costing</a>
                     <a href="#prototype-navigation" data-prototype-link>Purchasing &amp; Suppliers</a>
@@ -221,8 +221,8 @@
               <section class="mobile-menu-section" aria-labelledby="mobile-run-restaurant-title">
                 <p class="mobile-menu-section__title" id="mobile-run-restaurant-title">Run Your Restaurant</p>
                 <a href="#pos-ordering">POS &amp; Ordering</a>
-                <a href="#prototype-navigation" data-prototype-link>Kitchen &amp; Service</a>
-                <a href="#prototype-navigation" data-prototype-link>Tables &amp; Floor</a>
+                <a href="#kitchen">Kitchen &amp; Service</a>
+                <a href="#tables">Tables &amp; Floor</a>
                 <a href="#prototype-navigation" data-prototype-link>Inventory &amp; Stock</a>
                 <a href="#prototype-navigation" data-prototype-link>Recipes &amp; Costing</a>
                 <a href="#prototype-navigation" data-prototype-link>Purchasing &amp; Suppliers</a>
@@ -934,6 +934,410 @@
         </div>
       </section>
 
+      <!-- ═══════════════════════════════════════════════════════════════
+           Section 3: Kitchen & Service
+           ═══════════════════════════════════════════════════════════════ -->
+      <section class="section rst-kitchen-section" id="kitchen" aria-labelledby="kitchen-service-title">
+        <div class="container">
+
+          <header class="rst-kitchen-section__header">
+            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Kitchen &amp; Service</p>
+            <h2 id="kitchen-service-title">From order to kitchen without losing the flow.</h2>
+            <p class="lede">When orders enter Qavyo, preparation starts immediately. Kitchen display stations receive items organized by prep line, color-coded by urgency, and synchronized with front-of-house service — eliminating lost tickets and chaotic passes.</p>
+          </header>
+
+          <!-- Main Visual: Realistic Kitchen Display System (KDS) Interface -->
+          <div class="rst-kds-board" role="img" aria-label="Illustrative Qavyo Kitchen Display System showing live preparation tickets for Table 12, Table 7, and Takeaway #1048.">
+            <!-- KDS Header Bar -->
+            <div class="rst-kds-header" aria-hidden="true">
+              <div class="rst-kds-station">
+                <span class="signal-dot signal-dot--live"></span>
+                <span>Qavyo KDS · Line Station 01 (Hot Line &amp; Grill)</span>
+              </div>
+              <div class="rst-kds-meta">
+                <span>Active: 3 Tickets In Flight</span>
+                <span>·</span>
+                <span>Avg Prep Pace: 11m 40s</span>
+                <span>·</span>
+                <span>12:48 PM</span>
+              </div>
+            </div>
+
+            <!-- KDS Active Tickets Grid -->
+            <div class="rst-kds-grid" aria-hidden="true">
+
+              <!-- Ticket 1: Table 12 (Preparing) -->
+              <article class="rst-kds-ticket rst-kds-ticket--active">
+                <div class="rst-kds-ticket__head">
+                  <div>
+                    <span class="rst-kds-ticket__title">Table 12</span>
+                    <span class="rst-kds-ticket__meta">#4832 · Dine-In · Sophie K.</span>
+                  </div>
+                  <span class="rst-kds-status-badge rst-kds-status-badge--preparing">
+                    <span class="signal-dot signal-dot--live"></span>Preparing
+                  </span>
+                </div>
+                <div class="rst-kds-ticket__body">
+                  <div class="rst-kds-item-row">
+                    <div class="rst-kds-item-main">
+                      <span>2 × Chicken Burger</span>
+                      <span class="rst-kds-item-station">Grill</span>
+                    </div>
+                    <span class="rst-kds-item-mods">Medium · No onions · Added Cheddar</span>
+                  </div>
+                  <div class="rst-kds-item-row">
+                    <div class="rst-kds-item-main">
+                      <span>1 × Truffle Fries</span>
+                      <span class="rst-kds-item-station">Fryer</span>
+                    </div>
+                    <span class="rst-kds-item-mods">Truffle mayo on side</span>
+                  </div>
+                </div>
+                <div class="rst-kds-ticket__foot">
+                  <div class="rst-kds-timer">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    <span>05:42</span>
+                  </div>
+                  <button type="button" class="rst-kds-btn-action rst-kds-btn-action--primary" tabindex="-1">
+                    Bump to Ready ✓
+                  </button>
+                </div>
+              </article>
+
+              <!-- Ticket 2: Table 7 (New) -->
+              <article class="rst-kds-ticket">
+                <div class="rst-kds-ticket__head">
+                  <div>
+                    <span class="rst-kds-ticket__title">Table 07</span>
+                    <span class="rst-kds-ticket__meta">#4834 · Dine-In · Liam P.</span>
+                  </div>
+                  <span class="rst-kds-status-badge rst-kds-status-badge--new">
+                    <span class="signal-dot signal-dot--live"></span>New
+                  </span>
+                </div>
+                <div class="rst-kds-ticket__body">
+                  <div class="rst-kds-item-row">
+                    <div class="rst-kds-item-main">
+                      <span>1 × Rigatoni Truffle Pasta</span>
+                      <span class="rst-kds-item-station">Saute</span>
+                    </div>
+                    <span class="rst-kds-item-mods">Extra parmesan cheese</span>
+                  </div>
+                  <div class="rst-kds-item-row">
+                    <div class="rst-kds-item-main">
+                      <span>1 × Caesar Salad</span>
+                      <span class="rst-kds-item-station">Pantry</span>
+                    </div>
+                    <span class="rst-kds-item-mods">Dressing served on side</span>
+                  </div>
+                </div>
+                <div class="rst-kds-ticket__foot">
+                  <div class="rst-kds-timer">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    <span>01:15</span>
+                  </div>
+                  <button type="button" class="rst-kds-btn-action" tabindex="-1">
+                    Start Prep →
+                  </button>
+                </div>
+              </article>
+
+              <!-- Ticket 3: Takeaway #1048 (Ready) -->
+              <article class="rst-kds-ticket rst-kds-ticket--ready">
+                <div class="rst-kds-ticket__head">
+                  <div>
+                    <span class="rst-kds-ticket__title">Takeaway #1048</span>
+                    <span class="rst-kds-ticket__meta">#1048 · Collection · David M.</span>
+                  </div>
+                  <span class="rst-kds-status-badge rst-kds-status-badge--ready">
+                    <span class="signal-dot signal-dot--live"></span>Ready
+                  </span>
+                </div>
+                <div class="rst-kds-ticket__body">
+                  <div class="rst-kds-item-row">
+                    <div class="rst-kds-item-main">
+                      <span>2 × Margherita Pizza</span>
+                      <span class="rst-kds-item-station">Oven</span>
+                    </div>
+                    <span class="rst-kds-item-mods">Sliced into 8 pieces</span>
+                  </div>
+                  <div class="rst-kds-item-row">
+                    <div class="rst-kds-item-main">
+                      <span>1 × Garlic Bread</span>
+                      <span class="rst-kds-item-station">Oven</span>
+                    </div>
+                    <span class="rst-kds-item-mods">With melted mozzarella</span>
+                  </div>
+                </div>
+                <div class="rst-kds-ticket__foot">
+                  <div class="rst-kds-timer">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+                    <span>Ready at Pass</span>
+                  </div>
+                  <button type="button" class="rst-kds-btn-action rst-kds-btn-action--success" tabindex="-1">
+                    Complete ✓
+                  </button>
+                </div>
+              </article>
+
+            </div>
+          </div>
+
+          <!-- Kitchen Operational Capabilities -->
+          <div class="rst-kitchen-features">
+            <div class="rst-feature-item">
+              <h3>Instant station routing</h3>
+              <p>Items dispatch directly to grill, saute, fryer, cold line, and bar screens so stations prepare only what belongs to them.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Real-time prep timers</h3>
+              <p>Elapsed timers prioritize tickets by order sequence and cook time, helping staff synchronize multiple courses for simultaneous plating.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Dine-in &amp; takeaway clarity</h3>
+              <p>Prominent visual badges differentiate dine-in tables from takeaway collection and delivery, ensuring packaging and plating match the order type.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Service coordination</h3>
+              <p>Bumping a ticket as ready notifies the expeditor pass and alerts waitstaff on their handhelds immediately without verbal shouting.</p>
+            </div>
+          </div>
+
+          <!-- Operational Bridge between Back of House & Front of House -->
+          <div class="rst-op-bridge" aria-hidden="true">
+            <div class="rst-op-bridge__title">
+              <span class="signal-dot signal-dot--live"></span>
+              <span>Connected Operational Loop</span>
+            </div>
+            <div class="rst-op-bridge__flow">
+              <span>Back of House (Kitchen)</span>
+              <strong>↕ Live Pass Sync</strong>
+              <span>Front of House (Dining Floor)</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ═══════════════════════════════════════════════════════════════
+           Section 4: Tables & Floor
+           ═══════════════════════════════════════════════════════════════ -->
+      <section class="section rst-floor-section" id="tables" aria-labelledby="tables-floor-title">
+        <div class="container">
+
+          <header class="rst-floor-section__header">
+            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Tables &amp; Floor</p>
+            <h2 id="tables-floor-title">See the floor. Know what's happening.</h2>
+            <p class="lede">Manage your dining room in real time. Table activity, active orders, kitchen preparation, and billing status stay unified on one live floor overview, giving managers and hosts full visibility over table turns and service timing.</p>
+          </header>
+
+          <!-- Main Visual: Polished Restaurant Floor & Table Management Interface -->
+          <div class="rst-floor-board" role="img" aria-label="Illustrative Qavyo restaurant floor overview showing operational status across tables in the main dining room.">
+            <!-- Floor Top Bar -->
+            <div class="rst-floor-topbar" aria-hidden="true">
+              <div class="rst-floor-zone">
+                <span class="signal-dot signal-dot--live"></span>
+                <span>Main Dining Room · Service View</span>
+              </div>
+              <div class="rst-floor-stats">
+                <span>Active Covers: 16 Guests</span>
+                <span>·</span>
+                <span>Occupancy: 68%</span>
+                <span>·</span>
+                <span>Avg Turn Time: 48m</span>
+              </div>
+            </div>
+
+            <!-- Floor Status Legend -->
+            <div class="rst-floor-legend" aria-hidden="true">
+              <div class="rst-floor-legend-item">
+                <span class="legend-dot legend-dot--available"></span>
+                <span>Available</span>
+              </div>
+              <div class="rst-floor-legend-item">
+                <span class="legend-dot legend-dot--ordering"></span>
+                <span>Ordering</span>
+              </div>
+              <div class="rst-floor-legend-item">
+                <span class="legend-dot legend-dot--prep"></span>
+                <span>Kitchen Preparing</span>
+              </div>
+              <div class="rst-floor-legend-item">
+                <span class="legend-dot legend-dot--ready"></span>
+                <span>Ready to Serve</span>
+              </div>
+              <div class="rst-floor-legend-item">
+                <span class="legend-dot legend-dot--bill"></span>
+                <span>Bill Requested</span>
+              </div>
+            </div>
+
+            <!-- Interactive Tables Grid -->
+            <div class="rst-tables-grid" aria-hidden="true">
+
+              <!-- Table 01: Available -->
+              <div class="rst-table-card rst-table-card--available">
+                <div class="rst-table-card__top">
+                  <span class="rst-table-name">Table 01</span>
+                  <span class="rst-table-status-pill rst-table-status-pill--available">Available</span>
+                </div>
+                <div class="rst-table-body">
+                  <p>2-Top Table · High Window</p>
+                  <span class="rst-table-covers">Capacity: 2 Guests</span>
+                </div>
+                <div class="rst-table-footer">
+                  <span>Ready for walk-in</span>
+                  <span class="rst-table-timer">Clean</span>
+                </div>
+              </div>
+
+              <!-- Table 02: Ordering -->
+              <div class="rst-table-card rst-table-card--ordering">
+                <div class="rst-table-card__top">
+                  <span class="rst-table-name">Table 02</span>
+                  <span class="rst-table-status-pill rst-table-status-pill--ordering">Ordering</span>
+                </div>
+                <div class="rst-table-body">
+                  <p>2 Guests · Server: Sophie K.</p>
+                  <span class="rst-table-covers">Menus presented · Drinks served</span>
+                </div>
+                <div class="rst-table-footer">
+                  <span>Active Session</span>
+                  <span class="rst-table-timer">12m seated</span>
+                </div>
+              </div>
+
+              <!-- Table 03: Kitchen Preparing -->
+              <div class="rst-table-card rst-table-card--prep">
+                <div class="rst-table-card__top">
+                  <span class="rst-table-name">Table 03</span>
+                  <span class="rst-table-status-pill rst-table-status-pill--prep">Kitchen Preparing</span>
+                </div>
+                <div class="rst-table-body">
+                  <p>4 Guests · Ticket #4829</p>
+                  <span class="rst-table-covers">Course 1 · Hot Line cooking</span>
+                </div>
+                <div class="rst-table-footer">
+                  <span>KDS Timer</span>
+                  <span class="rst-table-timer">08m in prep</span>
+                </div>
+              </div>
+
+              <!-- Table 04: Ready to Serve -->
+              <div class="rst-table-card rst-table-card--ready">
+                <div class="rst-table-card__top">
+                  <span class="rst-table-name">Table 04</span>
+                  <span class="rst-table-status-pill rst-table-status-pill--ready">Ready to Serve</span>
+                </div>
+                <div class="rst-table-body">
+                  <p>2 Guests · Server: Liam P.</p>
+                  <span class="rst-table-covers">Plates bumped at kitchen pass</span>
+                </div>
+                <div class="rst-table-footer">
+                  <span>At Pass</span>
+                  <span class="rst-table-timer">01m ready</span>
+                </div>
+              </div>
+
+              <!-- Table 05: Available / Reserved -->
+              <div class="rst-table-card rst-table-card--available">
+                <div class="rst-table-card__top">
+                  <span class="rst-table-name">Table 05</span>
+                  <span class="rst-table-status-pill rst-table-status-pill--available">Available</span>
+                </div>
+                <div class="rst-table-body">
+                  <p>6-Top Booth · Center Dining</p>
+                  <span class="rst-table-covers">Reserved for 19:30 (Party of 5)</span>
+                </div>
+                <div class="rst-table-footer">
+                  <span>Clean &amp; Set</span>
+                  <span class="rst-table-timer">Open</span>
+                </div>
+              </div>
+
+              <!-- Table 06: Bill Requested -->
+              <div class="rst-table-card rst-table-card--bill">
+                <div class="rst-table-card__top">
+                  <span class="rst-table-name">Table 06</span>
+                  <span class="rst-table-status-pill rst-table-status-pill--bill">Bill Requested</span>
+                </div>
+                <div class="rst-table-body">
+                  <p>4 Guests · Server: Sophie K.</p>
+                  <span class="rst-table-covers">Bill presented: £84.00</span>
+                </div>
+                <div class="rst-table-footer">
+                  <span>Payment Pending</span>
+                  <span class="rst-table-timer">54m total</span>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Connected Table Journey Pipeline Strip -->
+          <div class="rst-table-journey">
+            <span class="rst-table-journey__title">Connected Table Lifecycle · One Continuous Flow</span>
+            <div class="rst-journey-steps" aria-hidden="true">
+              <div class="rst-journey-step">
+                <strong>01 · Seated</strong>
+                <small>Guest welcomed</small>
+              </div>
+              <div class="rst-journey-step">
+                <strong>02 · Opened</strong>
+                <small>Table active</small>
+              </div>
+              <div class="rst-journey-step">
+                <strong>03 · Order Placed</strong>
+                <small>Items entered</small>
+              </div>
+              <div class="rst-journey-step rst-journey-step--active">
+                <strong>04 · In Prep</strong>
+                <small>Kitchen cooking</small>
+              </div>
+              <div class="rst-journey-step">
+                <strong>05 · Served</strong>
+                <small>Food at table</small>
+              </div>
+              <div class="rst-journey-step">
+                <strong>06 · Payment</strong>
+                <small>Bill settled</small>
+              </div>
+              <div class="rst-journey-step">
+                <strong>07 · Turn</strong>
+                <small>Table cleared</small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floor Operational Highlights -->
+          <div class="rst-floor-features">
+            <div class="rst-feature-item">
+              <h3>Live floor awareness</h3>
+              <p>Understand dining room occupancy, table turns, and service progression at a glance without having to walk the floor.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Direct KDS connection</h3>
+              <p>Floor staff see preparation status and pass alerts live on their screens, knowing the second food is ready to serve.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Tableside settlements</h3>
+              <p>Print or email itemized checks, split bills by guest or item, and process payments directly at the table on mobile terminals.</p>
+            </div>
+            <div class="rst-feature-item">
+              <h3>Turnaround optimization</h3>
+              <p>Automatically record table turnaround times and average cover durations to inform shift scheduling and reservations.</p>
+            </div>
+          </div>
+
+          <!-- Operational Device Reinforcement Bar -->
+          <div class="rst-device-mini-bar">
+            <span><strong>Qavyo across the operation:</strong> Servers on handheld phones and tablets · Kitchen on display screens · Counter on POS terminals.</span>
+            <span>All syncing in real time on supported devices.</span>
+          </div>
+
+        </div>
+      </section>
+
     </main>
 
     <!-- ═══════════════════════════════════════════════════════════════
@@ -975,7 +1379,7 @@
             <p class="site-footer__col-title">Restaurants</p>
             <ul class="site-footer__links">
               <li><a href="#pos-ordering">POS &amp; Ordering</a></li>
-              <li><a href="#prototype-navigation" data-prototype-link>Kitchen &amp; Service</a></li>
+              <li><a href="#kitchen">Kitchen &amp; Service</a></li>
               <li><a href="#prototype-navigation" data-prototype-link>Inventory &amp; Cost</a></li>
               <li><a href="#prototype-navigation" data-prototype-link>Customers &amp; Loyalty</a></li>
               <li><a href="#prototype-navigation" data-prototype-link>Team &amp; Operations</a></li>

@@ -1463,3 +1463,630 @@
     justify-content: center;
   }
 }
+
+/* --------------------------------------------------------------------------
+   Section 3: Kitchen & Service (#kitchen)
+   -------------------------------------------------------------------------- */
+.rst-kitchen-section {
+  padding-block: var(--section-space);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.rst-kitchen-section__header {
+  max-width: 44rem;
+  margin-block-end: var(--space-6);
+}
+
+.rst-kitchen-section__header h2 {
+  font-size: clamp(2.2rem, 3.4vw, 3.75rem);
+  line-height: var(--leading-tight);
+  margin-block-end: var(--space-4);
+}
+
+/* KDS Interface Board Showcase */
+.rst-kds-board {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-canvas);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+  margin-block-end: var(--space-7);
+}
+
+.rst-kds-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-5);
+  background: var(--color-dark);
+  color: #c7d3dc;
+  font-size: var(--text-xs);
+  border-bottom: 1px solid var(--color-dark-raised);
+  gap: var(--space-2);
+}
+
+.rst-kds-station {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 700;
+  color: var(--color-surface);
+}
+
+.rst-kds-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: #92a6b5;
+}
+
+/* KDS Ticket Grid */
+.rst-kds-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  padding: clamp(var(--space-4), 3vw, var(--space-5));
+}
+
+/* Individual KDS Ticket Card */
+.rst-kds-ticket {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.rst-kds-ticket--active {
+  border-color: var(--color-brand);
+  box-shadow: 0 0 0 1px var(--color-brand-soft), var(--shadow-sm);
+}
+
+.rst-kds-ticket--ready {
+  border-color: var(--color-success);
+}
+
+.rst-kds-ticket__head {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-canvas);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rst-kds-ticket__title {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: 800;
+  color: var(--color-ink);
+}
+
+.rst-kds-ticket__meta {
+  display: block;
+  font-size: 0.6875rem;
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+}
+
+.rst-kds-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.rst-kds-status-badge--preparing {
+  background: #fff4e5;
+  color: var(--color-warning);
+}
+
+.rst-kds-status-badge--new {
+  background: var(--color-brand-soft);
+  color: var(--color-brand-hover);
+}
+
+.rst-kds-status-badge--ready {
+  background: #eef7f2;
+  color: var(--color-success);
+}
+
+.rst-kds-ticket__body {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  flex-grow: 1;
+}
+
+.rst-kds-item-row {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-block-end: 0.4rem;
+  border-bottom: 1px solid var(--color-surface-muted);
+}
+
+.rst-kds-item-main {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.rst-kds-item-station {
+  font-size: 0.625rem;
+  font-family: var(--font-mono);
+  color: var(--color-brand-hover);
+  background: var(--color-brand-soft);
+  padding: 0.1rem 0.35rem;
+  border-radius: var(--radius-sm);
+}
+
+.rst-kds-item-mods {
+  font-size: 0.6875rem;
+  color: var(--color-muted);
+  padding-inline-start: var(--space-2);
+}
+
+.rst-kds-ticket__foot {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-canvas);
+  border-top: 1px dashed var(--color-border);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rst-kds-timer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-text);
+}
+
+.rst-kds-btn-action {
+  padding: 0.35rem 0.65rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--color-ink);
+  cursor: default;
+}
+
+.rst-kds-btn-action--primary {
+  background: var(--color-brand);
+  border-color: var(--color-brand);
+  color: var(--color-surface);
+}
+
+.rst-kds-btn-action--success {
+  background: var(--color-success);
+  border-color: var(--color-success);
+  color: var(--color-surface);
+}
+
+/* Kitchen Feature Concepts */
+.rst-kitchen-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+  margin-block-end: var(--space-5);
+}
+
+/* --------------------------------------------------------------------------
+   Front of House ↕ Back of House Connection Bridge
+   -------------------------------------------------------------------------- */
+.rst-op-bridge {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-5);
+  margin-block: var(--space-6);
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-canvas);
+  font-size: var(--text-xs);
+  color: var(--color-text);
+}
+
+.rst-op-bridge__title {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.rst-op-bridge__flow {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-family: var(--font-mono);
+  color: var(--color-muted);
+}
+
+.rst-op-bridge__flow strong {
+  color: var(--color-brand);
+}
+
+/* --------------------------------------------------------------------------
+   Section 4: Tables & Floor (#tables)
+   -------------------------------------------------------------------------- */
+.rst-floor-section {
+  padding-block: var(--section-space);
+  background: var(--color-canvas);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.rst-floor-section__header {
+  max-width: 44rem;
+  margin-block-end: var(--space-6);
+}
+
+.rst-floor-section__header h2 {
+  font-size: clamp(2.2rem, 3.4vw, 3.75rem);
+  line-height: var(--leading-tight);
+  margin-block-end: var(--space-4);
+}
+
+/* Floor Board Showcase */
+.rst-floor-board {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  margin-block-end: var(--space-7);
+}
+
+.rst-floor-topbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-5);
+  background: var(--color-ink);
+  color: #c7d3dc;
+  font-size: var(--text-xs);
+  border-bottom: 1px solid var(--color-dark-raised);
+  gap: var(--space-2);
+}
+
+.rst-floor-zone {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-weight: 700;
+  color: var(--color-surface);
+}
+
+.rst-floor-stats {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  color: #92a6b5;
+}
+
+/* Floor Legend Bar */
+.rst-floor-legend {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-4);
+  padding: var(--space-2) var(--space-5);
+  background: var(--color-surface-muted);
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.6875rem;
+  color: var(--color-muted);
+}
+
+.rst-floor-legend-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-1);
+}
+
+.legend-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+}
+
+.legend-dot--available {
+  background: #8e9ea9;
+}
+
+.legend-dot--ordering {
+  background: var(--color-brand);
+}
+
+.legend-dot--prep {
+  background: var(--color-warning);
+}
+
+.legend-dot--ready {
+  background: var(--color-success);
+}
+
+.legend-dot--bill {
+  background: #7357cd;
+}
+
+/* Tables Interactive Grid */
+.rst-tables-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  padding: clamp(var(--space-4), 3vw, var(--space-6));
+  background: var(--color-canvas);
+}
+
+/* Table Card */
+.rst-table-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-3);
+  position: relative;
+}
+
+.rst-table-card--ordering {
+  border-left: 4px solid var(--color-brand);
+}
+
+.rst-table-card--prep {
+  border-left: 4px solid var(--color-warning);
+}
+
+.rst-table-card--ready {
+  border-left: 4px solid var(--color-success);
+  background: #f7fbf9;
+}
+
+.rst-table-card--bill {
+  border-left: 4px solid #7357cd;
+}
+
+.rst-table-card--available {
+  border-left: 4px solid #8e9ea9;
+  opacity: 0.88;
+}
+
+.rst-table-card__top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.rst-table-name {
+  font-size: var(--text-sm);
+  font-weight: 800;
+  color: var(--color-ink);
+}
+
+.rst-table-covers {
+  font-size: 0.6875rem;
+  color: var(--color-muted);
+  font-family: var(--font-mono);
+}
+
+.rst-table-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  padding: 0.15rem 0.45rem;
+  border-radius: var(--radius-sm);
+}
+
+.rst-table-status-pill--available {
+  background: var(--color-surface-muted);
+  color: var(--color-text);
+}
+
+.rst-table-status-pill--ordering {
+  background: var(--color-brand-soft);
+  color: var(--color-brand-hover);
+}
+
+.rst-table-status-pill--prep {
+  background: #fff4e5;
+  color: var(--color-warning);
+}
+
+.rst-table-status-pill--ready {
+  background: #eef7f2;
+  color: var(--color-success);
+}
+
+.rst-table-status-pill--bill {
+  background: #f1ecfc;
+  color: #7357cd;
+}
+
+.rst-table-body {
+  font-size: var(--text-xs);
+  color: var(--color-text);
+  line-height: 1.45;
+}
+
+.rst-table-body p {
+  margin: 0;
+}
+
+.rst-table-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-block-start: var(--space-2);
+  border-top: 1px dashed var(--color-border);
+  font-size: 0.6875rem;
+  color: var(--color-muted);
+}
+
+.rst-table-timer {
+  font-family: var(--font-mono);
+  font-weight: 600;
+}
+
+/* Connected Table Journey Pipeline Strip */
+.rst-table-journey {
+  margin-block-end: var(--space-7);
+  padding: var(--space-4) var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+}
+
+.rst-table-journey__title {
+  display: block;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  margin-block-end: var(--space-3);
+}
+
+.rst-journey-steps {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: var(--space-2);
+  align-items: center;
+}
+
+.rst-journey-step {
+  padding: var(--space-2);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-canvas);
+  text-align: center;
+  font-size: 0.6875rem;
+  line-height: 1.3;
+}
+
+.rst-journey-step strong {
+  display: block;
+  color: var(--color-ink);
+  font-size: 0.75rem;
+  margin-block-end: 0.1rem;
+}
+
+.rst-journey-step small {
+  color: var(--color-muted);
+}
+
+.rst-journey-step--active {
+  border-color: var(--color-brand);
+  background: var(--color-brand-soft);
+}
+
+.rst-journey-step--active strong {
+  color: var(--color-brand-hover);
+}
+
+/* Floor Features Grid */
+.rst-floor-features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-5);
+  margin-block-end: var(--space-6);
+}
+
+/* Subtle Operational Device Reinforcement Bar */
+.rst-device-mini-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+.rst-device-mini-bar strong {
+  color: var(--color-ink);
+}
+
+/* --------------------------------------------------------------------------
+   Responsive Adaptations for Sections 3 & 4
+   -------------------------------------------------------------------------- */
+@media (max-width: 68rem) {
+  .rst-kds-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rst-kitchen-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rst-tables-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rst-floor-features {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rst-journey-steps {
+    grid-template-columns: repeat(4, 1fr);
+    gap: var(--space-2);
+  }
+}
+
+@media (max-width: 44rem) {
+  .rst-kitchen-features {
+    grid-template-columns: 1fr;
+  }
+
+  .rst-tables-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .rst-floor-features {
+    grid-template-columns: 1fr;
+  }
+
+  .rst-journey-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .rst-op-bridge {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+}
