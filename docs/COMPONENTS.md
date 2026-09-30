@@ -70,6 +70,8 @@ The dedicated Intelligence page uses `.qi-today` for a small proactive attention
 
 `.rst-pricing-grid` and `.rst-plan` form the approved full comparison: Starter (£29/month) contains the core restaurant-operation list, Growth (£79/month) is the highlighted "Most Popular" plan with management capabilities, and Business (£149/month) adds centralised multi-location capabilities. `.rst-pricing-access` closes the comparison with the approved 30-day Full Qavyo message. `.rst-trial` then explains the trial journey (Start → Full Qavyo → 30 Days → Choose). Hardware and payment processing remain separate.
 
+The canonical Pricing page uses `.pricing-plan-grid` for aligned plan summaries and `.pricing-table` for the detailed comparison. At mobile widths, `.pricing-plan-selector` shows one plan column at a time without horizontal page scrolling; `js/pages/pricing.js` keeps each selector's `aria-pressed` state synchronized with the visible column. The table retains explicit Included / Not included text so availability is never conveyed through colour alone.
+
 ## Device Progression Grid
 
 `.rst-device-panel` explains the qualified hardware path: use supported phones, tablets, or compatible equipment; add dedicated restaurant hardware where needed; and confirm compatibility with Qavyo. It must not imply universal device support.
