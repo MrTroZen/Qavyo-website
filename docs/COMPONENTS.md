@@ -94,6 +94,10 @@ The value section (`.marketing-manage`) uses `.manage-flow` to show channel conv
 
 The final conversion section (`.marketing-final`) provides authoritative closure on a full-width dark surface (`section--dark`) with a focused headline, concise invitation, and a single high-contrast primary CTA to talk to sales.
 
+## Social Media Marketing Presence Ecosystem
+
+The Social Media Marketing page hero uses `.social-presence` to depict an authentic content ecosystem around a local business (`Rowan & Co. Studio`). It illustrates the connection between upstream planning (`.social-plan-card`: Content Plan & ready status), an active social post composition (`.social-post-card`: business identity, editorial visual area, handcrafted caption, and restrained actions), and a downstream customer touchpoint (`.social-touchpoint-card`: customer discovery resulting in a studio visit). It purposefully omits fabricated engagement metrics, like counters, or follower statistics to maintain calm commercial credibility.
+
 ## Responsive and accessibility requirements
 
 Every component must keep a logical reading and tab order, visible keyboard focus, sufficient colour contrast, meaningful semantics, and reasonable touch targets. Responsive behaviour must be designed, not assumed. Motion must respect reduced-motion preferences.
