@@ -12,7 +12,7 @@
 }
 
 .section--compact {
-  padding-block: clamp(4rem, 10vw, 7.5rem);
+  padding-block: clamp(2.5rem, 4vw, 3.75rem);
 }
 
 .section--bordered {
