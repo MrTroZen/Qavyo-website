@@ -84,9 +84,11 @@ The canonical Pricing page uses `.pricing-plan-grid` for aligned plan summaries 
 
 `.rst-final-cta` is a focused full-width dark surface (`section--dark`) providing authoritative closure to major product pages. It features a high-contrast headline, concise value proposition, primary and secondary CTA buttons, and tertiary metadata/pricing links.
 
-## Marketing Customer Journey
+## Marketing Customer Journey & Solutions Discovery
 
-The Marketing Solutions overview uses `.hero-journey` for the hero composition around "Your Business", and `.journey-track` (`.journey-flow`) for the horizontal continuous customer journey on desktop that transforms into a vertical progression on mobile. The stages map `01 Get found` (Website SEO), `02 Attract` (Social Media), `03 Connect` (Website), `04 Reach` (SMS + Email), and `05 Return` (Ongoing communication & Returning Customer endpoint). These patterns use communication-oriented illustrative UI without claiming automation, performance results, or unconfirmed service scope.
+The Marketing Solutions overview uses `.hero-journey` for the hero composition around "Your Business", and `.journey-track` (`.journey-flow`) for the horizontal continuous customer journey on desktop that transforms into a vertical progression on mobile. The stages map `01 Get found` (Website SEO), `02 Attract` (Social Media), `03 Connect` (Website), `04 Reach` (SMS + Email), and `05 Return` (Ongoing communication & Returning Customer endpoint).
+
+The solutions discovery section uses `.marketing-solution-grid` to present the five confirmed growth channels with intentional visual hierarchy: two featured cards on the top row (`.marketing-solution--featured`: Social Media Marketing and Website Building) and three compact cards on the second row (SMS Marketing, Email Marketing, Website SEO). Each card features illustrative UI compositions without claiming automation, performance results, or unconfirmed service scope. Links use prototype navigation until individual pages are constructed.
 
 ## Responsive and accessibility requirements
 
