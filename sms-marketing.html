@@ -161,21 +161,20 @@
             </div>
           </nav>
 
-          <div class="header-actions">
-            <a class="header-actions__link" href="#prototype-navigation" data-prototype-link>Sign In</a>
-            <a class="header-actions__link" href="#prototype-navigation" data-prototype-link>Talk to Sales</a>
-            <a class="button button--primary header-actions__button" href="#prototype-navigation" data-prototype-link>Start Free</a>
-          </div>
+          <nav class="utility-navigation" aria-label="Account and sales navigation">
+            <a class="utility-link" href="#prototype-navigation" data-prototype-link>Sign In</a>
+            <a class="utility-link utility-link--sales" href="#prototype-navigation" data-prototype-link>Talk to Sales</a>
+            <a class="button button--primary button--header" href="#prototype-navigation" data-prototype-link>Start Free</a>
+          </nav>
         </div>
 
-        <button class="mobile-nav-toggle" type="button" aria-expanded="false" aria-controls="mobile-navigation" aria-label="Open navigation menu" data-mobile-toggle>
-          <span class="mobile-nav-toggle__bar" aria-hidden="true"></span>
-          <span class="mobile-nav-toggle__bar" aria-hidden="true"></span>
-          <span class="mobile-nav-toggle__bar" aria-hidden="true"></span>
+        <button class="mobile-menu-trigger" type="button" aria-expanded="false" aria-controls="mobile-navigation" data-mobile-menu-trigger>
+          <span>Menu</span>
+          <span class="menu-icon" aria-hidden="true"><i></i><i></i></span>
         </button>
       </div>
 
-      <div class="mobile-navigation" id="mobile-navigation" data-mobile-navigation hidden>
+      <div class="mobile-navigation" id="mobile-navigation" data-mobile-menu hidden>
         <nav class="mobile-navigation__inner" aria-label="Mobile navigation">
           <div class="mobile-nav-group">
             <button class="mobile-nav-trigger" type="button" aria-expanded="false" aria-controls="mobile-products" data-mobile-accordion-trigger>
@@ -183,15 +182,19 @@
             </button>
             <div class="mobile-nav-panel" id="mobile-products" data-mobile-accordion-panel hidden>
               <section class="mobile-menu-section" aria-labelledby="mobile-restaurant-title">
-                <p class="mobile-menu-section__title" id="mobile-restaurant-title">Restaurant software</p>
-                <a href="restaurant.html">Qavyo Restaurant Software</a>
+                <p class="mobile-menu-section__category">Restaurant software</p>
+                <p class="mobile-menu-section__title" id="mobile-restaurant-title"><a href="restaurant.html">Qavyo Restaurant Software</a></p>
+                <p class="mobile-menu-section__description">One connected platform for running restaurant operations.</p>
+                <a class="mobile-menu-section__featured-link" href="restaurant.html">Explore Restaurant Software</a>
                 <a href="intelligence.html">Qavyo Intelligence</a>
                 <a href="restaurant.html#hardware">Hardware</a>
                 <a href="#prototype-navigation" data-prototype-link>Payments</a>
               </section>
+
               <section class="mobile-menu-section" aria-labelledby="mobile-retail-title">
-                <p class="mobile-menu-section__title" id="mobile-retail-title">Retail software</p>
-                <a href="#prototype-navigation" data-prototype-link>Explore Retail Software</a>
+                <p class="mobile-menu-section__category">Retail software</p>
+                <p class="mobile-menu-section__title" id="mobile-retail-title">Qavyo Retail Software</p>
+                <a class="mobile-menu-section__featured-link" href="#prototype-navigation" data-prototype-link>Explore Retail Software</a>
                 <a href="#prototype-navigation" data-prototype-link>Clothing &amp; Fashion</a>
                 <a href="#prototype-navigation" data-prototype-link>Electronics</a>
                 <a href="#prototype-navigation" data-prototype-link>Repair Shops</a>
@@ -200,8 +203,10 @@
                 <a href="#prototype-navigation" data-prototype-link>Hardware &amp; Sanitary</a>
                 <a href="#prototype-navigation" data-prototype-link>Paint &amp; Tiles</a>
               </section>
+
               <section class="mobile-menu-section" aria-labelledby="mobile-farm-title">
-                <p class="mobile-menu-section__title" id="mobile-farm-title">Farm software</p>
+                <p class="mobile-menu-section__category">Farm software</p>
+                <p class="mobile-menu-section__title" id="mobile-farm-title">Qavyo Farm Software</p>
                 <a href="#prototype-navigation" data-prototype-link>Broiler Farming</a>
               </section>
             </div>
@@ -212,8 +217,8 @@
               Restaurants <span aria-hidden="true">+</span>
             </button>
             <div class="mobile-nav-panel" id="mobile-restaurants" data-mobile-accordion-panel hidden>
-              <section class="mobile-menu-section" aria-labelledby="mobile-run-title">
-                <p class="mobile-menu-section__title" id="mobile-run-title">Run your restaurant</p>
+              <section class="mobile-menu-section" aria-labelledby="mobile-run-restaurant-title">
+                <p class="mobile-menu-section__title" id="mobile-run-restaurant-title">Run Your Restaurant</p>
                 <a href="restaurant.html#pos-ordering">POS &amp; Ordering</a>
                 <a href="restaurant.html#kitchen">Kitchen &amp; Service</a>
                 <a href="restaurant.html#tables">Tables &amp; Floor</a>
@@ -221,24 +226,25 @@
                 <a href="restaurant.html#recipes">Recipes &amp; Costing</a>
                 <a href="restaurant.html#purchasing">Purchasing &amp; Suppliers</a>
               </section>
-              <section class="mobile-menu-section" aria-labelledby="mobile-grow-title">
-                <p class="mobile-menu-section__title" id="mobile-grow-title">Grow your restaurant</p>
+              <section class="mobile-menu-section" aria-labelledby="mobile-grow-restaurant-title">
+                <p class="mobile-menu-section__title" id="mobile-grow-restaurant-title">Grow Your Restaurant</p>
                 <a href="restaurant.html#online-ordering">Online Ordering</a>
                 <a href="restaurant.html#website">Restaurant Website</a>
                 <a href="restaurant.html#reservations">Reservations</a>
                 <a href="restaurant.html#customers">Customers &amp; CRM</a>
                 <a href="restaurant.html#loyalty">Loyalty</a>
               </section>
-              <section class="mobile-menu-section" aria-labelledby="mobile-manage-title">
-                <p class="mobile-menu-section__title" id="mobile-manage-title">Manage your business</p>
+              <section class="mobile-menu-section" aria-labelledby="mobile-manage-restaurant-title">
+                <p class="mobile-menu-section__title" id="mobile-manage-restaurant-title">Manage Your Business</p>
                 <a href="restaurant.html#staff">Staff &amp; Scheduling</a>
                 <a href="restaurant.html#payroll">Attendance &amp; Payroll</a>
                 <a href="restaurant.html#reporting">Reporting</a>
                 <a href="restaurant.html#multi-location">Multi-location</a>
               </section>
-              <section class="mobile-menu-section" aria-labelledby="mobile-intelligence-sub-title">
-                <p class="mobile-menu-section__title" id="mobile-intelligence-sub-title">Qavyo Intelligence</p>
-                <a href="intelligence.html">Explore Qavyo Intelligence</a>
+              <section class="mobile-menu-section" aria-labelledby="mobile-restaurant-intelligence-title">
+                <p class="mobile-menu-section__title" id="mobile-restaurant-intelligence-title">Qavyo Intelligence</p>
+                <p class="mobile-menu-section__description">Understand what is happening, what needs attention and what to do next.</p>
+                <a class="mobile-menu-section__featured-link" href="intelligence.html">Explore Qavyo Intelligence</a>
               </section>
               <a class="mobile-menu-section__featured-link" href="restaurant.html">Explore Restaurant Software</a>
             </div>
