@@ -26,6 +26,7 @@ There is no framework, package manager, bundler, or build step.
 ├── sms-marketing.html       # Canonical Qavyo SMS Marketing page
 ├── email-marketing.html     # Canonical Qavyo Email Marketing page
 ├── website-building.html    # Canonical Qavyo Website Building page
+├── website-seo.html         # Canonical Qavyo Website SEO page
 ├── assets/
 │   ├── icons/              # Approved icon assets
 │   ├── images/             # Approved photography and imagery

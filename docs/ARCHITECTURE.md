@@ -90,7 +90,7 @@ The Intelligence page should communicate the operating loop:
 
 ### Marketing Solutions
 
-`solutions.html` is the canonical Marketing Solutions overview. It introduces Social Media Marketing, SMS Marketing, Email Marketing, Website Building, and Website SEO through a customer-journey story. `social-media-marketing.html` is the canonical Social Media Marketing page, focusing on public presence. `sms-marketing.html` is the canonical SMS Marketing page, focusing on short, direct customer communication. `email-marketing.html` is the canonical Email Marketing page, focusing on richer customer communication with more room for information, presentation, and context. `website-building.html` is the canonical Website Building page, focusing on a clear, professional online home and customer experience without asserting unconfirmed technical or commercial scope. Website SEO remains a prototype destination until its page is built. Qavyo Intelligence remains separate at `intelligence.html`.
+`solutions.html` is the canonical Marketing Solutions overview. Its five services link to their canonical pages. `social-media-marketing.html` focuses on public presence; `sms-marketing.html` on short, direct communication; `email-marketing.html` on richer communication; `website-building.html` on a professional online home; and `website-seo.html` on connecting search intent with clear, relevant pages without promising rankings or unconfirmed technical scope. Qavyo Intelligence remains separate at `intelligence.html`.
 
 ## Navigation implementation
 

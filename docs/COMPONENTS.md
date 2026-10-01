@@ -128,6 +128,10 @@ The Email Marketing page uses `.email-preview` for fictional customer-facing com
 
 The Website Building page uses the scoped `.wb-browser`, `.wb-site`, and `.wb-phone` compositions to present one clearly illustrative fictional business website across larger and smaller screens. `.wb-anatomy` explains customer-facing page structure through an annotated vertical website, while `.wb-process__assembly` shows business information becoming site structure and a reviewed concept without implying automated generation, fixed delivery timelines, or a specific technical stack. `.wb-showcase` is the portfolio-style visual centerpiece, and `.wb-journey` positions the website as the active Explore touchpoint without implying technical integration or journey tracking.
 
+## Website SEO Search-to-Page Story
+
+The Website SEO page uses scoped `.seo-query`, `.seo-result`, and `.seo-page-panel` compositions to explain the conceptual relationship between search intent and relevant website content. `.seo-process__rail` keeps the Understand, Organize, Clarify, Connect, and Improve sequence continuous rather than card-based, while `.seo-journey` presents SEO as the active Get Found touchpoint. The pattern must never imply rankings, traffic outcomes, technical deliverables, or automatic cross-channel tracking.
+
 The SMS Marketing final CTA (`.sms-cta`) provides authoritative closure to the completed page on a full-width dark surface (`--color-dark`). It features a high-contrast two-line headline (`Stay connected more directly.`), a single sentence of directional copy, and a primary `button--on-dark` linked to `#prototype-navigation` (`data-prototype-link`). A subtle dual-radial brand-blue ambient glow element (`.sms-cta__bg`, `aria-hidden="true"`) provides background warmth without distracting from the primary conversion action.
 
 ## Responsive and accessibility requirements
