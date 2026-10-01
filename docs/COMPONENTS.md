@@ -140,6 +140,10 @@ The Retail Software overview uses `.retail-system` for an illustrative sale conn
 
 The Clothing & Fashion page uses the scoped `.fashion-story`, `.fashion-wall`, and `.fashion-feed` compositions to connect a product example, its operational context, and an illustrative Intelligence briefing. Reuse the underlying signal-line, neutral-surface, and human-control principles for future retail verticals, but adapt the composition to the actual workflow rather than treating this page as a generic vertical template.
 
+## Electronics Structured Product Story
+
+The Electronics page uses the scoped `.electronics-catalog`, `.electronics-flow`, `.electronics-table`, and `.electronics-brief` compositions. Together they connect a structured product catalog, one sale event, qualitative product visibility, and a human-controlled Intelligence briefing. The table becomes a labeled stacked list on small screens; it must not introduce serial, warranty, repair, supplier, or automated inventory claims.
+
 The SMS Marketing final CTA (`.sms-cta`) provides authoritative closure to the completed page on a full-width dark surface (`--color-dark`). It features a high-contrast two-line headline (`Stay connected more directly.`), a single sentence of directional copy, and a primary `button--on-dark` linked to `#prototype-navigation` (`data-prototype-link`). A subtle dual-radial brand-blue ambient glow element (`.sms-cta__bg`, `aria-hidden="true"`) provides background warmth without distracting from the primary conversion action.
 
 ## Responsive and accessibility requirements
