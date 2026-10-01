@@ -376,14 +376,16 @@
   color: var(--color-brand-hover);
 }
 
-.restaurants-menu__actions {
+.restaurants-menu__actions,
+.solutions-menu__actions {
   display: flex;
   margin-block-start: var(--space-5);
   padding-block-start: var(--space-4);
   border-top: 1px solid var(--color-border);
 }
 
-.restaurants-menu__actions .nav-menu__featured-link {
+.restaurants-menu__actions .nav-menu__featured-link,
+.solutions-menu__actions .nav-menu__featured-link {
   margin-block-start: 0;
 }
 
