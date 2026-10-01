@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/pages/sms.css">
     <script src="js/main.js" defer></script>
+    <script src="js/pages/sms.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -397,6 +398,170 @@
               <span class="sms-moments__pill">Business Update</span>
               <span class="sms-moments__pill">Customer Reminder</span>
               <span class="sms-moments__pill">Stay Connected</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 2: Useful Customer Moments -->
+      <section class="sms-moments-section" id="useful-moments" aria-labelledby="sms-moments-heading">
+        <div class="container sms-moments-grid">
+          <!-- Left Column: Narrative & Moment Triggers -->
+          <div class="sms-moments-narrative">
+            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Useful Customer Moments</p>
+            <h2 id="sms-moments-heading" class="sms-moments__headline">The right message,<br>at a useful moment.</h2>
+            <p class="sms-moments__lede">SMS gives businesses a direct way to share useful information with customers when there is something worth saying. From a simple reminder to an important update, the message stays focused and easy to understand.</p>
+            <p class="sms-moments__note" aria-label="Customer communication philosophy">Useful messages &bull; Clear reasons to send them</p>
+
+            <div class="sms-moment-list" role="tablist" aria-label="Business communication moments">
+              <!-- Moment 01 -->
+              <button class="sms-moment-tab is-active" type="button" role="tab" aria-selected="true" aria-controls="moment-panel-1" id="moment-tab-1" data-moment-tab>
+                <span class="sms-moment-tab__num">01</span>
+                <div class="sms-moment-tab__content">
+                  <strong class="sms-moment-tab__title">Business Update</strong>
+                  <p class="sms-moment-tab__desc">When opening hours, seasonal schedules or service details change.</p>
+                </div>
+              </button>
+
+              <!-- Moment 02 -->
+              <button class="sms-moment-tab" type="button" role="tab" aria-selected="false" tabindex="-1" aria-controls="moment-panel-2" id="moment-tab-2" data-moment-tab>
+                <span class="sms-moment-tab__num">02</span>
+                <div class="sms-moment-tab__content">
+                  <strong class="sms-moment-tab__title">Reminder</strong>
+                  <p class="sms-moment-tab__desc">When an upcoming event, planned date or customer preview is approaching.</p>
+                </div>
+              </button>
+
+              <!-- Moment 03 -->
+              <button class="sms-moment-tab" type="button" role="tab" aria-selected="false" tabindex="-1" aria-controls="moment-panel-3" id="moment-tab-3" data-moment-tab>
+                <span class="sms-moment-tab__num">03</span>
+                <div class="sms-moment-tab__content">
+                  <strong class="sms-moment-tab__title">Something New</strong>
+                  <p class="sms-moment-tab__desc">When fresh seasonal collections, arrivals or new services land.</p>
+                </div>
+              </button>
+
+              <!-- Moment 04 -->
+              <button class="sms-moment-tab" type="button" role="tab" aria-selected="false" tabindex="-1" aria-controls="moment-panel-4" id="moment-tab-4" data-moment-tab>
+                <span class="sms-moment-tab__num">04</span>
+                <div class="sms-moment-tab__content">
+                  <strong class="sms-moment-tab__title">Announcement</strong>
+                  <p class="sms-moment-tab__desc">When there is a special milestone, open workshop or event to share.</p>
+                </div>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right Column: Central Phone / Message Interface Display -->
+          <div class="sms-studio-display" role="region" aria-label="Customer message preview">
+            <div class="sms-studio-header">
+              <div class="sms-studio-header__hub">
+                <span class="signal-dot" aria-hidden="true"></span>
+                <span class="sms-studio-header__hub-type">Local Business</span>
+                <strong class="sms-studio-header__hub-title">North &amp; Co.</strong>
+              </div>
+              <span class="sms-studio-badge" id="sms-active-moment-badge">Business Update</span>
+            </div>
+
+            <!-- Central Platform-Neutral Phone Preview -->
+            <div class="sms-studio-phone" role="img" aria-label="Preview of customer message on phone screen">
+              <div class="sms-studio-phone__top" aria-hidden="true">
+                <span class="sms-studio-phone__speaker"></span>
+              </div>
+
+              <div class="sms-studio-phone__header">
+                <span class="sms-device__nav-title" aria-hidden="true">&larr; Messages</span>
+                <div class="sms-device__sender">
+                  <span class="sms-device__avatar" aria-hidden="true">N</span>
+                  <strong class="sms-device__sender-name">North &amp; Co.</strong>
+                  <span class="sms-device__sender-type">Direct notification</span>
+                </div>
+                <span class="sms-device__header-end" aria-hidden="true">SMS</span>
+              </div>
+
+              <div class="sms-studio-phone__screen">
+                <!-- Panel 1: Business Update (Default visible) -->
+                <div class="sms-moment-panel is-active" id="moment-panel-1" role="tabpanel" aria-labelledby="moment-tab-1" data-moment-panel>
+                  <div class="sms-studio-phone__date">Today &bull; 10:24 AM</div>
+                  <div class="sms-bubble">
+                    <div class="sms-bubble__sender-tag">
+                      <span class="sms-bubble__sender-name">North &amp; Co.</span>
+                      <span class="sms-bubble__pill">Business Update</span>
+                    </div>
+                    <p class="sms-bubble__text">Just a quick update from North &amp; Co. &mdash; we'll be open from 10am tomorrow.</p>
+                    <div class="sms-bubble__footer">
+                      <span class="sms-bubble__status">
+                        <span class="sms-bubble__check" aria-hidden="true">&#10003;</span> Delivered &bull; SMS
+                      </span>
+                      <span class="sms-bubble__disclaimer">Illustrative message</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Panel 2: Reminder -->
+                <div class="sms-moment-panel" id="moment-panel-2" role="tabpanel" aria-labelledby="moment-tab-2" data-moment-panel hidden>
+                  <div class="sms-studio-phone__date">Today &bull; 2:15 PM</div>
+                  <div class="sms-bubble">
+                    <div class="sms-bubble__sender-tag">
+                      <span class="sms-bubble__sender-name">North &amp; Co.</span>
+                      <span class="sms-bubble__pill">Reminder</span>
+                    </div>
+                    <p class="sms-bubble__text">Just a reminder from North &amp; Co. &mdash; our weekend preview event starts tomorrow at 11am.</p>
+                    <div class="sms-bubble__footer">
+                      <span class="sms-bubble__status">
+                        <span class="sms-bubble__check" aria-hidden="true">&#10003;</span> Delivered &bull; SMS
+                      </span>
+                      <span class="sms-bubble__disclaimer">Illustrative message</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Panel 3: Something New -->
+                <div class="sms-moment-panel" id="moment-panel-3" role="tabpanel" aria-labelledby="moment-tab-3" data-moment-panel hidden>
+                  <div class="sms-studio-phone__date">Friday &bull; 9:45 AM</div>
+                  <div class="sms-bubble">
+                    <div class="sms-bubble__sender-tag">
+                      <span class="sms-bubble__sender-name">North &amp; Co.</span>
+                      <span class="sms-bubble__pill">Something New</span>
+                    </div>
+                    <p class="sms-bubble__text">Our new seasonal collection is now available in store at North &amp; Co.</p>
+                    <div class="sms-bubble__footer">
+                      <span class="sms-bubble__status">
+                        <span class="sms-bubble__check" aria-hidden="true">&#10003;</span> Delivered &bull; SMS
+                      </span>
+                      <span class="sms-bubble__disclaimer">Illustrative message</span>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Panel 4: Announcement -->
+                <div class="sms-moment-panel" id="moment-panel-4" role="tabpanel" aria-labelledby="moment-tab-4" data-moment-panel hidden>
+                  <div class="sms-studio-phone__date">Saturday &bull; 10:00 AM</div>
+                  <div class="sms-bubble">
+                    <div class="sms-bubble__sender-tag">
+                      <span class="sms-bubble__sender-name">North &amp; Co.</span>
+                      <span class="sms-bubble__pill">Announcement</span>
+                    </div>
+                    <p class="sms-bubble__text">We're hosting an open studio and workshop this Saturday at North &amp; Co.</p>
+                    <div class="sms-bubble__footer">
+                      <span class="sms-bubble__status">
+                        <span class="sms-bubble__check" aria-hidden="true">&#10003;</span> Delivered &bull; SMS
+                      </span>
+                      <span class="sms-bubble__disclaimer">Illustrative message</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="sms-studio-phone__bottom" aria-hidden="true">
+                <span class="sms-device__indicator"></span>
+              </div>
+            </div>
+
+            <!-- Reassurance Note -->
+            <div class="sms-studio-note">
+              <span class="signal-dot" aria-hidden="true"></span>
+              <span>Direct customer communication &bull; Sent when there is a clear reason to share</span>
             </div>
           </div>
         </div>

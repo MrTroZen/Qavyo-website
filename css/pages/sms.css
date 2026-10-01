@@ -488,6 +488,249 @@
 }
 
 /* --------------------------------------------------------------------------
+   Section 2: Useful Customer Moments
+   -------------------------------------------------------------------------- */
+
+.sms-moments-section {
+  background: var(--color-canvas);
+  border-bottom: 1px solid var(--color-border);
+  padding-block: var(--section-space);
+}
+
+.sms-moments-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(25rem, 1.2fr);
+  gap: clamp(3rem, 5.5vw, 5.5rem);
+  align-items: start;
+}
+
+.sms-moments-narrative {
+  display: flex;
+  flex-direction: column;
+}
+
+.sms-moments__headline {
+  font-size: clamp(2.3rem, 4.2vw, 3.65rem);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.045em;
+  color: var(--color-ink);
+  margin: var(--space-4) 0;
+}
+
+.sms-moments__lede {
+  color: var(--color-text);
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+  max-width: 34rem;
+  margin-bottom: var(--space-3);
+}
+
+.sms-moments__note {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-brand);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-5);
+}
+
+/* Moment Interactive List / Tabs */
+.sms-moment-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.sms-moment-tab {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  text-align: left;
+  font-family: inherit;
+  color: inherit;
+  cursor: pointer;
+  transition: border-color var(--transition-fast), background-color var(--transition-fast), box-shadow var(--transition-fast);
+}
+
+.sms-moment-tab:hover {
+  border-color: var(--color-border-strong);
+}
+
+.sms-moment-tab:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.sms-moment-tab.is-active,
+.sms-moment-tab[aria-selected="true"] {
+  border-color: var(--color-brand);
+  background: var(--color-brand-soft);
+  box-shadow: 0 0 0 1px var(--color-brand);
+}
+
+.sms-moment-tab__num {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 800;
+  color: var(--color-brand);
+  padding-top: 0.15rem;
+  letter-spacing: 0.05em;
+}
+
+.sms-moment-tab__content {
+  display: flex;
+  flex-direction: column;
+}
+
+.sms-moment-tab__title {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-ink);
+  margin-bottom: 0.15rem;
+}
+
+.sms-moment-tab__desc {
+  margin: 0;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  color: var(--color-text);
+}
+
+/* Studio Display (Right Column) */
+.sms-studio-display {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: clamp(1.4rem, 2.5vw, 2.25rem);
+  box-shadow: 0 1rem 3rem -0.75rem rgb(16 38 56 / 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.sms-studio-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sms-studio-header__hub {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.sms-studio-header__hub-type {
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.sms-studio-header__hub-title {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--color-ink);
+}
+
+.sms-studio-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-brand-soft);
+  color: var(--color-brand);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Studio Phone */
+.sms-studio-phone {
+  width: 100%;
+  max-width: 22rem;
+  margin: 0 auto;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-strong);
+  border-radius: 1.5rem;
+  box-shadow: 0 0.75rem 2rem rgb(16 38 56 / 0.07);
+  overflow: hidden;
+}
+
+.sms-studio-phone__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.65rem;
+  background: var(--color-surface);
+}
+
+.sms-studio-phone__speaker {
+  width: 2.75rem;
+  height: 0.25rem;
+  border-radius: 0.25rem;
+  background: var(--color-border-strong);
+}
+
+.sms-studio-phone__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 1rem;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sms-studio-phone__screen {
+  padding: 1.25rem 1rem;
+  background: var(--color-canvas);
+  min-height: 12rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sms-studio-phone__date {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--color-muted);
+  margin-bottom: var(--space-4);
+  letter-spacing: 0.02em;
+}
+
+.sms-moment-panel {
+  display: flex;
+  flex-direction: column;
+}
+
+.sms-moment-panel[hidden] {
+  display: none;
+}
+
+/* Studio Note */
+.sms-studio-note {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-align: center;
+}
+
+/* --------------------------------------------------------------------------
    Responsive Behavior
    -------------------------------------------------------------------------- */
 
@@ -500,6 +743,11 @@
 
   .sms-hero h1 {
     max-width: 16ch;
+  }
+
+  .sms-moments-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-7);
   }
 }
 
@@ -523,11 +771,19 @@
   .sms-moments {
     justify-content: flex-start;
   }
+
+  .sms-studio-display {
+    padding: var(--space-4);
+  }
 }
 
 @media (max-width: 32rem) {
   .sms-hero h1 {
     font-size: clamp(2.4rem, 11vw, 3.6rem);
+  }
+
+  .sms-moments__headline {
+    font-size: clamp(2rem, 9vw, 2.75rem);
   }
 
   .sms-hero__actions {
@@ -540,7 +796,8 @@
     text-align: center;
   }
 
-  .sms-device {
+  .sms-device,
+  .sms-studio-phone {
     max-width: 100%;
   }
 
