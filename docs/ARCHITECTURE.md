@@ -92,6 +92,8 @@ The Intelligence page should communicate the operating loop:
 
 `solutions.html` is the canonical Marketing Solutions overview. Its five services link to their canonical pages. `social-media-marketing.html` focuses on public presence; `sms-marketing.html` on short, direct communication; `email-marketing.html` on richer communication; `website-building.html` on a professional online home; and `website-seo.html` on connecting search intent with clear, relevant pages without promising rankings or unconfirmed technical scope. Qavyo Intelligence remains separate at `intelligence.html`.
 
+The Marketing family is complete and frozen. Future work should preserve the distinct page identities and limit changes to approved content, verified defects, or intentional architecture updates.
+
 ## Navigation implementation
 
 Unavailable destinations use the existing safe prototype-link behavior. Do not create empty pages or fake production routes to satisfy navigation links. As pages and sections are approved, replace prototype links with their real destinations.
