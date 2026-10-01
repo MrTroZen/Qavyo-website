@@ -132,6 +132,10 @@ The Website Building page uses the scoped `.wb-browser`, `.wb-site`, and `.wb-ph
 
 The Website SEO page uses scoped `.seo-query`, `.seo-result`, and `.seo-page-panel` compositions to explain the conceptual relationship between search intent and relevant website content. `.seo-process__rail` keeps the Understand, Organize, Clarify, Connect, and Improve sequence continuous rather than card-based, while `.seo-journey` presents SEO as the active Get Found touchpoint. The pattern must never imply rankings, traffic outcomes, technical deliverables, or automatic cross-channel tracking.
 
+## Retail Connected Operation Story
+
+The Retail Software overview uses `.retail-system` for an illustrative sale connected to product, stock, customer context, reporting, and Intelligence, and `.retail-flow` for the wider operational story. `.retail-types-grid` identifies the eight approved retail business types without linking to unbuilt vertical pages or inventing vertical-specific capabilities. `.retail-briefing` provides qualitative retail Intelligence examples with the required human-control statement, while `.retail-device-stage` communicates qualified phone and tablet use with hardware kept commercially separate.
+
 The SMS Marketing final CTA (`.sms-cta`) provides authoritative closure to the completed page on a full-width dark surface (`--color-dark`). It features a high-contrast two-line headline (`Stay connected more directly.`), a single sentence of directional copy, and a primary `button--on-dark` linked to `#prototype-navigation` (`data-prototype-link`). A subtle dual-radial brand-blue ambient glow element (`.sms-cta__bg`, `aria-hidden="true"`) provides background warmth without distracting from the primary conversion action.
 
 ## Responsive and accessibility requirements

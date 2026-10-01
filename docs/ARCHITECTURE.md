@@ -70,7 +70,7 @@ Use one substantial Restaurant Software page initially. Restaurant capability li
 
 ### Retail Software
 
-Retail business types will eventually receive individual landing pages because their workflows and messaging differ. Planned destinations are Clothing & Fashion, Electronics, Repair Shops, Grocery & Convenience, Salon & Spa, Hardware & Sanitary, and Paint & Tiles. These pages are not part of the current task.
+`retail.html` is the canonical Qavyo Retail Software overview. It presents connected retail operations across sales, products, stock, customer context, reporting, locations, and Qavyo Intelligence without asserting unconfirmed detailed capabilities. Retail business types will eventually receive individual landing pages because their workflows and messaging differ. Planned destinations are Clothing & Fashion, Electronics, Repair Shops, Grocery & Convenience, Salon & Spa, Hardware & Sanitary, Paints, and Tiles. Until those pages are approved, the business types remain non-navigation labels.
 
 ### Farm Software
 

@@ -19,6 +19,7 @@ There is no framework, package manager, bundler, or build step.
 .
 ├── index.html              # Qavyo homepage
 ├── restaurant.html         # Qavyo Restaurant Software page
+├── retail.html             # Canonical Qavyo Retail Software overview
 ├── intelligence.html       # Canonical Qavyo Intelligence page
 ├── pricing.html            # Canonical Qavyo Restaurant Software pricing page
 ├── solutions.html          # Canonical Qavyo Marketing Solutions overview
