@@ -1536,6 +1536,54 @@
 }
 
 /* --------------------------------------------------------------------------
+   Section 6: Final CTA (.sms-cta)
+   -------------------------------------------------------------------------- */
+
+.sms-cta {
+  position: relative;
+  background: var(--color-dark);
+  padding-block: clamp(4.5rem, 8vw, 7rem);
+  overflow: hidden;
+  text-align: center;
+}
+
+.sms-cta__bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse 55% 70% at 18% 50%, rgb(0 102 204 / 0.12) 0%, transparent 100%),
+    radial-gradient(ellipse 50% 65% at 82% 50%, rgb(0 102 204 / 0.08) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.sms-cta__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+  max-width: 38rem;
+  margin-inline: auto;
+}
+
+.sms-cta__headline {
+  font-size: clamp(2.6rem, 5.2vw, 4.5rem);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.055em;
+  color: #ffffff;
+  margin: 0;
+}
+
+.sms-cta__lede {
+  color: rgb(255 255 255 / 0.68);
+  font-size: var(--text-lg);
+  line-height: var(--leading-body);
+  max-width: 32rem;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
    Responsive Behavior
    -------------------------------------------------------------------------- */
 
@@ -1676,6 +1724,10 @@
     font-size: clamp(2rem, 9vw, 2.75rem);
   }
 
+  .sms-cta__headline {
+    font-size: clamp(2.3rem, 10vw, 3.2rem);
+  }
+
   .sms-example {
     padding: var(--space-4);
   }
@@ -1686,6 +1738,11 @@
   }
 
   .sms-hero__actions .button {
+    width: 100%;
+    text-align: center;
+  }
+
+  .sms-cta .button--on-dark {
     width: 100%;
     text-align: center;
   }
