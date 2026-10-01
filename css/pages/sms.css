@@ -999,6 +999,274 @@
 }
 
 /* --------------------------------------------------------------------------
+   Section 4: Customer Message Showcase (.sms-showcase)
+   -------------------------------------------------------------------------- */
+
+.sms-showcase {
+  background: var(--color-canvas);
+  border-bottom: 1px solid var(--color-border);
+  padding-block: var(--section-space);
+}
+
+.sms-showcase__header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
+.sms-showcase__lead {
+  max-width: 36rem;
+}
+
+.sms-showcase h2 {
+  font-size: clamp(2.3rem, 4.2vw, 3.65rem);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.045em;
+  color: var(--color-ink);
+  margin: var(--space-4) 0 0;
+}
+
+.sms-showcase__aside {
+  max-width: 28rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.sms-showcase__lede {
+  color: var(--color-text);
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+  margin: 0;
+}
+
+.sms-showcase__note {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-brand);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+/* Showcase Board */
+.sms-showcase__board {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr);
+  gap: clamp(2rem, 4vw, 3.5rem);
+  align-items: stretch;
+}
+
+/* Primary Dominant Card */
+.sms-board-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: clamp(1.5rem, 2.5vw, 2.25rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: 0 1rem 3rem -0.75rem rgb(16 38 56 / 0.07);
+}
+
+.sms-board-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sms-board-card__identity {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.sms-board-card__sender {
+  display: block;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--color-ink);
+  line-height: 1.2;
+}
+
+.sms-board-card__kicker {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+.sms-board-card__category-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.2rem 0.65rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-brand-soft);
+  color: var(--color-brand);
+  font-size: var(--text-xs);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Showcase Phone */
+.sms-showcase-phone {
+  width: 100%;
+  max-width: 22rem;
+  margin: var(--space-5) auto;
+  background: var(--color-surface);
+  border: 1px solid var(--color-border-strong);
+  border-radius: 1.5rem;
+  box-shadow: 0 0.75rem 2rem rgb(16 38 56 / 0.07);
+  overflow: hidden;
+}
+
+.sms-showcase-phone__top {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.65rem;
+  background: var(--color-surface);
+}
+
+.sms-showcase-phone__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.65rem 1rem;
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sms-showcase-phone__screen {
+  padding: 1.25rem 1rem;
+  background: var(--color-canvas);
+  min-height: 12rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.sms-showcase-phone__date {
+  text-align: center;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--color-muted);
+  margin-bottom: var(--space-4);
+  letter-spacing: 0.02em;
+}
+
+.sms-showcase-phone__bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 0 0.55rem;
+  background: var(--color-surface);
+}
+
+.sms-board-card__caption {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-2);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Supporting Cards Stack */
+.sms-showcase__secondary {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  justify-content: space-between;
+}
+
+.sms-fragment-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: 0 4px 16px -4px rgb(16 38 56 / 0.04);
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.sms-fragment-card:hover {
+  border-color: var(--color-border-strong);
+  transform: translateY(-2px);
+}
+
+.sms-fragment-card__meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--space-2);
+}
+
+.sms-fragment-card__pill {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 0.15rem 0.5rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-canvas);
+  border: 1px solid var(--color-border);
+  color: var(--color-brand);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.sms-fragment-card__timestamp {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--color-muted);
+}
+
+.sms-fragment-card__sender-line {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.35rem;
+}
+
+.sms-fragment-card__sender-line strong {
+  font-size: 0.82rem;
+  font-weight: 800;
+  color: var(--color-ink);
+}
+
+.sms-fragment-card__text {
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: var(--color-ink);
+  margin: 0 0 var(--space-3);
+  font-style: italic;
+}
+
+.sms-fragment-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: var(--space-2);
+  border-top: 1px solid var(--color-border);
+  font-size: 0.7rem;
+}
+
+.sms-fragment-card__intent {
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  font-weight: 600;
+}
+
+/* --------------------------------------------------------------------------
    Responsive Behavior
    -------------------------------------------------------------------------- */
 
@@ -1024,6 +1292,17 @@
 
   .sms-example__grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .sms-showcase__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  .sms-showcase__board {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
   }
 }
 
@@ -1065,6 +1344,14 @@
   .sms-flow__connector-arrow {
     display: none;
   }
+
+  .sms-board-card {
+    padding: var(--space-4);
+  }
+
+  .sms-fragment-card {
+    padding: var(--space-3) var(--space-4);
+  }
 }
 
 @media (max-width: 32rem) {
@@ -1077,6 +1364,10 @@
   }
 
   .sms-process h2 {
+    font-size: clamp(2rem, 9vw, 2.75rem);
+  }
+
+  .sms-showcase h2 {
     font-size: clamp(2rem, 9vw, 2.75rem);
   }
 
@@ -1095,7 +1386,8 @@
   }
 
   .sms-device,
-  .sms-studio-phone {
+  .sms-studio-phone,
+  .sms-showcase-phone {
     max-width: 100%;
   }
 
