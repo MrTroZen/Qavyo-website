@@ -23,6 +23,7 @@ There is no framework, package manager, bundler, or build step.
 ├── pricing.html            # Canonical Qavyo Restaurant Software pricing page
 ├── solutions.html          # Canonical Qavyo Marketing Solutions overview
 ├── social-media-marketing.html # Canonical Qavyo Social Media Marketing page
+├── sms-marketing.html       # Canonical Qavyo SMS Marketing page
 ├── assets/
 │   ├── icons/              # Approved icon assets
 │   ├── images/             # Approved photography and imagery
