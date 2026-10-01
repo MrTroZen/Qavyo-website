@@ -1328,7 +1328,6 @@
 
 .social-journey {
   background: var(--color-surface);
-  border-bottom: 1px solid var(--color-border);
 }
 
 .social-journey__header {
@@ -1596,6 +1595,55 @@
 }
 
 /* --------------------------------------------------------------------------
+   Section 6: Final CTA (.social-cta)
+   -------------------------------------------------------------------------- */
+
+.social-cta {
+  position: relative;
+  background: var(--color-dark);
+  padding-block: clamp(4.5rem, 8vw, 7rem);
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Restrained ambient signal glow — purely decorative */
+.social-cta__bg {
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse 55% 70% at 18% 50%, rgb(47 107 219 / 0.10) 0%, transparent 100%),
+    radial-gradient(ellipse 50% 65% at 82% 50%, rgb(47 107 219 / 0.07) 0%, transparent 100%);
+  pointer-events: none;
+}
+
+.social-cta__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-5);
+  max-width: 38rem;
+  margin-inline: auto;
+}
+
+.social-cta__headline {
+  font-size: clamp(2.6rem, 5.2vw, 4.5rem);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.055em;
+  color: #ffffff;
+  margin: 0;
+}
+
+.social-cta__lede {
+  color: rgb(255 255 255 / 0.62);
+  font-size: var(--text-lg);
+  line-height: var(--leading-body);
+  max-width: 32rem;
+  margin: 0;
+}
+
+/* --------------------------------------------------------------------------
    Responsive Behavior
    -------------------------------------------------------------------------- */
 
@@ -1833,6 +1881,15 @@
   .social-prog-step__arrow {
     transform: rotate(90deg);
     margin-left: 0.15rem;
+  }
+
+  .social-cta__headline {
+    font-size: clamp(2.2rem, 9vw, 3rem);
+  }
+
+  .social-cta .button--on-dark {
+    width: 100%;
+    text-align: center;
   }
 }
 
