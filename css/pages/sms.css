@@ -1267,6 +1267,275 @@
 }
 
 /* --------------------------------------------------------------------------
+   Section 5: Part of the Customer Journey (.sms-journey)
+   -------------------------------------------------------------------------- */
+
+.sms-journey {
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+  padding-block: var(--section-space);
+}
+
+.sms-journey__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.4fr);
+  gap: clamp(3rem, 5vw, 5rem);
+  align-items: center;
+}
+
+.sms-journey__narrative {
+  display: flex;
+  flex-direction: column;
+}
+
+.sms-journey h2 {
+  font-size: clamp(2.3rem, 4.2vw, 3.65rem);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.045em;
+  color: var(--color-ink);
+  margin: var(--space-4) 0;
+}
+
+.sms-journey__lede {
+  color: var(--color-text);
+  font-size: var(--text-base);
+  line-height: var(--leading-body);
+  margin-bottom: var(--space-5);
+}
+
+.sms-journey__actions {
+  display: flex;
+  align-items: center;
+}
+
+.sms-journey__link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-brand);
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.sms-journey__link:hover {
+  text-decoration: underline;
+}
+
+.sms-journey__link:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+/* Visual container (Right) */
+.sms-journey__visual {
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1.4rem, 2.5vw, 2.25rem);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-canvas);
+  box-shadow: 0 1rem 3rem -0.75rem rgb(16 38 56 / 0.05);
+}
+
+/* Relationship axis header */
+.sms-journey__axis {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.sms-journey__endpoint {
+  display: flex;
+  flex-direction: column;
+}
+
+.sms-journey__endpoint--business {
+  text-align: right;
+  align-items: flex-end;
+}
+
+.sms-journey__endpoint-role {
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: var(--color-ink);
+}
+
+.sms-journey__endpoint-sub {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+.sms-journey__axis-bridge {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.sms-journey__axis-line {
+  flex: 1;
+  height: 1px;
+  background: var(--color-border-strong);
+}
+
+.sms-journey__axis-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+}
+
+/* 5-Node Touchpoint Track */
+.sms-journey__track {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-2);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.sms-journey-node {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+}
+
+.sms-journey-node__pin {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1rem;
+}
+
+.sms-journey-node__dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: var(--color-border-strong);
+}
+
+.sms-journey-node__dot--active {
+  width: 0.6rem;
+  height: 0.6rem;
+  background: var(--color-brand);
+  box-shadow: 0 0 0 3px var(--color-brand-soft);
+}
+
+.sms-journey-node__card {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: var(--space-3) 0.4rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  gap: 0.2rem;
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.sms-journey-node__card:hover {
+  border-color: var(--color-border-strong);
+}
+
+.sms-journey-node__card--active {
+  background: var(--color-brand-soft);
+  border-color: var(--color-brand);
+  box-shadow: 0 4px 14px -2px rgb(0 102 204 / 0.15);
+  transform: translateY(-2px);
+}
+
+.sms-journey__active-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: var(--radius-sm);
+  background: #ffffff;
+  border: 1px solid var(--color-brand);
+  color: var(--color-brand);
+  font-size: 0.62rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.15rem;
+}
+
+.sms-journey-node__step {
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 800;
+  color: var(--color-muted);
+}
+
+.sms-journey-node--active .sms-journey-node__step {
+  color: var(--color-brand);
+}
+
+.sms-journey-node__moment {
+  font-size: 0.78rem;
+  font-weight: 800;
+  color: var(--color-ink);
+  line-height: 1.25;
+}
+
+.sms-journey-node__service {
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.sms-journey-node__link {
+  color: var(--color-brand);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.sms-journey-node__link:hover {
+  text-decoration: underline;
+}
+
+.sms-journey-node__link:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 2px;
+}
+
+.sms-journey-node__subservice {
+  font-size: 0.65rem;
+  color: var(--color-muted);
+  font-weight: 600;
+}
+
+.sms-journey-node__desc {
+  font-size: 0.64rem;
+  color: var(--color-muted);
+  line-height: 1.25;
+  margin-top: 0.15rem;
+}
+
+/* --------------------------------------------------------------------------
    Responsive Behavior
    -------------------------------------------------------------------------- */
 
@@ -1301,6 +1570,11 @@
   }
 
   .sms-showcase__board {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .sms-journey__grid {
     grid-template-columns: 1fr;
     gap: var(--space-6);
   }
@@ -1352,6 +1626,33 @@
   .sms-fragment-card {
     padding: var(--space-3) var(--space-4);
   }
+
+  .sms-journey__track {
+    grid-template-columns: 1fr;
+    gap: var(--space-2);
+  }
+
+  .sms-journey-node {
+    flex-direction: row;
+    width: 100%;
+  }
+
+  .sms-journey-node__pin {
+    display: none;
+  }
+
+  .sms-journey-node__card {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: var(--space-3) var(--space-4);
+  }
+
+  .sms-journey-node__card--active {
+    transform: none;
+  }
 }
 
 @media (max-width: 32rem) {
@@ -1368,6 +1669,10 @@
   }
 
   .sms-showcase h2 {
+    font-size: clamp(2rem, 9vw, 2.75rem);
+  }
+
+  .sms-journey h2 {
     font-size: clamp(2rem, 9vw, 2.75rem);
   }
 
@@ -1395,6 +1700,23 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 0.25rem;
+  }
+
+  .sms-journey__axis {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+
+  .sms-journey__endpoint--business {
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .sms-journey-node__card {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
   }
 }
 
