@@ -146,6 +146,17 @@ The Electronics page uses the scoped `.electronics-catalog`, `.electronics-flow`
 
 The SMS Marketing final CTA (`.sms-cta`) provides authoritative closure to the completed page on a full-width dark surface (`--color-dark`). It features a high-contrast two-line headline (`Stay connected more directly.`), a single sentence of directional copy, and a primary `button--on-dark` linked to `#prototype-navigation` (`data-prototype-link`). A subtle dual-radial brand-blue ambient glow element (`.sms-cta__bg`, `aria-hidden="true"`) provides background warmth without distracting from the primary conversion action.
 
+## Pricing Transparency, FAQ, and Final Conversion Section
+
+The Pricing Transparency section (`.pricing-costs`) clarifies the boundary between software, optional hardware, and payment processing without unnecessary complexity. It features a responsive 3-column card grid (`.pricing-cost-cards` / `.pricing-cost-card`):
+- **Software**: Details predictable monthly platform pricing starting from £29/month, enumerating core capabilities (POS, Kitchen, Ordering, Inventory, CRM, Reporting, Intelligence) and anchoring directly to the plans comparison.
+- **Hardware**: Emphasizes compatibility with operators' existing tablets, phones, and laptops, making it explicit that hardware is separate from the software subscription.
+- **Payments**: Keeps payment processing distinct and neutral, stating transaction fees depend on the connected provider without inventing rates or imposing software markups.
+
+The Pricing FAQ (`.pricing-faq`) utilizes clean, accessible native `<details>` and `<summary>` disclosure accordions with keyboard interaction, visible focus, and a two-column layout on desktop that reflows cleanly on mobile.
+
+The Pricing Final CTA (`.pricing-final`) provides authoritative closure on a full-width dark surface (`--color-dark`). It combines a high-contrast headline (`Start with everything. Choose later.`), concise supporting copy, dual CTA actions (`Start 30 Days Free` as primary and `See Plans` as secondary), and a 4-point reassurance row (`No setup fee`, `No long-term contract`, `Use your own devices`, `Everything unlocked for 30 days`) with custom bullet checkmarks.
+
 ## Responsive and accessibility requirements
 
 Every component must keep a logical reading and tab order, visible keyboard focus, sufficient colour contrast, meaningful semantics, and reasonable touch targets. Responsive behaviour must be designed, not assumed. Motion must respect reduced-motion preferences.
