@@ -29,4 +29,29 @@
     });
   });
   setBillingPeriod("monthly");
+
+  const compWrapper = document.querySelector("[data-comp-wrapper]");
+  const compToggles = Array.from(document.querySelectorAll("[data-comp-toggle]"));
+  if (compWrapper && compToggles.length) {
+    const setCompPlan = (plan) => {
+      if (!["starter", "growth"].includes(plan)) return;
+      compWrapper.dataset.compPlan = plan;
+      compToggles.forEach((button) => {
+        const isActive = button.dataset.compToggle === plan;
+        button.setAttribute("aria-selected", String(isActive));
+        button.setAttribute("aria-pressed", String(isActive));
+      });
+    };
+    compToggles.forEach((button, index) => {
+      button.addEventListener("click", () => setCompPlan(button.dataset.compToggle));
+      button.addEventListener("keydown", (event) => {
+        if (!["ArrowLeft", "ArrowRight"].includes(event.key)) return;
+        event.preventDefault();
+        const direction = event.key === "ArrowRight" ? 1 : -1;
+        const next = compToggles[(index + direction + compToggles.length) % compToggles.length];
+        next.focus();
+        setCompPlan(next.dataset.compToggle);
+      });
+    });
+  }
 })();

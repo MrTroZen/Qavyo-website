@@ -500,39 +500,379 @@
         </div>
       </section>
 
-      <section class="section competitor-costs" aria-labelledby="competitor-costs-heading">
+      <section class="section competitor-costs" id="competitors" aria-labelledby="competitor-costs-heading">
         <div class="container">
           <div class="competitor-costs__heading">
-            <h2 id="competitor-costs-heading">Restaurant software adds up quickly.</h2>
-            <p>POS is only the beginning. Ordering, inventory, loyalty, staff tools and other restaurant features can quickly turn into separate costs.</p>
+            <h2 id="competitor-costs-heading">See what your money actually gets.</h2>
+            <p>Compare Qavyo with leading restaurant platforms across the features that matter most.</p>
           </div>
-          <div class="competitor-costs__grid">
-            <article class="competitor-card competitor-card--qavyo">
-              <div class="competitor-card__head"><h3>Qavyo</h3><span>One clear plan</span></div>
-              <p class="competitor-card__plan">Starter</p><p class="competitor-card__price"><span>&pound;</span>29<small>/month</small></p>
-              <p class="competitor-card__label">Included</p>
-              <ul><li>POS + KDS</li><li>Website + Online Ordering</li><li>Reservations + CRM</li><li>Inventory + Recipes</li><li>Purchasing + Suppliers</li><li>Qavyo Intelligence Essentials</li></ul>
-            </article>
-            <article class="competitor-card">
-              <div class="competitor-card__head"><h3>Square</h3><span>Published price</span></div>
-              <p class="competitor-card__plan">Restaurants Plus</p><p class="competitor-card__price"><span>&pound;</span>69<small>/month per location</small></p>
-              <p class="competitor-card__label">Additional products</p>
-              <ul><li>Loyalty from &pound;25/month</li><li>Marketing from &pound;9/month</li><li>Restaurant inventory listed separately</li><li>Hardware and processing separate</li></ul>
-            </article>
-            <article class="competitor-card">
-              <div class="competitor-card__head"><h3>Toast</h3><span>Published starting price</span></div>
-              <p class="competitor-card__plan">Starter</p><p class="competitor-card__price"><span>&pound;</span>80<small>/month</small></p>
-              <p class="competitor-card__label">Configuration may add cost</p>
-              <ul><li>Cloud POS and reporting</li><li>KDS listed as an optional add-on</li><li>Additional hardware may cost more</li><li>Implementation varies by setup</li></ul>
-            </article>
-            <article class="competitor-card">
-              <div class="competitor-card__head"><h3>Lightspeed</h3><span>Published starting price</span></div>
-              <p class="competitor-card__plan">Restaurant plans</p><p class="competitor-card__price"><span>&pound;</span>79<small>/month</small></p>
-              <p class="competitor-card__label">Broader modular ecosystem</p>
-              <ul><li>Restaurant POS foundation</li><li>KDS and inventory may be add-ons</li><li>Additional registers priced separately</li><li>Some services use integrations</li></ul>
-            </article>
+
+          <!-- Plan Toggle -->
+          <div class="competitor-toggle-wrapper">
+            <div class="competitor-toggle" role="tablist" aria-label="Compare plan tier">
+              <button type="button" class="competitor-toggle__btn" role="tab" id="comp-tab-starter" aria-selected="true" aria-pressed="true" data-comp-toggle="starter">
+                Starter &pound;29
+              </button>
+              <button type="button" class="competitor-toggle__btn" role="tab" id="comp-tab-growth" aria-selected="false" aria-pressed="false" data-comp-toggle="growth">
+                Growth &pound;79
+              </button>
+            </div>
           </div>
-          <p class="competitor-costs__disclaimer">Competitor pricing and packages may change. Hardware, payments and additional services may be charged separately. Published prices checked 10 October 2026.</p>
+
+          <div class="competitor-comparison-wrapper" data-comp-wrapper data-comp-plan="starter">
+            <!-- Desktop 6-Column Table -->
+            <div class="comp-table-wrap">
+              <table class="comp-table" aria-label="Competitor feature comparison">
+                <thead>
+                  <tr>
+                    <th scope="col" class="comp-th comp-th--feature">Feature</th>
+                    <th scope="col" class="comp-th comp-th--qavyo">
+                      <span class="comp-brand">Qavyo</span>
+                      <div class="comp-tier-header" data-tier="starter">
+                        <strong>Starter</strong>
+                        <span>&pound;29/month</span>
+                      </div>
+                      <div class="comp-tier-header" data-tier="growth">
+                        <strong>Growth</strong>
+                        <span>&pound;79/month</span>
+                      </div>
+                    </th>
+                    <th scope="col" class="comp-th">
+                      <span class="comp-brand">Square</span>
+                      <div class="comp-tier-header">
+                        <strong>Restaurants Plus</strong>
+                        <span>&pound;69/mo</span>
+                      </div>
+                    </th>
+                    <th scope="col" class="comp-th">
+                      <span class="comp-brand">Toast</span>
+                      <div class="comp-tier-header">
+                        <strong>Starter</strong>
+                        <span>from &pound;80/mo</span>
+                      </div>
+                    </th>
+                    <th scope="col" class="comp-th">
+                      <span class="comp-brand">Lightspeed</span>
+                      <div class="comp-tier-header">
+                        <strong>Restaurant plans</strong>
+                        <span>from &pound;79/mo</span>
+                      </div>
+                    </th>
+                    <th scope="col" class="comp-th">
+                      <span class="comp-brand">Epos Now</span>
+                      <div class="comp-tier-header">
+                        <strong>Restaurant POS</strong>
+                        <span>Varies by setup</span>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- STARTER ROWS -->
+                  <tr data-tier="starter">
+                    <th scope="row" class="comp-td-feature">POS + Kitchen Display</th>
+                    <td class="comp-td comp-td--qavyo"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                  </tr>
+                  <tr data-tier="starter">
+                    <th scope="row" class="comp-td-feature">Website + Online Ordering</th>
+                    <td class="comp-td comp-td--qavyo"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--integration">&nearr; Integration</span></td>
+                  </tr>
+                  <tr data-tier="starter">
+                    <th scope="row" class="comp-td-feature">Reservations + Customer CRM</th>
+                    <td class="comp-td comp-td--qavyo"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--separate">+ Separate product</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--integration">&nearr; Integration</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--integration">&nearr; Integration</span></td>
+                  </tr>
+                  <tr data-tier="starter">
+                    <th scope="row" class="comp-td-feature">Inventory + Recipe Management</th>
+                    <td class="comp-td comp-td--qavyo"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--higher">&uarr; Higher plan</span></td>
+                  </tr>
+                  <tr data-tier="starter">
+                    <th scope="row" class="comp-td-feature">Purchasing + Suppliers</th>
+                    <td class="comp-td comp-td--qavyo"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--higher">&uarr; Higher plan</span></td>
+                  </tr>
+                  <tr data-tier="starter">
+                    <th scope="row" class="comp-td-feature">Restaurant Reporting</th>
+                    <td class="comp-td comp-td--qavyo"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                  </tr>
+                  <tr data-tier="starter">
+                    <th scope="row" class="comp-td-feature">Intelligence / Insights</th>
+                    <td class="comp-td comp-td--qavyo"><span class="comp-status comp-status--yes">Essentials</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--none">&mdash;</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--none">&mdash;</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--none">&mdash;</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--none">&mdash;</span></td>
+                  </tr>
+                  <tr data-tier="starter">
+                    <th scope="row" class="comp-td-feature">Hardware Flexibility</th>
+                    <td class="comp-td comp-td--qavyo"><span class="comp-device-note">Use your own devices</span></td>
+                    <td class="comp-td"><span class="comp-device-note">iPad &amp; proprietary</span></td>
+                    <td class="comp-td"><span class="comp-device-note">Proprietary hardware</span></td>
+                    <td class="comp-td"><span class="comp-device-note">iPad &amp; dedicated</span></td>
+                    <td class="comp-td"><span class="comp-device-note">Dedicated terminals</span></td>
+                  </tr>
+
+                  <!-- GROWTH ROWS -->
+                  <tr data-tier="growth">
+                    <th scope="row" class="comp-td-feature">Core restaurant system</th>
+                    <td class="comp-td comp-td--qavyo"><span class="comp-status comp-status--yes">Everything in Starter</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                  </tr>
+                  <tr data-tier="growth">
+                    <th scope="row" class="comp-td-feature">Loyalty + Customer Growth</th>
+                    <td class="comp-td comp-td--qavyo"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on <small>from &pound;25/mo</small></span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                  </tr>
+                  <tr data-tier="growth">
+                    <th scope="row" class="comp-td-feature">Staff Management + Scheduling</th>
+                    <td class="comp-td comp-td--qavyo"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--integration">&nearr; Integration</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                  </tr>
+                  <tr data-tier="growth">
+                    <th scope="row" class="comp-td-feature">Time &amp; Attendance + Payroll</th>
+                    <td class="comp-td comp-td--qavyo"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--integration">&nearr; Integration</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--integration">&nearr; Integration</span></td>
+                  </tr>
+                  <tr data-tier="growth">
+                    <th scope="row" class="comp-td-feature">Stock Transfers</th>
+                    <td class="comp-td comp-td--qavyo"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--higher">&uarr; Higher plan</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--higher">&uarr; Higher plan</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--higher">&uarr; Higher plan</span></td>
+                  </tr>
+                  <tr data-tier="growth">
+                    <th scope="row" class="comp-td-feature">Multi-location Management</th>
+                    <td class="comp-td comp-td--qavyo"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--higher">&pound;69/mo per site</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--higher">Priced per location</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--higher">Priced per location</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--higher">Priced per location</span></td>
+                  </tr>
+                  <tr data-tier="growth">
+                    <th scope="row" class="comp-td-feature">Central Menu + Advanced Reporting</th>
+                    <td class="comp-td comp-td--qavyo"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--yes">&check; Included</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--higher">&uarr; Higher plan</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--higher">&uarr; Higher plan</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--higher">&uarr; Higher plan</span></td>
+                  </tr>
+                  <tr data-tier="growth">
+                    <th scope="row" class="comp-td-feature">Full Business Intelligence</th>
+                    <td class="comp-td comp-td--qavyo"><span class="comp-status comp-status--yes">Full</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--none">&mdash;</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--none">&mdash;</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--none">&mdash;</span></td>
+                    <td class="comp-td"><span class="comp-status comp-status--none">&mdash;</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Mobile View: Qavyo First + Compact Competitor Cards -->
+            <div class="comp-mobile-view" aria-label="Mobile plan comparison">
+              <!-- Qavyo Card -->
+              <article class="comp-mobile-card comp-mobile-card--qavyo">
+                <div class="comp-mobile-card__head">
+                  <div>
+                    <span class="comp-brand">Qavyo</span>
+                    <strong data-tier="starter">Starter</strong>
+                    <strong data-tier="growth">Growth</strong>
+                  </div>
+                  <p class="comp-mobile-card__price">
+                    <span data-tier="starter">&pound;29<small>/mo</small></span>
+                    <span data-tier="growth">&pound;79<small>/mo</small></span>
+                  </p>
+                </div>
+                <!-- Starter List -->
+                <ul class="comp-mobile-card__list" data-tier="starter">
+                  <li><span>POS + KDS</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Website + Online Ordering</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Reservations + CRM</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Inventory + Recipes</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Purchasing + Suppliers</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Restaurant Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Qavyo Intelligence</span><strong class="comp-status--yes">Essentials</strong></li>
+                  <li><span>Hardware</span><strong>Use your own devices</strong></li>
+                </ul>
+                <!-- Growth List -->
+                <ul class="comp-mobile-card__list" data-tier="growth">
+                  <li><span>Core restaurant system</span><strong class="comp-status--yes">Everything in Starter</strong></li>
+                  <li><span>Loyalty + Customer Growth</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Staff + Scheduling</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Time, Attendance + Payroll</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Stock Transfers</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Multi-location</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Central Menu + Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Qavyo Intelligence</span><strong class="comp-status--yes">Full</strong></li>
+                </ul>
+              </article>
+
+              <!-- Square Card -->
+              <article class="comp-mobile-card">
+                <div class="comp-mobile-card__head">
+                  <div>
+                    <span class="comp-brand">Square</span>
+                    <strong>Restaurants Plus</strong>
+                  </div>
+                  <p class="comp-mobile-card__price">&pound;69<small>/mo</small></p>
+                </div>
+                <ul class="comp-mobile-card__list" data-tier="starter">
+                  <li><span>POS + KDS</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Website + Online Ordering</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Reservations + CRM</span><strong class="comp-status--separate">+ Separate product</strong></li>
+                  <li><span>Inventory + Recipes</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Purchasing + Suppliers</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Restaurant Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Intelligence / Insights</span><strong class="comp-status--none">&mdash;</strong></li>
+                  <li><span>Hardware</span><strong>iPad &amp; proprietary</strong></li>
+                </ul>
+                <ul class="comp-mobile-card__list" data-tier="growth">
+                  <li><span>Core restaurant system</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Loyalty + Growth</span><strong class="comp-status--addon">+ Add-on (from &pound;25/mo)</strong></li>
+                  <li><span>Staff + Scheduling</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Time, Attendance + Payroll</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Stock Transfers</span><strong class="comp-status--higher">&uarr; Higher plan</strong></li>
+                  <li><span>Multi-location</span><strong class="comp-status--higher">&pound;69/mo per site</strong></li>
+                  <li><span>Central Menu + Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Intelligence / Insights</span><strong class="comp-status--none">&mdash;</strong></li>
+                </ul>
+              </article>
+
+              <!-- Toast Card -->
+              <article class="comp-mobile-card">
+                <div class="comp-mobile-card__head">
+                  <div>
+                    <span class="comp-brand">Toast</span>
+                    <strong>Starter</strong>
+                  </div>
+                  <p class="comp-mobile-card__price">from &pound;80<small>/mo</small></p>
+                </div>
+                <ul class="comp-mobile-card__list" data-tier="starter">
+                  <li><span>POS + KDS</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Website + Online Ordering</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Reservations + CRM</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Inventory + Recipes</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Purchasing + Suppliers</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Restaurant Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Intelligence / Insights</span><strong class="comp-status--none">&mdash;</strong></li>
+                  <li><span>Hardware</span><strong>Proprietary hardware</strong></li>
+                </ul>
+                <ul class="comp-mobile-card__list" data-tier="growth">
+                  <li><span>Core restaurant system</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Loyalty + Growth</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Staff + Scheduling</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Time, Attendance + Payroll</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Stock Transfers</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Multi-location</span><strong class="comp-status--higher">Priced per location</strong></li>
+                  <li><span>Central Menu + Reporting</span><strong class="comp-status--higher">&uarr; Higher plan</strong></li>
+                  <li><span>Intelligence / Insights</span><strong class="comp-status--none">&mdash;</strong></li>
+                </ul>
+              </article>
+
+              <!-- Lightspeed Card -->
+              <article class="comp-mobile-card">
+                <div class="comp-mobile-card__head">
+                  <div>
+                    <span class="comp-brand">Lightspeed</span>
+                    <strong>Restaurant plans</strong>
+                  </div>
+                  <p class="comp-mobile-card__price">from &pound;79<small>/mo</small></p>
+                </div>
+                <ul class="comp-mobile-card__list" data-tier="starter">
+                  <li><span>POS + KDS</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Website + Online Ordering</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Reservations + CRM</span><strong class="comp-status--integration">&nearr; Integration</strong></li>
+                  <li><span>Inventory + Recipes</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Purchasing + Suppliers</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Restaurant Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Intelligence / Insights</span><strong class="comp-status--none">&mdash;</strong></li>
+                  <li><span>Hardware</span><strong>iPad &amp; dedicated</strong></li>
+                </ul>
+                <ul class="comp-mobile-card__list" data-tier="growth">
+                  <li><span>Core restaurant system</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Loyalty + Growth</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Staff + Scheduling</span><strong class="comp-status--integration">&nearr; Integration</strong></li>
+                  <li><span>Time, Attendance + Payroll</span><strong class="comp-status--integration">&nearr; Integration</strong></li>
+                  <li><span>Stock Transfers</span><strong class="comp-status--higher">&uarr; Higher plan</strong></li>
+                  <li><span>Multi-location</span><strong class="comp-status--higher">Priced per location</strong></li>
+                  <li><span>Central Menu + Reporting</span><strong class="comp-status--higher">&uarr; Higher plan</strong></li>
+                  <li><span>Intelligence / Insights</span><strong class="comp-status--none">&mdash;</strong></li>
+                </ul>
+              </article>
+
+              <!-- Epos Now Card -->
+              <article class="comp-mobile-card">
+                <div class="comp-mobile-card__head">
+                  <div>
+                    <span class="comp-brand">Epos Now</span>
+                    <strong>Restaurant POS</strong>
+                  </div>
+                  <p class="comp-mobile-card__price">Varies by setup</p>
+                </div>
+                <ul class="comp-mobile-card__list" data-tier="starter">
+                  <li><span>POS + KDS</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Website + Online Ordering</span><strong class="comp-status--integration">&nearr; Integration</strong></li>
+                  <li><span>Reservations + CRM</span><strong class="comp-status--integration">&nearr; Integration</strong></li>
+                  <li><span>Inventory + Recipes</span><strong class="comp-status--higher">&uarr; Higher plan</strong></li>
+                  <li><span>Purchasing + Suppliers</span><strong class="comp-status--higher">&uarr; Higher plan</strong></li>
+                  <li><span>Restaurant Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Intelligence / Insights</span><strong class="comp-status--none">&mdash;</strong></li>
+                  <li><span>Hardware</span><strong>Dedicated terminals</strong></li>
+                </ul>
+                <ul class="comp-mobile-card__list" data-tier="growth">
+                  <li><span>Core restaurant system</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Loyalty + Growth</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Staff + Scheduling</span><strong class="comp-status--addon">+ Add-on</strong></li>
+                  <li><span>Time, Attendance + Payroll</span><strong class="comp-status--integration">&nearr; Integration</strong></li>
+                  <li><span>Stock Transfers</span><strong class="comp-status--higher">&uarr; Higher plan</strong></li>
+                  <li><span>Multi-location</span><strong class="comp-status--higher">Priced per location</strong></li>
+                  <li><span>Central Menu + Reporting</span><strong class="comp-status--higher">&uarr; Higher plan</strong></li>
+                  <li><span>Intelligence / Insights</span><strong class="comp-status--none">&mdash;</strong></li>
+                </ul>
+              </article>
+            </div>
+          </div>
+
+          <!-- Bottom Message & Disclaimer -->
+          <div class="competitor-costs__footer">
+            <p class="competitor-costs__takeaway">One platform. Fewer separate tools to manage.</p>
+            <p class="competitor-costs__disclaimer">Competitor pricing, features and packaging may change. Hardware, payment processing, add-ons and third-party services may be charged separately.</p>
+          </div>
         </div>
       </section>
 
