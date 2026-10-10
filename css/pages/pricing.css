@@ -341,21 +341,90 @@
 .connected-block__items li::before { content: ""; display: inline-block; width: .35rem; height: .35rem; border-radius: 50%; background: var(--color-border-strong); flex: 0 0 auto; }
 .connected-block--understand .connected-block__items li:last-child::before { background: var(--color-brand); }
 .connected-block__highlight { color: var(--color-brand); font-weight: 750; }
-.pricing-plan-selector { display: none; }
-.pricing-table-wrap { border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: clip; }
-.pricing-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: .88rem; }
-.pricing-table th,.pricing-table td { padding: 1rem 1.1rem; border-bottom: 1px solid var(--color-border); text-align: left; vertical-align: top; }
-.pricing-table thead th { position: sticky; top: 4.2rem; z-index: 2; background: var(--color-dark); color: #fff; font-size: .82rem; text-transform: uppercase; letter-spacing: .06em; }
-.pricing-table thead th:first-child { width: 31%; }
-.pricing-table thead span { display: block; margin-top: .25rem; color: #9fb1bf; font-size: .72rem; letter-spacing: 0; text-transform: none; }
-.pricing-table tbody th { color: var(--color-ink); font-weight: 600; }
-.pricing-table tbody td { color: var(--color-text); }
-.pricing-table tbody td:not(:first-of-type) { border-left: 1px solid var(--color-border); }
-.pricing-table td strong,.pricing-table td span { display: block; }
-.pricing-table td span { margin-top: .35rem; color: var(--color-muted); font-size: .78rem; line-height: 1.5; }
-.pricing-table__group th { padding: .7rem 1.1rem; background: var(--color-surface-muted); color: var(--color-muted); font-size: .7rem; letter-spacing: .1em; text-transform: uppercase; }
-.pricing-table tr:last-child th,.pricing-table tr:last-child td { border-bottom: 0; }
-.pricing-compare__link { margin: var(--space-5) 0 0; text-align: right; }
+/* Section: Qavyo Intelligence */
+.pricing-intelligence { border-top: 1px solid rgb(255 255 255 / .12); background: var(--color-dark); color: #fff; }
+.pricing-intelligence__header { max-width: 44rem; margin-bottom: var(--space-7); }
+.pricing-intelligence__header h2 { color: #fff; font-size: clamp(2.6rem,4.4vw,4.4rem); letter-spacing: -.05em; line-height: 1.05; margin-bottom: var(--space-4); }
+.pricing-intelligence__lede { color: #cbd7df; font-size: var(--text-lg); line-height: 1.6; margin: 0; }
+.qi-visual { max-width: 58rem; margin: 0 auto var(--space-8); border: 1px solid rgb(255 255 255 / .18); border-radius: var(--radius-lg); background: var(--color-dark-raised); box-shadow: var(--shadow-md); overflow: hidden; }
+.qi-query-card { padding: var(--space-5) var(--space-6); background: rgb(255 255 255 / .04); border-bottom: 1px solid rgb(255 255 255 / .12); }
+.qi-query-card__head { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-2); }
+.qi-query-label { display: inline-block; padding: .2rem .45rem; border-radius: var(--radius-sm); background: var(--color-brand); color: #fff; font-size: .65rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.qi-query-context { color: #9fb1bf; font-size: .75rem; }
+.qi-query-text { margin: 0; color: #fff; font-size: 1.25rem; font-weight: 700; letter-spacing: -.02em; }
+.qi-diagnostic-card { padding: var(--space-6); }
+.qi-diagnostic-card__head { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-5); padding-bottom: var(--space-4); border-bottom: 1px solid rgb(255 255 255 / .12); }
+.qi-brand-pill { display: flex; align-items: center; gap: .5rem; color: #fff; font-size: .88rem; font-weight: 700; }
+.qi-brand-pill strong { color: #fff; }
+.qi-status-badge { color: #8db4ff; font-size: .75rem; font-weight: 600; }
+.qi-metric-summary { margin-bottom: var(--space-5); }
+.qi-metric-pill { display: inline-block; padding: .45rem .85rem; border-radius: var(--radius-sm); background: rgb(178 59 66 / .16); border: 1px solid rgb(178 59 66 / .35); color: #ffb4b8; font-size: .95rem; font-weight: 700; }
+.qi-causes-list { display: grid; gap: var(--space-3); margin: 0 0 var(--space-6); padding: 0; list-style: none; }
+.qi-causes-list li { display: grid; grid-template-columns: 4.5rem 1fr; gap: var(--space-4); align-items: center; padding: var(--space-4); border: 1px solid rgb(255 255 255 / .1); border-radius: var(--radius-md); background: rgb(255 255 255 / .03); }
+.qi-cause-marker { display: grid; place-items: center; padding: .35rem .45rem; border-radius: var(--radius-sm); font-size: .8rem; font-weight: 800; }
+.qi-cause-marker--stat { background: rgb(47 107 219 / .2); border: 1px solid rgb(118 167 255 / .4); color: #8db4ff; }
+.qi-cause-marker--alert { background: rgb(178 59 66 / .25); border: 1px solid rgb(178 59 66 / .5); color: #ff9ca1; font-size: .68rem; text-transform: uppercase; letter-spacing: .05em; }
+.qi-cause-content strong { display: block; color: #fff; font-size: .95rem; font-weight: 650; }
+.qi-cause-content small { display: block; margin-top: .15rem; color: #9fb1bf; font-size: .78rem; }
+.qi-recommendation-panel { padding: var(--space-5); border: 1px solid rgb(47 107 219 / .35); border-radius: var(--radius-md); background: rgb(47 107 219 / .08); }
+.qi-recommendation-panel__head { display: flex; align-items: center; gap: .5rem; margin-bottom: var(--space-3); color: #8db4ff; font-size: .85rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+.qi-spark-icon { font-size: 1.1rem; color: #76a7ff; }
+.qi-recommendation-panel__list { display: grid; gap: .45rem; margin: 0; padding: 0 0 0 1.25rem; color: #dbe4ea; font-size: .9rem; font-weight: 550; }
+.pricing-qi-levels { margin-top: var(--space-8); padding-top: var(--space-7); border-top: 1px solid rgb(255 255 255 / .14); }
+.pricing-qi-levels__header { margin-bottom: var(--space-6); text-align: center; }
+.pricing-qi-levels__header h3 { color: #fff; font-size: clamp(1.8rem,3vw,2.4rem); letter-spacing: -.03em; margin-bottom: var(--space-2); }
+.pricing-qi-levels__header p { color: #9fb1bf; font-size: var(--text-base); margin: 0; }
+.pricing-qi-levels__grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--space-5); align-items: stretch; margin-bottom: var(--space-7); }
+.qi-level-card { display: flex; flex-direction: column; padding: var(--space-6); border: 1px solid rgb(255 255 255 / .16); border-radius: var(--radius-md); background: rgb(255 255 255 / .035); }
+.qi-level-card--featured { border-color: var(--color-brand); background: rgb(47 107 219 / .1); box-shadow: 0 0 0 1px var(--color-brand); }
+.qi-level-card__head { margin-bottom: var(--space-5); min-height: 4.5rem; }
+.qi-level-card__badge-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: .25rem; }
+.qi-level-card__plan { color: #8db4ff; font-size: .75rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.qi-level-card__badge { padding: .25rem .5rem; border-radius: var(--radius-sm); background: var(--color-brand); color: #fff; font-size: .62rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.qi-level-card h4 { color: #fff; font-size: 1.25rem; margin: .3rem 0 0; letter-spacing: -.02em; }
+.qi-level-card__list { display: grid; gap: .6rem; margin: 0; padding: 0; list-style: none; color: #d0dbe2; font-size: .88rem; }
+.qi-level-card__list li { display: flex; align-items: center; gap: .55rem; }
+.qi-level-card__list li::before { content: "•"; color: var(--color-brand); font-weight: 800; font-size: 1.1rem; }
+.pricing-qi-cta { text-align: center; }
+
+/* Section: Detailed plan comparison */
+.pricing-compare { border-top: 1px solid var(--color-border); background: #fff; }
+.pricing-compare__header { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(20rem,.85fr); gap: var(--space-8); align-items: end; margin-bottom: var(--space-6); }
+.pricing-compare__header h2 { max-width: 14ch; margin: 0; font-size: clamp(2.6rem,4.4vw,4.4rem); letter-spacing: -.05em; line-height: 1.05; }
+.pricing-compare__lede { max-width: 36rem; margin: 0; color: var(--color-text); font-size: var(--text-lg); line-height: 1.6; }
+.compare-toolbar { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: var(--space-3); margin-bottom: var(--space-5); padding: var(--space-3) var(--space-4); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-canvas); }
+.compare-toolbar__note { margin: 0; color: var(--color-muted); font-size: .82rem; font-weight: 600; }
+.compare-expand-btn { cursor: pointer; }
+.compare-table-head { display: grid; grid-template-columns: minmax(16rem,2fr) repeat(3,minmax(8rem,1fr)); gap: 1px; border: 1px solid var(--color-border-strong); border-radius: var(--radius-md) var(--radius-md) 0 0; background: var(--color-border); overflow: hidden; }
+.compare-table-head__name { display: flex; align-items: center; padding: 1rem 1.25rem; background: var(--color-dark); color: #fff; font-size: .82rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.compare-table-head__col { position: relative; display: flex; flex-direction: column; justify-content: center; padding: 1rem 1.25rem; background: var(--color-dark); color: #fff; text-align: left; }
+.compare-table-head__col strong { font-size: 1.15rem; color: #fff; }
+.compare-table-head__col span:not(.compare-table-head__badge) { font-size: .78rem; color: #9fb1bf; }
+.compare-table-head__col--growth { background: #173449; }
+.compare-table-head__badge { position: absolute; top: .45rem; right: .75rem; padding: .2rem .4rem; border-radius: var(--radius-sm); background: var(--color-brand); color: #fff; font-size: .56rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.compare-categories { border: 1px solid var(--color-border); border-top: 0; border-radius: 0 0 var(--radius-md) var(--radius-md); overflow: hidden; }
+.compare-category { border-bottom: 1px solid var(--color-border); background: #fff; }
+.compare-category:last-child { border-bottom: 0; }
+.compare-category__summary { display: flex; align-items: center; justify-content: space-between; padding: 1.1rem 1.25rem; background: var(--color-canvas); cursor: pointer; list-style: none; transition: background var(--transition-fast); user-select: none; }
+.compare-category__summary::-webkit-details-marker { display: none; }
+.compare-category__summary:hover { background: #eef2f5; }
+.compare-category[open] .compare-category__summary { background: #e8eef4; border-bottom: 1px solid var(--color-border); }
+.compare-category__title { display: flex; align-items: center; gap: .75rem; }
+.compare-category__icon { display: grid; width: 1.5rem; height: 1.5rem; place-items: center; border-radius: var(--radius-sm); background: #fff; border: 1px solid var(--color-border); color: var(--color-brand); font-size: 1rem; font-weight: 800; line-height: 1; }
+.compare-category[open] .compare-category__icon::after { content: "−"; }
+.compare-category:not([open]) .compare-category__icon::after { content: "+"; }
+.compare-category h3 { margin: 0; font-size: 1.05rem; font-weight: 700; color: var(--color-ink); letter-spacing: -.01em; }
+.compare-category__count { color: var(--color-muted); font-size: .78rem; font-weight: 600; }
+.compare-category__content { display: grid; }
+.compare-row { display: grid; grid-template-columns: minmax(16rem,2fr) repeat(3,minmax(8rem,1fr)); border-bottom: 1px solid var(--color-border); align-items: center; }
+.compare-row:last-child { border-bottom: 0; }
+.compare-row__name { padding: .9rem 1.25rem; color: var(--color-ink); font-size: .9rem; font-weight: 600; }
+.compare-col { padding: .9rem 1.25rem; font-size: .88rem; color: var(--color-text); border-left: 1px solid var(--color-border); }
+.compare-col--growth { background: #f8fbff; }
+.compare-col__plan-label { display: none; }
+.val-yes { color: var(--color-success); font-weight: 700; }
+.val-no { color: var(--color-muted); font-weight: 500; }
+.val-text { color: var(--color-ink); font-weight: 650; }
 .pricing-cost-grid { display: grid; grid-template-columns: repeat(3,1fr); border-top: 1px solid var(--color-border-strong); }
 .pricing-cost-grid article { padding: var(--space-6) var(--space-6) var(--space-6) 0; }
 .pricing-cost-grid article + article { padding-left: var(--space-6); border-left: 1px solid var(--color-border); }
@@ -432,17 +501,16 @@
   .pricing-plan-grid { grid-template-columns: 1fr; }
   .pricing-plan__head { min-height: 0; }
   .pricing-plan__rate { min-height: 0; margin-bottom: var(--space-5); }
-  .pricing-plan-selector { display: grid; grid-template-columns: repeat(3,1fr); margin-bottom: var(--space-4); border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; }
-  .pricing-plan-selector button { min-height: 3.5rem; padding: .7rem .35rem; border: 0; background: var(--color-surface); color: var(--color-text); font: inherit; font-size: .78rem; font-weight: 700; cursor: pointer; }
-  .pricing-plan-selector button + button { border-left: 1px solid var(--color-border); }
-  .pricing-plan-selector button[aria-pressed="true"] { background: var(--color-dark); color: #fff; }
-  .pricing-plan-selector span { display: block; margin-top: .2rem; font-size: .7rem; font-weight: 500; }
-  .pricing-table thead th { top: 4.1rem; }
-  .pricing-table thead th:first-child { width: 50%; }
-  .pricing-table [data-plan-column] { display: none; }
-  .pricing-table [data-plan-column].is-active-plan { display: table-cell; }
-  .pricing-table__group th { display: table-cell; }
-  .pricing-table th,.pricing-table td { padding: .85rem .75rem; }
+  .qi-causes-list li { grid-template-columns: 1fr; gap: .35rem; }
+  .qi-cause-marker { justify-self: start; }
+  .pricing-qi-levels__grid { grid-template-columns: 1fr; }
+  .compare-table-head { display: none; }
+  .compare-row { grid-template-columns: 1fr; padding: var(--space-4); border-bottom: 1px solid var(--color-border); }
+  .compare-row__name { padding: 0 0 var(--space-3); font-size: .95rem; font-weight: 700; }
+  .compare-row__plans { display: grid; grid-template-columns: 1fr; gap: .35rem; }
+  .compare-col { display: flex; align-items: center; justify-content: space-between; padding: .5rem .75rem; border-left: 0; border-radius: var(--radius-sm); background: var(--color-canvas); font-size: .82rem; }
+  .compare-col--growth { background: var(--color-brand-soft); border: 1px solid rgb(47 107 219 / .2); }
+  .compare-col__plan-label { display: inline-block; color: var(--color-ink); font-weight: 700; font-size: .78rem; }
   .pricing-cost-grid { grid-template-columns: 1fr; }
   .pricing-cost-grid article,.pricing-cost-grid article + article { padding: var(--space-5) 0; border-left: 0; border-bottom: 1px solid var(--color-border); }
   .pricing-costs__equation { align-items: flex-start; flex-direction: column; gap: .25rem; }
@@ -500,12 +568,16 @@
   .pricing-onboarding__step-arrow { display: none; }
   .pricing-onboarding__switch-note p { font-size: .85rem; }
   .pricing-connected__sync-flow { font-size: .7rem; }
-  .pricing-plan-selector button { font-size: .7rem; }
-  .pricing-table { font-size: .78rem; }
-  .pricing-table thead th:first-child { width: 47%; }
+  .qi-query-text { font-size: 1.05rem; }
+  .qi-diagnostic-card { padding: var(--space-4); }
+  .qi-query-card { padding: var(--space-4); }
+  .compare-category__summary { padding: .9rem 1rem; }
+  .compare-category h3 { font-size: .95rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   .pricing-page * { scroll-behavior: auto; }
   .pricing-onboarding__step { transition: none; }
   .connected-block { transition: none; }
+  .compare-category__summary { transition: none; }
+  .qi-level-card { transition: none; }
 }
