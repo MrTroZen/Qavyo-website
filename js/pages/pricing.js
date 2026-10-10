@@ -29,18 +29,4 @@
     });
   });
   setBillingPeriod("monthly");
-
-  const compareToggleBtn = document.querySelector("[data-compare-toggle-all]");
-  const compareCategories = Array.from(document.querySelectorAll(".compare-category"));
-  if (compareToggleBtn && compareCategories.length) {
-    let areAllExpanded = false;
-    compareToggleBtn.addEventListener("click", () => {
-      areAllExpanded = !areAllExpanded;
-      compareCategories.forEach((category) => {
-        category.open = areAllExpanded;
-      });
-      compareToggleBtn.textContent = areAllExpanded ? "Collapse all" : "Expand all";
-      compareToggleBtn.setAttribute("aria-expanded", String(areAllExpanded));
-    });
-  }
 })();

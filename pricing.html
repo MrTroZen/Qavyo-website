@@ -938,680 +938,121 @@
       <section class="section pricing-compare" id="compare" aria-labelledby="compare-heading">
         <div class="container">
           <div class="pricing-compare__header">
-            <h2 id="compare-heading">Compare every detail.</h2>
-            <p class="pricing-compare__lede">See exactly what’s included in Starter, Growth and Business.</p>
+            <h2 id="compare-heading">Compare what matters.</h2>
+            <p class="pricing-compare__lede">The core restaurant system is included from Starter. Higher plans unlock deeper team, growth, intelligence, and multi-location tools.</p>
           </div>
 
-          <div class="compare-toolbar">
-            <p class="compare-toolbar__note">14 operational categories · Select any category to view individual features</p>
-            <button type="button" class="button button--secondary button--compact compare-expand-btn" data-compare-toggle-all aria-expanded="false">Expand all</button>
-          </div>
-
-          <!-- Desktop Sticky Header Row -->
-          <div class="compare-table-head" aria-hidden="true">
-            <div class="compare-table-head__name">Feature by category</div>
-            <div class="compare-table-head__col">
-              <strong>Starter</strong>
-              <span>£29/month</span>
+          <div class="compare-card">
+            <!-- Desktop Header Row -->
+            <div class="compare-head" aria-hidden="true">
+              <div class="compare-head__name">Feature</div>
+              <div class="compare-head__col">
+                <strong>Starter</strong>
+                <span>&pound;29/month</span>
+              </div>
+              <div class="compare-head__col compare-head__col--growth">
+                <span class="compare-head__badge">Recommended</span>
+                <strong>Growth</strong>
+                <span>&pound;79/month</span>
+              </div>
+              <div class="compare-head__col compare-head__col--business">
+                <strong>Business</strong>
+                <span>&pound;199/month</span>
+              </div>
             </div>
-            <div class="compare-table-head__col compare-table-head__col--growth">
-              <span class="compare-table-head__badge">Recommended</span>
-              <strong>Growth</strong>
-              <span>£79/month</span>
+
+            <!-- Comparison Rows -->
+            <div class="compare-body" role="table" aria-label="Plan comparison">
+              <div class="compare-row" role="row">
+                <div class="compare-row__name" role="rowheader">Core restaurant system</div>
+                <div class="compare-row__plans">
+                  <div class="compare-col" role="cell" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-text val-included">Included</span></div>
+                  <div class="compare-col compare-col--growth" role="cell" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-text val-included">Included</span></div>
+                  <div class="compare-col compare-col--business" role="cell" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-text val-included">Included</span></div>
+                </div>
+              </div>
+
+              <div class="compare-row" role="row">
+                <div class="compare-row__name" role="rowheader">POS + Kitchen + Online Ordering</div>
+                <div class="compare-row__plans">
+                  <div class="compare-col" role="cell" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-text val-included">Included</span></div>
+                  <div class="compare-col compare-col--growth" role="cell" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-text val-included">Included</span></div>
+                  <div class="compare-col compare-col--business" role="cell" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-text val-included">Included</span></div>
+                </div>
+              </div>
+
+              <div class="compare-row" role="row">
+                <div class="compare-row__name" role="rowheader">Reservations + CRM + Inventory</div>
+                <div class="compare-row__plans">
+                  <div class="compare-col" role="cell" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-text val-included">Included</span></div>
+                  <div class="compare-col compare-col--growth" role="cell" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-text val-included">Included</span></div>
+                  <div class="compare-col compare-col--business" role="cell" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-text val-included">Included</span></div>
+                </div>
+              </div>
+
+              <div class="compare-row" role="row">
+                <div class="compare-row__name" role="rowheader">Staff Management + Scheduling</div>
+                <div class="compare-row__plans">
+                  <div class="compare-col" role="cell" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-text val-none" aria-label="Not included">&mdash;</span></div>
+                  <div class="compare-col compare-col--growth" role="cell" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-text val-included">Included</span></div>
+                  <div class="compare-col compare-col--business" role="cell" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-text val-included">Included</span></div>
+                </div>
+              </div>
+
+              <div class="compare-row" role="row">
+                <div class="compare-row__name" role="rowheader">Loyalty + Growth Tools</div>
+                <div class="compare-row__plans">
+                  <div class="compare-col" role="cell" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-text val-none" aria-label="Not included">&mdash;</span></div>
+                  <div class="compare-col compare-col--growth" role="cell" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-text val-included">Included</span></div>
+                  <div class="compare-col compare-col--business" role="cell" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-text val-included">Included</span></div>
+                </div>
+              </div>
+
+              <div class="compare-row" role="row">
+                <div class="compare-row__name" role="rowheader">Payroll</div>
+                <div class="compare-row__plans">
+                  <div class="compare-col" role="cell" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-text val-none" aria-label="Not included">&mdash;</span></div>
+                  <div class="compare-col compare-col--growth" role="cell" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-text val-included">Included</span></div>
+                  <div class="compare-col compare-col--business" role="cell" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-text val-included">Included</span></div>
+                </div>
+              </div>
+
+              <div class="compare-row" role="row">
+                <div class="compare-row__name" role="rowheader">Qavyo Intelligence</div>
+                <div class="compare-row__plans">
+                  <div class="compare-col" role="cell" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-text">Essentials</span></div>
+                  <div class="compare-col compare-col--growth" role="cell" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-text">Full</span></div>
+                  <div class="compare-col compare-col--business" role="cell" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-text">Multi-location</span></div>
+                </div>
+              </div>
+
+              <div class="compare-row" role="row">
+                <div class="compare-row__name" role="rowheader">Multi-location Management</div>
+                <div class="compare-row__plans">
+                  <div class="compare-col" role="cell" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-text val-none" aria-label="Not included">&mdash;</span></div>
+                  <div class="compare-col compare-col--growth" role="cell" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-text val-included">Included</span></div>
+                  <div class="compare-col compare-col--business" role="cell" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-text">Advanced</span></div>
+                </div>
+              </div>
+
+              <div class="compare-row" role="row">
+                <div class="compare-row__name" role="rowheader">Franchise / Group Controls</div>
+                <div class="compare-row__plans">
+                  <div class="compare-col" role="cell" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-text val-none" aria-label="Not included">&mdash;</span></div>
+                  <div class="compare-col compare-col--growth" role="cell" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-text val-none" aria-label="Not included">&mdash;</span></div>
+                  <div class="compare-col compare-col--business" role="cell" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-text val-included">Included</span></div>
+                </div>
+              </div>
+
+              <div class="compare-row" role="row">
+                <div class="compare-row__name" role="rowheader">Priority Onboarding &amp; Support</div>
+                <div class="compare-row__plans">
+                  <div class="compare-col" role="cell" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-text">Standard</span></div>
+                  <div class="compare-col compare-col--growth" role="cell" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-text">Standard</span></div>
+                  <div class="compare-col compare-col--business" role="cell" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-text">Priority</span></div>
+                </div>
+              </div>
             </div>
-            <div class="compare-table-head__col">
-              <strong>Business</strong>
-              <span>£149/month</span>
-            </div>
-          </div>
-
-          <!-- Expandable Categories Accordion -->
-          <div class="compare-categories">
-            <!-- 1. Point of Sale -->
-            <details class="compare-category" open>
-              <summary class="compare-category__summary">
-                <div class="compare-category__title">
-                  <span class="compare-category__icon" aria-hidden="true"></span>
-                  <h3>Point of Sale</h3>
-                </div>
-                <span class="compare-category__count">5 features</span>
-              </summary>
-              <div class="compare-category__content">
-                <div class="compare-row">
-                  <div class="compare-row__name">POS terminal &amp; checkout</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Tables &amp; floor layout</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Bill splitting &amp; itemized receipts</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">QR table ordering &amp; payment</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Offline mode support</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-              </div>
-            </details>
-
-            <!-- 2. Orders & Kitchen -->
-            <details class="compare-category" open>
-              <summary class="compare-category__summary">
-                <div class="compare-category__title">
-                  <span class="compare-category__icon" aria-hidden="true"></span>
-                  <h3>Orders &amp; Kitchen</h3>
-                </div>
-                <span class="compare-category__count">4 features</span>
-              </summary>
-              <div class="compare-category__content">
-                <div class="compare-row">
-                  <div class="compare-row__name">Kitchen Display System (KDS)</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Course timing &amp; firing</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Kitchen station routing</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Live ticket status sync</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-              </div>
-            </details>
-
-            <!-- 3. Website & Online Ordering -->
-            <details class="compare-category">
-              <summary class="compare-category__summary">
-                <div class="compare-category__title">
-                  <span class="compare-category__icon" aria-hidden="true"></span>
-                  <h3>Website &amp; Online Ordering</h3>
-                </div>
-                <span class="compare-category__count">4 features</span>
-              </summary>
-              <div class="compare-category__content">
-                <div class="compare-row">
-                  <div class="compare-row__name">Branded restaurant website</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Direct online ordering</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Commission-free orders</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Live menu &amp; price sync with POS</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-              </div>
-            </details>
-
-            <!-- 4. Reservations -->
-            <details class="compare-category">
-              <summary class="compare-category__summary">
-                <div class="compare-category__title">
-                  <span class="compare-category__icon" aria-hidden="true"></span>
-                  <h3>Reservations</h3>
-                </div>
-                <span class="compare-category__count">3 features</span>
-              </summary>
-              <div class="compare-category__content">
-                <div class="compare-row">
-                  <div class="compare-row__name">Table reservation booking</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Guest booking confirmations</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Floor availability management</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-              </div>
-            </details>
-
-            <!-- 5. Customers & CRM -->
-            <details class="compare-category">
-              <summary class="compare-category__summary">
-                <div class="compare-category__title">
-                  <span class="compare-category__icon" aria-hidden="true"></span>
-                  <h3>Customers &amp; CRM</h3>
-                </div>
-                <span class="compare-category__count">4 features</span>
-              </summary>
-              <div class="compare-category__content">
-                <div class="compare-row">
-                  <div class="compare-row__name">Guest directory &amp; profiles</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Order history &amp; visit logs</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Customer segmentation</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-text">Basic</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-text">Advanced</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-text">Multi-location</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Central customer intelligence</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-              </div>
-            </details>
-
-            <!-- 6. Inventory & Recipes -->
-            <details class="compare-category">
-              <summary class="compare-category__summary">
-                <div class="compare-category__title">
-                  <span class="compare-category__icon" aria-hidden="true"></span>
-                  <h3>Inventory &amp; Recipes</h3>
-                </div>
-                <span class="compare-category__count">5 features</span>
-              </summary>
-              <div class="compare-category__content">
-                <div class="compare-row">
-                  <div class="compare-row__name">Real-time stock tracking</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Recipes &amp; ingredient costing</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Low stock notifications</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Waste tracking &amp; logging</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Multi-site stock transfers</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-              </div>
-            </details>
-
-            <!-- 7. Purchasing & Suppliers -->
-            <details class="compare-category">
-              <summary class="compare-category__summary">
-                <div class="compare-category__title">
-                  <span class="compare-category__icon" aria-hidden="true"></span>
-                  <h3>Purchasing &amp; Suppliers</h3>
-                </div>
-                <span class="compare-category__count">4 features</span>
-              </summary>
-              <div class="compare-category__content">
-                <div class="compare-row">
-                  <div class="compare-row__name">Supplier directory &amp; catalogs</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Purchase orders &amp; delivery logs</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Cost price tracking</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Automated purchase planning</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-              </div>
-            </details>
-
-            <!-- 8. Staff & Payroll -->
-            <details class="compare-category">
-              <summary class="compare-category__summary">
-                <div class="compare-category__title">
-                  <span class="compare-category__icon" aria-hidden="true"></span>
-                  <h3>Staff &amp; Payroll</h3>
-                </div>
-                <span class="compare-category__count">5 features</span>
-              </summary>
-              <div class="compare-category__content">
-                <div class="compare-row">
-                  <div class="compare-row__name">Staff profiles &amp; PIN access</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Staff management &amp; scheduling</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Time &amp; attendance tracking</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Payroll calculation &amp; exports</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Staff roles &amp; permissions</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-text">Standard</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-text">Custom roles</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-text">Regional &amp; Multi-site</span></div>
-                  </div>
-                </div>
-              </div>
-            </details>
-
-            <!-- 9. Loyalty & Marketing -->
-            <details class="compare-category">
-              <summary class="compare-category__summary">
-                <div class="compare-category__title">
-                  <span class="compare-category__icon" aria-hidden="true"></span>
-                  <h3>Loyalty &amp; Marketing</h3>
-                </div>
-                <span class="compare-category__count">4 features</span>
-              </summary>
-              <div class="compare-category__content">
-                <div class="compare-row">
-                  <div class="compare-row__name">Discounts &amp; promotional coupons</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Guest loyalty points &amp; rewards</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Automated marketing campaigns</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Digital gift cards</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-              </div>
-            </details>
-
-            <!-- 10. Reporting -->
-            <details class="compare-category">
-              <summary class="compare-category__summary">
-                <div class="compare-category__title">
-                  <span class="compare-category__icon" aria-hidden="true"></span>
-                  <h3>Reporting</h3>
-                </div>
-                <span class="compare-category__count">4 features</span>
-              </summary>
-              <div class="compare-category__content">
-                <div class="compare-row">
-                  <div class="compare-row__name">Daily takings &amp; service summaries</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Product mix &amp; sales breakdown</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Advanced business reporting</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Consolidated group-wide reporting</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-              </div>
-            </details>
-
-            <!-- 11. Qavyo Intelligence -->
-            <details class="compare-category" open>
-              <summary class="compare-category__summary">
-                <div class="compare-category__title">
-                  <span class="compare-category__icon" aria-hidden="true"></span>
-                  <h3>Qavyo Intelligence</h3>
-                </div>
-                <span class="compare-category__count">5 features</span>
-              </summary>
-              <div class="compare-category__content">
-                <div class="compare-row">
-                  <div class="compare-row__name">Intelligence tier</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-text">Essentials</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-text">Full Intelligence</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-text">Multi-location</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Daily Business Brief</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Operational explanations &amp; causes</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-text">Basic</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-text">Full analysis</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-text">Full analysis</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Forecasting &amp; recommendations</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Cross-location intelligence</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-              </div>
-            </details>
-
-            <!-- 12. Multi-location -->
-            <details class="compare-category">
-              <summary class="compare-category__summary">
-                <div class="compare-category__title">
-                  <span class="compare-category__icon" aria-hidden="true"></span>
-                  <h3>Multi-location</h3>
-                </div>
-                <span class="compare-category__count">4 features</span>
-              </summary>
-              <div class="compare-category__content">
-                <div class="compare-row">
-                  <div class="compare-row__name">Single-location operations</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Multi-location management</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Central menu management</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Centralised multi-site controls</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-              </div>
-            </details>
-
-            <!-- 13. Franchise & Business -->
-            <details class="compare-category">
-              <summary class="compare-category__summary">
-                <div class="compare-category__title">
-                  <span class="compare-category__icon" aria-hidden="true"></span>
-                  <h3>Franchise &amp; Business</h3>
-                </div>
-                <span class="compare-category__count">4 features</span>
-              </summary>
-              <div class="compare-category__content">
-                <div class="compare-row">
-                  <div class="compare-row__name">Franchise management controls</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Location benchmarking &amp; rankings</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Cross-location operations</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">API &amp; custom integrations</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-text">Optional</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-              </div>
-            </details>
-
-            <!-- 14. Support -->
-            <details class="compare-category">
-              <summary class="compare-category__summary">
-                <div class="compare-category__title">
-                  <span class="compare-category__icon" aria-hidden="true"></span>
-                  <h3>Support</h3>
-                </div>
-                <span class="compare-category__count">3 features</span>
-              </summary>
-              <div class="compare-category__content">
-                <div class="compare-row">
-                  <div class="compare-row__name">24/7 technical support</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-yes">✓ Included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Onboarding specialist</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-text">Self-serve + guides</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-text">Dedicated onboarding</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-text">Priority onboarding</span></div>
-                  </div>
-                </div>
-                <div class="compare-row">
-                  <div class="compare-row__name">Dedicated account manager</div>
-                  <div class="compare-row__plans">
-                    <div class="compare-col" data-plan="starter"><span class="compare-col__plan-label">Starter:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col compare-col--growth" data-plan="growth"><span class="compare-col__plan-label">Growth:</span> <span class="val-no">— Not included</span></div>
-                    <div class="compare-col" data-plan="business"><span class="compare-col__plan-label">Business:</span> <span class="val-yes">✓ Included</span></div>
-                  </div>
-                </div>
-              </div>
-            </details>
           </div>
         </div>
       </section>
