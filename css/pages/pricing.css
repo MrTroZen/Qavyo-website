@@ -138,16 +138,19 @@
 .pricing-price > span { font-size: .55em; }
 .pricing-price b { font: inherit; }
 .pricing-price small { margin-left: .45rem; color: var(--color-muted); font-size: .82rem; font-weight: 500; letter-spacing: 0; }
-.pricing-plan__annual-prompt { margin: 0; color: var(--color-brand); font-size: .78rem; font-weight: 700; }
-.pricing-plan__annual-detail { display: grid; gap: .18rem; line-height: 1.45; }
+.pricing-plan__annual-detail { display: grid; gap: .42rem; padding-top: .35rem; line-height: 1.55; }
 .pricing-plan__annual-detail span { color: var(--color-brand); font-size: .7rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
-.pricing-plan__annual-detail strong { color: var(--color-ink); font-size: .86rem; }
-.pricing-plan__annual-detail small { max-width: 27rem; color: var(--color-text); font-size: .74rem; }
+.pricing-plan__annual-detail strong { color: var(--color-ink); font-size: .9rem; }
+.pricing-plan__annual-detail small { max-width: 27rem; color: var(--color-text); font-size: .78rem; }
+.pricing-plan__annual-detail[hidden] { display: none; }
+.pricing-plan > .button { position: relative; width: 100%; min-height: 3.5rem; padding-inline: 1.25rem 3rem; }
+.pricing-plan > .button span { position: absolute; right: 1.25rem; }
 .pricing-plan__features { flex: 1; margin-top: var(--space-6); padding-top: var(--space-5); border-top: 1px solid var(--color-border); }
 .pricing-plan__features h4 { font-size: .8rem; }
 .pricing-plan__features ul { display: grid; gap: .65rem; margin: 0; padding: 0; list-style: none; color: var(--color-text); font-size: .88rem; }
-.pricing-plan__features li { position: relative; padding-left: 1.35rem; }
-.pricing-plan__features li::before { content: "\2713"; position: absolute; left: 0; color: var(--color-brand); font-weight: 800; }
+.pricing-plan__features li { display: grid; grid-template-columns: 1.15rem minmax(0,1fr); gap: .5rem; align-items: start; }
+.pricing-plan__features li > span { color: var(--color-muted); font-size: 1rem; line-height: 1.2; text-align: center; }
+.pricing-plan__features .pricing-plan__intelligence > span { color: var(--color-brand); }
 .pricing-plan__features .pricing-plan__intelligence { color: var(--color-ink); font-weight: 700; }
 .pricing-plan__trial-note { margin: var(--space-5) 0 0; padding-top: var(--space-4); border-top: 1px solid var(--color-border); color: var(--color-text); font-size: .78rem; font-weight: 650; }
 .pricing-plans__shared-note { display: flex; align-items: center; justify-content: center; gap: var(--space-4); margin-top: var(--space-6); padding: var(--space-5); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: #fff; box-shadow: var(--shadow-sm); }
