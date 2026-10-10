@@ -212,6 +212,70 @@
 .starter-ecosystem__core > p:not(.starter-ecosystem__included,.starter-ecosystem__price) { margin: 0; color: var(--color-text); }
 .starter-ecosystem__bundle { margin-top: var(--space-5); padding-top: var(--space-4); border-top: 1px solid var(--color-border); color: var(--color-ink); font-size: .8rem; font-weight: 700; }
 .starter-value__actions { display: flex; align-items: center; justify-content: center; gap: var(--space-5); margin-top: var(--space-6); }
+.competitor-costs { border-top: 1px solid var(--color-border); background: var(--color-canvas); }
+.competitor-costs__heading { display: grid; grid-template-columns: minmax(0,1.15fr) minmax(20rem,.85fr); gap: var(--space-8); align-items: end; margin-bottom: var(--space-7); }
+.competitor-costs__heading h2 { max-width: 13ch; margin: 0; font-size: clamp(2.7rem,4.5vw,4.5rem); letter-spacing: -.05em; }
+.competitor-costs__heading p { max-width: 35rem; margin: 0; color: var(--color-text); font-size: var(--text-lg); }
+.competitor-costs__grid { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); align-items: stretch; gap: var(--space-4); }
+.competitor-card { display: flex; min-width: 0; flex-direction: column; padding: var(--space-5); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: #fff; }
+.competitor-card--qavyo { border-color: var(--color-brand); background: var(--color-brand-soft); box-shadow: var(--shadow-sm); }
+.competitor-card__head { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-5); }
+.competitor-card__head h3 { margin: 0; font-size: 1.15rem; }
+.competitor-card__head span { color: var(--color-muted); font-size: .65rem; font-weight: 700; text-align: right; }
+.competitor-card--qavyo .competitor-card__head span { color: var(--color-brand); }
+.competitor-card__plan { margin: 0; color: var(--color-text); font-size: .82rem; }
+.competitor-card__price { display: flex; align-items: baseline; margin: .4rem 0 var(--space-5); color: var(--color-ink); font-size: clamp(2.3rem,3vw,3.25rem); font-weight: 700; letter-spacing: -.055em; line-height: 1; }
+.competitor-card__price > span { font-size: .52em; }
+.competitor-card__price small { margin-left: .35rem; color: var(--color-muted); font-size: .7rem; font-weight: 600; letter-spacing: 0; }
+.competitor-card__label { margin: 0 0 var(--space-4); padding-top: var(--space-4); border-top: 1px solid var(--color-border); color: var(--color-ink); font-size: .72rem; font-weight: 800; }
+.competitor-card ul { display: grid; gap: .65rem; margin: 0; padding: 0; list-style: none; color: var(--color-text); font-size: .78rem; }
+.competitor-card li { position: relative; padding-left: 1rem; }
+.competitor-card li::before { content: ""; position: absolute; top: .5em; left: 0; width: .3rem; height: .3rem; border-radius: 50%; background: var(--color-border-strong); }
+.competitor-card--qavyo li::before { background: var(--color-brand); }
+.competitor-costs__disclaimer { max-width: 70rem; margin: var(--space-5) 0 0; color: var(--color-muted); font-size: .72rem; line-height: 1.55; }
+.hardware-independent__heading { display: grid; grid-template-columns: minmax(0,1.2fr) minmax(18rem,.8fr); gap: var(--space-8); align-items: end; }
+.hardware-independent__heading h2 { max-width: 12ch; color: #fff; font-size: clamp(2.8rem,5vw,5rem); letter-spacing: -.055em; }
+.hardware-independent__heading p { max-width: 42rem; margin: 0; color: #cbd7df; font-size: var(--text-lg); }
+.hardware-independent__heading > strong { padding: var(--space-5); border-left: 2px solid var(--color-brand); color: #fff; font-size: clamp(1.2rem,2vw,1.75rem); line-height: 1.25; }
+.hardware-devices { display: grid; grid-template-columns: 1fr .62fr 1.38fr; gap: var(--space-5); align-items: end; margin-top: var(--space-8); }
+.hardware-device { min-width: 0; }
+.hardware-device__label { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-3); margin-bottom: var(--space-3); }
+.hardware-device__label span { color: #8db4ff; font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.hardware-device__label strong { color: #fff; font-size: .82rem; }
+.hardware-device__frame { padding: .45rem; border: 1px solid rgb(255 255 255 / .24); background: #0a1d2a; box-shadow: var(--shadow-md); }
+.hardware-device--tablet .hardware-device__frame { border-radius: 1rem; }
+.hardware-device--phone { max-width: 13rem; justify-self: center; }
+.hardware-device--phone .hardware-device__frame { padding: .5rem; border-radius: 1.7rem; }
+.hardware-device--laptop .hardware-device__frame { border-radius: .65rem .65rem .2rem .2rem; }
+.hardware-pos,.hardware-phone,.hardware-dashboard { min-height: 15rem; border-radius: .55rem; background: #f7f9fc; color: var(--color-ink); overflow: hidden; }
+.hardware-pos header,.hardware-dashboard header { display: flex; justify-content: space-between; padding: .8rem; border-bottom: 1px solid var(--color-border); font-size: .65rem; }
+.hardware-pos header span,.hardware-dashboard header span { color: var(--color-muted); }
+.hardware-pos > div { display: grid; grid-template-columns: 1fr 1fr; gap: .55rem; padding: .8rem; }
+.hardware-pos > div span { display: grid; min-height: 3.6rem; place-items: center; padding: .4rem; border: 1px solid var(--color-border); border-radius: .35rem; background: #fff; font-size: .58rem; text-align: center; }
+.hardware-pos footer { display: flex; align-items: center; justify-content: space-between; margin: 0 .8rem .8rem; padding: .65rem; border-radius: .35rem; background: var(--color-brand); color: #fff; font-size: .7rem; }
+.hardware-phone { min-height: 18rem; padding: 1rem .75rem; }
+.hardware-phone > small { color: var(--color-brand); font-size: .55rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.hardware-phone > strong { display: block; margin: .3rem 0 1rem; font-size: .9rem; }
+.hardware-phone p { display: flex; justify-content: space-between; margin: 0; padding: .75rem 0; border-top: 1px solid var(--color-border); color: var(--color-text); font-size: .62rem; }
+.hardware-phone b { color: var(--color-ink); }
+.hardware-dashboard { min-height: 14rem; }
+.hardware-dashboard__brief { display: grid; gap: .25rem; margin: .8rem; padding: .8rem; border: 1px solid var(--color-border); border-radius: .4rem; background: #fff; }
+.hardware-dashboard__brief small,.hardware-dashboard__metrics small { color: var(--color-muted); font-size: .58rem; }
+.hardware-dashboard__brief strong { font-size: .7rem; }
+.hardware-dashboard__metrics { display: grid; grid-template-columns: repeat(3,1fr); gap: .55rem; padding: 0 .8rem .8rem; }
+.hardware-dashboard__metrics p { display: grid; gap: .3rem; margin: 0; padding: .7rem; border: 1px solid var(--color-border); border-radius: .4rem; background: #fff; }
+.hardware-dashboard__metrics strong { font-size: .85rem; }
+.hardware-contrast { display: grid; grid-template-columns: minmax(0,1fr) auto minmax(0,1fr); gap: var(--space-5); align-items: center; margin-top: var(--space-8); padding-top: var(--space-6); border-top: 1px solid rgb(255 255 255 / .18); }
+.hardware-contrast__path h3 { margin: 0 0 var(--space-4); color: #91a6b5; font-size: .7rem; letter-spacing: .08em; text-transform: uppercase; }
+.hardware-contrast__path--qavyo h3 { color: #8db4ff; }
+.hardware-contrast__path ol { display: grid; grid-template-columns: repeat(3,1fr); margin: 0; padding: 0; list-style: none; }
+.hardware-contrast__path li { display: grid; gap: .4rem; padding: .7rem; border-left: 1px solid rgb(255 255 255 / .16); color: #dce5ec; font-size: .8rem; }
+.hardware-contrast__path li span { color: #7890a1; font-size: .62rem; }
+.hardware-contrast__path--qavyo li { color: #fff; font-weight: 700; }
+.hardware-contrast__path--qavyo li span { color: #8db4ff; }
+.hardware-contrast__arrow { color: var(--color-brand); font-size: 1.5rem; }
+.hardware-independent__support { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-5); margin: var(--space-6) 0 0; padding: 0; list-style: none; color: #cbd7df; font-size: .78rem; }
+.hardware-independent__support li::before { content: "•"; margin-right: .55rem; color: var(--color-brand); }
 .pricing-plan-selector { display: none; }
 .pricing-table-wrap { border: 1px solid var(--color-border); border-radius: var(--radius-lg); overflow: clip; }
 .pricing-table { width: 100%; border-collapse: collapse; table-layout: fixed; font-size: .88rem; }
@@ -266,6 +330,8 @@
   .starter-module,.starter-ecosystem__core { grid-area: auto; }
   .starter-ecosystem__core { grid-column: 1 / -1; grid-row: 1; min-height: 20rem; }
   .starter-module--web,.starter-module--intelligence { grid-column: span 2; }
+  .competitor-costs__grid { grid-template-columns: 1fr 1fr; }
+  .hardware-devices { grid-template-columns: 1fr .7fr 1.3fr; }
 }
 @media (max-width: 48rem) {
   .pricing-hero__grid { grid-template-columns: 1fr; min-height: 0; padding-block: var(--space-4) var(--space-8); }
@@ -282,6 +348,13 @@
   .pricing-section-heading,.pricing-trial__grid,.pricing-faq__grid { grid-template-columns: 1fr; gap: var(--space-7); }
   .starter-value__heading { grid-template-columns: 1fr; gap: var(--space-4); }
   .starter-value__heading h2 { max-width: 10ch; }
+  .competitor-costs__heading,.hardware-independent__heading { grid-template-columns: 1fr; gap: var(--space-5); }
+  .hardware-independent__heading > strong { max-width: 35rem; }
+  .hardware-devices { grid-template-columns: 1fr 1fr; }
+  .hardware-device--laptop { grid-column: 1 / -1; }
+  .hardware-device--phone { width: 100%; }
+  .hardware-contrast { grid-template-columns: 1fr; }
+  .hardware-contrast__arrow { justify-self: center; transform: rotate(90deg); }
   .pricing-plan-grid { grid-template-columns: 1fr; }
   .pricing-plan__head { min-height: 0; }
   .pricing-plan__rate { min-height: 0; margin-bottom: var(--space-5); }
@@ -343,6 +416,13 @@
   .starter-module--web,.starter-module--intelligence { grid-column: 1 / -1; }
   .starter-value__actions { align-items: stretch; flex-direction: column; }
   .starter-value__actions .button { width: 100%; }
+  .competitor-costs__grid,.hardware-devices { grid-template-columns: 1fr; }
+  .competitor-card { padding: var(--space-4); }
+  .hardware-device--laptop { grid-column: auto; }
+  .hardware-device--phone { max-width: 14rem; }
+  .hardware-contrast__path ol { grid-template-columns: 1fr; }
+  .hardware-contrast__path li { grid-template-columns: 2rem 1fr; gap: var(--space-3); }
+  .hardware-independent__support { align-items: flex-start; flex-direction: column; gap: var(--space-3); }
   .pricing-plan-selector button { font-size: .7rem; }
   .pricing-table { font-size: .78rem; }
   .pricing-table thead th:first-child { width: 47%; }
