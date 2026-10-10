@@ -3,9 +3,8 @@
 .pricing-page { background: var(--color-surface); color: var(--color-ink); }
 .pricing-page h1,.pricing-page h2,.pricing-page h3,.pricing-page h4,.pricing-page p { margin-top: 0; }
 .pricing-hero { overflow: hidden; background: var(--color-dark); color: #fff; border-bottom: 1px solid rgb(255 255 255 / .1); }
-.pricing-hero__grid { display: grid; grid-template-columns: minmax(0,.92fr) minmax(28rem,1.08fr); gap: clamp(2.5rem,6vw,6rem); align-items: center; min-height: min(51rem,calc(100vh - 4.5rem)); padding-block: clamp(4rem,7vw,6.5rem); }
+.pricing-hero__grid { display: grid; grid-template-columns: minmax(0,.9fr) minmax(30rem,1.1fr); gap: clamp(2.5rem,5vw,5rem); align-items: center; min-height: min(46rem,calc(100vh - 4.5rem)); padding-block: clamp(1.5rem,2.5vw,2.75rem); }
 .pricing-hero__content { position: relative; z-index: 2; min-width: 0; }
-.pricing-hero .eyebrow { color: #b9c9d6; }
 .pricing-hero h1 { max-width: 11.5ch; margin: 0 0 var(--space-5); color: #fff; font-size: clamp(3rem,5vw,5.35rem); line-height: .97; letter-spacing: -.055em; }
 .pricing-hero__lede { max-width: 39rem; margin-bottom: var(--space-6); color: #cfdae2; font-size: var(--text-lg); }
 .pricing-hero__actions { margin-bottom: var(--space-6); }
@@ -21,44 +20,52 @@
 .pricing-hero__reassurance { display: flex; flex-wrap: wrap; gap: .5rem 1.1rem; margin: var(--space-5) 0 0; padding: 0; list-style: none; color: #b9c9d6; font-size: .72rem; }
 .pricing-hero__reassurance li { display: flex; align-items: center; gap: .45rem; }
 .pricing-hero__reassurance li::before { content: ""; width: .32rem; height: .32rem; flex: 0 0 auto; border-radius: .08rem; background: #8db4ff; }
-.pricing-devices { position: relative; min-height: 37rem; isolation: isolate; }
-.pricing-devices::before { content: ""; position: absolute; inset: 12% 4% 8% 8%; z-index: -1; border: 1px solid rgb(255 255 255 / .1); border-radius: var(--radius-lg); background: var(--color-dark-raised); }
-.pricing-devices__label { position: absolute; top: 5%; right: 1%; display: flex; gap: .55rem; align-items: center; margin: 0; padding: .65rem .8rem; border: 1px solid rgb(255 255 255 / .18); border-radius: var(--radius-sm); background: var(--color-dark); color: #d8e2e9; font-size: .7rem; font-weight: 700; letter-spacing: .04em; box-shadow: var(--shadow-md); }
-.pricing-devices__label span { width: .45rem; height: .45rem; border-radius: .1rem; background: var(--color-brand); }
-.pricing-device { position: absolute; overflow: hidden; border: 1px solid var(--color-border-strong); background: #fff; color: var(--color-ink); box-shadow: 0 1.5rem 3.5rem rgb(0 0 0 / .26); }
-.pricing-device__bar { display: flex; align-items: center; justify-content: space-between; padding: .7rem .85rem; border-bottom: 1px solid var(--color-border); background: #f8fafb; font-size: .65rem; font-weight: 800; }
-.pricing-device__bar small { color: var(--color-muted); font-size: .5rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; }
-.pricing-device--laptop { top: 14%; left: 3%; width: 91%; height: 20rem; border-radius: var(--radius-md); }
-.pricing-intelligence-ui { display: grid; grid-template-columns: .75fr 1.25fr; grid-template-rows: 1fr auto; gap: 1rem; height: calc(100% - 2.3rem); padding: 1.25rem; background: var(--color-canvas); }
-.pricing-intelligence-ui__intro { display: flex; flex-direction: column; gap: .35rem; }
-.pricing-intelligence-ui__intro small,.pricing-phone-ui > small { color: var(--color-brand); font-size: .58rem; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
-.pricing-intelligence-ui__intro strong { max-width: 8ch; font-size: 1.5rem; line-height: 1.05; }
-.pricing-intelligence-ui__signals { display: flex; gap: .45rem; align-items: end; padding: 1rem; border: 1px solid var(--color-border); background: #fff; }
-.pricing-intelligence-ui__signals i { width: 100%; height: 35%; background: var(--color-brand-soft); }
-.pricing-intelligence-ui__signals i:nth-child(2),.pricing-intelligence-ui__signals i:nth-child(6) { height: 55%; }
-.pricing-intelligence-ui__signals i:nth-child(3),.pricing-intelligence-ui__signals i:nth-child(5) { height: 72%; background: #c8d9fb; }
-.pricing-intelligence-ui__signals i:nth-child(4),.pricing-intelligence-ui__signals i:nth-child(7) { height: 88%; background: var(--color-brand); }
-.pricing-intelligence-ui__note { grid-column: 1/-1; display: flex; gap: .75rem; align-items: center; padding: .8rem; border: 1px solid var(--color-border); background: #fff; }
-.pricing-intelligence-ui__note > span { width: .55rem; height: .55rem; border-radius: .1rem; background: var(--color-brand); }
-.pricing-intelligence-ui__note p { display: grid; margin: 0; }
-.pricing-intelligence-ui__note strong { font-size: .7rem; }
-.pricing-intelligence-ui__note small { color: var(--color-muted); font-size: .58rem; }
-.pricing-device--tablet { left: -3%; bottom: 1%; width: 57%; height: 17rem; border: .45rem solid var(--color-ink); border-radius: 1.1rem; }
-.pricing-pos-ui { display: grid; grid-template-columns: 1.15fr .85fr; height: calc(100% - 2.3rem); }
-.pricing-pos-ui__menu { display: grid; grid-template-columns: 1fr 1fr; gap: .6rem; padding: .8rem; background: var(--color-surface-muted); }
-.pricing-pos-ui__menu i { border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: #fff; }
-.pricing-pos-ui__menu i:first-child { background: var(--color-brand-soft); }
-.pricing-pos-ui__order { display: flex; flex-direction: column; gap: .55rem; padding: .8rem; font-size: .58rem; }
-.pricing-pos-ui__order small { color: var(--color-muted); text-transform: uppercase; }
-.pricing-pos-ui__order span { padding-bottom: .45rem; border-bottom: 1px solid var(--color-border); }
-.pricing-pos-ui__order strong { margin-top: auto; padding: .55rem; border-radius: var(--radius-sm); background: var(--color-brand); color: #fff; text-align: center; }
-.pricing-device--phone { right: 3%; bottom: -1%; width: 11.5rem; height: 22.5rem; border: .45rem solid var(--color-ink); border-radius: 1.6rem; }
-.pricing-device__speaker { width: 2.7rem; height: .28rem; margin: .35rem auto; border-radius: 1rem; background: var(--color-text); }
-.pricing-device--phone .pricing-device__bar { padding-block: .6rem; }
-.pricing-phone-ui { padding: 1rem .75rem; }
-.pricing-phone-ui > strong { display: block; margin: .25rem 0 1rem; font-size: 1rem; }
-.pricing-phone-ui p { display: flex; gap: .55rem; align-items: center; margin: 0; padding: .72rem 0; border-top: 1px solid var(--color-border); color: var(--color-text); font-size: .62rem; }
-.pricing-phone-ui p span { width: .5rem; height: .5rem; border-radius: 50%; background: var(--color-brand); }
+.pricing-product { position: relative; display: flex; align-items: center; min-height: 31rem; padding-top: 2rem; }
+.pricing-product__label { position: absolute; z-index: 2; top: 0; right: 0; display: flex; gap: .55rem; align-items: center; margin: 0; padding: .65rem .8rem; border: 1px solid rgb(255 255 255 / .18); border-radius: var(--radius-sm); background: var(--color-dark); color: #d8e2e9; font-size: .7rem; font-weight: 700; letter-spacing: .04em; box-shadow: var(--shadow-md); }
+.pricing-product__label span { width: .45rem; height: .45rem; border-radius: .1rem; background: var(--color-brand); }
+.pricing-dashboard { display: grid; grid-template-columns: 5.4rem 1fr; width: 100%; overflow: hidden; border: 1px solid var(--color-border-strong); border-radius: var(--radius-lg); background: #fff; color: var(--color-ink); box-shadow: 0 1.75rem 4rem rgb(0 0 0 / .28); transform: perspective(70rem) rotateY(-2deg); transform-origin: center; }
+.pricing-dashboard__sidebar { display: flex; flex-direction: column; gap: .62rem; padding: .9rem .65rem; border-right: 1px solid var(--color-border); background: #fff; }
+.pricing-dashboard__sidebar strong { display: flex; gap: .35rem; align-items: center; margin-bottom: .45rem; font-size: .58rem; }
+.pricing-dashboard__sidebar strong span { display: grid; width: 1.35rem; height: 1.35rem; place-items: center; border-radius: .35rem; background: var(--color-brand); color: #fff; font-size: .56rem; }
+.pricing-dashboard__sidebar i { height: .5rem; width: 78%; border-radius: .2rem; background: #d9e0e5; }
+.pricing-dashboard__sidebar i:nth-of-type(2),.pricing-dashboard__sidebar i:nth-of-type(5) { width: 58%; }
+.pricing-dashboard__sidebar i.is-active { width: 100%; height: 1.45rem; background: var(--color-brand); }
+.pricing-dashboard__workspace { min-width: 0; }
+.pricing-dashboard__topbar { display: flex; align-items: center; justify-content: space-between; height: 2.7rem; padding: 0 1rem; border-bottom: 1px solid var(--color-border); font-size: .72rem; }
+.pricing-dashboard__topbar small { color: var(--color-muted); font-size: .48rem; letter-spacing: .08em; text-transform: uppercase; }
+.pricing-dashboard__canvas { display: grid; gap: .65rem; padding: .85rem; background: #f3f5f7; }
+.pricing-dashboard__brief,.pricing-dashboard__metrics article,.pricing-dashboard__panels article { border: 1px solid var(--color-border); border-radius: .55rem; background: #fff; box-shadow: var(--shadow-sm); }
+.pricing-dashboard__brief { padding: .75rem; }
+.pricing-dashboard__brief > div:first-child { display: flex; gap: .55rem; align-items: center; }
+.pricing-dashboard__brief > div:first-child > span { display: grid; width: 1.55rem; height: 1.55rem; place-items: center; border-radius: .35rem; background: var(--color-brand-soft); color: var(--color-brand); font-weight: 800; }
+.pricing-dashboard__brief p { margin: 0; font-size: .58rem; line-height: 1.35; }
+.pricing-dashboard__brief p strong,.pricing-dashboard__brief p small { display: block; }
+.pricing-dashboard__brief p small { color: var(--color-muted); font-size: .47rem; }
+.pricing-dashboard__brief > p { margin-top: .55rem; font-weight: 700; }
+.pricing-dashboard__brief-stats { display: grid; grid-template-columns: repeat(3,1fr); gap: .45rem; margin-top: .6rem; }
+.pricing-dashboard__brief-stats span { padding: .5rem; border: 1px solid var(--color-border); border-radius: .4rem; background: var(--color-canvas); }
+.pricing-dashboard__brief-stats small,.pricing-dashboard__brief-stats strong { display: block; }
+.pricing-dashboard__brief-stats small { color: var(--color-muted); font-size: .43rem; }
+.pricing-dashboard__brief-stats strong { margin-top: .15rem; font-size: .7rem; }
+.pricing-dashboard__metrics { display: grid; grid-template-columns: repeat(3,1fr); gap: .65rem; }
+.pricing-dashboard__metrics article { display: flex; gap: .55rem; align-items: center; padding: .65rem; }
+.pricing-dashboard__metrics article > span { display: grid; width: 1.65rem; height: 1.65rem; flex: 0 0 auto; place-items: center; border-radius: .4rem; background: var(--color-brand-soft); color: var(--color-brand); font-size: .72rem; font-weight: 800; }
+.pricing-dashboard__metrics article:nth-child(3) > span { background: #fff0f1; color: var(--color-danger); }
+.pricing-dashboard__metrics p,.pricing-dashboard__metrics small,.pricing-dashboard__metrics strong { display: block; margin: 0; }
+.pricing-dashboard__metrics small { color: var(--color-text); font-size: .46rem; }
+.pricing-dashboard__metrics strong { font-size: .85rem; }
+.pricing-dashboard__panels { display: grid; grid-template-columns: 1.5fr .8fr; gap: .65rem; }
+.pricing-dashboard__panels article { min-height: 7.4rem; padding: .7rem; }
+.pricing-dashboard__panels article > strong,.pricing-dashboard__panels article > small { display: block; }
+.pricing-dashboard__panels article > strong { font-size: .58rem; }
+.pricing-dashboard__panels article > small { color: var(--color-muted); font-size: .44rem; }
+.pricing-dashboard__chart { display: flex; gap: .6rem; align-items: end; height: 4rem; margin-top: .5rem; border-bottom: 1px solid var(--color-border); }
+.pricing-dashboard__chart i { width: 18%; height: 28%; border-radius: .15rem .15rem 0 0; background: #c8d9fb; }
+.pricing-dashboard__chart i:nth-child(2) { height: 52%; }
+.pricing-dashboard__chart i:nth-child(3) { height: 75%; background: var(--color-brand); }
+.pricing-dashboard__chart i:nth-child(4) { height: 42%; }
+.pricing-dashboard__panels article:last-child p { display: flex; gap: .35rem; align-items: center; justify-content: center; height: 4.7rem; margin: .4rem 0 0; color: var(--color-text); font-size: .52rem; }
+.pricing-dashboard__panels article:last-child p span { display: grid; width: 1.4rem; height: 1.4rem; place-items: center; border-radius: .35rem; background: #fff0f1; color: var(--color-danger); font-weight: 800; }
 .pricing-section-heading { display: grid; grid-template-columns: minmax(0,1.25fr) minmax(18rem,.75fr); gap: var(--space-8); align-items: end; margin-bottom: var(--space-7); }
 .pricing-section-heading h2 { max-width: 15ch; margin-bottom: 0; font-size: clamp(2.2rem,4vw,4rem); letter-spacing: -.045em; }
 .pricing-section-heading > p { margin: 0; color: var(--color-text); font-size: var(--text-lg); }
@@ -132,9 +139,8 @@
 .pricing-final p:not(.eyebrow) { color: #cfdae2; font-size: var(--text-lg); }
 .pricing-final .button-group { justify-content: center; }
 @media (max-width: 64rem) {
-  .pricing-hero__grid { grid-template-columns: minmax(0,.9fr) minmax(24rem,1.1fr); gap: var(--space-5); }
-  .pricing-devices { min-height: 34rem; }
-  .pricing-device--phone { right: 0; }
+  .pricing-hero__grid { grid-template-columns: minmax(0,.9fr) minmax(26rem,1.1fr); gap: var(--space-5); }
+  .pricing-product { min-height: 29rem; }
   .pricing-plan-grid { gap: var(--space-4); }
   .pricing-plan,.pricing-plan:first-child,.pricing-plan:last-child { border-radius: var(--radius-md); }
   .pricing-plan + .pricing-plan { margin-left: 0; }
@@ -142,9 +148,9 @@
   .pricing-trial__grid { gap: var(--space-7); }
 }
 @media (max-width: 48rem) {
-  .pricing-hero__grid { grid-template-columns: 1fr; min-height: 0; padding-block: var(--space-8); }
+  .pricing-hero__grid { grid-template-columns: 1fr; min-height: 0; padding-block: var(--space-6) var(--space-8); }
   .pricing-hero h1 { max-width: 12ch; }
-  .pricing-devices { width: min(100%,38rem); min-height: 35rem; margin: var(--space-5) auto 0; }
+  .pricing-product { width: min(100%,42rem); min-height: 0; margin: var(--space-5) auto 0; }
   .pricing-section-heading,.pricing-trial__grid,.pricing-faq__grid { grid-template-columns: 1fr; gap: var(--space-5); }
   .pricing-plan-grid { grid-template-columns: 1fr; }
   .pricing-plan__head { min-height: 0; }
@@ -170,15 +176,20 @@
   .pricing-hero__monthly { padding-right: 0; }
   .pricing-hero__annual { padding-left: 0; border-top: 1px solid rgb(255 255 255 / .16); border-left: 0; }
   .pricing-hero__reassurance { display: grid; grid-template-columns: 1fr 1fr; }
-  .pricing-devices { min-height: 28rem; }
-  .pricing-devices::before { inset: 13% 0 6% 3%; }
-  .pricing-devices__label { top: 2%; right: 0; }
-  .pricing-device--laptop { top: 13%; left: 0; width: 100%; height: 16rem; }
-  .pricing-intelligence-ui { gap: .6rem; padding: .75rem; }
-  .pricing-intelligence-ui__intro strong { font-size: 1.05rem; }
-  .pricing-device--tablet { left: 0; bottom: 0; width: 62%; height: 13rem; }
-  .pricing-device--phone { right: 0; bottom: -1%; width: 8rem; height: 17rem; }
-  .pricing-device--phone .pricing-device__bar small { display: none; }
+  .pricing-product { padding-top: 2.6rem; }
+  .pricing-product__label { left: 0; right: auto; }
+  .pricing-dashboard { grid-template-columns: 3.4rem 1fr; transform: none; }
+  .pricing-dashboard__sidebar { padding-inline: .4rem; }
+  .pricing-dashboard__sidebar strong { font-size: 0; }
+  .pricing-dashboard__sidebar strong span { font-size: .56rem; }
+  .pricing-dashboard__canvas { gap: .45rem; padding: .55rem; }
+  .pricing-dashboard__brief-stats span:last-child { display: none; }
+  .pricing-dashboard__brief-stats { grid-template-columns: 1fr 1fr; }
+  .pricing-dashboard__metrics { gap: .35rem; }
+  .pricing-dashboard__metrics article { gap: .3rem; padding: .45rem; }
+  .pricing-dashboard__metrics article > span { width: 1.25rem; height: 1.25rem; }
+  .pricing-dashboard__panels { grid-template-columns: 1fr; }
+  .pricing-dashboard__panels article:last-child { display: none; }
   .pricing-trial__flow { grid-template-columns: 1fr 1fr; gap: var(--space-5) 0; }
   .pricing-trial__flow li:nth-child(2)::after { display: none; }
   .pricing-plan-selector button { font-size: .7rem; }
@@ -186,4 +197,3 @@
   .pricing-table thead th:first-child { width: 47%; }
 }
 @media (prefers-reduced-motion: reduce) { .pricing-page * { scroll-behavior: auto; } }
-
