@@ -378,52 +378,58 @@
         </div>
       </section>
 
-      <section class="pricing-billing" aria-labelledby="pricing-billing-heading" data-billing-period="monthly">
-        <div class="container pricing-billing__inner">
-          <div class="pricing-billing__copy">
-            <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Choose how you pay</p>
-            <h2 id="pricing-billing-heading">Simple plans. Better value yearly.</h2>
-            <p>Pay monthly for flexibility, or pay annually and save 50% on your first year.</p>
-          </div>
-          <div class="pricing-billing__control">
-            <div class="pricing-billing__toggle" role="group" aria-label="Choose billing period">
-              <button type="button" data-billing-toggle="monthly" aria-pressed="true">Monthly</button>
-              <button type="button" data-billing-toggle="annual" aria-pressed="false"><span>Annual</span><small>Save 50% first year</small></button>
-            </div>
-            <p>Annual pricing shown as monthly equivalent.<br>First year only. Paid annually upfront.</p>
-          </div>
-        </div>
-      </section>
-
-      <section class="section pricing-plans" id="plans" aria-labelledby="plans-heading">
+      <section class="section pricing-billing" id="plans" aria-labelledby="pricing-billing-heading" data-billing-period="monthly">
         <div class="container">
-          <div class="pricing-section-heading">
-            <div><p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Choose a Plan</p><h2 id="plans-heading">The right level for your operation.</h2></div>
-            <p>Three monthly software plans. Every plan begins with the same 30-day Full Qavyo experience.</p>
+          <div class="pricing-billing__header">
+            <div class="pricing-billing__copy">
+              <h2 id="pricing-billing-heading">Simple plans.<br>Better value yearly.</h2>
+              <p>Pay monthly for flexibility, or pay annually and save 50% on your first year.</p>
+            </div>
+            <div class="pricing-billing__control">
+              <div class="pricing-billing__toggle" role="group" aria-label="Choose billing period">
+                <button type="button" data-billing-toggle="monthly" aria-pressed="true">Monthly</button>
+                <button type="button" data-billing-toggle="annual" aria-pressed="false"><span>Annual</span><small>Save 50% first year</small></button>
+              </div>
+              <p>Annual prices are monthly equivalents for the first year.<br>Payment is made annually upfront.</p>
+            </div>
           </div>
           <div class="pricing-plan-grid">
             <article class="pricing-plan">
-              <div class="pricing-plan__head"><p class="pricing-kicker">Run</p><h3>Starter</h3><p>Everything you need to run your restaurant.</p></div>
-              <p class="pricing-price"><span>£</span>29<small>/month</small></p>
+              <div class="pricing-plan__head"><h3>Starter</h3><p>Everything you need to run your restaurant.</p></div>
+              <div class="pricing-plan__rate">
+                <p class="pricing-price"><span>&pound;</span><b data-monthly-only>29</b><b data-annual-only hidden>14.50</b><small>/month</small></p>
+                <p class="pricing-plan__annual-prompt" data-monthly-only>Save 50% first year with annual billing</p>
+                <div class="pricing-plan__annual-detail" data-annual-only hidden><span>Monthly equivalent &middot; first year only</span><strong>&pound;174 billed for your first year</strong><small>Paid annually upfront. Renews at &pound;348/year after year one.</small></div>
+              </div>
               <a class="button button--secondary button--full" href="#get-started">Start 30 Days Free <span aria-hidden="true">→</span></a>
-              <div class="pricing-plan__features"><h4>Major inclusions</h4><ul><li>POS &amp; Ordering</li><li>Kitchen Display System</li><li>Website &amp; Online Ordering</li><li>Reservations</li><li>Customers / CRM</li><li>Inventory &amp; Recipes</li><li>Purchasing &amp; Suppliers</li><li class="pricing-plan__intelligence">Essential Intelligence</li></ul></div>
-              <a class="text-link pricing-plan__compare" href="#compare">See full comparison <span aria-hidden="true">↓</span></a>
+              <div class="pricing-plan__features"><h4>Included</h4><ul><li>Restaurant POS</li><li>Kitchen Display System</li><li>Website + Online Ordering</li><li>Reservations</li><li>Customer CRM</li><li>Inventory + Recipe Management</li><li>Purchasing + Suppliers</li><li class="pricing-plan__intelligence">Qavyo Intelligence Essentials</li></ul></div>
+              <p class="pricing-plan__trial-note">Full Qavyo unlocked for your first 30 days.</p>
             </article>
             <article class="pricing-plan pricing-plan--accent">
-              <div class="pricing-plan__head"><p class="pricing-kicker">Grow</p><h3>Growth</h3><p>Run the restaurant. Manage the business.</p></div>
-              <p class="pricing-price"><span>£</span>79<small>/month</small></p>
+              <p class="pricing-plan__badge">Most popular</p>
+              <div class="pricing-plan__head"><h3>Growth</h3><p>For restaurants ready to grow, optimise and automate.</p></div>
+              <div class="pricing-plan__rate">
+                <p class="pricing-price"><span>&pound;</span><b data-monthly-only>79</b><b data-annual-only hidden>39.50</b><small>/month</small></p>
+                <p class="pricing-plan__annual-prompt" data-monthly-only>Save 50% first year with annual billing</p>
+                <div class="pricing-plan__annual-detail" data-annual-only hidden><span>Monthly equivalent &middot; first year only</span><strong>&pound;474 billed for your first year</strong><small>Paid annually upfront. Renews at &pound;948/year after year one.</small></div>
+              </div>
               <a class="button button--primary button--full" href="#get-started">Start 30 Days Free <span aria-hidden="true">→</span></a>
-              <div class="pricing-plan__features"><h4>Everything in Starter, plus</h4><ul><li>Loyalty</li><li>Staff Management &amp; Scheduling</li><li>Time, Attendance &amp; Payroll</li><li>Stock Transfers</li><li>Multi-location Management</li><li>Central Menu Management</li><li>Deeper Business Reporting</li><li class="pricing-plan__intelligence">Full Intelligence</li></ul></div>
-              <a class="text-link pricing-plan__compare" href="#compare">See full comparison <span aria-hidden="true">↓</span></a>
+              <div class="pricing-plan__features"><h4>Everything in Starter, plus</h4><ul><li>Loyalty</li><li>Staff Management</li><li>Scheduling</li><li>Time &amp; Attendance</li><li>Payroll</li><li>Stock Transfers</li><li>Multi-location Management</li><li>Central Menu Management</li><li>Advanced Reporting</li><li class="pricing-plan__intelligence">Full Qavyo Intelligence</li></ul></div>
+              <p class="pricing-plan__trial-note">Full Qavyo unlocked for your first 30 days.</p>
             </article>
             <article class="pricing-plan">
-              <div class="pricing-plan__head"><p class="pricing-kicker pricing-kicker--ink">Scale</p><h3>Business</h3><p>Central control for restaurant groups.</p></div>
-              <p class="pricing-price"><span>£</span>149<small>/month</small></p>
+              <div class="pricing-plan__head"><h3>Business</h3><p>For restaurant groups, franchises and larger operations.</p></div>
+              <div class="pricing-plan__rate">
+                <p class="pricing-price"><span>&pound;</span><b data-monthly-only>149</b><b data-annual-only hidden>74.50</b><small>/month</small></p>
+                <p class="pricing-plan__annual-prompt" data-monthly-only>Save 50% first year with annual billing</p>
+                <div class="pricing-plan__annual-detail" data-annual-only hidden><span>Monthly equivalent &middot; first year only</span><strong>&pound;894 billed for your first year</strong><small>Paid annually upfront. Renews at &pound;1,788/year after year one.</small></div>
+              </div>
               <a class="button button--secondary button--full" href="#get-started">Start 30 Days Free <span aria-hidden="true">→</span></a>
-              <div class="pricing-plan__features"><h4>Everything in Growth, plus</h4><ul><li>Centralised Multi-location Management</li><li>Consolidated Reporting</li><li>Location Roles &amp; Permissions</li><li>API &amp; External Integrations</li><li>Cross-location Operations</li><li>Higher-level Onboarding &amp; Support</li><li class="pricing-plan__intelligence">Full + Multi-location Intelligence</li></ul></div>
-              <a class="text-link pricing-plan__compare" href="#compare">See full comparison <span aria-hidden="true">↓</span></a>
+              <div class="pricing-plan__features"><h4>Everything in Growth, plus</h4><ul><li>Advanced Multi-site Controls</li><li>Franchise Management</li><li>Group-wide Reporting</li><li>Location Benchmarking</li><li>Regional Roles &amp; Permissions</li><li>Central Customer Intelligence</li><li>Cross-location Operations</li><li>Group-level Qavyo Intelligence</li><li>Priority Onboarding &amp; Support</li></ul></div>
+              <p class="pricing-plan__trial-note">Full Qavyo unlocked for your first 30 days.</p>
             </article>
           </div>
+          <div class="pricing-plans__shared-note"><span aria-hidden="true">30</span><p><strong>Your first 30 days include the complete Qavyo platform.</strong><small>Experience everything first and choose the right plan afterward.</small></p></div>
         </div>
       </section>
 

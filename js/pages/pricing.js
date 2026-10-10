@@ -9,6 +9,12 @@
     billingSection.dataset.billingPeriod = period;
     document.documentElement.dataset.billingPeriod = period;
     billingToggles.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.billingToggle === period)));
+    document.querySelectorAll("[data-monthly-only]").forEach((element) => {
+      element.hidden = period !== "monthly";
+    });
+    document.querySelectorAll("[data-annual-only]").forEach((element) => {
+      element.hidden = period !== "annual";
+    });
     document.dispatchEvent(new CustomEvent("qavyo:billing-change", { detail: { period } }));
   };
   billingToggles.forEach((button, index) => {
@@ -34,4 +40,3 @@
   selectors.forEach((button) => button.addEventListener("click", () => activate(button.dataset.planSelector)));
   activate("starter");
 })();
-

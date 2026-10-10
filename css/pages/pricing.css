@@ -104,8 +104,8 @@
 .pricing-switch__path--qavyo li { color: var(--color-ink); font-weight: 650; }
 .pricing-switch__path--qavyo li::before { content: "✓"; position: absolute; left: 0; color: var(--color-brand); font-weight: 800; }
 .pricing-switch__arrow { display: grid; width: 2.7rem; height: 2.7rem; margin-inline: var(--space-5); place-items: center; border: 1px solid var(--color-border); border-radius: 50%; color: var(--color-brand); font-size: 1.1rem; }
-.pricing-billing { padding-block: clamp(3rem,5vw,4.5rem) var(--space-7); border-top: 1px solid var(--color-border); background: var(--color-canvas); }
-.pricing-billing__inner { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: var(--space-8); align-items: end; }
+.pricing-billing { border-top: 1px solid var(--color-border); background: var(--color-canvas); }
+.pricing-billing__header { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: var(--space-8); align-items: end; margin-bottom: var(--space-7); }
 .pricing-billing__copy h2 { max-width: 15ch; font-size: clamp(2.4rem,4vw,4rem); }
 .pricing-billing__control { display: grid; gap: var(--space-4); justify-items: end; }
 .pricing-billing__toggle { display: grid; grid-template-columns: 1fr 1fr; min-width: 24rem; padding: .3rem; border: 1px solid var(--color-border-strong); border-radius: var(--radius-md); background: #fff; box-shadow: var(--shadow-sm); }
@@ -124,23 +124,37 @@
 .pricing-plan:first-child { border-radius: var(--radius-lg) 0 0 var(--radius-lg); }
 .pricing-plan:last-child { border-radius: 0 var(--radius-lg) var(--radius-lg) 0; }
 .pricing-plan + .pricing-plan { margin-left: -1px; }
-.pricing-plan--accent { position: relative; z-index: 1; border-color: var(--color-brand); background: #f6f9ff; }
-.pricing-plan__head { min-height: 9.5rem; }
+.pricing-plan--accent { position: relative; z-index: 1; border-color: var(--color-brand); background: #f6f9ff; box-shadow: var(--shadow-sm); }
+.pricing-plan__badge { position: absolute; top: 1rem; right: 1rem; margin: 0; padding: .38rem .55rem; border-radius: var(--radius-sm); background: var(--color-brand); color: #fff; font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
+.pricing-plan--accent .pricing-plan__head { padding-right: 7rem; }
+.pricing-plan__head { min-height: 6.5rem; }
 .pricing-kicker { margin-bottom: var(--space-5); color: var(--color-brand); font-size: .75rem; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
 .pricing-kicker::before { content: ""; display: inline-block; width: .42rem; height: .42rem; margin-right: .55rem; background: currentColor; border-radius: .08rem; }
 .pricing-kicker--ink { color: var(--color-ink); }
 .pricing-plan h3 { margin-bottom: .5rem; font-size: 1.55rem; }
 .pricing-plan__head > p:last-child { color: var(--color-text); }
-.pricing-price { display: flex; align-items: baseline; margin-bottom: var(--space-5); font-size: clamp(3rem,5vw,4.5rem); font-weight: 700; letter-spacing: -.055em; line-height: 1; }
+.pricing-plan__rate { min-height: 9.2rem; }
+.pricing-price { display: flex; align-items: baseline; margin-bottom: var(--space-3); font-size: clamp(3rem,5vw,4.5rem); font-weight: 700; letter-spacing: -.055em; line-height: 1; }
 .pricing-price > span { font-size: .55em; }
+.pricing-price b { font: inherit; }
 .pricing-price small { margin-left: .45rem; color: var(--color-muted); font-size: .82rem; font-weight: 500; letter-spacing: 0; }
+.pricing-plan__annual-prompt { margin: 0; color: var(--color-brand); font-size: .78rem; font-weight: 700; }
+.pricing-plan__annual-detail { display: grid; gap: .18rem; line-height: 1.45; }
+.pricing-plan__annual-detail span { color: var(--color-brand); font-size: .7rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+.pricing-plan__annual-detail strong { color: var(--color-ink); font-size: .86rem; }
+.pricing-plan__annual-detail small { max-width: 27rem; color: var(--color-text); font-size: .74rem; }
 .pricing-plan__features { flex: 1; margin-top: var(--space-6); padding-top: var(--space-5); border-top: 1px solid var(--color-border); }
 .pricing-plan__features h4 { font-size: .8rem; }
 .pricing-plan__features ul { display: grid; gap: .65rem; margin: 0; padding: 0; list-style: none; color: var(--color-text); font-size: .88rem; }
 .pricing-plan__features li { position: relative; padding-left: 1.35rem; }
 .pricing-plan__features li::before { content: "\2713"; position: absolute; left: 0; color: var(--color-brand); font-weight: 800; }
 .pricing-plan__features .pricing-plan__intelligence { color: var(--color-ink); font-weight: 700; }
-.pricing-plan__compare { margin-top: var(--space-5); font-size: .85rem; }
+.pricing-plan__trial-note { margin: var(--space-5) 0 0; padding-top: var(--space-4); border-top: 1px solid var(--color-border); color: var(--color-text); font-size: .78rem; font-weight: 650; }
+.pricing-plans__shared-note { display: flex; align-items: center; justify-content: center; gap: var(--space-4); margin-top: var(--space-6); padding: var(--space-5); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: #fff; box-shadow: var(--shadow-sm); }
+.pricing-plans__shared-note > span { display: grid; flex: 0 0 auto; width: 2.8rem; height: 2.8rem; place-items: center; border-radius: 50%; background: var(--color-brand-soft); color: var(--color-brand); font-weight: 800; }
+.pricing-plans__shared-note p { margin: 0; }
+.pricing-plans__shared-note strong,.pricing-plans__shared-note small { display: block; }
+.pricing-plans__shared-note small { margin-top: .2rem; color: var(--color-text); font-size: .8rem; }
 .pricing-trial__grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: var(--space-9); align-items: center; }
 .pricing-trial__intro h2 { color: #fff; font-size: clamp(2.5rem,5vw,4.75rem); letter-spacing: -.05em; }
 .pricing-trial__intro p { color: #cbd7df; }
@@ -199,7 +213,7 @@
   .pricing-plan-grid { gap: var(--space-4); }
   .pricing-plan,.pricing-plan:first-child,.pricing-plan:last-child { border-radius: var(--radius-md); }
   .pricing-plan + .pricing-plan { margin-left: 0; }
-  .pricing-plan__head { min-height: 10.5rem; }
+  .pricing-plan__head { min-height: 8rem; }
   .pricing-trial__grid { gap: var(--space-7); }
 }
 @media (max-width: 48rem) {
@@ -210,13 +224,14 @@
   .pricing-hero__content { grid-column: 1; }
   .pricing-product { width: min(100%,42rem); min-height: 34rem; margin: var(--space-5) auto 0; }
   .pricing-product { grid-column: 1; grid-row: 4; }
-  .pricing-switch__grid,.pricing-billing__inner { grid-template-columns: 1fr; gap: var(--space-7); }
+  .pricing-switch__grid,.pricing-billing__header { grid-template-columns: 1fr; gap: var(--space-7); }
   .pricing-switch__comparison { max-width: 42rem; }
   .pricing-billing__control { width: 100%; justify-items: start; }
   .pricing-billing__control > p { text-align: left; }
   .pricing-section-heading,.pricing-trial__grid,.pricing-faq__grid { grid-template-columns: 1fr; gap: var(--space-5); }
   .pricing-plan-grid { grid-template-columns: 1fr; }
   .pricing-plan__head { min-height: 0; }
+  .pricing-plan__rate { min-height: 0; margin-bottom: var(--space-5); }
   .pricing-trial__flow { margin-top: var(--space-5); }
   .pricing-plan-selector { display: grid; grid-template-columns: repeat(3,1fr); margin-bottom: var(--space-4); border: 1px solid var(--color-border); border-radius: var(--radius-md); overflow: hidden; }
   .pricing-plan-selector button { min-height: 3.5rem; padding: .7rem .35rem; border: 0; background: var(--color-surface); color: var(--color-text); font: inherit; font-size: .78rem; font-weight: 700; cursor: pointer; }
@@ -245,6 +260,7 @@
   .pricing-switch__path { width: 100%; }
   .pricing-billing__toggle { min-width: 0; width: 100%; }
   .pricing-billing__toggle button { min-height: 4rem; flex-direction: column; gap: .25rem; padding-inline: .5rem; }
+  .pricing-plans__shared-note { align-items: flex-start; justify-content: flex-start; }
   .pricing-dashboard--laptop { grid-template-columns: 4.5rem 1fr; transform: none; }
   .pricing-dashboard__sidebar { padding-inline: .4rem; }
   .pricing-dashboard__sidebar strong { font-size: 0; }
