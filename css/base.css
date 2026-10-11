@@ -92,6 +92,10 @@ code {
   outline-offset: 3px;
 }
 
+[hidden] {
+  display: none !important;
+}
+
 :target,
 section[id],
 div[id],

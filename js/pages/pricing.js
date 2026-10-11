@@ -21,8 +21,11 @@
     document.querySelectorAll("[data-recurring-only]").forEach((element) => {
       element.hidden = period === "lifetime";
     });
-    document.querySelectorAll(".pricing-plan > .button").forEach((element) => {
+    document.querySelectorAll("[data-recurring-text]").forEach((element) => {
       element.hidden = period === "lifetime";
+    });
+    document.querySelectorAll("[data-lifetime-text]").forEach((element) => {
+      element.hidden = period !== "lifetime";
     });
     document.dispatchEvent(new CustomEvent("qavyo:billing-change", { detail: { period } }));
   };

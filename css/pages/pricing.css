@@ -138,7 +138,6 @@
 .pricing-plan--business .pricing-plan__head > p:last-child,.pricing-plan--business .pricing-price small,.pricing-plan--business .pricing-plan__features ul,.pricing-plan--business .pricing-plan__annual-detail small,.pricing-plan--business .pricing-plan__lifetime-detail > p { color: #cbd7df; }
 .pricing-plan--business .pricing-plan__features { border-color: rgb(255 255 255 / .18); }
 .pricing-plan--business .pricing-plan__features li > svg { stroke: #8db4ff; }
-.pricing-plan--business > .button { border-color: rgb(255 255 255 / .55); color: #fff; }
 .pricing-plan__badge { position: absolute; top: 1rem; right: 1rem; margin: 0; padding: .38rem .55rem; border-radius: var(--radius-sm); background: var(--color-brand); color: #fff; font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
 .pricing-plan--accent .pricing-plan__head { padding-right: 7rem; }
 .pricing-plan__head { min-height: 6.5rem; }
@@ -169,10 +168,8 @@
 .pricing-plan__lifetime-detail dl div { padding: .65rem; background: #fff; }
 .pricing-plan__lifetime-detail dt { color: var(--color-muted); font-size: .68rem; }
 .pricing-plan__lifetime-detail dd { margin: .2rem 0 0; color: var(--color-ink); font-size: .8rem; font-weight: 800; }
-.pricing-plan__lifetime-detail .button { margin-top: .25rem; }
 .pricing-price--custom { font-size: clamp(2.5rem,4vw,3.5rem); }
-.pricing-plan > .button { position: relative; width: 100%; min-height: 3.5rem; padding-inline: 1.25rem 3rem; }
-.pricing-plan > .button span { position: absolute; right: 1.25rem; }
+.pricing-plan > .button { width: 100%; min-height: 3.5rem; padding: 0.85rem 1.5rem; justify-content: center; text-align: center; }
 .pricing-plan__features { flex: 1; margin-top: var(--space-6); padding-top: var(--space-5); border-top: 1px solid var(--color-border); }
 .pricing-plan__features h4 { font-size: .8rem; }
 .pricing-plan__features ul { display: grid; gap: .65rem; margin: 0; padding: 0; list-style: none; color: var(--color-text); font-size: .88rem; }
