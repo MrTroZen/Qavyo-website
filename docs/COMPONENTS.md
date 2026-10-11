@@ -59,6 +59,10 @@ The Homepage Hero (`.home-hero`) establishes Qavyo as a comprehensive business t
 - **Motion**: Dashed signal paths, sequential product and capability emphasis, a quiet core pulse, and an Intelligence activity indicator reinforce the `Operate → Understand → Grow` relationship. All animations are decorative and disabled for `prefers-reduced-motion`.
 - **Responsiveness**: Tablet preserves the full left-to-right relationship map. Mobile deliberately removes connection paths and presents the same story as a readable vertical sequence: Qavyo core, supporting capabilities, business families, then the growth outcome, without horizontal overflow.
 
+## Homepage Business Workflow Selector
+
+The homepage orientation section (`.home-workflow`) uses an accessible five-option tab selector to demonstrate how the same connected Retail foundation is shaped for Fashion, Electronics, Repair, Grocery, and Salon contexts. Selecting a business updates the Run and Understand examples together; the Grow story remains a consistent overview of Qavyo's business solutions. Fashion and Electronics may use their approved product-specific examples. Other retail contexts must stay within the confirmed sale or service activity, customer context, stock, reporting, and Intelligence foundation until specialist workflows are approved. The selector supports click, tap, arrow keys, Home, and End through `js/pages/home.js`, while all options remain fully readable in every state.
+
 ## Operational Flow Diagram
 
 `.rst-flow` visually connects core restaurant workflows (`ORDER → KITCHEN → INVENTORY → CUSTOMER → REPORTING → INTELLIGENCE`) horizontally on desktop and seamlessly reflows on tablet and mobile without horizontal overflow.

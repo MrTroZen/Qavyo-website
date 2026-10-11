@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/pages/home.css">
     <script src="js/main.js" defer></script>
+    <script src="js/pages/home.js" defer></script>
   </head>
   <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
@@ -382,64 +383,75 @@
         </div>
       </section>
 
-      <section class="home-help" id="how-qavyo-helps" aria-labelledby="home-help-title">
+      <section class="home-workflow" id="how-qavyo-helps" aria-labelledby="home-workflow-title" data-business-workflow>
         <div class="container">
-          <header class="home-help__header">
-            <h2 id="home-help-title">How Qavyo helps your business.</h2>
-            <p>Run the operation. Understand what&rsquo;s happening. Grow the business.</p>
+          <header class="home-workflow__header">
+            <h2 id="home-workflow-title">Built around the way your business actually works.</h2>
+            <p>Run the work. Understand what needs attention. Grow from there.</p>
           </header>
 
-          <div class="home-help__journey">
-            <article class="home-help__stage" aria-labelledby="home-help-run-title">
-              <div class="home-help__stage-head">
-                <span class="home-help__number" aria-hidden="true">01</span>
-                <p class="home-help__label">Run</p>
+          <div class="business-selector" role="tablist" aria-label="Choose a business type">
+            <button type="button" role="tab" aria-selected="true" aria-controls="business-workflow-panel" id="business-tab-fashion" tabindex="0" data-business-tab="fashion">Fashion</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="business-workflow-panel" id="business-tab-electronics" tabindex="-1" data-business-tab="electronics">Electronics</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="business-workflow-panel" id="business-tab-repair" tabindex="-1" data-business-tab="repair">Repair</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="business-workflow-panel" id="business-tab-grocery" tabindex="-1" data-business-tab="grocery">Grocery</button>
+            <button type="button" role="tab" aria-selected="false" aria-controls="business-workflow-panel" id="business-tab-salon" tabindex="-1" data-business-tab="salon">Salon</button>
+          </div>
+
+          <div class="home-workflow__story" id="business-workflow-panel" role="tabpanel" aria-labelledby="business-tab-fashion" tabindex="0">
+            <article class="workflow-stage workflow-stage--run" aria-labelledby="workflow-run-title">
+              <div class="workflow-stage__heading">
+                <p>01 / Run</p>
+                <h3 id="workflow-run-title">Run the work.</h3>
+                <span>Qavyo adapts the operating workflow to the type of business.</span>
               </div>
-              <div class="home-help__visual home-help__visual--run" role="img" aria-label="Illustrative operational flow showing a sale updating stock and being recorded.">
-                <span>Illustrative operation</span>
-                <div aria-hidden="true">
-                  <strong>Order / Sale</strong><i></i><strong>Stock updated</strong><i></i><strong>Operation recorded</strong>
+              <div class="workflow-run-ui" data-run-ui>
+                <div class="workflow-ui__bar"><span data-business-name>Fashion store</span><small>Illustrative workflow</small></div>
+                <div class="workflow-run-ui__product">
+                  <div><small data-run-kicker>Product</small><strong data-run-title>Everyday Overshirt</strong><span data-run-meta>Black &middot; Store sale</span></div>
+                  <b data-run-status>Sale recorded</b>
                 </div>
+                <div class="workflow-run-ui__flow" aria-label="Selected business workflow">
+                  <div><small data-run-step-one-label>Sale</small><strong data-run-step-one>Black / M</strong></div><i aria-hidden="true"></i>
+                  <div><small data-run-step-two-label>Stock picture</small><strong data-run-step-two>Product connected</strong></div><i aria-hidden="true"></i>
+                  <div><small data-run-step-three-label>Reporting</small><strong data-run-step-three>Activity included</strong></div>
+                </div>
+                <p class="workflow-run-ui__note" data-run-note>The sale stays connected to the product, stock picture and reporting.</p>
               </div>
-              <div class="home-help__copy">
-                <h3 id="home-help-run-title">Run the day-to-day.</h3>
-                <p>Software built around how your business operates.</p>
-                <small>Restaurant <span aria-hidden="true">&middot;</span> Retail <span aria-hidden="true">&middot;</span> Farm</small>
-              </div>
-              <a class="text-link home-help__link" href="#product-families">Explore Software <span aria-hidden="true">&rarr;</span></a>
+              <a class="text-link workflow-stage__link" href="retail.html">Explore Retail Software <span aria-hidden="true">&rarr;</span></a>
             </article>
 
-            <article class="home-help__stage" aria-labelledby="home-help-understand-title">
-              <div class="home-help__stage-head">
-                <span class="home-help__number" aria-hidden="true">02</span>
-                <p class="home-help__label">Understand</p>
+            <span class="workflow-connector" aria-hidden="true"><i></i><b>&rarr;</b></span>
+
+            <article class="workflow-stage workflow-stage--understand" aria-labelledby="workflow-understand-title">
+              <div class="workflow-stage__heading">
+                <p>02 / Understand</p>
+                <h3 id="workflow-understand-title">Know what to do next.</h3>
+                <span>Qavyo Intelligence brings the relevant operating context forward.</span>
               </div>
-              <div class="home-help__visual home-help__visual--understand" role="img" aria-label="Illustrative Qavyo Intelligence notice that stock is moving faster than the recent pattern.">
-                <div class="home-help__intel-head" aria-hidden="true"><span>Qavyo Intelligence</span><small><i></i>Needs attention</small></div>
-                <p aria-hidden="true">Stock is moving faster than the recent pattern.</p>
-                <div class="home-help__signal" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="workflow-intelligence" aria-live="polite" aria-atomic="true">
+                <div class="workflow-ui__bar"><strong>Qavyo Intelligence</strong><small>Illustrative briefing</small></div>
+                <div class="workflow-intelligence__observation"><small>What happened</small><strong data-intel-observation>A clothing product has recent sales activity to review alongside its stock picture.</strong></div>
+                <div class="workflow-intelligence__reason"><small>Why it matters</small><p data-intel-reason>The connected view can show whether the activity deserves closer attention before the next decision.</p></div>
+                <div class="workflow-intelligence__action"><small>Next move</small><p data-intel-action>Review the product and current stock context before deciding what to do next.</p></div>
+                <span>Qavyo recommends. You decide.</span>
               </div>
-              <div class="home-help__copy">
-                <h3 id="home-help-understand-title">Know what needs attention.</h3>
-                <p>Qavyo Intelligence helps turn business activity into clearer explanations and next steps.</p>
-              </div>
-              <a class="text-link home-help__link" href="intelligence.html">Explore Intelligence <span aria-hidden="true">&rarr;</span></a>
+              <a class="text-link workflow-stage__link" href="intelligence.html">Explore Qavyo Intelligence <span aria-hidden="true">&rarr;</span></a>
             </article>
 
-            <article class="home-help__stage" aria-labelledby="home-help-grow-title">
-              <div class="home-help__stage-head">
-                <span class="home-help__number" aria-hidden="true">03</span>
-                <p class="home-help__label">Grow</p>
+            <span class="workflow-connector" aria-hidden="true"><i></i><b>&rarr;</b></span>
+
+            <article class="workflow-stage workflow-stage--grow" aria-labelledby="workflow-grow-title">
+              <div class="workflow-stage__heading">
+                <p>03 / Grow</p>
+                <h3 id="workflow-grow-title">Bring more customers in.</h3>
+                <span>Get found. Stay visible. Bring customers back.</span>
               </div>
-              <div class="home-help__visual home-help__visual--grow" role="img" aria-label="Illustrative customer journey from search to a website to a customer, with social, SMS, and email supporting a return visit.">
-                <div class="home-help__customer-path" aria-hidden="true"><strong>Search</strong><i></i><strong>Website</strong><i></i><strong>Customer</strong></div>
-                <div class="home-help__return-path" aria-hidden="true"><span>Social <b>&middot;</b> SMS <b>&middot;</b> Email</span><i></i><span>Customer returns</span></div>
+              <div class="workflow-growth" role="img" aria-label="Customer journey from search to website to customer, supported by social media, SMS, and email services.">
+                <div class="workflow-growth__path" aria-hidden="true"><strong>Search</strong><i></i><strong>Website</strong><i></i><strong>Customer</strong></div>
+                <div class="workflow-growth__return" aria-hidden="true"><span>Social</span><span>SMS</span><span>Email</span><i></i><strong>Customer returns</strong></div>
               </div>
-              <div class="home-help__copy">
-                <h3 id="home-help-grow-title">Reach more customers.</h3>
-                <p>Qavyo helps businesses get found, stay visible and bring customers back.</p>
-              </div>
-              <a class="text-link home-help__link" href="solutions.html">Explore Business Solutions <span aria-hidden="true">&rarr;</span></a>
+              <a class="text-link workflow-stage__link" href="solutions.html">Explore Business Solutions <span aria-hidden="true">&rarr;</span></a>
             </article>
           </div>
         </div>
