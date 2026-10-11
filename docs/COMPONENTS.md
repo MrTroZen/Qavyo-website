@@ -146,6 +146,13 @@ The Electronics page uses the scoped `.electronics-catalog`, `.electronics-flow`
 
 The SMS Marketing final CTA (`.sms-cta`) provides authoritative closure to the completed page on a full-width dark surface (`--color-dark`). It features a high-contrast two-line headline (`Stay connected more directly.`), a single sentence of directional copy, and a primary `button--on-dark` linked to `#prototype-navigation` (`data-prototype-link`). A subtle dual-radial brand-blue ambient glow element (`.sms-cta__bg`, `aria-hidden="true"`) provides background warmth without distracting from the primary conversion action.
 
+## Pricing Plan Grid and Billing Modes
+
+The Pricing Plan Grid (`.pricing-plan-grid`) presents the three tiers (Starter, Growth, Business) across Monthly, Yearly, and Founding Lifetime states:
+- **Monthly**: Clean primary rate display (`.pricing-price`) with consistent card baseline and single bottom CTA.
+- **Yearly**: Displays promotional first-year pricing anchored to the standard annual rate (`.pricing-plan__anchor`). Includes a highlighted annual savings pill badge (`.pricing-annual-saving-badge`: `↓ Save £.../year`) styled in soft emerald for light cards and translucent emerald on dark cards, followed by transparent post-promotional renewal terms.
+- **Founding Lifetime**: Compact top scarcity banner (`.pricing-lifetime-banner`: `Only 20 restaurants`) with clear one-time prices, concise Core descriptions, and a single centered terms disclaimer below the grid.
+
 ## Pricing Transparency, FAQ, and Final Conversion Section
 
 The Pricing Transparency section (`.pricing-costs`) clarifies the boundary between software, optional hardware, and payment processing without unnecessary complexity. It features a responsive 3-column card grid (`.pricing-cost-cards` / `.pricing-cost-card`):
