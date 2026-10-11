@@ -171,6 +171,48 @@
 })();
 
 (() => {
+  const showcase = document.querySelector("[data-why-qavyo]");
+
+  if (!showcase) {
+    return;
+  }
+
+  const tabs = [...showcase.querySelectorAll("[data-why-tab]")];
+  const panels = [...showcase.querySelectorAll("[data-why-panel]")];
+
+  const selectReason = (tab) => {
+    const reason = tab.dataset.whyTab;
+
+    tabs.forEach((item) => {
+      const selected = item === tab;
+      item.setAttribute("aria-selected", String(selected));
+      item.tabIndex = selected ? 0 : -1;
+    });
+
+    panels.forEach((panel) => {
+      panel.hidden = panel.dataset.whyPanel !== reason;
+    });
+  };
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => selectReason(tab));
+    tab.addEventListener("keydown", (event) => {
+      let nextIndex;
+
+      if (event.key === "ArrowRight" || event.key === "ArrowDown") nextIndex = (index + 1) % tabs.length;
+      if (event.key === "ArrowLeft" || event.key === "ArrowUp") nextIndex = (index - 1 + tabs.length) % tabs.length;
+      if (event.key === "Home") nextIndex = 0;
+      if (event.key === "End") nextIndex = tabs.length - 1;
+      if (nextIndex === undefined) return;
+
+      event.preventDefault();
+      tabs[nextIndex].focus();
+      selectReason(tabs[nextIndex]);
+    });
+  });
+})();
+
+(() => {
   const showcase = document.querySelector("[data-intelligence-showcase]");
 
   if (!showcase) {

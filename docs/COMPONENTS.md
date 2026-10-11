@@ -75,6 +75,10 @@ The homepage Intelligence section (`.home-intelligence`) pairs a business questi
 
 The homepage Business Solutions section (`.home-solutions`) reuses the Pricing page segmented-control language for Website, SEO, Social, SMS, and Email. One service panel is visible at a time, pairing short outcome-focused copy with a customer-facing visual and canonical service CTA. The quiet parent link routes to `solutions.html`. The selector supports click, tap, arrow keys, Home, and End through `js/pages/home.js`; on narrow screens only the toggle itself may scroll horizontally, while each selected panel becomes a purpose-built vertical composition.
 
+## Homepage Why Qavyo Showcase
+
+The homepage Why Qavyo section (`.home-why`) uses the established segmented-control language to explain four ecosystem advantages without a comparison table: Connected, Flexible, Clear, and Supported. One stable-height panel appears at a time with a concise message and purpose-built visual. Compatibility language must remain qualified, pricing is limited to the confirmed starting software price with separate-cost context, and ecosystem support must not imply one team manages every service. The selector supports click, tap, arrow keys, Home, and End through `js/pages/home.js`; mobile deliberately places each visual before its supporting copy and CTA.
+
 ## Operational Flow Diagram
 
 `.rst-flow` visually connects core restaurant workflows (`ORDER → KITCHEN → INVENTORY → CUSTOMER → REPORTING → INTELLIGENCE`) horizontally on desktop and seamlessly reflows on tablet and mobile without horizontal overflow.
