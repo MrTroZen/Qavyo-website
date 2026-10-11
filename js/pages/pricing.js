@@ -54,4 +54,17 @@
       });
     });
   }
+
+  const pricingFaq = document.querySelector("[data-pricing-faq]");
+  if (pricingFaq) {
+    const faqItems = Array.from(pricingFaq.querySelectorAll("details"));
+    faqItems.forEach((item) => {
+      item.addEventListener("toggle", () => {
+        if (!item.open) return;
+        faqItems.forEach((otherItem) => {
+          if (otherItem !== item) otherItem.open = false;
+        });
+      });
+    });
+  }
 })();

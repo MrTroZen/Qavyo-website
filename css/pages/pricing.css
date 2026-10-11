@@ -441,6 +441,7 @@
 .pricing-final__copy { color: #cfdae2; font-size: clamp(1.05rem,1.3vw,1.25rem); line-height: 1.55; max-width: 44ch; margin: 0 0 var(--space-6); }
 .pricing-final .button-group { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-4); margin-bottom: var(--space-7); }
 .button--on-dark:hover { background: #f0f4f8; color: var(--color-ink); transform: translateY(-1px); }
+.pricing-final__summary { max-width: 46rem; margin: 0 0 var(--space-5); color: #fff; font-size: 1rem; font-weight: 700; line-height: 1.5; }
 .pricing-final__reassurance { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: var(--space-3) var(--space-6); padding: 0; margin: 0; list-style: none; }
 .pricing-final__reassurance li { display: inline-flex; align-items: center; gap: .45rem; color: #9fb1bf; font-size: .88rem; font-weight: 600; }
 .pricing-final__check { display: inline-grid; place-items: center; width: 1.15rem; height: 1.15rem; border-radius: 50%; background: rgb(47 107 219 / .25); color: #79a6fb; font-size: .72rem; font-weight: 800; }

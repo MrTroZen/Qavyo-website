@@ -153,9 +153,9 @@ The Pricing Transparency section (`.pricing-costs`) clarifies the boundary betwe
 - **Hardware**: Emphasizes compatibility with operators' existing tablets, phones, and laptops, making it explicit that hardware is separate from the software subscription.
 - **Payments**: Keeps payment processing distinct and neutral, stating transaction fees depend on the connected provider without inventing rates or imposing software markups.
 
-The Pricing FAQ (`.pricing-faq`) utilizes clean, accessible native `<details>` and `<summary>` disclosure accordions with keyboard interaction, visible focus, and a two-column layout on desktop that reflows cleanly on mobile.
+The Pricing FAQ (`.pricing-faq`) addresses verified buying objections with concise answers. It uses accessible native `<details>` and `<summary>` disclosure accordions with keyboard interaction, visible focus, and one open answer at a time; the two-column desktop layout reflows cleanly on mobile.
 
-The Pricing Final CTA (`.pricing-final`) provides authoritative closure on a full-width dark surface (`--color-dark`). It combines a high-contrast headline (`Start with everything. Choose later.`), concise supporting copy, dual CTA actions (`Start 30 Days Free` as primary and `See Plans` as secondary), and a 4-point reassurance row (`No setup fee`, `No long-term contract`, `Use your own devices`, `Everything unlocked for 30 days`) with custom bullet checkmarks.
+The Pricing Final CTA (`.pricing-final`) provides authoritative closure on a full-width dark surface (`--color-dark`). It combines a high-contrast headline (`Start with everything. Choose later.`), concise supporting copy, dual CTA actions (`Start 30 Days Free` as primary and `See Plans` as secondary), a strong one-line pricing summary, and a 4-point reassurance row (`No setup fee`, `No long-term contract`, `Use your own devices`, `Everything unlocked for 30 days`) with custom bullet checkmarks.
 
 ## Responsive and accessibility requirements
 
