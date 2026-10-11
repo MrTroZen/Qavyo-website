@@ -67,6 +67,10 @@ The homepage orientation section (`.home-workflow`) uses an accessible five-opti
 
 The homepage product overview (`.software-overview`) uses an accessible Restaurant / Retail / Farm tab selector to replace the showcase content in place. Each panel has a distinct operational composition: a connected restaurant order flow, a multi-context retail workspace, or the currently defined Broiler Farming focus. Homepage CTAs route only to parent software pages; until a Farm Software page is approved, the Farm CTA retains safe prototype-link behavior. The selector supports click, tap, arrow keys, Home, and End through `js/pages/home.js`, and mobile panels simplify their diagrams rather than shrinking desktop UI.
 
+## Homepage Qavyo Intelligence Showcase
+
+The homepage Intelligence section (`.home-intelligence`) pairs a business question with one structured response surface: What changed, Why it matters, and Next move. Its accessible Restaurant / Retail / Repair / Salon selector updates the question, source labels, evidence, explanation, and recommendation together through `js/pages/home.js`. Restaurant and Retail examples may use their confirmed connected operating context; Repair and Salon must remain within approved service activity, customer, staff, operations, and reporting context until specialist workflows are defined. The component must remain human-controlled, non-chatbot, free of generic AI claims, and vertically readable on mobile.
+
 ## Operational Flow Diagram
 
 `.rst-flow` visually connects core restaurant workflows (`ORDER → KITCHEN → INVENTORY → CUSTOMER → REPORTING → INTELLIGENCE`) horizontally on desktop and seamlessly reflows on tablet and mobile without horizontal overflow.

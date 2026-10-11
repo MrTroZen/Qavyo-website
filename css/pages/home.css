@@ -5793,6 +5793,302 @@
   }
 }
 
+/* Homepage Qavyo Intelligence showcase */
+.home-intelligence {
+  padding-block: var(--section-space);
+  border-bottom: 1px solid var(--color-dark-raised);
+  background: var(--color-dark);
+  color: var(--color-surface);
+}
+
+.home-intelligence__header {
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(18rem, 0.75fr);
+  gap: var(--space-7);
+  align-items: end;
+  margin-block-end: var(--space-6);
+}
+
+.home-intelligence__header h2 {
+  max-width: 19ch;
+  margin: 0;
+  color: var(--color-surface);
+}
+
+.home-intelligence__header > p {
+  max-width: 36rem;
+  margin: 0;
+  color: #c7d3dc;
+  line-height: var(--leading-body);
+}
+
+.intelligence-context-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 42rem;
+  margin-block-end: var(--space-6);
+  border-bottom: 1px solid var(--color-dark-raised);
+}
+
+.intelligence-context-tabs button {
+  position: relative;
+  min-height: 3.25rem;
+  padding: var(--space-3) var(--space-4);
+  border: 0;
+  background: transparent;
+  color: #c7d3dc;
+  font: inherit;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.intelligence-context-tabs button::after {
+  position: absolute;
+  right: var(--space-4);
+  bottom: -1px;
+  left: var(--space-4);
+  height: 2px;
+  background: transparent;
+  content: "";
+}
+
+.intelligence-context-tabs button:hover {
+  background: var(--color-dark-raised);
+  color: var(--color-surface);
+}
+
+.intelligence-context-tabs button[aria-selected="true"] {
+  background: var(--color-dark-raised);
+  color: var(--color-surface);
+}
+
+.intelligence-context-tabs button[aria-selected="true"]::after {
+  background: var(--color-focus);
+}
+
+.intelligence-experience {
+  display: grid;
+  grid-template-columns: minmax(16rem, 0.72fr) minmax(0, 1.28fr);
+  overflow: hidden;
+  border: 1px solid var(--color-dark-raised);
+  border-radius: var(--radius-lg);
+  background: #0d2130;
+  box-shadow: var(--shadow-md);
+}
+
+.intelligence-question {
+  display: flex;
+  min-width: 0;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(var(--space-5), 4vw, var(--space-8));
+  border-right: 1px solid var(--color-dark-raised);
+}
+
+.intelligence-question > span {
+  margin-block-end: var(--space-4);
+  color: var(--color-focus);
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.intelligence-question blockquote {
+  margin: 0 0 var(--space-6);
+  color: var(--color-surface);
+  font-size: clamp(1.65rem, 3vw, 2.75rem);
+  font-weight: 750;
+  letter-spacing: -0.025em;
+  line-height: 1.15;
+}
+
+.intelligence-sources {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  margin-block-end: var(--space-4);
+}
+
+.intelligence-sources span {
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--color-dark-raised);
+  border-radius: var(--radius-sm);
+  background: var(--color-dark);
+  color: #c7d3dc;
+  font-size: 0.625rem;
+  font-weight: 650;
+}
+
+.intelligence-question > p {
+  margin: 0;
+  color: #8ca2b0;
+  font-size: 0.6875rem;
+  line-height: 1.5;
+}
+
+.intelligence-response {
+  min-width: 0;
+  background: var(--color-surface);
+  color: var(--color-ink);
+}
+
+.intelligence-response__bar {
+  display: flex;
+  min-height: 3.25rem;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4);
+  padding: var(--space-3) var(--space-5);
+  border-bottom: 1px solid var(--color-border);
+  font-size: 0.75rem;
+}
+
+.intelligence-response__bar strong {
+  color: var(--color-ink);
+}
+
+.intelligence-response__bar span {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-muted);
+  font-size: 0.625rem;
+}
+
+.intelligence-response__bar i {
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--color-brand);
+}
+
+.intelligence-response ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.intelligence-response li {
+  display: grid;
+  grid-template-columns: 2.5rem minmax(0, 1fr);
+  gap: var(--space-4);
+  padding: var(--space-5);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.intelligence-response li > span {
+  display: grid;
+  width: 2.25rem;
+  height: 2.25rem;
+  place-items: center;
+  border: 1px solid var(--color-border);
+  border-radius: 50%;
+  color: var(--color-brand);
+  font-family: var(--font-mono);
+  font-size: 0.625rem;
+  font-weight: 700;
+}
+
+.intelligence-response small,
+.intelligence-response strong,
+.intelligence-response li p {
+  display: block;
+}
+
+.intelligence-response small {
+  margin-block-end: var(--space-2);
+  color: var(--color-brand);
+  font-size: 0.625rem;
+  font-weight: 750;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+}
+
+.intelligence-response strong {
+  color: var(--color-ink);
+  font-size: 0.875rem;
+  line-height: 1.55;
+}
+
+.intelligence-response li p {
+  margin: var(--space-2) 0 0;
+  color: var(--color-text);
+  font-size: 0.75rem;
+  line-height: 1.55;
+}
+
+.intelligence-response__next {
+  background: var(--color-brand-soft);
+}
+
+.intelligence-response__next li {
+  border-bottom: 0;
+}
+
+.intelligence-response__control {
+  margin: 0;
+  padding: var(--space-3) var(--space-5);
+  color: var(--color-muted);
+  font-size: 0.625rem;
+  font-weight: 650;
+}
+
+.home-intelligence__cta {
+  margin-block-start: var(--space-6);
+}
+
+@media (max-width: 60rem) {
+  .home-intelligence__header {
+    grid-template-columns: 1fr;
+    gap: var(--space-3);
+  }
+
+  .intelligence-experience {
+    grid-template-columns: minmax(14rem, 0.65fr) minmax(0, 1.35fr);
+  }
+
+  .intelligence-question {
+    padding: var(--space-5);
+  }
+}
+
+@media (max-width: 44rem) {
+  .intelligence-context-tabs {
+    max-width: none;
+  }
+
+  .intelligence-context-tabs button {
+    padding-inline: var(--space-2);
+  }
+
+  .intelligence-experience {
+    grid-template-columns: 1fr;
+  }
+
+  .intelligence-question {
+    border-right: 0;
+    border-bottom: 1px solid var(--color-dark-raised);
+  }
+
+  .intelligence-question blockquote {
+    max-width: 20ch;
+  }
+
+  .home-intelligence__cta {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .intelligence-context-tabs button {
+    transition: none;
+  }
+}
+
 .final-cta {
   padding-block: var(--section-space);
   background: var(--color-dark);
