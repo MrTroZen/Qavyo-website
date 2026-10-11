@@ -324,11 +324,12 @@
 .pricing-connected__grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1px; background: var(--color-border); }
 .connected-block { display: flex; flex-direction: column; min-width: 0; padding: clamp(1.4rem,2.2vw,2rem); background: #fff; transition: background var(--transition-fast); }
 .connected-block:hover { background: #fbfcfe; }
-.connected-block__head { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-4); padding-bottom: var(--space-3); border-bottom: 1px solid var(--color-border); }
+.connected-block__head { margin-bottom: var(--space-4); padding-bottom: var(--space-4); border-bottom: 1px solid var(--color-border); }
 .connected-block__tag { margin: 0; font-size: .76rem; font-weight: 800; letter-spacing: .1em; color: var(--color-ink); text-transform: uppercase; }
+.connected-block__head p { margin: .65rem 0 0; color: var(--color-ink); font-size: 1.05rem; font-weight: 700; line-height: 1.35; }
 .connected-block--understand .connected-block__tag { color: var(--color-brand); }
-.connected-block__items { display: grid; gap: .65rem; margin: 0; padding: 0; list-style: none; color: var(--color-text); font-size: .92rem; font-weight: 550; }
-.connected-block__items li { display: flex; align-items: center; gap: .55rem; }
+.connected-block__items { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0; padding: 0; list-style: none; color: var(--color-text); font-size: .78rem; font-weight: 550; }
+.connected-block__items li { display: flex; align-items: center; gap: .45rem; padding: .35rem .5rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-canvas); }
 .connected-block__items li::before { content: ""; display: inline-block; width: .35rem; height: .35rem; border-radius: 50%; background: var(--color-border-strong); flex: 0 0 auto; }
 .connected-block--understand .connected-block__items li:last-child::before { background: var(--color-brand); }
 .connected-block__highlight { color: var(--color-brand); font-weight: 750; }
@@ -348,35 +349,30 @@
 .qi-brand-pill { display: flex; align-items: center; gap: .5rem; color: #fff; font-size: .88rem; font-weight: 700; }
 .qi-brand-pill strong { color: #fff; }
 .qi-status-badge { color: #8db4ff; font-size: .75rem; font-weight: 600; }
-.qi-metric-summary { margin-bottom: var(--space-5); }
-.qi-metric-pill { display: inline-block; padding: .45rem .85rem; border-radius: var(--radius-sm); background: rgb(178 59 66 / .16); border: 1px solid rgb(178 59 66 / .35); color: #ffb4b8; font-size: .95rem; font-weight: 700; }
-.qi-causes-list { display: grid; gap: var(--space-3); margin: 0 0 var(--space-6); padding: 0; list-style: none; }
-.qi-causes-list li { display: grid; grid-template-columns: 4.5rem 1fr; gap: var(--space-4); align-items: center; padding: var(--space-4); border: 1px solid rgb(255 255 255 / .1); border-radius: var(--radius-md); background: rgb(255 255 255 / .03); }
+.qi-metric-summary { display: flex; align-items: baseline; justify-content: space-between; gap: var(--space-4); margin-bottom: var(--space-5); }
+.qi-metric-summary > strong { color: #9fb1bf; font-size: .72rem; letter-spacing: .08em; text-transform: uppercase; }
+.qi-metric-pill { display: inline-block; color: #fff; font-size: 1.05rem; font-weight: 750; }
+.qi-causes-list { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: var(--space-3); margin: 0 0 var(--space-5); padding: 0; list-style: none; }
+.qi-causes-list li { display: grid; align-content: start; gap: var(--space-3); min-width: 0; padding: var(--space-4); border: 1px solid rgb(255 255 255 / .1); border-radius: var(--radius-md); background: rgb(255 255 255 / .03); }
 .qi-cause-marker { display: grid; place-items: center; padding: .35rem .45rem; border-radius: var(--radius-sm); font-size: .8rem; font-weight: 800; }
 .qi-cause-marker--stat { background: rgb(47 107 219 / .2); border: 1px solid rgb(118 167 255 / .4); color: #8db4ff; }
-.qi-cause-marker--alert { background: rgb(178 59 66 / .25); border: 1px solid rgb(178 59 66 / .5); color: #ff9ca1; font-size: .68rem; text-transform: uppercase; letter-spacing: .05em; }
+.qi-cause-marker--alert { background: rgb(47 107 219 / .2); border: 1px solid rgb(118 167 255 / .4); color: #8db4ff; font-size: .68rem; text-transform: uppercase; letter-spacing: .05em; }
 .qi-cause-content strong { display: block; color: #fff; font-size: .95rem; font-weight: 650; }
-.qi-cause-content small { display: block; margin-top: .15rem; color: #9fb1bf; font-size: .78rem; }
+.qi-cause-content small { display: block; margin-bottom: .3rem; color: #9fb1bf; font-size: .75rem; }
 .qi-recommendation-panel { padding: var(--space-5); border: 1px solid rgb(47 107 219 / .35); border-radius: var(--radius-md); background: rgb(47 107 219 / .08); }
 .qi-recommendation-panel__head { display: flex; align-items: center; gap: .5rem; margin-bottom: var(--space-3); color: #8db4ff; font-size: .85rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
-.qi-spark-icon { font-size: 1.1rem; color: #76a7ff; }
 .qi-recommendation-panel__list { display: grid; gap: .45rem; margin: 0; padding: 0 0 0 1.25rem; color: #dbe4ea; font-size: .9rem; font-weight: 550; }
-.pricing-qi-levels { margin-top: var(--space-8); padding-top: var(--space-7); border-top: 1px solid rgb(255 255 255 / .14); }
-.pricing-qi-levels__header { margin-bottom: var(--space-6); text-align: center; }
-.pricing-qi-levels__header h3 { color: #fff; font-size: clamp(1.8rem,3vw,2.4rem); letter-spacing: -.03em; margin-bottom: var(--space-2); }
-.pricing-qi-levels__header p { color: #9fb1bf; font-size: var(--text-base); margin: 0; }
-.pricing-qi-levels__grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--space-5); align-items: stretch; margin-bottom: var(--space-7); }
-.qi-level-card { display: flex; flex-direction: column; padding: var(--space-6); border: 1px solid rgb(255 255 255 / .16); border-radius: var(--radius-md); background: rgb(255 255 255 / .035); }
-.qi-level-card--featured { border-color: var(--color-brand); background: rgb(47 107 219 / .1); box-shadow: 0 0 0 1px var(--color-brand); }
-.qi-level-card__head { margin-bottom: var(--space-5); min-height: 4.5rem; }
-.qi-level-card__badge-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: .25rem; }
+.pricing-qi-levels { margin-top: var(--space-6); padding-top: var(--space-6); border-top: 1px solid rgb(255 255 255 / .14); }
+.pricing-qi-levels__grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); }
+.qi-level-card { padding: var(--space-5); border-left: 1px solid rgb(255 255 255 / .16); }
+.qi-level-card:first-child { border-left: 0; }
+.qi-level-card--featured { background: rgb(47 107 219 / .06); }
+.qi-level-card__head { margin-bottom: var(--space-4); }
 .qi-level-card__plan { color: #8db4ff; font-size: .75rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
-.qi-level-card__badge { padding: .25rem .5rem; border-radius: var(--radius-sm); background: var(--color-brand); color: #fff; font-size: .62rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
-.qi-level-card h4 { color: #fff; font-size: 1.25rem; margin: .3rem 0 0; letter-spacing: -.02em; }
-.qi-level-card__list { display: grid; gap: .6rem; margin: 0; padding: 0; list-style: none; color: #d0dbe2; font-size: .88rem; }
+.qi-level-card h4 { color: #fff; font-size: 1.05rem; margin: .3rem 0 0; letter-spacing: -.02em; }
+.qi-level-card__list { display: grid; gap: .45rem; margin: 0; padding: 0; list-style: none; color: #d0dbe2; font-size: .8rem; }
 .qi-level-card__list li { display: flex; align-items: center; gap: .55rem; }
 .qi-level-card__list li::before { content: "•"; color: var(--color-brand); font-weight: 800; font-size: 1.1rem; }
-.pricing-qi-cta { text-align: center; }
 
 /* Section: Compact plan comparison */
 .pricing-compare { border-top: 1px solid var(--color-border); background: #fff; }
@@ -505,9 +501,11 @@
   .pricing-plan-trial { grid-template-columns: 1fr; gap: var(--space-4); padding: var(--space-5); }
   .pricing-plan-trial__label { padding: 0 0 var(--space-4); border-right: 0; border-bottom: 1px solid var(--color-border); }
   .pricing-plan-trial__copy { padding-left: 0; }
-  .qi-causes-list li { grid-template-columns: 1fr; gap: .35rem; }
+  .qi-causes-list { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .qi-cause-marker { justify-self: start; }
   .pricing-qi-levels__grid { grid-template-columns: 1fr; }
+  .qi-level-card,.qi-level-card:first-child { border-top: 1px solid rgb(255 255 255 / .16); border-left: 0; }
+  .qi-level-card:first-child { border-top: 0; }
   .compare-head { display: none; }
   .compare-row { grid-template-columns: 1fr; padding: var(--space-4); border-bottom: 1px solid var(--color-border); }
   .compare-row__name { padding: 0 0 var(--space-3); font-size: .95rem; font-weight: 700; }
@@ -587,6 +585,8 @@
   .qi-query-text { font-size: 1.05rem; }
   .qi-diagnostic-card { padding: var(--space-4); }
   .qi-query-card { padding: var(--space-4); }
+  .qi-metric-summary { align-items: flex-start; flex-direction: column; gap: .4rem; }
+  .qi-causes-list { grid-template-columns: 1fr; }
   .pricing-product { overflow: hidden; }
   .pricing-costs__header h2,.pricing-faq__header h2 { font-size: clamp(2rem,7vw,2.5rem); }
   .pricing-final h2 { font-size: clamp(2.2rem,7.5vw,2.8rem); }
