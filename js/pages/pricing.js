@@ -5,7 +5,7 @@
   const billingSection = document.querySelector("[data-billing-period]");
   const billingToggles = Array.from(document.querySelectorAll("[data-billing-toggle]"));
   const setBillingPeriod = (period) => {
-    if (!billingSection || !["monthly", "annual"].includes(period)) return;
+    if (!billingSection || !["monthly", "annual", "lifetime"].includes(period)) return;
     billingSection.dataset.billingPeriod = period;
     document.documentElement.dataset.billingPeriod = period;
     billingToggles.forEach((button) => button.setAttribute("aria-pressed", String(button.dataset.billingToggle === period)));
@@ -14,6 +14,15 @@
     });
     document.querySelectorAll("[data-annual-only]").forEach((element) => {
       element.hidden = period !== "annual";
+    });
+    document.querySelectorAll("[data-lifetime-only]").forEach((element) => {
+      element.hidden = period !== "lifetime";
+    });
+    document.querySelectorAll("[data-recurring-only]").forEach((element) => {
+      element.hidden = period === "lifetime";
+    });
+    document.querySelectorAll(".pricing-plan > .button").forEach((element) => {
+      element.hidden = period === "lifetime";
     });
     document.dispatchEvent(new CustomEvent("qavyo:billing-change", { detail: { period } }));
   };

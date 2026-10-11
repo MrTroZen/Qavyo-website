@@ -403,23 +403,35 @@
           </svg>
           <div class="pricing-billing__header">
             <div class="pricing-billing__copy">
-              <h2 id="pricing-billing-heading">Simple plans.<br>Better value yearly.</h2>
-              <p>Pay monthly for flexibility, or pay annually and save 50% on your first year.</p>
+              <h2 id="pricing-billing-heading">One system to run your entire restaurant.</h2>
+              <p>POS, kitchen, ordering, inventory, customers, staff and intelligence &mdash; all connected.</p>
+              <ul class="pricing-billing__reassurance" aria-label="Plan reassurance">
+                <li>Full Qavyo for 30 days</li>
+                <li>Use your own devices</li>
+                <li>No setup fee</li>
+              </ul>
             </div>
             <div class="pricing-billing__control">
               <div class="pricing-billing__toggle" role="group" aria-label="Choose billing period">
                 <button type="button" data-billing-toggle="monthly" aria-pressed="true">Monthly</button>
-                <button type="button" data-billing-toggle="annual" aria-pressed="false"><span>Annual</span><small>Save 50% first year</small></button>
+                <button type="button" data-billing-toggle="annual" aria-pressed="false"><span>Yearly</span><small>Save 50% first year</small></button>
+                <button type="button" data-billing-toggle="lifetime" aria-pressed="false"><span>Founding lifetime</span><small>Limited</small></button>
               </div>
-              <p>Annual prices are monthly equivalents for the first year.<br>Payment is made annually upfront.</p>
             </div>
+          </div>
+          <div class="pricing-lifetime-intro" data-lifetime-only hidden>
+            <span>Limited founding offer</span>
+            <h3>Founding Lifetime</h3>
+            <p>Pay once. Keep Qavyo Core.</p>
+            <small>Limited founding availability.</small>
           </div>
           <div class="pricing-plan-grid">
             <article class="pricing-plan">
               <div class="pricing-plan__head"><h3>Starter</h3><p>Everything you need to run one restaurant.</p></div>
               <div class="pricing-plan__rate">
-                <p class="pricing-price"><span>&pound;</span><b data-monthly-only>29</b><b data-annual-only hidden>14.50</b><small>/month</small></p>
-                <div class="pricing-plan__annual-detail" data-annual-only hidden><span>Monthly equivalent &middot; first year only</span><strong>&pound;174 billed for your first year</strong><small>Paid annually upfront. Renews at &pound;348/year after year one.</small></div>
+                <div class="pricing-plan__mode" data-monthly-only><p class="pricing-price"><span>&pound;</span><b>29</b><small>/month</small></p></div>
+                <div class="pricing-plan__mode pricing-plan__annual-detail" data-annual-only hidden><span>Save &pound;174 first year</span><p class="pricing-plan__anchor"><s>&pound;348</s> <strong>&pound;174/year</strong></p><p class="pricing-plan__equivalent">Equivalent to &pound;14.50/month for Year 1</p><strong>Renews at &pound;261/year from Year 2</strong><small>Paid annually upfront. 25% annual saving every year after your first year.</small></div>
+                <div class="pricing-plan__mode pricing-plan__lifetime-detail" data-lifetime-only hidden><span>Founding lifetime</span><p class="pricing-price"><span>&pound;</span><b>999</b><small>once</small></p><p>Qavyo Starter Core for the lifetime of the qualifying account/service, subject to terms.</p><dl><div><dt>5-year monthly cost</dt><dd>&pound;1,740</dd></div><div><dt>Founding Lifetime</dt><dd>&pound;999 once</dd></div></dl><a class="button button--secondary button--full" href="#get-started">Claim Starter Lifetime <span aria-hidden="true">&rarr;</span></a></div>
               </div>
               <a class="button button--secondary button--full" href="#get-started">Start 30 Days Free <span aria-hidden="true">→</span></a>
               <div class="pricing-plan__features"><h4>Run one restaurant</h4><ul><li><svg aria-hidden="true"><use href="#pricing-icon-monitor"/></svg>POS + Kitchen Display</li><li><svg aria-hidden="true"><use href="#pricing-icon-globe"/></svg>Website + Online Ordering</li><li><svg aria-hidden="true"><use href="#pricing-icon-calendar"/></svg>Reservations + CRM</li><li><svg aria-hidden="true"><use href="#pricing-icon-box"/></svg>Inventory + Recipes</li><li><svg aria-hidden="true"><use href="#pricing-icon-cart"/></svg>Purchasing + Suppliers</li><li><svg aria-hidden="true"><use href="#pricing-icon-chart"/></svg>Core Reporting</li><li class="pricing-plan__intelligence"><svg aria-hidden="true"><use href="#pricing-icon-sparkles"/></svg>Qavyo Intelligence Essentials</li></ul></div>
@@ -428,23 +440,30 @@
               <p class="pricing-plan__badge">Most popular</p>
               <div class="pricing-plan__head"><h3>Growth</h3><p>For restaurants ready to grow, automate and manage more.</p></div>
               <div class="pricing-plan__rate">
-                <p class="pricing-price"><span>&pound;</span><b data-monthly-only>79</b><b data-annual-only hidden>39.50</b><small>/month</small></p>
-                <div class="pricing-plan__annual-detail" data-annual-only hidden><span>Monthly equivalent &middot; first year only</span><strong>&pound;474 billed for your first year</strong><small>Paid annually upfront. Renews at &pound;948/year after year one.</small></div>
+                <div class="pricing-plan__mode" data-monthly-only><p class="pricing-price"><span>&pound;</span><b>79</b><small>/month</small></p></div>
+                <div class="pricing-plan__mode pricing-plan__annual-detail" data-annual-only hidden><span>Save &pound;474 first year</span><p class="pricing-plan__anchor"><s>&pound;948</s> <strong>&pound;474/year</strong></p><p class="pricing-plan__equivalent">Equivalent to &pound;39.50/month for Year 1</p><strong>Renews at &pound;711/year from Year 2</strong><small>Paid annually upfront. 25% annual saving every year after your first year.</small></div>
+                <div class="pricing-plan__mode pricing-plan__lifetime-detail" data-lifetime-only hidden><span>Founding lifetime</span><p class="pricing-price"><span>&pound;</span><b>2,499</b><small>once</small></p><p>Qavyo Growth Core for the lifetime of the qualifying account/service, subject to terms.</p><dl><div><dt>5-year monthly cost</dt><dd>&pound;4,740</dd></div><div><dt>Founding Lifetime</dt><dd>&pound;2,499 once</dd></div></dl><a class="button button--primary button--full" href="#get-started">Claim Growth Lifetime <span aria-hidden="true">&rarr;</span></a></div>
               </div>
               <a class="button button--primary button--full" href="#get-started">Start 30 Days Free <span aria-hidden="true">→</span></a>
               <div class="pricing-plan__features"><h4>Everything in Starter, plus:</h4><ul><li><svg aria-hidden="true"><use href="#pricing-icon-heart"/></svg>Loyalty + Customer Growth</li><li><svg aria-hidden="true"><use href="#pricing-icon-users"/></svg>Staff Management + Scheduling</li><li><svg aria-hidden="true"><use href="#pricing-icon-clock"/></svg>Time &amp; Attendance</li><li><svg aria-hidden="true"><use href="#pricing-icon-wallet"/></svg>Payroll</li><li><svg aria-hidden="true"><use href="#pricing-icon-transfer"/></svg>Stock Transfers</li><li><svg aria-hidden="true"><use href="#pricing-icon-pin"/></svg>Multi-location Management</li><li><svg aria-hidden="true"><use href="#pricing-icon-utensils"/></svg>Central Menu Management</li><li><svg aria-hidden="true"><use href="#pricing-icon-chart"/></svg>Advanced Reporting</li><li class="pricing-plan__intelligence"><svg aria-hidden="true"><use href="#pricing-icon-sparkles"/></svg>Full Qavyo Intelligence</li></ul></div>
             </article>
-            <article class="pricing-plan">
+            <article class="pricing-plan pricing-plan--business">
               <div class="pricing-plan__head"><h3>Business</h3><p>For restaurant groups and franchises.</p></div>
               <div class="pricing-plan__rate">
-                <p class="pricing-price"><span>&pound;</span><b data-monthly-only>149</b><b data-annual-only hidden>74.50</b><small>/month</small></p>
-                <div class="pricing-plan__annual-detail" data-annual-only hidden><span>Monthly equivalent &middot; first year only</span><strong>&pound;894 billed for your first year</strong><small>Paid annually upfront. Renews at &pound;1,788/year after year one.</small></div>
+                <div class="pricing-plan__mode" data-monthly-only><p class="pricing-price"><span>&pound;</span><b>149</b><small>/month</small></p></div>
+                <div class="pricing-plan__mode pricing-plan__annual-detail" data-annual-only hidden><span>Save &pound;894 first year</span><p class="pricing-plan__anchor"><s>&pound;1,788</s> <strong>&pound;894/year</strong></p><p class="pricing-plan__equivalent">Equivalent to &pound;74.50/month for Year 1</p><strong>Renews at &pound;1,341/year from Year 2</strong><small>Paid annually upfront. 25% annual saving every year after your first year.</small></div>
+                <div class="pricing-plan__mode pricing-plan__lifetime-detail" data-lifetime-only hidden><span>Founding lifetime</span><p class="pricing-price pricing-price--custom"><b>Custom</b></p><p>Limited founding agreements for qualifying restaurant groups.</p><a class="button button--on-dark button--full" href="#get-started">Talk to Qavyo <span aria-hidden="true">&rarr;</span></a></div>
               </div>
               <a class="button button--secondary button--full" href="#get-started">Start 30 Days Free <span aria-hidden="true">→</span></a>
               <div class="pricing-plan__features"><h4>Everything in Growth, plus:</h4><ul><li><svg aria-hidden="true"><use href="#pricing-icon-building"/></svg>Advanced Multi-site Controls</li><li><svg aria-hidden="true"><use href="#pricing-icon-box"/></svg>Franchise Management</li><li><svg aria-hidden="true"><use href="#pricing-icon-chart"/></svg>Group Reporting</li><li><svg aria-hidden="true"><use href="#pricing-icon-pin"/></svg>Location Benchmarking</li><li><svg aria-hidden="true"><use href="#pricing-icon-shield"/></svg>Regional Roles &amp; Permissions</li><li class="pricing-plan__intelligence"><svg aria-hidden="true"><use href="#pricing-icon-sparkles"/></svg>Group-level Intelligence</li><li><svg aria-hidden="true"><use href="#pricing-icon-headphones"/></svg>Priority Onboarding &amp; Support</li></ul></div>
             </article>
           </div>
-          <aside class="pricing-plan-trial" aria-label="Full Qavyo trial access">
+          <aside class="pricing-lifetime-note" data-lifetime-only hidden>
+            <strong>What Founding Lifetime includes</strong>
+            <p>Lifetime applies to the included Qavyo Core software for the purchased plan, subject to the lifetime-offer terms.</p>
+            <p>Hardware, payment processing, SMS/communication usage, third-party paid services, separately priced integrations, future products outside the purchased plan, and other variable-cost services may be charged separately.</p>
+          </aside>
+          <aside class="pricing-plan-trial" aria-label="Full Qavyo trial access" data-recurring-only>
             <div class="pricing-plan-trial__label">
               <svg aria-hidden="true"><use href="#pricing-icon-unlock"/></svg>
               <p><span>30 days &middot; Full Qavyo</span><strong>Everything unlocked</strong></p>
