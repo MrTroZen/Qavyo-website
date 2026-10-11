@@ -187,8 +187,8 @@ The SMS Marketing final CTA (`.sms-cta`) provides authoritative closure to the c
 
 The Pricing Plan Grid (`.pricing-plan-grid`) presents the three tiers (Starter, Growth, Business) across Monthly, Yearly, and Founding Lifetime states:
 - **Monthly**: Clean primary rate display (`.pricing-price`) with consistent card baseline and single bottom CTA.
-- **Yearly**: Displays the promotional first-year monthly equivalent against the standard monthly rate (`.pricing-plan__anchor`) while clearly stating that billing is annual and upfront. The savings pill (`.pricing-annual-saving-badge`: `↓ Save £.../month`) and Year 2 renewal both use monthly-equivalent figures, avoiding large annual totals while preserving transparent billing terms.
-- **Founding Lifetime**: Compact top scarcity banner (`.pricing-lifetime-banner`: `Only 20 restaurants`) with clear one-time prices, concise Core descriptions, and a single centered terms disclaimer below the grid.
+- **Yearly**: Displays the promotional first-year monthly equivalent against the standard monthly rate (`.pricing-plan__anchor`) while clearly stating that billing is annual and upfront. The savings pill (`.pricing-annual-saving-badge`: `↓ Save £.../year`) emphasizes the total first-year saving, while the Year 2 renewal remains a monthly-equivalent figure for easy comparison.
+- **Founding Lifetime**: Compact top scarcity banner (`.pricing-lifetime-banner`: `Only 20 restaurants`) with clear one-time prices, concise Core descriptions, a highlighted five-year saving callout (`.pricing-plan__lifetime-value`), and a single centered terms disclaimer below the grid.
 
 ## Pricing Transparency, FAQ, and Final Conversion Section
 
