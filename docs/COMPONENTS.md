@@ -83,6 +83,10 @@ The homepage Why Qavyo section (`.home-why`) uses the established segmented-cont
 
 The homepage Pricing overview (`.home-pricing`) is a compact two-path preview using the Pricing page segmented-control language. Restaurant Software presents only the confirmed monthly Starter, Growth, and Business rates, their canonical short descriptions, and the qualified 30-day Full Qavyo software message before linking to `pricing.html#plans`. Business Software communicates the approved singular-plan structure and current Retail / Farm family scope without displaying an unapproved price; its future pricing link remains on the safe prototype-link behavior until a canonical destination exists. The selector supports click, tap, arrow keys, Home, and End through `js/pages/home.js`, with stacked, immediately visible Restaurant prices on mobile.
 
+## Homepage Final CTA
+
+The homepage final conversion section (`.final-cta`) is the dark handoff into the public footer. Its accessible Software / Intelligence / Business Solutions selector presents one concise path at a time: Software returns to the homepage Product Families overview with an optional Pricing link, Intelligence routes to `intelligence.html`, and Business Solutions routes to `solutions.html`. Each state uses a minimal visual cue rather than repeating earlier product demonstrations. The selector supports click, tap, arrow keys, Home, and End through `js/pages/home.js`; mobile places the visual before the selected message and actions.
+
 ## Operational Flow Diagram
 
 `.rst-flow` visually connects core restaurant workflows (`ORDER → KITCHEN → INVENTORY → CUSTOMER → REPORTING → INTELLIGENCE`) horizontally on desktop and seamlessly reflows on tablet and mobile without horizontal overflow.

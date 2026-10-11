@@ -1577,25 +1577,34 @@
       <!-- ═══════════════════════════════════════════════════════════════
            Final Homepage CTA section
            ═══════════════════════════════════════════════════════════════ -->
-      <section class="final-cta" aria-labelledby="final-cta-title">
-        <div class="container container--narrow">
-          <div class="final-cta__content">
-            <p class="eyebrow eyebrow--on-dark"><span class="signal-dot signal-dot--light" aria-hidden="true"></span>Get started with Qavyo</p>
-            <h2 id="final-cta-title" class="final-cta__title">Ready to see what Qavyo can do for your business?</h2>
-            <p class="final-cta__lead">Experience connected operations and Qavyo Intelligence with 30 days of full software access, then choose the plan that fits.</p>
-            <div class="final-cta__actions">
-              <a class="button button--primary" href="#prototype-navigation" data-prototype-link>
-                Start 30 Days Free <span aria-hidden="true">→</span>
-              </a>
-              <a class="button button--secondary-dark" href="#prototype-navigation" data-prototype-link>
-                Talk to Sales
-              </a>
+      <section class="final-cta" aria-labelledby="final-cta-title" data-final-cta>
+        <div class="container">
+          <header class="final-cta__header">
+            <h2 id="final-cta-title">Ready to move your business forward?</h2>
+            <p>Choose where you want to start with Qavyo.</p>
+          </header>
+
+          <div class="final-cta__toggle-wrap">
+            <div class="final-cta__toggle" role="tablist" aria-label="Choose where to start with Qavyo">
+              <button type="button" id="final-tab-software" role="tab" aria-selected="true" aria-controls="final-panel-software" tabindex="0" data-final-tab="software">Software</button>
+              <button type="button" id="final-tab-intelligence" role="tab" aria-selected="false" aria-controls="final-panel-intelligence" tabindex="-1" data-final-tab="intelligence">Intelligence</button>
+              <button type="button" id="final-tab-solutions" role="tab" aria-selected="false" aria-controls="final-panel-solutions" tabindex="-1" data-final-tab="solutions">Business Solutions</button>
             </div>
-            <div class="final-cta__footnote">
-              <a class="text-link text-link--on-dark" href="pricing.html">
-                View Pricing <span aria-hidden="true">→</span>
-              </a>
-            </div>
+          </div>
+
+          <div class="final-cta__panel" id="final-panel-software" role="tabpanel" aria-labelledby="final-tab-software" data-final-panel="software">
+            <div class="final-cta__copy"><p>Software</p><h3>Start with the software built for your business.</h3><span>Choose Restaurant, Retail or Farm software and explore the system designed around how that business operates.</span><div><a class="button button--primary" href="#product-families">Explore Qavyo Software <span aria-hidden="true">&rarr;</span></a><a class="text-link text-link--on-dark" href="pricing.html">View Pricing <span aria-hidden="true">&rarr;</span></a></div></div>
+            <div class="final-cta__visual final-cta__visual--software" role="img" aria-label="Qavyo software for restaurant, retail, and farm businesses."><div aria-hidden="true"><strong>Qavyo</strong><i></i><span>Restaurant</span><span>Retail</span><span>Farm</span></div></div>
+          </div>
+
+          <div class="final-cta__panel" id="final-panel-intelligence" role="tabpanel" aria-labelledby="final-tab-intelligence" data-final-panel="intelligence" hidden>
+            <div class="final-cta__copy"><p>Qavyo Intelligence</p><h3>Understand what&rsquo;s really happening.</h3><span>See how Qavyo Intelligence can help explain what changed, why it matters and what deserves attention next.</span><div><a class="button button--primary" href="intelligence.html">Explore Qavyo Intelligence <span aria-hidden="true">&rarr;</span></a></div></div>
+            <div class="final-cta__visual final-cta__visual--intelligence" role="img" aria-label="Qavyo Intelligence answers what changed, why it matters, and what deserves attention next."><div aria-hidden="true"><small>Qavyo Intelligence</small><ol><li><span>01</span><strong>What changed?</strong></li><li><span>02</span><strong>Why?</strong></li><li><span>03</span><strong>What next?</strong></li></ol></div></div>
+          </div>
+
+          <div class="final-cta__panel" id="final-panel-solutions" role="tabpanel" aria-labelledby="final-tab-solutions" data-final-panel="solutions" hidden>
+            <div class="final-cta__copy"><p>Business Solutions</p><h3>Help more customers find and return to your business.</h3><span>Explore Qavyo services across websites, search, social, SMS and email.</span><div><a class="button button--primary" href="solutions.html">Explore Business Solutions <span aria-hidden="true">&rarr;</span></a></div></div>
+            <div class="final-cta__visual final-cta__visual--solutions" role="img" aria-label="Business growth journey from search to website to customer to return, supported by social, SMS, and email."><div aria-hidden="true"><ol><li>Search</li><li>Website</li><li>Customer</li><li>Return</li></ol><p><span>Social</span><span>SMS</span><span>Email</span></p></div></div>
           </div>
         </div>
       </section>

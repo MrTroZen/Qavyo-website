@@ -129,6 +129,48 @@
 })();
 
 (() => {
+  const finalCta = document.querySelector("[data-final-cta]");
+
+  if (!finalCta) {
+    return;
+  }
+
+  const tabs = [...finalCta.querySelectorAll("[data-final-tab]")];
+  const panels = [...finalCta.querySelectorAll("[data-final-panel]")];
+
+  const selectPath = (tab) => {
+    const path = tab.dataset.finalTab;
+
+    tabs.forEach((item) => {
+      const selected = item === tab;
+      item.setAttribute("aria-selected", String(selected));
+      item.tabIndex = selected ? 0 : -1;
+    });
+
+    panels.forEach((panel) => {
+      panel.hidden = panel.dataset.finalPanel !== path;
+    });
+  };
+
+  tabs.forEach((tab, index) => {
+    tab.addEventListener("click", () => selectPath(tab));
+    tab.addEventListener("keydown", (event) => {
+      let nextIndex;
+
+      if (event.key === "ArrowRight" || event.key === "ArrowDown") nextIndex = (index + 1) % tabs.length;
+      if (event.key === "ArrowLeft" || event.key === "ArrowUp") nextIndex = (index - 1 + tabs.length) % tabs.length;
+      if (event.key === "Home") nextIndex = 0;
+      if (event.key === "End") nextIndex = tabs.length - 1;
+      if (nextIndex === undefined) return;
+
+      event.preventDefault();
+      tabs[nextIndex].focus();
+      selectPath(tabs[nextIndex]);
+    });
+  });
+})();
+
+(() => {
   const showcase = document.querySelector("[data-solutions-showcase]");
 
   if (!showcase) {
