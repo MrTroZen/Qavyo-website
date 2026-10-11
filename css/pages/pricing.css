@@ -183,6 +183,25 @@
 .pricing-plan__features li > svg { width: 1rem; height: 1rem; margin-top: .08rem; fill: none; stroke: var(--color-muted); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 .pricing-plan__features .pricing-plan__intelligence > svg { stroke: var(--color-brand); }
 .pricing-plan__features .pricing-plan__intelligence { color: var(--color-ink); font-weight: 700; }
+.pricing-plan__features > h4 { margin-bottom: var(--space-5); }
+.pricing-feature-group + .pricing-feature-group { margin-top: var(--space-6); }
+.pricing-feature-group h5,
+.pricing-feature-intelligence h5,
+.pricing-intelligence-group h6 { margin: 0 0 var(--space-3); color: var(--color-muted); font-size: .7rem; font-weight: 800; letter-spacing: .07em; line-height: 1.4; text-transform: uppercase; }
+.pricing-feature-group ul,
+.pricing-feature-intelligence ul { gap: .7rem; }
+.pricing-feature-intelligence { margin-top: var(--space-7); padding-top: var(--space-6); border-top: 1px solid var(--color-border); }
+.pricing-feature-intelligence__heading { display: grid; grid-template-columns: 1.3rem minmax(0,1fr); gap: .65rem; align-items: start; margin-bottom: var(--space-5); }
+.pricing-feature-intelligence__heading > svg { width: 1.1rem; height: 1.1rem; margin-top: .05rem; fill: none; stroke: var(--color-brand); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.pricing-feature-intelligence__heading h5 { margin-bottom: .35rem; color: var(--color-ink); font-size: .78rem; letter-spacing: .04em; }
+.pricing-feature-intelligence__heading p { margin: 0; color: var(--color-text); font-size: .78rem; line-height: 1.5; }
+.pricing-intelligence-group + .pricing-intelligence-group { margin-top: var(--space-5); }
+.pricing-intelligence-group h6 { margin-bottom: var(--space-3); color: var(--color-brand); font-size: .64rem; }
+.pricing-plan--business .pricing-feature-group h5 { color: #9fb1bf; }
+.pricing-plan--business .pricing-feature-intelligence { border-color: rgb(255 255 255 / .18); }
+.pricing-plan--business .pricing-feature-intelligence__heading h5 { color: #fff; }
+.pricing-plan--business .pricing-feature-intelligence__heading p { color: #cbd7df; }
+.pricing-plan--business .pricing-intelligence-group h6 { color: #8db4ff; }
 .pricing-plan-trial { display: grid; grid-template-columns: minmax(13rem,.55fr) minmax(0,1.45fr); align-items: center; margin-top: var(--space-5); padding: var(--space-5) var(--space-6); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); }
 .pricing-plan-trial__label { display: grid; grid-template-columns: 1.5rem minmax(0,1fr); gap: var(--space-4); align-items: center; padding-right: var(--space-6); border-right: 1px solid var(--color-border); }
 .pricing-plan-trial__label svg { width: 1.5rem; height: 1.5rem; fill: none; stroke: var(--color-brand); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
