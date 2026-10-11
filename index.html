@@ -306,7 +306,7 @@
               <a class="button button--primary" href="#product-families">Explore Qavyo</a>
               <a class="button button--secondary" href="pricing.html">View pricing</a>
             </div>
-            <p class="home-hero__categories">Restaurant &middot; Retail &middot; Farm &middot; Intelligence &middot; Growth Solutions</p>
+            <p class="home-hero__categories"><span>Restaurant</span> <span class="home-hero__cat-sep" aria-hidden="true">&middot;</span> <span>Retail</span> <span class="home-hero__cat-sep" aria-hidden="true">&middot;</span> <span>Farm</span> <span class="home-hero__cat-sep" aria-hidden="true">&middot;</span> <span>Intelligence</span> <span class="home-hero__cat-sep" aria-hidden="true">&middot;</span> <span>Growth Solutions</span></p>
           </div>
 
           <div class="hero-ecosystem" id="qavyo-ecosystem" role="region" aria-label="Overview of Qavyo software, intelligence, and growth solutions">
@@ -340,8 +340,8 @@
                   <!-- Primary: Restaurant Operational Card -->
                   <div class="hero-card hero-card--restaurant">
                     <div class="hero-card__header">
-                      <span class="hero-card__badge hero-card__badge--restaurant">
-                        <svg class="hero-card__icon" aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
+                      <span class="hero-card__badge">
+                        <svg class="hero-card__icon" aria-hidden="true" width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 8h1a4 4 0 0 1 0 8h-1"></path><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"></path><line x1="6" y1="1" x2="6" y2="4"></line><line x1="10" y1="1" x2="10" y2="4"></line><line x1="14" y1="1" x2="14" y2="4"></line></svg>
                         Restaurant
                       </span>
                       <span class="hero-badge-status hero-badge-status--amber">Preparing</span>
@@ -367,26 +367,24 @@
                     </div>
                   </div>
 
-                  <!-- Layered: Retail Operational Card -->
-                  <div class="hero-card hero-card--retail">
-                    <div class="hero-card__header">
-                      <span class="hero-card__badge hero-card__badge--retail">
-                        <svg class="hero-card__icon" aria-hidden="true" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 2 3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4Z"></path><path d="M3 6h18"></path><path d="M16 10a4 4 0 0 1-8 0"></path></svg>
-                        Retail
-                      </span>
-                      <span class="hero-badge-status hero-badge-status--green">Sale complete</span>
+                  <!-- Connected Operations: Retail & Farm -->
+                  <div class="hero-card hero-card--multi-sector">
+                    <div class="hero-sector-row">
+                      <span class="hero-sector-tag">Retail</span>
+                      <div class="hero-sector-info">
+                        <strong>Sale complete</strong>
+                        <small>Linen Overshirt &middot; 1 left</small>
+                      </div>
+                      <span class="hero-badge-status hero-badge-status--green">Synced</span>
                     </div>
-                    <div class="hero-card__stock-note">
-                      <strong>Linen Overshirt &middot; Olive / M</strong>
-                      <p>Stock updated &middot; 1 item remaining</p>
-                    </div>
-                  </div>
-
-                  <!-- Restrained Farm Surface -->
-                  <div class="hero-card hero-card--farm">
-                    <span class="hero-farm-indicator" aria-hidden="true"></span>
-                    <div class="hero-farm-copy">
-                      <strong>Farm</strong> &middot; <span>House 02 active</span>
+                    <div class="hero-sector-divider" aria-hidden="true"></div>
+                    <div class="hero-sector-row">
+                      <span class="hero-sector-tag">Farm</span>
+                      <div class="hero-sector-info">
+                        <strong>House 02 active</strong>
+                        <small>Climate &amp; feed synced</small>
+                      </div>
+                      <span class="hero-badge-status hero-badge-status--green">Normal</span>
                     </div>
                   </div>
                 </div>
@@ -443,9 +441,13 @@
                     <span class="hero-column__title">Solutions &middot; Grow</span>
                   </div>
 
-                  <div class="hero-growth-flow">
-                    <!-- Search snippet -->
-                    <div class="hero-card hero-card--search">
+                  <div class="hero-card hero-growth-flow">
+                    <!-- Step 1: Search Discovery -->
+                    <div class="hero-growth-step">
+                      <div class="hero-growth-step__head">
+                        <span class="hero-growth-step__num">1</span>
+                        <span class="hero-growth-step__label">Search discovery</span>
+                      </div>
                       <div class="hero-search-query" aria-hidden="true">
                         <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
                         <span>artisan dining near me</span>
@@ -453,37 +455,30 @@
                       <div class="hero-search-entry">
                         <span class="hero-search-url">thefigtree.co.uk</span>
                         <strong>The Fig Tree &mdash; Seasonal Dining</strong>
-                        <p>Direct bookings &middot; Real-time tables</p>
                       </div>
                     </div>
 
-                    <!-- Subtle connector -->
-                    <div class="hero-growth-wire" aria-hidden="true">
-                      <span></span>
-                    </div>
+                    <div class="hero-growth-step-divider" aria-hidden="true"></div>
 
-                    <!-- Website conversion snippet -->
-                    <div class="hero-card hero-card--web">
-                      <div class="hero-web-head" aria-hidden="true">
-                        <span class="hero-web-dots"><i></i><i></i><i></i></span>
-                        <span class="hero-web-address">figtree.co.uk/reserve</span>
+                    <!-- Step 2: Website Booking -->
+                    <div class="hero-growth-step">
+                      <div class="hero-growth-step__head">
+                        <span class="hero-growth-step__num">2</span>
+                        <span class="hero-growth-step__label">Direct booking</span>
                       </div>
                       <div class="hero-web-content">
-                        <span class="hero-web-label">Website reservation</span>
-                        <p>Table reserved &middot; 19:30 &middot; 2 guests</p>
+                        <span class="hero-web-address">figtree.co.uk/reserve</span>
+                        <p>Table 12 reserved &middot; 19:30</p>
                       </div>
                     </div>
 
-                    <!-- Subtle connector -->
-                    <div class="hero-growth-wire" aria-hidden="true">
-                      <span></span>
-                    </div>
+                    <div class="hero-growth-step-divider" aria-hidden="true"></div>
 
-                    <!-- Direct message / customer touchpoint -->
-                    <div class="hero-card hero-card--message">
-                      <div class="hero-msg-head">
-                        <span class="hero-msg-tag">Direct SMS</span>
-                        <small>Customer reach</small>
+                    <!-- Step 3: Direct SMS Touchpoint -->
+                    <div class="hero-growth-step">
+                      <div class="hero-growth-step__head">
+                        <span class="hero-growth-step__num">3</span>
+                        <span class="hero-growth-step__label">Customer message</span>
                       </div>
                       <div class="hero-msg-bubble">
                         <p>&ldquo;Your reservation is confirmed for 19:30 tonight. See you soon!&rdquo;</p>
