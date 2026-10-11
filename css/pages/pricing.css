@@ -109,7 +109,7 @@
 .pricing-switch__path--qavyo li { color: var(--color-ink); font-weight: 650; }
 .pricing-switch__path--qavyo li svg { stroke: var(--color-brand); }
 .pricing-switch__arrow { display: grid; width: 2.7rem; height: 2.7rem; align-self: center; place-items: center; border: 1px solid var(--color-brand); border-radius: 50%; background: #fff; color: var(--color-brand); font-size: 1.1rem; }
-.pricing-billing { padding-bottom: var(--space-6); border-top: 1px solid var(--color-border); background: var(--color-canvas); }
+.pricing-billing { padding-top: clamp(3rem,5vw,5rem); padding-bottom: var(--space-6); border-top: 1px solid var(--color-border); background: var(--color-canvas); }
 .pricing-billing__header { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: var(--space-8); align-items: end; margin-bottom: var(--space-7); }
 .pricing-billing__copy h2 { max-width: 15ch; font-size: clamp(2.4rem,4.2vw,3.8rem); line-height: 1.08; letter-spacing: -.045em; }
 .pricing-billing__control { display: grid; gap: var(--space-4); justify-items: end; }
@@ -158,8 +158,15 @@
 .pricing-plan__features li > svg { width: 1rem; height: 1rem; margin-top: .08rem; fill: none; stroke: var(--color-muted); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 .pricing-plan__features .pricing-plan__intelligence > svg { stroke: var(--color-brand); }
 .pricing-plan__features .pricing-plan__intelligence { color: var(--color-ink); font-weight: 700; }
-.pricing-plan-grid__trial { display: flex; align-items: center; justify-content: center; gap: .65rem; margin: var(--space-5) 0 0; color: var(--color-text); font-size: .82rem; font-weight: 650; }
-.pricing-plan-grid__trial svg { width: 1rem; height: 1rem; fill: none; stroke: var(--color-brand); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.pricing-plan-trial { display: grid; grid-template-columns: minmax(13rem,.55fr) minmax(0,1.45fr); align-items: center; margin-top: var(--space-5); padding: var(--space-5) var(--space-6); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-surface); }
+.pricing-plan-trial__label { display: grid; grid-template-columns: 1.5rem minmax(0,1fr); gap: var(--space-4); align-items: center; padding-right: var(--space-6); border-right: 1px solid var(--color-border); }
+.pricing-plan-trial__label svg { width: 1.5rem; height: 1.5rem; fill: none; stroke: var(--color-brand); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
+.pricing-plan-trial__label p,.pricing-plan-trial__copy p,.pricing-plan-notes p { margin: 0; }
+.pricing-plan-trial__label span,.pricing-plan-trial__label strong { display: block; color: var(--color-brand); font-size: .7rem; font-weight: 800; letter-spacing: .055em; line-height: 1.5; text-transform: uppercase; }
+.pricing-plan-trial__copy { padding-left: var(--space-6); }
+.pricing-plan-trial__copy > strong { display: block; margin-bottom: .35rem; color: var(--color-ink); font-size: 1rem; }
+.pricing-plan-trial__copy p { color: var(--color-text); font-size: .84rem; line-height: 1.55; }
+.pricing-plan-notes { display: grid; gap: .3rem; margin-top: var(--space-5); color: var(--color-muted); font-size: .75rem; line-height: 1.5; text-align: center; }
 .pricing-trial__grid { display: grid; grid-template-columns: minmax(18rem,.68fr) minmax(0,1.32fr); gap: clamp(3rem,7vw,7rem); align-items: center; }
 .pricing-trial__intro h2 { margin-bottom: var(--space-5); color: #fff; font-size: clamp(2.5rem,4.2vw,4rem); line-height: 1.05; letter-spacing: -.045em; }
 .pricing-trial__intro > p:first-of-type { max-width: 36rem; color: #cbd7df; font-size: var(--text-lg); }
@@ -550,6 +557,9 @@
   .pricing-plan-grid { grid-template-columns: 1fr; }
   .pricing-plan__head { min-height: 0; }
   .pricing-plan__rate { min-height: 0; margin-bottom: var(--space-5); }
+  .pricing-plan-trial { grid-template-columns: 1fr; gap: var(--space-4); padding: var(--space-5); }
+  .pricing-plan-trial__label { padding: 0 0 var(--space-4); border-right: 0; border-bottom: 1px solid var(--color-border); }
+  .pricing-plan-trial__copy { padding-left: 0; }
   .qi-causes-list li { grid-template-columns: 1fr; gap: .35rem; }
   .qi-cause-marker { justify-self: start; }
   .pricing-qi-levels__grid { grid-template-columns: 1fr; }
