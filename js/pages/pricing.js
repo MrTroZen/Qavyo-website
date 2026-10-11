@@ -47,7 +47,6 @@
       compWrapper.dataset.compPlan = plan;
       compToggles.forEach((button) => {
         const isActive = button.dataset.compToggle === plan;
-        button.setAttribute("aria-selected", String(isActive));
         button.setAttribute("aria-pressed", String(isActive));
       });
     };
