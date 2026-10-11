@@ -139,11 +139,13 @@
 .pricing-plan--business .pricing-plan__features { border-color: rgb(255 255 255 / .18); }
 .pricing-plan--business .pricing-plan__features li > svg { stroke: #8db4ff; }
 .pricing-plan__badge { position: absolute; top: 1rem; right: 1rem; margin: 0; padding: .38rem .55rem; border-radius: var(--radius-sm); background: var(--color-brand); color: #fff; font-size: .68rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; }
-.pricing-plan--accent .pricing-plan__head { padding-right: 7rem; }
-.pricing-plan__head { min-height: 6.5rem; }
-.pricing-plan h3 { margin-bottom: .5rem; font-size: 1.55rem; }
-.pricing-plan__head > p:last-child { color: var(--color-text); }
-.pricing-plan__rate { min-height: 15rem; }
+.pricing-plan--accent h3 { padding-right: 6.5rem; }
+.pricing-plan__head { min-height: 5.25rem; margin-bottom: var(--space-4); }
+.pricing-plan h3 { margin-bottom: .4rem; font-size: 1.55rem; line-height: 1.2; }
+.pricing-plan__head > p:last-child { margin: 0; color: var(--color-text); font-size: .9rem; line-height: 1.45; }
+.pricing-plan__rate { min-height: auto; margin-bottom: var(--space-4); }
+[data-billing-period="annual"] .pricing-plan__rate,
+[data-billing-period="lifetime"] .pricing-plan__rate { min-height: 12.5rem; }
 .pricing-plan__mode { animation: pricing-mode-in var(--transition-base) both; }
 .pricing-price { display: flex; align-items: baseline; margin-bottom: var(--space-3); font-size: clamp(3rem,5vw,4.5rem); font-weight: 700; letter-spacing: -.055em; line-height: 1; }
 .pricing-price > span { font-size: .55em; }
@@ -477,7 +479,7 @@
   .pricing-plan-grid { gap: var(--space-4); }
   .pricing-plan,.pricing-plan:first-child,.pricing-plan:last-child { border-radius: var(--radius-md); }
   .pricing-plan + .pricing-plan { margin-left: 0; }
-  .pricing-plan__head { min-height: 8rem; }
+  .pricing-plan__head { min-height: 5.5rem; }
   .pricing-trial__grid { gap: var(--space-7); }
   .starter-value__visual { grid-template-columns: minmax(16rem,.65fr) minmax(0,1.35fr); }
   .hardware-devices { grid-template-columns: 1fr .7fr 1.3fr; }
