@@ -79,6 +79,10 @@ The homepage Business Solutions section (`.home-solutions`) reuses the Pricing p
 
 The homepage Why Qavyo section (`.home-why`) uses the established segmented-control language to explain four ecosystem advantages without a comparison table: Connected, Flexible, Clear, and Supported. One stable-height panel appears at a time with a concise message and purpose-built visual. Compatibility language must remain qualified, pricing is limited to the confirmed starting software price with separate-cost context, and ecosystem support must not imply one team manages every service. The selector supports click, tap, arrow keys, Home, and End through `js/pages/home.js`; mobile deliberately places each visual before its supporting copy and CTA.
 
+## Homepage Pricing Overview
+
+The homepage Pricing overview (`.home-pricing`) is a compact two-path preview using the Pricing page segmented-control language. Restaurant Software presents only the confirmed monthly Starter, Growth, and Business rates, their canonical short descriptions, and the qualified 30-day Full Qavyo software message before linking to `pricing.html#plans`. Business Software communicates the approved singular-plan structure and current Retail / Farm family scope without displaying an unapproved price; its future pricing link remains on the safe prototype-link behavior until a canonical destination exists. The selector supports click, tap, arrow keys, Home, and End through `js/pages/home.js`, with stacked, immediately visible Restaurant prices on mobile.
+
 ## Operational Flow Diagram
 
 `.rst-flow` visually connects core restaurant workflows (`ORDER → KITCHEN → INVENTORY → CUSTOMER → REPORTING → INTELLIGENCE`) horizontally on desktop and seamlessly reflows on tablet and mobile without horizontal overflow.
