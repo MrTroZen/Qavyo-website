@@ -386,7 +386,7 @@
 .compare-head__col { position: relative; display: flex; flex-direction: column; justify-content: center; padding: 1.1rem 1.25rem; border-left: 1px solid rgba(255, 255, 255, .1); }
 .compare-head__col strong { font-size: 1.12rem; font-weight: 700; color: #fff; }
 .compare-head__col span:not(.compare-head__badge) { font-size: .8rem; color: #9fb1bf; margin-top: .15rem; }
-.compare-head__col--growth { background: #173449; }
+.compare-head__col--growth { padding-top: 1.8rem; background: #173449; }
 .compare-head__badge { position: absolute; top: .45rem; right: .75rem; padding: .2rem .45rem; border-radius: var(--radius-sm); background: var(--color-brand); color: #fff; font-size: .58rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
 .compare-head__col--business { background: #0d1e2b; }
 
@@ -410,10 +410,10 @@
 .pricing-costs__header h2 { font-size: clamp(2.4rem,4.2vw,3.8rem); letter-spacing: -.045em; line-height: 1.08; color: var(--color-ink); margin: 0; }
 .pricing-costs__intro { font-size: clamp(1.05rem,1.3vw,1.2rem); line-height: 1.55; color: var(--color-text); margin: 0; max-width: 38ch; }
 .pricing-cost-cards { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: var(--space-5); }
-.pricing-cost-card { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-6); box-shadow: 0 1px 3px rgb(16 40 58 / .04); transition: border-color var(--transition-fast),box-shadow var(--transition-fast); }
-.pricing-cost-card:hover { border-color: var(--color-brand); box-shadow: 0 4px 16px rgb(47 107 219 / .08); }
+.pricing-cost-card { display: flex; flex-direction: column; background: #fff; border: 1px solid var(--color-border); border-radius: var(--radius-md); padding: var(--space-6); box-shadow: 0 1px 3px rgb(16 40 58 / .04); }
 .pricing-cost-card__badge-row { display: flex; align-items: center; justify-content: space-between; margin-bottom: var(--space-4); }
-.pricing-cost-card__category { display: inline-block; padding: .25rem .55rem; background: var(--color-canvas); border: 1px solid var(--color-border); border-radius: var(--radius-sm); font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--color-brand); }
+.pricing-cost-card__category { display: inline-flex; align-items: center; gap: .45rem; padding: .35rem .55rem; background: var(--color-canvas); border: 1px solid var(--color-border); border-radius: var(--radius-sm); font-size: .72rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--color-brand); }
+.pricing-cost-card__category svg { width: 1rem; height: 1rem; fill: none; stroke: currentColor; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 .pricing-cost-card__amount { font-size: 1.15rem; font-weight: 800; color: var(--color-ink); letter-spacing: -.02em; line-height: 1.15; }
 .pricing-cost-card__title { font-size: 1.25rem; font-weight: 700; color: var(--color-ink); letter-spacing: -.02em; line-height: 1.25; margin: 0 0 var(--space-3); }
 .pricing-cost-card__desc { font-size: .95rem; line-height: 1.5; color: var(--color-text); margin: 0 0 var(--space-4); }
@@ -423,8 +423,6 @@
 .pricing-cost-card__features li { display: inline-flex; align-items: center; gap: .4rem; padding: .35rem .65rem; background: var(--color-canvas); border: 1px solid var(--color-border); border-radius: var(--radius-sm); font-size: .84rem; font-weight: 650; color: var(--color-ink); }
 .pricing-cost-card__bullet { display: inline-block; width: .35rem; height: .35rem; border-radius: 50%; background: var(--color-brand); }
 .pricing-cost-card__supporting { font-size: .88rem; line-height: 1.5; color: var(--color-text); margin: 0; }
-.pricing-cost-card__action { margin-top: auto; padding-top: var(--space-4); border-top: 1px solid var(--color-border); }
-.pricing-cost-card__clarity { display: block; font-size: .82rem; font-weight: 650; color: var(--color-muted); line-height: 1.4; }
 .pricing-faq { background: #fff; border-top: 1px solid var(--color-border); }
 .pricing-faq__grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: var(--space-8); align-items: start; }
 .pricing-faq__header h2 { font-size: clamp(2.4rem,4.2vw,3.8rem); letter-spacing: -.045em; line-height: 1.08; color: var(--color-ink); margin: 0; }
