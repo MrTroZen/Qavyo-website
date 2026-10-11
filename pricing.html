@@ -513,20 +513,21 @@
 
       <section class="section competitor-costs" id="competitors" aria-labelledby="competitor-costs-heading">
         <div class="container">
-          <div class="competitor-costs__heading">
-            <h2 id="competitor-costs-heading">See what your money actually gets.</h2>
-            <p>Compare Qavyo with leading restaurant platforms across the features that matter most.</p>
-          </div>
+          <div class="competitor-costs__top">
+            <div class="competitor-costs__heading">
+              <h2 id="competitor-costs-heading">See what your budget gets you.</h2>
+              <p>Compare Qavyo with leading restaurant platforms across the tools that can change your real monthly cost.</p>
+            </div>
 
-          <!-- Plan Toggle -->
-          <div class="competitor-toggle-wrapper">
-            <div class="competitor-toggle" role="tablist" aria-label="Compare plan tier">
-              <button type="button" class="competitor-toggle__btn" role="tab" id="comp-tab-starter" aria-selected="true" aria-pressed="true" data-comp-toggle="starter">
-                Starter &pound;29
-              </button>
-              <button type="button" class="competitor-toggle__btn" role="tab" id="comp-tab-growth" aria-selected="false" aria-pressed="false" data-comp-toggle="growth">
-                Growth &pound;79
-              </button>
+            <div class="competitor-toggle-wrapper">
+              <div class="competitor-toggle" role="tablist" aria-label="Compare plan tier">
+                <button type="button" class="competitor-toggle__btn" role="tab" id="comp-tab-starter" aria-selected="true" aria-pressed="true" data-comp-toggle="starter">
+                  Starter &pound;29
+                </button>
+                <button type="button" class="competitor-toggle__btn" role="tab" id="comp-tab-growth" aria-selected="false" aria-pressed="false" data-comp-toggle="growth">
+                  Growth &pound;79
+                </button>
+              </div>
             </div>
           </div>
 
@@ -597,7 +598,7 @@
                     <td class="comp-td"><span class="comp-status comp-status--integration">&nearr; Integration</span></td>
                   </tr>
                   <tr data-tier="starter">
-                    <th scope="row" class="comp-td-feature">Reservations + Customer CRM</th>
+                    <th scope="row" class="comp-td-feature">Reservations + CRM</th>
                     <td class="comp-td comp-td--qavyo"><span class="comp-status comp-status--yes">&check; Included</span></td>
                     <td class="comp-td"><span class="comp-status comp-status--separate">+ Separate product</span></td>
                     <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
@@ -605,7 +606,7 @@
                     <td class="comp-td"><span class="comp-status comp-status--integration">&nearr; Integration</span></td>
                   </tr>
                   <tr data-tier="starter">
-                    <th scope="row" class="comp-td-feature">Inventory + Recipe Management</th>
+                    <th scope="row" class="comp-td-feature">Inventory + Recipes</th>
                     <td class="comp-td comp-td--qavyo"><span class="comp-status comp-status--yes">&check; Included</span></td>
                     <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
                     <td class="comp-td"><span class="comp-status comp-status--addon">+ Add-on</span></td>
@@ -621,7 +622,7 @@
                     <td class="comp-td"><span class="comp-status comp-status--higher">&uarr; Higher plan</span></td>
                   </tr>
                   <tr data-tier="starter">
-                    <th scope="row" class="comp-td-feature">Restaurant Reporting</th>
+                    <th scope="row" class="comp-td-feature">Core Reporting</th>
                     <td class="comp-td comp-td--qavyo"><span class="comp-status comp-status--yes">&check; Included</span></td>
                     <td class="comp-td"><span class="comp-status comp-status--yes">&check; Included</span></td>
                     <td class="comp-td"><span class="comp-status comp-status--yes">&check; Included</span></td>
@@ -638,7 +639,7 @@
                   </tr>
                   <tr data-tier="starter">
                     <th scope="row" class="comp-td-feature">Hardware Flexibility</th>
-                    <td class="comp-td comp-td--qavyo"><span class="comp-device-note">Use your own devices</span></td>
+                    <td class="comp-td comp-td--qavyo"><span class="comp-device-note">Use compatible devices you already own</span></td>
                     <td class="comp-td"><span class="comp-device-note">iPad &amp; proprietary</span></td>
                     <td class="comp-td"><span class="comp-device-note">Proprietary hardware</span></td>
                     <td class="comp-td"><span class="comp-device-note">iPad &amp; dedicated</span></td>
@@ -703,7 +704,7 @@
                     <td class="comp-td"><span class="comp-status comp-status--higher">&uarr; Higher plan</span></td>
                   </tr>
                   <tr data-tier="growth">
-                    <th scope="row" class="comp-td-feature">Full Business Intelligence</th>
+                    <th scope="row" class="comp-td-feature">Business Intelligence</th>
                     <td class="comp-td comp-td--qavyo"><span class="comp-status comp-status--yes">Full</span></td>
                     <td class="comp-td"><span class="comp-status comp-status--none">&mdash;</span></td>
                     <td class="comp-td"><span class="comp-status comp-status--none">&mdash;</span></td>
@@ -736,9 +737,9 @@
                   <li><span>Reservations + CRM</span><strong class="comp-status--yes">&check; Included</strong></li>
                   <li><span>Inventory + Recipes</span><strong class="comp-status--yes">&check; Included</strong></li>
                   <li><span>Purchasing + Suppliers</span><strong class="comp-status--yes">&check; Included</strong></li>
-                  <li><span>Restaurant Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Core Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
                   <li><span>Qavyo Intelligence</span><strong class="comp-status--yes">Essentials</strong></li>
-                  <li><span>Hardware</span><strong>Use your own devices</strong></li>
+                  <li><span>Hardware Flexibility</span><strong>Use compatible devices you already own</strong></li>
                 </ul>
                 <!-- Growth List -->
                 <ul class="comp-mobile-card__list" data-tier="growth">
@@ -748,8 +749,8 @@
                   <li><span>Time, Attendance + Payroll</span><strong class="comp-status--yes">&check; Included</strong></li>
                   <li><span>Stock Transfers</span><strong class="comp-status--yes">&check; Included</strong></li>
                   <li><span>Multi-location</span><strong class="comp-status--yes">&check; Included</strong></li>
-                  <li><span>Central Menu + Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
-                  <li><span>Qavyo Intelligence</span><strong class="comp-status--yes">Full</strong></li>
+                  <li><span>Central Menu + Advanced Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Business Intelligence</span><strong class="comp-status--yes">Full Qavyo Intelligence</strong></li>
                 </ul>
               </article>
 
@@ -768,9 +769,9 @@
                   <li><span>Reservations + CRM</span><strong class="comp-status--separate">+ Separate product</strong></li>
                   <li><span>Inventory + Recipes</span><strong class="comp-status--addon">+ Add-on</strong></li>
                   <li><span>Purchasing + Suppliers</span><strong class="comp-status--addon">+ Add-on</strong></li>
-                  <li><span>Restaurant Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Core Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
                   <li><span>Intelligence / Insights</span><strong class="comp-status--none">&mdash;</strong></li>
-                  <li><span>Hardware</span><strong>iPad &amp; proprietary</strong></li>
+                  <li><span>Hardware Flexibility</span><strong>iPad &amp; proprietary</strong></li>
                 </ul>
                 <ul class="comp-mobile-card__list" data-tier="growth">
                   <li><span>Core restaurant system</span><strong class="comp-status--yes">&check; Included</strong></li>
@@ -779,8 +780,8 @@
                   <li><span>Time, Attendance + Payroll</span><strong class="comp-status--addon">+ Add-on</strong></li>
                   <li><span>Stock Transfers</span><strong class="comp-status--higher">&uarr; Higher plan</strong></li>
                   <li><span>Multi-location</span><strong class="comp-status--higher">&pound;69/mo per site</strong></li>
-                  <li><span>Central Menu + Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
-                  <li><span>Intelligence / Insights</span><strong class="comp-status--none">&mdash;</strong></li>
+                  <li><span>Central Menu + Advanced Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Business Intelligence</span><strong class="comp-status--none">&mdash;</strong></li>
                 </ul>
               </article>
 
@@ -799,9 +800,9 @@
                   <li><span>Reservations + CRM</span><strong class="comp-status--addon">+ Add-on</strong></li>
                   <li><span>Inventory + Recipes</span><strong class="comp-status--addon">+ Add-on</strong></li>
                   <li><span>Purchasing + Suppliers</span><strong class="comp-status--addon">+ Add-on</strong></li>
-                  <li><span>Restaurant Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Core Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
                   <li><span>Intelligence / Insights</span><strong class="comp-status--none">&mdash;</strong></li>
-                  <li><span>Hardware</span><strong>Proprietary hardware</strong></li>
+                  <li><span>Hardware Flexibility</span><strong>Proprietary hardware</strong></li>
                 </ul>
                 <ul class="comp-mobile-card__list" data-tier="growth">
                   <li><span>Core restaurant system</span><strong class="comp-status--yes">&check; Included</strong></li>
@@ -810,8 +811,8 @@
                   <li><span>Time, Attendance + Payroll</span><strong class="comp-status--addon">+ Add-on</strong></li>
                   <li><span>Stock Transfers</span><strong class="comp-status--addon">+ Add-on</strong></li>
                   <li><span>Multi-location</span><strong class="comp-status--higher">Priced per location</strong></li>
-                  <li><span>Central Menu + Reporting</span><strong class="comp-status--higher">&uarr; Higher plan</strong></li>
-                  <li><span>Intelligence / Insights</span><strong class="comp-status--none">&mdash;</strong></li>
+                  <li><span>Central Menu + Advanced Reporting</span><strong class="comp-status--higher">&uarr; Higher plan</strong></li>
+                  <li><span>Business Intelligence</span><strong class="comp-status--none">&mdash;</strong></li>
                 </ul>
               </article>
 
@@ -830,9 +831,9 @@
                   <li><span>Reservations + CRM</span><strong class="comp-status--integration">&nearr; Integration</strong></li>
                   <li><span>Inventory + Recipes</span><strong class="comp-status--addon">+ Add-on</strong></li>
                   <li><span>Purchasing + Suppliers</span><strong class="comp-status--addon">+ Add-on</strong></li>
-                  <li><span>Restaurant Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Core Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
                   <li><span>Intelligence / Insights</span><strong class="comp-status--none">&mdash;</strong></li>
-                  <li><span>Hardware</span><strong>iPad &amp; dedicated</strong></li>
+                  <li><span>Hardware Flexibility</span><strong>iPad &amp; dedicated</strong></li>
                 </ul>
                 <ul class="comp-mobile-card__list" data-tier="growth">
                   <li><span>Core restaurant system</span><strong class="comp-status--yes">&check; Included</strong></li>
@@ -841,8 +842,8 @@
                   <li><span>Time, Attendance + Payroll</span><strong class="comp-status--integration">&nearr; Integration</strong></li>
                   <li><span>Stock Transfers</span><strong class="comp-status--higher">&uarr; Higher plan</strong></li>
                   <li><span>Multi-location</span><strong class="comp-status--higher">Priced per location</strong></li>
-                  <li><span>Central Menu + Reporting</span><strong class="comp-status--higher">&uarr; Higher plan</strong></li>
-                  <li><span>Intelligence / Insights</span><strong class="comp-status--none">&mdash;</strong></li>
+                  <li><span>Central Menu + Advanced Reporting</span><strong class="comp-status--higher">&uarr; Higher plan</strong></li>
+                  <li><span>Business Intelligence</span><strong class="comp-status--none">&mdash;</strong></li>
                 </ul>
               </article>
 
@@ -861,9 +862,9 @@
                   <li><span>Reservations + CRM</span><strong class="comp-status--integration">&nearr; Integration</strong></li>
                   <li><span>Inventory + Recipes</span><strong class="comp-status--higher">&uarr; Higher plan</strong></li>
                   <li><span>Purchasing + Suppliers</span><strong class="comp-status--higher">&uarr; Higher plan</strong></li>
-                  <li><span>Restaurant Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
+                  <li><span>Core Reporting</span><strong class="comp-status--yes">&check; Included</strong></li>
                   <li><span>Intelligence / Insights</span><strong class="comp-status--none">&mdash;</strong></li>
-                  <li><span>Hardware</span><strong>Dedicated terminals</strong></li>
+                  <li><span>Hardware Flexibility</span><strong>Dedicated terminals</strong></li>
                 </ul>
                 <ul class="comp-mobile-card__list" data-tier="growth">
                   <li><span>Core restaurant system</span><strong class="comp-status--yes">&check; Included</strong></li>
@@ -872,8 +873,8 @@
                   <li><span>Time, Attendance + Payroll</span><strong class="comp-status--integration">&nearr; Integration</strong></li>
                   <li><span>Stock Transfers</span><strong class="comp-status--higher">&uarr; Higher plan</strong></li>
                   <li><span>Multi-location</span><strong class="comp-status--higher">Priced per location</strong></li>
-                  <li><span>Central Menu + Reporting</span><strong class="comp-status--higher">&uarr; Higher plan</strong></li>
-                  <li><span>Intelligence / Insights</span><strong class="comp-status--none">&mdash;</strong></li>
+                  <li><span>Central Menu + Advanced Reporting</span><strong class="comp-status--higher">&uarr; Higher plan</strong></li>
+                  <li><span>Business Intelligence</span><strong class="comp-status--none">&mdash;</strong></li>
                 </ul>
               </article>
             </div>
