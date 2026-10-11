@@ -158,6 +158,8 @@
 .pricing-plan__features li > svg { width: 1rem; height: 1rem; margin-top: .08rem; fill: none; stroke: var(--color-muted); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 .pricing-plan__features .pricing-plan__intelligence > svg { stroke: var(--color-brand); }
 .pricing-plan__features .pricing-plan__intelligence { color: var(--color-ink); font-weight: 700; }
+.pricing-plan-grid__trial { display: flex; align-items: center; justify-content: center; gap: .65rem; margin: var(--space-5) 0 0; color: var(--color-text); font-size: .82rem; font-weight: 650; }
+.pricing-plan-grid__trial svg { width: 1rem; height: 1rem; fill: none; stroke: var(--color-brand); stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; }
 .pricing-trial__grid { display: grid; grid-template-columns: minmax(18rem,.68fr) minmax(0,1.32fr); gap: clamp(3rem,7vw,7rem); align-items: center; }
 .pricing-trial__intro h2 { margin-bottom: var(--space-5); color: #fff; font-size: clamp(2.5rem,4.2vw,4rem); line-height: 1.05; letter-spacing: -.045em; }
 .pricing-trial__intro > p:first-of-type { max-width: 36rem; color: #cbd7df; font-size: var(--text-lg); }
