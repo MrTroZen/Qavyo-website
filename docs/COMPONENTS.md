@@ -71,6 +71,10 @@ The homepage product overview (`.software-overview`) uses an accessible Restaura
 
 The homepage Intelligence section (`.home-intelligence`) pairs a business question with one structured response surface: What changed, Why it matters, and Next move. Its accessible Restaurant / Retail / Repair / Salon selector updates the question, source labels, evidence, explanation, and recommendation together through `js/pages/home.js`. Restaurant and Retail examples may use their confirmed connected operating context; Repair and Salon must remain within approved service activity, customer, staff, operations, and reporting context until specialist workflows are defined. The component must remain human-controlled, non-chatbot, free of generic AI claims, and vertically readable on mobile.
 
+## Homepage Business Solutions Showcase
+
+The homepage Business Solutions section (`.home-solutions`) reuses the Pricing page segmented-control language for Website, SEO, Social, SMS, and Email. One service panel is visible at a time, pairing short outcome-focused copy with a customer-facing visual and canonical service CTA. The quiet parent link routes to `solutions.html`. The selector supports click, tap, arrow keys, Home, and End through `js/pages/home.js`; on narrow screens only the toggle itself may scroll horizontally, while each selected panel becomes a purpose-built vertical composition.
+
 ## Operational Flow Diagram
 
 `.rst-flow` visually connects core restaurant workflows (`ORDER → KITCHEN → INVENTORY → CUSTOMER → REPORTING → INTELLIGENCE`) horizontally on desktop and seamlessly reflows on tablet and mobile without horizontal overflow.
