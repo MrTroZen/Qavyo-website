@@ -55,12 +55,9 @@ Unavailable routes use `data-prototype-link` and are prevented from navigating u
 The Homepage Hero (`.home-hero`) establishes Qavyo as a comprehensive business technology company connecting operations, intelligence, and business solutions across restaurant, retail, and farm businesses:
 - **Hero Grid**: Spacious two-column layout on desktop (~42/58%) pairing large dominant typography (`h1`) and scannable supporting copy with the illustrative `.hero-ecosystem` stage.
 - **CTAs & Categories**: Primary CTA (`Explore Qavyo`) anchors to `#product-families`; secondary CTA links to `pricing.html`. Accompanied by a quiet category line (`Restaurant · Retail · Farm · Intelligence · Growth Solutions`).
-- **Ecosystem Stage (`.hero-ecosystem`)**: A three-pillar triptych inside an illustrative product frame:
-  1. **Software / Operate (`.hero-column--operate`)**: Layered operational UI displaying Restaurant service (`Table 12 · Order #184 · Preparing`), Retail point-of-sale (`Sale complete · Stock updated`), and Farm operation (`House 02 active`).
-  2. **Intelligence / Understand (`.hero-column--intel`)**: Elevated center card featuring proactive briefing question (`What needs my attention today?`), contextual business interpretation, and key signals (Sales +8%, Stock 2 items low, Repeat visits up).
-  3. **Solutions / Grow (`.hero-column--grow`)**: Connected growth surfaces tracking discovery to reception (Google Search query → Website reservation conversion → Direct SMS customer touchpoint).
-- **Progression Top Bar**: Visual progression tracking `Operate → Understand → Grow` with a unified live status indicator.
-- **Responsiveness**: Scales seamlessly to a stacked 3-pillar layout on tablet and a vertical sequence on mobile without horizontal overflow or text clipping.
+- **Ecosystem Stage (`.hero-ecosystem`)**: A dark, restrained product-to-growth system. Restaurant, Retail, and Farm Software feed into a central Qavyo core with Intelligence represented as an inner layer; the core connects onward to the five confirmed growth services: Website Building, Website SEO, Social Media Marketing, SMS Marketing, and Email Marketing.
+- **Motion**: Dashed signal paths, sequential product and solution emphasis, a quiet core pulse, and an Intelligence activity indicator reinforce the `Operate → Understand → Grow` relationship. All animations are decorative and disabled for `prefers-reduced-motion`.
+- **Responsiveness**: Tablet preserves the full relationship map. Mobile deliberately removes connection paths, centres the Qavyo core, presents the three software families as readable tiles, and places the complete growth-solutions group underneath without horizontal overflow.
 
 ## Operational Flow Diagram
 
