@@ -457,7 +457,49 @@
         </div>
       </section>
 
-      <section class="product-families" id="product-families" aria-labelledby="product-families-title">
+      <section class="software-overview" id="product-families" aria-labelledby="software-overview-title" data-software-overview>
+        <div class="container">
+          <header class="software-overview__header">
+            <h2 id="software-overview-title">Software built around your business.</h2>
+            <p>Different businesses run differently. Qavyo gives each one software shaped around the work.</p>
+          </header>
+
+          <div class="software-family-tabs" role="tablist" aria-label="Choose a Qavyo software family">
+            <button type="button" id="software-tab-restaurant" role="tab" aria-selected="true" aria-controls="software-panel-restaurant" tabindex="0" data-software-tab="restaurant">Restaurant</button>
+            <button type="button" id="software-tab-retail" role="tab" aria-selected="false" aria-controls="software-panel-retail" tabindex="-1" data-software-tab="retail">Retail</button>
+            <button type="button" id="software-tab-farm" role="tab" aria-selected="false" aria-controls="software-panel-farm" tabindex="-1" data-software-tab="farm">Farm</button>
+          </div>
+
+          <div class="software-showcase" id="software-panel-restaurant" role="tabpanel" aria-labelledby="software-tab-restaurant" data-software-panel="restaurant">
+            <div class="software-showcase__copy"><p class="software-showcase__label">Qavyo Restaurant Software</p><h3>Your whole restaurant. One system.</h3><p>From the first order to the end-of-day numbers.</p></div>
+            <div class="restaurant-demo" role="img" aria-label="Illustrative restaurant workflow connecting a table order to kitchen preparation, stock, customer context, and reporting.">
+              <div class="software-demo__bar"><span>Restaurant operating view</span><small>Illustrative workflow</small></div>
+              <div class="restaurant-demo__flow" aria-hidden="true"><div class="restaurant-demo__order"><small>Table 12</small><strong>2 &times; Chicken Burger</strong><span>1 &times; Sparkling Water</span><b>Order sent</b></div><i></i><div><small>Kitchen</small><strong>Table 12</strong><span>Preparing</span></div><i></i><div><small>Stock</small><strong>Chicken breast</strong><span>Picture updated</span></div><i></i><div><small>Customer / Reporting</small><strong>Visit recorded</strong><span>Sale added to today</span></div></div>
+            </div>
+            <div class="software-showcase__footer"><ul class="software-breadth" aria-label="Restaurant software areas"><li>POS</li><li>Kitchen</li><li>Ordering</li><li>Inventory</li><li>Customers</li><li>Staff</li><li>Reporting</li><li>More</li></ul><a class="text-link" href="restaurant.html">Explore Restaurant Software <span aria-hidden="true">&rarr;</span></a></div>
+          </div>
+
+          <div class="software-showcase" id="software-panel-retail" role="tabpanel" aria-labelledby="software-tab-retail" data-software-panel="retail" hidden>
+            <div class="software-showcase__copy"><p class="software-showcase__label">Qavyo Retail Software</p><h3>Software built for the way your store works.</h3><p>One retail foundation, adapted to different types of businesses.</p></div>
+            <div class="retail-demo" role="img" aria-label="Illustrative Qavyo Retail workspace showing products, stock, sales, reporting, and different retail business contexts.">
+              <div class="software-demo__bar"><span>Retail operating view</span><small>Illustrative workspace</small></div>
+              <div class="retail-demo__body" aria-hidden="true"><div class="retail-demo__workspace"><small>Connected retail</small><strong>Store workspace</strong><div><span>Sales</span><span>Products</span><span>Stock</span><span>Reporting</span></div></div><div class="retail-demo__context"><small>Fashion context</small><strong>Everyday Overshirt</strong><span>Product &middot; Stock picture &middot; Sale</span></div><div class="retail-demo__rail"><span>Fashion</span><span>Electronics</span><span>Repair</span><span>Grocery</span><span>Salon</span></div></div>
+            </div>
+            <div class="software-showcase__footer"><ul class="software-breadth" aria-label="Retail software families"><li>Fashion</li><li>Electronics</li><li>Repair Shops</li><li>Grocery</li><li>Salon</li><li>Hardware</li><li>Paint</li><li>Tiles</li></ul><a class="text-link" href="retail.html">Explore Retail Software <span aria-hidden="true">&rarr;</span></a></div>
+          </div>
+
+          <div class="software-showcase" id="software-panel-farm" role="tabpanel" aria-labelledby="software-tab-farm" data-software-panel="farm" hidden>
+            <div class="software-showcase__copy"><p class="software-showcase__label">Qavyo Farm Software</p><h3>Focused software for farming operations.</h3><p>Built around the operational needs of the farming areas Qavyo supports.</p></div>
+            <div class="farm-demo" role="img" aria-label="Illustrative Broiler Farming workspace showing an operational picture, daily activity, records, and the next task for review.">
+              <div class="software-demo__bar"><span>Broiler Farming</span><small>Illustrative workspace</small></div>
+              <div class="farm-demo__body" aria-hidden="true"><div class="farm-demo__focus"><small>Current defined vertical</small><strong>Broiler Farming</strong><span>Focused operational software</span></div><ol><li><small>01</small><strong>Operation picture</strong><span>Current context</span></li><li><small>02</small><strong>Daily activity</strong><span>Work recorded</span></li><li><small>03</small><strong>Operational record</strong><span>Context together</span></li><li><small>04</small><strong>Next task</strong><span>Ready to review</span></li></ol></div>
+            </div>
+            <div class="software-showcase__footer"><ul class="software-breadth" aria-label="Farm software families"><li>Broiler Farming</li></ul><a class="text-link" href="#prototype-navigation" data-prototype-link>Explore Farm Software <span aria-hidden="true">&rarr;</span></a></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="product-families" aria-labelledby="product-families-title" hidden>
         <div class="container">
           <div class="product-families__intro">
             <div>

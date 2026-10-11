@@ -63,6 +63,10 @@ The Homepage Hero (`.home-hero`) establishes Qavyo as a comprehensive business t
 
 The homepage orientation section (`.home-workflow`) uses an accessible five-option tab selector to demonstrate how the same connected Retail foundation is shaped for Fashion, Electronics, Repair, Grocery, and Salon contexts. Selecting a business updates the Run and Understand examples together; the Grow story remains a consistent overview of Qavyo's business solutions. Fashion and Electronics may use their approved product-specific examples. Other retail contexts must stay within the confirmed sale or service activity, customer context, stock, reporting, and Intelligence foundation until specialist workflows are approved. The selector supports click, tap, arrow keys, Home, and End through `js/pages/home.js`, while all options remain fully readable in every state.
 
+## Homepage Software Family Overview
+
+The homepage product overview (`.software-overview`) uses an accessible Restaurant / Retail / Farm tab selector to replace the showcase content in place. Each panel has a distinct operational composition: a connected restaurant order flow, a multi-context retail workspace, or the currently defined Broiler Farming focus. Homepage CTAs route only to parent software pages; until a Farm Software page is approved, the Farm CTA retains safe prototype-link behavior. The selector supports click, tap, arrow keys, Home, and End through `js/pages/home.js`, and mobile panels simplify their diagrams rather than shrinking desktop UI.
+
 ## Operational Flow Diagram
 
 `.rst-flow` visually connects core restaurant workflows (`ORDER → KITCHEN → INVENTORY → CUSTOMER → REPORTING → INTELLIGENCE`) horizontally on desktop and seamlessly reflows on tablet and mobile without horizontal overflow.
