@@ -50,6 +50,18 @@ Unavailable routes use `data-prototype-link` and are prevented from navigating u
 
 `.product-frame` demonstrates the initial framing language for illustrative operational UI. Frames need a clear explanatory purpose, legible content, and an illustrative label when not showing the real product. Avoid fake metrics and decorative dashboard clutter.
 
+## Homepage Hero and Connected Ecosystem Stage
+
+The Homepage Hero (`.home-hero`) establishes Qavyo as a comprehensive business technology company connecting operations, intelligence, and business solutions across restaurant, retail, and farm businesses:
+- **Hero Grid**: Spacious two-column layout on desktop (~42/58%) pairing large dominant typography (`h1`) and scannable supporting copy with the illustrative `.hero-ecosystem` stage.
+- **CTAs & Categories**: Primary CTA (`Explore Qavyo`) anchors to `#product-families`; secondary CTA links to `pricing.html`. Accompanied by a quiet category line (`Restaurant · Retail · Farm · Intelligence · Growth Solutions`).
+- **Ecosystem Stage (`.hero-ecosystem`)**: A three-pillar triptych inside an illustrative product frame:
+  1. **Software / Operate (`.hero-column--operate`)**: Layered operational UI displaying Restaurant service (`Table 12 · Order #184 · Preparing`), Retail point-of-sale (`Sale complete · Stock updated`), and Farm operation (`House 02 active`).
+  2. **Intelligence / Understand (`.hero-column--intel`)**: Elevated center card featuring proactive briefing question (`What needs my attention today?`), contextual business interpretation, and key signals (Sales +8%, Stock 2 items low, Repeat visits up).
+  3. **Solutions / Grow (`.hero-column--grow`)**: Connected growth surfaces tracking discovery to reception (Google Search query → Website reservation conversion → Direct SMS customer touchpoint).
+- **Progression Top Bar**: Visual progression tracking `Operate → Understand → Grow` with a unified live status indicator.
+- **Responsiveness**: Scales seamlessly to a stacked 3-pillar layout on tablet and a vertical sequence on mobile without horizontal overflow or text clipping.
+
 ## Operational Flow Diagram
 
 `.rst-flow` visually connects core restaurant workflows (`ORDER → KITCHEN → INVENTORY → CUSTOMER → REPORTING → INTELLIGENCE`) horizontally on desktop and seamlessly reflows on tablet and mobile without horizontal overflow.
