@@ -1,6 +1,10 @@
 # Website architecture
 
-This document records the current information-architecture direction. It is intentionally not a finalized sitemap.
+This document records the current information-architecture direction. The connected hierarchy of entry pages, feature hubs, and focused feature pages is maintained in [`SITEMAP.md`](SITEMAP.md).
+
+## Page hierarchy
+
+The website uses three levels of discovery: entry page, feature hub, and focused feature page. Home and Pricing are approved entry pages. Hub pages explain a connected capability area before directing visitors to deeper feature pages. See `SITEMAP.md` for the canonical tree, connection rules, naming decisions, and build order.
 
 ## Global navigation
 
