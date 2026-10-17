@@ -128,12 +128,13 @@ The project is a static prototype using semantic HTML, CSS, and small amounts of
 - Section 8: Final CTA (`#get-started`) — High-conversion closure with primary/secondary actions
 - Global public footer integration
 
-`intelligence.html` contains the approved six-section Qavyo Intelligence narrative:
+`intelligence.html` contains the approved Qavyo Intelligence narrative:
 - Hero with the illustrative "Qavyo Intelligence · Today" interface
 - From Signal to Decision (`#how-it-works`) with the complete operating loop and one qualitative restaurant example
 - Daily, weekly, and monthly Intelligence briefings (`#briefings`) with compact operational-area coverage
 - An unquantified time-saving comparison focused on reducing manual report searching
 - Connected operational data and human control (`#connected-control`)
+- A focused Intelligence route index (`#intelligence-details`) connecting the overview to its detailed structural pages
 - Final 30-day Full Qavyo CTA (`#get-started`)
 
 ### Confirmed Architectural &amp; Product Facts
