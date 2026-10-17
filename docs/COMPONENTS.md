@@ -207,4 +207,8 @@ The Pricing Final CTA (`.pricing-final`) provides authoritative closure on a ful
 
 The shared Restaurant mega menu uses four concise groups derived from the approved Pricing plan taxonomy: Ordering & Service; Kitchen, Stock & Buying; Customers, Team & Control; and Business & Intelligence. The menu exposes representative feature routes rather than reproducing the complete pricing comparison. Existing destinations link to their canonical page or Restaurant Software anchor, while unbuilt hubs retain the safe prototype-link behaviour. Desktop and mobile menus must contain the same essential destinations.
 
+## Restaurant capability directory
+
+The Restaurant Software overview uses `.rst-hub-directory` as the bridge between the platform story and future feature hubs. It presents verified Pricing categories in a responsive three-, two-, and one-column directory, preserves existing deep-link anchors, and links only to approved canonical destinations. Unbuilt feature hubs remain informative rather than pretending to be live routes. `.rst-pricing-summary` provides only the confirmed plan names and monthly starting prices, with the canonical Pricing page owning the detailed comparison.
+
 Every component must keep a logical reading and tab order, visible keyboard focus, sufficient colour contrast, meaningful semantics, and reasonable touch targets. Responsive behaviour must be designed, not assumed. Motion must respect reduced-motion preferences.
