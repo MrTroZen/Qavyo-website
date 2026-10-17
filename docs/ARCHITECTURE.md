@@ -1,6 +1,6 @@
 # Website architecture
 
-This document records the current information-architecture direction. The connected hierarchy of entry pages, feature hubs, and focused feature pages is maintained in [`SITEMAP.md`](SITEMAP.md).
+This document records the current information-architecture direction. The connected hierarchy of entry pages, feature hubs, and focused feature pages is maintained in [`SITEMAP.md`](SITEMAP.md). Delivery status and the complete page task list are maintained in [`WEBSITE-CHECKLIST.md`](WEBSITE-CHECKLIST.md).
 
 ## Page hierarchy
 
