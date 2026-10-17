@@ -47,10 +47,10 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 
 ### Navigation and discovery
 
-- [ ] Confirm the final public navigation labels.
-- [ ] Confirm which feature hubs belong in the primary navigation.
-- [ ] Define desktop hub-menu behaviour.
-- [ ] Define mobile hub-menu behaviour.
+- [x] Align the Restaurant menu labels with the approved Pricing categories.
+- [ ] Confirm which feature hubs belong in the primary navigation as their pages are approved.
+- [x] Apply the pricing-aligned Restaurant menu to desktop navigation.
+- [x] Apply the pricing-aligned Restaurant menu to mobile navigation.
 - [ ] Add breadcrumbs to hub and focused feature pages.
 - [ ] Create a reusable parent-hub link pattern.
 - [ ] Create a reusable related-pages pattern.

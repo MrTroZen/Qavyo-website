@@ -203,4 +203,8 @@ The Pricing Final CTA (`.pricing-final`) provides authoritative closure on a ful
 
 ## Responsive and accessibility requirements
 
+## Pricing-aligned restaurant navigation
+
+The shared Restaurant mega menu uses four concise groups derived from the approved Pricing plan taxonomy: Ordering & Service; Kitchen, Stock & Buying; Customers, Team & Control; and Business & Intelligence. The menu exposes representative feature routes rather than reproducing the complete pricing comparison. Existing destinations link to their canonical page or Restaurant Software anchor, while unbuilt hubs retain the safe prototype-link behaviour. Desktop and mobile menus must contain the same essential destinations.
+
 Every component must keep a logical reading and tab order, visible keyboard focus, sufficient colour contrast, meaningful semantics, and reasonable touch targets. Responsive behaviour must be designed, not assumed. Motion must respect reduced-motion preferences.

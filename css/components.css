@@ -354,13 +354,13 @@
   padding: 0.42rem var(--space-2);
 }
 
-.restaurant-group--intelligence {
+.restaurant-group--business {
   padding: var(--space-4) var(--space-5);
   border-left: 1px solid var(--color-border);
   background: var(--color-surface-muted);
 }
 
-.restaurant-group--intelligence p:not(.restaurant-group__title),
+.restaurant-group--business p:not(.restaurant-group__title),
 .solution-group__description {
   margin-block-end: var(--space-3);
   color: var(--color-muted);
