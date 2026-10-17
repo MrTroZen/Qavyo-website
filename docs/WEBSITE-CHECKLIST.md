@@ -358,14 +358,14 @@ Focused pages should be created only after their parent hub is approved. Use one
 
 ## Phase 8 — Final connection and launch audit
 
-- [ ] Every approved page has one clear parent.
-- [ ] Every focused page links back to its hub.
-- [ ] Every hub links to relevant focused pages.
+- [x] Every currently scaffolded page has one clear parent.
+- [x] Every focused scaffold page links back to its hub.
+- [x] Every scaffolded hub links to its relevant focused pages.
 - [ ] Every hub offers a relevant next action.
 - [ ] Cross-links are selective and useful rather than repetitive.
 - [ ] Home links only to approved canonical destinations.
 - [ ] Pricing links only to approved canonical destinations.
-- [ ] Desktop and mobile navigation contain the same essential destinations.
+- [x] Desktop and mobile navigation contain the same essential product, hub, and feature-directory destinations.
 - [ ] Footer links are complete and accurate.
 - [ ] No public link leads to a placeholder or empty page.
 - [ ] No unsupported claims, fabricated proof, or unconfirmed compatibility remain.

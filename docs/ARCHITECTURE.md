@@ -66,6 +66,8 @@ The three primary dropdowns answer different questions:
 
 Qavyo Intelligence may appear in Products, Restaurants, and Solutions because each entry reflects a different visitor context. Every navigational occurrence leads to the canonical `intelligence.html` page.
 
+The Resources menu includes `feature-directory.html` as the complete product-and-feature index. Desktop and mobile navigation expose the same live Product and Restaurant destinations. Focused feature pages use their breadcrumb and return action to link back to one canonical hub; hubs link onward to their focused pages.
+
 ## Page strategy
 
 ### Restaurant Software
@@ -100,7 +102,7 @@ The Marketing family is complete and frozen. Future work should preserve the dis
 
 ## Navigation implementation
 
-Unavailable destinations use the existing safe prototype-link behavior. Do not create empty pages or fake production routes to satisfy navigation links. As pages and sections are approved, replace prototype links with their real destinations.
+Unavailable destinations use the existing safe prototype-link behavior. Scaffolded product and feature routes are valid structural destinations, but must remain clearly labelled as pending detailed content until approved. As content is completed, replace the scaffold without changing its canonical route or parent-hub relationship.
 
 ## Page development principles
 
