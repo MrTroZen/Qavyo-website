@@ -211,4 +211,8 @@ The shared Restaurant mega menu uses four concise groups derived from the approv
 
 The Restaurant Software overview uses `.rst-hub-directory` as the bridge between the platform story and future feature hubs. It presents verified Pricing categories in a responsive three-, two-, and one-column directory, preserves existing deep-link anchors, and links only to approved canonical destinations. Unbuilt feature hubs remain informative rather than pretending to be live routes. `.rst-pricing-summary` provides only the confirmed plan names and monthly starting prices, with the canonical Pricing page owning the detailed comparison.
 
+## Structural hub and feature pages
+
+`css/pages/feature-scaffold.css` provides the temporary shared structure for connected hub, focused feature, retail vertical, farm, and scope-confirmation pages. Each scaffold includes a semantic header, breadcrumbs, a clearly labelled content-status panel, parent and sibling navigation, a Pricing route, and responsive desktop-to-mobile layouts. Scaffold text must clearly state that detailed content is pending and must not be treated as final marketing copy. Replace the scaffold page-by-page as content is approved; do not silently promote placeholders to final pages.
+
 Every component must keep a logical reading and tab order, visible keyboard focus, sufficient colour contrast, meaningful semantics, and reasonable touch targets. Responsive behaviour must be designed, not assumed. Motion must respect reduced-motion preferences.

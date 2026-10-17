@@ -63,12 +63,12 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 
 ### Shared page patterns
 
-- [ ] Build and approve the feature-hub page pattern.
-- [ ] Build and approve the focused feature-page pattern.
+- [x] Build the structural feature-hub page scaffold; final pattern approval remains page-specific.
+- [x] Build the structural focused feature-page scaffold; final pattern approval remains page-specific.
 - [ ] Define hub feature-summary cards or rows.
 - [ ] Define the connected-workflow visual pattern.
 - [ ] Define related-capability cross-links.
-- [ ] Define page status for unavailable feature destinations.
+- [x] Define and display scaffolded/content-pending page status.
 - [ ] Document approved reusable additions in `docs/COMPONENTS.md`.
 
 ### Global quality

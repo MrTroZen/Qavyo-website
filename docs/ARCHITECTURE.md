@@ -1,6 +1,6 @@
 # Website architecture
 
-This document records the current information-architecture direction. The connected hierarchy of entry pages, feature hubs, and focused feature pages is maintained in [`SITEMAP.md`](SITEMAP.md). Delivery status and the complete page task list are maintained in [`WEBSITE-CHECKLIST.md`](WEBSITE-CHECKLIST.md).
+This document records the current information-architecture direction. The connected hierarchy of entry pages, feature hubs, and focused feature pages is maintained in [`SITEMAP.md`](SITEMAP.md). Delivery status and the complete page task list are maintained in [`WEBSITE-CHECKLIST.md`](WEBSITE-CHECKLIST.md). The current route-by-route record is maintained in [`PAGE-INVENTORY.md`](PAGE-INVENTORY.md).
 
 ## Page hierarchy
 
@@ -113,7 +113,9 @@ Unavailable destinations use the existing safe prototype-link behavior. Do not c
 
 ## Current repository state
 
-The project is a static prototype using semantic HTML, CSS, and small amounts of vanilla JavaScript. `index.html` contains the complete approved homepage with global navigation and public footer. `restaurant.html` contains the Qavyo Restaurant Software platform overview and capability directory, organized into a concise, conversion-focused 8-section narrative:
+The project is a static prototype using semantic HTML, CSS, and small amounts of vanilla JavaScript. `index.html` contains the complete approved homepage with global navigation and public footer. The planned product, capability-hub, focused-feature, retail-vertical, Farm, Intelligence-detail, and Payments routes now exist as connected structural pages. These scaffolded routes are not final content and are recorded in `PAGE-INVENTORY.md`.
+
+`restaurant.html` contains the Qavyo Restaurant Software platform overview and capability directory, organized into a concise, conversion-focused 8-section narrative:
 - Section 1: Hero (`.rst-hero`) — One stable illustrative operations interface and confirmed commercial reassurance (£29/month, Full Qavyo for 30 days, 24/7 support)
 - Section 2: One Connected System (`#platform-overview`) — Operational connection flow (Order → Kitchen → Inventory → Customer → Reporting → Intelligence) and a capability directory covering Ordering, Kitchen, Inventory, Customers, Workforce, HR & Payroll, Business Apps, Reporting, Marketing, Multi-location, Payments, and Qavyo Intelligence while preserving established deep-link anchors
 - Section 3: Qavyo Intelligence (`#intelligence`) — Operational loop (Watch → Detect → Explain → Recommend → Act → Measure → Learn) with one qualitative diagnostic example and explicit human control
