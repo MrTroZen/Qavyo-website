@@ -180,7 +180,10 @@
 .pricing-plan--business .pricing-plan__lifetime-value small { color: #cbd7df; }
 .pricing-plan > .button { width: 100%; min-height: 3.5rem; padding: 0.85rem 1.5rem; justify-content: center; text-align: center; }
 .pricing-plan__features { flex: 1; margin-top: var(--space-6); padding-top: var(--space-5); border-top: 1px solid var(--color-border); }
-.pricing-plan__features h4 { font-size: .8rem; }
+.pricing-plan__inheritance { display: flex; align-items: center; gap: var(--space-2); margin: 0 0 var(--space-5); padding: var(--space-3); border: 1px solid var(--color-border); border-radius: var(--radius-md); background: var(--color-brand-soft); color: var(--color-ink); font-size: .8rem; font-weight: 700; line-height: 1.35; }
+.pricing-plan__inheritance svg { flex: 0 0 auto; width: 1rem; height: 1rem; fill: none; stroke: var(--color-brand); stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round; }
+.pricing-plan--business .pricing-plan__inheritance { border-color: rgb(255 255 255 / .18); background: rgb(255 255 255 / .08); color: #fff; }
+.pricing-plan--business .pricing-plan__inheritance svg { stroke: #8db4ff; }
 .pricing-plan__features ul { display: grid; gap: .65rem; margin: 0; padding: 0; list-style: none; color: var(--color-text); font-size: .88rem; }
 .pricing-plan__features li { display: grid; grid-template-columns: 1.15rem minmax(0,1fr); gap: .5rem; align-items: start; }
 .pricing-icon-sprite { position: absolute; width: 0; height: 0; overflow: hidden; }
@@ -193,7 +196,6 @@
 .pricing-feature-note:hover > span,.pricing-feature-note:focus > span { display: block; pointer-events: none; }
 .pricing-plan__features .pricing-plan__intelligence > svg { stroke: var(--color-brand); }
 .pricing-plan__features .pricing-plan__intelligence { color: var(--color-ink); font-weight: 700; }
-.pricing-plan__features > h4 { margin-bottom: var(--space-5); }
 .pricing-feature-group + .pricing-feature-group { margin-top: var(--space-5); }
 .pricing-feature-group h5,
 .pricing-feature-intelligence h5,
