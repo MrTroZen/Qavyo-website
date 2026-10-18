@@ -277,8 +277,6 @@
 .competitor-costs__verification { display: grid; grid-template-columns: minmax(0,.35fr) minmax(0,1.65fr); gap: var(--space-6); margin-bottom: var(--space-5); padding-block: var(--space-4); border-block: 1px solid var(--color-border); }
 .competitor-costs__verification p { margin: 0; color: var(--color-text); font-size: var(--text-sm); line-height: 1.55; }
 .competitor-costs__verification .competitor-costs__verification-label { color: var(--color-brand); font-size: var(--text-xs); font-weight: 800; letter-spacing: .05em; text-transform: uppercase; }
-.competitor-costs__verification .competitor-costs__sources { margin-top: var(--space-2); }
-.competitor-costs__sources a { color: var(--color-ink); font-weight: 700; text-underline-offset: .15em; }
 
 /* Plan Toggle */
 .competitor-toggle-wrapper { display: flex; justify-content: flex-end; }

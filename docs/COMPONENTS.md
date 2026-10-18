@@ -187,6 +187,7 @@ The SMS Marketing final CTA (`.sms-cta`) provides authoritative closure to the c
 
 The Pricing Plan Grid (`.pricing-plan-grid`) presents the three tiers (Starter, Growth, Business) across Monthly, Yearly, and Founding Lifetime states:
 - **Plan positioning**: Starter is £29/month with team basics for up to 10 team members; Growth is £99/month and includes workforce, HR, and payroll for up to 20 team members plus Multi-Location Operations for up to three locations; Business is £249/month and provides unlimited team members with advanced workforce controls.
+- **Outcome summaries**: Plan introductions stay short and value-led: Starter runs daily restaurant operations; Growth improves purchasing, labour, and customer retention; Business controls locations, teams, and marketing centrally. Detailed limits remain in the feature groups below rather than the introductory line.
 - **Feature inheritance**: Starter begins directly with its feature categories. Growth and Business use a compact checked inclusion strip (`.pricing-plan__inheritance`) to state that every feature from the preceding plan is included without treating that message as a feature heading.
 - **Plan card CTA**: Monthly and Yearly cards use `Start 30 Days of Full Access` to make clear that customers begin with all eligible software features and Full Qavyo Intelligence rather than only the features in their eventual plan. Founding Lifetime keeps its plan-specific claim labels.
 - **Trial payment terms**: Recurring plans clearly state that no payment card is required to begin the 30-day Full Qavyo period, no automatic charge occurs, and customers choose and pay for Starter, Growth, or Business only when they continue after the trial.
@@ -204,7 +205,7 @@ The Pricing Transparency section (`.pricing-costs`) clarifies the boundary betwe
 - **Hardware**: Emphasizes compatibility with operators' existing tablets, phones, and laptops, making it explicit that hardware is separate from the software subscription.
 - **Payments**: Keeps payment processing distinct and neutral, stating transaction fees depend on the connected provider without inventing rates or imposing software markups.
 
-The competitor comparison places a dated public-source methodology note (`.competitor-costs__verification`) directly above the table. It links to the official UK pricing or restaurant-product pages used for Square, Toast, Lightspeed, and Epos Now and warns that plan details can vary by region and configuration. Refresh the review date only after rechecking every linked source.
+The competitor comparison places a dated public-source methodology note (`.competitor-costs__verification`) directly above the table and warns that plan details can vary by region and configuration. Refresh the review date only after rechecking the competitor information.
 
 The Pricing FAQ (`.pricing-faq`) addresses verified buying objections with concise answers. It uses accessible native `<details>` and `<summary>` disclosure accordions with keyboard interaction, visible focus, and one open answer at a time; the two-column desktop layout reflows cleanly on mobile.
 
