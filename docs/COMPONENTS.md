@@ -190,7 +190,7 @@ The Pricing Plan Grid (`.pricing-plan-grid`) presents the three tiers (Starter, 
 - **Monthly**: Clean primary rate display (`.pricing-price`) with consistent card baseline and single bottom CTA.
 - **Yearly**: Displays the promotional first-year monthly equivalent against the standard monthly rate (`.pricing-plan__anchor`) while clearly stating that billing is annual and upfront. The savings pill (`.pricing-annual-saving-badge`: `↓ Save £.../year`) emphasizes the total first-year saving. The offer applies only to the first year, after which normal plan pricing applies.
 - **Founding Lifetime**: Compact top scarcity banner (`.pricing-lifetime-banner`: `Only 20 restaurants`) with £999 Starter, £3,499 Growth, and £8,499 Business one-time prices, concise Core descriptions, highlighted five-year saving callouts (`.pricing-plan__lifetime-value`), and a lifetime-only custom-plan sales panel below the grid.
-- **Marketing allowance notes**: Business marketing features use compact question-mark tooltips that appear while the trigger is hovered or keyboard-focused and disappear when it is left or blurred. Included monthly allowances are 5,000 designed emails, 1,000 SMS messages, 15 designed images, 5 short-form videos, and 2 blog articles. Additional capacity is arranged through sales.
+- **Marketing allowance notes**: Business marketing features use compact question-mark tooltips that appear while the trigger is hovered or keyboard-focused and disappear when it is left or blurred. Included monthly allowances are 5,000 designed emails, 500 SMS messages, 15 designed images, 5 short-form videos, and 2 blog articles. Each note states that extra usage is charged separately.
 
 ## Pricing Transparency, FAQ, and Final Conversion Section
 
