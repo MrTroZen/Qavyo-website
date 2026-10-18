@@ -151,13 +151,13 @@
 .pricing-price b { font: inherit; }
 .pricing-price small { margin-left: .45rem; color: var(--color-muted); font-size: .82rem; font-weight: 500; letter-spacing: 0; }
 .pricing-plan__annual-detail { display: grid; gap: .42rem; padding-top: .35rem; line-height: 1.55; }
-.pricing-plan__annual-detail span { color: var(--color-brand); font-size: .7rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
+.pricing-plan__annual-detail > span { color: var(--color-brand); font-size: .7rem; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; }
 .pricing-plan__annual-detail strong { color: var(--color-ink); font-size: .9rem; }
 .pricing-plan__annual-detail small { max-width: 27rem; color: var(--color-text); font-size: .84rem; line-height: 1.5; }
 .pricing-plan__annual-detail[hidden] { display: none; }
 .pricing-plan__anchor { display: flex; flex-wrap: wrap; gap: .55rem; align-items: baseline; margin: .2rem 0; }
 .pricing-plan__anchor s { color: var(--color-muted); font-size: 1rem; }
-.pricing-plan__anchor strong { color: var(--color-ink); font-size: clamp(2.1rem,3vw,2.65rem); font-weight: 750; letter-spacing: -.045em; line-height: 1.05; }
+.pricing-plan__anchor .pricing-price--annual { margin-bottom: 0; color: var(--color-ink); font-size: clamp(3rem,4.5vw,4rem); }
 .pricing-plan__saving-pill { display: flex; margin: .1rem 0 .25rem; }
 .pricing-annual-saving-badge { display: inline-flex; align-items: center; gap: .25rem; padding: .22rem .65rem; border-radius: 9999px; background: #ecfdf5; color: #047857; font-size: .74rem; font-weight: 800; letter-spacing: .02em; line-height: 1.3; }
 .pricing-plan--business .pricing-plan__anchor strong,.pricing-plan--business .pricing-plan__annual-detail > strong { color: #fff; }
