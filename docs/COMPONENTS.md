@@ -189,7 +189,8 @@ The Pricing Plan Grid (`.pricing-plan-grid`) presents the three tiers (Starter, 
 - **Plan positioning**: Starter is £29/month with team basics; Growth is £99/month and includes workforce, HR, and payroll for up to 20 team members; Business is £249/month and provides unlimited team members with advanced workforce controls.
 - **Monthly**: Clean primary rate display (`.pricing-price`) with consistent card baseline and single bottom CTA.
 - **Yearly**: Displays the promotional first-year monthly equivalent against the standard monthly rate (`.pricing-plan__anchor`) while clearly stating that billing is annual and upfront. The savings pill (`.pricing-annual-saving-badge`: `↓ Save £.../year`) emphasizes the total first-year saving. The offer applies only to the first year, after which normal plan pricing applies.
-- **Founding Lifetime**: Compact top scarcity banner (`.pricing-lifetime-banner`: `Only 20 restaurants`) with clear one-time prices, concise Core descriptions, a highlighted five-year saving callout (`.pricing-plan__lifetime-value`), and a single centered terms disclaimer below the grid.
+- **Founding Lifetime**: Compact top scarcity banner (`.pricing-lifetime-banner`: `Only 20 restaurants`) with £999 Starter, £3,499 Growth, and £8,499 Business one-time prices, concise Core descriptions, highlighted five-year saving callouts (`.pricing-plan__lifetime-value`), a centered terms disclaimer, and a lifetime-only custom-plan sales panel below the grid.
+- **Marketing allowance notes**: Business marketing features use native `<details>` disclosures styled as compact question-mark controls, exposing allowance details on hover, keyboard focus, and tap. Included monthly allowances are 5,000 designed emails, 1,000 SMS messages, 15 designed images, 5 short-form videos, and 2 blog articles. Additional capacity is arranged through sales.
 
 ## Pricing Transparency, FAQ, and Final Conversion Section
 
