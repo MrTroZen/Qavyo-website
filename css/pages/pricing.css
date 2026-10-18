@@ -178,7 +178,6 @@
 .pricing-plan--business .pricing-plan__lifetime-value { border-color: #8db4ff; background: rgb(255 255 255 / .08); }
 .pricing-plan--business .pricing-plan__lifetime-value span,.pricing-plan--business .pricing-plan__lifetime-value strong { color: #8db4ff; }
 .pricing-plan--business .pricing-plan__lifetime-value small { color: #cbd7df; }
-.pricing-lifetime-disclaimer { max-width: 48rem; margin: var(--space-5) auto 0; color: var(--color-muted); font-size: .78rem; line-height: 1.6; text-align: center; }
 .pricing-plan > .button { width: 100%; min-height: 3.5rem; padding: 0.85rem 1.5rem; justify-content: center; text-align: center; }
 .pricing-plan__features { flex: 1; margin-top: var(--space-6); padding-top: var(--space-5); border-top: 1px solid var(--color-border); }
 .pricing-plan__features h4 { font-size: .8rem; }
@@ -188,12 +187,10 @@
 .pricing-plan__features li > svg { width: 1rem; height: 1rem; margin-top: .08rem; fill: none; stroke: var(--color-muted); stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; }
 .pricing-feature-copy { min-width: 0; }
 .pricing-feature-copy > strong { color: inherit; }
-.pricing-feature-note { position: relative; display: inline-block; margin-left: .2rem; vertical-align: text-bottom; }
-.pricing-feature-note summary { display: inline-grid; width: 1.15rem; height: 1.15rem; place-items: center; border: 1px solid #8db4ff; border-radius: 50%; background: rgb(255 255 255 / .08); color: #8db4ff; font-size: .7rem; font-weight: 800; line-height: 1; cursor: help; list-style: none; }
-.pricing-feature-note summary::-webkit-details-marker { display: none; }
-.pricing-feature-note summary:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
+.pricing-feature-note { position: relative; display: inline-grid; width: 1.15rem; height: 1.15rem; margin-left: .2rem; place-items: center; border: 1px solid #8db4ff; border-radius: 50%; background: rgb(255 255 255 / .08); color: #8db4ff; font-size: .7rem; font-weight: 800; line-height: 1; vertical-align: text-bottom; cursor: help; }
+.pricing-feature-note:focus-visible { outline: 2px solid var(--color-focus); outline-offset: 2px; }
 .pricing-feature-note > span { position: absolute; z-index: 2; right: 0; bottom: calc(100% + .55rem); display: none; width: min(16rem,calc(100vw - 3rem)); padding: .75rem; border: 1px solid var(--color-border); border-radius: var(--radius-sm); background: var(--color-surface); color: var(--color-ink); box-shadow: var(--shadow-md); font-size: .76rem; font-weight: 500; line-height: 1.5; }
-.pricing-feature-note[open] > span,.pricing-feature-note:hover > span,.pricing-feature-note:focus-within > span { display: block; }
+.pricing-feature-note:hover > span,.pricing-feature-note:focus > span { display: block; pointer-events: none; }
 .pricing-plan__features .pricing-plan__intelligence > svg { stroke: var(--color-brand); }
 .pricing-plan__features .pricing-plan__intelligence { color: var(--color-ink); font-weight: 700; }
 .pricing-plan__features > h4 { margin-bottom: var(--space-5); }
