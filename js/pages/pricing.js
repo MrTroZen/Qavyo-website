@@ -40,7 +40,7 @@
       setBillingPeriod(next.dataset.billingToggle);
     });
   });
-  setBillingPeriod("monthly");
+  setBillingPeriod("annual");
 
   const compWrapper = document.querySelector("[data-comp-wrapper]");
   const compToggles = Array.from(document.querySelectorAll("[data-comp-toggle]"));
