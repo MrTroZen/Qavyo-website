@@ -1,90 +1,88 @@
 # Website architecture
 
-This document records the current information-architecture direction. The connected hierarchy of entry pages, feature hubs, and focused feature pages is maintained in [`SITEMAP.md`](SITEMAP.md). Delivery status and the complete page task list are maintained in [`WEBSITE-CHECKLIST.md`](WEBSITE-CHECKLIST.md). The current route-by-route record is maintained in [`PAGE-INVENTORY.md`](PAGE-INVENTORY.md).
+This document records the current information-architecture direction. The connected hierarchy of overview pages, major pages, and supporting sections is maintained in [`SITEMAP.md`](SITEMAP.md). Delivery status and the complete page task list are maintained in [`WEBSITE-CHECKLIST.md`](WEBSITE-CHECKLIST.md). The current route-by-route record is maintained in [`PAGE-INVENTORY.md`](PAGE-INVENTORY.md).
 
 ## Page hierarchy
 
-The website uses three levels of discovery: entry page, feature hub, and focused feature page. Home and Pricing are approved entry pages. Hub pages explain a connected capability area before directing visitors to deeper feature pages. See `SITEMAP.md` for the canonical tree, connection rules, naming decisions, and build order.
+The website uses a two-level product-content model: entry or overview page, then a major product, vertical, capability, or solution page. Supporting features normally appear as sections with stable anchor links. A third-level feature page is exceptional and requires demonstrated buyer need, confirmed product depth, distinct intent, and enough evidence to justify a useful page. See `SITEMAP.md` for the canonical tree, connection rules, naming decisions, and build order.
 
 ## Global navigation
 
 ```text
 Qavyo
-├── Products
-│   ├── Restaurant Software
-│   │   ├── Qavyo Intelligence
-│   │   ├── Hardware
-│   │   └── Payments
-│   ├── Retail Software
-│   │   ├── Clothing & Fashion
-│   │   ├── Electronics
-│   │   ├── Repair Shops
-│   │   ├── Grocery & Convenience
-│   │   ├── Salon & Spa
-│   │   ├── Hardware & Sanitary
-│   │   └── Paint & Tiles
-│   └── Farm Software
-│       └── Broiler Farming
+├── Retail
+│   ├── Retail Software Overview
+│   ├── Clothing & Fashion
+│   ├── Electronics
+│   ├── Repair Shops
+│   ├── Grocery & Convenience
+│   ├── Salon & Spa
+│   ├── Hardware & Sanitary
+│   └── Paint & Tiles
 ├── Restaurants
-│   ├── Run Your Restaurant
-│   │   ├── POS & Ordering
-│   │   ├── Kitchen & Service
-│   │   ├── Tables & Floor
-│   │   ├── Inventory & Stock
-│   │   ├── Recipes & Costing
-│   │   └── Purchasing & Suppliers
-│   ├── Grow Your Restaurant
-│   │   ├── Online Ordering
-│   │   ├── Restaurant Website
-│   │   ├── Reservations
+│   ├── Run service
+│   │   ├── Restaurant POS
+│   │   ├── Online & QR Ordering
+│   │   ├── Kitchen Operations
+│   │   └── Inventory & Food Cost
+│   ├── Manage the business
+│   │   ├── HR, Payroll & Team
+│   │   ├── Reporting & Day Close
+│   │   ├── Multi-Location
+│   │   └── Qavyo Intelligence
+│   ├── Customers & growth
 │   │   ├── Customers & CRM
-│   │   └── Loyalty
-│   ├── Manage Your Business
-│   │   ├── Staff & Scheduling
-│   │   ├── Attendance & Payroll
-│   │   ├── Reporting
-│   │   └── Multi-location
+│   │   ├── Reservations & Loyalty
+│   │   ├── Delivery Operations
+│   │   └── Marketing Solutions
+│   └── Choose & start
+│       ├── Restaurant Software Overview
+│       ├── Pricing
+│       ├── Hardware & Devices
+│       ├── Payments
+│       └── Start 30 Days Free
+├── Solutions
+│   ├── Marketing & Communication
+│   │   ├── Social Media Marketing
+│   │   ├── SMS Marketing
+│   │   └── Email Marketing
+│   ├── Web & Growth
+│   │   ├── Website Building
+│   │   └── Website SEO
 │   └── Qavyo Intelligence
-└── Solutions
-    ├── Marketing & Communication
-    │   ├── Social Media Marketing
-    │   ├── SMS Marketing
-    │   └── Email Marketing
-    ├── Web & Growth
-    │   ├── Website Building
-    │   └── Website SEO
-    └── Qavyo Intelligence
+├── Pricing
+└── Resources
 ```
 
-The primary header order is Products, Restaurants, Solutions, Pricing, and Resources, followed by Sign In, Talk to Sales, and Start Free. Company information belongs within Resources and the future public footer rather than as another top-level item.
+The primary header order is Retail, Restaurants, Solutions, Pricing, and Resources, followed by Sign In, Talk to Sales, and Start Free. Company information belongs within Resources and the future public footer rather than as another top-level item.
 
 The three primary dropdowns answer different questions:
 
-- Products identifies the software family or business category relevant to a visitor.
-- Restaurants explains what Qavyo Restaurant Software can help a restaurant operator do.
+- Retail identifies the Retail Software overview and relevant retail business type.
+- Restaurants explains the major operating areas that Qavyo Restaurant Software can help a restaurant operator understand.
 - Solutions presents additional marketing, communication, web, growth, and intelligence capabilities.
 
-Qavyo Intelligence may appear in Products, Restaurants, and Solutions because each entry reflects a different visitor context. Every navigational occurrence leads to the canonical `intelligence.html` page.
+Qavyo Intelligence may appear in Restaurants and Solutions because each entry reflects a different visitor context. Every navigational occurrence leads to the canonical `intelligence.html` page.
 
-The Resources menu includes `feature-directory.html` as the complete product-and-feature index. Desktop and mobile navigation expose the same live Product and Restaurant destinations. Focused feature pages use their breadcrumb and return action to link back to one canonical hub; hubs link onward to their focused pages.
+The Resources menu includes `feature-directory.html` as the complete product-and-feature index. Desktop and mobile navigation expose the same live Retail and Restaurant destinations. Major capability and vertical pages use breadcrumbs and return actions to link back to their canonical overview.
 
 ## Page strategy
 
 ### Restaurant Software
 
-Use one substantial Restaurant Software page initially. Restaurant capability links should deep-link to approved sections on that page rather than generating a separate page for every feature. Planned stories include POS & Ordering, Kitchen & Service, Inventory & Cost, Customers & Growth, Team & Operations, Multi-location, and an introduction to Qavyo Intelligence. Conceptual routes such as `/restaurant/#pos-ordering` are directional only; no routes are implemented yet.
+`restaurant.html` is the canonical Restaurant Software overview. It links directly to the major Restaurant pages: Restaurant POS, Online & QR Ordering, Kitchen Operations, Inventory & Food Cost, Customers & CRM, HR, Payroll & Team, Reporting & Day Close, Multi-Location, and Qavyo Intelligence. Small features such as Floor Plan, Offline Mode, Kiosk, Recipes, Scheduling, and report export remain sections inside the closest major page. The approved route-by-route proposal is recorded in `RESTAURANT-CONTENT-CONSOLIDATION-PROPOSAL.md`.
 
 ### Retail Software
 
-`retail.html` is the canonical Qavyo Retail Software overview. It presents connected retail operations across sales, products, stock, customer context, reporting, locations, and Qavyo Intelligence without asserting unconfirmed detailed capabilities. `retail-clothing-fashion.html` and `retail-electronics.html` are the canonical Clothing & Fashion and Electronics pages; both are linked from the global Products menu, Retail overview, and each other's Retail family context. Repair Shops, Grocery & Convenience, Salon & Spa, Hardware & Sanitary, Paints, and Tiles remain non-navigation labels until their individual pages are approved.
+`retail.html` is the canonical Qavyo Retail Software overview and the lead destination in the top-level Retail menu. It presents connected retail operations across sales, products, stock, customer context, reporting, locations, and Qavyo Intelligence without asserting unconfirmed detailed capabilities. The target Retail menu includes Clothing & Fashion, Electronics, Repair Shops, Grocery & Convenience, Salon & Spa, Hardware & Sanitary, and Paint & Tiles. Only approved pages become live links; unfinished destinations remain outside public navigation until they pass the page definition of done.
 
 ### Farm Software
 
-Broiler Farming will eventually receive its own landing page. Farm Software must remain expandable, but no additional farming verticals are approved.
+Farm Software is removed from the current public sitemap and navigation. Existing `farm.html` and `broiler-farming.html` files remain legacy route candidates until a separate task approves their indexation, redirect, archive, or deletion treatment.
 
 ### Qavyo Intelligence
 
-`intelligence.html` is the canonical Qavyo Intelligence page. It is a concise, visual product narrative rather than a collection of small AI feature pages. Existing Intelligence links across Products, Restaurants, Solutions, the homepage, Restaurant Software, mobile navigation, and the footer point to this page.
+`intelligence.html` is the canonical Qavyo Intelligence page. It is a concise, visual product narrative rather than a collection of small AI feature pages. Intelligence links across Restaurants, Solutions, the homepage, Restaurant Software, mobile navigation, and the footer point to this page.
 
 The Intelligence page should communicate the operating loop:
 
@@ -102,7 +100,7 @@ The Marketing family is complete and frozen. Future work should preserve the dis
 
 ## Navigation implementation
 
-Unavailable destinations use the existing safe prototype-link behavior. Scaffolded product and feature routes are valid structural destinations, but must remain clearly labelled as pending detailed content until approved. As content is completed, replace the scaffold without changing its canonical route or parent-hub relationship.
+Unavailable destinations use the existing safe prototype-link behavior. Scaffolded routes are route-inventory candidates, not automatically valid public destinations. As major pages gain their approved supporting sections, apply the route treatment from `RESTAURANT-CONTENT-CONSOLIDATION-PROPOSAL.md` and the final route-disposition plan.
 
 ## Page development principles
 
@@ -115,7 +113,7 @@ Unavailable destinations use the existing safe prototype-link behavior. Scaffold
 
 ## Current repository state
 
-The project is a static prototype using semantic HTML, CSS, and small amounts of vanilla JavaScript. `index.html` contains the complete approved homepage with global navigation and public footer. The planned product, capability-hub, focused-feature, retail-vertical, Farm, Intelligence-detail, and Payments routes now exist as connected structural pages. These scaffolded routes are not final content and are recorded in `PAGE-INVENTORY.md`.
+The project is a static prototype using semantic HTML, CSS, and small amounts of vanilla JavaScript. `index.html` contains the complete approved homepage with global navigation and public footer. Major-page, supporting-feature, Retail-vertical, Intelligence-detail, Payments, and legacy Farm scaffold routes exist in the repository. These scaffolded routes are not final content and are recorded in `PAGE-INVENTORY.md`; their presence does not guarantee a public page.
 
 `restaurant.html` contains the Qavyo Restaurant Software platform overview and capability directory, organized into a concise, conversion-focused 8-section narrative:
 - Section 1: Hero (`.rst-hero`) — One stable illustrative operations interface and confirmed commercial reassurance (£29/month, Full Qavyo for 30 days, 24/7 support)

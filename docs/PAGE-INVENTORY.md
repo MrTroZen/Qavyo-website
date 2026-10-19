@@ -7,6 +7,7 @@ This inventory lists every current public-page route in the repository. Home and
 - **Final** — approved page.
 - **Existing** — page existed before the structural pass and still requires review unless approved separately.
 - **Scaffolded** — route, hierarchy, and navigation are ready; detailed content remains.
+- **Retire** — excluded from the target public sitemap; preserve until redirect, archive, or deletion treatment is approved.
 
 ## Complete route list
 
@@ -17,7 +18,7 @@ This inventory lists every current public-page route in the repository. Home and
 | Attendance &amp; Timesheets  | `attendance-timesheets.html` | Scaffolded |
 | Benchmarking &amp; Group Reporting  | `benchmarking-group-reporting.html` | Scaffolded |
 | Branded Customer App  | `branded-customer-app.html` | Scaffolded |
-| Broiler Farming  | `broiler-farming.html` | Scaffolded |
+| Broiler Farming  | `broiler-farming.html` | Retire |
 | Business Apps  | `business-apps.html` | Scaffolded |
 | Cash Management  | `cash-management.html` | Scaffolded |
 | Central Menu Controls  | `central-menu-controls.html` | Scaffolded |
@@ -38,7 +39,7 @@ This inventory lists every current public-page route in the repository. Home and
 | Qavyo Email Marketing â€” More Room to Say What Matters | `email-marketing.html` | Existing |
 | Executive Reports &amp; Health View  | `executive-reports-health-view.html` | Scaffolded |
 | Expense Tracking  | `expense-tracking.html` | Scaffolded |
-| Farm Software  | `farm.html` | Scaffolded |
+| Farm Software  | `farm.html` | Retire |
 | All Products & Features  | `feature-directory.html` | Scaffolded |
 | Fees &amp; Processing  | `fees-processing.html` | Scaffolded |
 | Fleet &amp; Driver Assignment  | `fleet-driver-assignment.html` | Scaffolded |
@@ -124,4 +125,3 @@ This inventory lists every current public-page route in the repository. Home and
 ## Maintenance rule
 
 Update this inventory whenever a route is added, renamed, approved, or removed. A scaffolded page must not be marked final until its content, claims, accessibility, responsive layout, links, documentation, commit, and push have all been verified.
-

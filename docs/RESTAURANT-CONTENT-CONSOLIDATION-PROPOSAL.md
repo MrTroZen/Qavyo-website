@@ -1,6 +1,6 @@
 # Restaurant content consolidation and menu proposal
 
-Status: proposal for approval. This document does not authorize navigation changes, redirects, route deletion, or publication.
+Status: Restaurant menu and consolidation direction approved for sitemap planning. Conditional page decisions, navigation implementation, redirects, route deletion, and publication still require their named delivery gates.
 
 ## Decision
 

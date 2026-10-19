@@ -13,7 +13,7 @@ This is the route-level completion checklist for the public website. [`WEBSITE-D
 
 A page is complete only when all applicable items below are done:
 
-- [ ] Purpose, audience, and parent hub are confirmed.
+- [ ] Purpose, audience, and parent overview or major page are confirmed.
 - [ ] Product claims and commercial details are confirmed.
 - [ ] Page outline and section order are approved.
 - [ ] Copy is complete and avoids unsupported claims.
@@ -22,7 +22,7 @@ A page is complete only when all applicable items below are done:
 - [ ] Keyboard access, visible focus, contrast, and alternative text are checked.
 - [ ] Reduced-motion behaviour is supported where motion exists.
 - [ ] Desktop, laptop, tablet, and mobile layouts are inspected.
-- [ ] Links to the parent hub, related pages, Pricing, and the next action are correct.
+- [ ] Links to the parent overview or major page, related pages, Pricing, and the next action are correct.
 - [ ] Unbuilt destinations use safe prototype-link behaviour.
 - [ ] Page title and metadata are correct.
 - [ ] Obvious HTML, CSS, and JavaScript errors are checked.
@@ -47,25 +47,27 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 
 ### Navigation and discovery
 
-- [x] Align the Restaurant menu labels with the approved Pricing categories.
-- [ ] Confirm which feature hubs belong in the primary navigation as their pages are approved.
-- [x] Apply the pricing-aligned Restaurant menu to desktop navigation.
-- [x] Apply the pricing-aligned Restaurant menu to mobile navigation.
-- [ ] Add breadcrumbs to hub and focused feature pages.
-- [ ] Create a reusable parent-hub link pattern.
+- [x] Approve the target sitemap and consolidated Restaurant menu direction.
+- [ ] Replace Products with Retail in desktop navigation.
+- [ ] Replace Products with Retail in mobile navigation.
+- [ ] Link only approved Retail overview and business-type destinations.
+- [ ] Apply the consolidated Restaurant menu to desktop navigation.
+- [ ] Apply the same consolidated Restaurant taxonomy to mobile navigation.
+- [ ] Remove Farm from navigation, Home links, footer, feature directory, and internal recommendations.
+- [ ] Add breadcrumbs to major capability and vertical pages.
+- [ ] Create a reusable parent-overview link pattern.
 - [ ] Create a reusable related-pages pattern.
 - [ ] Create a reusable page-end next-step pattern.
 - [ ] Audit all current navigation links and prototype links.
-- [ ] Connect Home to approved hubs without redesigning Home.
-- [ ] Connect Pricing feature labels to approved hubs in a link-only pass.
+- [ ] Connect Home to approved major pages without redesigning Home.
+- [ ] Connect Pricing feature labels to approved major pages or section anchors in a link-only pass.
 - [ ] Confirm footer information architecture.
 - [ ] Add a public HTML sitemap only if it materially helps visitors.
 
 ### Shared page patterns
 
-- [x] Build the structural feature-hub page scaffold; final pattern approval remains page-specific.
-- [x] Build the structural focused feature-page scaffold; final pattern approval remains page-specific.
-- [ ] Define hub feature-summary cards or rows.
+- [x] Record the existing structural hub and feature scaffolds for route disposition.
+- [ ] Define major-page supporting-section summaries or rows.
 - [ ] Define the connected-workflow visual pattern.
 - [ ] Define related-capability cross-links.
 - [x] Define and display scaffolded/content-pending page status.
@@ -95,7 +97,7 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 - [ ] Restaurant Software overview — `restaurant.html` — **Exists; not final**
   - [ ] Establish it as the main restaurant platform overview and directory.
   - [ ] Present the connected platform without duplicating every hub.
-  - [ ] Link to each approved restaurant capability hub.
+  - [ ] Link to each approved Restaurant major capability page.
   - [ ] Preserve verified pricing, device, support, and Intelligence facts.
   - [ ] Remove or replace deep links that no longer match the final hierarchy.
 
@@ -109,166 +111,113 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 - [ ] Salon & Spa — **Planned**
 - [ ] Hardware & Sanitary — **Planned**
 - [ ] Paint & Tiles — **Planned**
-- [ ] Confirm whether retail needs capability hubs shared with Restaurant Software.
+- [ ] Confirm whether Retail needs any major capability pages beyond its overview and business-type pages.
 - [ ] Confirm which capabilities differ by retail vertical before writing claims.
 
 ### Farm Software
 
-- [ ] Farm Software overview — **Planned**
-- [ ] Broiler Farming — **Planned**
-- [ ] Confirm the Broiler Farming product scope before page planning.
-- [ ] Keep other farm verticals out of the public architecture until approved.
+- [x] Remove Farm Software from the target public sitemap.
+- [ ] Remove Farm links from public navigation and discovery surfaces.
+- [ ] Exclude `farm.html` and `broiler-farming.html` from public indexation and XML sitemaps.
+- [ ] Approve redirect, archive, or deletion treatment before changing the legacy files.
 
-## Phase 3 — Restaurant capability hubs
+## Phase 3 — Restaurant major pages and supporting sections
 
-### POS & Ordering hub
+### Restaurant POS
 
-- [ ] Create POS & Ordering hub page.
-- [ ] Restaurant POS overview.
-- [ ] Tables & Floor Plan overview.
-- [ ] Online & QR Ordering overview.
-- [ ] Self-Service Kiosk overview.
-- [ ] Customer-Facing Display overview.
-- [ ] Offline Mode overview.
-- [ ] Refund & Void Tracking overview.
-- [ ] Connect to Kitchen, Customers, Reporting, Payments, and Pricing.
+- [ ] Finish `restaurant-pos.html` as the major service-operation page.
+- [ ] Add order entry, menus, and modifier sections.
+- [ ] Add Tables & Floor Plan as a section.
+- [ ] Add Customer-Facing Display as a section.
+- [ ] Add Offline Mode as a section.
+- [ ] Add Refunds & Voids as a section.
+- [ ] Connect to Online Ordering, Kitchen, Reporting, Payments, and Pricing.
 
-### Kitchen & Service hub
+### Online & QR Ordering
 
-- [ ] Create Kitchen & Service hub page.
-- [ ] Kitchen Display System overview.
-- [ ] Order Routing & Stations overview.
-- [ ] Prep-Time & Order Tracking overview.
-- [ ] Kitchen Alerts overview.
-- [ ] Kitchen Performance overview.
-- [ ] Connect to POS, Inventory, Workforce, and Intelligence.
+- [ ] Finish `online-qr-ordering.html` as the major customer-ordering page.
+- [ ] Add online ordering and QR ordering sections.
+- [ ] Add Self-Service Kiosk as a section.
+- [ ] Add Mobile Ordering as a section.
+- [ ] Connect to POS, Kitchen, Customers, Delivery when approved, and Pricing.
 
-### Inventory & Purchasing hub
+### Kitchen Operations
 
-- [ ] Create Inventory & Purchasing hub page.
-- [ ] Ingredient Inventory overview.
-- [ ] Recipes & Costing overview.
-- [ ] Recipe Versioning overview.
-- [ ] Waste Tracking overview.
-- [ ] Inventory Valuation overview.
-- [ ] Low-Stock Alerts overview.
-- [ ] Vendor Management overview.
-- [ ] Purchases & Orders overview.
-- [ ] Purchase Suggestions overview.
-- [ ] Vendor Price Tracking overview.
-- [ ] Advanced Inventory Analysis overview.
+- [ ] Finish `kitchen-service.html` as the major Kitchen Operations page.
+- [ ] Add Kitchen Display, routing, preparation tracking, alerts, and performance sections.
+- [ ] Connect to POS, Inventory, HR and Team, Reporting, and Intelligence.
+
+### Inventory & Food Cost
+
+- [ ] Finish `inventory-purchasing.html` as the major Inventory & Food Cost page.
+- [ ] Add Ingredient Inventory, Recipes & Costing, Waste, Valuation, and Stock Alert sections.
+- [ ] Add Suppliers, Purchase Orders, purchasing decisions, and analysis sections.
 - [ ] Connect to Reporting, Multi-Location, and Intelligence.
 
-### Customers & Growth hub
+### Customers & CRM
 
-- [ ] Create Customers & Growth hub page.
-- [ ] Customer Accounts & Profiles overview.
-- [ ] CRM & Preferences overview.
-- [ ] Customer Order History overview.
-- [ ] Reservations & Waitlist overview.
-- [ ] Loyalty & Gift Cards overview.
-- [ ] Customer Analytics overview.
-- [ ] Restaurant Website overview.
-- [ ] Connect to Business Apps, Marketing Solutions, Intelligence, and Pricing.
+- [ ] Finish `customers-growth.html` as the major Customers & CRM page.
+- [ ] Add profiles, preferences, and order-history sections.
+- [ ] Add Reservations & Waitlist and Loyalty & Gift Cards sections.
+- [ ] Add customer analytics, Restaurant Website, Customer App, and notification sections.
+- [ ] Connect to Online Ordering, Marketing Solutions, Intelligence, and Pricing.
 
-### Workforce hub
+### HR, Payroll & Team
 
-- [ ] Create Workforce hub page.
-- [ ] Staff Accounts overview.
-- [ ] Roles & Permissions overview.
-- [ ] Scheduling & Shifts overview.
-- [ ] Attendance & Timesheets overview.
-- [ ] Staff Performance overview.
-- [ ] Tip Management overview.
-- [ ] Connect to HR & Payroll, Staff App, Intelligence, and Reporting.
+- [ ] Finish `hr-payroll.html` as the combined people-operations page.
+- [ ] Add employee records, staff accounts, roles, and permissions sections.
+- [ ] Add scheduling, attendance, timesheets, payroll, tips, performance, and labour sections.
+- [ ] Add Qavyo Staff App as a section.
+- [ ] Confirm legal, regional, payroll-processing, device, and availability scope before claims.
+- [ ] Connect to Reporting, Multi-Location, Intelligence, and Pricing.
 
-### HR & Payroll hub
+### Reporting & Day Close
 
-- [ ] Create HR & Payroll hub page.
-- [ ] HR & Employee Records overview.
-- [ ] Payroll & Salary Management overview.
-- [ ] Labour Costs & Forecasting overview.
-- [ ] Confirm legal, regional, and payroll-processing scope before detailed claims.
-- [ ] Connect to Workforce, Reporting, Intelligence, and Pricing.
-
-### Business Apps hub
-
-- [ ] Create Business Apps hub page.
-- [ ] Branded Customer App overview.
-- [ ] Qavyo Staff App overview.
-- [ ] Mobile Ordering & Loyalty overview.
-- [ ] Push Notifications overview.
-- [ ] Confirm device platforms, availability, and app-store details before claims.
-- [ ] Connect to POS, Customers, Workforce, and Pricing.
-
-### Money, Reporting & Close hub
-
-- [ ] Create Money, Reporting & Close hub page.
-- [ ] Full Cash Management overview.
-- [ ] Expense Tracking overview.
-- [ ] Profit & Loss Reporting overview.
-- [ ] Day Close & Till Reconciliation overview.
-- [ ] Refund & Void Tracking detail or cross-link to POS.
-- [ ] Advanced Reporting overview.
-- [ ] Sales by Channel overview.
-- [ ] Report Filters & Export overview.
+- [ ] Finish `money-reporting-close.html` as the major reporting and close page.
+- [ ] Add cash, expenses, day close, reconciliation, and profit-and-loss sections.
+- [ ] Add reporting, sales-channel, filter, and export sections.
+- [ ] Cross-link refunds and voids to Restaurant POS.
 - [ ] Connect to Payments, Inventory, Multi-Location, Intelligence, and Pricing.
 
-### Delivery Operations hub
+### Delivery Operations
 
-- [ ] Decide whether Delivery Operations needs a full hub or a section within Ordering.
-- [ ] Fleet & Driver Assignment overview.
-- [ ] GPS Tracking & Routes overview.
-- [ ] Delivery Performance overview.
-- [ ] Distance-Based Fees overview.
+- [ ] Decide whether confirmed product scope justifies a full Delivery page.
+- [ ] If approved, add fleet assignment, routes, performance, and distance-fee sections to `delivery-operations.html`.
+- [ ] Otherwise, place confirmed Delivery sections within Online Ordering or Kitchen Operations.
 - [ ] Confirm mapping, tracking, driver, and regional availability claims.
 
-### Multi-Location & Groups hub
+### Multi-Location
 
-- [ ] Create Multi-Location & Groups hub page.
-- [ ] Locations & Central Menus overview.
-- [ ] Stock Transfers overview.
-- [ ] Consolidated Reporting overview.
-- [ ] Location Comparisons overview.
-- [ ] Group, Franchise & Regional Management overview.
-- [ ] Central Purchasing & Inventory overview.
-- [ ] Central Menu Controls overview.
-- [ ] Location-Level Permissions overview.
-- [ ] Benchmarking & Group Reporting overview.
-- [ ] Connect to Inventory, Reporting, Workforce, Intelligence, and Pricing.
+- [ ] Finish `multi-location-groups.html` as the major Multi-Location page.
+- [ ] Add locations, central menus, transfers, and central purchasing sections.
+- [ ] Add group control, permissions, consolidated reporting, comparison, and benchmarking sections.
+- [ ] Connect to Inventory, HR and Team, Reporting, Intelligence, and Pricing.
 
-## Phase 4 — Shared capability hubs
+## Phase 4 — Shared capability pages
 
 ### Qavyo Intelligence
 
-- [ ] Qavyo Intelligence hub — `intelligence.html` — **Exists; not final**
+- [ ] Finish `intelligence.html` as the canonical Qavyo Intelligence page.
 - [ ] Preserve the Watch -> Detect -> Explain -> Recommend -> Act -> Measure -> Learn loop.
-- [ ] Daily Intelligence overview.
-- [ ] Weekly & Monthly Reviews overview.
-- [ ] Changes & Unusual Activity overview.
-- [ ] Stock & Purchasing Intelligence overview.
-- [ ] Profit & Pricing Intelligence overview.
-- [ ] Staff & Labour Intelligence overview.
-- [ ] Location & Group Intelligence overview.
-- [ ] Executive Reports & Health View overview.
+- [ ] Add Daily Intelligence and Weekly & Monthly Review sections.
+- [ ] Add Changes & Unusual Activity as a section.
+- [ ] Add Stock, Profit, Staff, and Location Intelligence as grounded examples.
+- [ ] Add Executive View as a qualified section.
 - [ ] Keep human control explicit.
 - [ ] Confirm predictive, recommendation, health-score, and impact-estimate claims.
-- [ ] Link back to the operational hub behind each Intelligence story.
+- [ ] Link back to the major operational page behind each Intelligence story.
 
 ### Payments
 
 - [ ] Confirm the Payments product and commercial scope.
-- [ ] Create Payments hub only after scope confirmation.
-- [ ] Taking Payments overview — **Scope to confirm**
-- [ ] Payment Providers overview — **Scope to confirm**
-- [ ] Fees & Processing overview — **Scope to confirm**
-- [ ] Reconciliation overview — **Scope to confirm**
+- [ ] Create a Payments page only after scope confirmation.
+- [ ] If approved, add Taking Payments, Providers, Fees & Processing, and Reconciliation as sections.
 - [ ] Preserve the confirmed separation between software and payment-processing costs.
 - [ ] Do not publish provider, rate, terminal, or compatibility claims without confirmation.
 
 ### Hardware
 
-- [ ] Decide whether Hardware remains a Restaurant Software section or becomes a hub.
+- [ ] Decide whether Hardware remains a Restaurant Software section or becomes a major page.
 - [ ] Confirm supported-device and dedicated-hardware scope.
 - [ ] Explain existing compatible devices versus optional dedicated hardware.
 - [ ] Keep hardware pricing separate from software pricing.
@@ -281,7 +230,7 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 - [ ] Marketing Solutions overview — `solutions.html` — **Exists; not final**
 - [ ] Confirm its relationship to the Business plan without presenting Marketing as core restaurant operations.
 - [ ] Connect all five approved service pages.
-- [ ] Add contextual routes back to relevant product capability hubs where appropriate.
+- [ ] Add contextual routes back to relevant product or major capability pages where appropriate.
 
 ### Focused marketing pages
 
@@ -293,50 +242,14 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 - [ ] Confirm Google Business Profile Optimization scope before creating a page or adding claims.
 - [ ] Decide whether Google Business Profile Optimization belongs within Website SEO or needs its own page.
 
-## Phase 6 — Focused feature pages
+## Phase 6 — Exceptional focused feature pages
 
-Focused pages should be created only after their parent hub is approved. Use one checklist item per actual route when implementation begins.
+Supporting features remain sections by default. Create a standalone page only when it passes the focused-page score in `WEBSITE-DELIVERY-PLAN.md` and has confirmed product depth, distinct buyer intent, available proof, and enough unique content.
 
-### First-wave focused pages
-
-- [ ] Restaurant POS.
-- [ ] Kitchen Display System.
-- [ ] Online & QR Ordering.
-- [ ] Inventory & Food Cost.
-- [ ] Recipes & Costing.
-- [ ] Reservations & Waitlist.
-- [ ] CRM & Customer Profiles.
-- [ ] Scheduling & Shifts.
-- [ ] Attendance & Timesheets.
-- [ ] Payroll & Salary Management.
-- [ ] Branded Customer App.
-- [ ] Qavyo Staff App.
-- [ ] Cash Management & Day Close.
-- [ ] Multi-Location Operations.
-
-### Second-wave focused pages
-
-- [ ] Tables & Floor Plan.
-- [ ] Self-Service Kiosk.
-- [ ] Customer-Facing Display.
-- [ ] Order Routing & Stations.
-- [ ] Prep-Time & Order Tracking.
-- [ ] Waste Tracking.
-- [ ] Suppliers & Purchasing.
-- [ ] Loyalty & Gift Cards.
-- [ ] Customer Analytics.
-- [ ] Roles & Permissions.
-- [ ] Staff Performance.
-- [ ] Labour Costs & Forecasting.
-- [ ] Mobile Ordering & Loyalty.
-- [ ] Advanced Reporting.
-- [ ] Delivery Operations.
-- [ ] Restaurant Group Control.
-
-### Later focused pages
-
-- [ ] Create remaining focused routes only when the hub shows that visitors need more depth.
-- [ ] Avoid creating thin pages that repeat a hub without adding useful explanation.
+- [ ] Review buyer and search demand after each major capability page is live.
+- [ ] Score candidate feature pages before adding them to the sitemap.
+- [ ] Record the reason, parent page, canonical intent, and redirect impact for every approved exception.
+- [ ] Avoid pages that repeat a major page or explain only one small control.
 
 ## Phase 7 — Supporting public pages
 
@@ -376,15 +289,15 @@ Focused pages should be created only after their parent hub is approved. Use one
 
 ## Recommended execution order
 
-1. Approve the shared hub-page pattern.
+1. Approve the shared major-capability-page and supporting-section pattern.
 2. Finish Restaurant Software as the platform overview and directory.
-3. Build POS & Ordering as the first hub.
-4. Build Kitchen, Inventory, Customers, and Reporting hubs.
-5. Build Workforce and HR & Payroll as separate but connected hubs.
-6. Build Business Apps and Multi-Location hubs.
+3. Build Restaurant POS as the first major capability page.
+4. Build Online Ordering, Kitchen, Inventory, Customers, and Reporting major pages.
+5. Build the combined HR, Payroll & Team page.
+6. Build Multi-Location and place Business App features within their relevant major pages.
 7. Confirm and build Payments and Hardware architecture.
-8. Finish Qavyo Intelligence as the shared capability hub.
-9. Review and finish Retail, Farm, and Marketing families.
-10. Build focused feature pages in demand order.
+8. Finish Qavyo Intelligence as the shared canonical page.
+9. Review and finish Retail and Marketing families.
+10. Build exceptional focused feature pages only when demand and content depth justify them.
 11. Add supporting company, contact, legal, and conversion pages.
 12. Run the final connection, accessibility, responsive, content, and launch audit.

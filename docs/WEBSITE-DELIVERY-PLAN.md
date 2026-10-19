@@ -18,7 +18,7 @@ When these documents disagree, stop affected page work and resolve the conflict 
 The plan currently assumes:
 
 1. Restaurant Software is the primary commercial focus for the next 12 months.
-2. Retail, Farm, Payments, Hardware, and Marketing work expands only as product scope and proof are confirmed.
+2. Retail, Payments, Hardware, and Marketing work expands only as product scope and proof are confirmed.
 3. Home and Pricing remain approved and frozen except for verified defects, metadata, accessibility, performance, and approved link-only changes.
 4. The existing semantic HTML, CSS, and vanilla JavaScript stack remains in place.
 5. The production domain, hosting platform, form destination, analytics stack, target launch regions, and legal requirements still require confirmation.
@@ -45,7 +45,7 @@ The immediate goal is not to finish 108 pages. The immediate goal is to decide w
 
 1. Product truth precedes copy.
 2. Research precedes page structure.
-3. A hub precedes its focused feature pages.
+3. A major capability page precedes any exceptional focused feature page beneath it.
 4. A CTA destination precedes CTA rollout.
 5. A page is not public merely because its file exists.
 6. Each page has one canonical purpose, primary audience, parent, search intent, and next action.
@@ -210,7 +210,6 @@ Research separately:
 - Independent retailer.
 - Multi-location retailer.
 - Each approved Retail vertical when its workflow differs materially.
-- Broiler-farm operator only after Farm scope is confirmed.
 - Marketing-service buyer.
 
 Do not combine audiences only because they can use the same feature.
@@ -306,13 +305,13 @@ Entry page
 
 A separate feature page is exceptional. Create one only when buyers need substantial help understanding a distinct workflow and the page passes the focused-page score. Do not create a category page only to organize links.
 
-Keep the current restaurant-led top-level model unless Phase 0 changes commercial priority:
+Use the approved top-level model:
 
 ```text
-Products | Restaurants | Solutions | Pricing | Resources
+Retail | Restaurants | Solutions | Pricing | Resources
 ```
 
-When Retail and Farm become commercially mature, evaluate replacing Restaurants with Industries. Do not make that change automatically.
+Retail replaces the previous Products menu and contains the Retail Software overview plus approved Retail business-type pages. Farm is outside the current public website scope.
 
 ### Recommended Restaurant major pages
 
@@ -581,7 +580,7 @@ Legal and privacy language requires qualified review for the launch markets. Do 
 8. Build Money & Reporting.
 9. Build Team & Payroll after the merged-versus-separate decision.
 10. Build Multi-Location.
-11. Finish Qavyo Intelligence as the shared capability hub.
+11. Finish Qavyo Intelligence as the shared canonical page.
 12. Build Payments and Hardware only after scope confirmation.
 
 Home and Pricing receive only approved link, metadata, accessibility, and performance work during this wave.
@@ -602,7 +601,7 @@ Use the Phase 3 score. Likely candidates for research, not automatic approval:
 - Cash Management and Day Close.
 - Multi-Location Operations.
 
-Do not build the whole existing scaffold inventory. Build one focused workflow when its parent hub proves that more depth is useful.
+Do not build the whole existing scaffold inventory. Build an exceptional focused workflow only when its major parent page proves that more depth is useful.
 
 ### Wave 3: Retail
 
@@ -615,14 +614,7 @@ Do not build the whole existing scaffold inventory. Build one focused workflow w
 
 Do not route Retail buyers into Restaurant feature pages unless the content is genuinely shared and written neutrally.
 
-### Wave 4: Farm
-
-1. Confirm Broiler Farming scope.
-2. Finish Farm overview.
-3. Build Broiler Farming.
-4. Keep other farming verticals outside public architecture until approved.
-
-### Wave 5: Marketing Solutions
+### Wave 4: Marketing Solutions
 
 1. Resolve whether the existing Marketing family is final, frozen, or still under review.
 2. Audit its relationship to Business pricing without presenting services as core operational software.
@@ -630,7 +622,7 @@ Do not route Retail buyers into Restaurant feature pages unless the content is g
 4. Preserve approved page identities.
 5. Add no new service page without scope and demand evidence.
 
-### Wave 6: Resources and trust
+### Wave 5: Resources and trust
 
 Build only supported resource types:
 
@@ -642,7 +634,7 @@ Build only supported resource types:
 - Comparison pages only with dated, attributable, maintained sources.
 - Public HTML sitemap if user testing shows value.
 
-### Wave 7: Campaign funnels
+### Wave 6: Campaign funnels
 
 Build campaign pages only after:
 
@@ -863,9 +855,9 @@ Commercial focus
               -> Restaurant overview
                 -> First hub
                   -> Hub validation
-                    -> Remaining hubs
+                    -> Remaining major pages
                       -> Priority focused pages
-                        -> Retail, Farm, resources, and campaigns
+                        -> Retail, resources, and campaigns
                           -> SEO release
                             -> Launch
                               -> Measurement and optimization
@@ -877,7 +869,7 @@ The following work can run in parallel without breaking the critical path:
 - Legal drafting after launch markets are known.
 - Research for the next approved page.
 - Analytics planning before implementation.
-- Retail product-scope confirmation while Restaurant hubs are built.
+- Retail product-scope confirmation while Restaurant major pages are built.
 
 ## Research basis
 
