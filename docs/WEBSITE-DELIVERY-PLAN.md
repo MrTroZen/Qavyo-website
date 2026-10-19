@@ -300,9 +300,11 @@ Create a scalable hierarchy before page production.
 ```text
 Entry page
   -> Product or solution overview
-    -> Capability hub
-      -> Focused feature page when justified
+    -> Major capability page
+      -> Supporting feature sections
 ```
+
+A separate feature page is exceptional. Create one only when buyers need substantial help understanding a distinct workflow and the page passes the focused-page score. Do not create a category page only to organize links.
 
 Keep the current restaurant-led top-level model unless Phase 0 changes commercial priority:
 
@@ -312,28 +314,33 @@ Products | Restaurants | Solutions | Pricing | Resources
 
 When Retail and Farm become commercially mature, evaluate replacing Restaurants with Industries. Do not make that change automatically.
 
-### Recommended Restaurant hubs
+### Recommended Restaurant major pages
 
-Use the research and capability matrix to test this eight-hub model:
+Use the research and capability matrix to test this consolidated model:
 
-1. Sales & Service.
-2. Kitchen & Fulfilment.
-3. Inventory & Purchasing.
-4. Customers & Growth.
-5. Team & Payroll.
-6. Money & Reporting.
-7. Multi-Location.
-8. Qavyo Intelligence.
+1. Restaurant POS.
+2. Online & QR Ordering.
+3. Kitchen Operations.
+4. Inventory & Food Cost.
+5. Customers & CRM.
+6. HR, Payroll & Team.
+7. Reporting & Day Close.
+8. Multi-Location.
+9. Qavyo Intelligence.
 
 Specific decisions required:
 
-- Test whether Workforce and HR & Payroll need separate hubs.
-- Keep Customer App inside Customers unless it has independent demand.
-- Keep Staff App inside Team unless it has independent demand.
-- Keep Delivery inside Kitchen & Fulfilment unless it becomes a major product line.
+- Make Floor Plan, Customer-Facing Display, Offline Mode, refunds, and voids sections inside Restaurant POS.
+- Make Kiosk a section inside Online & QR Ordering.
+- Make Kitchen Display, routing, preparation tracking, alerts, and performance sections inside Kitchen Operations.
+- Merge Workforce into HR, Payroll & Team unless research proves that a separate page is necessary.
+- Keep Customer App inside Customers & CRM unless it has independent demand.
+- Keep Staff App inside HR, Payroll & Team unless it has independent demand.
+- Keep Delivery within Online Ordering or Kitchen Operations unless it becomes a major product line.
 - Keep Payments and Hardware as shared product pages after scope confirmation.
 - Keep Marketing Solutions separate from core operational software.
-- Reduce Intelligence micro-pages until each has confirmed scope and unique intent.
+- Make Intelligence use cases sections and examples on the main Intelligence page.
+- Use `RESTAURANT-CONTENT-CONSOLIDATION-PROPOSAL.md` for the proposed route-by-route treatment and menu.
 
 ### Focused-page scoring
 
@@ -370,7 +377,7 @@ Do not migrate URLs until the production host can provide permanent redirects, c
 - Run open card sorting with representative buyers.
 - Run tree testing against common tasks.
 - Verify that each important page is reachable through normal HTML links.
-- Verify that every focused page has one parent hub.
+- Verify that every focused page has one major parent page.
 - Verify that cross-links are selective and useful.
 - Verify desktop and mobile navigation expose the same essential destinations.
 
