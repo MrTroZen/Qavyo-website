@@ -8,7 +8,9 @@ This file records reusable patterns as they are approved. Update it whenever a r
 
 ## Typography
 
-Global heading and body rules live in `css/base.css`; type tokens live in `css/tokens.css`. `.eyebrow` is a compact contextual label and should be used sparingly. `.lede`, `.text-large`, and `.text-small` cover common text hierarchy without local one-off sizes.
+Global heading and body rules live in `css/base.css`; type tokens live in `css/tokens.css`. `.lede`, `.text-large`, and `.text-small` cover common text hierarchy without local one-off sizes.
+
+Do not use `.eyebrow`, a kicker, or the blue-square-plus-uppercase-label pattern above page or section headings. Existing section-heading uses are legacy migration candidates and must not be copied into new work. Start sections directly with the heading and use supporting copy, spacing, or a structural divider when more hierarchy is needed. Compact uppercase text remains valid only when it carries real interface meaning, such as a product state, data label, or navigation group.
 
 ## Buttons
 

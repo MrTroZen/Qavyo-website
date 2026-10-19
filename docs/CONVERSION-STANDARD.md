@@ -29,6 +29,8 @@ Every conversion page should make these points clear in its first viewport:
 
 Use one main promise and one primary call to action. Secondary actions may support visitors who need more information, such as pricing or a product explanation.
 
+Put the audience callout and page context into the headline or supporting copy. Do not add a decorative eyebrow or kicker above the page or section heading.
+
 ## 3. Recommended narrative
 
 Adapt this order to the page objective:

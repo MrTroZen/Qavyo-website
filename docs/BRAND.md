@@ -18,7 +18,9 @@ Qavyo is not defined by restaurant POS. Qavyo Restaurant Software is the company
 
 ## Typography
 
-Manrope is the primary typeface. Use the system sans-serif fallback when the web font is unavailable. Headings are strong but not excessively heavy, use tight letter spacing, and generally stay sentence case. Body copy should remain comfortably readable; avoid tiny text. Compact uppercase labels may introduce sections or operational states, but should not become a page-wide gimmick.
+Manrope is the primary typeface. Use the system sans-serif fallback when the web font is unavailable. Headings are strong but not excessively heavy, use tight letter spacing, and generally stay sentence case. Body copy should remain comfortably readable; avoid tiny text.
+
+Do not place decorative eyebrow or kicker labels above page or section headings. This includes the blue-square-plus-uppercase-label treatment. Let the heading, supporting copy, layout, and surrounding context establish the section. Compact uppercase labels are reserved for genuine product-interface states, data labels, and navigation groups; they are not section introductions.
 
 ## Colour roles
 
