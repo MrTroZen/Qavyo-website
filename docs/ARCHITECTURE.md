@@ -117,15 +117,16 @@ The shared header uses flat, full-width mega menus for Retail, Restaurants, Solu
 
 The project is a static prototype using semantic HTML, CSS, and small amounts of vanilla JavaScript. `index.html` contains the complete approved homepage with global navigation and public footer. Major-page, supporting-feature, Retail-vertical, Intelligence-detail, Payments, and legacy Farm scaffold routes exist in the repository. These scaffolded routes are not final content and are recorded in `PAGE-INVENTORY.md`; their presence does not guarantee a public page.
 
-`restaurant.html` contains the Qavyo Restaurant Software platform overview and capability directory, organized into a concise, conversion-focused 8-section narrative:
-- Section 1: Hero (`.rst-hero`) — One stable illustrative operations interface and confirmed commercial reassurance (£29/month, Full Qavyo for 30 days, 24/7 support)
-- Section 2: One Connected System (`#platform-overview`) — Operational connection flow (Order → Kitchen → Inventory → Customer → Reporting → Intelligence) and a capability directory covering Ordering, Kitchen, Inventory, Customers, Workforce, HR & Payroll, Business Apps, Reporting, Marketing, Multi-location, Payments, and Qavyo Intelligence while preserving established deep-link anchors
-- Section 3: Qavyo Intelligence (`#intelligence`) — Operational loop (Watch → Detect → Explain → Recommend → Act → Measure → Learn) with one qualitative diagnostic example and explicit human control
-- Section 4: Clear Pricing (`#pricing`, `#plans`) — Concise Starter (£29/month), Growth (£79/month), and Business (£149/month) summary directing visitors to the canonical Pricing page, plus the approved 30-day Full Qavyo access strip; hardware and payment processing remain separate
-- Section 5: 30 Days. Full Qavyo. (`#full-access`) — Unrestricted full-platform experience before choosing a plan
-- Section 6: Work Where Your Restaurant Works (`#hardware`, `#devices`) — Software first, hardware when needed (supported phones, tablets, compatible equipment, dedicated hardware)
-- Section 7: 24/7 Support & Getting Started (`#support`, `#getting-started`) — A concise statement of confirmed round-the-clock support
-- Section 8: Final CTA (`#get-started`) — High-conversion closure with primary/secondary actions
+`restaurant.html` is the master implementation of the reusable conversion-page standard recorded in `CONVERSION-STANDARD.md`. Its narrative is:
+- Section 1: Conversion hero (`.rst-hero`) — outcome-led promise, primary and secondary actions, confirmed commercial reassurance, and one clearly labelled illustrative connected-operation interface
+- Section 2: Operational problem (`.rst-problem`) — recognisable friction across service, costs, teams, and reporting without unsupported quantitative claims
+- Section 3: Qavyo Connected Operations (`#platform-overview`) — Order → Kitchen → Inventory → Customer → Reporting → Intelligence, followed by three outcome-led explanations
+- Section 4: Major capability directory (`.rst-directory`) — dedicated Restaurant routes grouped as Run service, Manage the business, Customers & growth, and Choose & start; small features remain supporting context and legacy deep-link anchors are preserved
+- Section 5: Qavyo Intelligence (`#intelligence`) — Watch → Detect → Explain → Recommend → Act → Measure → Learn, with a qualitative diagnostic example and explicit human control
+- Section 6: Full Qavyo access (`#full-access`) — Start → Set up → Run → Choose, confirmed starting price, and clear separation of hardware and payment processing
+- Section 7: Delivery, Hardware, and Payments (`.rst-decisions`) — three permanent decision areas with dedicated canonical routes
+- Section 8: Buyer FAQ (`#support`) — native disclosure answers covering trial access, separate costs, compatible devices, feature hierarchy, human control, and 24/7 support
+- Section 9: Final CTA (`#get-started`) — primary and secondary actions with a concise commercial postscript
 - Global public footer integration
 
 `intelligence.html` contains the approved Qavyo Intelligence narrative:

@@ -221,7 +221,13 @@ The shared Restaurant mega menu uses four approved groups: Run service; Manage t
 
 ## Restaurant capability directory
 
-The Restaurant Software overview uses `.rst-hub-directory` as the bridge between the platform story and future feature hubs. It presents verified Pricing categories in a responsive three-, two-, and one-column directory, preserves existing deep-link anchors, and links only to approved canonical destinations. Unbuilt feature hubs remain informative rather than pretending to be live routes. `.rst-pricing-summary` provides only the confirmed plan names and monthly starting prices, with the canonical Pricing page owning the detailed comparison.
+The Restaurant Software overview uses `.rst-directory` as the bridge between the platform story and major capability pages. It groups approved routes under Run service, Manage the business, Customers & growth, and Choose & start. The pattern uses typography, dividers, concise descriptions, and directional arrows revealed on hover or keyboard focus instead of a field of feature cards. Small features remain descriptive context inside their closest major route. Existing legacy deep-link anchors are preserved. The canonical Pricing page owns detailed plan comparison; the overview states only the confirmed starting software price and separate-cost boundaries.
+
+## Restaurant conversion narrative
+
+The Restaurant Software overview is the reference implementation for `CONVERSION-STANDARD.md`. `.rst-problem` names operational friction before the product explanation. `.rst-flow` then presents the connected mechanism, and `.rst-outcomes` translates that mechanism into Run, Control, and Understand outcomes. `.rst-start` explains the 30-day Full Qavyo path without requiring detailed plan comparison on the overview. `.rst-decisions` gives Delivery Operations, Hardware & Devices, and Payments dedicated decision blocks. `.rst-faq` uses native `details` and `summary` elements for buying objections. `.rst-final-cta__postscript` closes with the confirmed starting price, access period, and separate-cost terms.
+
+The hero uses `.rst-command` as a proof-safe illustrative operational interface. It must remain labelled as illustrative, avoid fabricated metrics, and show one understandable service event connecting to kitchen, inventory, reporting, and Qavyo Intelligence.
 
 ## Structural hub and feature pages
 
