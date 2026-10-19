@@ -335,8 +335,8 @@ Specific decisions required:
 - Merge Workforce into HR, Payroll & Team unless research proves that a separate page is necessary.
 - Keep Customer App inside Customers & CRM unless it has independent demand.
 - Keep Staff App inside HR, Payroll & Team unless it has independent demand.
-- Keep Delivery within Online Ordering or Kitchen Operations unless it becomes a major product line.
-- Keep Payments and Hardware as shared product pages after scope confirmation.
+- Keep Delivery Operations as a permanent major Restaurant page.
+- Keep Payments and Hardware as permanent shared product pages; confirm detailed scope before making claims.
 - Keep Marketing Solutions separate from core operational software.
 - Make Intelligence use cases sections and examples on the main Intelligence page.
 - Use `RESTAURANT-CONTENT-CONSOLIDATION-PROPOSAL.md` for the proposed route-by-route treatment and menu.
@@ -581,7 +581,7 @@ Legal and privacy language requires qualified review for the launch markets. Do 
 9. Build Team & Payroll after the merged-versus-separate decision.
 10. Build Multi-Location.
 11. Finish Qavyo Intelligence as the shared canonical page.
-12. Build Payments and Hardware only after scope confirmation.
+12. Build Delivery, Payments, and Hardware as permanent pages using only confirmed scope.
 
 Home and Pricing receive only approved link, metadata, accessibility, and performance work during this wave.
 

@@ -70,7 +70,7 @@ The Resources menu includes `feature-directory.html` as the complete product-and
 
 ### Restaurant Software
 
-`restaurant.html` is the canonical Restaurant Software overview. It links directly to the major Restaurant pages: Restaurant POS, Online & QR Ordering, Kitchen Operations, Inventory & Food Cost, Customers & CRM, HR, Payroll & Team, Reporting & Day Close, Multi-Location, and Qavyo Intelligence. Small features such as Floor Plan, Offline Mode, Kiosk, Recipes, Scheduling, and report export remain sections inside the closest major page. The approved route-by-route proposal is recorded in `RESTAURANT-CONTENT-CONSOLIDATION-PROPOSAL.md`.
+`restaurant.html` is the canonical Restaurant Software overview. It links directly to the major Restaurant pages: Restaurant POS, Online & QR Ordering, Kitchen Operations, Inventory & Food Cost, Customers & CRM, HR, Payroll & Team, Reporting & Day Close, Multi-Location, Qavyo Intelligence, Delivery Operations, Hardware & Devices, and Payments. Small features such as Floor Plan, Offline Mode, Kiosk, Recipes, Scheduling, and report export remain sections inside the closest major page. The approved route-by-route proposal is recorded in `RESTAURANT-CONTENT-CONSOLIDATION-PROPOSAL.md`.
 
 ### Retail Software
 
@@ -101,6 +101,8 @@ The Marketing family is complete and frozen. Future work should preserve the dis
 ## Navigation implementation
 
 Unavailable destinations use the existing safe prototype-link behavior. Scaffolded routes are route-inventory candidates, not automatically valid public destinations. As major pages gain their approved supporting sections, apply the route treatment from `RESTAURANT-CONTENT-CONSOLIDATION-PROPOSAL.md` and the final route-disposition plan.
+
+The shared header uses flat, full-width mega menus for Retail, Restaurants, Solutions, and Resources. Desktop columns use thin dividers, concise title-and-description links, and a directional arrow revealed on hover, keyboard focus, or the current page. Mobile keeps the same taxonomy in one-open-at-a-time disclosure panels. Farm is absent from both header modes.
 
 ## Page development principles
 

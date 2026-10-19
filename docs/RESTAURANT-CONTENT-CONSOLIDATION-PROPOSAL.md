@@ -1,6 +1,6 @@
 # Restaurant content consolidation and menu proposal
 
-Status: Restaurant menu and consolidation direction approved for sitemap planning. Conditional page decisions, navigation implementation, redirects, route deletion, and publication still require their named delivery gates.
+Status: Restaurant consolidation and global-menu taxonomy approved. Delivery Operations, Payments, and Hardware & Devices are permanent full pages. Detailed content, claims, redirects, route deletion, and publication still require their named delivery gates.
 
 ## Decision
 
@@ -54,15 +54,15 @@ A capability remains a section when most of these statements are true:
 | Multi-Location | `multi-location-groups.html` | Explain group control across locations | Central menus, permissions, transfers, purchasing, consolidated reporting, comparisons, benchmarking |
 | Qavyo Intelligence | `intelligence.html` | Explain how Qavyo turns connected operating signals into human-controlled action | Daily view, unusual changes, stock, profit, labour, location, executive review, operating loop |
 
-### Conditional full pages
+### Permanent supporting product pages
 
-These pages remain conditional until product scope and buyer demand are confirmed.
+These pages are permanent buyer destinations. Their presence is approved; detailed workflows and claims still require confirmed product scope and evidence.
 
-| Page | Existing route | Keep as a full page when | Otherwise |
+| Page | Existing route | Purpose | Content guardrail |
 |---|---|---|---|
-| Delivery Operations | `delivery-operations.html` | Qavyo provides a substantial end-to-end delivery workflow | Make it a section within Online & QR Ordering or Kitchen Operations |
-| Payments | `payments.html` | Providers, processing, fees, settlement, and reconciliation are confirmed | Keep only a qualified Payments section on Restaurant and Pricing |
-| Hardware & Devices | `hardware.html` | Buyers need meaningful device, compatibility, and purchase guidance | Keep the current device section on Restaurant and Pricing |
+| Delivery Operations | `delivery-operations.html` | Explain delivery as a major restaurant workflow | Confirm fleet, tracking, routing, performance, fees, and regional scope before publishing details |
+| Payments | `payments.html` | Explain payment setup, processing, fees, and reconciliation | Preserve the separation between software pricing and provider processing costs; do not invent rates or providers |
+| Hardware & Devices | `hardware.html` | Help buyers understand supported devices and optional dedicated equipment | Qualify compatibility and keep hardware pricing separate from software |
 
 ### Existing approved buying page
 
@@ -229,14 +229,14 @@ Manage the business
 Customers & growth
 ├── Customers & CRM
 ├── Reservations & Loyalty        [anchor into Customers & CRM]
-├── Delivery Operations           [only if approved]
+├── Delivery Operations
 └── Marketing Solutions
 
 Choose & start
 ├── Restaurant Software Overview
 ├── Pricing
-├── Hardware & Devices             [page or Restaurant anchor]
-├── Payments                       [page or qualified Restaurant anchor]
+├── Hardware & Devices
+├── Payments
 └── Start 30 Days Free             [primary action]
 ```
 
@@ -261,8 +261,7 @@ Choose & start
 
 This proposal reduces the Restaurant architecture from dozens of thin destinations to:
 
-- 10 core Restaurant capability pages, including the overview and Intelligence.
-- Up to 3 conditional product pages.
+- 13 major Restaurant pages, including the overview, Intelligence, Delivery, Payments, and Hardware.
 - Pricing as the existing buying page.
 - Supporting features explained as anchored sections.
 - One feature directory for exhaustive browsing.

@@ -405,6 +405,149 @@
   left: auto;
 }
 
+/* Global minimal mega menu */
+.nav-menu {
+  position: fixed;
+  top: 4.75rem;
+  right: 0;
+  left: 0;
+  width: auto;
+  max-height: calc(100vh - 4.75rem);
+  padding: 0;
+  overflow-y: auto;
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+  border-radius: 0;
+  background: var(--color-canvas);
+  box-shadow: var(--shadow-sm);
+}
+
+.nav-menu::before {
+  content: none;
+}
+
+.nav-menu__inner {
+  padding-block: var(--space-7);
+}
+
+.mega-menu-grid {
+  display: grid;
+}
+
+.mega-menu-grid--retail,
+.mega-menu-grid--solutions,
+.mega-menu-grid--resources {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.mega-menu-grid--restaurants {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.mega-menu-column {
+  min-width: 0;
+  padding-inline: var(--space-6);
+}
+
+.mega-menu-column:first-child {
+  padding-left: 0;
+}
+
+.mega-menu-column:last-child {
+  padding-right: 0;
+}
+
+.mega-menu-column + .mega-menu-column {
+  border-left: 1px solid var(--color-border);
+}
+
+.mega-menu-column__title {
+  margin-block-end: var(--space-5);
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  line-height: 1.4;
+}
+
+.mega-menu-links {
+  display: grid;
+  gap: var(--space-5);
+}
+
+.mega-menu-link {
+  position: relative;
+  display: grid;
+  min-height: 2.75rem;
+  align-items: start;
+  padding-left: var(--space-5);
+  color: var(--color-ink);
+  text-decoration: none;
+}
+
+.mega-menu-link__arrow {
+  position: absolute;
+  top: 0.05rem;
+  left: 0;
+  color: var(--color-brand-hover);
+  font-size: var(--text-base);
+  line-height: 1.4;
+  opacity: 0;
+  transform: translateX(calc(-1 * var(--space-2)));
+  transition: opacity var(--transition-fast), transform var(--transition-fast);
+}
+
+.mega-menu-link__copy {
+  display: grid;
+  gap: var(--space-1);
+}
+
+.mega-menu-link__title {
+  font-size: var(--text-base);
+  font-weight: 600;
+  line-height: 1.4;
+  transition: color var(--transition-fast);
+}
+
+.mega-menu-link__description {
+  color: var(--color-text);
+  font-size: var(--text-sm);
+  line-height: 1.55;
+}
+
+.nav-trigger:focus-visible,
+.nav-link:focus-visible,
+.utility-link:focus-visible,
+.mobile-menu-trigger:focus-visible,
+.mobile-nav-trigger:focus-visible,
+.mobile-nav-link:focus-visible,
+.mega-menu-link:focus-visible {
+  outline-color: var(--color-brand-hover);
+}
+
+.mega-menu-link:focus-visible .mega-menu-link__arrow,
+.mega-menu-link[aria-current="page"] .mega-menu-link__arrow {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.mega-menu-link:focus-visible .mega-menu-link__title,
+.mega-menu-link[aria-current="page"] .mega-menu-link__title {
+  color: var(--color-brand-hover);
+}
+
+@media (hover: hover) {
+  .mega-menu-link:hover .mega-menu-link__arrow {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  .mega-menu-link:hover .mega-menu-link__title {
+    color: var(--color-brand-hover);
+  }
+}
+
 .utility-link {
   white-space: nowrap;
 }
@@ -1007,6 +1150,50 @@ body.mobile-menu-open {
   .mobile-menu-section .mobile-menu-section__featured-link {
     color: var(--color-brand-hover);
     font-weight: 700;
+  }
+
+  .mobile-nav-panel {
+    padding: 0 0 var(--space-5);
+    border-left: 0;
+  }
+
+  .mobile-nav-section {
+    display: grid;
+    gap: var(--space-2);
+    padding-block: var(--space-5);
+  }
+
+  .mobile-nav-section + .mobile-nav-section {
+    border-top: 1px solid var(--color-border);
+  }
+
+  .mobile-nav-section__title {
+    margin: 0 0 var(--space-3);
+    color: var(--color-ink);
+    font-size: var(--text-sm);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.4;
+  }
+
+  .mobile-nav-panel .mega-menu-link {
+    min-height: 2.75rem;
+    padding: var(--space-2) 0 var(--space-2) var(--space-5);
+    color: var(--color-ink);
+  }
+
+  .mobile-nav-panel .mega-menu-link__title {
+    font-size: var(--text-sm);
+    font-weight: 600;
+  }
+
+  .mobile-nav-panel .mega-menu-link__description {
+    font-size: var(--text-xs);
+  }
+
+  .mobile-nav-panel .mega-menu-link:hover,
+  .mobile-nav-panel .mega-menu-link:focus-visible {
+    color: var(--color-ink);
   }
 
   .mobile-navigation__actions {

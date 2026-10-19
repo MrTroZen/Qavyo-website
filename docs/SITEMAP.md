@@ -118,13 +118,13 @@ Qavyo
 |   |   |   `-- Customer App & Notifications [section]
 |   |   |
 |   |   |-- Reservations & Loyalty [anchor into Customers & CRM]
-|   |   |-- Delivery Operations [conditional page]
+|   |   |-- Delivery Operations [major page]
 |   |   `-- Marketing Solutions [cross-link]
 |   |
 |   `-- Choose & start
 |       |-- Pricing
-|       |-- Hardware & Devices [conditional page or overview section]
-|       |-- Payments [conditional page or overview section]
+|       |-- Hardware & Devices [major page]
+|       |-- Payments [major page]
 |       `-- Start 30 Days Free [conversion destination]
 |
 |-- Solutions
@@ -206,14 +206,14 @@ Manage the business
 Customers & growth
 |-- Customers & CRM
 |-- Reservations & Loyalty [section anchor]
-|-- Delivery Operations [only if approved]
+|-- Delivery Operations
 `-- Marketing Solutions
 
 Choose & start
 |-- Restaurant Software Overview
 |-- Pricing
-|-- Hardware & Devices [page or section]
-|-- Payments [page or section]
+|-- Hardware & Devices
+|-- Payments
 `-- Start 30 Days Free
 ```
 
@@ -265,7 +265,7 @@ Home remains the parent-brand orientation page. Its approved content is not rede
 - Restaurant overview links directly to major capability pages.
 - Major capability pages link back to Restaurant overview.
 - Restaurant POS links to Online Ordering, Kitchen, Reporting, and Payments when relevant.
-- Online Ordering links to Customers, Kitchen, Delivery when approved, and Marketing Solutions when relevant.
+- Online Ordering links to Customers, Kitchen, Delivery, and Marketing Solutions when relevant.
 - Kitchen links to Inventory, HR and Team, Reporting, and Intelligence.
 - Inventory links to Reporting, Multi-Location, and Intelligence.
 - Customers links to Online Ordering, Marketing Solutions, and Intelligence.
@@ -289,7 +289,7 @@ Marketing Solutions remains conceptually separate from core restaurant and retai
 - `solutions.html` is the only Marketing Solutions overview.
 - `retail.html` is the only Retail Software overview.
 - `restaurant.html` is the only Restaurant Software overview.
-- Payments and Hardware remain conditional canonical pages until scope is approved.
+- `delivery-operations.html`, `hardware.html`, and `payments.html` are permanent Restaurant pages. Their detailed claims remain subject to product-scope confirmation.
 
 ## Page-status and indexation rules
 
@@ -305,8 +305,8 @@ Marketing Solutions remains conceptually separate from core restaurant and retai
 
 1. Approve this target sitemap.
 2. Classify every current route as Keep, Merge, Defer, Retire, or Utility.
-3. Confirm the 10 core Restaurant pages.
-4. Confirm conditional Delivery, Payments, and Hardware treatment.
+3. Build the 13 major Restaurant pages, including Delivery, Payments, and Hardware.
+4. Confirm the detailed product scope and evidence for Delivery, Payments, and Hardware.
 5. Confirm which Retail vertical pages are ready for public links.
 6. Build destination sections before redirecting small feature routes.
 7. Implement the Retail and Restaurant menus together on desktop and mobile.

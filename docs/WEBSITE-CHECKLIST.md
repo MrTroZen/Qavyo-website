@@ -48,11 +48,11 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 ### Navigation and discovery
 
 - [x] Approve the target sitemap and consolidated Restaurant menu direction.
-- [ ] Replace Products with Retail in desktop navigation.
-- [ ] Replace Products with Retail in mobile navigation.
-- [ ] Link only approved Retail overview and business-type destinations.
-- [ ] Apply the consolidated Restaurant menu to desktop navigation.
-- [ ] Apply the same consolidated Restaurant taxonomy to mobile navigation.
+- [x] Replace Products with Retail in desktop navigation.
+- [x] Replace Products with Retail in mobile navigation.
+- [x] Link the approved Retail overview and business-type destinations.
+- [x] Apply the consolidated Restaurant menu to desktop navigation.
+- [x] Apply the same consolidated Restaurant taxonomy to mobile navigation.
 - [ ] Remove Farm from navigation, Home links, footer, feature directory, and internal recommendations.
 - [ ] Add breadcrumbs to major capability and vertical pages.
 - [ ] Create a reusable parent-overview link pattern.
@@ -71,7 +71,7 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 - [ ] Define the connected-workflow visual pattern.
 - [ ] Define related-capability cross-links.
 - [x] Define and display scaffolded/content-pending page status.
-- [ ] Document approved reusable additions in `docs/COMPONENTS.md`.
+- [x] Document approved reusable additions in `docs/COMPONENTS.md`.
 
 ### Global quality
 
@@ -139,7 +139,7 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 - [ ] Add online ordering and QR ordering sections.
 - [ ] Add Self-Service Kiosk as a section.
 - [ ] Add Mobile Ordering as a section.
-- [ ] Connect to POS, Kitchen, Customers, Delivery when approved, and Pricing.
+- [ ] Connect to POS, Kitchen, Customers, Delivery, and Pricing.
 
 ### Kitchen Operations
 
@@ -181,9 +181,8 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 
 ### Delivery Operations
 
-- [ ] Decide whether confirmed product scope justifies a full Delivery page.
-- [ ] If approved, add fleet assignment, routes, performance, and distance-fee sections to `delivery-operations.html`.
-- [ ] Otherwise, place confirmed Delivery sections within Online Ordering or Kitchen Operations.
+- [x] Keep Delivery Operations as a permanent full page.
+- [ ] Add only confirmed fleet assignment, routes, performance, and distance-fee sections to `delivery-operations.html`.
 - [ ] Confirm mapping, tracking, driver, and regional availability claims.
 
 ### Multi-Location
@@ -209,15 +208,15 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 
 ### Payments
 
+- [x] Keep Payments as a permanent full page.
 - [ ] Confirm the Payments product and commercial scope.
-- [ ] Create a Payments page only after scope confirmation.
-- [ ] If approved, add Taking Payments, Providers, Fees & Processing, and Reconciliation as sections.
+- [ ] Add confirmed Taking Payments, Providers, Fees & Processing, and Reconciliation sections.
 - [ ] Preserve the confirmed separation between software and payment-processing costs.
 - [ ] Do not publish provider, rate, terminal, or compatibility claims without confirmation.
 
 ### Hardware
 
-- [ ] Decide whether Hardware remains a Restaurant Software section or becomes a major page.
+- [x] Keep Hardware & Devices as a permanent full page.
 - [ ] Confirm supported-device and dedicated-hardware scope.
 - [ ] Explain existing compatible devices versus optional dedicated hardware.
 - [ ] Keep hardware pricing separate from software pricing.
@@ -295,7 +294,7 @@ Supporting features remain sections by default. Create a standalone page only wh
 4. Build Online Ordering, Kitchen, Inventory, Customers, and Reporting major pages.
 5. Build the combined HR, Payroll & Team page.
 6. Build Multi-Location and place Business App features within their relevant major pages.
-7. Confirm and build Payments and Hardware architecture.
+7. Build the permanent Delivery, Payments, and Hardware pages from confirmed product scope.
 8. Finish Qavyo Intelligence as the shared canonical page.
 9. Review and finish Retail and Marketing families.
 10. Build exceptional focused feature pages only when demand and content depth justify them.

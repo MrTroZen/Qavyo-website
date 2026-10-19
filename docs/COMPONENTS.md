@@ -30,9 +30,11 @@ Default links retain browser-understandable semantics. `.text-link` provides a p
 
 The global header is a compact sticky white surface with a fine lower border. It contains the replaceable text wordmark, primary navigation, account/sales utilities, and one primary conversion action.
 
-Desktop navigation uses explicit buttons for dropdowns rather than hover-only interaction. Only one dropdown may be open at once. The three mega-menus use the same restrained visual system but have purpose-specific structures: Products presents three software families, Restaurants groups detailed operational capabilities into four scannable areas, and Solutions presents Marketing & Communication, Web & Growth, and Qavyo Intelligence. Resources is a restrained single-column menu and also houses company links.
+Desktop navigation uses explicit buttons for dropdowns rather than hover-only interaction. Only one dropdown may be open at once. Retail, Restaurants, Solutions, and Resources open flat, full-width panels on the cool neutral canvas. Their columns use typography, whitespace, and thin vertical dividers rather than cards or decorative containers. Each destination uses `.mega-menu-link` with a clear title, optional description, and a directional arrow that appears on pointer hover, keyboard focus, or `aria-current="page"`. The interaction must not shift surrounding text.
 
-At widths up to `60rem`, desktop navigation is replaced by a dedicated full-height mobile menu. Products, Restaurants, Solutions, and Resources retain top-level expandable panels, with only one panel open at a time. Their internal categories are presented as clearly divided, directly readable sections rather than recreating desktop columns or adding nested accordions. Opening the mobile menu locks background scrolling. Touch targets are at least approximately 44px.
+At widths up to `60rem`, desktop navigation is replaced by a dedicated full-height mobile menu. Retail, Restaurants, Solutions, and Resources retain top-level expandable panels, with only one panel open at a time. Their internal categories use `.mobile-nav-section` and the same `.mega-menu-link` destinations rather than nested accordions. Opening the mobile menu locks background scrolling. Touch targets are at least approximately 44px.
+
+Restaurant navigation always includes the permanent Delivery Operations, Hardware & Devices, and Payments pages. Retail replaces Products as the first primary item. Farm must not appear in desktop or mobile navigation.
 
 Required behaviour lives in `js/main.js`: click and keyboard activation, `ArrowDown` entry into desktop menus, one-open-menu enforcement for desktop dropdowns and mobile top-level accordions, outside-click dismissal, Escape dismissal with focus restoration, mobile accordion state, and viewport-change cleanup. Triggers must retain accurate `aria-expanded` and `aria-controls` relationships.
 
@@ -215,7 +217,7 @@ The Pricing Final CTA (`.pricing-final`) provides authoritative closure on a ful
 
 ## Pricing-aligned restaurant navigation
 
-The shared Restaurant mega menu uses four concise groups derived from the approved Pricing plan taxonomy: Ordering & Service; Kitchen, Stock & Buying; Customers, Team & Control; and Business & Intelligence. The menu exposes representative live hub and feature routes rather than reproducing the complete pricing comparison. Products links to the canonical Restaurant, Retail, Farm, Intelligence, Hardware, Payments, and retail-vertical routes. Resources provides an `All Products & Features` link to `feature-directory.html`. Desktop and mobile menus must contain the same essential destinations.
+The shared Restaurant mega menu uses four approved groups: Run service; Manage the business; Customers & growth; and Choose & start. It exposes major buyer destinations rather than every feature route. Delivery Operations, Hardware & Devices, and Payments remain permanent links. Retail is its own top-level menu and Farm is absent. Resources provides an `All Products & Features` link to `feature-directory.html`. Desktop and mobile menus must contain the same essential destinations.
 
 ## Restaurant capability directory
 
