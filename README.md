@@ -70,6 +70,7 @@ Read these before implementation work:
 1. [`docs/BRAND.md`](docs/BRAND.md) before visual design.
 2. [`docs/ARCHITECTURE.md`](docs/ARCHITECTURE.md) before creating pages or navigation.
 3. [`docs/COMPONENTS.md`](docs/COMPONENTS.md) before adding or changing reusable UI.
+4. [`docs/WEBSITE-DELIVERY-PLAN.md`](docs/WEBSITE-DELIVERY-PLAN.md) for delivery order, dependencies, and approval gates.
 
 ## Development principles
 

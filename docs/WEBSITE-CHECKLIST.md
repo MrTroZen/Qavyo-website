@@ -1,6 +1,6 @@
 # Qavyo website completion checklist
 
-This is the master delivery checklist for the public website. Update it when a page or shared task is approved, completed, verified, committed, and pushed.
+This is the route-level completion checklist for the public website. [`WEBSITE-DELIVERY-PLAN.md`](WEBSITE-DELIVERY-PLAN.md) defines delivery order, dependencies, research requirements, and approval gates. Update this checklist when a page or shared task is approved, completed, verified, committed, and pushed.
 
 ## Status key
 
