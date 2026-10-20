@@ -123,9 +123,9 @@ The canonical Pricing page uses `.pricing-plan-grid` for three separate, aligned
 
 `.rst-device-panel` explains the qualified hardware path: use supported phones, tablets, or compatible equipment; add dedicated restaurant hardware where needed; and confirm compatibility with Qavyo. It must not imply universal device support.
 
-## Operational Support Showcase
+## Operational Support Assurance
 
-`.rst-support` gives clear weight to the confirmed 24/7 support offer without inventing channels, service levels, onboarding promises, or response times.
+`.rst-start__support` integrates the confirmed 24/7 support offer into the 30-day Full Qavyo conversion panel. It should read as reassurance within the same decision, not as a separate oversized content section, and must not invent channels, service levels, onboarding promises, or response times.
 
 ## Closing Conversion Section
 
@@ -235,7 +235,7 @@ The Restaurant Software overview uses `.rst-directory` as the bridge between the
 
 The Restaurant Software overview is a visual hub rather than a feature directory. `.rst-feature` alternates concise copy with a purpose-built illustrative interface for each major operating area; `.rst-feature--reverse` changes composition without changing reading order on mobile. `.rst-labels` names only the supporting capabilities needed to understand that visual. Every major section ends with a descriptive link to its established destination.
 
-The hero uses `.rst-hero-ui` to show one order connecting POS, kitchen, inventory, and reporting. Other proof-safe visual patterns include `.rst-pos`, `.rst-kds`, `.rst-recipe`, `.rst-schedule`, `.rst-customer`, `.rst-report`, `.rst-locations`, and `.rst-intel`. All examples are explicitly illustrative, use qualitative or obviously demonstrative data, and must not be presented as customer evidence. `.rst-power-map` reconnects these stories as an orbital ecosystem around a white circular Your restaurant hub: compact linked capability pills reveal an active connection on hover or keyboard focus, decorative signal paths suggest continuous flow, and the layout becomes a simple stacked directory at smaller widths. Its animation is disabled by the page-level reduced-motion rule. `.rst-start` owns the 30-day Full Qavyo handoff without duplicating plan cards; `.rst-duo` keeps Payments and Hardware visible while preserving their commercial boundaries.
+The hero uses `.rst-hero-ui` to show one order connecting POS, kitchen, inventory, and reporting. Other proof-safe visual patterns include `.rst-pos`, `.rst-kds`, `.rst-recipe`, `.rst-schedule`, `.rst-customer`, `.rst-report`, `.rst-locations`, and `.rst-intel`. All examples are explicitly illustrative, use qualitative or obviously demonstrative data, and must not be presented as customer evidence. `.rst-power-map` reconnects these stories as an orbital ecosystem around a white circular Your restaurant hub: compact linked capability pills reveal an active connection on hover or keyboard focus, decorative signal paths suggest continuous flow, and the layout becomes a simple stacked directory at smaller widths. Its animation is disabled by the page-level reduced-motion rule. `.rst-start` owns the 30-day Full Qavyo handoff and integrates operational support as a compact reassurance row without duplicating plan cards; `.rst-duo` keeps Payments and Hardware visible while preserving their commercial boundaries.
 
 ## Structural hub and feature pages
 
