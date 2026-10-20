@@ -15,7 +15,7 @@
 }
 
 .restaurant-page .section--dark p {
-  color: var(--color-border-strong);
+  color: var(--color-border);
 }
 
 .rst-hero {
@@ -239,6 +239,15 @@
   background: var(--color-surface);
 }
 
+.rst-feature.section--dark {
+  background: var(--color-dark);
+}
+
+.rst-feature.section--dark h2,
+.rst-feature.section--dark .rst-feature__copy > p {
+  color: var(--color-surface);
+}
+
 .rst-feature--reverse .rst-feature__copy {
   order: 2;
 }
@@ -271,8 +280,8 @@
 }
 
 .section--dark .rst-labels li {
-  border-color: var(--color-dark-raised);
-  color: var(--color-border);
+  border-color: var(--color-border-strong);
+  color: var(--color-surface);
 }
 
 .rst-secondary-link {
