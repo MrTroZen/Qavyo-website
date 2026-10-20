@@ -209,10 +209,10 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 ### Payments
 
 - [x] Keep Payments as a permanent full page.
-- [ ] Confirm the Payments product and commercial scope.
-- [ ] Add confirmed Taking Payments, Providers, Fees & Processing, and Reconciliation sections.
-- [ ] Preserve the confirmed separation between software and payment-processing costs.
-- [ ] Do not publish provider, rate, terminal, or compatibility claims without confirmation.
+- [x] Confirm the Payments product and commercial scope.
+- [x] Add confirmed Taking Payments, Providers, Fees & Processing, and Reconciliation sections.
+- [x] Preserve the confirmed separation between software and payment-processing costs.
+- [x] Do not publish provider, rate, terminal, or compatibility claims without confirmation.
 
 ### Hardware
 

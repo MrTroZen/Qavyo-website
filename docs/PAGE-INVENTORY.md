@@ -72,7 +72,7 @@ This inventory lists every current public-page route in the repository. Home and
 | Order Routing &amp; Stations  | `order-routing-stations.html` | Scaffolded |
 | Payment Providers  | `payment-providers.html` | Scaffolded |
 | Payment Reconciliation  | `payment-reconciliation.html` | Scaffolded |
-| Payments  | `payments.html` | Scaffolded |
+| Payments  | `payments.html` | Existing |
 | Payroll &amp; Salary Management  | `payroll-salary-management.html` | Scaffolded |
 | POS &amp; Ordering  | `pos-ordering.html` | Scaffolded |
 | Prep-Time &amp; Order Tracking  | `prep-time-order-tracking.html` | Scaffolded |
