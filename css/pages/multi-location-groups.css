@@ -1,0 +1,1087 @@
+/* ==========================================================================
+   Qavyo — Multi-Location & Groups Page Styles
+   Namespace: .mloc-
+   ========================================================================== */
+
+.mloc-page {
+  overflow: clip;
+  background: var(--color-canvas);
+}
+
+.mloc-page h2 {
+  max-width: 26ch;
+  font-size: var(--text-xl);
+  letter-spacing: -0.035em;
+  line-height: var(--leading-tight);
+}
+
+.mloc-page figure,
+.mloc-page fieldset,
+.mloc-page ol,
+.mloc-page ul,
+.mloc-page dl {
+  margin: 0;
+}
+
+.mloc-page figure,
+.mloc-page fieldset {
+  min-width: 0;
+}
+
+.mloc-page figure > figcaption {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.mloc-page .section--dark p {
+  color: var(--color-border);
+}
+
+/* Breadcrumbs */
+.mloc-breadcrumbs {
+  position: absolute;
+  inset: 0 0 auto;
+  padding-block: var(--space-4);
+}
+
+.mloc-breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding: 0;
+  list-style: none;
+}
+
+.mloc-breadcrumbs li,
+.mloc-breadcrumbs a {
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.mloc-breadcrumbs a:hover,
+.mloc-breadcrumbs a:focus-visible {
+  color: var(--color-brand-hover);
+}
+
+.mloc-breadcrumbs li + li::before {
+  margin-right: var(--space-2);
+  color: var(--color-border-strong);
+  content: "/";
+}
+
+/* ==========================================================================
+   Section 01: Hero Section
+   ========================================================================== */
+
+.mloc-hero {
+  position: relative;
+  border-block: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.mloc-hero__grid {
+  display: grid;
+  min-height: var(--page-hero-min-height);
+  grid-template-columns: minmax(0, 0.95fr) minmax(32rem, 1.05fr);
+  gap: var(--space-8);
+  align-items: center;
+  padding-block: var(--page-hero-space);
+}
+
+.mloc-hero__copy h1 {
+  max-width: 15ch;
+  color: var(--color-ink);
+  font-size: var(--text-page-hero);
+  font-weight: 800;
+  letter-spacing: -0.04em;
+  line-height: var(--leading-tight);
+}
+
+.mloc-hero__copy p {
+  max-width: 38ch;
+  margin-top: var(--space-4);
+  color: var(--color-text);
+  font-size: var(--text-lg);
+  line-height: var(--leading-body);
+}
+
+.mloc-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+}
+
+.mloc-microcopy {
+  margin-top: var(--space-2);
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  font-weight: 600;
+}
+
+/* Hero Visual: Group Dashboard Card */
+.mloc-hero-card {
+  position: relative;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.mloc-hero-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-4) var(--space-5);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface-muted);
+}
+
+.mloc-hero-card__title-group {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+}
+
+.mloc-status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 0.2rem var(--space-2);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  color: var(--color-text);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.mloc-status-badge--success {
+  background: #eaf8f0;
+  border-color: #bee3ce;
+  color: var(--color-success);
+}
+
+.mloc-status-badge--warning {
+  background: #fdf5e8;
+  border-color: #f7ddb2;
+  color: var(--color-warning);
+}
+
+.mloc-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.mloc-hero-card__body {
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.mloc-hero-sites {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+}
+
+.mloc-site-card {
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-canvas);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.mloc-site-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mloc-site-card__header strong {
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+}
+
+.mloc-site-card__metrics {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-top: var(--space-1);
+}
+
+.mloc-site-card__metrics .mloc-amount {
+  font-size: var(--text-base);
+  font-weight: 800;
+  color: var(--color-ink);
+  font-family: var(--font-mono);
+}
+
+.mloc-site-card__metrics span {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+/* Group Total Bar inside Hero Card */
+.mloc-hero-total-box {
+  padding: var(--space-4);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-muted);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mloc-hero-total-box strong {
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-ink);
+}
+
+.mloc-hero-total-box .mloc-total-val {
+  font-size: clamp(1.25rem, 2vw, 1.5rem);
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: var(--color-ink);
+}
+
+.mloc-hero-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  padding: var(--space-3) var(--space-5);
+  border-top: 1px solid var(--color-border);
+  background: var(--color-surface-muted);
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+/* ==========================================================================
+   Section 02: From One Location to the Group (Mental Model)
+   ========================================================================== */
+
+.mloc-model {
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.mloc-model__intro {
+  text-align: center;
+  max-width: 48ch;
+  margin-inline: auto;
+}
+
+.mloc-model__intro p {
+  margin-top: var(--space-2);
+  color: var(--color-muted);
+  font-size: var(--text-base);
+}
+
+.mloc-model-diagram {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-7);
+}
+
+.mloc-model-sites-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-3);
+}
+
+.mloc-model-site-box {
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-canvas);
+  text-align: center;
+}
+
+.mloc-model-site-box strong {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+}
+
+.mloc-model-site-box span {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  margin-top: 0.2rem;
+}
+
+.mloc-model-arrow {
+  text-align: center;
+  font-size: var(--text-base);
+  font-weight: 800;
+  color: var(--color-brand);
+}
+
+.mloc-model-group-box {
+  padding: var(--space-4);
+  border: 2px solid var(--color-brand);
+  border-radius: var(--radius-lg);
+  background: var(--color-brand-soft);
+  text-align: center;
+}
+
+.mloc-model-group-box strong {
+  display: block;
+  font-size: var(--text-base);
+  color: var(--color-brand-hover);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.mloc-model-group-chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2);
+  margin-top: var(--space-3);
+}
+
+.mloc-model-chip {
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+/* ==========================================================================
+   Section 03: Location Overview
+   ========================================================================== */
+
+.mloc-overview-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: var(--space-7);
+  align-items: start;
+  margin-top: var(--space-7);
+}
+
+.mloc-sites-selector {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.mloc-site-select-card {
+  padding: var(--space-4) var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  cursor: pointer;
+  text-align: left;
+  width: 100%;
+  transition: all var(--transition-fast);
+}
+
+.mloc-site-select-card:hover {
+  border-color: var(--color-border-strong);
+}
+
+.mloc-site-select-card[aria-selected="true"],
+.mloc-site-select-card.is-active {
+  border-color: var(--color-brand);
+  background: var(--color-surface);
+  box-shadow: 0 0 0 2px var(--color-brand-soft);
+}
+
+.mloc-site-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-2);
+}
+
+.mloc-site-card-top strong {
+  font-size: var(--text-base);
+  color: var(--color-ink);
+}
+
+.mloc-site-card-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-2);
+}
+
+.mloc-site-stat-item small {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+.mloc-site-stat-item span {
+  display: block;
+  font-size: var(--text-sm);
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--color-ink);
+  margin-top: 0.1rem;
+}
+
+/* Detail panel beside selector */
+.mloc-detail-panel {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  padding: var(--space-5);
+  box-shadow: var(--shadow-sm);
+}
+
+.mloc-detail-header {
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+  margin-bottom: var(--space-4);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mloc-detail-header h3 {
+  margin: 0;
+  font-size: var(--text-base);
+  color: var(--color-ink);
+}
+
+.mloc-detail-data-rows {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.mloc-detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--text-sm);
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-surface-muted);
+}
+
+.mloc-detail-row span:first-child {
+  color: var(--color-muted);
+}
+
+.mloc-detail-row span:last-child {
+  font-weight: 700;
+  font-family: var(--font-mono);
+  color: var(--color-ink);
+}
+
+/* ==========================================================================
+   Section 04 & 05: Central Menus & Local Differences
+   ========================================================================== */
+
+.mloc-menu-matrix-wrap {
+  margin-top: var(--space-7);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  overflow-x: auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.mloc-menu-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.mloc-menu-table th {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface-muted);
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-muted);
+}
+
+.mloc-menu-table td {
+  padding: var(--space-4);
+  border-bottom: 1px solid var(--color-surface-muted);
+  font-size: var(--text-sm);
+}
+
+.mloc-menu-table tr:last-child td {
+  border-bottom: none;
+}
+
+.mloc-price-tag {
+  font-family: var(--font-mono);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.mloc-price-tag--override {
+  color: var(--color-brand);
+  background: var(--color-brand-soft);
+  padding: 0.15rem 0.35rem;
+  border-radius: var(--radius-sm);
+}
+
+/* ==========================================================================
+   Section 06 & 07: Inventory & Stock Transfers
+   ========================================================================== */
+
+.mloc-inv-transfers-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-7);
+  align-items: start;
+}
+
+.mloc-inv-card,
+.mloc-transfer-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.mloc-card-head {
+  padding: var(--space-3) var(--space-5);
+  background: var(--color-surface-muted);
+  border-bottom: 1px solid var(--color-border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mloc-card-head strong {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--color-muted);
+}
+
+.mloc-card-body {
+  padding: var(--space-5);
+}
+
+.mloc-transfer-step-box {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  border-radius: var(--radius-md);
+  background: var(--color-canvas);
+  border: 1px solid var(--color-border);
+}
+
+.mloc-transfer-route {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+
+.mloc-transfer-loc strong {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+}
+
+.mloc-transfer-loc span {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+.mloc-transfer-arrow {
+  color: var(--color-brand);
+  font-weight: 800;
+  font-size: var(--text-lg);
+}
+
+/* ==========================================================================
+   Section 08 & 09: Group Purchasing & Teams Across Locations
+   ========================================================================== */
+
+.mloc-purchasing-teams-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-7);
+}
+
+.mloc-team-location-card {
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-canvas);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.mloc-team-loc-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mloc-team-loc-head strong {
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+}
+
+/* ==========================================================================
+   Section 10: Group Permissions & Control Matrix
+   ========================================================================== */
+
+.mloc-permissions-wrap {
+  margin-top: var(--space-7);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  overflow-x: auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.mloc-perm-badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+.mloc-perm-badge--full {
+  background: #eaf1ff;
+  color: var(--color-brand);
+}
+
+.mloc-perm-badge--mgr {
+  background: #eaf8f0;
+  color: var(--color-success);
+}
+
+.mloc-perm-badge--none {
+  background: var(--color-surface-muted);
+  color: var(--color-muted);
+}
+
+/* ==========================================================================
+   Section 11 & 12: Location vs Consolidated Reporting
+   ========================================================================== */
+
+.mloc-reporting-split-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-7);
+  align-items: stretch;
+}
+
+.mloc-contrib-bars {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-top: var(--space-4);
+}
+
+.mloc-contrib-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.mloc-contrib-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+.mloc-contrib-meta span:first-child { color: var(--color-ink); }
+.mloc-contrib-meta span:last-child { font-family: var(--font-mono); color: var(--color-brand); }
+
+.mloc-contrib-track {
+  width: 100%;
+  height: 0.5rem;
+  border-radius: 1rem;
+  background: var(--color-surface-muted);
+  overflow: hidden;
+}
+
+.mloc-contrib-fill {
+  height: 100%;
+  border-radius: 1rem;
+  background: var(--color-brand);
+}
+
+/* ==========================================================================
+   Section 13: Compare Locations Table
+   ========================================================================== */
+
+.mloc-compare-table-wrap {
+  margin-top: var(--space-7);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  overflow-x: auto;
+  box-shadow: var(--shadow-sm);
+}
+
+/* ==========================================================================
+   Section 14: Qavyo Intelligence Across Locations
+   ========================================================================== */
+
+.mloc-intel-card {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  margin-top: var(--space-7);
+  overflow: hidden;
+}
+
+.mloc-intel-head {
+  padding: var(--space-3) var(--space-6);
+  background: var(--color-dark);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mloc-intel-head strong {
+  font-size: var(--text-xs);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #93c5fd;
+}
+
+.mloc-intel-body {
+  padding: var(--space-6);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+}
+
+/* ==========================================================================
+   Section 15: Group Executive View
+   ========================================================================== */
+
+.mloc-exec-dashboard {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  margin-top: var(--space-7);
+}
+
+.mloc-exec-kpis {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.mloc-exec-kpi {
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-canvas);
+}
+
+.mloc-exec-kpi small {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  text-transform: uppercase;
+}
+
+.mloc-exec-kpi strong {
+  display: block;
+  margin-top: var(--space-1);
+  font-size: var(--text-base);
+  font-weight: 800;
+  font-family: var(--font-mono);
+  color: var(--color-ink);
+}
+
+.mloc-exec-status-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-3);
+}
+
+.mloc-exec-status-card {
+  padding: var(--space-3) var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface-muted);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mloc-exec-status-card strong {
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+}
+
+/* ==========================================================================
+   Section 16: Connected System Architecture Map
+   ========================================================================== */
+
+.mloc-map-box {
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  margin-top: var(--space-7);
+}
+
+.mloc-map-layer {
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-canvas);
+  text-align: center;
+}
+
+.mloc-map-layer__title {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-2);
+}
+
+.mloc-map-layer__chips {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--space-2);
+}
+
+.mloc-map-chip {
+  padding: var(--space-1) var(--space-3);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  color: var(--color-ink);
+}
+
+.mloc-map-arrow {
+  text-align: center;
+  padding-block: var(--space-2);
+  color: var(--color-brand);
+  font-size: var(--text-base);
+  font-weight: 800;
+}
+
+/* ==========================================================================
+   Section 17: Get Started Section
+   ========================================================================== */
+
+.mloc-get-started {
+  border-block: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.mloc-get-started__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.mloc-trial-card {
+  padding: var(--space-6);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-canvas);
+}
+
+.mloc-trial-points {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  margin-bottom: var(--space-5);
+}
+
+.mloc-trial-points li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+.mloc-trial-points svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: var(--color-success);
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Section 18: Related Capabilities
+   ========================================================================== */
+
+.mloc-related-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-7);
+}
+
+.mloc-related-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  transition: border-color var(--transition-fast), transform var(--transition-fast);
+}
+
+.mloc-related-card:hover {
+  border-color: var(--color-brand);
+  transform: translateY(-2px);
+}
+
+.mloc-related-card h3 {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-base);
+  color: var(--color-ink);
+}
+
+.mloc-related-card p {
+  margin: 0 0 var(--space-4);
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  line-height: var(--leading-body);
+}
+
+/* ==========================================================================
+   Section 19: Final CTA
+   ========================================================================== */
+
+.mloc-final-cta {
+  text-align: center;
+  background: var(--color-surface);
+  border-top: 1px solid var(--color-border);
+}
+
+.mloc-final-cta__inner {
+  max-width: 48ch;
+  margin-inline: auto;
+}
+
+.mloc-final-cta__inner h2 {
+  margin-inline: auto;
+}
+
+.mloc-final-cta__inner p {
+  margin-top: var(--space-3);
+  color: var(--color-text);
+  font-size: var(--text-base);
+}
+
+.mloc-final-cta__actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-3);
+  margin-top: var(--space-6);
+  flex-wrap: wrap;
+}
+
+/* ==========================================================================
+   Responsive Adaptations
+   ========================================================================== */
+
+@media (max-width: 68rem) {
+  .mloc-hero__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .mloc-model-sites-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mloc-overview-grid,
+  .mloc-reporting-split-grid,
+  .mloc-get-started__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .mloc-related-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mloc-exec-kpis,
+  .mloc-exec-status-row {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 48rem) {
+  .mloc-hero-sites,
+  .mloc-inv-transfers-grid,
+  .mloc-purchasing-teams-grid,
+  .mloc-intel-body {
+    grid-template-columns: 1fr;
+  }
+
+  .mloc-model-sites-row {
+    grid-template-columns: 1fr;
+  }
+
+  .mloc-site-card-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .mloc-related-grid,
+  .mloc-exec-kpis,
+  .mloc-exec-status-row {
+    grid-template-columns: 1fr;
+  }
+}

@@ -187,10 +187,10 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 
 ### Multi-Location
 
-- [ ] Finish `multi-location-groups.html` as the major Multi-Location page.
-- [ ] Add locations, central menus, transfers, and central purchasing sections.
-- [ ] Add group control, permissions, consolidated reporting, comparison, and benchmarking sections.
-- [ ] Connect to Inventory, HR and Team, Reporting, Intelligence, and Pricing.
+- [x] Finish `multi-location-groups.html` as the major Multi-Location page.
+- [x] Add locations, central menus, transfers, and central purchasing sections.
+- [x] Add group control, permissions, consolidated reporting, comparison, and benchmarking sections.
+- [x] Connect to Inventory, HR and Team, Reporting, Intelligence, and Pricing.
 
 ## Phase 4 — Shared capability pages
 

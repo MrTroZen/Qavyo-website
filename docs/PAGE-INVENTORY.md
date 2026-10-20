@@ -66,7 +66,7 @@ This inventory lists every current public-page route in the repository. Home and
 | Loyalty &amp; Gift Cards  | `loyalty-gift-cards.html` | Scaffolded |
 | Mobile Ordering &amp; Loyalty  | `mobile-ordering-loyalty.html` | Scaffolded |
 | Money, Reporting &amp; Close  | `money-reporting-close.html` | Existing |
-| Multi-Location &amp; Groups  | `multi-location-groups.html` | Scaffolded |
+| Multi-Location &amp; Groups  | `multi-location-groups.html` | Existing |
 | Offline Mode  | `offline-mode.html` | Scaffolded |
 | Online &amp; QR Ordering  | `online-qr-ordering.html` | Existing |
 | Order Routing &amp; Stations  | `order-routing-stations.html` | Scaffolded |
