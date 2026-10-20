@@ -173,11 +173,11 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 
 ### Reporting & Day Close
 
-- [ ] Finish `money-reporting-close.html` as the major reporting and close page.
-- [ ] Add cash, expenses, day close, reconciliation, and profit-and-loss sections.
-- [ ] Add reporting, sales-channel, filter, and export sections.
-- [ ] Cross-link refunds and voids to Restaurant POS.
-- [ ] Connect to Payments, Inventory, Multi-Location, Intelligence, and Pricing.
+- [x] Finish `money-reporting-close.html` as the major reporting and close page.
+- [x] Add cash, expenses, day close, reconciliation, and profit-and-loss sections.
+- [x] Add reporting, sales-channel, filter, and export sections.
+- [x] Cross-link refunds and voids to Restaurant POS.
+- [x] Connect to Payments, Inventory, Multi-Location, Intelligence, and Pricing.
 
 ### Delivery Operations
 
