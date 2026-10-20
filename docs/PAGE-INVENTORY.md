@@ -47,7 +47,7 @@ This inventory lists every current public-page route in the repository. Home and
 | Group, Franchise &amp; Regional Management  | `group-franchise-regional-management.html` | Scaffolded |
 | Hardware  | `hardware.html` | Scaffolded |
 | HR &amp; Employee Records  | `hr-employee-records.html` | Scaffolded |
-| HR &amp; Payroll  | `hr-payroll.html` | Scaffolded |
+| HR &amp; Payroll  | `hr-payroll.html` | Existing |
 | Qavyo â€” Business technology for connected operations | `index.html` | Final |
 | Ingredient Inventory  | `ingredient-inventory.html` | Scaffolded |
 | Qavyo Intelligence â€” Know What Needs Attention | `intelligence.html` | Existing |

@@ -164,12 +164,12 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 
 ### HR, Payroll & Team
 
-- [ ] Finish `hr-payroll.html` as the combined people-operations page.
-- [ ] Add employee records, staff accounts, roles, and permissions sections.
-- [ ] Add scheduling, attendance, timesheets, payroll, tips, performance, and labour sections.
-- [ ] Add Qavyo Staff App as a section.
-- [ ] Confirm legal, regional, payroll-processing, device, and availability scope before claims.
-- [ ] Connect to Reporting, Multi-Location, Intelligence, and Pricing.
+- [x] Finish `hr-payroll.html` as the combined people-operations page.
+- [x] Add employee records, staff accounts, roles, and permissions sections.
+- [x] Add scheduling, attendance, timesheets, payroll, tips, performance, and labour sections.
+- [x] Add Qavyo Staff App as a section.
+- [x] Confirm legal, regional, payroll-processing, device, and availability scope before claims.
+- [x] Connect to Reporting, Multi-Location, Intelligence, and Pricing.
 
 ### Reporting & Day Close
 
