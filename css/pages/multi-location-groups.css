@@ -46,6 +46,7 @@
   position: absolute;
   inset: 0 0 auto;
   padding-block: var(--space-4);
+  z-index: 2;
 }
 
 .mloc-breadcrumbs ol {
@@ -694,7 +695,42 @@
 }
 
 /* ==========================================================================
-   Section 11 & 12: Location vs Consolidated Reporting
+   Section 11: Location Reporting
+   ========================================================================== */
+
+.mloc-single-rep-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-7);
+  align-items: stretch;
+}
+
+.mloc-reporting-note-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.mloc-reporting-note-card h3 {
+  margin: 0 0 var(--space-2);
+  font-size: var(--text-lg);
+  color: var(--color-ink);
+}
+
+.mloc-reporting-note-card p {
+  color: var(--color-text-muted);
+  font-size: var(--text-sm);
+  line-height: var(--leading-body);
+  margin: 0;
+}
+
+/* ==========================================================================
+   Section 12: Consolidated Reporting
    ========================================================================== */
 
 .mloc-reporting-split-grid {
@@ -1047,6 +1083,7 @@
   }
 
   .mloc-overview-grid,
+  .mloc-single-rep-grid,
   .mloc-reporting-split-grid,
   .mloc-get-started__grid {
     grid-template-columns: 1fr;

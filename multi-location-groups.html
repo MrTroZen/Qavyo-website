@@ -300,14 +300,12 @@
     <main id="main-content" class="mloc-page">
       <!-- Section 01: Hero Section -->
       <section class="mloc-hero" id="hero" aria-labelledby="mloc-hero-heading">
-        <div class="container mloc-breadcrumbs">
-          <nav aria-label="Breadcrumb">
-            <ol>
-              <li><a href="restaurant.html">Restaurant Software</a></li>
-              <li aria-current="page">Multi-Location</li>
-            </ol>
-          </nav>
-        </div>
+        <nav class="container mloc-breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="restaurant.html">Restaurant Software</a></li>
+            <li aria-current="page">Multi-Location</li>
+          </ol>
+        </nav>
 
         <div class="container mloc-hero__grid">
           <div class="mloc-hero__copy">
@@ -974,27 +972,25 @@
         </div>
       </section>
 
-      <!-- Section 11 & 12: Location Reporting vs Consolidated Reporting -->
-      <section class="section" id="consolidated-reporting" aria-labelledby="rep-heading">
-        <span id="location-reporting"></span>
+      <!-- Section 11: Location Reporting -->
+      <section class="section" id="location-reporting" aria-labelledby="loc-rep-heading">
         <div class="container">
-          <h2 id="rep-heading">See the group result without adding the restaurants together yourself.</h2>
-          <p class="lede">Review single-location performance when you want store detail, then zoom out to the consolidated group total with one click.</p>
+          <h2 id="loc-rep-heading">Understand each restaurant on its own.</h2>
+          <p class="lede">Each store keeps its own daily sales intake, order count, food cost, and labour ratio &mdash; giving general managers clear accountability for their site.</p>
 
-          <div class="mloc-reporting-split-grid">
-            <!-- Single Location Snapshot (Soho) -->
+          <div class="mloc-single-rep-grid">
             <div class="mloc-inv-card">
               <div class="mloc-card-head">
-                <strong>Single Location View: Soho</strong>
+                <strong>Soho &mdash; Today</strong>
                 <span class="mloc-microcopy">Store Close &middot; Friday</span>
               </div>
               <div class="mloc-card-body">
-                <div class="mloc-detail-row"><span>Net Sales</span><strong>&pound;8,240.00</strong></div>
-                <div class="mloc-detail-row"><span>Customer Orders</span><span>286</span></div>
-                <div class="mloc-detail-row"><span>Average Basket</span><span>&pound;28.81</span></div>
-                <div class="mloc-detail-row"><span>Food Cost %</span><span>26.8%</span></div>
-                <div class="mloc-detail-row"><span>Labour Cost %</span><span>22.4%</span></div>
-                <div class="mloc-detail-row"><span>Day Expenses</span><span>&pound;112.00</span></div>
+                <div class="mloc-detail-row"><span>Sales</span><strong>&pound;8,240.00</strong></div>
+                <div class="mloc-detail-row"><span>Orders</span><span>286</span></div>
+                <div class="mloc-detail-row"><span>Average Order</span><span>&pound;28.81</span></div>
+                <div class="mloc-detail-row"><span>Food Cost</span><span>26.8%</span></div>
+                <div class="mloc-detail-row"><span>Labour</span><span>22.4%</span></div>
+                <div class="mloc-detail-row"><span>Expenses</span><span>&pound;112.00</span></div>
                 <div class="mloc-detail-row" style="font-weight: 800; border-top: 2px solid var(--color-border);">
                   <span>Operating Result</span>
                   <span style="color: var(--color-success); font-family: var(--font-mono);">&pound;4,180.00</span>
@@ -1002,33 +998,67 @@
               </div>
             </div>
 
+            <div class="mloc-reporting-note-card">
+              <h3>Grounded in the restaurant day</h3>
+              <p>Store managers access their own daily reconciliations, cash drawer floats, and day-close reports without seeing wider group accounts or sister store figures unless authorized.</p>
+              <div class="mloc-model-chips" style="margin-top: var(--space-4);">
+                <span class="mloc-model-chip">Individual Cash Floats</span>
+                <span class="mloc-model-chip">Store Shift Expenses</span>
+                <span class="mloc-model-chip">Local Channel Mix</span>
+                <span class="mloc-model-chip">End of Day Close</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 12: Consolidated Reporting -->
+      <section class="section section--bordered" id="consolidated-reporting" aria-labelledby="rep-heading">
+        <div class="container">
+          <h2 id="rep-heading">See the group result without adding the restaurants together yourself.</h2>
+          <p class="lede">Qavyo automatically rolls up individual restaurant activity into one consolidated trading summary with site contribution breakdowns.</p>
+
+          <div class="mloc-reporting-split-grid">
             <!-- Consolidated Group View -->
             <div class="mloc-inv-card">
               <div class="mloc-card-head">
-                <strong>Consolidated Group Result</strong>
+                <strong>All Locations &mdash; Consolidated</strong>
                 <span class="mloc-microcopy">All 4 Stores Combined</span>
               </div>
               <div class="mloc-card-body">
-                <div class="mloc-detail-row"><span>Total Group Sales</span><strong style="color: var(--color-ink); font-size: var(--text-base);">&pound;28,490.00</strong></div>
-                <div class="mloc-detail-row"><span>Total Orders</span><span>966 checks</span></div>
-                <div class="mloc-detail-row"><span>Group Food Cost %</span><span>27.5% avg</span></div>
-                <div class="mloc-detail-row"><span>Group Labour %</span><span>23.1% avg</span></div>
+                <div class="mloc-detail-row"><span>Sales</span><strong style="color: var(--color-ink); font-size: var(--text-base);">&pound;28,490.00</strong></div>
+                <div class="mloc-detail-row"><span>Orders</span><span>966</span></div>
+                <div class="mloc-detail-row"><span>Food Cost</span><span>27.5%</span></div>
+                <div class="mloc-detail-row"><span>Labour</span><span>23.1%</span></div>
+                <div class="mloc-detail-row" style="font-weight: 800; border-top: 2px solid var(--color-border);">
+                  <span>Combined Operating Result</span>
+                  <span style="color: var(--color-success); font-family: var(--font-mono);">&pound;13,935.00</span>
+                </div>
+              </div>
+            </div>
 
+            <!-- Location Contribution -->
+            <div class="mloc-inv-card">
+              <div class="mloc-card-head">
+                <strong>Location Contribution</strong>
+                <span class="mloc-microcopy">Share of &pound;28,490</span>
+              </div>
+              <div class="mloc-card-body">
                 <div class="mloc-contrib-bars">
                   <div class="mloc-contrib-item">
-                    <div class="mloc-contrib-meta"><span>Soho Contribution</span><span>28.9% (&pound;8,240)</span></div>
+                    <div class="mloc-contrib-meta"><span>Soho</span><span>28.9% (&pound;8,240)</span></div>
                     <div class="mloc-contrib-track"><div class="mloc-contrib-fill" style="width: 28.9%;"></div></div>
                   </div>
                   <div class="mloc-contrib-item">
-                    <div class="mloc-contrib-meta"><span>Manchester Contribution</span><span>26.0% (&pound;7,410)</span></div>
+                    <div class="mloc-contrib-meta"><span>Manchester</span><span>26.0% (&pound;7,410)</span></div>
                     <div class="mloc-contrib-track"><div class="mloc-contrib-fill" style="width: 26.0%;"></div></div>
                   </div>
                   <div class="mloc-contrib-item">
-                    <div class="mloc-contrib-meta"><span>Camden Contribution</span><span>24.1% (&pound;6,880)</span></div>
+                    <div class="mloc-contrib-meta"><span>Camden</span><span>24.1% (&pound;6,880)</span></div>
                     <div class="mloc-contrib-track"><div class="mloc-contrib-fill" style="width: 24.1%;"></div></div>
                   </div>
                   <div class="mloc-contrib-item">
-                    <div class="mloc-contrib-meta"><span>Bristol Contribution</span><span>20.9% (&pound;5,960)</span></div>
+                    <div class="mloc-contrib-meta"><span>Bristol</span><span>20.9% (&pound;5,960)</span></div>
                     <div class="mloc-contrib-track"><div class="mloc-contrib-fill" style="width: 20.9%;"></div></div>
                   </div>
                 </div>
