@@ -125,13 +125,13 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 
 ### Restaurant POS
 
-- [ ] Finish `restaurant-pos.html` as the major service-operation page.
-- [ ] Add order entry, menus, and modifier sections.
-- [ ] Add Tables & Floor Plan as a section.
-- [ ] Add Customer-Facing Display as a section.
-- [ ] Add Offline Mode as a section.
-- [ ] Add Refunds & Voids as a section.
-- [ ] Connect to Online Ordering, Kitchen, Reporting, Payments, and Pricing.
+- [x] Finish `restaurant-pos.html` as the major service-operation page.
+- [x] Add order entry, menus, and modifier sections.
+- [x] Add Tables & Floor Plan as a section.
+- [x] Add Customer-Facing Display as a section.
+- [x] Add Offline Mode as a section.
+- [x] Add Refunds & Voids as a section.
+- [x] Connect to Online Ordering, Kitchen, Reporting, Payments, and Pricing.
 
 ### Online & QR Ordering
 

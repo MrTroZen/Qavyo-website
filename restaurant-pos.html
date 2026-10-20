@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Restaurant POS, a planned feature page within Qavyo POS & Ordering.">
-    <title>Restaurant POS | Qavyo</title>
+    <meta name="description" content="Take restaurant orders with Qavyo POS and keep kitchen, inventory, reporting, and payments connected to the wider operation.">
+    <meta name="color-scheme" content="light dark">
+    <title>Restaurant POS &mdash; Connected Service | Qavyo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
@@ -12,10 +13,11 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/pages/feature-scaffold.css">
+    <link rel="stylesheet" href="css/pages/restaurant-pos.css">
     <script src="js/main.js" defer></script>
+    <script src="js/pages/restaurant-pos.js" defer></script>
   </head>
-  <body class="scaffold-page">
+  <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header" id="prototype-navigation" data-site-header>
       <div class="container site-header__inner">
@@ -24,12 +26,12 @@
         <div class="desktop-navigation">
           <nav class="primary-navigation" aria-label="Primary navigation">
             <div class="nav-item">
-              <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="retail-menu" data-dropdown-trigger>
-                Retail <span class="nav-chevron" aria-hidden="true"></span>
+              <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="products-menu" data-dropdown-trigger>
+                Products <span class="nav-chevron" aria-hidden="true"></span>
               </button>
-              <div class="nav-menu nav-menu--retail" id="retail-menu" data-dropdown-menu hidden>
+              <div class="nav-menu nav-menu--retail" id="products-menu" data-dropdown-menu hidden>
                 <div class="container nav-menu__inner">
-                  <div class="mega-menu-grid mega-menu-grid--retail">
+                  <div class="mega-menu-grid mega-menu-grid--products">
                     <section class="mega-menu-column" aria-labelledby="retail-start-title">
                       <h2 class="mega-menu-column__title" id="retail-start-title">Start with Retail</h2>
                       <div class="mega-menu-links">
@@ -72,6 +74,16 @@
                         </a>
                       </div>
                     </section>
+                    <div class="mega-menu-column">
+                      <section class="product-menu-group" aria-labelledby="farm-software-title">
+                        <h2 class="mega-menu-column__title" id="farm-software-title">Farm Software</h2>
+                        <div class="mega-menu-links"><a class="mega-menu-link" href="broiler-farming.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Broiler Farming</span><span class="mega-menu-link__description">Explore Qavyo for broiler farming operations.</span></span></a></div>
+                      </section>
+                      <section class="product-menu-group" aria-labelledby="healthcare-software-title">
+                        <h2 class="mega-menu-column__title" id="healthcare-software-title">Healthcare Software</h2>
+                        <div class="mega-menu-links"><a class="mega-menu-link" href="#prototype-navigation" data-prototype-link><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Hospitals</span><span class="mega-menu-link__description">Explore Qavyo for hospital operations.</span></span></a><a class="mega-menu-link" href="#prototype-navigation" data-prototype-link><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Diagnostic Centers</span><span class="mega-menu-link__description">Explore Qavyo for diagnostic center operations.</span></span></a></div>
+                      </section>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -200,8 +212,8 @@
       <div class="mobile-navigation" id="mobile-navigation" data-mobile-menu hidden>
         <nav class="mobile-navigation__inner" aria-label="Mobile navigation">
           <div class="mobile-nav-group">
-            <button class="mobile-nav-trigger" type="button" aria-expanded="false" aria-controls="mobile-retail" data-mobile-accordion-trigger>Retail <span aria-hidden="true">+</span></button>
-            <div class="mobile-nav-panel" id="mobile-retail" data-mobile-accordion-panel hidden>
+            <button class="mobile-nav-trigger" type="button" aria-expanded="false" aria-controls="mobile-products" data-mobile-accordion-trigger>Products <span aria-hidden="true">+</span></button>
+            <div class="mobile-nav-panel" id="mobile-products" data-mobile-accordion-panel hidden>
               <section class="mobile-nav-section" aria-labelledby="mobile-retail-start-title">
                 <h2 class="mobile-nav-section__title" id="mobile-retail-start-title">Start with Retail</h2>
                 <a class="mega-menu-link" href="retail.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Retail Software Overview</span><span class="mega-menu-link__description">Connected retail operations in one place.</span></span></a>
@@ -215,6 +227,15 @@
                 <a class="mega-menu-link" href="retail-salon-spa.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Salon &amp; Spa</span></span></a>
                 <a class="mega-menu-link" href="retail-hardware-sanitary.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Hardware &amp; Sanitary</span></span></a>
                 <a class="mega-menu-link" href="retail-paint-tiles.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Paint &amp; Tiles</span></span></a>
+              </section>
+              <section class="mobile-nav-section" aria-labelledby="mobile-farm-software-title">
+                <h2 class="mobile-nav-section__title" id="mobile-farm-software-title">Farm Software</h2>
+                <a class="mega-menu-link" href="broiler-farming.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Broiler Farming</span></span></a>
+              </section>
+              <section class="mobile-nav-section" aria-labelledby="mobile-healthcare-software-title">
+                <h2 class="mobile-nav-section__title" id="mobile-healthcare-software-title">Healthcare Software</h2>
+                <a class="mega-menu-link" href="#prototype-navigation" data-prototype-link><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Hospitals</span></span></a>
+                <a class="mega-menu-link" href="#prototype-navigation" data-prototype-link><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Diagnostic Centers</span></span></a>
               </section>
             </div>
           </div>
@@ -296,13 +317,198 @@
         </nav>
       </div>
     </header>
-    <main id="main-content">
-      <nav class="container scaffold-breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><a href="restaurant.html">Restaurant Software</a></li><li><a href="pos-ordering.html">POS & Ordering</a></li><li aria-current="page">Restaurant POS</li></ol></nav>
-      <section class="scaffold-hero"><div class="container scaffold-hero__inner"><div><p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>POS & Ordering</p><h1>Restaurant POS</h1><p class="scaffold-hero__lede">A focused feature page within the POS & Ordering capability area.</p><div class="scaffold-actions"><a class="button button--primary" href="pos-ordering.html">Back to POS & Ordering</a><a class="button button--secondary" href="pricing.html#plans">See Pricing</a></div></div><aside class="scaffold-status"><strong>Content review pending</strong><span>The final workflow, product detail, and visual story will be added later.</span></aside></div></section>
-      <section class="section"><div class="container container--narrow"><p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Page purpose</p><h2>Detailed content will follow.</h2><p class="lede">This route is connected now so navigation and page relationships can be completed before the content-development phase. It does not add product claims beyond the approved feature name.</p></div></section>
-      <section class="section scaffold-connections"><div class="container scaffold-connections__grid"><div><h2>Related POS & Ordering pages</h2><p>Continue through this capability area or return to its hub.</p></div>          <ul class="scaffold-link-list"><li><a href="pos-ordering.html"><span>POS & Ordering</span><span aria-hidden="true">&rarr;</span></a></li><li><a href="tables-floor-plan.html"><span>Tables & Floor Plan</span><span aria-hidden="true">&rarr;</span></a></li><li><a href="online-qr-ordering.html"><span>Online & QR Ordering</span><span aria-hidden="true">&rarr;</span></a></li><li><a href="self-service-kiosk.html"><span>Self-Service Kiosk</span><span aria-hidden="true">&rarr;</span></a></li><li><a href="customer-facing-display.html"><span>Customer-Facing Display</span><span aria-hidden="true">&rarr;</span></a></li><li><a href="offline-mode.html"><span>Offline Mode</span><span aria-hidden="true">&rarr;</span></a></li><li><a href="refund-void-tracking.html"><span>Refund & Void Tracking</span><span aria-hidden="true">&rarr;</span></a></li></ul></div></section>
+    <main id="main-content" class="pos-page">
+      <section class="pos-hero" aria-labelledby="pos-hero-title">
+        <nav class="container pos-breadcrumbs" aria-label="Breadcrumb">
+          <ol><li><a href="restaurant.html">Restaurant Software</a></li><li aria-current="page">Restaurant POS</li></ol>
+        </nav>
+        <div class="container pos-hero__grid">
+          <div class="pos-hero__copy">
+            <h1 id="pos-hero-title">Take the order. Keep the restaurant connected.</h1>
+            <p>Use Qavyo POS to build the order clearly while the relevant restaurant workflow stays connected across kitchen, stock, reporting, and payments.</p>
+            <div class="pos-actions">
+              <a class="button button--primary button--large" href="#get-started">Get Full Qavyo &mdash; Free for 30 Days</a>
+              <a class="button button--secondary button--large" href="pricing.html">See Restaurant Pricing</a>
+            </div>
+            <p class="pos-microcopy">Full access. No card required.</p>
+          </div>
+
+          <figure class="pos-terminal" aria-labelledby="hero-pos-caption">
+            <figcaption id="hero-pos-caption">Illustrative restaurant POS workflow</figcaption>
+            <div class="pos-terminal__bar"><strong>Table 12</strong><span>Order in progress</span></div>
+            <div class="pos-terminal__body">
+              <div class="pos-terminal__floor" aria-label="Table status">
+                <span class="is-available">T08<small>Available</small></span>
+                <span class="is-active">T12<small>Ordering</small></span>
+                <span class="is-occupied">T14<small>Occupied</small></span>
+              </div>
+              <div class="pos-terminal__menu">
+                <div class="pos-terminal__categories"><b>Burgers</b><span>Pizza</span><span>Sides</span><span>Drinks</span></div>
+                <div class="pos-terminal__items"><span>Chicken Burger</span><span>Margherita Pizza</span><span>Fries</span><span>Caesar Salad</span><span>Cola</span><span>Still Water</span></div>
+              </div>
+              <div class="pos-ticket">
+                <div><strong>Current ticket</strong><small>Table 12</small></div>
+                <ol><li><span>2 &times; Chicken Burger<small>No onion &middot; Extra cheese</small></span><b>&pound;22.00</b></li><li><span>1 &times; Fries</span><b>&pound;4.40</b></li><li><span>1 &times; Cola</span><b>&pound;6.00</b></li></ol>
+                <p><span>Order total</span><strong>&pound;32.40</strong></p>
+                <span class="pos-ui-action">Send order</span>
+              </div>
+            </div>
+            <div class="pos-terminal__handoff"><span>Order</span><i aria-hidden="true">&rarr;</i><span>Kitchen</span><i aria-hidden="true">&rarr;</i><span>Inventory</span><i aria-hidden="true">&rarr;</i><span>Reporting</span></div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section section--dark pos-operation" aria-labelledby="operation-title">
+        <div class="container">
+          <div class="pos-section-head"><h2 id="operation-title">The order starts at the POS. It doesn&rsquo;t stop there.</h2><p>One order creates useful activity across the restaurant without turning the POS screen into every other Qavyo product.</p></div>
+          <ol class="pos-operation__flow" aria-label="Order to operation workflow">
+            <li><span>01</span><strong>Customer order</strong><small>Service begins</small></li>
+            <li class="is-current"><span>02</span><strong>Qavyo POS</strong><small>Order captured</small></li>
+            <li><span>03</span><strong>Kitchen</strong><small>Preparation context</small></li>
+            <li><span>04</span><strong>Inventory</strong><small>Relevant stock activity</small></li>
+            <li><span>05</span><strong>Reporting</strong><small>Business record</small></li>
+            <li><span>06</span><strong>Payment &amp; close</strong><small>Order completed</small></li>
+          </ol>
+        </div>
+      </section>
+
+      <section class="section pos-order-entry" aria-labelledby="order-entry-title">
+        <div class="container pos-split">
+          <div class="pos-section-copy">
+            <h2 id="order-entry-title">Get the order right while service keeps moving.</h2>
+            <p>Move from a clear menu to the choices that belong to an item, then review the ticket before it moves forward.</p>
+            <ul class="pos-feature-list"><li>Menu items</li><li>Categories</li><li>Modifiers</li><li>Order review</li></ul>
+          </div>
+          <figure class="pos-order-builder" aria-labelledby="order-builder-caption">
+            <figcaption id="order-builder-caption">Illustrative menu and modifier workflow</figcaption>
+            <div class="pos-order-builder__nav"><strong>Menu</strong><span class="is-selected">Burgers</span><span>Pizza</span><span>Starters</span><span>Drinks</span></div>
+            <div class="pos-order-builder__items"><button type="button" class="is-selected" data-menu-item="Chicken Burger" aria-pressed="true">Chicken Burger<small>&pound;11.00</small></button><button type="button" data-menu-item="Classic Burger" aria-pressed="false">Classic Burger<small>&pound;10.00</small></button><button type="button" data-menu-item="Spicy Chicken Burger" aria-pressed="false">Spicy Chicken Burger<small>&pound;11.50</small></button><button type="button" data-menu-item="Plant Burger" aria-pressed="false">Plant Burger<small>&pound;10.50</small></button></div>
+            <div class="pos-modifier-panel"><div><strong data-modifier-title>Chicken Burger</strong><small>Choose the item details</small></div><fieldset><legend>Choice</legend><label><input type="radio" name="burger-style" checked> Regular</label><label><input type="radio" name="burger-style"> Spicy</label></fieldset><fieldset><legend>Extras</legend><label><input type="checkbox" checked> Extra cheese</label><label><input type="checkbox"> Bacon</label></fieldset><fieldset><legend>Remove</legend><label><input type="checkbox" checked> Onion</label></fieldset><span class="pos-ui-action">Add to ticket</span></div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section pos-floor" id="tables-floor-plan" aria-labelledby="floor-title">
+        <div class="container pos-floor__grid">
+          <div class="pos-section-copy">
+            <h2 id="floor-title">See the floor. Know where every order belongs.</h2>
+            <p>Select an illustrative table to see its current service state and order context.</p>
+            <p class="pos-interaction-note"><span aria-hidden="true">&darr;</span> Choose a table in the floor plan</p>
+          </div>
+          <div class="pos-floor-ui">
+            <div class="pos-floor-ui__room" aria-label="Illustrative dining-room floor plan">
+              <p>Dining room <span>6 tables</span></p>
+              <button type="button" class="is-available" data-floor-table data-table="T01" data-status="Available" data-total="No active order" data-order="Ready for the next order" aria-pressed="false"><strong>T01</strong><span>Available</span></button>
+              <button type="button" class="is-occupied is-selected" data-floor-table data-table="T02" data-status="Occupied" data-total="&pound;42.60" data-order="2 items in progress" aria-pressed="true"><strong>T02</strong><span>Occupied</span><small>&pound;42.60</small></button>
+              <button type="button" class="is-ordering" data-floor-table data-table="T03" data-status="Ordering" data-total="Ticket open" data-order="Order being built" aria-pressed="false"><strong>T03</strong><span>Ordering</span></button>
+              <button type="button" class="is-occupied" data-floor-table data-table="T04" data-status="Occupied" data-total="&pound;28.10" data-order="3 items in progress" aria-pressed="false"><strong>T04</strong><span>Occupied</span><small>&pound;28.10</small></button>
+              <button type="button" class="is-available" data-floor-table data-table="T05" data-status="Available" data-total="No active order" data-order="Ready for the next order" aria-pressed="false"><strong>T05</strong><span>Available</span></button>
+              <button type="button" class="is-occupied" data-floor-table data-table="T06" data-status="Occupied" data-total="&pound;19.80" data-order="1 item in progress" aria-pressed="false"><strong>T06</strong><span>Occupied</span><small>&pound;19.80</small></button>
+            </div>
+            <aside class="pos-floor-ticket" aria-live="polite" aria-label="Selected table summary"><span data-floor-label>T02</span><strong data-floor-status>Occupied</strong><p data-floor-order>2 items in progress</p><b data-floor-total>&pound;42.60</b><small>Illustrative table state</small></aside>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark pos-customer-display" id="customer-facing-display" aria-labelledby="customer-display-title">
+        <div class="container">
+          <div class="pos-section-head"><h2 id="customer-display-title">Let customers see the order as it is built.</h2><p>A customer-facing display gives the customer a clear view of the items and total shown for the transaction.</p></div>
+          <figure class="pos-display-pair" aria-labelledby="display-pair-caption">
+            <figcaption id="display-pair-caption">Illustrative staff POS and customer-facing display</figcaption>
+            <div class="pos-display-pair__staff"><span>Staff POS</span><strong>Table 12</strong><ul><li>2 &times; Chicken Burger</li><li>1 &times; Fries</li><li>1 &times; Cola</li></ul><p><span>Total</span><b>&pound;32.40</b></p></div>
+            <div class="pos-display-pair__signal" aria-hidden="true"><i></i><span>Order view</span><i></i></div>
+            <div class="pos-display-pair__customer"><span>Your order</span><ul><li><b>2 &times;</b> Chicken Burger</li><li><b>1 &times;</b> Fries</li><li><b>1 &times;</b> Cola</li></ul><p><span>Total</span><strong>&pound;32.40</strong></p></div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section pos-resilience" aria-labelledby="resilience-title">
+        <div class="container pos-resilience__grid">
+          <div class="pos-section-copy"><h2 id="resilience-title">Built for the moments that interrupt normal service.</h2><p>Use clear, controlled workflows when connectivity changes or an order needs correcting.</p></div>
+          <div class="pos-tabs" data-pos-tabs>
+            <div class="pos-tabs__list" role="tablist" aria-label="Service interruption workflows">
+              <button type="button" role="tab" id="offline-tab" aria-controls="offline-mode" aria-selected="true" tabindex="0">Offline Mode</button>
+              <button type="button" role="tab" id="refunds-tab" aria-controls="refunds-voids" aria-selected="false" tabindex="-1">Refunds &amp; Voids</button>
+            </div>
+            <div class="pos-tabs__panel" role="tabpanel" id="offline-mode" aria-labelledby="offline-tab" tabindex="0">
+              <div class="pos-status-demo"><div><span class="is-offline"><i aria-hidden="true"></i>Connection offline</span><strong>Order-taking can continue through the supported offline workflow.</strong><small>Available functions can depend on the restaurant setup.</small></div><span aria-hidden="true">&darr;</span><div><span class="is-restored"><i aria-hidden="true"></i>Connection restored</span><strong>Relevant information can reconnect with the operation.</strong><small>Review the current status before continuing.</small></div></div>
+            </div>
+            <div class="pos-tabs__panel" role="tabpanel" id="refunds-voids" aria-labelledby="refunds-tab" tabindex="0" hidden>
+              <div class="pos-correction-demo"><div><span>Order #1248</span><strong>Chicken Burger</strong><small>Fries &middot; Cola</small></div><ol><li class="is-complete"><b>1</b><span>Select the item or order</span></li><li class="is-current"><b>2</b><span>Choose void or refund</span></li><li><b>3</b><span>Record the reason</span></li><li><b>4</b><span>Review and confirm</span></li></ol><p><span>Reason</span><strong>Wrong item</strong></p></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section--dark pos-bridge pos-bridge--kitchen" aria-labelledby="kitchen-bridge-title">
+        <div class="container pos-split">
+          <div class="pos-section-copy"><h2 id="kitchen-bridge-title">When the order is accepted, the kitchen needs the right information next.</h2><p>The order and its item choices move from front-of-house context into a clear kitchen handoff.</p><a class="text-link text-link--on-dark" href="kitchen-service.html">Explore Kitchen Operations <span aria-hidden="true">&rarr;</span></a></div>
+          <figure class="pos-ticket-handoff" aria-labelledby="kitchen-handoff-caption"><figcaption id="kitchen-handoff-caption">Illustrative POS-to-kitchen handoff</figcaption><article><span>POS &middot; Table 12</span><strong>2 &times; Chicken Burger</strong><small>No onion &middot; Extra cheese</small></article><i aria-hidden="true">&rarr;</i><article><span>Kitchen &middot; Order #124</span><strong>Grill</strong><p>2 &times; Chicken Burger</p><b>No onion &middot; Extra cheese</b></article></figure>
+        </div>
+      </section>
+
+      <section class="section pos-bridge pos-bridge--online" aria-labelledby="online-bridge-title">
+        <div class="container pos-split pos-split--reverse">
+          <div class="pos-section-copy"><h2 id="online-bridge-title">Orders don&rsquo;t all have to start at the counter.</h2><p>Restaurant POS belongs to a wider ordering story, with supported ordering sources feeding the restaurant workflow.</p><a class="text-link" href="online-qr-ordering.html">Explore Online &amp; QR Ordering <span aria-hidden="true">&rarr;</span></a></div>
+          <figure class="pos-source-flow" aria-labelledby="source-flow-caption"><figcaption id="source-flow-caption">Illustrative restaurant order sources</figcaption><div><span>POS</span><span>Website</span><span>QR</span><span>Kiosk</span><span>Mobile</span></div><i aria-hidden="true">&darr;</i><strong>Orders</strong><i aria-hidden="true">&darr;</i><b>Kitchen</b></figure>
+        </div>
+      </section>
+
+      <section class="section pos-bridge pos-bridge--reporting" aria-labelledby="reporting-bridge-title">
+        <div class="container pos-split">
+          <div class="pos-section-copy"><h2 id="reporting-bridge-title">Every completed order becomes part of the business picture.</h2><p>POS transactions provide the operational context needed to review the day and close with a clearer record.</p><a class="text-link" href="money-reporting-close.html">Explore Reporting &amp; Day Close <span aria-hidden="true">&rarr;</span></a></div>
+          <figure class="pos-report-demo" aria-labelledby="report-demo-caption"><figcaption id="report-demo-caption">Illustrative end-of-day summary</figcaption><div><span>Today</span><b>Review</b></div><dl><div><dt>Orders</dt><dd>184</dd></div><div><dt>Net sales</dt><dd>&pound;5,420</dd></div><div><dt>Average order</dt><dd>&pound;29.46</dd></div></dl><p>POS transactions <span aria-hidden="true">&rarr;</span> Day close</p></figure>
+        </div>
+      </section>
+
+      <section class="section pos-bridge pos-bridge--payments" aria-labelledby="payments-bridge-title">
+        <div class="container pos-split pos-split--reverse">
+          <div class="pos-section-copy"><h2 id="payments-bridge-title">Take the order through to payment.</h2><p>Move from the order total to payment and completion while keeping processing arrangements separate from software pricing.</p><a class="text-link" href="payments.html">Explore Payments <span aria-hidden="true">&rarr;</span></a></div>
+          <figure class="pos-payment-flow" aria-labelledby="payment-flow-caption"><figcaption id="payment-flow-caption">Illustrative order completion</figcaption><div><small>Table 12</small><strong>&pound;32.40</strong><span>Order total</span></div><i aria-hidden="true">&rarr;</i><div><small>Payment</small><strong>Review</strong><span>Complete order</span></div><i aria-hidden="true">&rarr;</i><div><small>Restaurant record</small><strong>Closed</strong><span>Reporting &amp; reconciliation</span></div></figure>
+        </div>
+      </section>
+
+      <section class="section section--dark pos-system" aria-labelledby="system-title">
+        <div class="container">
+          <div class="pos-section-head"><h2 id="system-title">POS at the centre of restaurant service.</h2><p>Not an isolated till. One working part of the wider Qavyo restaurant operation.</p></div>
+          <div class="pos-system-map" role="img" aria-label="Online ordering and tables connect to Restaurant POS, which connects to kitchen, inventory, reporting, and payments">
+            <span class="pos-system-map__node pos-system-map__node--online">Online ordering</span><span class="pos-system-map__node pos-system-map__node--tables">Tables</span><strong>Restaurant POS<small>Order context</small></strong><span class="pos-system-map__node pos-system-map__node--kitchen">Kitchen</span><span class="pos-system-map__node pos-system-map__node--inventory">Inventory</span><span class="pos-system-map__node pos-system-map__node--reporting">Reporting</span><span class="pos-system-map__node pos-system-map__node--payments">Payments</span><i class="pos-system-map__line pos-system-map__line--one" aria-hidden="true"></i><i class="pos-system-map__line pos-system-map__line--two" aria-hidden="true"></i>
+          </div>
+        </div>
+      </section>
+
+      <section class="section pos-related" aria-labelledby="related-title">
+        <div class="container">
+          <div class="pos-section-head"><h2 id="related-title">Continue through your restaurant operation.</h2><p>Follow the order into the next focused Qavyo capability.</p></div>
+          <nav class="pos-related__links" aria-label="Related restaurant capabilities">
+            <a href="kitchen-service.html"><span>01</span><strong>Kitchen Operations</strong><small>See what happens after orders reach the kitchen.</small><b aria-hidden="true">&rarr;</b></a>
+            <a href="online-qr-ordering.html"><span>02</span><strong>Online &amp; QR Ordering</strong><small>See how customers can place orders beyond the POS.</small><b aria-hidden="true">&rarr;</b></a>
+            <a href="money-reporting-close.html"><span>03</span><strong>Reporting &amp; Day Close</strong><small>See how transactions become operational and financial reporting.</small><b aria-hidden="true">&rarr;</b></a>
+            <a href="payments.html"><span>04</span><strong>Payments</strong><small>See how payment fits into the restaurant workflow.</small><b aria-hidden="true">&rarr;</b></a>
+          </nav>
+        </div>
+      </section>
+
+      <section class="section section--dark pos-final" id="get-started" aria-labelledby="get-started-title">
+        <div class="container pos-final__grid">
+          <div><h2 id="get-started-title">Start with the full restaurant platform.</h2><p>Try the complete eligible Qavyo restaurant software before choosing the plan that fits your business.</p><div class="pos-actions"><a class="button button--on-dark button--large" href="#prototype-navigation" data-prototype-link>Get Full Qavyo &mdash; Free for 30 Days</a><a class="button button--secondary button--large" href="pricing.html">See Restaurant Pricing</a></div><p class="pos-microcopy">Full access. No card required.</p></div>
+          <ul><li><strong>30 days</strong><span>Full access</span></li><li><strong>No card</strong><span>Required to begin</span></li><li><strong>Choose later</strong><span>Select a plan afterwards</span></li></ul>
+        </div>
+      </section>
     </main>
-    <footer class="scaffold-footer"><div class="container scaffold-footer__inner"><span class="wordmark wordmark--small">qavyo<span aria-hidden="true">.</span></span><a href="feature-directory.html">Browse all features</a><a href="pricing.html">Pricing</a></div></footer>
+
+    <footer class="site-footer" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" class="sr-only">Footer navigation</h2>
+      <div class="container site-footer__container">
+        <div class="site-footer__brand-block"><div class="site-footer__brand"><span class="wordmark wordmark--on-dark wordmark--small">qavyo<span aria-hidden="true">.</span></span><p class="site-footer__tagline">Connected software for modern operations.</p></div><div class="site-footer__brand-meta"><span class="site-footer__status-tag"><span class="signal-dot signal-dot--light" aria-hidden="true"></span>Connected Platform</span></div></div>
+        <div class="site-footer__grid">
+          <div class="site-footer__col"><p class="site-footer__col-title">Products</p><ul class="site-footer__links"><li><a href="restaurant.html">Restaurant Software</a></li><li><a href="restaurant-pos.html" aria-current="page">Restaurant POS</a></li><li><a href="retail.html">Retail Software</a></li><li><a href="intelligence.html">Qavyo Intelligence</a></li><li><a href="payments.html">Payments</a></li></ul></div>
+          <div class="site-footer__col"><p class="site-footer__col-title">Restaurants</p><ul class="site-footer__links"><li><a href="online-qr-ordering.html">Online &amp; QR Ordering</a></li><li><a href="kitchen-service.html">Kitchen Operations</a></li><li><a href="inventory-purchasing.html">Inventory &amp; Food Cost</a></li><li><a href="money-reporting-close.html">Reporting &amp; Day Close</a></li><li><a href="hr-payroll.html">HR, Payroll &amp; Team</a></li></ul></div>
+          <div class="site-footer__col"><p class="site-footer__col-title">Solutions</p><ul class="site-footer__links"><li><a href="solutions.html">Marketing Solutions</a></li><li><a href="social-media-marketing.html">Social Media Marketing</a></li><li><a href="sms-marketing.html">SMS Marketing</a></li><li><a href="email-marketing.html">Email Marketing</a></li><li><a href="website-building.html">Website Building</a></li><li><a href="website-seo.html">Website SEO</a></li></ul></div>
+          <div class="site-footer__col"><p class="site-footer__col-title">Resources</p><ul class="site-footer__links"><li><a href="pricing.html">Pricing</a></li><li><a href="feature-directory.html">All Products &amp; Features</a></li><li><a href="#prototype-navigation" data-prototype-link>Help &amp; Support</a></li><li><a href="#prototype-navigation" data-prototype-link>Talk to Sales</a></li></ul></div>
+        </div>
+        <div class="site-footer__bottom"><p class="site-footer__copyright">&copy; <span data-current-year></span> Qavyo. All rights reserved.</p><ul class="site-footer__legal-links"><li><a href="#prototype-navigation" data-prototype-link>Privacy</a></li><li><a href="#prototype-navigation" data-prototype-link>Terms</a></li></ul></div>
+      </div>
+    </footer>
   </body>
 </html>
-

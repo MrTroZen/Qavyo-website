@@ -89,7 +89,7 @@ This inventory lists every current public-page route in the repository. Home and
 | Report Filters &amp; Export  | `report-filters-export.html` | Scaffolded |
 | Reservations &amp; Waitlist  | `reservations-waitlist.html` | Scaffolded |
 | Restaurant Software â€” Connected Operations  | `restaurant.html` | Existing |
-| Restaurant POS  | `restaurant-pos.html` | Scaffolded |
+| Restaurant POS  | `restaurant-pos.html` | Existing |
 | Restaurant Website  | `restaurant-website-feature.html` | Scaffolded |
 | Qavyo Retail Software â€” Connected Retail Operations | `retail.html` | Existing |
 | Qavyo Retail Clothing &amp; Fashion &mdash; Connected Store Operations | `retail-clothing-fashion.html` | Existing |

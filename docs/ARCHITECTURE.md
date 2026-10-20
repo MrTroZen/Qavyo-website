@@ -107,7 +107,7 @@ The Marketing family is complete and frozen. Future work should preserve the dis
 
 Unavailable destinations use the existing safe prototype-link behavior. Scaffolded routes are route-inventory candidates, not automatically valid public destinations. As major pages gain their approved supporting sections, apply the route treatment from `RESTAURANT-CONTENT-CONSOLIDATION-PROPOSAL.md` and the final route-disposition plan.
 
-The shared header uses flat, full-width mega menus for Retail, Restaurants, Solutions, and Resources. Desktop columns use thin dividers, concise title-and-description links, and a directional arrow revealed on hover, keyboard focus, or the current page. Mobile keeps the same taxonomy in one-open-at-a-time disclosure panels. Farm is absent from both header modes.
+The shared header uses flat, full-width mega menus for Products, Restaurants, Solutions, and Resources. Products contains the approved Retail, Farm Software, and Healthcare Software groups. Desktop columns use thin dividers, concise title-and-description links, and a directional arrow revealed on hover, keyboard focus, or the current page. Mobile keeps the same taxonomy in one-open-at-a-time disclosure panels.
 
 ## Page development principles
 
