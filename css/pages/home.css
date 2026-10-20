@@ -7,11 +7,11 @@
 
 .home-hero__grid {
   display: grid;
-  min-height: clamp(34rem, 62vh, 42rem);
+  min-height: var(--page-hero-min-height);
   grid-template-columns: minmax(0, 0.74fr) minmax(33rem, 1.26fr);
   gap: clamp(var(--space-6), 4vw, var(--space-8));
   align-items: center;
-  padding-block: clamp(var(--space-6), 4.5vw, var(--space-8));
+  padding-block: var(--page-hero-space);
 }
 
 .home-hero__content {
@@ -23,7 +23,7 @@
 .home-hero h1 {
   margin-block-end: var(--space-5);
   color: var(--color-ink);
-  font-size: clamp(2.75rem, 4vw, 4.15rem);
+  font-size: var(--text-page-hero);
   font-weight: 800;
   letter-spacing: -0.04em;
   line-height: 1.06;
@@ -619,10 +619,6 @@
     gap: var(--space-5);
   }
 
-  .home-hero h1 {
-    font-size: clamp(2.5rem, 3.8vw, 3.6rem);
-  }
-
   .hero-ecosystem__grid {
     gap: var(--space-2);
     padding: var(--space-3);
@@ -636,9 +632,9 @@
 @media (max-width: 60rem) {
   .home-hero__grid {
     grid-template-columns: 1fr;
-    min-height: auto;
+    min-height: var(--page-hero-min-height);
     gap: var(--space-7);
-    padding-block: clamp(var(--space-7), 8vw, var(--space-9));
+    padding-block: var(--page-hero-space);
   }
 
   .home-hero__content {
@@ -647,7 +643,6 @@
 
   .home-hero h1 {
     max-width: 14ch;
-    font-size: clamp(2.5rem, 6vw, 3.6rem);
   }
 
   .hero-ecosystem {
@@ -685,11 +680,7 @@
 @media (max-width: 36rem) {
   .home-hero__grid {
     gap: var(--space-6);
-    padding-block: var(--space-7);
-  }
-
-  .home-hero h1 {
-    font-size: clamp(2.2rem, 9.5vw, 2.85rem);
+    padding-block: var(--page-hero-space);
   }
 
   .home-hero__lede {

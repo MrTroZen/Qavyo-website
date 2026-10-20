@@ -63,6 +63,12 @@ The Homepage Hero (`.home-hero`) establishes Qavyo as a comprehensive business t
 - **Motion**: Dashed signal paths, sequential product and capability emphasis, a quiet core pulse, and an Intelligence activity indicator reinforce the `Operate → Understand → Grow` relationship. All animations are decorative and disabled for `prefers-reduced-motion`.
 - **Responsiveness**: Tablet preserves the full left-to-right relationship map. Mobile deliberately removes connection paths and presents the same story as a readable vertical sequence: Qavyo core, supporting capabilities, business families, then the growth outcome, without horizontal overflow.
 
+## Page Hero Standard
+
+All primary page heroes use the homepage H1 scale (`--text-page-hero`), minimum-height role (`--page-hero-min-height`), and top/bottom spacing role (`--page-hero-space`). These shared tokens preserve the same title prominence and distance from the global header across desktop, laptop, tablet, and mobile layouts. Page-specific CSS may control line length and composition, but must not redefine the hero title size or opening vertical spacing without explicit approval.
+
+Use purposeful images, diagrams, and illustrative product interfaces whenever they make the page easier to understand. Every visual must explain a real concept or workflow, fit the page narrative, include meaningful alternative text when informative, reserve its layout dimensions, and be clearly labelled when illustrative. Do not add decorative filler, fabricated product screens, customer evidence, metrics, capabilities, or results.
+
 ## Homepage Business Workflow Selector
 
 The homepage orientation section (`.home-workflow`) uses an accessible five-option tab selector to demonstrate how the same connected Retail foundation is shaped for Fashion, Electronics, Repair, Grocery, and Salon contexts. Selecting a business updates the Run and Understand examples together; the Grow story remains a consistent overview of Qavyo's business solutions. Fashion and Electronics may use their approved product-specific examples. Other retail contexts must stay within the confirmed sale or service activity, customer context, stock, reporting, and Intelligence foundation until specialist workflows are approved. The selector supports click, tap, arrow keys, Home, and End through `js/pages/home.js`, while all options remain fully readable in every state.

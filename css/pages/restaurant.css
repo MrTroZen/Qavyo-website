@@ -44,11 +44,11 @@
 
 .rst-hero__grid {
   display: grid;
-  min-height: clamp(42rem, 78vh, 52rem);
+  min-height: var(--page-hero-min-height);
   grid-template-columns: minmax(0, 0.88fr) minmax(30rem, 1.12fr);
   gap: clamp(var(--space-7), 6vw, var(--space-9));
   align-items: center;
-  padding-block: clamp(var(--space-8), 8vw, var(--space-10));
+  padding-block: var(--page-hero-space);
 }
 
 .rst-hero__content {
@@ -59,7 +59,7 @@
   max-width: 13ch;
   margin-block-end: var(--space-5);
   color: var(--color-ink);
-  font-size: var(--text-2xl);
+  font-size: var(--text-page-hero);
   letter-spacing: -0.05em;
   line-height: 0.98;
 }
@@ -907,9 +907,9 @@
   }
 
   .rst-hero__grid {
-    min-height: 0;
+    min-height: var(--page-hero-min-height);
     gap: var(--space-7);
-    padding-block: var(--space-8);
+    padding-block: var(--page-hero-space);
   }
 
   .rst-problem__intro,
