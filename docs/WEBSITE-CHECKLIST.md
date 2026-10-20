@@ -196,15 +196,15 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 
 ### Qavyo Intelligence
 
-- [ ] Finish `intelligence.html` as the canonical Qavyo Intelligence page.
-- [ ] Preserve the Watch -> Detect -> Explain -> Recommend -> Act -> Measure -> Learn loop.
-- [ ] Add Daily Intelligence and Weekly & Monthly Review sections.
-- [ ] Add Changes & Unusual Activity as a section.
-- [ ] Add Stock, Profit, Staff, and Location Intelligence as grounded examples.
-- [ ] Add Executive View as a qualified section.
-- [ ] Keep human control explicit.
-- [ ] Confirm predictive, recommendation, health-score, and impact-estimate claims.
-- [ ] Link back to the major operational page behind each Intelligence story.
+- [x] Finish `intelligence.html` as the canonical Qavyo Intelligence page.
+- [x] Preserve the Watch -> Detect -> Explain -> Recommend -> Act -> Measure -> Learn loop.
+- [x] Add Daily Intelligence and Weekly & Monthly Review sections.
+- [x] Add Changes & Unusual Activity as a section.
+- [x] Add Stock, Profit, Staff, and Location Intelligence as grounded examples.
+- [x] Add Executive View as a qualified section.
+- [x] Keep human control explicit.
+- [x] Confirm predictive, recommendation, health-score, and impact-estimate claims without autonomous decision claims.
+- [x] Link back to the major operational page behind each Intelligence story.
 
 ### Payments
 
