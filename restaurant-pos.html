@@ -470,10 +470,21 @@
 
       <section class="section section--dark pos-system" aria-labelledby="system-title">
         <div class="container">
-          <div class="pos-section-head"><h2 id="system-title">POS at the centre of restaurant service.</h2><p>Not an isolated till. One working part of the wider Qavyo restaurant operation.</p></div>
-          <div class="pos-system-map" role="img" aria-label="Online ordering and tables connect to Restaurant POS, which connects to kitchen, inventory, reporting, and payments">
-            <span class="pos-system-map__node pos-system-map__node--online">Online ordering</span><span class="pos-system-map__node pos-system-map__node--tables">Tables</span><strong>Restaurant POS<small>Order context</small></strong><span class="pos-system-map__node pos-system-map__node--kitchen">Kitchen</span><span class="pos-system-map__node pos-system-map__node--inventory">Inventory</span><span class="pos-system-map__node pos-system-map__node--reporting">Reporting</span><span class="pos-system-map__node pos-system-map__node--payments">Payments</span><i class="pos-system-map__line pos-system-map__line--one" aria-hidden="true"></i><i class="pos-system-map__line pos-system-map__line--two" aria-hidden="true"></i>
-          </div>
+          <div class="pos-section-head pos-system__head"><h2 id="system-title">POS at the centre of restaurant service.</h2><p>Not an isolated till. One working part of the wider Qavyo restaurant operation.</p></div>
+          <figure class="pos-system-flow" aria-labelledby="system-flow-caption">
+            <figcaption id="system-flow-caption">Illustrative connected POS workflow</figcaption>
+            <div class="pos-system-flow__group">
+              <p class="pos-system-flow__label">Order sources</p>
+              <ul class="pos-system-flow__list"><li>Tables</li><li>Online ordering</li></ul>
+            </div>
+            <span class="pos-system-flow__arrow" aria-hidden="true">&rarr;</span>
+            <div class="pos-system-flow__core"><strong>Restaurant POS</strong><span>Shared order context</span></div>
+            <span class="pos-system-flow__arrow" aria-hidden="true">&rarr;</span>
+            <div class="pos-system-flow__group">
+              <p class="pos-system-flow__label">Connected operation</p>
+              <ul class="pos-system-flow__list"><li>Kitchen</li><li>Inventory</li><li>Reporting</li><li>Payments</li></ul>
+            </div>
+          </figure>
         </div>
       </section>
 
