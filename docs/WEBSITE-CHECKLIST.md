@@ -143,9 +143,9 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 
 ### Kitchen Operations
 
-- [ ] Finish `kitchen-service.html` as the major Kitchen Operations page.
-- [ ] Add Kitchen Display, routing, preparation tracking, alerts, and performance sections.
-- [ ] Connect to POS, Inventory, HR and Team, Reporting, and Intelligence.
+- [x] Finish `kitchen-service.html` as the major Kitchen Operations page.
+- [x] Add Kitchen Display, routing, preparation tracking, alerts, and performance sections.
+- [x] Connect to POS, Inventory, HR and Team, Reporting, and Intelligence.
 
 ### Inventory & Food Cost
 

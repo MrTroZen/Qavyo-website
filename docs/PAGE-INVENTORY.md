@@ -56,7 +56,7 @@ This inventory lists every current public-page route in the repository. Home and
 | Kitchen Alerts  | `kitchen-alerts.html` | Scaffolded |
 | Kitchen Display System  | `kitchen-display-system.html` | Scaffolded |
 | Kitchen Performance  | `kitchen-performance.html` | Scaffolded |
-| Kitchen &amp; Service  | `kitchen-service.html` | Scaffolded |
+| Kitchen &amp; Service  | `kitchen-service.html` | Existing |
 | Labour Costs &amp; Forecasting  | `labour-costs-forecasting.html` | Scaffolded |
 | Location Comparisons  | `location-comparisons.html` | Scaffolded |
 | Location &amp; Group Intelligence  | `location-group-intelligence.html` | Scaffolded |
