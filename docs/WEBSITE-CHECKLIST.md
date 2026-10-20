@@ -182,8 +182,8 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 ### Delivery Operations
 
 - [x] Keep Delivery Operations as a permanent full page.
-- [ ] Add only confirmed fleet assignment, routes, performance, and distance-fee sections to `delivery-operations.html`.
-- [ ] Confirm mapping, tracking, driver, and regional availability claims.
+- [x] Add only confirmed fleet assignment, routes, performance, and distance-fee sections to `delivery-operations.html`.
+- [x] Confirm mapping, tracking, driver, and regional availability claims without third-party logistics overreach.
 
 ### Multi-Location
 

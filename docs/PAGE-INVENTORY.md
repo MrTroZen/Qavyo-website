@@ -33,7 +33,7 @@ This inventory lists every current public-page route in the repository. Home and
 | Customers &amp; Growth  | `customers-growth.html` | Existing |
 | Daily Intelligence  | `daily-intelligence.html` | Scaffolded |
 | Day Close &amp; Till Reconciliation  | `day-close-till-reconciliation.html` | Scaffolded |
-| Delivery Operations  | `delivery-operations.html` | Scaffolded |
+| Delivery Operations  | `delivery-operations.html` | Existing |
 | Delivery Performance  | `delivery-performance.html` | Scaffolded |
 | Distance-Based Fees  | `distance-based-fees.html` | Scaffolded |
 | Qavyo Email Marketing â€” More Room to Say What Matters | `email-marketing.html` | Existing |

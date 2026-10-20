@@ -1,0 +1,1035 @@
+/* ==========================================================================
+   Delivery Operations Capability Page Styles
+   Scope: .del-page
+   Design System: Qavyo Tokens (Dark theme canvas, Manrope typography)
+   ========================================================================== */
+
+.del-page {
+  background-color: var(--color-canvas);
+  color: var(--color-text);
+  overflow-x: hidden;
+}
+
+/* Ensure links & buttons meet contrast and touch guidelines */
+.del-page a.button,
+.del-page button.button {
+  font-family: var(--font-body);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.del-microcopy {
+  margin-top: var(--space-2);
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  letter-spacing: 0.02em;
+}
+
+/* Status Badges */
+.del-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 0.25rem 0.625rem;
+  border-radius: var(--radius-full);
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  line-height: 1;
+}
+
+.del-badge--new {
+  background: rgba(56, 189, 248, 0.15);
+  color: #38bdf8;
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.del-badge--prep {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.del-badge--ready {
+  background: rgba(34, 197, 94, 0.15);
+  color: #4ade80;
+  border: 1px solid rgba(34, 197, 94, 0.3);
+}
+
+.del-badge--dispatched {
+  background: rgba(168, 85, 247, 0.15);
+  color: #c084fc;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.del-badge--completed {
+  background: rgba(148, 163, 184, 0.15);
+  color: #94a3b8;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+}
+
+.del-dot {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background-color: currentColor;
+}
+
+/* ==========================================================================
+   Section 01: Hero Section
+   ========================================================================== */
+
+.del-hero {
+  position: relative;
+  padding-top: var(--space-10);
+  padding-bottom: var(--space-12);
+  background: radial-gradient(circle at 80% 20%, rgba(56, 189, 248, 0.08) 0%, transparent 60%),
+              radial-gradient(circle at 10% 80%, rgba(14, 165, 233, 0.05) 0%, transparent 50%),
+              var(--color-canvas);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.del-breadcrumbs {
+  position: absolute;
+  inset: 0 0 auto;
+  padding-block: var(--space-4);
+  z-index: 2;
+}
+
+.del-breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding: 0;
+  list-style: none;
+}
+
+.del-breadcrumbs li,
+.del-breadcrumbs a {
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.del-breadcrumbs a:hover,
+.del-breadcrumbs a:focus-visible {
+  color: var(--color-brand-hover);
+}
+
+.del-breadcrumbs li + li::before {
+  margin-right: var(--space-2);
+  color: var(--color-border-strong);
+  content: "/";
+}
+
+.del-hero__grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: var(--space-8);
+  align-items: center;
+  margin-top: var(--space-6);
+}
+
+.del-eyebrow {
+  display: inline-block;
+  font-size: var(--text-xs);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-brand-hover);
+  margin-bottom: var(--space-3);
+}
+
+.del-hero__copy h1 {
+  font-size: var(--text-page-hero);
+  line-height: var(--leading-tight);
+  letter-spacing: -0.035em;
+  color: var(--color-ink);
+  margin-bottom: var(--space-4);
+}
+
+.del-hero__copy p {
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--color-text);
+  max-width: 48ch;
+  margin-bottom: var(--space-6);
+}
+
+.del-hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+/* Hero Operational Card */
+.del-hero-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+}
+
+.del-card-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-4) var(--space-5);
+  background: var(--color-surface-muted);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.del-card-head strong {
+  font-size: var(--text-sm);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.del-card-body {
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.del-hero-order-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.del-hero-order-meta h3 {
+  font-size: var(--text-lg);
+  margin: 0;
+  color: var(--color-ink);
+}
+
+.del-hero-order-meta span {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+.del-hero-order-items {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.del-hero-item-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-sm);
+  color: var(--color-text);
+}
+
+.del-hero-item-row strong {
+  color: var(--color-ink);
+}
+
+/* Hero Progress Stepper */
+.del-stepper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-2);
+  margin-top: var(--space-2);
+  padding-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+.del-step {
+  text-align: center;
+  position: relative;
+}
+
+.del-step-bar {
+  height: 4px;
+  border-radius: var(--radius-full);
+  background: var(--color-border-strong);
+  margin-bottom: var(--space-1);
+}
+
+.del-step.is-done .del-step-bar {
+  background: var(--color-brand);
+}
+
+.del-step.is-active .del-step-bar {
+  background: #38bdf8;
+  box-shadow: 0 0 8px rgba(56, 189, 248, 0.6);
+}
+
+.del-step-label {
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-muted);
+}
+
+.del-step.is-active .del-step-label,
+.del-step.is-done .del-step-label {
+  color: var(--color-ink);
+}
+
+.del-hero-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) var(--space-5);
+  background: var(--color-surface-muted);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+/* ==========================================================================
+   Section 02: Mental Model (Workflow)
+   ========================================================================== */
+
+.del-model {
+  background: var(--color-canvas);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.del-model__intro {
+  text-align: center;
+  max-width: 60ch;
+  margin-inline: auto;
+  margin-bottom: var(--space-8);
+}
+
+.del-model__intro h2 {
+  font-size: var(--text-2xl);
+  color: var(--color-ink);
+  letter-spacing: -0.025em;
+  margin-bottom: var(--space-3);
+}
+
+.del-model-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-3);
+  position: relative;
+}
+
+.del-model-step-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.del-model-step-num {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  font-weight: 800;
+  color: var(--color-brand);
+}
+
+.del-model-step-card strong {
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+}
+
+.del-model-step-card p {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   Section 03 & 04: Order Intake & Details
+   ========================================================================== */
+
+.del-intake-grid {
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-7);
+  align-items: stretch;
+}
+
+.del-order-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.del-order-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-4);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  text-align: left;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.del-order-item:hover {
+  border-color: var(--color-border-strong);
+  background: var(--color-surface-hover);
+}
+
+.del-order-item.is-selected {
+  border-color: var(--color-brand);
+  background: rgba(56, 189, 248, 0.05);
+  box-shadow: 0 0 0 1px var(--color-brand);
+}
+
+.del-order-item-left {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.del-order-item-left strong {
+  font-size: var(--text-base);
+  color: var(--color-ink);
+}
+
+.del-order-item-left span {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+.del-order-item-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: var(--space-1);
+}
+
+.del-order-item-right strong {
+  font-family: var(--font-mono);
+  color: var(--color-ink);
+}
+
+.del-detail-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.del-detail-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-sm);
+  padding-block: var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.del-detail-row:last-child {
+  border-bottom: none;
+}
+
+.del-detail-row span:first-child {
+  color: var(--color-muted);
+}
+
+.del-detail-row strong,
+.del-detail-row span:last-child {
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Section 05 & 06: Online Ordering & Kitchen Connections
+   ========================================================================== */
+
+.del-connections-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-7);
+}
+
+.del-flow-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.del-flow-card h3 {
+  font-size: var(--text-lg);
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.del-flow-card p {
+  font-size: var(--text-sm);
+  color: var(--color-text-muted);
+  line-height: var(--leading-body);
+  margin: 0;
+}
+
+.del-flow-visual-box {
+  background: var(--color-surface-muted);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.del-station-ticket {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-2) var(--space-3);
+  background: var(--color-canvas);
+  border-left: 3px solid var(--color-brand);
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+}
+
+.del-station-ticket strong {
+  color: var(--color-ink);
+}
+
+/* ==========================================================================
+   Section 07 & 08: Preparation Status & Ready for Handoff
+   ========================================================================== */
+
+.del-status-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-7);
+}
+
+.del-timeline-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+  position: relative;
+  padding-left: var(--space-6);
+}
+
+.del-timeline-list::before {
+  content: "";
+  position: absolute;
+  top: var(--space-2);
+  bottom: var(--space-2);
+  left: 0.65rem;
+  width: 2px;
+  background: var(--color-border-strong);
+}
+
+.del-timeline-node {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.del-timeline-node::before {
+  content: "";
+  position: absolute;
+  left: calc(-1 * var(--space-6) + 0.35rem);
+  width: 0.65rem;
+  height: 0.65rem;
+  border-radius: 50%;
+  background: var(--color-canvas);
+  border: 2px solid var(--color-brand);
+}
+
+.del-timeline-node.is-done::before {
+  background: var(--color-brand);
+}
+
+.del-timeline-node strong {
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+}
+
+.del-timeline-node span {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+/* ==========================================================================
+   Section 09 & 10: Dispatch Management & Customer Connection
+   ========================================================================== */
+
+.del-dispatch-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-6);
+}
+
+.del-dispatch-column {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.del-dispatch-column-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.del-dispatch-column-head strong {
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+}
+
+.del-dispatch-column-head span {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  color: var(--color-brand);
+  font-weight: 700;
+}
+
+.del-dispatch-card {
+  background: var(--color-surface-muted);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.del-dispatch-card strong {
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+}
+
+.del-dispatch-card span {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+/* Distance fee & fleet callout */
+.del-fleet-box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-6);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+
+/* ==========================================================================
+   Section 11 & 12: Order History & Reporting
+   ========================================================================== */
+
+.del-reporting-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  gap: var(--space-6);
+  margin-top: var(--space-7);
+}
+
+.del-kpi-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-3);
+}
+
+.del-kpi-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.del-kpi-card small {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+}
+
+.del-kpi-card strong {
+  font-size: var(--text-2xl);
+  font-family: var(--font-mono);
+  color: var(--color-ink);
+}
+
+.del-channel-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.del-channel-row {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.del-channel-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+.del-channel-meta span:first-child {
+  color: var(--color-ink);
+}
+
+.del-channel-meta span:last-child {
+  font-family: var(--font-mono);
+  color: var(--color-brand);
+}
+
+.del-channel-track {
+  height: 6px;
+  border-radius: var(--radius-full);
+  background: var(--color-border-strong);
+  overflow: hidden;
+}
+
+.del-channel-fill {
+  height: 100%;
+  border-radius: var(--radius-full);
+  background: var(--color-brand);
+}
+
+/* ==========================================================================
+   Section 13: Delivery Across Locations
+   ========================================================================== */
+
+.del-multi-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-7);
+}
+
+.del-site-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.del-site-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.del-site-head strong {
+  font-size: var(--text-base);
+  color: var(--color-ink);
+}
+
+/* ==========================================================================
+   Section 14: Qavyo Intelligence
+   ========================================================================== */
+
+.del-intel-card {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.9) 0%, rgba(15, 23, 42, 0.95) 100%);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  margin-top: var(--space-7);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.del-intel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.del-intel-head strong {
+  color: #38bdf8;
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.del-intel-body {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--space-6);
+  margin-top: var(--space-4);
+  align-items: center;
+}
+
+/* ==========================================================================
+   Section 15: Connected Delivery Map
+   ========================================================================== */
+
+.del-map-box {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-7);
+  margin-top: var(--space-7);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.del-map-flow {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  align-items: center;
+}
+
+.del-map-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: center;
+  width: 100%;
+}
+
+.del-map-chip {
+  padding: 0.5rem 1rem;
+  background: var(--color-surface-muted);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.del-map-chip--highlight {
+  border-color: #38bdf8;
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.08);
+}
+
+.del-map-arrow {
+  color: var(--color-brand);
+  font-size: var(--text-lg);
+  line-height: 1;
+}
+
+/* ==========================================================================
+   Section 16: Get Started
+   ========================================================================== */
+
+.del-get-started {
+  background: var(--color-canvas);
+  border-top: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.del-get-started__grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.del-trial-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.del-trial-points {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.del-trial-points li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+  font-weight: 600;
+}
+
+.del-trial-points svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  color: #22c55e;
+  flex-shrink: 0;
+}
+
+/* ==========================================================================
+   Section 17: Related Capabilities
+   ========================================================================== */
+
+.del-related-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  margin-top: var(--space-7);
+}
+
+.del-related-card {
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-4);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.del-related-card:hover {
+  border-color: var(--color-border-strong);
+  background: var(--color-surface-hover);
+}
+
+.del-related-card h3 {
+  font-size: var(--text-base);
+  color: var(--color-ink);
+  margin: 0 0 var(--space-2);
+}
+
+.del-related-card p {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  line-height: var(--leading-body);
+  margin: 0;
+}
+
+/* ==========================================================================
+   Section 18: Final CTA
+   ========================================================================== */
+
+.del-final-cta {
+  text-align: center;
+  padding-block: var(--space-12);
+  background: radial-gradient(circle at 50% 50%, rgba(56, 189, 248, 0.06) 0%, transparent 60%),
+              var(--color-canvas);
+}
+
+.del-final-cta__inner {
+  max-width: 54ch;
+  margin-inline: auto;
+}
+
+.del-final-cta h2 {
+  font-size: var(--text-3xl);
+  color: var(--color-ink);
+  letter-spacing: -0.03em;
+  margin-bottom: var(--space-3);
+}
+
+.del-final-cta p {
+  font-size: var(--text-lg);
+  color: var(--color-text);
+  margin-bottom: var(--space-6);
+}
+
+.del-final-cta__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  justify-content: center;
+}
+
+/* ==========================================================================
+   Responsive Adaptations
+   ========================================================================== */
+
+@media (max-width: 68rem) {
+  .del-hero__grid,
+  .del-intake-grid,
+  .del-connections-grid,
+  .del-status-grid,
+  .del-reporting-grid,
+  .del-intel-body,
+  .del-get-started__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .del-model-steps {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .del-dispatch-grid,
+  .del-multi-grid,
+  .del-related-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 48rem) {
+  .del-model-steps,
+  .del-dispatch-grid,
+  .del-fleet-box,
+  .del-kpi-grid,
+  .del-multi-grid,
+  .del-related-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .del-stepper {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: var(--space-3);
+  }
+
+  .del-hero__actions,
+  .del-final-cta__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .del-hero__actions .button,
+  .del-final-cta__actions .button {
+    width: 100%;
+    text-align: center;
+  }
+}
