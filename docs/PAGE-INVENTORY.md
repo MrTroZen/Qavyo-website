@@ -45,7 +45,7 @@ This inventory lists every current public-page route in the repository. Home and
 | Fleet &amp; Driver Assignment  | `fleet-driver-assignment.html` | Scaffolded |
 | GPS Tracking &amp; Routes  | `gps-tracking-routes.html` | Scaffolded |
 | Group, Franchise &amp; Regional Management  | `group-franchise-regional-management.html` | Scaffolded |
-| Hardware  | `hardware.html` | Scaffolded |
+| Hardware &amp; Devices  | `hardware.html` | Existing |
 | HR &amp; Employee Records  | `hr-employee-records.html` | Scaffolded |
 | HR &amp; Payroll  | `hr-payroll.html` | Existing |
 | Qavyo â€” Business technology for connected operations | `index.html` | Final |

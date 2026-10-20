@@ -217,10 +217,10 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 ### Hardware
 
 - [x] Keep Hardware & Devices as a permanent full page.
-- [ ] Confirm supported-device and dedicated-hardware scope.
-- [ ] Explain existing compatible devices versus optional dedicated hardware.
-- [ ] Keep hardware pricing separate from software pricing.
-- [ ] Do not name devices, vendors, or compatibility without confirmation.
+- [x] Confirm supported-device and dedicated-hardware scope.
+- [x] Explain existing compatible devices versus optional dedicated hardware.
+- [x] Keep hardware pricing separate from software pricing.
+- [x] Do not name devices, vendors, or compatibility without confirmation.
 
 ## Phase 5 — Marketing Solutions
 

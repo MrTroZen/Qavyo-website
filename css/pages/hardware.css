@@ -1,0 +1,766 @@
+/* ==========================================================================
+   Qavyo — Hardware & Devices Page Styles
+   Namespace: .hw-
+   ========================================================================== */
+
+.hw-page {
+  background: var(--color-canvas);
+}
+
+.hw-page h2 {
+  max-width: 28ch;
+  font-size: var(--text-xl);
+  letter-spacing: -0.035em;
+  line-height: var(--leading-tight);
+}
+
+.hw-page figure,
+.hw-page fieldset,
+.hw-page ol,
+.hw-page ul,
+.hw-page dl {
+  margin: 0;
+}
+
+.hw-page figure,
+.hw-page fieldset {
+  min-width: 0;
+}
+
+.hw-page figure > figcaption {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.hw-page .section--dark p {
+  color: var(--color-border);
+}
+
+/* Breadcrumbs */
+.hw-breadcrumbs {
+  position: absolute;
+  inset: 0 0 auto;
+  padding-block: var(--space-4);
+  z-index: 2;
+}
+
+.hw-breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding: 0;
+  list-style: none;
+}
+
+.hw-breadcrumbs li,
+.hw-breadcrumbs a {
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.hw-breadcrumbs a:hover,
+.hw-breadcrumbs a:focus-visible {
+  color: var(--color-brand-hover);
+}
+
+.hw-breadcrumbs li + li::before {
+  margin-right: var(--space-2);
+  color: var(--color-border-strong);
+  content: "/";
+}
+
+/* Common Actions & Microcopy */
+.hw-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-3);
+  margin-block-start: var(--space-5);
+}
+
+.hw-microcopy {
+  display: block;
+  margin-block-start: var(--space-2);
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  font-weight: 600;
+}
+
+.hw-note-box {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  padding: var(--space-4);
+  color: var(--color-text);
+  font-size: var(--text-sm);
+  line-height: var(--leading-body);
+}
+
+.hw-note-box--warning {
+  border-color: #e5cf96;
+  background: #fdfaf0;
+  color: var(--color-ink);
+}
+
+.hw-note-box strong {
+  color: var(--color-ink);
+}
+
+/* Badges */
+.hw-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-1);
+  padding: 0.2rem 0.55rem;
+  border-radius: var(--radius-sm);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+}
+
+.hw-badge--pos {
+  background: var(--color-brand-soft);
+  color: var(--color-brand);
+}
+
+.hw-badge--kds {
+  background: #fdf5e7;
+  color: var(--color-warning);
+}
+
+.hw-badge--customer {
+  background: #eaf6ee;
+  color: var(--color-success);
+}
+
+.hw-badge--kiosk {
+  background: #f3e8ff;
+  color: #7e22ce;
+}
+
+.hw-badge--pay {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.hw-badge--optional {
+  background: var(--color-surface-muted);
+  color: var(--color-muted);
+}
+
+/* ==========================================================================
+   Section 01: Hero Section
+   ========================================================================== */
+
+.hw-hero {
+  position: relative;
+  border-block-end: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.hw-hero__grid {
+  display: grid;
+  min-height: var(--page-hero-min-height);
+  grid-template-columns: minmax(0, 1fr) minmax(32rem, 1.15fr);
+  gap: var(--space-8);
+  align-items: center;
+  padding-block: var(--page-hero-space);
+}
+
+.hw-hero__copy h1 {
+  max-width: 16ch;
+  color: var(--color-ink);
+  font-size: var(--text-page-hero);
+  letter-spacing: -0.04em;
+  line-height: var(--leading-tight);
+}
+
+.hw-hero__copy p {
+  max-width: 48ch;
+  margin-block-start: var(--space-4);
+  color: var(--color-text);
+  font-size: var(--text-lg);
+  line-height: var(--leading-body);
+}
+
+/* Hero Ecosystem Stage */
+.hw-stage-card {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.hw-stage-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-dark);
+  color: var(--color-surface);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.hw-stage-header .signal-dot {
+  background: #4ade80;
+}
+
+.hw-stage-body {
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+/* Interactive Station Tabs in Hero */
+.hw-station-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  border-block-end: 1px solid var(--color-border);
+  padding-block-end: var(--space-3);
+}
+
+.hw-station-tab {
+  padding: 0.35rem 0.75rem;
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease-in-out;
+}
+
+.hw-station-tab:hover,
+.hw-station-tab[aria-selected="true"],
+.hw-station-tab.is-active {
+  background: var(--color-brand);
+  border-color: var(--color-brand);
+  color: #ffffff;
+}
+
+/* Device Screen Simulation Frame */
+.hw-screen-frame {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-canvas);
+  padding: var(--space-4);
+  min-height: 18rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.hw-screen-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  border-block-end: 1px solid var(--color-border);
+  padding-block-end: var(--space-2);
+}
+
+.hw-screen-preview {
+  margin-block: var(--space-3);
+}
+
+/* ==========================================================================
+   Section 02: One Platform, Different Jobs
+   ========================================================================== */
+
+.hw-jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-3);
+  margin-block-start: var(--space-6);
+}
+
+.hw-job-card {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.hw-job-card strong {
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+}
+
+.hw-job-card p {
+  font-size: var(--text-xs);
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* ==========================================================================
+   Section 03-08: Device Role Sections (Split Grids)
+   ========================================================================== */
+
+.hw-split-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: var(--space-8);
+  align-items: center;
+  margin-block-start: var(--space-6);
+}
+
+.hw-device-mock {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+}
+
+.hw-device-mock__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface-muted);
+  border-block-end: 1px solid var(--color-border);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.hw-device-mock__body {
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+/* Dual Screen Mockup for Customer Display (Section 05) */
+.hw-dual-screen {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-3);
+}
+
+.hw-sub-screen {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-canvas);
+  padding: var(--space-3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  font-size: var(--text-xs);
+}
+
+.hw-sub-screen__title {
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--color-muted);
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+}
+
+/* Kiosk Frame (Section 06) */
+.hw-kiosk-frame {
+  max-width: 22rem;
+  margin-inline: auto;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--color-dark);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.hw-kiosk-header {
+  background: var(--color-brand);
+  color: #ffffff;
+  padding: var(--space-3);
+  text-align: center;
+  font-weight: 800;
+  font-size: var(--text-sm);
+}
+
+.hw-kiosk-body {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+/* ==========================================================================
+   Section 10 & 11: Setup Configurations & Workflow Fit
+   ========================================================================== */
+
+.hw-config-tabs {
+  display: flex;
+  gap: var(--space-2);
+  margin-block-end: var(--space-4);
+}
+
+.hw-config-btn {
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-sm);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-weight: 700;
+  font-size: var(--text-sm);
+  cursor: pointer;
+}
+
+.hw-config-btn.is-active,
+.hw-config-btn[aria-selected="true"] {
+  background: var(--color-brand);
+  border-color: var(--color-brand);
+  color: #ffffff;
+}
+
+.hw-config-card {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+}
+
+.hw-device-list-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+  margin-block-start: var(--space-4);
+}
+
+.hw-device-item {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  padding: var(--space-4);
+  background: var(--color-canvas);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.hw-device-item strong {
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+}
+
+.hw-device-item p {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   Section 12, 13 & 14: Compatibility & Sourcing
+   ========================================================================== */
+
+.hw-compat-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  margin-block-start: var(--space-6);
+}
+
+.hw-compat-card {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.hw-compat-card h3 {
+  font-size: var(--text-base);
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.hw-compat-card p {
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  line-height: var(--leading-body);
+  margin: 0;
+}
+
+/* ==========================================================================
+   Section 19 & 20: Installation & Support
+   ========================================================================== */
+
+.hw-steps-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-3);
+  margin-block-start: var(--space-6);
+}
+
+.hw-step-box {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.hw-step-box__num {
+  font-size: var(--text-xs);
+  font-weight: 800;
+  color: var(--color-brand);
+  font-family: var(--font-mono);
+}
+
+.hw-step-box strong {
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+}
+
+.hw-step-box p {
+  font-size: var(--text-xs);
+  color: var(--color-text);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   Section 21: Full Connected Hardware Map
+   ========================================================================== */
+
+.hw-map-container {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-sm);
+  margin-block-start: var(--space-6);
+}
+
+.hw-map-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: var(--space-3);
+  position: relative;
+}
+
+.hw-map-zone {
+  border: 1px dashed var(--color-border-strong);
+  border-radius: var(--radius-md);
+  background: var(--color-canvas);
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  text-align: center;
+}
+
+.hw-map-zone__label {
+  font-size: var(--text-xs);
+  font-weight: 800;
+  text-transform: uppercase;
+  color: var(--color-brand);
+  letter-spacing: 0.04em;
+}
+
+.hw-map-zone strong {
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+}
+
+.hw-map-zone p {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* ==========================================================================
+   Section 22: Get Started Offer Card
+   ========================================================================== */
+
+.hw-offer-card {
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  padding: var(--space-8);
+  box-shadow: var(--shadow-md);
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.hw-offer-points {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.hw-offer-point {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  font-size: var(--text-base);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.hw-offer-point__check {
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: #eaf6ee;
+  color: var(--color-success);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-xs);
+  font-weight: 800;
+}
+
+/* ==========================================================================
+   Section 23: Related Capabilities
+   ========================================================================== */
+
+.hw-related-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-4);
+  margin-block-start: var(--space-6);
+}
+
+.hw-related-card {
+  border-radius: var(--radius-md);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface);
+  padding: var(--space-5);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--space-4);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.hw-related-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
+  border-color: var(--color-brand);
+}
+
+.hw-related-card h3 {
+  font-size: var(--text-base);
+  color: var(--color-ink);
+  margin: 0;
+}
+
+.hw-related-card p {
+  font-size: var(--text-sm);
+  color: var(--color-text);
+  line-height: var(--leading-body);
+  margin: 0;
+}
+
+/* ==========================================================================
+   Section 24: Final CTA Section
+   ========================================================================== */
+
+.hw-final-cta {
+  border-block-start: 1px solid var(--color-border);
+  background: var(--color-surface);
+  padding-block: var(--space-9);
+  text-align: center;
+}
+
+.hw-final-cta h2 {
+  max-width: 22ch;
+  margin-inline: auto;
+  font-size: var(--text-2xl);
+  color: var(--color-ink);
+}
+
+.hw-final-cta p {
+  max-width: 48ch;
+  margin-inline: auto;
+  margin-block-start: var(--space-4);
+  color: var(--color-text);
+  font-size: var(--text-lg);
+  line-height: var(--leading-body);
+}
+
+.hw-final-cta .hw-actions {
+  justify-content: center;
+}
+
+/* ==========================================================================
+   Responsive Adaptations
+   ========================================================================== */
+
+@media (max-width: 68rem) {
+  .hw-hero__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .hw-jobs-grid,
+  .hw-steps-grid,
+  .hw-map-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hw-split-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .hw-compat-grid,
+  .hw-device-list-grid,
+  .hw-related-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .hw-offer-card {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 48rem) {
+  .hw-jobs-grid,
+  .hw-steps-grid,
+  .hw-map-grid,
+  .hw-compat-grid,
+  .hw-device-list-grid,
+  .hw-related-grid,
+  .hw-dual-screen {
+    grid-template-columns: 1fr;
+  }
+
+  .hw-hero__copy h1 {
+    font-size: var(--text-xl);
+  }
+
+  .hw-offer-card {
+    padding: var(--space-5);
+  }
+}
