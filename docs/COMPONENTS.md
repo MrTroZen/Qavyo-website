@@ -233,9 +233,9 @@ The Restaurant Software overview uses `.rst-directory` as the bridge between the
 
 ## Restaurant conversion narrative
 
-The Restaurant Software overview is the reference implementation for `CONVERSION-STANDARD.md`. `.rst-problem` names operational friction before the product explanation. `.rst-flow` then presents the connected mechanism, and `.rst-outcomes` translates that mechanism into Run, Control, and Understand outcomes. `.rst-start` explains the 30-day Full Qavyo path without requiring detailed plan comparison on the overview. `.rst-decisions` gives Delivery Operations, Hardware & Devices, and Payments dedicated decision blocks. `.rst-faq` uses native `details` and `summary` elements for buying objections. `.rst-final-cta__postscript` closes with the confirmed starting price, access period, and separate-cost terms.
+The Restaurant Software overview is a visual hub rather than a feature directory. `.rst-feature` alternates concise copy with a purpose-built illustrative interface for each major operating area; `.rst-feature--reverse` changes composition without changing reading order on mobile. `.rst-labels` names only the supporting capabilities needed to understand that visual. Every major section ends with a descriptive link to its established destination.
 
-The hero uses `.rst-command` as a proof-safe illustrative operational interface. It must remain labelled as illustrative, avoid fabricated metrics, and show one understandable service event connecting to kitchen, inventory, reporting, and Qavyo Intelligence.
+The hero uses `.rst-hero-ui` to show one order connecting POS, kitchen, inventory, and reporting. Other proof-safe visual patterns include `.rst-pos`, `.rst-kds`, `.rst-recipe`, `.rst-schedule`, `.rst-customer`, `.rst-report`, `.rst-locations`, and `.rst-intel`. All examples are explicitly illustrative, use qualitative or obviously demonstrative data, and must not be presented as customer evidence. `.rst-map` reconnects the separate stories into the One Qavyo operating model. `.rst-start` owns the 30-day Full Qavyo handoff without duplicating plan cards; `.rst-duo` keeps Payments and Hardware visible while preserving their commercial boundaries.
 
 ## Structural hub and feature pages
 

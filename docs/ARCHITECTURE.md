@@ -122,16 +122,16 @@ The shared header uses flat, full-width mega menus for Retail, Restaurants, Solu
 
 The project is a static prototype using semantic HTML, CSS, and small amounts of vanilla JavaScript. `index.html` contains the complete approved homepage with global navigation and public footer. Major-page, supporting-feature, Retail-vertical, Intelligence-detail, Payments, and legacy Farm scaffold routes exist in the repository. These scaffolded routes are not final content and are recorded in `PAGE-INVENTORY.md`; their presence does not guarantee a public page.
 
-`restaurant.html` is the master implementation of the reusable conversion-page standard recorded in `CONVERSION-STANDARD.md`. Its narrative is:
-- Section 1: Conversion hero (`.rst-hero`) — outcome-led promise, primary and secondary actions, confirmed commercial reassurance, and one clearly labelled illustrative connected-operation interface
-- Section 2: Operational problem (`.rst-problem`) — recognisable friction across service, costs, teams, and reporting without unsupported quantitative claims
-- Section 3: Qavyo Connected Operations (`#platform-overview`) — Order → Kitchen → Inventory → Customer → Reporting → Intelligence, followed by three outcome-led explanations
-- Section 4: Major capability directory (`.rst-directory`) — dedicated Restaurant routes grouped as Run service, Manage the business, Customers & growth, and Choose & start; small features remain supporting context and legacy deep-link anchors are preserved
-- Section 5: Qavyo Intelligence (`#intelligence`) — Watch → Detect → Explain → Recommend → Act → Measure → Learn, with a qualitative diagnostic example and explicit human control
-- Section 6: Full Qavyo access (`#full-access`) — Start → Set up → Run → Choose, confirmed starting price, and clear separation of hardware and payment processing
-- Section 7: Delivery, Hardware, and Payments (`.rst-decisions`) — three permanent decision areas with dedicated canonical routes
-- Section 8: Buyer FAQ (`#support`) — native disclosure answers covering trial access, separate costs, compatible devices, feature hierarchy, human control, and 24/7 support
-- Section 9: Final CTA (`#get-started`) — primary and secondary actions with a concise commercial postscript
+`restaurant.html` is the master Restaurant Software overview. Its narrative is:
+- Section 1: Conversion hero (`.rst-hero`) — the Full Qavyo 30-day offer and an illustrative order moving through POS, kitchen, inventory, and reporting
+- Section 2: Connected restaurant model (`#platform-overview`) — Orders → Kitchen → Inventory → Customers → Reporting → Qavyo Intelligence
+- Sections 3–10: Visible operating stories for Restaurant POS, Online & QR Ordering, Kitchen Operations, Inventory & Food Cost, HR/Payroll/Team, Customers/Website, Reporting/Day Close, and Multi-Location, each with a descriptive canonical link
+- Section 11: Qavyo Intelligence (`#intelligence`) — one concise, qualitative food-cost briefing with explicit operator control
+- Sections 12–13: Payments and Hardware & Devices — connected to the restaurant workflow while preserving separate-cost and compatibility boundaries
+- Section 14: One Qavyo (`.rst-one`) — a synthesis map reconnecting orders, operations, customers, team, reporting, payments, and Intelligence
+- Section 15: Full Qavyo access (`#full-access`) — 30 days, no card required, and plan choice afterward without duplicating the Pricing page
+- Section 16: Support (`#support`) — the confirmed 24/7 operational-support statement
+- Section 17: Final CTA (`#get-started`) — Full Qavyo, Talk to Sales, and Restaurant Pricing actions
 - Global public footer integration
 
 `intelligence.html` contains the approved Qavyo Intelligence narrative:
