@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Reservations & Waitlist, a planned feature page within Qavyo Customers & Growth.">
-    <title>Reservations &amp; Waitlist | Qavyo</title>
+    <meta name="description" content="Connect restaurant reservations, waitlists, visits, loyalty rewards, and returning-customer relationships with Qavyo.">
+    <title>Reservations &amp; Loyalty | Qavyo Restaurant Software</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
@@ -12,10 +12,10 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/pages/feature-scaffold.css">
+    <link rel="stylesheet" href="css/pages/reservations-loyalty.css">
     <script src="js/main.js" defer></script>
   </head>
-  <body class="scaffold-page">
+  <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header" id="prototype-navigation" data-site-header>
       <div class="container site-header__inner">
@@ -23,13 +23,13 @@
 
         <div class="desktop-navigation">
           <nav class="primary-navigation" aria-label="Primary navigation">
-            <div class="nav-item">
-              <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="retail-menu" data-dropdown-trigger>
-                Retail <span class="nav-chevron" aria-hidden="true"></span>
+                        <div class="nav-item">
+              <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="products-menu" data-dropdown-trigger>
+                Products <span class="nav-chevron" aria-hidden="true"></span>
               </button>
-              <div class="nav-menu nav-menu--retail" id="retail-menu" data-dropdown-menu hidden>
+              <div class="nav-menu nav-menu--retail" id="products-menu" data-dropdown-menu hidden>
                 <div class="container nav-menu__inner">
-                  <div class="mega-menu-grid mega-menu-grid--retail">
+                  <div class="mega-menu-grid mega-menu-grid--products">
                     <section class="mega-menu-column" aria-labelledby="retail-start-title">
                       <h2 class="mega-menu-column__title" id="retail-start-title">Start with Retail</h2>
                       <div class="mega-menu-links">
@@ -72,6 +72,30 @@
                         </a>
                       </div>
                     </section>
+                    <div class="mega-menu-column">
+                      <section class="product-menu-group" aria-labelledby="farm-software-title">
+                        <h2 class="mega-menu-column__title" id="farm-software-title">Farm Software</h2>
+                        <div class="mega-menu-links">
+                          <a class="mega-menu-link" href="broiler-farming.html">
+                            <span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span>
+                            <span class="mega-menu-link__copy"><span class="mega-menu-link__title">Broiler Farming</span><span class="mega-menu-link__description">Explore Qavyo for broiler farming operations.</span></span>
+                          </a>
+                        </div>
+                      </section>
+                      <section class="product-menu-group" aria-labelledby="healthcare-software-title">
+                        <h2 class="mega-menu-column__title" id="healthcare-software-title">Healthcare Software</h2>
+                        <div class="mega-menu-links">
+                          <a class="mega-menu-link" href="#prototype-navigation" data-prototype-link>
+                            <span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span>
+                            <span class="mega-menu-link__copy"><span class="mega-menu-link__title">Hospitals</span><span class="mega-menu-link__description">Explore Qavyo for hospital operations.</span></span>
+                          </a>
+                          <a class="mega-menu-link" href="#prototype-navigation" data-prototype-link>
+                            <span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span>
+                            <span class="mega-menu-link__copy"><span class="mega-menu-link__title">Diagnostic Centers</span><span class="mega-menu-link__description">Explore Qavyo for diagnostic center operations.</span></span>
+                          </a>
+                        </div>
+                      </section>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -107,7 +131,7 @@
                       <h2 class="mega-menu-column__title" id="restaurant-growth-title">Customers &amp; growth</h2>
                       <div class="mega-menu-links">
                         <a class="mega-menu-link" href="customers-growth.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Customers &amp; CRM</span><span class="mega-menu-link__description">Keep customer context and relationships organized.</span></span></a>
-                        <a class="mega-menu-link" href="customers-growth.html#reservations-loyalty"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Reservations &amp; Loyalty</span><span class="mega-menu-link__description">Understand the returning-customer journey.</span></span></a>
+                        <a class="mega-menu-link" href="reservations-waitlist.html" aria-current="page"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Reservations &amp; Loyalty</span><span class="mega-menu-link__description">Understand the returning-customer journey.</span></span></a>
                         <a class="mega-menu-link" href="delivery-operations.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Delivery Operations</span><span class="mega-menu-link__description">Coordinate delivery as a core restaurant operation.</span></span></a>
                         <a class="mega-menu-link" href="solutions.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Marketing Solutions</span><span class="mega-menu-link__description">Build stronger customer communication and presence.</span></span></a>
                       </div>
@@ -133,21 +157,21 @@
               <div class="nav-menu nav-menu--solutions" id="solutions-menu" data-dropdown-menu hidden>
                 <div class="container nav-menu__inner">
                   <div class="mega-menu-grid mega-menu-grid--solutions">
-                    <section class="mega-menu-column" aria-labelledby="solutions-communication-title">
-                      <h2 class="mega-menu-column__title" id="solutions-communication-title">Marketing &amp; communication</h2>
+                    <section class="mega-menu-column" aria-labelledby="solutions-marketing-title">
+                      <h2 class="mega-menu-column__title" id="solutions-marketing-title">Marketing &amp; communication</h2>
                       <div class="mega-menu-links">
-                        <a class="mega-menu-link" href="solutions.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Marketing Solutions Overview</span><span class="mega-menu-link__description">See Qavyo's marketing, communication, and web services.</span></span></a>
-                        <a class="mega-menu-link" href="social-media-marketing.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Social Media Marketing</span><span class="mega-menu-link__description">Plan and maintain a useful public presence.</span></span></a>
-                        <a class="mega-menu-link" href="sms-marketing.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">SMS Marketing</span><span class="mega-menu-link__description">Reach customers with short, direct communication.</span></span></a>
-                        <a class="mega-menu-link" href="email-marketing.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Email Marketing</span><span class="mega-menu-link__description">Use more room to share updates and stories.</span></span></a>
+                        <a class="mega-menu-link" href="solutions.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Marketing Solutions Overview</span><span class="mega-menu-link__description">Managed marketing services across channels.</span></span></a>
+                        <a class="mega-menu-link" href="social-media-marketing.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Social Media Marketing</span><span class="mega-menu-link__description">Reach customers with scheduled posts and campaigns.</span></span></a>
+                        <a class="mega-menu-link" href="sms-marketing.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">SMS Marketing</span><span class="mega-menu-link__description">Engage customers directly with tailored text updates.</span></span></a>
+                        <a class="mega-menu-link" href="email-marketing.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Email Marketing</span><span class="mega-menu-link__description">Send curated newsletters and seasonal promotions.</span></span></a>
                       </div>
                     </section>
-                    <section class="mega-menu-column" aria-labelledby="solutions-growth-title">
-                      <h2 class="mega-menu-column__title" id="solutions-growth-title">Web, growth &amp; intelligence</h2>
+                    <section class="mega-menu-column" aria-labelledby="solutions-web-title">
+                      <h2 class="mega-menu-column__title" id="solutions-web-title">Web, growth &amp; intelligence</h2>
                       <div class="mega-menu-links">
-                        <a class="mega-menu-link" href="website-building.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Website Building</span><span class="mega-menu-link__description">Create a clear online home for your business.</span></span></a>
-                        <a class="mega-menu-link" href="website-seo.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Website SEO</span><span class="mega-menu-link__description">Connect search intent with relevant website content.</span></span></a>
-                        <a class="mega-menu-link" href="intelligence.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Qavyo Intelligence</span><span class="mega-menu-link__description">Know what deserves attention across operations.</span></span></a>
+                        <a class="mega-menu-link" href="website-building.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Website Building</span><span class="mega-menu-link__description">Deploy a dedicated, branded business website.</span></span></a>
+                        <a class="mega-menu-link" href="website-seo.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Website SEO</span><span class="mega-menu-link__description">Improve discoverability on local searches.</span></span></a>
+                        <a class="mega-menu-link" href="intelligence.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Qavyo Intelligence</span><span class="mega-menu-link__description">Actionable insights across operations and growth.</span></span></a>
                       </div>
                     </section>
                   </div>
@@ -155,7 +179,9 @@
               </div>
             </div>
 
-            <a class="nav-link" href="pricing.html">Pricing</a>
+            <div class="nav-item">
+              <a class="nav-link" href="pricing.html">Pricing</a>
+            </div>
 
             <div class="nav-item">
               <button class="nav-trigger" type="button" aria-expanded="false" aria-controls="resources-menu" data-dropdown-trigger>
@@ -165,17 +191,12 @@
                 <div class="container nav-menu__inner">
                   <div class="mega-menu-grid mega-menu-grid--resources">
                     <section class="mega-menu-column" aria-labelledby="resources-explore-title">
-                      <h2 class="mega-menu-column__title" id="resources-explore-title">Explore</h2>
+                      <h2 class="mega-menu-column__title" id="resources-explore-title">Explore &amp; company</h2>
                       <div class="mega-menu-links">
-                        <a class="mega-menu-link" href="feature-directory.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">All Products &amp; Features</span><span class="mega-menu-link__description">Browse Qavyo software areas and capabilities.</span></span></a>
-                        <a class="mega-menu-link" href="#prototype-navigation" data-prototype-link><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Help &amp; Support</span><span class="mega-menu-link__description">Get help with Qavyo.</span></span></a>
-                      </div>
-                    </section>
-                    <section class="mega-menu-column" aria-labelledby="resources-company-title">
-                      <h2 class="mega-menu-column__title" id="resources-company-title">Company</h2>
-                      <div class="mega-menu-links">
-                        <a class="mega-menu-link" href="#prototype-navigation" data-prototype-link><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">About Qavyo</span><span class="mega-menu-link__description">Learn about Qavyo and its direction.</span></span></a>
-                        <a class="mega-menu-link" href="#prototype-navigation" data-prototype-link><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Contact</span><span class="mega-menu-link__description">Talk with Qavyo about your business.</span></span></a>
+                        <a class="mega-menu-link" href="feature-directory.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">All Products &amp; Features</span><span class="mega-menu-link__description">Complete index of software and solution areas.</span></span></a>
+                        <a class="mega-menu-link" href="#prototype-navigation" data-prototype-link><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Help &amp; Support</span><span class="mega-menu-link__description">Documentation and onboarding assistance.</span></span></a>
+                        <a class="mega-menu-link" href="#prototype-navigation" data-prototype-link><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">About Qavyo</span><span class="mega-menu-link__description">Our mission and company background.</span></span></a>
+                        <a class="mega-menu-link" href="#prototype-navigation" data-prototype-link><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Contact</span><span class="mega-menu-link__description">Reach our team for sales and enquiries.</span></span></a>
                       </div>
                     </section>
                   </div>
@@ -199,9 +220,9 @@
 
       <div class="mobile-navigation" id="mobile-navigation" data-mobile-menu hidden>
         <nav class="mobile-navigation__inner" aria-label="Mobile navigation">
-          <div class="mobile-nav-group">
-            <button class="mobile-nav-trigger" type="button" aria-expanded="false" aria-controls="mobile-retail" data-mobile-accordion-trigger>Retail <span aria-hidden="true">+</span></button>
-            <div class="mobile-nav-panel" id="mobile-retail" data-mobile-accordion-panel hidden>
+                    <div class="mobile-nav-group">
+            <button class="mobile-nav-trigger" type="button" aria-expanded="false" aria-controls="mobile-products" data-mobile-accordion-trigger>Products <span aria-hidden="true">+</span></button>
+            <div class="mobile-nav-panel" id="mobile-products" data-mobile-accordion-panel hidden>
               <section class="mobile-nav-section" aria-labelledby="mobile-retail-start-title">
                 <h2 class="mobile-nav-section__title" id="mobile-retail-start-title">Start with Retail</h2>
                 <a class="mega-menu-link" href="retail.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Retail Software Overview</span><span class="mega-menu-link__description">Connected retail operations in one place.</span></span></a>
@@ -215,6 +236,15 @@
                 <a class="mega-menu-link" href="retail-salon-spa.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Salon &amp; Spa</span></span></a>
                 <a class="mega-menu-link" href="retail-hardware-sanitary.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Hardware &amp; Sanitary</span></span></a>
                 <a class="mega-menu-link" href="retail-paint-tiles.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Paint &amp; Tiles</span></span></a>
+              </section>
+              <section class="mobile-nav-section" aria-labelledby="mobile-farm-software-title">
+                <h2 class="mobile-nav-section__title" id="mobile-farm-software-title">Farm Software</h2>
+                <a class="mega-menu-link" href="broiler-farming.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Broiler Farming</span></span></a>
+              </section>
+              <section class="mobile-nav-section" aria-labelledby="mobile-healthcare-software-title">
+                <h2 class="mobile-nav-section__title" id="mobile-healthcare-software-title">Healthcare Software</h2>
+                <a class="mega-menu-link" href="#prototype-navigation" data-prototype-link><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Hospitals</span></span></a>
+                <a class="mega-menu-link" href="#prototype-navigation" data-prototype-link><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Diagnostic Centers</span></span></a>
               </section>
             </div>
           </div>
@@ -240,7 +270,7 @@
               <section class="mobile-nav-section" aria-labelledby="mobile-restaurant-growth-title">
                 <h2 class="mobile-nav-section__title" id="mobile-restaurant-growth-title">Customers &amp; growth</h2>
                 <a class="mega-menu-link" href="customers-growth.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Customers &amp; CRM</span></span></a>
-                <a class="mega-menu-link" href="customers-growth.html#reservations-loyalty"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Reservations &amp; Loyalty</span></span></a>
+                <a class="mega-menu-link" href="reservations-waitlist.html" aria-current="page"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Reservations &amp; Loyalty</span></span></a>
                 <a class="mega-menu-link" href="delivery-operations.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Delivery Operations</span></span></a>
                 <a class="mega-menu-link" href="solutions.html"><span class="mega-menu-link__arrow" aria-hidden="true">&rarr;</span><span class="mega-menu-link__copy"><span class="mega-menu-link__title">Marketing Solutions</span></span></a>
               </section>
@@ -296,13 +326,60 @@
         </nav>
       </div>
     </header>
-    <main id="main-content">
-      <nav class="container scaffold-breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><a href="restaurant.html">Restaurant Software</a></li><li><a href="customers-growth.html">Customers & Growth</a></li><li aria-current="page">Reservations & Waitlist</li></ol></nav>
-      <section class="scaffold-hero"><div class="container scaffold-hero__inner"><div><p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Customers & Growth</p><h1>Reservations & Waitlist</h1><p class="scaffold-hero__lede">A focused feature page within the Customers & Growth capability area.</p><div class="scaffold-actions"><a class="button button--primary" href="customers-growth.html">Back to Customers & Growth</a><a class="button button--secondary" href="pricing.html#plans">See Pricing</a></div></div><aside class="scaffold-status"><strong>Content review pending</strong><span>The final workflow, product detail, and visual story will be added later.</span></aside></div></section>
-      <section class="section"><div class="container container--narrow"><p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Page purpose</p><h2>Detailed content will follow.</h2><p class="lede">This route is connected now so navigation and page relationships can be completed before the content-development phase. It does not add product claims beyond the approved feature name.</p></div></section>
-      <section class="section scaffold-connections"><div class="container scaffold-connections__grid"><div><h2>Related Customers & Growth pages</h2><p>Continue through this capability area or return to its hub.</p></div>          <ul class="scaffold-link-list"><li><a href="customers-growth.html"><span>Customers & Growth</span><span aria-hidden="true">&rarr;</span></a></li><li><a href="customer-accounts-profiles.html"><span>Customer Accounts & Profiles</span><span aria-hidden="true">&rarr;</span></a></li><li><a href="crm-preferences.html"><span>CRM & Preferences</span><span aria-hidden="true">&rarr;</span></a></li><li><a href="customer-order-history.html"><span>Customer Order History</span><span aria-hidden="true">&rarr;</span></a></li><li><a href="loyalty-gift-cards.html"><span>Loyalty & Gift Cards</span><span aria-hidden="true">&rarr;</span></a></li><li><a href="customer-analytics.html"><span>Customer Analytics</span><span aria-hidden="true">&rarr;</span></a></li><li><a href="restaurant-website-feature.html"><span>Restaurant Website</span><span aria-hidden="true">&rarr;</span></a></li></ul></div></section>
+    <main id="main-content" class="rl-page">
+      <nav class="container rl-breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><a href="restaurant.html">Restaurant Software</a></li><li aria-current="page">Reservations &amp; Loyalty</li></ol></nav>
+
+      <section class="rl-hero" id="hero" aria-labelledby="hero-title">
+        <div class="container rl-hero__grid">
+          <div class="rl-hero__copy">
+            <p class="rl-context">Reservations &amp; Loyalty</p>
+            <h1 id="hero-title">Fill the table. Build the relationship beyond the visit.</h1>
+            <p class="lede">Connect reservations, arrivals, restaurant visits and loyalty with the customer relationship already held in Qavyo.</p>
+            <div class="rl-actions"><a class="button button--primary button--large" href="#get-started">Get Full Qavyo &mdash; Free for 30 Days</a><a class="button button--secondary button--large" href="pricing.html">See Restaurant Pricing</a></div>
+            <p class="rl-microcopy">Full access. No card required.</p>
+          </div>
+          <figure class="rl-hero-ui" aria-labelledby="hero-ui-caption">
+            <figcaption id="hero-ui-caption">Illustrative reservation and customer view</figcaption>
+            <div class="rl-hero-ui__body">
+              <section class="rl-panel"><div class="rl-ui-head"><strong>Tonight</strong><span>3 bookings</span></div><ol class="rl-booking-list"><li><time>18:30</time><span><strong>Sarah Mitchell</strong><small>4 guests</small></span><em>Confirmed</em></li><li><time>19:00</time><span><strong>Daniel Clarke</strong><small>2 guests</small></span><em>Confirmed</em></li><li><time>19:30</time><span><strong>Emma Lewis</strong><small>4 guests</small></span><em class="rl-status--waiting">Waiting</em></li></ol></section>
+              <section class="rl-panel rl-profile"><div class="rl-ui-head"><strong>Sarah Mitchell</strong><span>Customer profile</span></div><dl><div><dt>Visits</dt><dd>18</dd></div><div><dt>Reservations</dt><dd>6</dd></div><div><dt>Last visit</dt><dd>Saturday</dd></div><div><dt>Loyalty</dt><dd>1,240 pts</dd></div></dl><p class="rl-reward"><span aria-hidden="true">&#10003;</span> Dessert reward available</p></section>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="section rl-journey" aria-labelledby="journey-title"><div class="container"><div class="rl-section-head"><h2 id="journey-title">The reservation is the beginning of the visit &mdash; not the end of the customer relationship.</h2><p>Before arrival and after the meal, each step can remain connected to the same customer.</p></div><ol class="rl-flow" aria-label="Customer journey"><li>Restaurant website</li><li>Reservation</li><li>Arrival</li><li>Visit</li><li>Customer profile</li><li>Loyalty</li><li>Return visit</li></ol></div></section>
+
+      <section class="section" id="reservation-book" aria-labelledby="book-title"><div class="container rl-split"><div><h2 id="book-title">See who's coming before service starts.</h2><p class="lede">Keep the evening's bookings in one clear service list, with time, customer, party size and status visible together.</p></div><div class="rl-reservation-book"><div class="rl-ui-head"><strong>Friday 23 October</strong><span>Illustrative view</span></div><div class="rl-table" role="table" aria-label="Friday reservations"><div class="rl-table__row rl-table__head" role="row"><span role="columnheader">Time</span><span role="columnheader">Customer</span><span role="columnheader">Guests</span><span role="columnheader">Status</span></div><div class="rl-table__row" role="row"><time role="cell">18:00</time><strong role="cell">James Carter</strong><span role="cell">2</span><em role="cell">Confirmed</em></div><div class="rl-table__row" role="row"><time role="cell">18:30</time><strong role="cell">Sarah Mitchell</strong><span role="cell">4</span><em role="cell">Confirmed</em></div><div class="rl-table__row" role="row"><time role="cell">19:00</time><strong role="cell">Mia Patel</strong><span role="cell">6</span><em role="cell">Confirmed</em></div><div class="rl-table__row" role="row"><time role="cell">19:30</time><strong role="cell">Daniel Clarke</strong><span role="cell">2</span><em class="rl-status--waiting" role="cell">Pending</em></div></div></div></div></section>
+
+      <section class="section section--dark" id="booking-detail" aria-labelledby="detail-title"><div class="container rl-split"><div><h2 id="detail-title">Keep the information for the booking together.</h2><p class="lede">The booking stays connected to the customer, rather than becoming only a name and time on a list.</p><a class="text-link rl-link-light" href="customers-growth.html">Explore Customers &amp; CRM <span aria-hidden="true">&rarr;</span></a></div><article class="rl-detail-card"><div class="rl-ui-head"><strong>Reservation</strong><span>Confirmed</span></div><h3>Sarah Mitchell</h3><dl><div><dt>Friday</dt><dd>19:00</dd></div><div><dt>Guests</dt><dd>4</dd></div><div><dt>Previous visits</dt><dd>18</dd></div><div><dt>Last visit</dt><dd>Saturday</dd></div></dl></article></div></section>
+
+      <section class="section" id="website-booking" aria-labelledby="website-title"><div class="container rl-split rl-split--reverse"><div><h2 id="website-title">Let customers move from finding your restaurant to booking a table.</h2><p class="lede">A restaurant website can give customers a direct route from the menu and opening information into a reservation.</p><a class="text-link" href="restaurant-website-feature.html">Explore Restaurant Website <span aria-hidden="true">&rarr;</span></a></div><div class="rl-browser"><div class="rl-browser__bar"><span></span><span></span><span></span><b>LUCA'S</b></div><nav aria-label="Illustrative restaurant website"><span>Menu</span><span>Order online</span><strong>Book a table</strong><span>Contact</span></nav><div class="rl-book-form"><h3>Book a table</h3><dl><div><dt>Date</dt><dd>Friday 23 October</dd></div><div><dt>Time</dt><dd>19:00</dd></div><div><dt>Guests</dt><dd>4</dd></div></dl><span class="rl-faux-button">Continue</span><small>Illustrative interface</small></div></div></div></section>
+
+      <section class="section rl-service" id="service-ahead" aria-labelledby="service-title"><div class="container"><div class="rl-section-head"><h2 id="service-title">See the shape of the evening before guests arrive.</h2><p>Reservation covers show the known demand already on the book without presenting it as a forecast.</p></div><div class="rl-demand"><div class="rl-demand__chart" aria-label="Illustrative Friday evening reserved guests"><div><span style="--rl-bar: 27%">6</span><time>18:00</time></div><div><span style="--rl-bar: 64%">14</span><time>18:30</time></div><div><span style="--rl-bar: 100%">22</span><time>19:00</time></div><div><span style="--rl-bar: 82%">18</span><time>19:30</time></div><div><span style="--rl-bar: 55%">12</span><time>20:00</time></div></div><dl class="rl-summary"><div><dt>Expected covers</dt><dd>72</dd></div><div><dt>Reservations</dt><dd>24</dd></div><div><dt>Largest party</dt><dd>8</dd></div></dl></div></div></section>
+
+      <section class="section" id="waitlist" aria-labelledby="waitlist-title"><div class="container rl-split"><div><h2 id="waitlist-title">Keep waiting guests organised when tables are full.</h2><p class="lede">A clear waitlist helps front-of-house teams see who is waiting, party size and elapsed time without relying on memory.</p></div><div class="rl-waitlist"><div class="rl-ui-head"><strong>Waitlist</strong><span>3 parties</span></div><ol><li><span><strong>James Carter</strong><small>2 guests</small></span><em>Waiting</em><time>08m</time></li><li><span><strong>Emma Lewis</strong><small>4 guests</small></span><em>Waiting</em><time>14m</time></li><li><span><strong>Mia Patel</strong><small>2 guests</small></span><em>Ready</em><time>03m</time></li></ol></div></div></section>
+
+      <section class="section section--dark" id="arrival" aria-labelledby="arrival-title"><div class="container"><div class="rl-section-head"><h2 id="arrival-title">Turn the booking into an actual restaurant visit.</h2><p>The reservation can move into the visit and then become part of the customer's history.</p></div><ol class="rl-flow rl-flow--dark" aria-label="Reservation to visit"><li><strong>Reservation</strong><small>Sarah Mitchell &middot; 19:00 &middot; 4 guests</small></li><li>Arrived</li><li>Visit</li><li>Customer history</li></ol></div></section>
+
+      <section class="section" id="loyalty" aria-labelledby="loyalty-title"><div class="container rl-split"><div><h2 id="loyalty-title">Give repeat visits something to build toward.</h2><p class="lede">Eligible activity can add to a customer's points progress, while the restaurant can see the available reward and recent activity clearly.</p></div><article class="rl-loyalty-card"><div class="rl-ui-head"><strong>Sarah Mitchell</strong><span>Loyalty</span></div><div class="rl-points"><span><b>1,240</b> points</span><small>Next reward at 1,500</small></div><div class="rl-progress" role="progressbar" aria-label="Loyalty progress" aria-valuemin="0" aria-valuemax="1500" aria-valuenow="1240"><span></span></div><ul><li><span>Saturday visit</span><strong>+120</strong></li><li><span>Online order</span><strong>+80</strong></li></ul><p class="rl-reward"><span aria-hidden="true">&#10003;</span> Dessert reward available</p></article></div></section>
+
+      <section class="section rl-reward-section" id="rewards-gift-cards" aria-labelledby="rewards-title"><div class="container"><div class="rl-section-head"><h2 id="rewards-title">Make rewards and gift-card balances clear.</h2><p>Keep the customer-facing value simple and the restaurant-side status easy to recognise.</p></div><div class="rl-two-cards"><article class="rl-reward-card"><span>Reward available</span><h3>Dessert reward</h3><dl><div><dt>Customer</dt><dd>Sarah Mitchell</dd></div><div><dt>Status</dt><dd>Available</dd></div></dl></article><article class="rl-gift-card"><span>Qavyo gift card</span><strong>&pound;32.40</strong><p>Remaining balance</p><dl><div><dt>Original value</dt><dd>&pound;50.00</dd></div><div><dt>Recent use</dt><dd>&pound;17.60</dd></div></dl></article></div></div></section>
+
+      <section class="section" id="customer-connection" aria-labelledby="customer-title"><div class="container rl-split rl-split--reverse"><div><h2 id="customer-title">Keep the visit connected to the customer behind it.</h2><p class="lede">Reservations, visits and orders add context to the same relationship, helping staff recognise the returning customer.</p><a class="text-link" href="customers-growth.html">Explore Customers &amp; CRM <span aria-hidden="true">&rarr;</span></a></div><article class="rl-customer-card"><div class="rl-ui-head"><strong>Sarah Mitchell</strong><span>Customer profile</span></div><dl><div><dt>Reservations</dt><dd>6</dd></div><div><dt>Visits</dt><dd>18</dd></div><div><dt>Orders</dt><dd>24</dd></div><div><dt>Favourite</dt><dd>Margherita Pizza</dd></div></dl><ol class="rl-mini-flow"><li>Reservation</li><li>Visit</li><li>Order</li><li>Profile</li></ol></article></div></section>
+
+      <section class="section section--dark" id="connections" aria-labelledby="connections-title"><div class="container"><div class="rl-section-head"><h2 id="connections-title">Let the customer relationship continue beyond the dining room.</h2><p>Related Qavyo capabilities provide the next useful context without pretending every step is automatically connected.</p></div><div class="rl-connections"><a href="online-qr-ordering.html"><strong>Online &amp; QR Ordering</strong><span>See digital restaurant ordering.</span><em>Explore <span aria-hidden="true">&rarr;</span></em></a><a href="solutions.html"><strong>Marketing Solutions</strong><span>Explore Qavyo's customer communication services.</span><em>Explore <span aria-hidden="true">&rarr;</span></em></a><a href="intelligence.html"><strong>Qavyo Intelligence</strong><span>Review changes in returning visits that deserve attention.</span><em>Explore <span aria-hidden="true">&rarr;</span></em></a></div></div></section>
+
+      <section class="section" id="analytics" aria-labelledby="analytics-title"><div class="container rl-split"><div><h2 id="analytics-title">See whether customers are coming back.</h2><p class="lede">Reservation, customer and loyalty views can help managers review the activity already recorded in Qavyo.</p></div><div class="rl-analytics"><div class="rl-ui-head"><strong>This month</strong><span>Illustrative customer view</span></div><dl><div><dt>Customers</dt><dd>1,284</dd></div><div><dt>New</dt><dd>798</dd></div><div><dt>Returning</dt><dd>486</dd></div></dl><div class="rl-intel-note"><strong>Qavyo Intelligence</strong><p>Returning visits were lower than the recent monthly pattern. Friday dinner shows the largest change.</p><span>Worth reviewing</span></div></div></div></section>
+
+      <section class="section rl-map" aria-labelledby="map-title"><div class="container"><div class="rl-section-head"><h2 id="map-title">From booking the table to booking the next visit.</h2><p>One connected customer journey, with the restaurant in control at every step.</p></div><ol class="rl-flow" aria-label="Connected customer journey"><li>Restaurant website</li><li>Reservation</li><li>Arrival</li><li>Visit</li><li>Customer profile</li><li>Loyalty</li><li>Reward</li><li>Return visit</li></ol></div></section>
+
+      <section class="section rl-start" id="get-started" aria-labelledby="start-title"><div class="container rl-start__grid"><div><h2 id="start-title">Start with the complete restaurant platform.</h2><p class="lede">Use the eligible Qavyo restaurant software for 30 days before choosing the plan that fits your business.</p><div class="rl-actions"><a class="button button--primary button--large" href="#prototype-navigation" data-prototype-link>Get Full Qavyo &mdash; Free for 30 Days</a><a class="button button--secondary button--large" href="pricing.html">See Restaurant Pricing</a></div><p class="rl-microcopy">Full access. No card required.</p></div><ul><li><strong>30 days</strong><span>Full access</span></li><li><strong>No card</strong><span>Required to begin</span></li><li><strong>Choose later</strong><span>Select a plan afterwards</span></li></ul></div></section>
+
+      <section class="section rl-related" aria-labelledby="related-title"><div class="container"><div class="rl-section-head"><h2 id="related-title">Continue through the customer journey.</h2></div><div class="rl-related__grid"><a href="customers-growth.html"><strong>Customers &amp; CRM</strong><span>Profiles, preferences, history and customer analytics.</span></a><a href="online-qr-ordering.html"><strong>Online &amp; QR Ordering</strong><span>Ordering beyond the traditional counter.</span></a><a href="solutions.html"><strong>Marketing Solutions</strong><span>Email, SMS, social media and website services.</span></a><a href="intelligence.html"><strong>Qavyo Intelligence</strong><span>Changes in restaurant activity surfaced for review.</span></a></div></div></section>
+
+      <section class="section rl-final" aria-labelledby="final-title"><div class="container"><h2 id="final-title">Make the first booking the start of a longer customer relationship.</h2><div class="rl-actions"><a class="button button--primary button--large" href="#get-started">Get Full Qavyo &mdash; Free for 30 Days</a><a class="button button--on-dark button--large" href="pricing.html">See Restaurant Pricing</a></div><p>Full access. No card required.</p></div></section>
     </main>
-    <footer class="scaffold-footer"><div class="container scaffold-footer__inner"><span class="wordmark wordmark--small">qavyo<span aria-hidden="true">.</span></span><a href="feature-directory.html">Browse all features</a><a href="pricing.html">Pricing</a></div></footer>
+    <footer class="site-footer" id="prototype-footer"><div class="container"><div class="site-footer__top"><div class="site-footer__brand"><span class="wordmark wordmark--on-dark wordmark--small">qavyo<span aria-hidden="true">.</span></span><p class="site-footer__tagline">Connected software for modern operations.</p></div><div class="site-footer__brand-meta"><span class="site-footer__status-tag"><span class="signal-dot signal-dot--light" aria-hidden="true"></span>Connected Platform</span></div></div><div class="site-footer__grid"><div class="site-footer__col"><p class="site-footer__col-title">Products</p><ul class="site-footer__links"><li><a href="restaurant.html">Restaurant Software</a></li><li><a href="restaurant-pos.html">Restaurant POS</a></li><li><a href="retail.html">Retail Software</a></li><li><a href="intelligence.html">Qavyo Intelligence</a></li><li><a href="payments.html">Payments</a></li></ul></div><div class="site-footer__col"><p class="site-footer__col-title">Restaurants</p><ul class="site-footer__links"><li><a href="online-qr-ordering.html">Online &amp; QR Ordering</a></li><li><a href="kitchen-service.html">Kitchen Operations</a></li><li><a href="customers-growth.html">Customers &amp; CRM</a></li><li><a href="reservations-waitlist.html" aria-current="page">Reservations &amp; Loyalty</a></li><li><a href="money-reporting-close.html">Reporting &amp; Day Close</a></li></ul></div><div class="site-footer__col"><p class="site-footer__col-title">Solutions</p><ul class="site-footer__links"><li><a href="solutions.html">Marketing Solutions</a></li><li><a href="social-media-marketing.html">Social Media Marketing</a></li><li><a href="sms-marketing.html">SMS Marketing</a></li><li><a href="email-marketing.html">Email Marketing</a></li><li><a href="website-building.html">Website Building</a></li></ul></div><div class="site-footer__col"><p class="site-footer__col-title">Resources</p><ul class="site-footer__links"><li><a href="pricing.html">Pricing</a></li><li><a href="feature-directory.html">All Products &amp; Features</a></li><li><a href="#prototype-navigation" data-prototype-link>Help &amp; Support</a></li><li><a href="#prototype-navigation" data-prototype-link>Talk to Sales</a></li></ul></div></div><div class="site-footer__bottom"><p class="site-footer__copyright">&copy; <span data-current-year></span> Qavyo. All rights reserved.</p><ul class="site-footer__legal-links"><li><a href="#prototype-navigation" data-prototype-link>Privacy</a></li><li><a href="#prototype-navigation" data-prototype-link>Terms</a></li></ul></div></div></footer>
   </body>
 </html>
-

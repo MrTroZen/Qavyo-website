@@ -315,6 +315,12 @@ The page incorporates consolidation anchors (`#hero`, `#group-summary`, `#group-
 
 The page incorporates consolidation anchors (`#hero`, `#customer-profiles`, `#order-history`, `#preferences`, `#reservations-waitlist`, `#reservations-loyalty`, `#loyalty`, `#gift-cards`, `#loyalty-gift-cards`, `#restaurant-website`, `#online-ordering-connection`, `#customer-app`, `#customer-analytics`, `#new-vs-returning`, `#visit-patterns`, `#marketing-connection`, `#intelligence-connection`, `#journey-map`, `#get-started`, and `#related-capabilities`), enforces keyboard accessibility, respects prefers-reduced-motion, and reflows into single-column vertical cards on mobile without horizontal clipping.
 
+## Reservations & Loyalty capability page
+
+`reservations-waitlist.html` is the canonical Reservations & Loyalty major capability page within Restaurant Software (`Customers & growth`). It uses `.rl-hero-ui` to pair the evening reservation book with a connected customer profile, then carries one continuous customer story through website booking, reservation detail, service demand, waitlist, arrival, visit history, points progress, rewards, gift-card balance, and a return visit. All interface figures are labelled illustrative; reservation demand is presented as known booked covers rather than forecasting.
+
+The page uses `.rl-flow` as the shared connected-journey pattern. It is horizontal on wider screens and becomes a vertical, arrow-linked reading sequence on mobile. `.rl-table` converts the reservation book from a labelled row layout into stacked records below 36rem, while `.rl-waitlist` uses stacked party records and explicit text states so status never depends on colour. Marketing Solutions remains a contextual related link rather than an asserted automatic integration. Motion is limited to existing control transitions and is removed under `prefers-reduced-motion`.
+
 ## Delivery Operations capability page
 
 `delivery-operations.html` is the canonical Delivery Operations major capability page within Restaurant Software (`Customers & growth`). It models delivery as an integrated restaurant workflow rather than an isolated third-party logistics platform. Its `.del-hero-card` hero visual displays an active delivery order for Sarah Mitchell (Order #342, £28.40) showing items (2 × Chicken Burger, 1 × Fries, 2 × Cola), kitchen timestamps (18:22 received, 18:36 cleared), and a live 4-stage operational stepper (Received -> Preparing -> Ready -> Dispatched).

@@ -87,7 +87,7 @@ This inventory lists every current public-page route in the repository. Home and
 | Recipe Versioning  | `recipe-versioning.html` | Scaffolded |
 | Refund &amp; Void Tracking  | `refund-void-tracking.html` | Scaffolded |
 | Report Filters &amp; Export  | `report-filters-export.html` | Scaffolded |
-| Reservations &amp; Waitlist  | `reservations-waitlist.html` | Scaffolded |
+| Reservations &amp; Loyalty  | `reservations-waitlist.html` | Existing |
 | Restaurant Software â€” Connected Operations  | `restaurant.html` | Existing |
 | Restaurant POS  | `restaurant-pos.html` | Existing |
 | Restaurant Website  | `restaurant-website-feature.html` | Scaffolded |

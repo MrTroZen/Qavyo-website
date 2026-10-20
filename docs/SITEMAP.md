@@ -117,7 +117,7 @@ Qavyo
 |   |   |   |-- Restaurant Website [section]
 |   |   |   `-- Customer App & Notifications [section]
 |   |   |
-|   |   |-- Reservations & Loyalty [anchor into Customers & CRM]
+|   |   |-- Reservations & Loyalty [major page: `reservations-waitlist.html`]
 |   |   |-- Delivery Operations [major page]
 |   |   `-- Marketing Solutions [cross-link]
 |   |
@@ -205,7 +205,7 @@ Manage the business
 
 Customers & growth
 |-- Customers & CRM
-|-- Reservations & Loyalty [section anchor]
+|-- Reservations & Loyalty [`reservations-waitlist.html`]
 |-- Delivery Operations
 `-- Marketing Solutions
 

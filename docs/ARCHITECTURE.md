@@ -75,7 +75,7 @@ The Resources menu includes `feature-directory.html` as the complete product-and
 
 ### Restaurant Software
 
-`restaurant.html` is the canonical Restaurant Software overview. It links directly to the major Restaurant pages: Restaurant POS, Online & QR Ordering, Kitchen Operations, Inventory & Food Cost, Customers & CRM, HR, Payroll & Team, Reporting & Day Close, Multi-Location, Qavyo Intelligence, Delivery Operations, Hardware & Devices, and Payments. Small features such as Floor Plan, Offline Mode, Kiosk, Recipes, Scheduling, and report export remain sections inside the closest major page. The approved route-by-route proposal is recorded in `RESTAURANT-CONTENT-CONSOLIDATION-PROPOSAL.md`.
+`restaurant.html` is the canonical Restaurant Software overview. It links directly to the major Restaurant pages: Restaurant POS, Online & QR Ordering, Kitchen Operations, Inventory & Food Cost, Customers & CRM, Reservations & Loyalty, HR, Payroll & Team, Reporting & Day Close, Multi-Location, Qavyo Intelligence, Delivery Operations, Hardware & Devices, and Payments. `reservations-waitlist.html` is the canonical Reservations & Loyalty route; it connects bookings, waitlists, visits, points-based loyalty, rewards, and gift-card balances while leaving the deeper customer record story on Customers & CRM. Small features such as Floor Plan, Offline Mode, Kiosk, Recipes, Scheduling, and report export remain sections inside the closest major page. The approved route-by-route proposal is recorded in `RESTAURANT-CONTENT-CONSOLIDATION-PROPOSAL.md`.
 
 ### Retail Software
 
