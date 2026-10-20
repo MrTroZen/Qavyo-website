@@ -156,11 +156,11 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 
 ### Customers & CRM
 
-- [ ] Finish `customers-growth.html` as the major Customers & CRM page.
-- [ ] Add profiles, preferences, and order-history sections.
-- [ ] Add Reservations & Waitlist and Loyalty & Gift Cards sections.
-- [ ] Add customer analytics, Restaurant Website, Customer App, and notification sections.
-- [ ] Connect to Online Ordering, Marketing Solutions, Intelligence, and Pricing.
+- [x] Finish `customers-growth.html` as the major Customers & CRM page.
+- [x] Add profiles, preferences, and order-history sections.
+- [x] Add Reservations & Waitlist and Loyalty & Gift Cards sections.
+- [x] Add customer analytics, Restaurant Website, Customer App, and notification sections.
+- [x] Connect to Online Ordering, Marketing Solutions, Intelligence, and Pricing.
 
 ### HR, Payroll & Team
 

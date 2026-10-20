@@ -30,7 +30,7 @@ This inventory lists every current public-page route in the repository. Home and
 | Customer Analytics  | `customer-analytics.html` | Scaffolded |
 | Customer-Facing Display  | `customer-facing-display.html` | Scaffolded |
 | Customer Order History  | `customer-order-history.html` | Scaffolded |
-| Customers &amp; Growth  | `customers-growth.html` | Scaffolded |
+| Customers &amp; Growth  | `customers-growth.html` | Existing |
 | Daily Intelligence  | `daily-intelligence.html` | Scaffolded |
 | Day Close &amp; Till Reconciliation  | `day-close-till-reconciliation.html` | Scaffolded |
 | Delivery Operations  | `delivery-operations.html` | Scaffolded |
