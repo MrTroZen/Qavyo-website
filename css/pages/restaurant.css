@@ -701,12 +701,7 @@
 .rst-power-map {
   position: relative;
   isolation: isolate;
-  display: grid;
-  min-height: 38rem;
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-  grid-template-rows: repeat(3, minmax(8rem, auto));
-  gap: var(--space-5);
-  align-items: center;
+  min-height: 42rem;
   padding: var(--space-7);
   overflow: hidden;
   border: 1px solid var(--color-dark-raised);
@@ -731,58 +726,53 @@
 }
 
 .rst-power-map__signals i {
-  width: 20rem;
-  height: 20rem;
-  opacity: 0.42;
+  width: 22rem;
+  height: 22rem;
+  opacity: 0.5;
   animation: rst-signal-turn 24s linear infinite;
 }
 
 .rst-power-map__signals i:nth-child(2) {
   width: 34rem;
-  height: 24rem;
+  height: 34rem;
   opacity: 0.28;
   animation-direction: reverse;
   animation-duration: 32s;
 }
 
 .rst-power-map__signals i:nth-child(3) {
-  width: 56rem;
-  height: 34rem;
+  width: 52rem;
+  height: 52rem;
   opacity: 0.16;
   animation-duration: 40s;
 }
 
 .rst-power-node {
-  position: relative;
+  position: absolute;
   z-index: 2;
-  display: grid;
-  min-height: 6.5rem;
-  align-content: center;
-  gap: var(--space-1);
-  padding: var(--space-4);
-  border: 1px solid var(--color-dark-raised);
-  border-radius: var(--radius-md);
-  background: color-mix(in srgb, var(--color-dark-raised) 88%, transparent);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  width: max-content;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid color-mix(in srgb, var(--color-focus) 45%, var(--color-dark-raised));
+  border-radius: var(--radius-lg);
+  background: var(--color-dark-raised);
   color: var(--color-surface);
   text-decoration: none;
   box-shadow: var(--shadow-sm);
+  translate: -50% -50%;
   transition: border-color var(--transition-base), background-color var(--transition-base), transform var(--transition-base), box-shadow var(--transition-base);
 }
 
-.rst-power-node::after {
-  position: absolute;
-  inset: 50% -1.35rem auto auto;
-  width: 1.35rem;
-  border-top: 1px solid var(--color-brand);
-  content: "";
-  opacity: 0.5;
-}
-
 .rst-power-node > span {
-  color: var(--color-focus);
-  font-family: var(--font-mono);
-  font-size: var(--text-xs);
-  font-weight: 700;
+  width: var(--space-2);
+  height: var(--space-2);
+  overflow: hidden;
+  border-radius: 50%;
+  background: var(--color-focus);
+  color: transparent;
+  font-size: 0;
 }
 
 .rst-power-node strong {
@@ -790,8 +780,7 @@
 }
 
 .rst-power-node small {
-  color: var(--color-border-strong);
-  font-size: var(--text-xs);
+  display: none;
 }
 
 .rst-power-node:hover,
@@ -814,67 +803,54 @@
   outline-offset: 3px;
 }
 
-.rst-power-node--website { grid-column: 1; grid-row: 1; }
-.rst-power-node--qr { grid-column: 2; grid-row: 1; }
-.rst-power-node--pos { grid-column: 4; grid-row: 1; }
-.rst-power-node--kitchen { grid-column: 5; grid-row: 1; }
-.rst-power-node--inventory { grid-column: 1; grid-row: 2; }
-.rst-power-node--payments { grid-column: 5; grid-row: 2; }
-.rst-power-node--customers { grid-column: 1; grid-row: 3; }
-.rst-power-node--reporting { grid-column: 2; grid-row: 3; }
-.rst-power-node--team { grid-column: 3; grid-row: 3; }
-.rst-power-node--hr { grid-column: 4; grid-row: 3; }
-.rst-power-node--intelligence { grid-column: 5; grid-row: 3; }
-
-.rst-power-node--pos::after,
-.rst-power-node--kitchen::after,
-.rst-power-node--payments::after,
-.rst-power-node--team::after,
-.rst-power-node--hr::after,
-.rst-power-node--intelligence::after {
-  right: auto;
-  left: -1.35rem;
-}
+.rst-power-node--website { top: 10%; left: 30%; }
+.rst-power-node--qr { top: 8%; left: 50%; }
+.rst-power-node--pos { top: 13%; left: 72%; }
+.rst-power-node--kitchen { top: 31%; left: 84%; }
+.rst-power-node--inventory { top: 54%; left: 88%; }
+.rst-power-node--payments { top: 77%; left: 78%; }
+.rst-power-node--customers { top: 90%; left: 59%; }
+.rst-power-node--reporting { top: 88%; left: 36%; }
+.rst-power-node--team { top: 72%; left: 17%; }
+.rst-power-node--hr { top: 49%; left: 12%; }
+.rst-power-node--intelligence { top: 25%; left: 16%; }
 
 .rst-restaurant-core {
-  position: relative;
+  position: absolute;
+  inset: 50% auto auto 50%;
   z-index: 3;
-  display: grid;
-  grid-column: 2 / 5;
-  grid-row: 2;
-  justify-items: center;
-  align-self: center;
+  translate: -50% -50%;
 }
 
 .rst-restaurant-core__hub {
   display: grid;
-  width: min(72%, 15rem);
+  width: 18rem;
   aspect-ratio: 1;
   place-items: center;
   align-content: center;
   gap: var(--space-2);
   padding: var(--space-5);
-  border: 1px solid var(--color-focus);
+  border: 1px solid var(--color-brand-soft);
   border-radius: 50%;
-  background: var(--color-brand);
-  color: var(--color-surface);
+  background: var(--color-surface);
+  color: var(--color-ink);
   text-align: center;
-  box-shadow: 0 0 0 var(--space-3) color-mix(in srgb, var(--color-brand) 18%, transparent), 0 0 3rem color-mix(in srgb, var(--color-brand) 28%, transparent);
+  box-shadow: 0 0 0 var(--space-3) color-mix(in srgb, var(--color-surface) 12%, transparent), 0 0 3rem color-mix(in srgb, var(--color-brand) 28%, transparent);
 }
 
 .rst-restaurant-core__hub small {
-  color: var(--color-surface);
+  color: var(--color-brand);
   font-weight: 700;
   opacity: 0.8;
 }
 
 .rst-restaurant-core__hub > strong {
-  color: var(--color-surface);
-  font-size: var(--text-xl);
+  color: var(--color-ink);
+  font-size: var(--text-2xl);
 }
 
 .rst-restaurant-core__hub > span {
-  color: var(--color-surface);
+  color: var(--color-muted);
   font-size: var(--text-sm);
   opacity: 0.86;
 }
@@ -1002,6 +978,7 @@
   }
 
   .rst-power-map {
+    display: grid;
     min-height: 0;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     grid-template-rows: auto;
@@ -1023,8 +1000,13 @@
   .rst-power-node--team,
   .rst-power-node--hr,
   .rst-power-node--intelligence {
+    position: relative;
+    inset: auto;
     grid-column: auto;
     grid-row: auto;
+    width: auto;
+    min-height: 3.5rem;
+    translate: none;
   }
 
   .rst-power-node::after {
@@ -1032,10 +1014,17 @@
   }
 
   .rst-restaurant-core {
+    position: relative;
+    inset: auto;
     order: -1;
     grid-column: 1 / -1;
     grid-row: auto;
     margin-block-end: var(--space-5);
+    translate: none;
+  }
+
+  .rst-restaurant-core__hub {
+    width: min(18rem, 78vw);
   }
 }
 
@@ -1113,7 +1102,7 @@
   }
 
   .rst-power-node {
-    min-height: 5.5rem;
+    min-height: 3.5rem;
   }
 }
 
