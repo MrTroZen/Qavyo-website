@@ -68,7 +68,7 @@ This inventory lists every current public-page route in the repository. Home and
 | Money, Reporting &amp; Close  | `money-reporting-close.html` | Scaffolded |
 | Multi-Location &amp; Groups  | `multi-location-groups.html` | Scaffolded |
 | Offline Mode  | `offline-mode.html` | Scaffolded |
-| Online &amp; QR Ordering  | `online-qr-ordering.html` | Scaffolded |
+| Online &amp; QR Ordering  | `online-qr-ordering.html` | Existing |
 | Order Routing &amp; Stations  | `order-routing-stations.html` | Scaffolded |
 | Payment Providers  | `payment-providers.html` | Scaffolded |
 | Payment Reconciliation  | `payment-reconciliation.html` | Scaffolded |

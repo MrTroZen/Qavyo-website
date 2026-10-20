@@ -135,11 +135,11 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 
 ### Online & QR Ordering
 
-- [ ] Finish `online-qr-ordering.html` as the major customer-ordering page.
-- [ ] Add online ordering and QR ordering sections.
-- [ ] Add Self-Service Kiosk as a section.
-- [ ] Add Mobile Ordering as a section.
-- [ ] Connect to POS, Kitchen, Customers, Delivery, and Pricing.
+- [x] Finish `online-qr-ordering.html` as the major customer-ordering page.
+- [x] Add online ordering and QR ordering sections.
+- [x] Add Self-Service Kiosk as a section.
+- [x] Add Mobile Ordering as a section.
+- [x] Connect to POS, Kitchen, Customers, Delivery, and Pricing.
 
 ### Kitchen Operations
 

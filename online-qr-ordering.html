@@ -3,8 +3,9 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Online & QR Ordering, a planned feature page within Qavyo POS & Ordering.">
-    <title>Online &amp; QR Ordering | Qavyo</title>
+    <meta name="description" content="Give customers clear ways to order online, via QR code, self-service kiosk, and mobile while managing every order through one connected Qavyo restaurant operation.">
+    <meta name="color-scheme" content="light dark">
+    <title>Online &amp; QR Ordering &mdash; Connected Service | Qavyo</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet">
@@ -12,10 +13,11 @@
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/layout.css">
     <link rel="stylesheet" href="css/components.css">
-    <link rel="stylesheet" href="css/pages/feature-scaffold.css">
+    <link rel="stylesheet" href="css/pages/online-qr-ordering.css">
     <script src="js/main.js" defer></script>
+    <script src="js/pages/online-qr-ordering.js" defer></script>
   </head>
-  <body class="scaffold-page">
+  <body>
     <a class="skip-link" href="#main-content">Skip to content</a>
     <header class="site-header" id="prototype-navigation" data-site-header>
       <div class="container site-header__inner">
@@ -296,13 +298,997 @@
         </nav>
       </div>
     </header>
-    <main id="main-content">
-      <nav class="container scaffold-breadcrumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li><a href="restaurant.html">Restaurant Software</a></li><li><a href="pos-ordering.html">POS & Ordering</a></li><li aria-current="page">Online & QR Ordering</li></ol></nav>
-      <section class="scaffold-hero"><div class="container scaffold-hero__inner"><div><p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>POS & Ordering</p><h1>Online & QR Ordering</h1><p class="scaffold-hero__lede">A focused feature page within the POS & Ordering capability area.</p><div class="scaffold-actions"><a class="button button--primary" href="pos-ordering.html">Back to POS & Ordering</a><a class="button button--secondary" href="pricing.html#plans">See Pricing</a></div></div><aside class="scaffold-status"><strong>Content review pending</strong><span>The final workflow, product detail, and visual story will be added later.</span></aside></div></section>
-      <section class="section"><div class="container container--narrow"><p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span>Page purpose</p><h2>Detailed content will follow.</h2><p class="lede">This route is connected now so navigation and page relationships can be completed before the content-development phase. It does not add product claims beyond the approved feature name.</p></div></section>
-      <section class="section scaffold-connections"><div class="container scaffold-connections__grid"><div><h2>Related POS & Ordering pages</h2><p>Continue through this capability area or return to its hub.</p></div>          <ul class="scaffold-link-list"><li><a href="pos-ordering.html"><span>POS & Ordering</span><span aria-hidden="true">&rarr;</span></a></li><li><a href="restaurant-pos.html"><span>Restaurant POS</span><span aria-hidden="true">&rarr;</span></a></li><li><a href="tables-floor-plan.html"><span>Tables & Floor Plan</span><span aria-hidden="true">&rarr;</span></a></li><li><a href="self-service-kiosk.html"><span>Self-Service Kiosk</span><span aria-hidden="true">&rarr;</span></a></li><li><a href="customer-facing-display.html"><span>Customer-Facing Display</span><span aria-hidden="true">&rarr;</span></a></li><li><a href="offline-mode.html"><span>Offline Mode</span><span aria-hidden="true">&rarr;</span></a></li><li><a href="refund-void-tracking.html"><span>Refund & Void Tracking</span><span aria-hidden="true">&rarr;</span></a></li></ul></div></section>
+
+    <main id="main-content" class="ord-page">
+      <!-- SECTION 01 — HERO -->
+      <section class="ord-hero" aria-labelledby="ord-hero-title">
+        <nav class="container ord-breadcrumbs" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="restaurant.html">Restaurant Software</a></li>
+            <li aria-current="page">Online &amp; QR Ordering</li>
+          </ol>
+        </nav>
+        <div class="container ord-hero__grid">
+          <div class="ord-hero__copy">
+            <h1 id="ord-hero-title">Let customers order the way that suits them.</h1>
+            <p>Customers can order through supported online, QR, kiosk, and mobile experiences while the restaurant manages those orders through the wider Qavyo operation.</p>
+            <div class="ord-actions">
+              <a class="button button--primary button--large" href="#get-started">Get Full Qavyo &mdash; Free for 30 Days</a>
+              <a class="button button--secondary button--large" href="pricing.html">See Restaurant Pricing</a>
+            </div>
+            <p class="ord-microcopy">Full access. No card required.</p>
+          </div>
+
+          <figure class="ord-multi-channel" aria-labelledby="hero-channel-caption">
+            <figcaption id="hero-channel-caption">Illustrative multi-channel ordering into one Qavyo operation</figcaption>
+            <div class="ord-multi-channel__header">
+              <span><i class="signal-dot" aria-hidden="true"></i> Live Order Reception</span>
+              <strong>Active Service Channels</strong>
+            </div>
+            <div class="ord-multi-channel__body">
+              <div class="ord-streams-list" aria-label="Incoming order streams">
+                <article class="ord-stream-item">
+                  <div class="ord-stream-item__left">
+                    <span class="ord-stream-item__channel">Online</span>
+                    <strong class="ord-stream-item__title">Restaurant website</strong>
+                    <span class="ord-stream-item__details">2 &times; Chicken Burger, Fries</span>
+                  </div>
+                  <div class="ord-stream-item__right">
+                    <span class="ord-stream-item__price">&pound;28.40</span>
+                    <span class="ord-stream-badge">Web Order</span>
+                  </div>
+                </article>
+
+                <article class="ord-stream-item">
+                  <div class="ord-stream-item__left">
+                    <span class="ord-stream-item__channel">QR</span>
+                    <strong class="ord-stream-item__title">Table 08</strong>
+                    <span class="ord-stream-item__details">Margherita Pizza, Salad, Cola</span>
+                  </div>
+                  <div class="ord-stream-item__right">
+                    <span class="ord-stream-item__price">&pound;34.20</span>
+                    <span class="ord-stream-badge ord-stream-badge--qr">Table 08</span>
+                  </div>
+                </article>
+
+                <article class="ord-stream-item">
+                  <div class="ord-stream-item__left">
+                    <span class="ord-stream-item__channel">Kiosk</span>
+                    <strong class="ord-stream-item__title">Order #218</strong>
+                    <span class="ord-stream-item__details">Chicken Burger, Fries, Drink</span>
+                  </div>
+                  <div class="ord-stream-item__right">
+                    <span class="ord-stream-item__price">&pound;19.80</span>
+                    <span class="ord-stream-badge ord-stream-badge--kiosk">Touchscreen</span>
+                  </div>
+                </article>
+
+                <article class="ord-stream-item">
+                  <div class="ord-stream-item__left">
+                    <span class="ord-stream-item__channel">Mobile</span>
+                    <strong class="ord-stream-item__title">Order #219</strong>
+                    <span class="ord-stream-item__details">Margherita Pizza, Fries, Drink</span>
+                  </div>
+                  <div class="ord-stream-item__right">
+                    <span class="ord-stream-item__price">&pound;24.10</span>
+                    <span class="ord-stream-badge ord-stream-badge--mobile">Mobile View</span>
+                  </div>
+                </article>
+              </div>
+
+              <div class="ord-stream-connector" aria-hidden="true">
+                <span>Stream</span>
+                &rarr;
+              </div>
+
+              <div class="ord-hub-node">
+                <span class="ord-hub-node__badge">Qavyo Orders</span>
+                <h3>One connected restaurant queue</h3>
+                <p>Digital, table, and kiosk orders stream directly into the live restaurant workflow.</p>
+                <div class="ord-hub-node__footer">
+                  <span>Routing status</span>
+                  <strong>Active &middot; 4 Channels</strong>
+                </div>
+              </div>
+            </div>
+            <div class="ord-multi-channel__footer">
+              <span>Customer Entry</span><i aria-hidden="true">&rarr;</i><span>Qavyo Order</span><i aria-hidden="true">&rarr;</i><span>Kitchen Preparation</span><i aria-hidden="true">&rarr;</i><span>Reporting</span>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- SECTION 02 — ONE ORDERING SYSTEM -->
+      <section class="section section--dark ord-operation" aria-labelledby="operation-title">
+        <div class="container">
+          <div class="ord-section-head">
+            <div>
+              <h2 id="operation-title">However the order starts, the restaurant still needs one clear workflow.</h2>
+            </div>
+            <p>Different customer entry points shouldn't create separate, disconnected queues. Every digital and self-service order joins the same restaurant workflow from reception to kitchen and reporting.</p>
+          </div>
+          <ol class="ord-operation__flow" aria-label="Customer channel to restaurant operation workflow">
+            <li>
+              <span>01</span>
+              <strong>Customer channel</strong>
+              <small>Online, QR, Kiosk, or Mobile</small>
+            </li>
+            <li>
+              <span>02</span>
+              <strong>Qavyo order</strong>
+              <small>Validated details &amp; modifiers</small>
+            </li>
+            <li>
+              <span>03</span>
+              <strong>Kitchen handoff</strong>
+              <small>Live tickets &amp; station routing</small>
+            </li>
+            <li>
+              <span>04</span>
+              <strong>Customer context</strong>
+              <small>Profile &amp; order history record</small>
+            </li>
+            <li>
+              <span>05</span>
+              <strong>Day reporting</strong>
+              <small>Channel sales &amp; reconciliation</small>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- SECTION 03 — ONLINE ORDERING -->
+      <section class="section ord-channel-section" id="online-ordering" aria-labelledby="online-ordering-title">
+        <div class="container ord-split">
+          <div class="ord-section-copy">
+            <h2 id="online-ordering-title">Take orders directly through your restaurant online.</h2>
+            <p>Give customers a clear way to browse your menu, choose items, specify modifiers, and build their basket directly on your website without confusion or friction.</p>
+            <ul class="ord-feature-list">
+              <li>Restaurant menu categories</li>
+              <li>Item selection</li>
+              <li>Modifiers where supported</li>
+              <li>Order summary</li>
+              <li>Restaurant order flow</li>
+              <li>Clear basket totals</li>
+            </ul>
+          </div>
+
+          <figure class="ord-web-ui" aria-labelledby="web-ui-caption">
+            <figcaption id="web-ui-caption">Illustrative online ordering interface</figcaption>
+            <div class="ord-web-ui__bar">
+              <div class="ord-browser-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+              <span class="ord-web-ui__url">theolivekitchen.co.uk/menu</span>
+            </div>
+            <div class="ord-web-ui__content">
+              <div class="ord-web-ui__menu">
+                <div class="ord-web-categories" role="group" aria-label="Menu categories">
+                  <button type="button" class="is-active" data-web-category="Burgers">Burgers</button>
+                  <button type="button" data-web-category="Pizza">Pizza</button>
+                  <button type="button" data-web-category="Sides">Sides</button>
+                  <button type="button" data-web-category="Drinks">Drinks</button>
+                </div>
+
+                <div class="ord-product-card">
+                  <div class="ord-product-card__header">
+                    <div>
+                      <strong data-web-product-title>Chicken Burger</strong>
+                      <p data-web-product-desc>Crispy chicken breast, house relish, fresh lettuce, toasted brioche bun.</p>
+                    </div>
+                    <span class="ord-product-card__price" data-web-product-price>&pound;10.90</span>
+                  </div>
+
+                  <div class="ord-product-modifiers">
+                    <label><input type="radio" name="web-burger-style" checked> Regular seasoning</label>
+                    <label><input type="checkbox" checked> Extra cheese (+&pound;1.20)</label>
+                    <label><input type="checkbox" checked> No onion</label>
+                  </div>
+                </div>
+              </div>
+
+              <aside class="ord-web-ui__basket" aria-label="Basket summary">
+                <div class="ord-basket-header">
+                  <strong>Your basket</strong>
+                  <span>3 items</span>
+                </div>
+                <ul class="ord-basket-items">
+                  <li class="ord-basket-item">
+                    <div>
+                      <strong>2 &times; Chicken Burger</strong>
+                      <small>No onion &middot; Extra cheese</small>
+                    </div>
+                    <b>&pound;23.00</b>
+                  </li>
+                  <li class="ord-basket-item">
+                    <div>
+                      <strong>1 &times; Fries</strong>
+                      <small>Skin-on sea salt</small>
+                    </div>
+                    <b>&pound;3.80</b>
+                  </li>
+                </ul>
+                <div class="ord-basket-total">
+                  <div class="ord-basket-total-row">
+                    <span>Subtotal</span>
+                    <span>&pound;26.80</span>
+                  </div>
+                  <div class="ord-basket-total-row ord-basket-total-row--final">
+                    <span>Total</span>
+                    <span>&pound;26.80</span>
+                  </div>
+                  <button type="button" class="ord-confirm-btn">Confirm Order &rarr;</button>
+                </div>
+              </aside>
+            </div>
+            <div class="ord-journey-flow">
+              <span class="is-active">Browse</span>
+              <span aria-hidden="true">&rarr;</span>
+              <span class="is-active">Choose</span>
+              <span aria-hidden="true">&rarr;</span>
+              <span class="is-active">Build order</span>
+              <span aria-hidden="true">&rarr;</span>
+              <span class="is-active">Confirm</span>
+              <span aria-hidden="true">&rarr;</span>
+              <span>Restaurant Order Flow</span>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- SECTION 04 — QR ORDERING -->
+      <section class="section section--dark ord-channel-section" id="qr-ordering" aria-labelledby="qr-ordering-title">
+        <div class="container ord-split ord-split--reverse">
+          <div class="ord-section-copy">
+            <h2 id="qr-ordering-title">Turn the table into an ordering point.</h2>
+            <p>Customers sit down, scan the QR code at their table with their smartphone camera, browse the menu, and send their order directly to the restaurant without waiting for staff to take it.</p>
+            <ul class="ord-feature-list">
+              <li>Automatic table assignment</li>
+              <li>Direct dine-in menu browsing</li>
+              <li>Zero app downloads required</li>
+              <li>Clear confirmation for guests</li>
+            </ul>
+          </div>
+
+          <figure class="ord-qr-journey" aria-labelledby="qr-journey-caption">
+            <figcaption id="qr-journey-caption" class="sr-only">Illustrative table QR ordering journey</figcaption>
+            <div class="ord-qr-grid">
+              <div class="ord-qr-table-card">
+                <strong>Table 12</strong>
+                <div class="ord-qr-code-graphic" aria-label="QR code graphic">
+                  <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <rect x="4" y="4" width="16" height="16" rx="2" stroke="#102638" stroke-width="4"/>
+                    <rect x="8" y="8" width="8" height="8" fill="#102638"/>
+                    <rect x="28" y="4" width="16" height="16" rx="2" stroke="#102638" stroke-width="4"/>
+                    <rect x="32" y="8" width="8" height="8" fill="#102638"/>
+                    <rect x="4" y="28" width="16" height="16" rx="2" stroke="#102638" stroke-width="4"/>
+                    <rect x="8" y="32" width="8" height="8" fill="#102638"/>
+                    <rect x="28" y="28" width="6" height="6" fill="#102638"/>
+                    <rect x="38" y="28" width="6" height="6" fill="#102638"/>
+                    <rect x="28" y="38" width="16" height="6" fill="#102638"/>
+                  </svg>
+                </div>
+                <small>Scan to browse &amp; order</small>
+              </div>
+
+              <div class="ord-qr-arrow" aria-hidden="true">&rarr;</div>
+
+              <div class="ord-phone-frame">
+                <div class="ord-phone-top">
+                  <span>9:41</span>
+                  <span>Table 12</span>
+                </div>
+                <div class="ord-phone-body">
+                  <div class="ord-phone-title">
+                    <strong>The Olive Kitchen</strong>
+                    <span>Dine In &middot; T12</span>
+                  </div>
+                  <ul class="ord-phone-items">
+                    <li class="ord-phone-item">
+                      <span>1 &times; Margherita Pizza</span>
+                      <b>&pound;11.50</b>
+                    </li>
+                    <li class="ord-phone-item">
+                      <span>1 &times; Fries</span>
+                      <b>&pound;3.40</b>
+                    </li>
+                  </ul>
+                  <div class="ord-phone-action">Send order &middot; &pound;14.90</div>
+                </div>
+              </div>
+
+              <div class="ord-qr-arrow" aria-hidden="true">&rarr;</div>
+
+              <div class="ord-qr-received-card">
+                <span class="ord-status-pill">Received by kitchen</span>
+                <strong>Table 12 &middot; Order #228</strong>
+                <p>Order logged and sent directly to kitchen station display.</p>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- SECTION 05 — SELF-SERVICE KIOSK -->
+      <section class="section ord-channel-section" id="self-service-kiosk" aria-labelledby="kiosk-ordering-title">
+        <div class="container ord-split">
+          <div class="ord-section-copy">
+            <h2 id="kiosk-ordering-title">Give customers a self-service ordering option.</h2>
+            <p>Provide an intuitive touchscreen ordering point inside the restaurant. Customers select meals, configure choices, and complete their order while staff focus on food preparation and guest hospitality.</p>
+            <ul class="ord-feature-list">
+              <li>Touch-optimised category browsing</li>
+              <li>Clear item customization</li>
+              <li>Visual meal modifiers</li>
+              <li>Direct kitchen ticket routing</li>
+            </ul>
+          </div>
+
+          <figure class="ord-kiosk-ui" aria-labelledby="kiosk-ui-caption">
+            <figcaption id="kiosk-ui-caption">Illustrative touchscreen self-service kiosk</figcaption>
+            <div class="ord-kiosk-banner">
+              <h3>Order Here</h3>
+              <span>Touch any category to begin</span>
+            </div>
+            <div class="ord-kiosk-body">
+              <div class="ord-kiosk-tabs" role="group" aria-label="Kiosk menu categories">
+                <button type="button" class="ord-kiosk-tab is-active" data-kiosk-tab="Burgers">Burgers</button>
+                <button type="button" class="ord-kiosk-tab" data-kiosk-tab="Pizza">Pizza</button>
+                <button type="button" class="ord-kiosk-tab" data-kiosk-tab="Sides">Sides</button>
+                <button type="button" class="ord-kiosk-tab" data-kiosk-tab="Drinks">Drinks</button>
+              </div>
+
+              <div class="ord-kiosk-item-grid">
+                <div class="ord-kiosk-item-card">
+                  <div>
+                    <h4 data-kiosk-item-title>Double Bacon Cheeseburger</h4>
+                    <p data-kiosk-item-desc>Dry-aged British beef patties, smoked cheddar, house pickles, relish.</p>
+                  </div>
+                  <strong class="ord-product-card__price" data-kiosk-item-price>&pound;12.50</strong>
+
+                  <span class="ord-kiosk-modifiers-title">Customise choice</span>
+                  <div class="ord-kiosk-modifier-buttons">
+                    <span class="ord-kiosk-modifier-btn is-checked">+ Extra Bacon</span>
+                    <span class="ord-kiosk-modifier-btn is-checked">+ Smoked Cheddar</span>
+                    <span class="ord-kiosk-modifier-btn">+ Jalape&ntilde;os</span>
+                  </div>
+                </div>
+
+                <div class="ord-kiosk-cart-box">
+                  <h5>Current Selection</h5>
+                  <div class="ord-kiosk-cart-row">
+                    <span>1 &times; Double Bacon Burger</span>
+                    <b>&pound;12.50</b>
+                  </div>
+                  <div class="ord-kiosk-cart-row">
+                    <span>1 &times; Seasoned Fries</span>
+                    <b>&pound;3.80</b>
+                  </div>
+                  <div class="ord-kiosk-cart-row">
+                    <span>1 &times; Craft Soda</span>
+                    <b>&pound;2.60</b>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ord-kiosk-bar">
+              <span class="ord-kiosk-total">Basket: &pound;18.90</span>
+              <span class="ord-kiosk-continue">Continue to Order &rarr;</span>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- SECTION 06 — MOBILE ORDERING -->
+      <section class="section ord-channel-section" id="mobile-ordering" aria-labelledby="mobile-ordering-title">
+        <div class="container ord-split ord-split--reverse">
+          <div class="ord-section-copy">
+            <h2 id="mobile-ordering-title">Ordering designed for the screen customers already have.</h2>
+            <p>A fast, clean ordering experience designed specifically for mobile viewports, making repeat visits, fast item selection, and on-the-go browsing straightforward.</p>
+            <ul class="ord-feature-list">
+              <li>Mobile-first menu layout</li>
+              <li>Fast category filtering</li>
+              <li>Tap-to-add items and choices</li>
+              <li>Instant order summary</li>
+            </ul>
+          </div>
+
+          <figure class="ord-mobile-ui" aria-labelledby="mobile-ui-caption">
+            <figcaption id="mobile-ui-caption" class="sr-only">Illustrative mobile ordering phone interface</figcaption>
+            <div class="ord-mobile-notch" aria-hidden="true"><div class="ord-mobile-speaker"></div></div>
+            <div class="ord-mobile-header">
+              <strong>The Olive Kitchen</strong>
+              <small>Pickup &middot; 20 min</small>
+            </div>
+            <div class="ord-mobile-quick-nav" aria-label="Mobile menu categories">
+              <span class="ord-mobile-pill is-active">Popular</span>
+              <span class="ord-mobile-pill">Burgers</span>
+              <span class="ord-mobile-pill">Pizza</span>
+              <span class="ord-mobile-pill">Sides</span>
+            </div>
+            <div class="ord-mobile-items-list">
+              <div class="ord-mobile-item-row">
+                <div>
+                  <strong>Chicken Burger</strong>
+                  <span>&pound;10.90</span>
+                </div>
+                <span class="ord-mobile-add-btn" aria-hidden="true">+</span>
+              </div>
+              <div class="ord-mobile-item-row">
+                <div>
+                  <strong>Margherita Pizza</strong>
+                  <span>&pound;11.50</span>
+                </div>
+                <span class="ord-mobile-add-btn" aria-hidden="true">+</span>
+              </div>
+              <div class="ord-mobile-item-row">
+                <div>
+                  <strong>Skin-on Fries</strong>
+                  <span>&pound;3.40</span>
+                </div>
+                <span class="ord-mobile-add-btn" aria-hidden="true">+</span>
+              </div>
+            </div>
+            <div class="ord-mobile-bottom-bar">
+              <span>View order (2 items)</span>
+              <span>&pound;24.10 &rarr;</span>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- SECTION 07 — COMPARE THE ORDERING EXPERIENCES -->
+      <section class="section ord-compare" aria-labelledby="compare-title">
+        <div class="container">
+          <div class="ord-section-head">
+            <div>
+              <h2 id="compare-title">Different ordering experiences for different moments.</h2>
+            </div>
+            <p>Each ordering channel serves a distinct customer scenario, but all feed into the same restaurant workflow.</p>
+          </div>
+
+          <div class="ord-tabs" data-ord-tabs>
+            <div class="ord-tabs__list" role="tablist" aria-label="Ordering channel comparisons">
+              <button type="button" role="tab" id="tab-online" aria-controls="panel-online" aria-selected="true" tabindex="0">Online Ordering</button>
+              <button type="button" role="tab" id="tab-qr" aria-controls="panel-qr" aria-selected="false" tabindex="-1">QR Ordering</button>
+              <button type="button" role="tab" id="tab-kiosk" aria-controls="panel-kiosk" aria-selected="false" tabindex="-1">Self-Service Kiosk</button>
+              <button type="button" role="tab" id="tab-mobile" aria-controls="panel-mobile" aria-selected="false" tabindex="-1">Mobile Ordering</button>
+            </div>
+
+            <div class="ord-tabs__panel" role="tabpanel" id="panel-online" aria-labelledby="tab-online" tabindex="0">
+              <div class="ord-compare-grid">
+                <div class="ord-compare-box">
+                  <span>Customer scenario</span>
+                  <strong>Remote orders via website</strong>
+                  <p>Customer orders from their home, office, or phone via the restaurant's website.</p>
+                </div>
+                <div class="ord-compare-box">
+                  <span>Best suited for</span>
+                  <strong>Advance orders &amp; takeaway</strong>
+                  <p>Guests scheduling orders ahead of time, planning pickup, or ordering delivery.</p>
+                </div>
+                <div class="ord-compare-box">
+                  <span>Operational handoff</span>
+                  <strong>Direct queue entry</strong>
+                  <p>Order arrives with scheduled fulfillment time directly into the kitchen queue.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ord-tabs__panel" role="tabpanel" id="panel-qr" aria-labelledby="tab-qr" tabindex="0" hidden>
+              <div class="ord-compare-grid">
+                <div class="ord-compare-box">
+                  <span>Customer scenario</span>
+                  <strong>At-table smartphone ordering</strong>
+                  <p>Customer scans a printed code at their dining table and browses on their device.</p>
+                </div>
+                <div class="ord-compare-box">
+                  <span>Best suited for</span>
+                  <strong>Dine-in tables &amp; terraces</strong>
+                  <p>Busy service hours, casual dining, outdoor seating, and quick drink reorders.</p>
+                </div>
+                <div class="ord-compare-box">
+                  <span>Operational handoff</span>
+                  <strong>Table-tagged kitchen ticket</strong>
+                  <p>Order routes immediately to kitchen stations with table number attached.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ord-tabs__panel" role="tabpanel" id="panel-kiosk" aria-labelledby="tab-kiosk" tabindex="0" hidden>
+              <div class="ord-compare-grid">
+                <div class="ord-compare-box">
+                  <span>Customer scenario</span>
+                  <strong>Dedicated touchscreen station</strong>
+                  <p>Customer uses an in-restaurant self-service terminal to place their order.</p>
+                </div>
+                <div class="ord-compare-box">
+                  <span>Best suited for</span>
+                  <strong>Counter &amp; quick-service</strong>
+                  <p>Handling peak arrival rushes, high footfall, and self-directed meal customization.</p>
+                </div>
+                <div class="ord-compare-box">
+                  <span>Operational handoff</span>
+                  <strong>Order ticket generation</strong>
+                  <p>Prints or displays customer order ticket and notifies preparation stations.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="ord-tabs__panel" role="tabpanel" id="panel-mobile" aria-labelledby="tab-mobile" tabindex="0" hidden>
+              <div class="ord-compare-grid">
+                <div class="ord-compare-box">
+                  <span>Customer scenario</span>
+                  <strong>Mobile-optimised web browsing</strong>
+                  <p>Lightweight touch interface designed for quick ordering on smartphones.</p>
+                </div>
+                <div class="ord-compare-box">
+                  <span>Best suited for</span>
+                  <strong>On-the-go &amp; repeat guests</strong>
+                  <p>Commuters, rapid lunchtime reorders, and customers ordering while en route.</p>
+                </div>
+                <div class="ord-compare-box">
+                  <span>Operational handoff</span>
+                  <strong>Live kitchen synchronization</strong>
+                  <p>Feeds directly into active kitchen display alongside POS and QR orders.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 08 — FROM CUSTOMER TO KITCHEN -->
+      <section class="section section--dark ord-kitchen-handoff" id="kitchen-handoff" aria-labelledby="kitchen-handoff-title">
+        <div class="container ord-split">
+          <div class="ord-section-copy">
+            <h2 id="kitchen-handoff-title">Once the order is placed, service needs to take over.</h2>
+            <p>A digital order shouldn't sit in an isolated inbox. Qavyo automatically formats customer selections and modifiers into clear preparation tickets for kitchen displays and station printers.</p>
+            <a class="text-link text-link--on-dark" href="kitchen-service.html">Explore Kitchen Operations <span aria-hidden="true">&rarr;</span></a>
+          </div>
+
+          <figure class="ord-ticket-transformation" aria-labelledby="ticket-transform-caption">
+            <figcaption id="ticket-transform-caption" class="sr-only">Illustrative digital order handoff to kitchen tickets</figcaption>
+            <div class="ord-customer-ticket">
+              <div class="ord-ticket-header">
+                <strong>Customer Order</strong>
+                <span>Online &middot; #Q-231</span>
+              </div>
+              <div class="ord-ticket-body">
+                <div class="ord-ticket-item-group">
+                  <strong>2 &times; Chicken Burger</strong>
+                  <small>Choice: Regular</small>
+                  <small>Notes: No onion, Extra cheese</small>
+                </div>
+                <div class="ord-ticket-item-group">
+                  <strong>1 &times; Fries</strong>
+                  <small>Skin-on sea salt</small>
+                </div>
+              </div>
+            </div>
+
+            <div class="ord-ticket-transform-icon" aria-hidden="true">
+              <span>Handoff</span>
+              &rarr;
+            </div>
+
+            <div class="ord-kitchen-ticket">
+              <div class="ord-ticket-header">
+                <strong>Kitchen Display</strong>
+                <span>Order #231 &middot; 18:24</span>
+              </div>
+              <div class="ord-ticket-body">
+                <div class="ord-ticket-item-group">
+                  <span class="ord-station-tag">GRILL STATION</span>
+                  <strong>2 &times; CHICKEN BURGER</strong>
+                  <small>NO ONION &middot; EXTRA CHEESE</small>
+                </div>
+                <div class="ord-ticket-item-group">
+                  <span class="ord-station-tag">FRY STATION</span>
+                  <strong>1 &times; FRIES</strong>
+                </div>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- SECTION 09 — ONLINE ORDERING + POS -->
+      <section class="section ord-bridge-pos" aria-labelledby="pos-bridge-title">
+        <div class="container ord-split ord-split--reverse">
+          <div class="ord-section-copy">
+            <h2 id="pos-bridge-title">Keep digital and in-restaurant ordering connected.</h2>
+            <p>Digital orders and in-person counter orders shouldn't live in separate universes. Qavyo connects counter POS, online orders, table QR, and kiosk entries into one shared operating context.</p>
+            <a class="text-link" href="restaurant-pos.html">Explore Restaurant POS <span aria-hidden="true">&rarr;</span></a>
+          </div>
+
+          <figure class="ord-bridge-mock" aria-labelledby="pos-bridge-caption">
+            <figcaption id="pos-bridge-caption" class="sr-only">Illustrative order sources entering restaurant workflow</figcaption>
+            <div class="ord-bridge-flow-row">
+              <strong>Counter order</strong>
+              <span aria-hidden="true">&rarr;</span>
+              <span>Restaurant POS</span>
+            </div>
+            <div class="ord-bridge-flow-row">
+              <strong>Online order</strong>
+              <span aria-hidden="true">&rarr;</span>
+              <span>Qavyo Order Queue</span>
+            </div>
+            <div class="ord-bridge-flow-row">
+              <strong>Table QR order</strong>
+              <span aria-hidden="true">&rarr;</span>
+              <span>Qavyo Order Queue</span>
+            </div>
+            <div class="ord-bridge-flow-row">
+              <strong>Kiosk order</strong>
+              <span aria-hidden="true">&rarr;</span>
+              <span>Qavyo Order Queue</span>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- SECTION 10 — CUSTOMERS & ORDER HISTORY -->
+      <section class="section ord-bridge-crm" aria-labelledby="crm-bridge-title">
+        <div class="container ord-split">
+          <div class="ord-section-copy">
+            <h2 id="crm-bridge-title">An order can become part of the customer relationship.</h2>
+            <p>Digital ordering gives you valuable guest context. Repeat visits, preferred menu items, and order frequency help you understand customer loyalty over time without manual data entry.</p>
+            <a class="text-link" href="customers-growth.html">Explore Customers &amp; CRM <span aria-hidden="true">&rarr;</span></a>
+          </div>
+
+          <figure class="ord-bridge-mock ord-crm-profile" aria-labelledby="crm-bridge-caption">
+            <figcaption id="crm-bridge-caption" class="sr-only">Illustrative customer record connected to ordering activity</figcaption>
+            <div class="ord-crm-profile__top">
+              <strong>Sarah Mitchell</strong>
+              <span class="ord-stream-badge">Returning Guest</span>
+            </div>
+            <div class="ord-crm-stats">
+              <div class="ord-crm-stat">
+                <span>Total orders</span>
+                <strong>14</strong>
+              </div>
+              <div class="ord-crm-stat">
+                <span>Last order</span>
+                <strong>Saturday</strong>
+              </div>
+              <div class="ord-crm-stat">
+                <span>Favourite item</span>
+                <strong>Margherita</strong>
+              </div>
+            </div>
+            <ul class="ord-crm-timeline" aria-label="Recent activity">
+              <li>
+                <span>Online ordering</span>
+                <b>&pound;26.80 &middot; 3 days ago</b>
+              </li>
+              <li>
+                <span>Table 12 QR order</span>
+                <b>&pound;34.20 &middot; 2 weeks ago</b>
+              </li>
+              <li>
+                <span>Table reservation</span>
+                <b>Party of 4 &middot; Last month</b>
+              </li>
+            </ul>
+          </figure>
+        </div>
+      </section>
+
+      <!-- SECTION 11 — RESTAURANT WEBSITE CONNECTION -->
+      <section class="section ord-bridge-web" aria-labelledby="web-bridge-title">
+        <div class="container ord-split ord-split--reverse">
+          <div class="ord-section-copy">
+            <h2 id="web-bridge-title">Your restaurant website can become part of the ordering journey.</h2>
+            <p>Your website is often the front door for new and returning customers. Connecting your site directly with Qavyo ordering lets guests discover your story, view your menu, and place their order in one smooth visit.</p>
+            <a class="text-link" href="website-building.html">Explore Website Building <span aria-hidden="true">&rarr;</span></a>
+          </div>
+
+          <figure class="ord-bridge-mock" aria-labelledby="web-bridge-caption">
+            <figcaption id="web-bridge-caption" class="sr-only">Illustrative restaurant website navigation with order online trigger</figcaption>
+            <div class="ord-web-ui__bar">
+              <div class="ord-browser-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+              <span class="ord-web-ui__url">theolivekitchen.co.uk</span>
+            </div>
+            <div style="padding: var(--space-4); display: grid; gap: var(--space-3); background: var(--color-canvas);">
+              <div style="display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid var(--color-border); padding-bottom: var(--space-2);">
+                <strong style="color: var(--color-ink);">The Olive Kitchen</strong>
+                <div style="display: flex; gap: var(--space-3); font-size: var(--text-xs); color: var(--color-text);">
+                  <span>Menu</span>
+                  <span style="color: var(--color-brand); font-weight: 800;">Order Online</span>
+                  <span>Book Table</span>
+                  <span>Contact</span>
+                </div>
+              </div>
+              <div style="padding: var(--space-4); background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-sm); text-align: center;">
+                <p style="font-size: var(--text-sm); font-weight: 700; color: var(--color-ink); margin-bottom: var(--space-2);">Seasonal dining made from scratch daily.</p>
+                <span class="ord-confirm-btn" style="display: inline-block; width: auto; padding: var(--space-2) var(--space-4); margin: 0;">Order Online for Pickup &rarr;</span>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- SECTION 12 — DELIVERY OPERATIONS -->
+      <section class="section section--dark ord-bridge-delivery" aria-labelledby="delivery-bridge-title">
+        <div class="container ord-split">
+          <div class="ord-section-copy">
+            <h2 id="delivery-bridge-title">When the order leaves the restaurant, the workflow continues.</h2>
+            <p>For takeaway and delivery orders, completion happens outside the four walls. Once prepared and packed, orders move smoothly into dispatch and delivery handover.</p>
+            <a class="text-link text-link--on-dark" href="delivery-operations.html">Explore Delivery Operations <span aria-hidden="true">&rarr;</span></a>
+          </div>
+
+          <figure class="ord-bridge-mock" aria-labelledby="delivery-bridge-caption">
+            <figcaption id="delivery-bridge-caption" class="sr-only">Illustrative delivery fulfillment progression</figcaption>
+            <div class="ord-bridge-flow-row">
+              <div>
+                <strong>Online Order</strong>
+                <small style="display: block; color: var(--color-border);">Captured with address</small>
+              </div>
+              <span aria-hidden="true">&rarr;</span>
+              <div>
+                <strong>Kitchen Pass</strong>
+                <small style="display: block; color: var(--color-border);">Prepared &amp; boxed</small>
+              </div>
+              <span aria-hidden="true">&rarr;</span>
+              <div>
+                <strong>Dispatch</strong>
+                <small style="display: block; color: var(--color-border);">Handover to driver</small>
+              </div>
+              <span aria-hidden="true">&rarr;</span>
+              <div>
+                <strong>Delivered</strong>
+                <small style="display: block; color: #79ddb2;">Closed in reporting</small>
+              </div>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- SECTION 13 — MARKETING CONNECTION -->
+      <section class="section ord-bridge-marketing" aria-labelledby="marketing-bridge-title">
+        <div class="container ord-split ord-split--reverse">
+          <div class="ord-section-copy">
+            <h2 id="marketing-bridge-title">Stay connected after the order.</h2>
+            <p>Every order can be the start of ongoing customer engagement. Explore Qavyo's customer marketing services for email, SMS, and social media to keep guests informed about seasonal menus and special events.</p>
+            <a class="text-link" href="solutions.html">Explore Marketing Solutions <span aria-hidden="true">&rarr;</span></a>
+          </div>
+
+          <figure class="ord-bridge-mock" aria-labelledby="marketing-bridge-caption">
+            <figcaption id="marketing-bridge-caption" class="sr-only">Illustrative marketing communication bridge</figcaption>
+            <div class="ord-bridge-flow-row">
+              <strong>Completed Order</strong>
+              <span aria-hidden="true">&rarr;</span>
+              <span>Customer Context</span>
+              <span aria-hidden="true">&rarr;</span>
+              <strong>Email &amp; SMS Services</strong>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <!-- SECTION 14 — CONNECTED ORDERING MAP -->
+      <section class="section section--dark ord-system-map" aria-labelledby="system-map-title">
+        <div class="container">
+          <div class="ord-section-head ord-section-head--center">
+            <h2 id="system-map-title">More ways to order. One Qavyo restaurant operation.</h2>
+            <p>Different customer entry points. One live operational system feeding your kitchen, inventory, reporting, and customer records.</p>
+          </div>
+
+          <div class="ord-system-map-box" role="img" aria-label="Connected ordering map showing website, QR, kiosk, mobile, and POS feeding central Qavyo orders, which then route to kitchen, CRM, reporting, and delivery.">
+            <div class="ord-map-inputs">
+              <div class="ord-map-input-node">
+                <span>Channel 01</span>
+                <strong>Restaurant Website</strong>
+              </div>
+              <div class="ord-map-input-node">
+                <span>Channel 02</span>
+                <strong>Table QR Code</strong>
+              </div>
+              <div class="ord-map-input-node">
+                <span>Channel 03</span>
+                <strong>Self-Service Kiosk</strong>
+              </div>
+              <div class="ord-map-input-node">
+                <span>Channel 04</span>
+                <strong>Mobile Ordering</strong>
+              </div>
+              <div class="ord-map-input-node">
+                <span>Channel 05</span>
+                <strong>In-Store POS</strong>
+              </div>
+            </div>
+
+            <div class="ord-map-connector" aria-hidden="true">
+              &darr; Order Intake &darr;
+            </div>
+
+            <div class="ord-map-hub">
+              <span>Central Ordering Engine</span>
+              <strong>Qavyo Orders</strong>
+              <p>Validates item availability, captures modifiers, and organizes live preparation tickets into one coordinated restaurant stream.</p>
+            </div>
+
+            <div class="ord-map-connector" aria-hidden="true">
+              &darr; Operational Routing &darr;
+            </div>
+
+            <div class="ord-map-outputs">
+              <div class="ord-map-output-node">
+                <span>Fulfillment</span>
+                <strong>Kitchen Operations</strong>
+              </div>
+              <div class="ord-map-output-node">
+                <span>Context</span>
+                <strong>Customers &amp; CRM</strong>
+              </div>
+              <div class="ord-map-output-node">
+                <span>Visibility</span>
+                <strong>Reporting &amp; Close</strong>
+              </div>
+              <div class="ord-map-output-node">
+                <span>Logistics</span>
+                <strong>Delivery Operations</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 15 — GET STARTED -->
+      <section class="section section--dark ord-start" aria-labelledby="start-title">
+        <div class="container ord-start__grid">
+          <div>
+            <h2 id="start-title">Start with the complete restaurant platform.</h2>
+            <p>Use the eligible Qavyo restaurant software for 30 days before choosing the plan that fits your business.</p>
+            <div class="ord-actions">
+              <a class="button button--on-dark button--large" href="#prototype-navigation" data-prototype-link>Get Full Qavyo &mdash; Free for 30 Days</a>
+              <a class="button button--secondary button--large" href="pricing.html">See Restaurant Pricing</a>
+            </div>
+            <p class="ord-microcopy">Full access. No card required.</p>
+          </div>
+
+          <ul class="ord-reassurance-list" aria-label="Trial reassurance points">
+            <li>
+              <strong>30 days</strong>
+              <span>Full access to eligible restaurant features</span>
+            </li>
+            <li>
+              <strong>No card</strong>
+              <span>Required to start your trial period</span>
+            </li>
+            <li>
+              <strong>Choose later</strong>
+              <span>Select the plan that matches your operation afterwards</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- SECTION 16 — RELATED RESTAURANT CAPABILITIES -->
+      <section class="section ord-related" aria-labelledby="related-title">
+        <div class="container">
+          <div class="ord-section-head">
+            <div>
+              <h2 id="related-title">Continue through the restaurant workflow.</h2>
+            </div>
+            <p>Follow the order into the next focused Qavyo capability.</p>
+          </div>
+
+          <nav class="ord-related__links" aria-label="Related restaurant capabilities">
+            <a href="restaurant-pos.html">
+              <span>01</span>
+              <strong>Restaurant POS</strong>
+              <small>Manage in-restaurant orders and service.</small>
+              <b aria-hidden="true">&rarr;</b>
+            </a>
+            <a href="kitchen-service.html">
+              <span>02</span>
+              <strong>Kitchen Operations</strong>
+              <small>See what happens once an order reaches preparation.</small>
+              <b aria-hidden="true">&rarr;</b>
+            </a>
+            <a href="customers-growth.html">
+              <span>03</span>
+              <strong>Customers &amp; CRM</strong>
+              <small>See how customer activity becomes an ongoing relationship.</small>
+              <b aria-hidden="true">&rarr;</b>
+            </a>
+            <a href="delivery-operations.html">
+              <span>04</span>
+              <strong>Delivery Operations</strong>
+              <small>See how relevant orders continue beyond the restaurant.</small>
+              <b aria-hidden="true">&rarr;</b>
+            </a>
+          </nav>
+        </div>
+      </section>
+
+      <!-- SECTION 17 — FINAL CTA -->
+      <section class="section section--dark ord-final" id="get-started" aria-labelledby="final-title">
+        <div class="container ord-final__grid">
+          <div>
+            <h2 id="final-title">Give customers more ways to order with Qavyo.</h2>
+            <p>Bring online, QR, kiosk, and mobile ordering into one clear restaurant workflow.</p>
+            <div class="ord-actions">
+              <a class="button button--on-dark button--large" href="#prototype-navigation" data-prototype-link>Get Full Qavyo &mdash; Free for 30 Days</a>
+              <a class="button button--secondary button--large" href="pricing.html">See Restaurant Pricing</a>
+            </div>
+            <p class="ord-microcopy">Full access. No card required.</p>
+          </div>
+          <ul class="ord-reassurance-list" aria-label="Conversion highlights">
+            <li>
+              <strong>All channels</strong>
+              <span>Online, QR, Kiosk, and Mobile</span>
+            </li>
+            <li>
+              <strong>One operation</strong>
+              <span>Direct connection to kitchen and reporting</span>
+            </li>
+          </ul>
+        </div>
+      </section>
     </main>
-    <footer class="scaffold-footer"><div class="container scaffold-footer__inner"><span class="wordmark wordmark--small">qavyo<span aria-hidden="true">.</span></span><a href="feature-directory.html">Browse all features</a><a href="pricing.html">Pricing</a></div></footer>
+
+    <footer class="site-footer" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" class="sr-only">Footer navigation</h2>
+      <div class="container site-footer__container">
+        <div class="site-footer__brand-block">
+          <div class="site-footer__brand">
+            <span class="wordmark wordmark--on-dark wordmark--small">qavyo<span aria-hidden="true">.</span></span>
+            <p class="site-footer__tagline">Connected software for modern operations.</p>
+          </div>
+          <div class="site-footer__brand-meta">
+            <span class="site-footer__status-tag"><span class="signal-dot signal-dot--light" aria-hidden="true"></span>Connected Platform</span>
+          </div>
+        </div>
+        <div class="site-footer__grid">
+          <div class="site-footer__col">
+            <p class="site-footer__col-title">Products</p>
+            <ul class="site-footer__links">
+              <li><a href="restaurant.html">Restaurant Software</a></li>
+              <li><a href="restaurant-pos.html">Restaurant POS</a></li>
+              <li><a href="retail.html">Retail Software</a></li>
+              <li><a href="intelligence.html">Qavyo Intelligence</a></li>
+              <li><a href="payments.html">Payments</a></li>
+            </ul>
+          </div>
+          <div class="site-footer__col">
+            <p class="site-footer__col-title">Restaurants</p>
+            <ul class="site-footer__links">
+              <li><a href="online-qr-ordering.html" aria-current="page">Online &amp; QR Ordering</a></li>
+              <li><a href="kitchen-service.html">Kitchen Operations</a></li>
+              <li><a href="inventory-purchasing.html">Inventory &amp; Food Cost</a></li>
+              <li><a href="money-reporting-close.html">Reporting &amp; Day Close</a></li>
+              <li><a href="hr-payroll.html">HR, Payroll &amp; Team</a></li>
+            </ul>
+          </div>
+          <div class="site-footer__col">
+            <p class="site-footer__col-title">Solutions</p>
+            <ul class="site-footer__links">
+              <li><a href="solutions.html">Marketing Solutions</a></li>
+              <li><a href="social-media-marketing.html">Social Media Marketing</a></li>
+              <li><a href="sms-marketing.html">SMS Marketing</a></li>
+              <li><a href="email-marketing.html">Email Marketing</a></li>
+              <li><a href="website-building.html">Website Building</a></li>
+              <li><a href="website-seo.html">Website SEO</a></li>
+            </ul>
+          </div>
+          <div class="site-footer__col">
+            <p class="site-footer__col-title">Resources</p>
+            <ul class="site-footer__links">
+              <li><a href="pricing.html">Pricing</a></li>
+              <li><a href="feature-directory.html">All Products &amp; Features</a></li>
+              <li><a href="#prototype-navigation" data-prototype-link>Help &amp; Support</a></li>
+              <li><a href="#prototype-navigation" data-prototype-link>Talk to Sales</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="site-footer__bottom">
+          <p class="site-footer__copyright">&copy; <span data-current-year></span> Qavyo. All rights reserved.</p>
+          <ul class="site-footer__legal-links">
+            <li><a href="#prototype-navigation" data-prototype-link>Privacy</a></li>
+            <li><a href="#prototype-navigation" data-prototype-link>Terms</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
-
