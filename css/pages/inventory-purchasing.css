@@ -1,0 +1,1454 @@
+/* ==========================================================================
+   Qavyo — Inventory & Food Cost Page Styles
+   Namespace: .inv-
+   ========================================================================== */
+
+.inv-page {
+  overflow: clip;
+  background: var(--color-canvas);
+}
+
+.inv-page h2 {
+  max-width: 24ch;
+  font-size: var(--text-xl);
+  letter-spacing: -0.035em;
+  line-height: var(--leading-tight);
+}
+
+.inv-page figure,
+.inv-page fieldset,
+.inv-page ol,
+.inv-page ul,
+.inv-page dl {
+  margin: 0;
+}
+
+.inv-page figure,
+.inv-page fieldset {
+  min-width: 0;
+}
+
+.inv-page figure > figcaption {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.inv-page .section--dark p {
+  color: var(--color-border);
+}
+
+/* Breadcrumbs */
+.inv-breadcrumbs {
+  position: absolute;
+  inset: 0 0 auto;
+  padding-block: var(--space-4);
+}
+
+.inv-breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding: 0;
+  list-style: none;
+}
+
+.inv-breadcrumbs li,
+.inv-breadcrumbs a {
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.inv-breadcrumbs a:hover,
+.inv-breadcrumbs a:focus-visible {
+  color: var(--color-brand-hover);
+}
+
+.inv-breadcrumbs li + li::before {
+  margin-right: var(--space-2);
+  color: var(--color-border-strong);
+  content: "/";
+}
+
+/* ==========================================================================
+   Hero Section
+   ========================================================================== */
+
+.inv-hero {
+  position: relative;
+  border-block: 1px solid var(--color-border);
+  background: var(--color-surface);
+}
+
+.inv-hero__grid {
+  display: grid;
+  min-height: var(--page-hero-min-height);
+  grid-template-columns: minmax(0, 0.85fr) minmax(34rem, 1.15fr);
+  gap: var(--space-8);
+  align-items: center;
+  padding-block: var(--page-hero-space);
+}
+
+.inv-hero__copy h1 {
+  max-width: 14ch;
+  color: var(--color-ink);
+  font-size: var(--text-page-hero);
+  letter-spacing: -0.055em;
+  line-height: var(--leading-tight);
+}
+
+.inv-hero__copy > p:first-of-type {
+  max-width: 39rem;
+  margin-block-start: var(--space-5);
+  color: var(--color-text);
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+}
+
+.inv-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+  margin-block-start: var(--space-6);
+}
+
+.inv-microcopy {
+  margin-block-start: var(--space-3);
+  color: var(--color-muted);
+  font-size: var(--text-sm);
+}
+
+.section--dark .inv-microcopy {
+  color: var(--color-border);
+}
+
+/* ==========================================================================
+   Reusable UI Surfaces & Frames
+   ========================================================================== */
+
+.inv-hero-visual,
+.inv-card-ui,
+.inv-table-card,
+.inv-recipe-card,
+.inv-waste-card,
+.inv-po-card,
+.inv-decision-card,
+.inv-intel-card,
+.inv-system-map-box,
+.inv-bridge-mock {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-md);
+  overflow: hidden;
+}
+
+.section--dark .inv-card-ui,
+.section--dark .inv-hero-visual,
+.section--dark .inv-recipe-card,
+.section--dark .inv-waste-card,
+.section--dark .inv-po-card,
+.section--dark .inv-decision-card,
+.section--dark .inv-intel-card,
+.section--dark .inv-system-map-box,
+.section--dark .inv-bridge-mock {
+  border-color: var(--color-dark-raised);
+  background: var(--color-dark-surface);
+}
+
+/* UI Title Bar / Header */
+.inv-ui-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-ink);
+  color: var(--color-surface);
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+.inv-ui-bar span {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: #79ddb2;
+}
+
+.inv-ui-bar span::before {
+  content: "";
+  display: inline-block;
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: #79ddb2;
+}
+
+/* Status Pills */
+.inv-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.15rem 0.55rem;
+  border-radius: var(--radius-pill);
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+.inv-pill--healthy {
+  background: rgba(46, 125, 50, 0.12);
+  color: var(--color-success);
+}
+
+.inv-pill--low {
+  background: rgba(198, 40, 40, 0.12);
+  color: var(--color-danger);
+}
+
+.inv-pill--watch {
+  background: rgba(230, 81, 0, 0.12);
+  color: #b74700;
+}
+
+.section--dark .inv-pill--healthy {
+  background: rgba(76, 175, 80, 0.2);
+  color: #81c784;
+}
+
+.section--dark .inv-pill--low {
+  background: rgba(244, 67, 54, 0.22);
+  color: #e57373;
+}
+
+.section--dark .inv-pill--watch {
+  background: rgba(255, 152, 0, 0.2);
+  color: #ffb74d;
+}
+
+/* ==========================================================================
+   Section Headings & Layout Split
+   ========================================================================== */
+
+.inv-section-head {
+  display: grid;
+  grid-template-columns: minmax(0, 0.95fr) minmax(20rem, 0.55fr);
+  gap: var(--space-8);
+  align-items: end;
+  margin-block-end: var(--space-7);
+}
+
+.inv-section-head--center {
+  display: block;
+  text-align: center;
+  max-width: 44rem;
+  margin-inline: auto;
+  margin-block-end: var(--space-7);
+}
+
+.inv-section-head p,
+.inv-section-copy > p {
+  max-width: 42rem;
+  color: var(--color-text);
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+}
+
+.inv-split {
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(30rem, 1.15fr);
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.inv-split--reverse {
+  grid-template-columns: minmax(30rem, 1.15fr) minmax(0, 0.85fr);
+}
+
+.inv-split--reverse .inv-section-copy {
+  order: 2;
+}
+
+.inv-split--reverse > figure {
+  order: 1;
+}
+
+.inv-feature-list {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-block: var(--space-6);
+  padding: 0;
+  list-style: none;
+}
+
+.inv-feature-list li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+  font-weight: 700;
+}
+
+.section--dark .inv-feature-list li {
+  color: var(--color-surface);
+}
+
+.inv-feature-list li::before {
+  content: "";
+  display: inline-block;
+  width: 0.4rem;
+  height: 0.4rem;
+  border-radius: 50%;
+  background: var(--color-brand);
+}
+
+/* ==========================================================================
+   SECTION 01: Hero Visual (Menu Item to Ingredients Costing & Depletion)
+   ========================================================================== */
+
+.inv-hero-visual {
+  display: flex;
+  flex-direction: column;
+}
+
+.inv-hero-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-4);
+  background: var(--color-surface-raised);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.inv-hero-card__title {
+  display: flex;
+  flex-direction: column;
+}
+
+.inv-hero-card__title strong {
+  font-size: var(--text-md);
+  color: var(--color-ink);
+}
+
+.inv-hero-card__title span {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+.inv-hero-card__price {
+  text-align: right;
+}
+
+.inv-hero-card__price span {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  display: block;
+}
+
+.inv-hero-card__price b {
+  font-size: var(--text-lg);
+  color: var(--color-brand);
+}
+
+.inv-hero-card__body {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  background: var(--color-canvas);
+}
+
+.inv-recipe-items-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: 0;
+  list-style: none;
+}
+
+.inv-recipe-item-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-2) var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  font-size: var(--text-sm);
+}
+
+.inv-recipe-item-row strong {
+  color: var(--color-ink);
+}
+
+.inv-recipe-item-row span {
+  color: var(--color-muted);
+  font-variant-numeric: tabular-nums;
+}
+
+.inv-hero-metrics {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--space-3);
+  margin-top: var(--space-2);
+}
+
+.inv-metric-box {
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+}
+
+.inv-metric-box span {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  display: block;
+}
+
+.inv-metric-box b {
+  font-size: var(--text-md);
+  color: var(--color-ink);
+}
+
+.inv-hero-flow-indicator {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface-raised);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  color: var(--color-ink);
+}
+
+.inv-hero-flow-step {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+/* ==========================================================================
+   SECTION 02: Mental Model Flow
+   ========================================================================== */
+
+.inv-mental-grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--space-3);
+  align-items: stretch;
+}
+
+.inv-mental-step {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  position: relative;
+}
+
+.section--dark .inv-mental-step {
+  border-color: var(--color-dark-raised);
+  background: var(--color-dark-surface);
+}
+
+.inv-mental-step__num {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--color-brand);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-2);
+}
+
+.inv-mental-step h3 {
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+  margin-bottom: var(--space-2);
+}
+
+.section--dark .inv-mental-step h3 {
+  color: var(--color-surface);
+}
+
+.inv-mental-step p {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  margin: 0;
+  line-height: var(--leading-normal);
+}
+
+.section--dark .inv-mental-step p {
+  color: var(--color-border);
+}
+
+.inv-mental-step__items {
+  margin-top: var(--space-3);
+  padding: var(--space-2);
+  background: var(--color-canvas);
+  border-radius: var(--radius-sm);
+  font-size: 0.7rem;
+  color: var(--color-ink);
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.section--dark .inv-mental-step__items {
+  background: var(--color-dark);
+  color: var(--color-border);
+}
+
+/* ==========================================================================
+   SECTION 03: Ingredient Inventory Table UI
+   ========================================================================== */
+
+.inv-table-controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  background: var(--color-surface-raised);
+}
+
+.inv-filter-group {
+  display: flex;
+  gap: var(--space-2);
+}
+
+.inv-filter-btn {
+  padding: 0.25rem 0.65rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-pill);
+  background: var(--color-surface);
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.inv-filter-btn:hover,
+.inv-filter-btn:focus-visible {
+  color: var(--color-ink);
+  border-color: var(--color-border-strong);
+}
+
+.inv-filter-btn[aria-pressed="true"] {
+  background: var(--color-ink);
+  border-color: var(--color-ink);
+  color: var(--color-surface);
+}
+
+.inv-table-wrapper {
+  overflow-x: auto;
+}
+
+.inv-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: var(--text-sm);
+}
+
+.inv-data-table th {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-canvas);
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid var(--color-border);
+  white-space: nowrap;
+}
+
+.inv-data-table td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-ink);
+  white-space: nowrap;
+}
+
+.inv-data-table tr:last-child td {
+  border-bottom: none;
+}
+
+.inv-data-table tr:hover td {
+  background: rgba(0, 0, 0, 0.015);
+}
+
+.inv-table-card__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-surface-raised);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+/* ==========================================================================
+   SECTION 04: Recipes & Costing Builder
+   ========================================================================== */
+
+.inv-recipe-selector {
+  display: flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-4);
+}
+
+.inv-recipe-tab {
+  padding: 0.4rem 0.85rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.inv-recipe-tab[aria-selected="true"] {
+  background: var(--color-brand);
+  border-color: var(--color-brand);
+  color: #fff;
+}
+
+.inv-recipe-display {
+  display: flex;
+  flex-direction: column;
+}
+
+.inv-recipe-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.inv-recipe-table th {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-canvas);
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.inv-recipe-table td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-ink);
+}
+
+.inv-recipe-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--color-surface-raised);
+  border-top: 1px solid var(--color-border);
+}
+
+.inv-summary-item span {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  display: block;
+}
+
+.inv-summary-item b {
+  font-size: var(--text-md);
+  color: var(--color-ink);
+}
+
+.inv-summary-item--cost b {
+  color: var(--color-brand);
+}
+
+/* ==========================================================================
+   SECTION 05: When Ingredient Cost Changes
+   ========================================================================== */
+
+.inv-cost-impact-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.inv-price-shift-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-4);
+  background: rgba(230, 81, 0, 0.08);
+  border-bottom: 1px solid rgba(230, 81, 0, 0.2);
+}
+
+.inv-price-shift-meta strong {
+  display: block;
+  font-size: var(--text-md);
+  color: var(--color-ink);
+}
+
+.section--dark .inv-price-shift-meta strong {
+  color: var(--color-surface);
+}
+
+.inv-price-shift-meta span {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+.inv-price-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.65rem;
+  border-radius: var(--radius-pill);
+  background: #ffecb3;
+  color: #b74700;
+  font-size: var(--text-sm);
+  font-weight: 800;
+}
+
+.inv-dishes-affected-list {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.inv-dish-affected-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+}
+
+.section--dark .inv-dish-affected-row {
+  border-color: var(--color-dark-raised);
+  background: var(--color-dark-surface);
+}
+
+.inv-dish-affected-row strong {
+  color: var(--color-ink);
+  font-size: var(--text-sm);
+}
+
+.section--dark .inv-dish-affected-row strong {
+  color: var(--color-surface);
+}
+
+.inv-dish-affected-row span {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+/* ==========================================================================
+   SECTION 06: Waste & Valuation
+   ========================================================================== */
+
+.inv-waste-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
+  gap: var(--space-6);
+}
+
+.inv-waste-form {
+  padding: var(--space-4);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.inv-form-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: var(--space-2);
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--text-sm);
+}
+
+.section--dark .inv-form-row {
+  border-color: var(--color-dark-raised);
+}
+
+.inv-form-row span {
+  color: var(--color-muted);
+}
+
+.inv-form-row strong {
+  color: var(--color-ink);
+}
+
+.section--dark .inv-form-row strong {
+  color: var(--color-surface);
+}
+
+.inv-waste-summary-panel {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+  background: var(--color-surface-raised);
+  border-left: 1px solid var(--color-border);
+}
+
+.section--dark .inv-waste-summary-panel {
+  background: var(--color-dark);
+  border-color: var(--color-dark-raised);
+}
+
+.inv-waste-metric {
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+}
+
+.section--dark .inv-waste-metric {
+  border-color: var(--color-dark-raised);
+  background: var(--color-dark-surface);
+}
+
+.inv-waste-metric span {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+.inv-waste-metric b {
+  font-size: var(--text-md);
+  color: var(--color-ink);
+}
+
+.section--dark .inv-waste-metric b {
+  color: var(--color-surface);
+}
+
+/* ==========================================================================
+   SECTION 07: Stock Alerts
+   ========================================================================== */
+
+.inv-alerts-cards {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.inv-alert-card {
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+.section--dark .inv-alert-card {
+  border-color: var(--color-dark-raised);
+  background: var(--color-dark-surface);
+}
+
+.inv-alert-card__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inv-alert-card__top strong {
+  font-size: var(--text-md);
+  color: var(--color-ink);
+}
+
+.section--dark .inv-alert-card__top strong {
+  color: var(--color-surface);
+}
+
+.inv-alert-qty {
+  font-size: var(--text-xl);
+  font-weight: 800;
+  color: var(--color-ink);
+  margin-block: var(--space-2);
+}
+
+.section--dark .inv-alert-qty {
+  color: var(--color-surface);
+}
+
+.inv-alert-note {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+  line-height: var(--leading-normal);
+}
+
+.section--dark .inv-alert-note {
+  color: var(--color-border);
+}
+
+/* ==========================================================================
+   SECTION 08: Kitchen Connection Bridge
+   ========================================================================== */
+
+.inv-bridge-flow {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+  padding: var(--space-4);
+}
+
+.inv-bridge-flow-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  font-size: var(--text-sm);
+}
+
+.section--dark .inv-bridge-flow-row {
+  border-color: var(--color-dark-raised);
+  background: var(--color-dark-surface);
+}
+
+.inv-bridge-flow-row strong {
+  color: var(--color-ink);
+}
+
+.section--dark .inv-bridge-flow-row strong {
+  color: var(--color-surface);
+}
+
+/* ==========================================================================
+   SECTION 09: Suppliers & Purchase Orders
+   ========================================================================== */
+
+.inv-po-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-4);
+  background: var(--color-surface-raised);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.section--dark .inv-po-card__header {
+  background: var(--color-dark);
+  border-color: var(--color-dark-raised);
+}
+
+.inv-po-title strong {
+  display: block;
+  font-size: var(--text-md);
+  color: var(--color-ink);
+}
+
+.section--dark .inv-po-title strong {
+  color: var(--color-surface);
+}
+
+.inv-po-title span {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+.inv-po-status-badge {
+  padding: 0.2rem 0.6rem;
+  border-radius: var(--radius-pill);
+  background: rgba(30, 144, 255, 0.15);
+  color: var(--color-brand);
+  font-size: var(--text-xs);
+  font-weight: 700;
+}
+
+.inv-po-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--text-sm);
+}
+
+.inv-po-table th {
+  padding: var(--space-3) var(--space-4);
+  background: var(--color-canvas);
+  color: var(--color-muted);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.section--dark .inv-po-table th {
+  background: var(--color-dark-surface);
+  border-color: var(--color-dark-raised);
+}
+
+.inv-po-table td {
+  padding: var(--space-3) var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+  color: var(--color-ink);
+}
+
+.section--dark .inv-po-table td {
+  border-color: var(--color-dark-raised);
+  color: var(--color-surface);
+}
+
+.inv-po-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-4);
+  background: var(--color-surface-raised);
+  border-top: 1px solid var(--color-border);
+}
+
+.section--dark .inv-po-footer {
+  background: var(--color-dark);
+  border-color: var(--color-dark-raised);
+}
+
+.inv-po-total {
+  font-size: var(--text-md);
+  font-weight: 800;
+  color: var(--color-ink);
+}
+
+.section--dark .inv-po-total {
+  color: var(--color-surface);
+}
+
+/* ==========================================================================
+   SECTION 10: Purchasing Decisions
+   ========================================================================== */
+
+.inv-decision-box {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-4);
+  gap: var(--space-3);
+}
+
+.inv-decision-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-3);
+}
+
+.inv-decision-stat {
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+}
+
+.section--dark .inv-decision-stat {
+  border-color: var(--color-dark-raised);
+  background: var(--color-dark);
+}
+
+.inv-decision-stat span {
+  display: block;
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+.inv-decision-stat b {
+  font-size: var(--text-md);
+  color: var(--color-ink);
+}
+
+.section--dark .inv-decision-stat b {
+  color: var(--color-surface);
+}
+
+/* ==========================================================================
+   SECTION 11: Reporting Bridge
+   ========================================================================== */
+
+.inv-reporting-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-3);
+  padding: var(--space-4);
+}
+
+.inv-report-item {
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.inv-report-item span {
+  font-size: var(--text-xs);
+  color: var(--color-muted);
+}
+
+.inv-report-item b {
+  font-size: var(--text-xl);
+  color: var(--color-ink);
+}
+
+.inv-report-item small {
+  font-size: 0.75rem;
+  color: var(--color-brand);
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   SECTION 12: Multi-Location Comparison
+   ========================================================================== */
+
+.inv-loc-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-3);
+  padding: var(--space-4);
+}
+
+.inv-loc-card {
+  padding: var(--space-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-surface);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.section--dark .inv-loc-card {
+  border-color: var(--color-dark-raised);
+  background: var(--color-dark);
+}
+
+.inv-loc-card strong {
+  font-size: var(--text-sm);
+  color: var(--color-ink);
+}
+
+.section--dark .inv-loc-card strong {
+  color: var(--color-surface);
+}
+
+.inv-loc-qty {
+  font-size: var(--text-lg);
+  font-weight: 800;
+  color: var(--color-ink);
+}
+
+.section--dark .inv-loc-qty {
+  color: var(--color-surface);
+}
+
+/* ==========================================================================
+   SECTION 13: Qavyo Intelligence Card
+   ========================================================================== */
+
+.inv-intel-card {
+  padding: var(--space-6);
+  border-left: 4px solid var(--color-brand);
+}
+
+.inv-intel-badge {
+  display: inline-block;
+  padding: 0.2rem 0.5rem;
+  border-radius: var(--radius-pill);
+  background: rgba(30, 144, 255, 0.15);
+  color: var(--color-brand);
+  font-size: var(--text-xs);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-3);
+}
+
+.inv-intel-card h4 {
+  font-size: var(--text-md);
+  color: var(--color-surface);
+  margin-block-end: var(--space-3);
+  line-height: var(--leading-tight);
+}
+
+.inv-intel-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-4);
+  padding-block: var(--space-3);
+  border-block: 1px solid var(--color-dark-raised);
+  margin-block-end: var(--space-3);
+  font-size: var(--text-xs);
+  color: var(--color-border);
+}
+
+.inv-intel-meta strong {
+  color: var(--color-surface);
+}
+
+.inv-intel-review-list {
+  padding-left: var(--space-4);
+  margin-block: var(--space-3);
+  color: var(--color-border);
+  font-size: var(--text-sm);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+}
+
+/* ==========================================================================
+   SECTION 14: Connected System Map
+   ========================================================================== */
+
+.inv-system-map-box {
+  padding: var(--space-6);
+}
+
+.inv-map-sequence {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.inv-map-step {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-4);
+  border: 1px solid var(--color-dark-raised);
+  border-radius: var(--radius-sm);
+  background: var(--color-dark);
+}
+
+.inv-map-step__header {
+  font-size: 0.75rem;
+  font-weight: 800;
+  color: var(--color-brand);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-2);
+}
+
+.inv-map-step strong {
+  color: var(--color-surface);
+  font-size: var(--text-sm);
+  margin-bottom: var(--space-1);
+}
+
+.inv-map-step p {
+  color: var(--color-border);
+  font-size: var(--text-xs);
+  margin: 0;
+  line-height: var(--leading-normal);
+}
+
+/* ==========================================================================
+   SECTION 15 & 17: CTA Sections
+   ========================================================================== */
+
+.inv-start__grid,
+.inv-final__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(20rem, 0.8fr);
+  gap: var(--space-8);
+  align-items: center;
+}
+
+.inv-start h2,
+.inv-final h2 {
+  color: var(--color-surface);
+}
+
+.inv-reassurance-list {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-4);
+  padding: 0;
+  list-style: none;
+}
+
+.inv-final .inv-reassurance-list {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.inv-reassurance-list li {
+  padding: var(--space-4);
+  border: 1px solid var(--color-dark-raised);
+  border-radius: var(--radius-md);
+  background: var(--color-dark-surface);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+}
+
+.inv-reassurance-list strong {
+  color: var(--color-surface);
+  font-size: var(--text-sm);
+}
+
+.inv-reassurance-list span {
+  color: var(--color-border);
+  font-size: var(--text-xs);
+  line-height: var(--leading-normal);
+}
+
+/* ==========================================================================
+   SECTION 16: Related Capabilities
+   ========================================================================== */
+
+.inv-related__links {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--space-4);
+}
+
+.inv-related-card {
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-5);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  background: var(--color-surface);
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.15s ease;
+}
+
+.inv-related-card:hover,
+.inv-related-card:focus-visible {
+  border-color: var(--color-brand);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.inv-related-card span {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-muted);
+  letter-spacing: 0.05em;
+  margin-bottom: var(--space-2);
+}
+
+.inv-related-card strong {
+  font-size: var(--text-md);
+  color: var(--color-ink);
+  margin-bottom: var(--space-2);
+}
+
+.inv-related-card small {
+  font-size: var(--text-xs);
+  color: var(--color-text);
+  line-height: var(--leading-normal);
+  margin-bottom: var(--space-4);
+}
+
+.inv-related-card b {
+  margin-top: auto;
+  color: var(--color-brand);
+  font-size: var(--text-sm);
+}
+
+/* ==========================================================================
+   Responsive Adaptations
+   ========================================================================== */
+
+@media (max-width: 60rem) {
+  .inv-hero__grid,
+  .inv-split,
+  .inv-split--reverse,
+  .inv-section-head,
+  .inv-waste-grid,
+  .inv-start__grid,
+  .inv-final__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+
+  .inv-split--reverse .inv-section-copy,
+  .inv-split--reverse > figure {
+    order: initial;
+  }
+
+  .inv-mental-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .inv-alerts-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .inv-loc-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .inv-decision-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .inv-system-map-box .inv-map-sequence {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .inv-related__links {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 40rem) {
+  .inv-mental-grid,
+  .inv-alerts-cards,
+  .inv-loc-grid,
+  .inv-decision-grid,
+  .inv-reporting-grid,
+  .inv-reassurance-list,
+  .inv-final .inv-reassurance-list,
+  .inv-system-map-box .inv-map-sequence,
+  .inv-related__links {
+    grid-template-columns: 1fr;
+  }
+
+  .inv-hero-metrics {
+    grid-template-columns: 1fr;
+  }
+
+  .inv-recipe-summary-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .inv-table-controls {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3);
+  }
+
+  .inv-filter-group {
+    flex-wrap: wrap;
+  }
+}
+
+/* Prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  .inv-related-card {
+    transition: none;
+    transform: none;
+  }
+  .inv-filter-btn {
+    transition: none;
+  }
+}

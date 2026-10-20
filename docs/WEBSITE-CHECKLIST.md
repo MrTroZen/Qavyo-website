@@ -149,10 +149,10 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 
 ### Inventory & Food Cost
 
-- [ ] Finish `inventory-purchasing.html` as the major Inventory & Food Cost page.
-- [ ] Add Ingredient Inventory, Recipes & Costing, Waste, Valuation, and Stock Alert sections.
-- [ ] Add Suppliers, Purchase Orders, purchasing decisions, and analysis sections.
-- [ ] Connect to Reporting, Multi-Location, and Intelligence.
+- [x] Finish `inventory-purchasing.html` as the major Inventory & Food Cost page.
+- [x] Add Ingredient Inventory, Recipes & Costing, Waste, Valuation, and Stock Alert sections.
+- [x] Add Suppliers, Purchase Orders, purchasing decisions, and analysis sections.
+- [x] Connect to Reporting, Multi-Location, and Intelligence.
 
 ### Customers & CRM
 

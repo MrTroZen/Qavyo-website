@@ -51,7 +51,7 @@ This inventory lists every current public-page route in the repository. Home and
 | Qavyo â€” Business technology for connected operations | `index.html` | Final |
 | Ingredient Inventory  | `ingredient-inventory.html` | Scaffolded |
 | Qavyo Intelligence â€” Know What Needs Attention | `intelligence.html` | Existing |
-| Inventory &amp; Purchasing  | `inventory-purchasing.html` | Scaffolded |
+| Inventory &amp; Purchasing  | `inventory-purchasing.html` | Existing |
 | Inventory Valuation  | `inventory-valuation.html` | Scaffolded |
 | Kitchen Alerts  | `kitchen-alerts.html` | Scaffolded |
 | Kitchen Display System  | `kitchen-display-system.html` | Scaffolded |
