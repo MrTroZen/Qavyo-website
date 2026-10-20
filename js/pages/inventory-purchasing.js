@@ -93,23 +93,5 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // 4. Smooth Anchor Scrolling for Consolidation Hash Links
-  const localLinks = document.querySelectorAll('a[href^="#"]');
-  localLinks.forEach((link) => {
-    link.addEventListener('click', (e) => {
-      const href = link.getAttribute('href');
-      if (href === '#' || href === '#prototype-navigation') return;
-
-      const target = document.querySelector(href);
-      if (target) {
-        e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
-        target.focus({ preventScroll: true });
-        if (document.activeElement !== target) {
-          target.setAttribute('tabindex', '-1');
-          target.focus({ preventScroll: true });
-        }
-      }
-    });
-  });
+  // 4. In-page anchor navigation handled natively via html scroll-behavior: smooth
 });
