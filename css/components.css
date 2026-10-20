@@ -445,6 +445,10 @@
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
+.mega-menu-grid--products {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
 .mega-menu-column {
   min-width: 0;
   padding-inline: var(--space-6);

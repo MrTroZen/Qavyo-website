@@ -10,7 +10,7 @@ The website uses a two-level product-content model: entry or overview page, then
 
 ```text
 Qavyo
-├── Retail
+├── Products
 │   ├── Retail Software Overview
 │   ├── Clothing & Fashion
 │   ├── Electronics
@@ -18,7 +18,12 @@ Qavyo
 │   ├── Grocery & Convenience
 │   ├── Salon & Spa
 │   ├── Hardware & Sanitary
-│   └── Paint & Tiles
+│   ├── Paint & Tiles
+│   ├── Farm Software
+│   ├── Broiler Farming
+│   ├── Healthcare Software
+│   ├── Hospitals
+│   └── Diagnostic Centres
 ├── Restaurants
 │   ├── Run service
 │   │   ├── Restaurant POS
@@ -54,17 +59,17 @@ Qavyo
 └── Resources
 ```
 
-The primary header order is Retail, Restaurants, Solutions, Pricing, and Resources, followed by Sign In, Talk to Sales, and Start Free. Company information belongs within Resources and the future public footer rather than as another top-level item.
+The primary header order is Products, Restaurants, Solutions, Pricing, and Resources, followed by Sign In, Talk to Sales, and Start Free. Company information belongs within Resources and the future public footer rather than as another top-level item.
 
 The three primary dropdowns answer different questions:
 
-- Retail identifies the Retail Software overview and relevant retail business type.
+- Products groups the Retail, Farming, and Healthcare software families. Retail destinations remain live; Farm Software and Broiler Farming use their existing routes; Healthcare destinations remain safe prototype links until approved pages exist.
 - Restaurants explains the major operating areas that Qavyo Restaurant Software can help a restaurant operator understand.
 - Solutions presents additional marketing, communication, web, growth, and intelligence capabilities.
 
 Qavyo Intelligence may appear in Restaurants and Solutions because each entry reflects a different visitor context. Every navigational occurrence leads to the canonical `intelligence.html` page.
 
-The Resources menu includes `feature-directory.html` as the complete product-and-feature index. Desktop and mobile navigation expose the same live Retail and Restaurant destinations. Major capability and vertical pages use breadcrumbs and return actions to link back to their canonical overview.
+The Resources menu includes `feature-directory.html` as the complete product-and-feature index. Desktop and mobile navigation expose the same essential Products and Restaurant destinations. Major capability and vertical pages use breadcrumbs and return actions to link back to their canonical overview.
 
 ## Page strategy
 
@@ -78,7 +83,7 @@ The Resources menu includes `feature-directory.html` as the complete product-and
 
 ### Farm Software
 
-Farm Software is removed from the current public sitemap and navigation. Existing `farm.html` and `broiler-farming.html` files remain legacy route candidates until a separate task approves their indexation, redirect, archive, or deletion treatment.
+Farm Software and Broiler Farming are available from the Products menu through the existing `farm.html` and `broiler-farming.html` routes. Their scaffold content remains provisional until each page receives an approved product narrative.
 
 ### Qavyo Intelligence
 

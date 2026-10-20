@@ -225,7 +225,7 @@ The Pricing Final CTA (`.pricing-final`) provides authoritative closure on a ful
 
 ## Pricing-aligned restaurant navigation
 
-The shared Restaurant mega menu uses four approved groups: Run service; Manage the business; Customers & growth; and Choose & start. It exposes major buyer destinations rather than every feature route. Delivery Operations, Hardware & Devices, and Payments remain permanent links. Retail is its own top-level menu and Farm is absent. Resources provides an `All Products & Features` link to `feature-directory.html`. Desktop and mobile menus must contain the same essential destinations.
+The shared Restaurant mega menu uses four approved groups: Run service; Manage the business; Customers & growth; and Choose & start. It exposes major buyer destinations rather than every feature route. Delivery Operations, Hardware & Devices, and Payments remain permanent links. Products is the top-level entry for Retail, Farming, and Healthcare. Its desktop menu uses three columns: two for the established retail destinations and one for Farming and Healthcare; mobile preserves the same grouping as sequential disclosure sections. Healthcare destinations use safe prototype links until approved pages exist. Resources provides an `All Products & Features` link to `feature-directory.html`. Desktop and mobile menus must contain the same essential destinations.
 
 ## Restaurant capability directory
 
