@@ -822,13 +822,15 @@
 .rst-power-node--payments { grid-column: 5; grid-row: 2; }
 .rst-power-node--customers { grid-column: 1; grid-row: 3; }
 .rst-power-node--reporting { grid-column: 2; grid-row: 3; }
-.rst-power-node--team { grid-column: 4; grid-row: 3; }
+.rst-power-node--team { grid-column: 3; grid-row: 3; }
+.rst-power-node--hr { grid-column: 4; grid-row: 3; }
 .rst-power-node--intelligence { grid-column: 5; grid-row: 3; }
 
 .rst-power-node--pos::after,
 .rst-power-node--kitchen::after,
 .rst-power-node--payments::after,
 .rst-power-node--team::after,
+.rst-power-node--hr::after,
 .rst-power-node--intelligence::after {
   right: auto;
   left: -1.35rem;
@@ -844,86 +846,46 @@
   align-self: center;
 }
 
-.rst-restaurant-core__roof {
-  width: min(90%, 20rem);
-  height: 3.5rem;
-  background: var(--color-brand);
-  clip-path: polygon(50% 0, 100% 100%, 0 100%);
-  filter: drop-shadow(0 0.5rem 1rem color-mix(in srgb, var(--color-brand) 30%, transparent));
-}
-
-.rst-restaurant-core__building {
+.rst-restaurant-core__hub {
   display: grid;
-  width: min(86%, 18rem);
-  min-height: 10rem;
+  width: min(72%, 15rem);
+  aspect-ratio: 1;
   place-items: center;
+  align-content: center;
+  gap: var(--space-2);
   padding: var(--space-5);
   border: 1px solid var(--color-focus);
-  border-radius: 0 0 var(--radius-lg) var(--radius-lg);
-  background: var(--color-surface);
-  color: var(--color-ink);
-  box-shadow: 0 0 3rem color-mix(in srgb, var(--color-brand) 28%, transparent);
+  border-radius: 50%;
+  background: var(--color-brand);
+  color: var(--color-surface);
+  text-align: center;
+  box-shadow: 0 0 0 var(--space-3) color-mix(in srgb, var(--color-brand) 18%, transparent), 0 0 3rem color-mix(in srgb, var(--color-brand) 28%, transparent);
 }
 
-.rst-restaurant-core__building small {
-  color: var(--color-muted);
+.rst-restaurant-core__hub small {
+  color: var(--color-surface);
   font-weight: 700;
+  opacity: 0.8;
 }
 
-.rst-restaurant-core__building > strong {
-  color: var(--color-brand);
+.rst-restaurant-core__hub > strong {
+  color: var(--color-surface);
   font-size: var(--text-xl);
 }
 
-.rst-restaurant-core__building > span {
-  color: var(--color-ink);
+.rst-restaurant-core__hub > span {
+  color: var(--color-surface);
   font-size: var(--text-sm);
-  font-weight: 700;
+  opacity: 0.86;
 }
 
-.rst-restaurant-core__building > div {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-2);
-  width: 100%;
-}
-
-.rst-restaurant-core__building i {
-  height: var(--space-5);
-  border-radius: var(--radius-sm) var(--radius-sm) 0 0;
-  background: var(--color-brand-soft);
-}
-
-.rst-restaurant-core > p {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  margin-block-start: var(--space-3);
-  color: var(--color-surface) !important;
-  font-size: var(--text-xs);
-  font-weight: 700;
-}
-
-.rst-restaurant-core > p span {
-  width: var(--space-2);
-  height: var(--space-2);
-  border-radius: 50%;
-  background: var(--color-success);
-  box-shadow: 0 0 0 var(--space-2) color-mix(in srgb, var(--color-success) 20%, transparent);
-  animation: rst-core-pulse 2s ease-in-out infinite;
-}
-
-.rst-power-map:has(.rst-power-node:hover) .rst-restaurant-core__building,
-.rst-power-map:has(.rst-power-node:focus-visible) .rst-restaurant-core__building {
+.rst-power-map:has(.rst-power-node:hover) .rst-restaurant-core__hub,
+.rst-power-map:has(.rst-power-node:focus-visible) .rst-restaurant-core__hub {
   box-shadow: 0 0 4.5rem color-mix(in srgb, var(--color-brand) 55%, transparent);
 }
 
 @keyframes rst-signal-turn {
   to { transform: translate(-50%, -50%) rotate(1turn); }
-}
-
-@keyframes rst-core-pulse {
-  50% { transform: scale(1.35); }
 }
 
 .rst-start__grid,
@@ -1059,6 +1021,7 @@
   .rst-power-node--customers,
   .rst-power-node--reporting,
   .rst-power-node--team,
+  .rst-power-node--hr,
   .rst-power-node--intelligence {
     grid-column: auto;
     grid-row: auto;
