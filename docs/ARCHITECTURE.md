@@ -20,10 +20,10 @@ Qavyo
 │   ├── Hardware & Sanitary
 │   ├── Paint & Tiles
 │   ├── Farm Software
-│   ├── Broiler Farming
-│   ├── Healthcare Software
-│   ├── Hospitals
-│   └── Diagnostic Centres
+│   │   └── Broiler Farming
+│   └── Healthcare Software
+│       ├── Hospitals
+│       └── Diagnostic Centers
 ├── Restaurants
 │   ├── Run service
 │   │   ├── Restaurant POS
@@ -63,7 +63,7 @@ The primary header order is Products, Restaurants, Solutions, Pricing, and Resou
 
 The three primary dropdowns answer different questions:
 
-- Products groups the Retail, Farming, and Healthcare software families. Retail destinations remain live; Farm Software and Broiler Farming use their existing routes; Healthcare destinations remain safe prototype links until approved pages exist.
+- Products groups the Retail, Farming, and Healthcare software families. Farm Software and Healthcare Software are non-linked category headings rather than overview destinations. Broiler Farming uses its existing route; Hospitals and Diagnostic Centers remain safe prototype links until approved pages exist.
 - Restaurants explains the major operating areas that Qavyo Restaurant Software can help a restaurant operator understand.
 - Solutions presents additional marketing, communication, web, growth, and intelligence capabilities.
 
@@ -83,7 +83,7 @@ The Resources menu includes `feature-directory.html` as the complete product-and
 
 ### Farm Software
 
-Farm Software and Broiler Farming are available from the Products menu through the existing `farm.html` and `broiler-farming.html` routes. Their scaffold content remains provisional until each page receives an approved product narrative.
+Broiler Farming is available under the non-linked Farm Software heading through the existing `broiler-farming.html` route. Its scaffold content remains provisional until the page receives an approved product narrative. The legacy `farm.html` route is not exposed from this menu.
 
 ### Qavyo Intelligence
 

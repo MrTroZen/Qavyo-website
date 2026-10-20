@@ -480,6 +480,12 @@
   gap: var(--space-5);
 }
 
+.product-menu-group + .product-menu-group {
+  margin-block-start: var(--space-7);
+  padding-block-start: var(--space-5);
+  border-top: 1px solid var(--color-border);
+}
+
 .mega-menu-link {
   position: relative;
   display: grid;
