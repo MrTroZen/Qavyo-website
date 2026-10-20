@@ -1,11 +1,10 @@
 /**
  * Qavyo Intelligence Page Logic
- * Scope: Briefing period tab switching, review drilldown triggers, accessible roving keyboard control
+ * Scope: Briefing period tab switching with accessible roving keyboard control
  */
 
 document.addEventListener('DOMContentLoaded', () => {
   initBriefingTabs();
-  initReviewJumpTriggers();
 });
 
 /**
@@ -49,33 +48,6 @@ function initBriefingTabs() {
       if (event.key === 'End') nextIndex = tabs.length - 1;
 
       activateTab(tabs[nextIndex], true);
-    });
-  });
-}
-
-/**
- * Handles smooth scrolling and temporary highlighting for [ Review ] action triggers
- */
-function initReviewJumpTriggers() {
-  const triggers = document.querySelectorAll('[data-qi-review-target]');
-
-  triggers.forEach(trigger => {
-    trigger.addEventListener('click', event => {
-      const targetId = trigger.getAttribute('data-qi-review-target');
-      const targetElement = document.getElementById(targetId);
-
-      if (targetElement) {
-        event.preventDefault();
-        targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-
-        // Temporary visual focus indicator
-        targetElement.style.outline = '2px solid #38bdf8';
-        targetElement.style.outlineOffset = '4px';
-        setTimeout(() => {
-          targetElement.style.outline = '';
-          targetElement.style.outlineOffset = '';
-        }, 2200);
-      }
     });
   });
 }
