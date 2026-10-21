@@ -36,7 +36,7 @@ Desktop navigation uses explicit buttons for dropdowns rather than hover-only in
 
 At widths up to `60rem`, desktop navigation is replaced by a dedicated full-height mobile menu. Products, Restaurants, Solutions, and Resources retain top-level expandable panels, with only one panel open at a time. Their internal categories use `.mobile-nav-section` and the same `.mega-menu-link` destinations rather than nested accordions. Opening the mobile menu locks background scrolling. Touch targets are at least approximately 44px.
 
-Restaurant navigation always includes the permanent Delivery Operations, Hardware & Devices, and Payments pages. Products is the first primary item and contains the approved Retail, Farm Software, and Healthcare Software groups in both desktop and mobile navigation.
+Restaurant navigation always includes the permanent Delivery Operations, Hardware & Devices, and Payments pages. Products is the first primary item and exposes only approved Retail destinations in both desktop and mobile navigation. Unfinished Farm, Healthcare, and Retail-vertical routes remain outside the public menu.
 
 Required behaviour lives in `js/main.js`: click and keyboard activation, `ArrowDown` entry into desktop menus, one-open-menu enforcement for desktop dropdowns and mobile top-level accordions, outside-click dismissal, Escape dismissal with focus restoration, mobile accordion state, and viewport-change cleanup. Triggers must retain accurate `aria-expanded` and `aria-controls` relationships.
 
@@ -75,7 +75,7 @@ The homepage orientation section (`.home-workflow`) uses an accessible five-opti
 
 ## Homepage Software Family Overview
 
-The homepage product overview (`.software-overview`) uses an accessible Restaurant / Retail / Farm tab selector to replace the showcase content in place. Each panel has a distinct operational composition: a connected restaurant order flow, a multi-context retail workspace, or the currently defined Broiler Farming focus. Homepage CTAs route only to parent software pages; until a Farm Software page is approved, the Farm CTA retains safe prototype-link behavior. The selector supports click, tap, arrow keys, Home, and End through `js/pages/home.js`, and mobile panels simplify their diagrams rather than shrinking desktop UI.
+The homepage product overview (`.software-overview`) uses an accessible Restaurant / Retail tab selector to replace the showcase content in place. Each panel has a distinct operational composition: a connected restaurant order flow or a multi-context retail workspace. Homepage CTAs route only to approved parent software pages. The selector supports click, tap, arrow keys, Home, and End through `js/pages/home.js`, and mobile panels simplify their diagrams rather than shrinking desktop UI.
 
 ## Homepage Qavyo Intelligence Showcase
 
@@ -225,7 +225,7 @@ The Pricing Final CTA (`.pricing-final`) provides authoritative closure on a ful
 
 ## Pricing-aligned restaurant navigation
 
-The shared Restaurant mega menu uses four approved groups: Run service; Manage the business; Customers & growth; and Choose & start. It exposes major buyer destinations rather than every feature route. Delivery Operations, Hardware & Devices, and Payments remain permanent links. Products is the top-level entry for Retail, Farming, and Healthcare. Its desktop menu uses three columns: two for the established retail destinations and one containing the non-linked Farm Software and Healthcare Software category headings. Farm Software exposes only Broiler Farming; Healthcare Software exposes only Hospitals and Diagnostic Centers. Mobile preserves the same hierarchy as sequential sections. Healthcare destinations use safe prototype links until approved pages exist. Resources provides an `All Products & Features` link to `feature-directory.html`. Desktop and mobile menus must contain the same essential destinations.
+The shared Restaurant mega menu uses four approved groups: Run service; Manage the business; Customers & growth; and Choose & start. It exposes major buyer destinations rather than every feature route. Delivery Operations, Hardware & Devices, and Payments remain permanent links. Products exposes the approved Retail overview, Clothing & Fashion, and Electronics pages. Unfinished Farm, Healthcare, and Retail-vertical routes are omitted from desktop and mobile navigation. Resources provides an `All Products & Features` link to the curated `feature-directory.html`. Desktop and mobile menus must contain the same essential destinations.
 
 ## Restaurant capability directory
 

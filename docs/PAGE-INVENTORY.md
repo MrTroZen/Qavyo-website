@@ -52,7 +52,7 @@ This inventory lists every current public-page route in the repository. Home and
 | Executive Reports &amp; Health View  | `executive-reports-health-view.html` | Scaffolded |
 | Expense Tracking  | `expense-tracking.html` | Scaffolded |
 | Farm Software  | `farm.html` | Retire |
-| All Products & Features  | `feature-directory.html` | Scaffolded |
+| All Products & Features  | `feature-directory.html` | Existing |
 | Fees &amp; Processing  | `fees-processing.html` | Scaffolded |
 | Fleet &amp; Driver Assignment  | `fleet-driver-assignment.html` | Scaffolded |
 | GPS Tracking &amp; Routes  | `gps-tracking-routes.html` | Scaffolded |

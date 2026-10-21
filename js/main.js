@@ -1,4 +1,24 @@
 (() => {
+  const currentPage = window.location.pathname.split("/").pop() || "index.html";
+
+  document.querySelectorAll(".site-header a[href], .site-footer a[href]").forEach((link) => {
+    const href = link.getAttribute("href");
+
+    if (!href || href.startsWith("#") || /^(?:https?:|mailto:|tel:)/i.test(href)) {
+      return;
+    }
+
+    const targetPage = href.split("#")[0].split("?")[0] || "index.html";
+
+    if (targetPage === currentPage) {
+      link.setAttribute("aria-current", "page");
+    } else {
+      link.removeAttribute("aria-current");
+    }
+  });
+})();
+
+(() => {
   "use strict";
 
   const year = String(new Date().getFullYear());
