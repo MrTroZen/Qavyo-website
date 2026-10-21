@@ -252,21 +252,21 @@ Supporting features remain sections by default. Create a standalone page only wh
 
 ## Phase 7 — Supporting public pages
 
-- [ ] About Qavyo.
-- [ ] Contact.
-- [ ] Talk to Sales destination or form.
-- [ ] Start Free destination or signup flow.
-- [ ] Sign In destination.
-- [ ] Support overview.
+- [x] About Qavyo — `about.html`.
+- [x] Contact — `contact.html`.
+- [x] Talk to Sales destination and prototype form — `talk-to-sales.html`.
+- [x] Start Free prototype signup flow — `start-free.html`.
+- [x] Safe public Sign In destination — `sign-in.html`.
+- [x] Support overview — `support.html`.
 - [ ] Help or documentation destination, if applicable.
 - [ ] Resources hub, if there is confirmed content to support it.
-- [ ] Privacy policy.
-- [ ] Terms and conditions.
+- [x] Draft privacy notice — `privacy.html`; legal approval remains required before production.
+- [x] Draft website terms — `terms.html`; legal approval remains required before production.
 - [ ] Cookie notice and consent behaviour, if legally required.
-- [ ] Accessibility statement.
-- [ ] 404 page.
-- [ ] Thank-you and form-success states.
-- [ ] Form-error and unavailable-service states.
+- [x] Accessibility statement — `accessibility.html`.
+- [x] 404 page — `404.html`.
+- [x] Form-success state — `form-success.html`.
+- [x] Form-error and unavailable-service state — `form-error.html`.
 
 ## Phase 8 — Final connection and launch audit
 

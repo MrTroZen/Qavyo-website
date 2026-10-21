@@ -13,6 +13,18 @@ This inventory lists every current public-page route in the repository. Home and
 
 | Page | Route | Status |
 |---|---|---|
+| About Qavyo | `about.html` | Existing |
+| Accessibility Statement | `accessibility.html` | Existing |
+| Contact Qavyo | `contact.html` | Existing |
+| Form Service Unavailable | `form-error.html` | Existing |
+| Form Flow Complete | `form-success.html` | Existing |
+| Page Not Found | `404.html` | Existing |
+| Privacy Notice | `privacy.html` | Existing |
+| Sign In | `sign-in.html` | Existing |
+| Start 30 Days Free | `start-free.html` | Existing |
+| Support | `support.html` | Existing |
+| Talk to Sales | `talk-to-sales.html` | Existing |
+| Website Terms | `terms.html` | Existing |
 | Advanced Inventory Analysis  | `advanced-inventory-analysis.html` | Scaffolded |
 | Advanced Reporting  | `advanced-reporting.html` | Scaffolded |
 | Attendance &amp; Timesheets  | `attendance-timesheets.html` | Scaffolded |

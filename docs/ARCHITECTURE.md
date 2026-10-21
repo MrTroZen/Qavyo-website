@@ -71,6 +71,8 @@ Qavyo Intelligence may appear in Restaurants and Solutions because each entry re
 
 The Resources menu includes `feature-directory.html` as the complete product-and-feature index. Desktop and mobile navigation expose the same essential Products and Restaurant destinations. Major capability and vertical pages use breadcrumbs and return actions to link back to their canonical overview.
 
+Public utility routes are canonical static destinations: `about.html`, `contact.html`, `talk-to-sales.html`, `start-free.html`, `sign-in.html`, `support.html`, `privacy.html`, `terms.html`, `accessibility.html`, `404.html`, `form-success.html`, and `form-error.html`. Demonstration forms validate locally and must not imply that information has been transmitted until a real submission service is connected. `sign-in.html` must not collect credentials until secure authentication is available.
+
 ## Page strategy
 
 ### Restaurant Software

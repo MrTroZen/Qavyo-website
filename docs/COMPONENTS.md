@@ -376,3 +376,9 @@ The page incorporates consolidation anchors (`#hero`, `#platform-jobs`, `#roles`
 `css/pages/feature-scaffold.css` provides the temporary shared content structure for connected hub, focused feature, retail vertical, farm, and scope-confirmation pages. Scaffold pages use the approved global desktop/mobile header and navigation, followed by breadcrumbs, a clearly labelled content-status panel, parent and sibling navigation, a Pricing route, and responsive desktop-to-mobile layouts. Scaffold text must clearly state that detailed content is pending and must not be treated as final marketing copy. Replace the scaffold page-by-page as content is approved; do not silently promote placeholders to final pages.
 
 Every component must keep a logical reading and tab order, visible keyboard focus, sufficient colour contrast, meaningful semantics, and reasonable touch targets. Responsive behaviour must be designed, not assumed. Motion must respect reduced-motion preferences.
+
+## Public utility pages and forms
+
+`css/pages/utility.css` and `js/pages/utility.js` provide the shared public utility-page system for company, contact, sales, access, support, legal, accessibility, not-found, and form-result routes. `.utility-hero`, `.utility-section__grid`, `.utility-prose`, and `.utility-state` support text-led pages without inventing a competing visual system. `.utility-form` uses visible labels, native controls, inline text errors, focus transfer to the first invalid field, and polite form-level status feedback.
+
+Until a submission backend is connected, utility forms validate locally and route to `form-success.html` with an explicit notice that no information was transmitted. `sign-in.html` never collects a password in the static public prototype. Privacy and Terms are clearly labelled as drafts requiring legal review before production use.
