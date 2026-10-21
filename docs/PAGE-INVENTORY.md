@@ -129,8 +129,8 @@ This inventory lists every current public-page route in the repository. Home and
 | Vendor Management  | `vendor-management.html` | Scaffolded |
 | Vendor Price Tracking  | `vendor-price-tracking.html` | Scaffolded |
 | Waste Tracking  | `waste-tracking.html` | Scaffolded |
-| Qavyo Email Marketing â€” More Room to Say What Matters | `website-building.html` | Existing |
-| Qavyo Email Marketing â€” More Room to Say What Matters | `website-seo.html` | Existing |
+| Qavyo Website Building — A Better Home for Your Business Online | `website-building.html` | Existing |
+| Qavyo Website SEO — Help the Right People Find Your Business | `website-seo.html` | Existing |
 | Weekly &amp; Monthly Reviews  | `weekly-monthly-reviews.html` | Scaffolded |
 | Workforce  | `workforce.html` | Scaffolded |
 

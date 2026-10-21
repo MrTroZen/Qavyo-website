@@ -76,7 +76,7 @@ Home and Pricing are frozen. Future work may connect approved destinations throu
 ### Global quality
 
 - [ ] Check page titles and descriptions across the site.
-- [ ] Fix incorrect titles on Website Building and Website SEO.
+- [x] Fix incorrect titles on Website Building and Website SEO.
 - [ ] Add or verify canonical URLs when the production domain is confirmed.
 - [ ] Add or verify favicon and social-sharing metadata.
 - [ ] Audit heading order across every page.
