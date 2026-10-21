@@ -1080,9 +1080,8 @@
   animation: hero-sector-cycle-dark 12s ease-in-out infinite;
 }
 
-.hero-sector--restaurant { top: 30%; }
-.hero-sector--retail { top: 50%; animation-delay: 4s; }
-.hero-sector--farm { top: 70%; animation-delay: 8s; }
+.hero-sector--restaurant { top: 38%; }
+.hero-sector--retail { top: 62%; animation-delay: 4s; }
 
 .hero-sector__icon {
   border-color: rgb(255 255 255 / 0.1);
@@ -1477,14 +1476,12 @@
 
   .hero-sector--restaurant { grid-column: 1; grid-row: 3; }
   .hero-sector--retail { grid-column: 2; grid-row: 3; }
-  .hero-sector--farm { grid-column: 1 / -1; grid-row: 4; }
-
   .hero-outcome {
     position: relative;
     top: auto;
     left: auto;
     grid-column: 1 / -1;
-    grid-row: 5;
+    grid-row: 4;
     width: 100%;
     min-height: 0;
     margin-block-start: var(--space-2);

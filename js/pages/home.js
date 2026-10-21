@@ -29,42 +29,6 @@
       observation: "Wireless audio activity differs from its recent product pattern.",
       reason: "The change may affect the current stock picture and deserves review in context.",
       action: "Compare recent sales with the connected product and stock information before acting."
-    },
-    repair: {
-      business: "Repair shop",
-      kicker: "Service item",
-      title: "Customer device",
-      meta: "Service work · Recorded",
-      status: "Activity recorded",
-      steps: [["Service", "Work recorded"], ["Customer", "Context connected"], ["Reporting", "Activity included"]],
-      note: "Service activity stays connected to customer context and the wider business view.",
-      observation: "Recent service activity is visible alongside customer context and reporting.",
-      reason: "Keeping the connected picture together helps show which area deserves a closer look.",
-      action: "Review the current service activity and its business context before setting priorities."
-    },
-    grocery: {
-      business: "Grocery store",
-      kicker: "Product sale",
-      title: "Everyday item",
-      meta: "Store sale · Quantity 1",
-      status: "Sale recorded",
-      steps: [["Sale", "Item recorded"], ["Stock", "Picture connected"], ["Reporting", "Activity included"]],
-      note: "Each sale contributes to the connected product, stock and reporting picture.",
-      observation: "Recent product activity is visible against the connected stock picture.",
-      reason: "A change in everyday sales may deserve attention when viewed with current stock context.",
-      action: "Review the affected product activity and stock information before the next decision."
-    },
-    salon: {
-      business: "Salon & spa",
-      kicker: "Service",
-      title: "Customer visit",
-      meta: "Service activity · Recorded",
-      status: "Visit recorded",
-      steps: [["Service", "Activity recorded"], ["Customer", "Context connected"], ["Reporting", "Visit included"]],
-      note: "Service activity connects to customer context and the wider operating picture.",
-      observation: "Recent service activity can be reviewed with connected customer and reporting context.",
-      reason: "The combined view helps identify where the business may need attention without guessing.",
-      action: "Review the service activity and customer context before choosing the next step."
     }
   };
 
@@ -319,22 +283,6 @@
       evidence: "The product activity and current stock picture now deserve a closer look together.",
       matters: "Reviewing sales without the connected stock context could lead to a poorly informed decision.",
       next: "Compare the recent sales pattern with the current stock picture before deciding whether to replenish."
-    },
-    repair: {
-      question: "Which service work needs attention today?",
-      sources: ["Service activity", "Customers", "Operations", "Reporting"],
-      changed: "One part of today’s recorded service activity stands apart from the wider operating picture.",
-      evidence: "The connected customer and reporting context shows where the current workload deserves review.",
-      matters: "Reviewing the activity in context helps the owner set priorities without checking disconnected records.",
-      next: "Open the affected service activity, review its customer context and decide which work should be handled first."
-    },
-    salon: {
-      question: "Which customer activity deserves a closer look?",
-      sources: ["Service activity", "Customers", "Staff", "Reporting"],
-      changed: "Recent salon service activity differs from the usual operating picture.",
-      evidence: "The connected customer, staff and reporting context brings the change into one view.",
-      matters: "The combined context helps show whether the change needs attention before the next operating decision.",
-      next: "Review the affected service activity and customer context, then choose the appropriate follow-up."
     }
   };
 
