@@ -455,9 +455,12 @@
     </main>
 
     <!-- Global Public Footer -->
-    <footer class="site-footer" id="prototype-footer">
-      <div class="container">
-        <div class="site-footer__top">
+    <footer class="site-footer" aria-labelledby="footer-heading">
+      <h2 id="footer-heading" class="sr-only">Footer navigation</h2>
+      <div class="container site-footer__container">
+
+        <!-- Brand overview row -->
+        <div class="site-footer__brand-block">
           <div class="site-footer__brand">
             <span class="wordmark wordmark--on-dark wordmark--small">qavyo<span aria-hidden="true">.</span></span>
             <p class="site-footer__tagline">Connected software for modern operations.</p>
@@ -466,29 +469,37 @@
             <span class="site-footer__status-tag"><span class="signal-dot signal-dot--light" aria-hidden="true"></span>Connected Platform</span>
           </div>
         </div>
+
+        <!-- Main navigation columns grid -->
         <div class="site-footer__grid">
+
+          <!-- Products -->
           <div class="site-footer__col">
             <p class="site-footer__col-title">Products</p>
             <ul class="site-footer__links">
               <li><a href="restaurant.html">Restaurant Software</a></li>
-              <li><a href="restaurant-pos.html">Restaurant POS</a></li>
               <li><a href="retail.html">Retail Software</a></li>
-              <li><a href="intelligence.html" aria-current="page">Qavyo Intelligence</a></li>
+              <li><a href="farm.html">Farm Software</a></li>
+              <li><a href="intelligence.html">Qavyo Intelligence</a></li>
+              <li><a href="hardware.html">Hardware</a></li>
               <li><a href="payments.html">Payments</a></li>
             </ul>
           </div>
+
+          <!-- Restaurants -->
           <div class="site-footer__col">
             <p class="site-footer__col-title">Restaurants</p>
             <ul class="site-footer__links">
-              <li><a href="online-qr-ordering.html">Online &amp; QR Ordering</a></li>
-              <li><a href="kitchen-service.html">Kitchen Operations</a></li>
-              <li><a href="inventory-purchasing.html">Inventory &amp; Food Cost</a></li>
-              <li><a href="money-reporting-close.html">Reporting &amp; Day Close</a></li>
-              <li><a href="hr-payroll.html">HR, Payroll &amp; Team</a></li>
-              <li><a href="customers-growth.html">Customers &amp; CRM</a></li>
-              <li><a href="delivery-operations.html">Delivery Operations</a></li>
+              <li><a href="pos-ordering.html">POS &amp; Ordering</a></li>
+              <li><a href="kitchen-service.html">Kitchen &amp; Service</a></li>
+              <li><a href="inventory-purchasing.html">Inventory &amp; Cost</a></li>
+              <li><a href="customers-growth.html">Customers &amp; Loyalty</a></li>
+              <li><a href="hr-payroll.html">Team &amp; Operations</a></li>
+              <li><a href="multi-location-groups.html">Multi-location</a></li>
             </ul>
           </div>
+
+          <!-- Solutions -->
           <div class="site-footer__col">
             <p class="site-footer__col-title">Solutions</p>
             <ul class="site-footer__links">
@@ -500,16 +511,20 @@
               <li><a href="website-seo.html">Website SEO</a></li>
             </ul>
           </div>
+
+          <!-- Company / Resources -->
           <div class="site-footer__col">
             <p class="site-footer__col-title">Resources</p>
             <ul class="site-footer__links">
               <li><a href="pricing.html">Pricing</a></li>
               <li><a href="feature-directory.html">All Products &amp; Features</a></li>
-              <li><a  href="support.html">Help &amp; Support</a></li>
               <li><a  href="talk-to-sales.html">Talk to Sales</a></li>
             </ul>
           </div>
-        </div>
+
+        </div><!-- /site-footer__grid -->
+
+        <!-- Bottom copyright & legal bar -->
         <div class="site-footer__bottom">
           <p class="site-footer__copyright">&copy; <span data-current-year></span> Qavyo. All rights reserved.</p>
           <ul class="site-footer__legal-links">
@@ -518,6 +533,7 @@
             <li><a href="accessibility.html">Accessibility</a></li>
           </ul>
         </div>
+
       </div>
     </footer>
   </body>
