@@ -113,7 +113,7 @@ Create one trusted operating model before more pages are designed.
 - Confirm whether Qavyo remains restaurant-first for the next 12 months.
 - Confirm target countries, language, currency, and regional product availability.
 - Confirm the production domain and hosting constraints.
-- Confirm the primary conversion: free-trial signup, sales conversation, or both.
+- Confirm the primary conversion: 30-day Full Qavyo access, sales conversation, or both.
 - Name owners for product claims, sales follow-up, legal review, and final approval.
 - Create a decision log with date, owner, decision, evidence, and affected routes.
 - Resolve conflicts between `ARCHITECTURE.md`, `SITEMAP.md`, `PAGE-INVENTORY.md`, and `WEBSITE-CHECKLIST.md`.
@@ -249,7 +249,7 @@ Audit direct and adjacent competitors for:
 - Industry grouping.
 - Page depth.
 - Pricing transparency.
-- Trial or demo path.
+- 30-day Full Qavyo access or demo path.
 - Onboarding and switching story.
 - Proof format.
 - Comparison strategy.

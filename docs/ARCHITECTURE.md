@@ -14,16 +14,6 @@ Qavyo
 │   ├── Retail Software Overview
 │   ├── Clothing & Fashion
 │   ├── Electronics
-│   ├── Repair Shops
-│   ├── Grocery & Convenience
-│   ├── Salon & Spa
-│   ├── Hardware & Sanitary
-│   ├── Paint & Tiles
-│   ├── Farm Software
-│   │   └── Broiler Farming
-│   └── Healthcare Software
-│       ├── Hospitals
-│       └── Diagnostic Centers
 ├── Restaurants
 │   ├── Run service
 │   │   ├── Restaurant POS
@@ -63,7 +53,7 @@ The primary header order is Products, Restaurants, Solutions, Pricing, and Resou
 
 The three primary dropdowns answer different questions:
 
-- Products groups the Retail, Farming, and Healthcare software families. Farm Software and Healthcare Software are non-linked category headings rather than overview destinations. Broiler Farming uses its existing route; Hospitals and Diagnostic Centers remain safe prototype links until approved pages exist.
+- Products exposes only the approved Retail Software Overview, Clothing & Fashion, and Electronics destinations. Unfinished Retail, Farm, and Healthcare routes remain outside public navigation until separately approved.
 - Restaurants explains the major operating areas that Qavyo Restaurant Software can help a restaurant operator understand.
 - Solutions presents additional marketing, communication, web, growth, and intelligence capabilities.
 

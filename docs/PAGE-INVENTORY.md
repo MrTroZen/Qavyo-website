@@ -48,7 +48,7 @@ This inventory lists every current public-page route in the repository. Home and
 | Delivery Operations  | `delivery-operations.html` | Existing |
 | Delivery Performance  | `delivery-performance.html` | Scaffolded |
 | Distance-Based Fees  | `distance-based-fees.html` | Scaffolded |
-| Qavyo Email Marketing â€” More Room to Say What Matters | `email-marketing.html` | Existing |
+| Qavyo Email Marketing — More Room to Say What Matters | `email-marketing.html` | Existing |
 | Executive Reports &amp; Health View  | `executive-reports-health-view.html` | Scaffolded |
 | Expense Tracking  | `expense-tracking.html` | Scaffolded |
 | Farm Software  | `farm.html` | Retire |
@@ -60,9 +60,9 @@ This inventory lists every current public-page route in the repository. Home and
 | Hardware &amp; Devices  | `hardware.html` | Existing |
 | HR &amp; Employee Records  | `hr-employee-records.html` | Scaffolded |
 | HR &amp; Payroll  | `hr-payroll.html` | Existing |
-| Qavyo â€” Business technology for connected operations | `index.html` | Final |
+| Qavyo — Business technology for connected operations | `index.html` | Final |
 | Ingredient Inventory  | `ingredient-inventory.html` | Scaffolded |
-| Qavyo Intelligence â€” Know What Needs Attention | `intelligence.html` | Existing |
+| Qavyo Intelligence — Know What Needs Attention | `intelligence.html` | Existing |
 | Inventory &amp; Purchasing  | `inventory-purchasing.html` | Existing |
 | Inventory Valuation  | `inventory-valuation.html` | Scaffolded |
 | Kitchen Alerts  | `kitchen-alerts.html` | Scaffolded |
@@ -88,7 +88,7 @@ This inventory lists every current public-page route in the repository. Home and
 | Payroll &amp; Salary Management  | `payroll-salary-management.html` | Scaffolded |
 | POS &amp; Ordering  | `pos-ordering.html` | Scaffolded |
 | Prep-Time &amp; Order Tracking  | `prep-time-order-tracking.html` | Scaffolded |
-| Qavyo Pricing â€” 30 Days. Full Qavyo. | `pricing.html` | Final |
+| Qavyo Pricing — 30 Days. Full Qavyo. | `pricing.html` | Final |
 | Profit &amp; Loss Reporting  | `profit-loss-reporting.html` | Scaffolded |
 | Profit &amp; Pricing Intelligence  | `profit-pricing-intelligence.html` | Scaffolded |
 | Purchases &amp; Orders  | `purchases-orders.html` | Scaffolded |
@@ -100,10 +100,10 @@ This inventory lists every current public-page route in the repository. Home and
 | Refund &amp; Void Tracking  | `refund-void-tracking.html` | Scaffolded |
 | Report Filters &amp; Export  | `report-filters-export.html` | Scaffolded |
 | Reservations &amp; Loyalty  | `reservations-waitlist.html` | Existing |
-| Restaurant Software â€” Connected Operations  | `restaurant.html` | Existing |
+| Restaurant Software — Connected Operations  | `restaurant.html` | Existing |
 | Restaurant POS  | `restaurant-pos.html` | Existing |
 | Restaurant Website  | `restaurant-website-feature.html` | Scaffolded |
-| Qavyo Retail Software â€” Connected Retail Operations | `retail.html` | Existing |
+| Qavyo Retail Software — Connected Retail Operations | `retail.html` | Existing |
 | Qavyo Retail Clothing &amp; Fashion &mdash; Connected Store Operations | `retail-clothing-fashion.html` | Existing |
 | Qavyo Retail Electronics &mdash; Connected Store Operations | `retail-electronics.html` | Existing |
 | Grocery &amp; Convenience  | `retail-grocery-convenience.html` | Scaffolded |
@@ -115,9 +115,9 @@ This inventory lists every current public-page route in the repository. Home and
 | Sales by Channel  | `sales-by-channel.html` | Scaffolded |
 | Scheduling &amp; Shifts  | `scheduling-shifts.html` | Scaffolded |
 | Self-Service Kiosk  | `self-service-kiosk.html` | Scaffolded |
-| Qavyo SMS Marketing â€” Reach Customers More Directly | `sms-marketing.html` | Existing |
-| Qavyo Social Media Marketing â€” Stay Present Where Your Customers Are | `social-media-marketing.html` | Existing |
-| Qavyo Marketing Solutions â€” Reach More Customers, Keep Them Coming Back | `solutions.html` | Existing |
+| Qavyo SMS Marketing — Reach Customers More Directly | `sms-marketing.html` | Existing |
+| Qavyo Social Media Marketing — Stay Present Where Your Customers Are | `social-media-marketing.html` | Existing |
+| Qavyo Marketing Solutions — Reach More Customers, Keep Them Coming Back | `solutions.html` | Existing |
 | Staff Accounts  | `staff-accounts.html` | Scaffolded |
 | Staff &amp; Labour Intelligence  | `staff-labour-intelligence.html` | Scaffolded |
 | Staff Performance  | `staff-performance.html` | Scaffolded |
